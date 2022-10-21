@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>It assigns access to the &quot;Partner&quot; record type of account</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Account - Assign ReordType Partner - Sales</label>
+    <license>Salesforce</license>
+    <recordTypeVisibilities>
+        <recordType>Account.Partner</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

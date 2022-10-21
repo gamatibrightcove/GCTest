@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>It assignes the record type for the Sales Reps 
+Account record type &quot; Customer&quot; default
+Account record type &quot;Partner&quot; access only.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Account - Assign RecordType Customer - Sales</label>
+    <license>Salesforce</license>
+    <recordTypeVisibilities>
+        <recordType>Account.Customer</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

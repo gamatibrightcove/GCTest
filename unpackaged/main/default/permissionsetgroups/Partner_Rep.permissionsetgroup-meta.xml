@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Partner Rep</label>
+    <permissionSets>Account_Assign_ReordType_Partner_Sales</permissionSets>
+    <permissionSets>Account_Edit_Default_Fields_Sales</permissionSets>
+    <permissionSets>Account_Object_Edit_Sales</permissionSets>
+    <permissionSets>Account_ReadOnly_Account_Score_Sales</permissionSets>
+    <permissionSets>Account_ReadOnly_Account_Stage_Sales</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
