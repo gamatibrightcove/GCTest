@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Thank you for flagging this to the CS leadership team. Someone from our team will be in touch shortly.<br />
+<br />
+Escalation URL:&nbsp;<a href="https://brightcove.my.salesforce.com/%7B!Case.Id%7D" target="_blank">https://brightcove.my.salesforce.com/{{{Case.Id}}}</a><br />
+<br />
+Escalation From: {{{Case.SuppliedName}}}<br />
+<br />
+Subject: {{{Case.Subject}}}<br />
+<br />
+Description:{{{Case.Description}}}<br />
+<br />
+{{{Case.E2CP__Case_Thread_Id__c}}}</body>
+</html>

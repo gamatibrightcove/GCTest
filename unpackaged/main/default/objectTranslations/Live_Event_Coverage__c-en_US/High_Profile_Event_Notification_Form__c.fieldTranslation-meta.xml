@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If not available yet, add TBD. Note that you will be required to add the information prior to the event. --></help>
+        <label><!-- High Profile Event Notification Form --></label>
+        <name>High_Profile_Event_Notification_Form__c</name>
+    </CustomFieldTranslation>

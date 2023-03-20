@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "8cba155f-00f1-4f49-9b4d-7e53930d51ac",
+  "appPageId" : "5072d3ab-f41f-4fa7-b393-eb19f68c4342",
+  "configurationTags" : [ ],
+  "id" : "03539109-c1b6-43e3-8a9b-bfb281741226",
+  "label" : "The Bright Spot Terms of Use",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-the-bright-spot-terms-of-use",
+  "type" : "route",
+  "urlPrefix" : "the-bright-spot-terms-of-use"
+}

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "f0d50d4c-2d85-40fc-a477-8b3bd09e2886",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "eb733d7c-9726-4af2-abc6-89b1bf443bcd",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Custom_Home_Tile_Menu_Component",
+  "id" : "b82040c6-e127-4562-ab4e-ad23d5da9242",
+  "type" : "experienceVariation"
+}

@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+<center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0" width="625">
+	
+		<tr>
+			<td style="padding-bottom:0px;background-color:#f0f0f0" valign="top">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr>
+						<td align="left" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:'Arial';font-size:15px;color:#333;line-height:150%" valign="top">
+						<p style="margin-top:30px;">サポートケース番号：{{{Case.CaseNumber}}}、作成日：{{{Case.CreatedDate}}}<br />
+						{{{Case.Subject}}}</p>
+
+						<hr />
+						<p>{{{Recipient.LastName_JP__c}}}様,</p>
+
+						<p>平素より大変お世話になっております。<br />
+						ブライトコーブサポートです。</p>
+
+						<p>本件、その後状況はいかがでしょうか。<br />
+						恐れ入りますが、引き続きの調査のため、前回ご連絡差し上げた調査に必要な情報を<br />
+						ご提供いただければと存じます。</p>
+
+						<p>なお、問題が既に解決している場合におきましてもご一報いただきたくお願い致します。</p>
+
+						<p>以上、よろしくお願い申し上げます。</p>
+
+						<p>* 本メールは自動メールとなりますが、本メールにご返信いただくことで引き続き対応をさせていただきます。</p>
+
+						<p><strong>ブライトコーブサポートチーム</strong></p>
+
+						<p><a href="https://supportportal.brightcove.com">サポート専用ポータル</a> より全てのサポートケースをご覧頂くことができます。現在のシステム稼働状況につきましては <a href="https://status.brightcove.com/">システムステータスページ</a> よりご確認いただくことができます。</p>
+
+						<hr />
+						<p style="font-family:'Arial';font-size:15px;color:#000000">最終回答日 {{{Case.Last_Email_Sent__c}}}:<br />
+						{{{Case.E2CP__Most_Recent_Public_Comment__c}}}<br />
+						{{{Case.E2CP__HistoryText__c}}}<br />
+						<br />
+						{{{Case.E2CP__Case_Thread_Id__c}}}</p>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</center>
+</div>
+</body>
+</html>

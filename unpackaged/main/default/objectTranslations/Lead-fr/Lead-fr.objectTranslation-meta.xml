@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- 6Sense --></label>
+            <section>6Sense</section>
+        </sections>
+        <sections>
+            <label><!-- Communications --></label>
+            <section>Communications</section>
+        </sections>
+        <sections>
+            <label><!-- Current State --></label>
+            <section>Current State</section>
+        </sections>
+        <sections>
+            <label><!-- D&amp;B --></label>
+            <section>D&amp;B</section>
+        </sections>
+        <sections>
+            <label><!-- Distribution Engine --></label>
+            <section>Distribution Engine</section>
+        </sections>
+        <sections>
+            <label><!-- MIGRATION - FIELDS NOT ON LAYOUT - TO BE REMOVED BEFORE GO LIVE --></label>
+            <section>MIGRATION - FIELDS NOT ON LAYOUT - TO BE REMOVED BEFORE GO LIVE</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Email must be provided in order to save --></errorMessage>
+        <name>Email_field_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A reason must be selected if the Lead is no longer active. --></errorMessage>
+        <name>Inactive_Reason_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Rejected Reason must be set if a Lead is Rejected --></errorMessage>
+        <name>Rejected_Leads_Require_Reason</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Ad Tech Manager was able to understand our company&apos;s monetization goals and priorities (1 being Poor and 10 being Excellent) --></help>
+        <label><!-- AHC Ad Tech Manager Understand Goals --></label>
+        <name>AHC_Ad_Tech_Manager_Understand_Goals__c</name>
+    </CustomFieldTranslation>

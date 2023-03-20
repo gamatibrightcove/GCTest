@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CURRENTLY USING DRAFT URLs: This email will be sent to the customer when the case is closed by a Support Specialist - Spanish</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CaseClose-SP</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Brightcove Case {{{Case.CaseNumber}}} : {{{Case.Subject}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

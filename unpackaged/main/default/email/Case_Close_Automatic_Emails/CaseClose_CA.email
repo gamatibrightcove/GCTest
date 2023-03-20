@@ -1,0 +1,59 @@
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+<BODY style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px">
+<TABLE cellSpacing=0 cellPadding=5 width="100%">
+  <TBODY>
+    <TR>
+      <TD style="BACKGROUND: #ffffff"><TABLE cellSpacing=0 cellPadding=0 width=630 align=center>
+          <TBODY>
+            <TR>
+              <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 20px; PADDING-BOTTOM: 2px; PADDING-TOP: 10px"><A href="http://www.brightcove.com/"><IMG height=68 alt="Brightcove Inc." src="http://files.brightcove.com/brightcove-logo-horizontal-grey-new.jpg" width=279 border=0></A></TD>
+            </TR>
+          </TBODY>
+        </TABLE></TD>
+    </TR>
+    <TR style="BACKGROUND: #ffffff">
+      <TD style="PADDING-TOP: 2px"><TABLE cellSpacing=0 cellPadding=0 width=630 align=center>
+          <TBODY>
+            <TR>
+            </TR>
+            <TR>
+              <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 20px; FONT-WEIGHT: normal; FONT-SIZE: 24px; BACKGROUND: #fffff; PADDING-LEFT: 20px; PADDING-BOTTOM: 10px; COLOR: #fffff; PADDING-TOP: 5px; FONT-FAMILY: Arial,Verdana">Resolución de su ticket de soporte</TD>
+            </TR>
+            <TR>
+            </TR>
+            <TR>
+              <TD style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; COLOR: #5b5b5b; LINE-HEIGHT: 18px; PADDING-TOP: 10px; FONT-FAMILY: Arial,Verdana">
+                  <P>Estimado/a {!Contact.FirstName},</P>
+                  <P>Le escribimos en relación al siguiente ticket con nuestro equipo de soporte técnico y su experiencia trabajando con <strong>{!Case.OwnerFirstName}.</strong></P>
+                  <ul>
+                    <li>Caso: {!Case.CaseNumber}</li>
+                    <li>Asunto: {!Case.Subject}</li>
+                  </ul>
+                  <P>Le agradeceriamos que dedicara un minuto de su atención para valorar nuestro servicio. En una escala del 1 al 10, considerando 10 como <strong>muy satisfactorio</strong> y 1 <strong>muy poco satisfactorio</strong>, cual seria su valoración?</P>
+          <P style="font-size:1.3em;"><strong><a href="http://survey.clicktools.com/go?iv=1t7vqb1yqkv8r&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=1">10</a> - <a href="http://survey.clicktools.com/go?iv=1t7vqb1yqkv8r&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=2">9</a> - <a href="http://survey.clicktools.com/go?iv=1t7vqb1yqkv8r&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=3">8</a> - <a href="http://survey.clicktools.com/go?iv=1t7vqb1yqkv8r&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=4">7</a> - <a href="http://survey.clicktools.com/go?iv=1t7vqb1yqkv8r&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=5">6</a> - <a href="http://survey.clicktools.com/go?iv=1t7vqb1yqkv8r&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=6">5</a> - <a href="http://survey.clicktools.com/go?iv=1t7vqb1yqkv8r&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=7">4</a> - <a href="http://survey.clicktools.com/go?iv=1t7vqb1yqkv8r&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=8">3</a> - <a href="http://survey.clicktools.com/go?iv=1t7vqb1yqkv8r&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=9">2</a> - <a href="http://survey.clicktools.com/go?iv=1t7vqb1yqkv8r&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=10">1</a></strong></P>
+          <P>
+Si necesita mas asistencia y/o información acerca de este ticket, por favor responda directamente a este mensaje para que podamos atenderle. Si no recibimos noticias suyas consideraremos este ticket resuelto.</P>
+          <P>Saludos,</P>
+                    <P><strong>Equipo de Soporte Técnico de Brightcove</strong></P>
+                    
+                    <P>El actual estado del sistema se encuentra disponible en nuestra <a href="http://status.brightcove.com/">página de estado</a>.</P>
+              </TD>
+            </TR>
+            <TR>
+              <TD><IMG style="MARGIN-TOP: 10px" height=5 src="http://img.brightcove.com/email/hr.gif" width=630 border=0></TD>
+            </TR>
+            <TR>
+              <TD style="PADDING-RIGHT: 0px; PADDING-LEFT: 20px; FONT-SIZE: 10px; PADDING-BOTTOM: 10px; COLOR: #aaa; PADDING-TOP: 10px; FONT-FAMILY: Arial,Verdana">
+                <P>Brightcove Inc.</P>
+          </TD>
+            </TR>
+          </TBODY>
+        </TABLE></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Pro bono events require pre-approval from Finance and CS leadership. Before ticking this box, you need to start an email conversation with both teams as per process. Checking this box will prevent the coverage from subtracting hours from the Opportunity associated, so the customer won&apos;t be billed for it. --></help>
+        <label><!-- Pro bono? --></label>
+        <name>Pro_bono__c</name>
+    </CustomFieldTranslation>

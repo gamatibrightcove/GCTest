@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Copy_1_of_LE_Create_case</name>
+        <label>Copy 1 of LE - Create case</label>
+        <locationX>314</locationX>
+        <locationY>288</locationY>
+        <actionName>Live_Event_Coverage__c.Live_Event_Coverage_Create_Case</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+    </actionCalls>
+    <actionCalls>
+        <description>NEW LE Case Create</description>
+        <name>NEW_LE_Case_Create</name>
+        <label>NEW LE Case Create</label>
+        <locationX>50</locationX>
+        <locationY>408</locationY>
+        <actionName>Live_Event_Coverage__c.NEW_LE_Case_Create</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <description>Sends 2 outbound message when the LE is created</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>tmpCoverageEndDateTime</name>
+        <dataType>DateTime</dataType>
+        <expression>DATETIMEVALUE(
+TEXT({!$Record.Event_End_Date__c})&amp; &quot; &quot; &amp; {!$Record.Event_End_Time__c}
+)</expression>
+    </formulas>
+    <formulas>
+        <name>tmpCoverageStartDateTime</name>
+        <dataType>DateTime</dataType>
+        <expression>DATETIMEVALUE( 
+TEXT({!$Record.Event_Start_Date__c}) &amp;&quot; &quot; &amp; {!$Record.Event_End_Time__c}
+)</expression>
+    </formulas>
+    <interviewLabel>Live Event Coverage - Create Live Event Case {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Live Event Coverage - Create Live Event Case</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>updateCoverageDateTime</name>
+        <label>updateCoverageDateTime</label>
+        <locationX>50</locationX>
+        <locationY>288</locationY>
+        <connector>
+            <targetReference>NEW_LE_Case_Create</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Coverage_End_Date_Time__c</field>
+            <value>
+                <elementReference>tmpCoverageEndDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Coverage_Start_Date_Time__c</field>
+            <value>
+                <elementReference>tmpCoverageStartDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>updateCoverageDateTime</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Has_Case__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Live_Event_Coverage_Owner__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pending - CS - Resource Booked</stringValue>
+            </value>
+        </filters>
+        <object>Live_Event_Coverage__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>reminder_Live_Event_Create_Case</name>
+            <connector>
+                <targetReference>Copy_1_of_LE_Create_case</targetReference>
+            </connector>
+            <label>reminder Live Event - Create Case</label>
+            <offsetNumber>5</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>EventStartForWorkflow__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

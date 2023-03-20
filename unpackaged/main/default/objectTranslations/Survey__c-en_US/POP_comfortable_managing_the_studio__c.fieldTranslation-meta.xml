@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- After the Brightcove (POP) Publisher Onboarding Program, how would you rate the level of knowledge and understanding you now have for each of the topics below?
+Managing the Video Cloud Studio --></help>
+        <label><!-- POP comfortable managing the studio --></label>
+        <name>POP_comfortable_managing_the_studio__c</name>
+    </CustomFieldTranslation>

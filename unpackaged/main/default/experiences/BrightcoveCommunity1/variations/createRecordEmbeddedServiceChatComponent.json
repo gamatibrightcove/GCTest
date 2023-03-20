@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "beeea0c0-7347-4dc9-ba59-5ea687184718",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "1d69172d-e3bb-4d4d-8588-3cd0d955a148",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Create_Record_Embedded_Service_Chat_Component",
+  "id" : "aa44821c-6809-49ee-8a71-f44807d26448",
+  "type" : "experienceVariation"
+}

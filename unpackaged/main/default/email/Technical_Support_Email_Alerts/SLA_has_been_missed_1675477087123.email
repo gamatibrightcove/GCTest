@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:start">
+<table height="400" style="font-family:arial; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial" width="600">
+	
+		<tr>
+			<td aeditid="c1r1" locked="0" style="background-color:#ffffff" teditid="c1r1"><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial">Hey TS Leadership team,&nbsp;</span></span></span>
+			<div>&nbsp;</div>
+			</td>
+		</tr>
+		<tr>
+			<td aeditid="c1r2" locked="0" style="background-color:#ffffff" teditid="c1r2">
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="color:#000000"><span style="font-family:arial">Please review the case below and determine why the SLA was missed.</span></span></span></span></span></div>
+
+			<div>&nbsp;</div>
+
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="color:#000000"><span style="font-family:arial">Complete the 'SLA Follow-up' fields, including a brief description and the follow-up date, and mark it as 'Completed'.</span></span></span></span></span></div>
+
+			<div>&nbsp;</div>
+
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="color:#000000"><span style="font-family:arial">Think of ways to help your team to prevent this from happening in the future and take action!&nbsp;</span></span></span></span></span></div>
+
+			<div>
+			<div>&nbsp;</div>
+
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="color:#000000"><span style="font-family:arial"><font face="arial">Case Number: {{{Case.CaseNumber}}}</font></span></span></span></span></span></div>
+
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="color:#000000"><span style="font-family:arial"><font face="arial">Case Owner: {{{Case.OwnerFullName}}}</font></span></span></span></span></span></div>
+
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="color:#000000"><span style="font-family:arial"><font face="arial">Case Owner Manager:&nbsp;{{{Case.Case_Owner_Manager__c}}}</font></span></span></span></span></span></div>
+
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="color:#000000"><span style="font-family:arial"><font face="arial">SLA Missed date/time:&nbsp;{{{Case.Missed_SLA_date_time__c}}}</font></span></span></span></span></span></div>
+
+			<div>&nbsp;</div>
+			</div>
+
+			<div>
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="color:#000000"><span style="font-family:arial"><font face="arial">Customer: {{{Account.Name}}}</font></span></span></span></span></span></div>
+
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><font face="arial"><font style="color:#000000; font-family:arial">Customer Support Package:</font><font style="color:#000000; font-family:arial; font-size:12pt">&nbsp;{{{Case.Support_Package__c}}}</font></font></span></span></span></div>
+
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="color:#000000"><span style="font-family:arial"><font face="arial">Case Status: {{{Case.Status}}}</font></span></span></span></span></span></div>
+
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="color:#000000"><span style="font-family:arial"><font face="arial">Case Priority:&nbsp;{{{Case.Priority}}}</font></span></span></span></span></span></div>
+
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="color:#000000"><span style="font-family:arial"><font face="arial">Case Subject: {{{Case.Subject}}}</font></span></span></span></span></span></div>
+
+			<div>&nbsp;</div>
+
+			<div><span style="font-size:16px;"><span style="color:#000000"><span style="font-family:arial"><span style="color:#000000"><span style="font-family:arial"><font face="arial">Click here to see the case: {{{Case.Link}}}</font></span></span></span></span></span></div>
+
+			<div>&nbsp;</div>
+
+			<div><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial"><font face="arial"><span style="font-size:medium">If you feel there is nothing you can do, please discuss with your manager.</span></font></span></span></span></span></span></span></div>
+			</div>
+
+			<div>&nbsp;</div>
+
+			<div>&nbsp;</div>
+			</td>
+		</tr>
+		<tr>
+			<td aeditid="c1r3" locked="0" style="background-color:#ffffff" teditid="c1r3">
+			<div><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt">Thank you!</span></span></span></span></div>
+			</td>
+		</tr>
+	
+</table>
+</div>
+</body>
+</html>

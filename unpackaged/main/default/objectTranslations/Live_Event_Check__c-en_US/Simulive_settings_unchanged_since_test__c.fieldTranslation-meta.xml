@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Simulive Settings Unchanged Since Test --></label>
+        <name>Simulive_settings_unchanged_since_test__c</name>
+    </CustomFieldTranslation>

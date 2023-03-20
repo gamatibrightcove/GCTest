@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please rate your Customer Success Manager:
+Provides solution and project management with key stakeholders --></help>
+        <label><!-- PP rate CSM solutions and proj mgmt --></label>
+        <name>PP_rate_CSM_solutions_and_proj_mgmt__c</name>
+    </CustomFieldTranslation>

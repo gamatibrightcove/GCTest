@@ -1,0 +1,130 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+<center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0" width="625">
+	
+		<tr>
+			<td style="padding-bottom:0px;background-color:#f0f0f0" valign="top">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr>
+						<td align="left" valign="top">
+						<p style="padding:50px 50px;margin:0;color:#333;line-height:1.1;font-family:'Arial Black';font-size:34px;text-align:left">WELCOME TO GOLD SUPPORT</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:'Arial';font-size:15px;color:#333;line-height:150%" valign="top">
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Hello {{{Case.Zapier_Account_Name__c}}} team,</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Thank you for purchasing Brightcove’s Gold Support Package.<br />
+						<br />
+						At Brightcove we provide the highest quality support and are committed to assisting you and your Team with accurate information, timely responses, and efficient access to support resources. Your issues are our highest priority. This email outlines your support entitlement and defines the case creation steps and procedures.</p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Gold Support Entitlements and Description</p>
+
+						<table class="support-table" style="font-family:'Arial';color:#000000;font-size: 16px; margin-top: 0px; margin-bottom: 10px; width: 580px; border-collapse: collapse;">
+							
+								<tr>
+									<td class="availability" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Availability</strong></p>
+									</td>
+									<td class="details" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Business Hours:*</strong><br />
+									Business Hours for Brightcove Support are Monday - Friday from 9 AM – 6 PM (excluding holidays).</p>
+
+									<p style="font-size: 16px; line-height: 22px;">Local Time is North America, Europe (GMT), Sydney, &amp; Tokyo. Your contract will define the specific Business Hours available to you (<em>typically based on region</em>).</p>
+
+									<p style="font-size: 16px; line-height: 22px;"><strong>Off Hours</strong>:<br />
+									Weekends, Holidays and 6 PM – 9 AM Local Time, Monday – Friday.</p>
+
+									<p style="font-size: 16px; line-height: 22px;">*Live Chat (Named Contacts only) is only available during Business Hours.</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="availability" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Guaranteed Response Time</strong></p>
+									</td>
+									<td class="details" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Critical Requests (P1)</strong>: 30 Minutes all hours<br />
+									<strong>Important Requests (P2)</strong>: 1 Business Hour<br />
+									<strong>Other Requests (P3)</strong>: 2 Business Hours</p>
+
+									<p style="font-size: 16px; line-height: 22px;"><em>Critical Requests</em>&nbsp;are those where {{{Case.Zapier_Account_Name__c}}} experiences loss of the Brightcove Service or critical loss of significant publishing availability to a live production player.</p>
+
+									<p style="font-size: 16px; line-height: 22px;"><em>Important Requests</em>&nbsp;are those where the Brightcove Service is operational, but {{{Case.Zapier_Account_Name__c}}} experiences blocking issues regarding expected publishing capabilities specific to a live production player (<em>i.e. relating to uploads, console activity, specific players</em>).</p>
+
+									<p style="font-size: 16px; line-height: 22px;"><em>Other Requests</em>&nbsp;are all requests which are not defined as Critical or Important (<em>including queries for account/user modifications</em>).</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="availability" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Named Support Contacts</strong></p>
+									</td>
+									<td class="details" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;">{{{Case.AccountNamedContactList__c}}}</p>
+									</td>
+								</tr>
+							
+						</table>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">It is required that anyone submitting an issue is a registered user with Brightcove. Only Named Support Contacts can submit Critical Issues and call the Support line. All other registered users can submit non-Critical Issues using the Support Portal.</p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Case Creation</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">The below channels are available for you to contact the Support Team.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000"><strong>Portal:</strong> In addition to having access to the <a href="https://supportportal.brightcove.com/" style="color:#000000">Customer Support Portal</a>, Named Support Contacts will also be able to create new cases, initiate Live Chat conversations and request immediate phone calls via the ‘Call me now’ feature.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000"><strong>Telephone:</strong>Named Support Contacts may call during all hours. Current Support numbers:</p>
+
+						<ul style="font-family:'Arial';font-size:16px;color:#000000;margin-left:25px">
+							<li>US: +1 617 395 0500</li>
+							<li>UK: +44 (0)203 513 0133</li>
+							<li>Singapore: +65 64 94 8870</li>
+							<li>France: +33 174 181 427</li>
+							<li>Spain: +34 935 452 219</li>
+							<li>Netherlands: +31 207 083 795</li>
+							<li>Germany: +49 408 740 8204</li>
+							<li>Australia +61 2 8520 3718</li>
+							<li>Mexico +52 55 462 40112</li>
+							<li>Colombia +57 150 87521</li>
+						</ul>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">While we cover several languages within our support organization, we cannot guarantee that your call will be answered in your specific language.</p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">System Status</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">We strongly suggest subscribing to our <a href="https://status.brightcove.com/" style="color:#000000">System Status Page</a> to receive real-time updates, major maintenance announcements. For more information about our System Status Page, please see <a href="https://studio.support.brightcove.com/support/viewing-brightcove-system-status-page.html" style="color:#000000">Viewing the Brightcove System Status Page</a>.</p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Live Event Support</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Included in your Gold Package is Support for one Live Event (max. of 4 hours per Live Event) included at no cost. Please consult your Account Manager for further information.</p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Additional Resources</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">We also encourage you and your Team to visit our <a href="https://supportportal.brightcove.com/" style="color:#000000">Support Center</a> to search our comprehensive support documentation - including articles, how-to's, and FAQs.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">If you have any additional questions, please do not hesitate to ask.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000"><strong>Welcome to Brightcove!</strong></p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Best regards,<br />
+						<strong>The Brightcove Customer Support Team</strong></p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">You can see all of your cases in our <a href="https://supportportal.brightcove.com/" style="color:#000000">Support Portal</a>, and current system status is always available on our <a href="https://status.brightcove.com/" style="color:#000000">Status Page</a>.</p>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</center>
+</div>
+</body>
+</html>

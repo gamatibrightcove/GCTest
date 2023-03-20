@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Portal Queue Cases</name>
+    <queueMembers>
+        <users>
+            <user>amartinez@brightcove.com.fullx</user>
+            <user>elafaire@brightcove.com.fullx</user>
+            <user>gamati2@brightcove.com</user>
+            <user>gamati+tsrep2@brightcove.com</user>
+            <user>halvarez@brightcove.com.fullx</user>
+            <user>koakes@brightcove.com.fullx</user>
+            <user>nino@brightcove.com.fullx</user>
+            <user>rcorona@brightcove.com.fullx</user>
+            <user>thase@brightcove.com.fullx</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Portal_Queue_Cases</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+</Queue>

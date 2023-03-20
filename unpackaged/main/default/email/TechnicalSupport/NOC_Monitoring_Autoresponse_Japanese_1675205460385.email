@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+<center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0" width="625">
+	
+		<tr>
+			<td style="padding-bottom:0px;background-color:#f0f0f0" valign="top">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr>
+						<td align="left" valign="top">
+						<p style="padding:50px 50px 30px 50px;margin:0;color:#333;line-height:1.1;font-family:'Arial Black';font-size:24px;text-align:left">ライブストリームモニタリングアラート</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:'Arial';font-size:15px;color:#333;line-height:150%" valign="top">
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">{{{Recipient.LastName_JP__c}}}様</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">ブライトコーブネットワークオペレーションチームにて、貴社のライブストリームに関する問題の兆候を検知しましたのでお知らせいたします。詳細は下記のサポートケースにおいて別途お知らせ致しますのでしばらくお待ちいただけますようお願い致します。<br />
+						<br />
+						以下、サポートケースに関する情報となります。</p>
+
+						<p>ケース番号: <strong>{{{Case.CaseNumber}}}</strong><br />
+						作成日: <strong>{{{Case.CreatedDate}}}</strong><br />
+						表題: <strong>{{{Case.Subject}}}</strong></p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">なお、本件に関するご質問は、本メールにご返信いただく形でいただければと存じます。</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">今後ともよろしくお願い致します。<br />
+						<strong>ブライトコーブ ネットワークオペレーションチーム</strong></p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">お客様のサポートケースは全て <a href="https://supportportal.brightcove.com/" style="color:#000000">サポート専用ポータル</a>にてご覧いただくことが可能です。 また、現在のシステム稼働状況は、 <a href="https://status.brightcove.com/" style="color:#000000">システムステータスページ</a> にてご覧いただけます。<br />
+						<br />
+						{{{Case.E2CP__Case_Thread_Id__c}}}</p>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</center>
+</div>
+</body>
+</html>

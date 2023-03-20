@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Technical Support New Cases</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Technical Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Support_Package_txt__c</field>
+                <operation>equals</operation>
+                <value>Platinum+,Platinum</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sales_Division__c</field>
+                <operation>notEqual</operation>
+                <value>Japan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.Sales_Division__c</field>
+                <operation>notEqual</operation>
+                <value>Japan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>User.LanguageLocaleKey</field>
+                <operation>notEqual</operation>
+                <value>Japanese</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>gc_support@brightcove.com</senderEmail>
+            <senderName>Brightcove Support</senderName>
+            <template>TechnicalSupport/Case_Autoresponse_1674055857420</template>
+        </ruleEntry>
+        <ruleEntry>
+            <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Technical Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Support_Package_txt__c</field>
+                <operation>equals</operation>
+                <value>Gold,Silver</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Case_Language__c</field>
+                <operation>notEqual</operation>
+                <value>Japanese</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.Sales_Division__c</field>
+                <operation>notEqual</operation>
+                <value>Japan</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>gc_support@brightcove.com</senderEmail>
+            <senderName>Brightcove Support</senderName>
+            <template>TechnicalSupport/Case_Autoresponse_1674055857420</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Technical Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Live Chat</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Case_Language__c</field>
+                <operation>notEqual</operation>
+                <value>Japanese</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>User.LanguageLocaleKey</field>
+                <operation>notEqual</operation>
+                <value>Japanese</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>gc_support@brightcove.com</senderEmail>
+            <senderName>Brightcove Support</senderName>
+            <template>TechnicalSupport/Case_Autoresponse_Chat_1674832358389</template>
+        </ruleEntry>
+        <ruleEntry>
+            <booleanFilter>1 AND 2 AND (3 OR 4 OR 5) AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Technical Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Case_Language__c</field>
+                <operation>equals</operation>
+                <value>Japanese</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.Sales_Division__c</field>
+                <operation>equals</operation>
+                <value>Japan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>User.LanguageLocaleKey</field>
+                <operation>equals</operation>
+                <value>Japanese</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Support_Package_txt__c</field>
+                <operation>equals</operation>
+                <value>Platinum,Platinum+</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>gc_support@brightcove.com</senderEmail>
+            <senderName>Brightcove Support</senderName>
+            <template>TechnicalSupport/Case_Autoresponse_JP_1674221509618</template>
+        </ruleEntry>
+        <ruleEntry>
+            <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Technical Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Live Chat</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Case_Language__c</field>
+                <operation>equals</operation>
+                <value>Japanese</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>User.LanguageLocaleKey</field>
+                <operation>equals</operation>
+                <value>Japanese</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>gc_support@brightcove.com</senderEmail>
+            <senderName>Brightcove Support</senderName>
+            <template>TechnicalSupport/Test_JP_Survey_1675197215976</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Technical Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Live Chat</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>gc_support@brightcove.com</senderEmail>
+            <senderName>Brightcove Support</senderName>
+            <template>TechnicalSupport/Case_Autoresponse_Chat_1674832358389</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Case_Language__c</field>
+                <operation>equals</operation>
+                <value>Japanese</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Technical Support</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>gc_support@brightcove.com</senderEmail>
+            <senderName>Brightcove Support</senderName>
+            <template>TechnicalSupport/Case_Autoresponse_JP_1674221509618</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Case Escalation</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.ContactEmail</field>
+                <operation>contains</operation>
+                <value>@brightcove.com</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>gc_support@brightcove.com</senderEmail>
+            <senderName>Brightcove Support</senderName>
+            <template>Technical_Support_Email_Alerts/Escalation_Created_Template_Contact_Notification_1675472636803</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Technical Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>gc_support@brightcove.com</senderEmail>
+            <senderName>Brightcove Support</senderName>
+            <template>TechnicalSupport/Case_Autoresponse_1674055857420</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

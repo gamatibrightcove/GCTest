@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>TSChat-Japanese</name>
+    <queueMembers>
+        <roles>
+            <role>Technical_Support_Manager</role>
+            <role>Technical_Support_Rep</role>
+        </roles>
+        <users>
+            <user>elafaire@brightcove.com.fullx</user>
+            <user>gamati2@brightcove.com</user>
+            <user>gamati+tsrep2@brightcove.com</user>
+            <user>nino@brightcove.com.fullx</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>TSChat</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+</Queue>

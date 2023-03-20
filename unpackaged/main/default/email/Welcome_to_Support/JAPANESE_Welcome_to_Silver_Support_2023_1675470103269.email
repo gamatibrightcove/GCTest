@@ -1,0 +1,106 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<style type="text/css">
+</style>
+<div style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+<center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0" width="625">
+	
+		<tr>
+			<td style="padding-bottom:0px;background-color:#f0f0f0" valign="top">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr>
+						<td align="left" style="padding:50px 50px;margin:0;" valign="top">
+						<p style="padding:0;margin:0;color:#333;line-height:1.1;font-family:'Arial Black';font-size:34px;text-align:left">SILVER サポートのご案内<br />
+						&nbsp;</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:'Arial';font-size:15px;color:#333;line-height:150%" valign="top">
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">&nbsp;{{{Case.Zapier_Account_Name__c}}} &nbsp;御中<br />
+						&nbsp;</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">この度は、Silver サポートへのネームドコンタクトのご登録ありがとうございました。本通知では、Silver サポートに含まれるサービスの詳細及びカスタマーサポートへのお問い合わせ方法についてご案内させていただきます。 カスタマーサポートへお問い合わせいただく際の重要な内容となりますので、ご一読いただき、保存していただけますようお願い致します。</p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Silver サポートの詳細:</p>
+
+						<table class="support-table" style="font-family:'Arial';color:#000000;font-size: 16px; margin-top: 0px; margin-bottom: 10px; width: 580px; border-collapse: collapse;">
+							
+								<tr>
+									<td class="availability" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>利用可能<br />
+									時間:</strong></p>
+									</td>
+									<td class="details" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>営業時間*:</strong><br />
+									月～金、日本時間午前10時～午後6時 (祝祭日を除く)<br />
+									<br />
+									&nbsp;</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="availability" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>初回応答<br />
+									時間:</strong></p>
+									</td>
+									<td class="details" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>致命的な問題 (P1): </strong>2営業時間<br />
+									<strong>重要な問題 (P2): </strong>1営業日<br />
+									<strong>その他の問題 (P3): </strong>1営業日</p>
+
+									<p style="font-size: 16px; line-height: 22px;">「致命的な問題」とは、ブライトコーブ・サービスを使用した重要なオペレーションができない状態を意味します。<br />
+									「重要な問題」とは、ブライトコーブ・サービスを使用したオペレーションができるが、その機能性が顕著に低下している状態を意味します。<br />
+									「その他の問題」とは、致命的な問題及び重要な問題に該当しないその他すべての課題（一般的問い合わせも含む）を意味します。<br />
+									「営業時間外」のサポートは、(i) サードパーティーインテグレーション、あるいは(ii) 標準外アプリケーションあるいはカスタムインテグレーションを取り入れたブライトコーブ・サービスの部分には適用されません。</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="availability" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>ネームドコンタクト<br />
+									(最大4名様まで):</strong></p>
+									</td>
+									<td class="details" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;">{{{Case.AccountNamedContactList__c}}}</p>
+									</td>
+								</tr>
+							
+						</table>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">サポートへのお問い合わせ方法:</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">下記いずれかの方法にてお問い合わせいただけます。</p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">1. サポートポータル:</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000"><a href="https://supportportal.brightcove.com/s/login/?language=ja">サポート専用ポータル</a> からサポートへお問い合わせいただけます。<br />
+						* サポートポータルは https://supportportal.brightcove.com/s/login/?language=ja にアクセスしてご使用ください。<br />
+						<br />
+						* サポートポータルのパスワードは、https://supportportal.brightcove.com/secur/forgotpassword.jsp?language=ja にて設定いただけます。サポートポータルと Video Cloud のアカウントは異なるという点にご注意ください。<br />
+						<br />
+						* 新しくネームドコンタクトにご登録いただいた方で且つこれまでにサポートポータルへのアクセス件をお持ちでなかった方には、後ほど「Brightcove サポートポータルのご案内」という表題のメールを別途お送り致します。</p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000"><strong>システムステータスページ:</strong></p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">現在のシステム稼働状況は<a href="https://status.brightcove.com/">システムステータスページ</a> (https://status.brightcove.com/) にてご覧いただけます。画面右上の"SUBSCRIBE" ボタンをクリックし、メールアドレスをご登録いただくことで、システム稼働状況に変化があった場合の通知をメールにて受信する可能です。(英語のみでの通知となりますこと、予めご了承いただけますようお願い致します。)詳細は、<a href="https://ja.apis.support.brightcove.com/support/viewing-brightcove-system-status-page.html">「Brightcove System のステータスページ」</a> をご参照いただけますようお願い致します。</p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">その他のリソース:</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">技術的な情報をお探しの場合は、こちらのBrightcove ドキュメントサイトもご活用ください。FAQ 等、詳細な情報を記載しており、多くの場合、お探しの情報に辿り着く事ができることと存じます。 なお、サポートにお問い合わせいただくすべてのご担当者様は、Brightcove のシステムにユーザとして登録されていることが条件となります。また、電話でのお問い合わせや、致命的な問題に関するお問い合わせにつきましては、ネームドコンタクトにご登録いただいているご担当者様のみとさせていただいておりますので、予めご了承ください。<br />
+						<br />
+						- ブライトコーブサポートチーム</p>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</center>
+</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+<center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0" width="625">
+	
+		<tr>
+			<td style="padding-bottom:0px;background-color:#f0f0f0" valign="top">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr>
+						<td align="left" style="padding:50px 50px;margin:0;color:#000000;" valign="top">
+						<p style="font-family:'Arial Black';font-size:34px;text-align:left;color:#000000;margin:0;padding:0;">WE HAVE RECEIVED YOUR REQUEST</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:'Arial';font-size:15px;color:#000000;line-height:150%" valign="top">
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Dear {{{Recipient.FirstName}}},</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Thank you for submitting your request to Brightcove Support. Please see the information relating to your new support case below:</p>
+
+						<p style="font-family:'Arial';font-size:18px;color:#000000">Case Number: <strong>{{{Case.CaseNumber}}}</strong><br />
+						Case Opened: <strong>{{{Case.CreatedDate}}}</strong><br />
+						Subject: <strong>{{{Case.Subject}}}</strong></p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Your request has been received by our Technical Support Team. One of our Support Engineers will review your enquiry and respond with feedback or further questions, as appropriate.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">As a valued <b>Platinum Support</b> customer, if you'd like to engage in an additional chat dialogue to discuss your request further, please express your interest to the assigned team member, who can create a custom <b>Slack</b> channel.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">For your reference, Slack channels are created in a separate Brightcove Support workspace to which you will be invited, and will be available for 24 hours. Our assigned Support Team member will be able to respond during his/her regular shift hours. Please feel free to ask them for more information about this process.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Additionally, if you have any attachments or additional information to provide that may assist our Technical Support Team in reviewing, triaging and resolving your request, please provide those as attachments within a subsequent response to this e-mail.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">We'll look forward to working with you very soon.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Warm regards,<br />
+						<strong>The Brightcove Team</strong></p>
+						&nbsp;
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Please also feel free to subscribe to our System Status Page for real-time updates and maintenance notifications, which is available at: <a href="https://status.brightcove.com/" style="color:#000000">https://status.brightcove.com/</a></p>
+						&nbsp;
+
+						<table class="support-table" style="font-family:'Arial';color:#000000;font-size: 16px; margin-top: 0px; margin-bottom: 10px; width: 580px; border-collapse: collapse;">
+							
+								<tr>
+									<td class="availability" style="border-bottom: 1.8px solid rgb(211, 211, 211); text-align: left; padding: 10px 1em; vertical-align: top;">&nbsp;</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: top;width: 93px;">
+									<p style="font-size: 14px; line-height: 22px;font-weight:bold;text-align:center;">SILVER</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: top;width: 93px;">
+									<p style="font-size: 14px; line-height: 22px;font-weight:bold;text-align:center;">GOLD</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: top;width: 93px;">
+									<p style="font-size: 14px; line-height: 22px;font-weight:bold;text-align:center;">PLATINUM</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: top;width: 93px;">
+									<p style="font-size: 14px; line-height: 22px;font-weight:bold;text-align:center;">PLATINUM +</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="availability" style="border-bottom: 1.8px solid rgb(211, 211, 211); text-align: left; padding: 10px 1em; vertical-align: center;">
+									<p style="font-size: 12px; line-height: 22px;">Urgent or Critical Request</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+									<p style="font-size: 12px; line-height: 22px;text-align:center;">2 Business Hours</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+									<p style="font-size: 12px; line-height: 22px;text-align:center;">30 Minutes</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+									<p style="font-size: 12px; line-height: 22px;text-align:center;">15 Minutes</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+									<p style="font-size: 12px; line-height: 22px;text-align:center;">15 Minutes</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="availability" style="border-bottom: 1.8px solid rgb(211, 211, 211); text-align: left; padding: 10px 1em; vertical-align:center;">
+									<p style="font-size: 12px; line-height: 22px;">Important Request</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+									<p style="font-size: 12px; line-height: 22px;text-align:center;">9 Business Hours</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+									<p style="font-size: 12px; line-height: 22px;text-align:center;">1 Business Hour</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+									<p style="font-size: 12px; line-height: 22px;text-align:center;">30 Minutes</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+									<p style="font-size: 12px; line-height: 22px;text-align:center;">30 Minutes</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="availability" style="border-bottom: 1.8px solid rgb(211, 211, 211); text-align: left; padding: 10px 1em; vertical-align:center;">
+									<p style="font-size: 12px; line-height: 22px;">Normal Request</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+									<p style="font-size: 12px; line-height: 22px;text-align:center;">9 Business Hours</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+									<p style="font-size: 12px; line-height: 22px;text-align:center;">2 Business Hours</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+									<p style="font-size: 12px; line-height: 22px;text-align:center;">1 Hour</p>
+									</td>
+									<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+									<p style="font-size: 12px; line-height: 22px;text-align:center;">1 Hour</p>
+									</td>
+								</tr>
+							
+						</table>
+						&nbsp;
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">It is required that anyone submitting an issue is a registered user with Brightcove. Only Named Support Contacts can submit Critical Issues and call the Support line. All other registered users can submit non-Critical Issues using the Support Portal.</p>
+						{{{Case.E2CP__Case_Thread_Id__c}}}</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</center>
+</div>
+</body>
+</html>

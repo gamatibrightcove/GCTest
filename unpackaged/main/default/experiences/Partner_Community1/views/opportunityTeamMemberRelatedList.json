@@ -1,0 +1,39 @@
+{
+  "appPageId" : "2746e722-1a11-406a-a340-af73d0c0847c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "8f79a3f0-910c-41b5-a7c3-a2045fb945ef",
+  "label" : "Opportunity Team Member Related List",
+  "regions" : [ {
+    "id" : "b5006dfd-64db-4eed-a169-bfecbbcd4ccc",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "83ee43e1-ae5d-4f0d-853f-f0daae149a90",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0e743170-b8d3-420c-9d3d-d75bfae6a28b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "02a458c5-de41-4b9f-bcef-c81a4deb6449",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-00q"
+}

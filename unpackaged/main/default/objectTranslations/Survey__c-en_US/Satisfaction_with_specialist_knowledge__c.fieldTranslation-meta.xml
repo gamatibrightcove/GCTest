@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How would you rate your satisfaction with the solution specialist&apos;s understanding and technical knowledge of the case you raised? --></help>
+        <label><!-- Satisfaction with specialist knowledge --></label>
+        <name>Satisfaction_with_specialist_knowledge__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <outboundMessages>
+        <fullName>Case_Handoff_To_Slack</fullName>
+        <apiVersion>56.0</apiVersion>
+        <endpointUrl>https://zapier.com/hooks/catch/466295/3irdjl/</endpointUrl>
+        <fields>Case__c</fields>
+        <fields>From_Region__c</fields>
+        <fields>From_Region_auto__c</fields>
+        <fields>Handoff_Type__c</fields>
+        <fields>Id</fields>
+        <fields>TEXT_Case_Account_Name__c</fields>
+        <fields>TEXT_Case_Number__c</fields>
+        <fields>To_Region__c</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>api@brightcove.com</integrationUser>
+        <name>Case Handoff To Slack</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+</Workflow>

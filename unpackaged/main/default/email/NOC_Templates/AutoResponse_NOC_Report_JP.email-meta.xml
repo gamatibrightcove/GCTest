@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent when the case is created to send reports</description>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>AutoResponse - NOC Report - Japanese</name>
+    <style>none</style>
+    <subject>ライブストリームヘルスレポート {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>ライブストリームヘルスレポートを作成しました
+
+ご担当者様
+
+ライブストリームヘルスレポートを添付致しますのでご確認いただけますでしょうか。また、本件に関するご質問用に、下記のサポートケースを作成致しました。
+
+ケース番号: {!Case.CaseNumber}
+作成日: {!Case.CreatedDate}
+表題: {!Case.Subject}
+
+本レポートに関してご質問等がございましたら、本メールに返信する形でご連絡いただければと存じます。
+
+今後ともよろしくお願い致します。
+ブライトコーブ ネットワークオペレーションチーム
+
+お客様のサポートケースは全てサポート専用ポータルにてご覧いただくことが可能です。 また、現在のシステム稼働状況は、 システムステータスページ にてご覧いただけます。
+
+Terms &amp; Conditions | Privacy
+©2020 Brightcove Inc. All rights reserved. 290 Congress Street 4th Floor, Boston MA 02210, USA</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

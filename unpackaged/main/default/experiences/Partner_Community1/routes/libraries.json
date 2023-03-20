@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "0a2cb818-adb4-401e-941f-a15ca4ffb7df",
+  "appPageId" : "2746e722-1a11-406a-a340-af73d0c0847c",
+  "configurationTags" : [ ],
+  "id" : "4c3b7adf-d995-4dfb-8d81-c11cc4efe318",
+  "label" : "Libraries",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-libraries",
+  "type" : "route",
+  "urlPrefix" : "libraries"
+}

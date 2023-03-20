@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>49</activeVersionNumber>
+    <description>It updates the Notice 1 and Notice 2 fields when the case flips to Pending - Customer Need More infor / - Info Provided</description>
+    <masterLabel>Case - Notice1Notice2Update2x4</masterLabel>
+</FlowDefinition>

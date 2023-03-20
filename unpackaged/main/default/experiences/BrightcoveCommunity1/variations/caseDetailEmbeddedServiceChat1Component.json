@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "90e8d088-a3a0-4da7-bf0d-2255fb7eebb8",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "eeef4aaa-5515-4bf6-acc0-514ddd2a171b",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Case_Detail_Embedded_Service_Chat_1_Component",
+  "id" : "82d25bc0-c4e9-45a1-ac82-cc86e8fd94d0",
+  "type" : "experienceVariation"
+}

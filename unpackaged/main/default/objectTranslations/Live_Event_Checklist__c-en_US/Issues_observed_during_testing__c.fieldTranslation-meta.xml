@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Issues observed during testing --></label>
+        <name>Issues_observed_during_testing__c</name>
+        <picklistValues>
+            <masterLabel>Audio/Video quality defects</masterLabel>
+            <translation><!-- Audio/Video quality defects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failure of live jobs or redundancy group</masterLabel>
+            <translation><!-- Failure of live jobs or redundancy group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Looping</masterLabel>
+            <translation><!-- Looping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Macroblocking</masterLabel>
+            <translation><!-- Macroblocking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Source stream disconnections</masterLabel>
+            <translation><!-- Source stream disconnections --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <SObjectType>Case</SObjectType>
+    <active>false</active>
+    <description>This is the set of milestones to be assigned to Accounts with Support Package: Platinum</description>
+    <entryStartDateField>Case.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+    <exitCriteriaFilterItems>
+        <field>Case.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Technical Support</value>
+    </exitCriteriaFilterItems>
+    <isVersionDefault>false</isVersionDefault>
+    <milestones>
+        <businessHours>Default</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Priority</field>
+            <operation>equals</operation>
+            <value>P1 - Critical</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>First Response</milestoneName>
+        <minutesToComplete>15</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>SLA_email_alert</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>SLA_Alerts_to_SLACK</name>
+                <type>OutboundMessage</type>
+            </actions>
+            <timeLength>-4</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Default</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Priority</field>
+            <operation>equals</operation>
+            <value>P2 - Important</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>First Response</milestoneName>
+        <minutesToComplete>30</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>SLA_email_alert</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>SLA_Alerts_to_SLACK</name>
+                <type>OutboundMessage</type>
+            </actions>
+            <timeLength>-5</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Default</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Priority</field>
+            <operation>equals</operation>
+            <value>P3 - Normal</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>First Response</milestoneName>
+        <minutesToComplete>60</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>SLA_email_alert</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>SLA_Alerts_to_SLACK</name>
+                <type>OutboundMessage</type>
+            </actions>
+            <timeLength>-5</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <name>Platinum</name>
+    <versionMaster>55201000000Kymo</versionMaster>
+    <versionNumber>1</versionNumber>
+</EntitlementProcess>

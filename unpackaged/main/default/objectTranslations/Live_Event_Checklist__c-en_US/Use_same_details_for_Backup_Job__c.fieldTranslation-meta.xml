@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When selected, the information from the Primary Job Details will be copied into the Backup Job Detials --></help>
+        <label><!-- Use same details for Backup Job --></label>
+        <name>Use_same_details_for_Backup_Job__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:start">Hi TSR team,<br />
+<br />
+Please notify the CSM {{{Account.Account_Owner__c}}} ({{{Account.Account_Owner_Email__c}}}) that the Video Cloud PublisherID will have the Live Module disabled account:<br />
+<br />
+Please take in mind that if a Prospect with a trial account requested this Live trial, then the account doesn't have a Customer Success Manager assigned, look for the CSM/AE that requested the trial activation and reach out to them instead.<br />
+<br />
+PudID: {{{Account.BC30Trial_PubID__c}}}<br />
+<br />
+following the provided documentation (see below).<br />
+<br />
+<a href="https://sites.google.com/a/brightcove.com/cs/csr-team-site/brightcove-live-trial" target="_blank">https://sites.google.com/a/brightcove.com/cs/csr-team-site/brightcove-live-trial</a><br />
+<br />
+Please if you have any questions reach out to the Technical Support Representative leader.<br />
+<br />
+Thank you.<br />
+Support Operations</div>
+</body>
+</html>

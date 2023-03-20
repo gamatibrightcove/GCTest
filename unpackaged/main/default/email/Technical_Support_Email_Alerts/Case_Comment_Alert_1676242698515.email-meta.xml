@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to alert the case owner that their case got a response.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Case Comment Alert</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>{{{Case.CaseNumber}}} for {{{Case.Account}}} {{{Case.Sales_Ops_Related_Account__c}}} has a new comment. Priority: {{{Case.Priority}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

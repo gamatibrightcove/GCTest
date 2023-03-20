@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Contains date / time of the last email received. --></help>
+        <label><!-- Last Email Received --></label>
+        <name>Last_Email_Received__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- All VOD assets have 2+ min duration --></label>
+        <name>All_VOD_assets_have_2_min_duration__c</name>
+    </CustomFieldTranslation>

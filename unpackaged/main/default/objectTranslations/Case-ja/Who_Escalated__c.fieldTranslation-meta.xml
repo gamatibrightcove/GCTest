@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This field will show who escalated the Support ticket to a T2 queue. --></help>
+        <label><!-- Who Escalated --></label>
+        <name>Who_Escalated__c</name>
+        <relationshipLabel><!-- Cases (Who Escalated) --></relationshipLabel>
+    </CustomFieldTranslation>

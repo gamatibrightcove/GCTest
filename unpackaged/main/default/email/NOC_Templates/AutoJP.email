@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body>
+
+
+    <div bgcolor="#f0f0f0" marginwidth="0" marginheight="0" style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+     
+        <center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+            <table border="0" cellpadding="0" cellspacing="0" width="625" align="center" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0">
+                
+ <!----Header----->   
+                <tr>
+                    <td id="header" align="left" valign="top" width="100%" style="text-align:left;background-color:#FFCE00;padding:40px 0 40px 50px">
+                        
+                        <a href="http://www.brightcove.com/en" style="border-bottom:none" target="_blank">
+                               <img src="https://files.brightcove.com/BROlogos/BrightcoveOrange.png" href="https://supportportal.brightcove.com/s/" width="25%">
+                            </a>
+                    </td>
+                </tr>
+<!----Content----->               
+                <tr>
+                    <td valign="top" style="padding-bottom:0px;background-color:#f0f0f0">
+                        <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                           
+                           <!----Subject-----> 
+                            <tr>
+                                <td align="left" valign="top" >
+                                   <p style="padding:50px 50px 30px 50px;margin:0;color:#333;line-height:1.1;font-family:&#39;Arial Black&#39;;font-size:25px;text-align:left">ライブイベントサポートについて</p>                         
+                                </td>
+                            </tr>
+                            
+                           <!----Message-----> 
+                         <tr>
+                                <td align="left" valign="top" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:&#39;Arial&#39;;font-size:15px;color:#333;line-height:150%">
+    <p style="font-family:&#39;Arial&#39;;font-weight: bold;font-size:18px;color:#000000">
+       ご担当者様
+    </p>
+    <p style="font-family:&#39;Arial&#39;;font-size:16px;color:#000000">
+      ライブイベントサポートをリクエストいただき誠にありがとうございます。</br>
+<p style="font-family:&#39;Arial&#39;;font-size:16px;color:#000000">
+    	ライブイベントサポートご提供させていただくにあたり情報をご提供いただきたく、<a href="https://forms.gle/QEyv5Cd7LafELMxk6" style="color:#000000">こちらのフォーム</a> のご質問にお答えいただけますでしょうか。
+
+</br></br>
+
+      また、ライブイベントサポートに関する準備のためのコミュニケーション用のサポートケースを下記のとおり作成致しました
+    </p>
+    <p>ケース番号: <strong>{!Case.CaseNumber}</strong><br>
+       作成日: <strong>{!Case.CreatedDate}</strong><br>
+       表題: <strong>{!Case.Subject}</strong></p>
+
+
+     <p style="font-family:&#39;Arial&#39;;font-size:16px;color:#000000">
+    	なお、ライブ配信に先立ちまして <a href="https://ja.live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html" style="color:#000000">Brightcove Live ベストプラクティス</a>、<a href="https://ja.live.support.brightcove.com/live-api/getting-started/overview-brightcove-live-api.html" style="color:#000000">Brightcove Live API</a>、<a href="https://ja.studio.support.brightcove.com/cloud-playout/index.html" style="color:#000000">Cloud Playout</a> などのドキュメントもご覧いただくことをお勧めいたします。
+    </p>
+       
+    <p style="font-family:&#39;Arial&#39;;font-size:16px;color:#000000">
+      後ほど、担当者より該当のサポートケースよりご連絡させていただきます。ご質問等がございましたら、本メールに返信いただく形でご連絡いただければと存じます。
+    </p>
+
+	<p style="font-family:&#39;Arial&#39;;font-size:16px;color:#000000">
+		今後ともよろしくお願い致します。<br>
+		<strong>ブライトコーブ ネットワークオペレーションチーム</strong></br>
+    </p>
+    <p style="font-family:&#39;Arial&#39;;font-size:16px;color:#000000">
+  お客様のサポートケースは全て、 <a href="https://supportportal.brightcove.com/" style="color:#000000">サポート専用ポータル</a>, にてご覧いただくことが可能です。
+また、現在のシステム稼働状況は、 <a href="https://status.brightcove.com/" style="color:#000000">システムステータスページ</a> にてご覧いただけます。
+    </p>
+                                </td>
+                            </tr>
+ 
+                        </table>
+                    </td>
+                </tr>
+<!----Footer----->                
+                <tr id ="footer">
+                    <td align="left" bgcolor="#000000" valign="top" style="padding:30px 50px">
+                        <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                            	<td style="padding:26px 0 25px 0!important;">
+                            	<a href="https://supportportal.brightcove.com/s/" style="border-bottom:none;" target="_blank">
+                                	 <img src="https://img.en25.com/EloquaImages/clients/Brightcove/{96ea4b12-0582-43e8-8f51-8e72c73120e9}_bc-logo-white.png" width="120" height="18">
+                            	</a>
+                            	</td>
+                            </tr>
+                            <tr>
+                            	<td style="padding-bottom:19px;">
+                            		<a style="padding-right:29px;" href="https://www.linkedin.com/company/brightcove/" target="_blank"><img src="https://img.brightcove.com/brightcove-new-brand-2020/social-media/in-icon@2x.png" width="20"></a>
+                            		<a style="padding-right:29px;" href="https://twitter.com/brightcove" target="_blank"><img src="https://img.brightcove.com/brightcove-new-brand-2020/social-media/tw-icon@2x.png" width="20"></a>
+                            		<a style="padding-right:29px;" href="https://www.facebook.com/Brightcove" target="_blank"><img src="https://img.brightcove.com/brightcove-new-brand-2020/social-media/fb-icon@2x.png" width="20"></a>
+                            	<td>
+                            </tr>                           
+                            <tr>
+                            	<td align="center" valign="top" style="padding:5px 0 26px 0;font-family:&#39;Arial&#39;;font-size:12px;color:#fff;text-align:left;line-height:120%">
+                                    <a style="color:#fff!important;border-bottom:1px solid;text-decoration:underline;border-bottom:0" href="http://www.brightcove.com/en/terms-and-conditions?elqTrackId=9c14c3240b064bf088bea2f69eba3295&amp;elqTrack=true" target="_blank">Terms &amp; Conditions</a>  | 
+                                    <a style="color:#fff!important;border-bottom:1px solid;text-decoration:underline;border-bottom:0" href="https://www.brightcove.com/en/legal/privacy?elqTrackId=c9deb494de654738839ccd085b813fc6&amp;elqTrack=true" target="_blank">Privacy</a>  
+                                    </br>
+                                    </br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" style="font-family:&#39;Arial&#39;;font-size:11px;color:#fff;text-align:left;line-height:120%;padding-bottom:20px">
+                                   ©2020 Brightcove Inc. All rights reserved. 290 Congress Street 4th Floor, Boston MA 02210, USA
+                                </td>
+                            </tr>                           
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>   
+    </body>
+</html>

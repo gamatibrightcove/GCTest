@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Live_Event_Coverage_24_hour_before_event_test_starts_alert</name>
+        <label>Live Event Coverage - 24 hour before event test starts alert</label>
+        <locationX>314</locationX>
+        <locationY>288</locationY>
+        <actionName>Live_Event_Coverage__c.Live_Event_Coverage_24_hour_before_event_test_starts_alert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Live Event Coverage Created</description>
+        <name>Live_Event_Coverage_Created</name>
+        <label>Live Event Coverage Created</label>
+        <locationX>50</locationX>
+        <locationY>288</locationY>
+        <actionName>Live_Event_Coverage__c.Live_Event_Coverage_Created</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <description>Live Event Coverage - 24 hour before the event test starts alert</description>
+    <environments>Default</environments>
+    <interviewLabel>Live Event Coverage - 24 hour before event test starts alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Live Event Coverage - 24 hour before event test starts alert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Live_Event_Coverage_Created</targetReference>
+        </connector>
+        <object>Live_Event_Coverage__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>X1dayBeforePreferredDate</name>
+            <connector>
+                <targetReference>Live_Event_Coverage_24_hour_before_event_test_starts_alert</targetReference>
+            </connector>
+            <label>1dayBeforePreferredDate</label>
+            <offsetNumber>-1</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>Preferred_date_and_time_for_testing__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

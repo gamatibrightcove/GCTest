@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Houses the date the survey was submitted --></help>
+        <label><!-- Date survey submitted --></label>
+        <name>Date_survey_submitted__c</name>
+    </CustomFieldTranslation>

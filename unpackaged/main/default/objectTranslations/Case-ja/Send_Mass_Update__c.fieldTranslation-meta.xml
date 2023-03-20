@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If you don&apos;t know what this field does DO NOT USE IT --></help>
+        <label><!-- Send Mass Update? --></label>
+        <name>Send_Mass_Update__c</name>
+        <picklistValues>
+            <masterLabel>No - Do not send any updates to any of the cases</masterLabel>
+            <translation><!-- No - Do not send any updates to any of the cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Send an update to all selected cases using the Mass Update Template</masterLabel>
+            <translation><!-- Yes - Send an update to all selected cases using the Mass Update Template --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

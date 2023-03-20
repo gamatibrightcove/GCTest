@@ -1,0 +1,370 @@
+{
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "a2eec363-866f-4777-85db-56d4ab41350b",
+  "label" : "My Cases",
+  "regions" : [ {
+    "id" : "3fd57f3e-e01f-44ef-a907-162ae26886c7",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:updatedSupportSearch",
+      "id" : "155f270e-c1e4-4e6b-8fd3-2588dc8d95ac",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "587ea702-c9e7-4023-861f-04739563b381",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : true,
+          "name" : "TSCommunityCreateCase"
+        } ],
+        "label" : "New Case"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "57d5376c-9771-4ac1-bfef-7b9b874e5ee3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "ja" : "3ed71feb-45b9-431d-9790-d3bf9e6a951d"
+      },
+      "renditions" : [ {
+        "id" : "3ed71feb-45b9-431d-9790-d3bf9e6a951d",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "label" : "新規サポートケース作成"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "b037a876-4040-454e-886e-93cec969619d",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "2fc06111-3f66-4e82-8124-de94b9957d70",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "c57f200f-8fa9-4cdf-8274-21e4a8444cf7",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "8e980",
+            "tabName" : "Open Cases"
+          }, {
+            "UUID" : "5beac67a-95af-4389-9ead-0feae9334ace",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Case History"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "2fc06111-3f66-4e82-8124-de94b9957d70",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : false,
+            "filterName" : "Community_My_Open_Cases",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Case",
+            "showActionBar" : false,
+            "showChartsPanel" : false,
+            "showDisplay" : "showall",
+            "showFilterPanel" : false,
+            "showImageIcon" : false,
+            "showManualRefreshButton" : false,
+            "showObjectName" : false,
+            "showPinnedList" : true,
+            "showSearchBar" : false
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "1f6bdc4a-009e-438a-bd0c-ee582f7c1abb",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "c57f200f-8fa9-4cdf-8274-21e4a8444cf7",
+        "regionLabel" : "Open Cases",
+        "regionName" : "8e980",
+        "renditionMap" : {
+          "ja" : "28df4259-d6d7-4ede-9e29-5a055f173206"
+        },
+        "renditions" : [ {
+          "id" : "28df4259-d6d7-4ede-9e29-5a055f173206",
+          "renditionValue" : {
+            "regionLabel" : "自分のサポートケース(オープン)"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Community_Case_History",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Case",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "02b6ace4-6715-4e64-b691-7b4a38666114",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "5beac67a-95af-4389-9ead-0feae9334ace",
+        "regionLabel" : "Case History",
+        "regionName" : "3",
+        "renditionMap" : {
+          "ja" : "983506c7-1a52-4b0f-b0bf-0291844267a3"
+        },
+        "renditions" : [ {
+          "id" : "983506c7-1a52-4b0f-b0bf-0291844267a3",
+          "renditionValue" : {
+            "regionLabel" : "自分のサポートケース(履歴)"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "2d87deea-c7bf-438f-b8d4-de2a404f1fda",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "a7dab338-a790-4648-8565-8bbf8990e9b8",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "8e980",
+            "tabName" : "自分のサポートケース(オープン)"
+          }, {
+            "UUID" : "03e57399-fe43-473b-bd66-c54713485e76",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "自分のサポートケース(履歴)"
+          }, {
+            "UUID" : "3db9f1b6-afa8-40f8-801d-aca663749e92",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "36f5d",
+            "tabName" : "全てのサポートケース(オープン)"
+          }, {
+            "UUID" : "1dc6ea7b-c9f9-4f6f-8444-68d079352028",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "4bd3b",
+            "tabName" : "全てのサポートケース(履歴)"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "2d87deea-c7bf-438f-b8d4-de2a404f1fda",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Community_My_Open_Cases",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Case",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "cabdb285-ccc1-470d-9c92-a777ba4a34a6",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a7dab338-a790-4648-8565-8bbf8990e9b8",
+        "regionLabel" : "Open Cases",
+        "regionName" : "8e980",
+        "renditionMap" : {
+          "ja" : "e0834261-42cc-468b-b74d-64a8f6877c5c"
+        },
+        "renditions" : [ {
+          "id" : "e0834261-42cc-468b-b74d-64a8f6877c5c",
+          "renditionValue" : {
+            "regionLabel" : "自分のサポートケース(オープン)"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Community_Case_History",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Case",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "082f9be5-4276-4a97-8089-bff673786ab4",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "03e57399-fe43-473b-bd66-c54713485e76",
+        "regionLabel" : "Case History",
+        "regionName" : "3",
+        "renditionMap" : {
+          "ja" : "95e242cc-124d-43e7-8c3f-ffc3e9e9e483"
+        },
+        "renditions" : [ {
+          "id" : "95e242cc-124d-43e7-8c3f-ffc3e9e9e483",
+          "renditionValue" : {
+            "regionLabel" : "自分のサポートケース(履歴)"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Community_Account_Open_Cases",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Case",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "1dfa8d35-7caf-4d37-bc14-a7f1d8cd336f",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3db9f1b6-afa8-40f8-801d-aca663749e92",
+        "regionLabel" : "All Open Cases",
+        "regionName" : "36f5d",
+        "renditionMap" : {
+          "ja" : "dfbb14bf-647f-4c47-abe7-602ebe8b2f5c"
+        },
+        "renditions" : [ {
+          "id" : "dfbb14bf-647f-4c47-abe7-602ebe8b2f5c",
+          "renditionValue" : {
+            "regionLabel" : "全てのサポートケース(オープン)"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Community_Account_Closed_Cases",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Case",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "8a4534b8-3c85-4263-b7da-d676f81fdd63",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1dc6ea7b-c9f9-4f6f-8444-68d079352028",
+        "regionLabel" : "All Cases History",
+        "regionName" : "4bd3b",
+        "renditionMap" : {
+          "ja" : "748e7238-1f45-4869-8057-cae94ad88cad"
+        },
+        "renditions" : [ {
+          "id" : "748e7238-1f45-4869-8057-cae94ad88cad",
+          "renditionValue" : {
+            "regionLabel" : "全てのサポートケース(履歴)"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9ea5020b-5078-4409-b72c-af22baed4f57",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "My Cases"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "bd621d30-1539-42cd-8a24-10a097a19754",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e310190a-ebc8-43ac-92a9-a9c2467283e0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-my-cases"
+}

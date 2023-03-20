@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "cad080b4-b94f-42c8-8d69-b16bd10920af",
+  "appPageId" : "5072d3ab-f41f-4fa7-b393-eb19f68c4342",
+  "configurationTags" : [ ],
+  "id" : "9ce1b17a-b97e-47e1-85fa-46822ac55c48",
+  "label" : "QoE Early Adopter Program",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-qoe-early-adopter-program",
+  "type" : "route",
+  "urlPrefix" : "qoe-early-adopter-program"
+}

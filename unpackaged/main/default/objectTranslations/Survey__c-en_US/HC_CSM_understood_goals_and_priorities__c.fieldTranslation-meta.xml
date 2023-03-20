@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How would you rate the following:
+Customer Success Manager was able to understand our company&apos;s goals and priorities. --></help>
+        <label><!-- HC CSM understood goals and priorities --></label>
+        <name>HC_CSM_understood_goals_and_priorities__c</name>
+    </CustomFieldTranslation>

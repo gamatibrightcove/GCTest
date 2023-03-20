@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Campaign Offer Language --></label>
+        <name>Campaign_Offer_Language__c</name>
+        <picklistValues>
+            <masterLabel>English (EN)</masterLabel>
+            <translation><!-- English (EN) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (EN-GB)</masterLabel>
+            <translation><!-- English (EN-GB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (EN-US)</masterLabel>
+            <translation><!-- English (EN-US) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French (FR)</masterLabel>
+            <translation><!-- French (FR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German (DE)</masterLabel>
+            <translation><!-- German (DE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian (IT)</masterLabel>
+            <translation><!-- Italian (IT) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese (JA)</masterLabel>
+            <translation><!-- Japanese (JA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean (KO)</masterLabel>
+            <translation><!-- Korean (KO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (ES - LATAM)</masterLabel>
+            <translation><!-- Spanish (ES - LATAM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (ES)</masterLabel>
+            <translation><!-- Spanish (ES) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Reason for Escalation --></label>
+        <name>Reason_for_Escalation__c</name>
+        <picklistValues>
+            <masterLabel>Customer expectations not met</masterLabel>
+            <translation><!-- Customer expectations not met --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer needs a call</masterLabel>
+            <translation><!-- Customer needs a call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient technical experience</masterLabel>
+            <translation><!-- Insufficient technical experience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner unavailable</masterLabel>
+            <translation><!-- Owner unavailable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Priority increase</masterLabel>
+            <translation><!-- Priority increase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slow response from 3rd party</masterLabel>
+            <translation><!-- Slow response from 3rd party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slow response from Sales/Billing/Internal team</masterLabel>
+            <translation><!-- Slow response from Sales/Billing/Internal team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slow response from engineering</masterLabel>
+            <translation><!-- Slow response from engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slow responses from support</masterLabel>
+            <translation><!-- Slow responses from support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Incident</masterLabel>
+            <translation><!-- System Incident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent customer event</masterLabel>
+            <translation><!-- Urgent customer event --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

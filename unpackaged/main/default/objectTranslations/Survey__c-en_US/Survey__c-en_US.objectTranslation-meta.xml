@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>TSSurvey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Survey</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Surveys Layout</layout>
+        <sections>
+            <label><!-- CSAT Response --></label>
+            <section>CSAT Response</section>
+        </sections>
+        <sections>
+            <label><!-- Chat Survey --></label>
+            <section>Chat Survey</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Low Score Follow-up --></label>
+            <section>Low Score Follow-up</section>
+        </sections>
+        <sections>
+            <label><!-- Platinum Srvey --></label>
+            <section>Platinum Srvey</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- For Ad Health Check Surveys --></description>
+        <label><!-- Ad Health Check --></label>
+        <name>Ad_Health_Check</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Brightcove University Surveys (Si L) --></description>
+        <label><!-- Brightcove University Survey --></label>
+        <name>Brightcove_University_Survey</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- KM:  To track content migration surveys from ClickTools --></description>
+        <label><!-- ContentMigrationSurvey --></label>
+        <name>ContentMigrationSurvey</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Health Check Surveys --></description>
+        <label><!-- Health Check --></label>
+        <name>Health_Check</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Survey for Live Event Coverage and Channel Monitoring --></description>
+        <label><!-- NOC Surveys --></label>
+        <name>NOC_Surveys</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- KM:  To capture Post POP survey questions from ClickTools --></description>
+        <label><!-- POP Survey --></label>
+        <name>POP_Survey</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Platinum+ --></label>
+        <name>PlatinumPlus</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Captured Surveys for our public Support Documentation (Si L) --></description>
+        <label><!-- Support Documentation Surveys --></label>
+        <name>Support_Documentation_Surveys</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- All Technical Support Surveys --></description>
+        <label><!-- Surveys - All --></label>
+        <name>Surveys_All</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must enter comments when checking off the &quot;Follow-up Complete?&quot; check box --></errorMessage>
+        <name>Comments_for_Followup_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Void Reason needs to be added in order to void a survey. --></errorMessage>
+        <name>Void_Survey_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

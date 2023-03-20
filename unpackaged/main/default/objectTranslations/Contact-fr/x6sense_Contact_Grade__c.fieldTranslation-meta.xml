@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Bucketing of contact intent scores A (86-100), B (61-85), C (41-60), D (0-40). --></help>
+        <label><!-- 6sense Contact Grade --></label>
+        <name>x6sense_Contact_Grade__c</name>
+    </CustomFieldTranslation>

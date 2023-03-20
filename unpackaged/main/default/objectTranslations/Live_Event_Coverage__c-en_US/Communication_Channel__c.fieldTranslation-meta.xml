@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Communication Channel --></label>
+        <name>Communication_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Customer will provide a phone bridge</masterLabel>
+            <translation><!-- Customer will provide a phone bridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer will provide access to their Instant Messanger</masterLabel>
+            <translation><!-- Customer will provide access to their Instant Messanger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gotomeeting (Brightcove&#39;s account)</masterLabel>
+            <translation><!-- Gotomeeting (Brightcove&apos;s account) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not yet defined</masterLabel>
+            <translation><!-- Not yet defined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Case/Emails</masterLabel>
+            <translation><!-- Salesforce Case/Emails --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slack (Brightcove&#39;s Workspace)</masterLabel>
+            <translation><!-- Slack (Brightcove&apos;s Workspace) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

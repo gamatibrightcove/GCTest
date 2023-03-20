@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Failure of Live Jobs or Redundancy Group --></label>
+        <name>Failure_of_Live_Jobs_or_Redundancy_Group__c</name>
+    </CustomFieldTranslation>

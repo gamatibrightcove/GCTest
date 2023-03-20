@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Snibble Corp Partner User</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Snibble Corp Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Americas_Media_New_Business_Rep</parentRole>
+</Role>

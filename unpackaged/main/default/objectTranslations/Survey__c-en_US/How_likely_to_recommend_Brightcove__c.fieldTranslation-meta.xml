@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Based on your customer support experience, how likely is it that you would recommend Brightcove to a friend or a colleague? --></help>
+        <label><!-- How likely to recommend Brightcove --></label>
+        <name>How_likely_to_recommend_Brightcove__c</name>
+    </CustomFieldTranslation>

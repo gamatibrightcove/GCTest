@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Live Events (all channels) --></label>
+        <name>Live_Events_all_channels__c</name>
+        <picklistValues>
+            <masterLabel>All live streams ran successfully</masterLabel>
+            <translation><!-- All live streams ran successfully --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live streams experienced degradation</masterLabel>
+            <translation><!-- Live streams experienced degradation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live streams experienced downtime</masterLabel>
+            <translation><!-- Live streams experienced downtime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>全てのストリームが正常に流れていたことを確認しました</masterLabel>
+            <translation><!-- 全てのストリームが正常に流れていたことを確認しました --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>全てのストリームにおいて品質劣化が確認されました</masterLabel>
+            <translation><!-- 全てのストリームにおいて品質劣化が確認されました --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>幾つかのストリームにおいて品質劣化が確認されました</masterLabel>
+            <translation><!-- 幾つかのストリームにおいて品質劣化が確認されました --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

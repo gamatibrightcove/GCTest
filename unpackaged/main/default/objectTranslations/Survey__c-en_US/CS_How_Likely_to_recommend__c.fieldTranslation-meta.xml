@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How likely are you to recommend the Brightcove Health Check Program/POP/Migration to a friend or colleague? --></help>
+        <label><!-- CS How Likely to recommend --></label>
+        <name>CS_How_Likely_to_recommend__c</name>
+    </CustomFieldTranslation>

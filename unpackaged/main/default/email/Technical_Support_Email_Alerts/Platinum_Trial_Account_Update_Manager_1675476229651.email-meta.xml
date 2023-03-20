@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Called when the Platinum Trial expiry date has been updated.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Platinum Trial Account Update Manager</name>
+    <relatedEntityType>Opportunity</relatedEntityType>
+    <style>none</style>
+    <subject>[Platinum Manager] {{{Opportunity.Account}}} has been updated</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

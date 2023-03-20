@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Custom Pricing</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Custom Pricings</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Custom Pricing Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Incremental Pricing --></label>
+            <section>Incremental Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- Legacy Pricing --></label>
+            <section>Legacy Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- Matching Criteria --></label>
+            <section>Matching Criteria</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Information --></label>
+            <section>Pricing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Support Pricing --></label>
+            <section>Support Pricing</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can not sync currencies for a record that is not set to USD. --></errorMessage>
+        <name>Diable_Currency_Sync_Non_USD</name>
+    </validationRules>
+</CustomObjectTranslation>

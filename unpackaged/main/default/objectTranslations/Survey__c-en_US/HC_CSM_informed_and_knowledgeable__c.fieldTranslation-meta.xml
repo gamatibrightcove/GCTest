@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How would you rate the following:
+Customer Success Manager was well informed and knowledgeable. --></help>
+        <label><!-- HC CSM informed and knowledgeable --></label>
+        <name>HC_CSM_informed_and_knowledgeable__c</name>
+    </CustomFieldTranslation>

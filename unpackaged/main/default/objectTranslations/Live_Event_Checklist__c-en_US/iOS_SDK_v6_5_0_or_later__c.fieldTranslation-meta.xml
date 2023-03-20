@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Using the Brightcove Native SDK for iOS v6.5.0 or later. --></help>
+        <label><!-- iOS SDK v6.5.0 or later --></label>
+        <name>iOS_SDK_v6_5_0_or_later__c</name>
+    </CustomFieldTranslation>

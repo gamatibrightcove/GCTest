@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear Team,<br />
+<br />
+The 'Platinum Alerts' field has been updated.<br />
+<br />
+Account Name: {{{Account.Name}}}<br />
+Account Link: {{{Account.Link}}}<br />
+Last Modified by: {{{Account.LastModifiedBy}}}<br />
+Platinum Alerts: {{{Account.HCOW__c}}}<br />
+Support Package: {{{Account.Support_package__c}}}<br />
+<br />
+Thank you,<br />
+Revenue Operations</body>
+</html>

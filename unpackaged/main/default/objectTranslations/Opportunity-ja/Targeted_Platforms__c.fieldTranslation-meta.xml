@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What are the targeted platforms? --></help>
+        <label><!-- Targeted Platforms --></label>
+        <name>Targeted_Platforms__c</name>
+        <picklistValues>
+            <masterLabel>Mobile Apps</masterLabel>
+            <translation><!-- Mobile Apps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile Web</masterLabel>
+            <translation><!-- Mobile Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTT</masterLabel>
+            <translation><!-- OTT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smart TV</masterLabel>
+            <translation><!-- Smart TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

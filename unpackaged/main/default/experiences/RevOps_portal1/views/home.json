@@ -1,0 +1,104 @@
+{
+  "appPageId" : "78e82cba-2d3e-4a06-b8f4-2b7701c50289",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "dataProviders" : [ ],
+  "id" : "bf0a5720-19d0-495c-86ea-482feab713c0",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Welcome to the Revenue Operations Experience",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "6ee49c6f-1c80-4ee3-9d8c-717043105cd4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c6e13503-4963-45f5-b19d-e3fdf6ddabff",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p>T<span style=\"font-size: 14px;\">he </span><a href=\"https://brightcove.atlassian.net/l/cp/7Tg1NTx5\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\"><strong>New RevOps KNOWLEDGE BASE</strong></a><span style=\"font-size: 14px;\"> is now available!!!</span></p><p><br></p><p><span style=\"font-size: 14px;\">Use this form to submit a case to the Revenue Operations team.</span></p><p><span style=\"font-size: 14px; background-color: transparent; color: var(--slds-g-color-neutral-base-10, var(--lwc-colorTextDefault,rgba(0, 0, 0, 0.8)));\">Once the case is submitted, you will receive an auto-response email. You can continue to communicate with the RevOps team or add more recipients to the case by replying back to the auto-response. </span></p><p><br></p><p>Please populate every mandatory field:</p><p><br></p><p><strong>Subject</strong>: a brief description of the issue</p><p><br></p><p><strong style=\"font-size: 14px; font-family: arial;\">Priority</strong><span style=\"font-size: 14px; font-family: arial;\">: </span>urgency of the issue&nbsp;</p><p>(P3 - Normal, P2 - Important, P1 - Urgent)</p><p><br></p><p><strong>What can we help with</strong>:&nbsp;&nbsp;select the main topic of this issue is related to.</p><p><br></p><p><br></p><p><strong style=\"color: rgb(240, 102, 102);\">Reporting &amp; Analysis</strong>: Reports, dashboards, analysis, adjustments EMRR, New MRR, ACV, TCV</p><p><strong style=\"color: rgb(240, 102, 102);\">Pricing &amp; Quote help</strong>: CPQ, Quote, Pricing, Packing, QuickFix, Contract Amendment, Order form execution, Word file requests&nbsp;</p><p><strong style=\"color: rgb(240, 102, 102);\">Sales Tools &amp; Permissions</strong>: Sales tools, inbound lead routing, salesforce permissions, automation</p><p><strong style=\"color: rgb(240, 102, 102);\">Traning &amp; Onboarding</strong>: Training, onboarding and documentation</p><p>Changes to records: Updates to records, merge records, delete records</p><p><strong style=\"color: rgb(240, 102, 102);\">Deal Registration</strong>: for Accedo One Deal Registrations</p><p><strong style=\"color: rgb(240, 102, 102);\">Deal Agreement Inquiries</strong>: Agreement (e.g. MSA, DPA, SOW) Review, Redlines &amp; Assignments, RFPs, Custom Legal Notes, BYOP Requests, Extensions, Code of Conduct &amp; ESG</p><p><strong style=\"color: rgb(230, 0, 0);\">InfoSec/Security Questions</strong>: Security Questionnaires</p><p><br></p><p><strong>Description</strong>: please provide a detailed description of the issue.</p><p><br></p><p>Please include the <strong>URL</strong> to salesforce records (account, opportunities, quotes ...) related to this issue. The more information you can give, the fastest the Revenue Operation team can help.&nbsp;</p><p><br></p><p>To check the progress of your cases, click on the \"My Cases\" from the menu on the top page. You will be able to see&nbsp;cases currently still open, and cases closed.</p><p><br></p><p><br></p><p><strong style=\"color: rgb(0, 0, 0);\">** Note: questions about commisions should be addressed from within the XActly app available via Okta.</strong></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "d8e9dd5d-b216-4812-b534-7ef10917c382",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "87a100f3-f05a-43bc-bd92-5d865b5fbc7b",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "attachFiles" : true,
+        "authenticatedActionName" : "SoCreateCase",
+        "confirmationMessageDescription" : "You'll hear back from us soon.",
+        "confirmationMessageTitle" : "Your request was submitted successfully.",
+        "deflectionCategoryGroupName" : "{!DataCategoryGroupName}",
+        "deflectionNotHelpful" : "Didn't find what you're looking for?",
+        "deflectionNumberOfArticles" : 6,
+        "deflectionParentCategory" : "{!TopLevelCategory}",
+        "deflectionSubHeader" : "Check out these articles...",
+        "deflectionTitle" : "Need Answers Fast?",
+        "hasDeflection" : false,
+        "headerTitle" : "Create a Case",
+        "isReCaptchaEnabled" : false,
+        "reCaptchaPrivateKey" : "",
+        "reCaptchaPublicKey" : "",
+        "unauthenticatedActionName" : ""
+      },
+      "componentName" : "selfService:caseCreate",
+      "id" : "99b5f46a-b332-4851-8310-28feb115c4f0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:caseCommentWithCreation",
+      "id" : "d8291877-462a-4122-9c84-b2d5a5b472f2",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b41e25b2-8c76-4af2-843e-cc9114b4cb19",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "10b0b15e-ae85-4459-b1fa-2ca7422118c0",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "360b399d-3388-44b0-9447-9a9048976137",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "HOME"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "9f5a2db8-e226-4cb4-bbda-67ba27330578",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0925c645-fa5c-45bc-953f-ffb249f33f3c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Case Owner When Escalated --></label>
+        <name>Case_Owner_During_Escalation__c</name>
+        <relationshipLabel><!-- Cases (Case Owner When Escalated) --></relationshipLabel>
+    </CustomFieldTranslation>

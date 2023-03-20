@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please add the Brightcove members that were also on the call.
+If no one else joined, feel free to leave it blank. --></help>
+        <label><!-- Internal Team --></label>
+        <name>Internal_Team__c</name>
+    </CustomFieldTranslation>

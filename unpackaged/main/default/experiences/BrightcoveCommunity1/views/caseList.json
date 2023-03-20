@@ -1,0 +1,188 @@
+{
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "29aa34d4-a9fc-425a-8edd-8f8d876168d3",
+  "label" : "Case List",
+  "regions" : [ {
+    "id" : "3d53b14e-100a-44a1-894c-4de585077499",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "23273e7e-c9e2-4de4-80ed-32a88c5f5538",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "a04c1752-fc3f-4d2b-888d-117c9a2d6e88",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "My Open Cases"
+          }, {
+            "UUID" : "465b4e95-afc1-456c-aff1-93b6577026a5",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "My Closed Cases"
+          }, {
+            "UUID" : "97d66b40-fe63-47a5-9591-9d70a95712c2",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "team's open cases"
+          }, {
+            "UUID" : "e5707394-5e87-46f0-be6a-087ef3f2fb89",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1c870",
+            "tabName" : "Team's Case History"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "23273e7e-c9e2-4de4-80ed-32a88c5f5538",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Community_My_Open_Cases",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Case",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "da13dd18-f071-43ef-a003-c97743ecaa90",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a04c1752-fc3f-4d2b-888d-117c9a2d6e88",
+        "regionLabel" : "My Open Cases",
+        "regionName" : "1",
+        "renditionMap" : {
+          "ja" : "7b4d902e-da85-4226-901e-534b2fa8742e"
+        },
+        "renditions" : [ {
+          "id" : "7b4d902e-da85-4226-901e-534b2fa8742e",
+          "renditionValue" : {
+            "regionLabel" : "自分のサポートケース(オープン)"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Community_Case_History",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Case",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "2f794311-76cd-40ee-a460-bc15a34cccd9",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "465b4e95-afc1-456c-aff1-93b6577026a5",
+        "regionLabel" : "My Closed Cases",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Community_Account_Open_Cases",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Case",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "292e6048-1c76-48e3-826a-9b41ced3f7e1",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "97d66b40-fe63-47a5-9591-9d70a95712c2",
+        "regionLabel" : "team's open cases",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Community_Account_Closed_Cases",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Case",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "faac679d-7b22-427c-8137-dbbc5f9055bf",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "e5707394-5e87-46f0-be6a-087ef3f2fb89",
+        "regionLabel" : "Team's Case History",
+        "regionName" : "1c870",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b7e5c7c3-3b88-401f-b51b-c13be7e30e9f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "576ef8a9-9b9e-43bf-8490-5b106d86bc5b",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-500"
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert CS Leadership when an event is marked as Pro-bono</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Event Marked as ProBono</name>
+    <style>none</style>
+    <subject>New pro-bono live event support, please confirm approval</subject>
+    <textOnly>Hello CS Leaders, 
+
+This email is to inform you that {!Live_Event_Coverage__c.Name} created by {!Live_Event_Coverage__c.CreatedBy} has been marked as pro-bono. 
+Last person to edit this LE Coverage was {!Live_Event_Coverage__c.LastModifiedBy}.
+
+Please contact the account owner to confirm approval from Finance and CS Leadership.
+
+https://brightcove2--full.sandbox.lightning.force.com/lightning/r/Live_Event_Coverage__c/{!Live_Event_Coverage__c.Id}/view</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

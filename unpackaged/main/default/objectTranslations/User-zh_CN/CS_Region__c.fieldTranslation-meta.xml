@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- CS Region --></label>
+        <name>CS_Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC - Chennai</masterLabel>
+            <translation><!-- APAC - Chennai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APAC - Korea</masterLabel>
+            <translation><!-- APAC - Korea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APAC - Sydney</masterLabel>
+            <translation><!-- APAC - Sydney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA - London</masterLabel>
+            <translation><!-- EMEA - London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAPAN - Japan</masterLabel>
+            <translation><!-- JAPAN - Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA - GDL</masterLabel>
+            <translation><!-- NA - GDL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA - Scottsdale</masterLabel>
+            <translation><!-- NA - Scottsdale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA - US</masterLabel>
+            <translation><!-- NA - US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

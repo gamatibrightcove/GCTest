@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Requested CDN --></label>
+        <name>Requested_CDN__c</name>
+        <picklistValues>
+            <masterLabel>BYO CDN (Akamai)</masterLabel>
+            <translation><!-- BYO CDN (Akamai) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BYO CDN (Cloudfront)</masterLabel>
+            <translation><!-- BYO CDN (Cloudfront) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BYO CDN (Fastly)</masterLabel>
+            <translation><!-- BYO CDN (Fastly) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BYO CDN (Limelight)</masterLabel>
+            <translation><!-- BYO CDN (Limelight) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

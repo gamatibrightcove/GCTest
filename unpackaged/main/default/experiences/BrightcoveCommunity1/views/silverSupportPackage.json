@@ -1,0 +1,134 @@
+{
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "b2f76107-c78a-4e8b-8f49-dcb4c6b2307e",
+  "label" : "Silver Support Package",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "6e14028e-af5c-4c9b-b6a1-0d52dede5744",
+          "columns" : [ {
+            "UUID" : "adebab1f-9331-43ec-917b-3ea165bb4349",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "8",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "c5d217e1-90ab-4f50-95b2-aa214bcf046e",
+            "columnKey" : "6884b",
+            "columnName" : "Column 2",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "6e14028e-af5c-4c9b-b6a1-0d52dede5744",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"details-summary\">\n    <h1 class=\"details-title\">Silver Support Package Details</h1>\n    <p class=\"summary-paragraph\">Silver Customer Support is included as part of annual subscription \n        product offering. You receive unlimited email & Support Form access to our highly trained \n        Customer Solutions Specialists. Named Contacts receive access to a Customer Support Portal \n        - making it easy to manage, review or check up on any open Support Requests.\n    </p>\n</div>\n<hr>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "281aa6cb-0205-4675-928a-c8a8f5a195db",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "ja" : "2421ab8d-28d1-429a-bf3f-f8511917ef7c"
+          },
+          "renditions" : [ {
+            "id" : "2421ab8d-28d1-429a-bf3f-f8511917ef7c",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<div class=\"details-summary\">\n    <h1 class=\"details-title\">Silver サポートパッケージ詳細</h1>\n    <p class=\"summary-paragraph\">Silver サポートは、年間契約のお客様がご利用いただけます。高度なトレーニングを受けたカスタマーソリューション スペシャリストに、電子メールまたはサポートポータルから無制限にお問い合わせいただけます。カスタマー サポートポータルにてサポートケースの管理、レビューあるいはチェックが簡単にできます。\n    </p>\n</div>\n<hr>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<h2 class=\"details-sub\">Availability</h2>\n<h3 class=\"details-subsub\">Business Hours</h3>\n<p class=\"details-paragraph\">Business Hours for Brightcove Support are Monday - Friday from 9 AM – 6 PM (excluding holidays).</p>\n<p class=\"details-paragraph\">Local Time is North America, Europe (GMT), Sydney, & Tokyo. Your contract will define the specific Business Hours available to you (typically based on region).</p>\n<h3 class=\"details-subsub\">Off Hours:</h3>\n<p class=\"details-paragraph\">Weekends, Holidays and 6 PM – 9 AM Local Time, Monday – Friday</p>\n<br>\n<h2 class=\"details-sub\">Named Contacts</h2>\n<p class=\"details-paragraph\">4 Named Contacts per organization (Additional contacts available) with the Silver Support Package.</p>\n<br>\n<h2 class=\"details-sub\">Support Channels</h2>\n<p class=\"details-paragraph\">Unlimited Email Support</p>\n<p class=\"details-paragraph\">Portal Access for Named Contacts</p>\n<br>\n<h2 class=\"details-sub\">Response Times</h2>\n<p class=\"details-paragraph\"><b>Critical Requests – 2 Business Hours</b></p>\n<p class=\"details-paragraph\">Critical Requests include loss of the Brightcove Service or critical loss of significant publishing availability specific to a live production player.</p>\n<br>\n<p class=\"details-paragraph\"><b>Important Requests – 1 Business Day</b></p>\n<p class=\"details-paragraph\">Important Requests are those where the Brightcove Service is operational, but there are blocking issues regarding expected publishing capabilities specific to a live production player.</p>\n<br>\n<p class=\"details-paragraph\"><b>Normal Requests – 2 Business Days</b></p>\n<p class=\"details-paragraph\">Normal Requests are all inquiries which are not defined as Critical or Important</p>\n<br>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "bbfc5ce5-3159-4d7a-8c44-1a4cfa5a550a",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "ja" : "18f294cd-0334-429c-9930-e45a06e87b49"
+          },
+          "renditions" : [ {
+            "id" : "18f294cd-0334-429c-9930-e45a06e87b49",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<h2 class=\"details-sub\">サポート時</h2>\n<h3 class=\"details-subsub\">営業時間:</h3>\n<p class=\"details-paragraph\">月～金、日本時間午前10時～午後6時 (祝祭日を除く)</p>\n<h3 class=\"details-subsub\">営業時間外:</h3>\n<p class=\"details-paragraph\">営業時間以外の全時間.</p>\n<br>\n<h2 class=\"details-sub\">ネームドコンタクト</h2>\n<p class=\"details-paragraph\">1 社につき、担当者 4 名様まで登録できます。（オプションで人数追加可能）</p>\n<br>\n<h2 class=\"details-sub\">サポートチャンネル</h2>\n<p class=\"details-paragraph\">電子メールによるお問い合わせ（回数無制限）</p>\n<p class=\"details-paragraph\">サポートポータルサイトからのお問い合わせ（ネームドコンタクトのみ）</p>\n<br>\n<h2 class=\"details-sub\">初回応答時間</h2>\n<p class=\"details-paragraph\"><b>致命的な問題 (P1): 2 営業時間</b></p>\n<p class=\"details-paragraph\">「致命的な問題」とは、ブライトコーブ・サービスを使用した重要なオペレーションができない状態を意味します。</p>\n<br>\n<p class=\"details-paragraph\"><b>重要な問題 (P2): 1 営業日</b></p>\n<p class=\"details-paragraph\">「重要な問題」とは、ブライトコーブ・サービスを使用したオペレーションができるが、その機能性が顕著に低下している状態を意味します。</p>\n<br>\n<p class=\"details-paragraph\"><b>その他の問題 (P3): 1 営業日</b></p>\n<p class=\"details-paragraph\">「その他の問題」とは、致命的な問題及び重要な問題に該当しないその他すべての課題（一般的問い合わせも含む）を意味します。</p>\n<br>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "adebab1f-9331-43ec-917b-3ea165bb4349",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"bc-card\">\n    <p class=\"card-paragraph\">Telephone support is not provided in the Silver Support Package. </p>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "a3031ffa-abc1-4c9a-9f89-a02d436bce31",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "ja" : "deb4c8b9-8437-4468-a212-f4c6c129e140"
+          },
+          "renditions" : [ {
+            "id" : "deb4c8b9-8437-4468-a212-f4c6c129e140",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<div class=\"bc-card\">\n    <p class=\"card-paragraph\">Silver サポートでは、電話サポートは含まれません</p>\n</div>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "c5d217e1-90ab-4f50-95b2-aa214bcf046e",
+        "regionLabel" : "Column 2",
+        "regionName" : "6884b",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2f9ed249-7a50-4173-8bae-52d77d1366b2",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Support Package Details"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "121f6ae9-38e4-4781-972f-26c1a2084339",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "746f9f3e-f14f-4415-91b2-56eb800715c8",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-support-package-details"
+}

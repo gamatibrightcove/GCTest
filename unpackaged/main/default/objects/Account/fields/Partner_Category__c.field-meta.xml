@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ad Network</fullName>
+                <default>false</default>
+                <label>Ad Network</label>
+            </value>
+            <value>
+                <fullName>Ad Network/Exchange</fullName>
+                <default>false</default>
+                <label>Ad Network/Exchange</label>
+            </value>
+            <value>
+                <fullName>Ad Server</fullName>
+                <default>false</default>
+                <label>Ad Server</label>
+            </value>
+            <value>
+                <fullName>App Publishing Platform</fullName>
+                <default>false</default>
+                <label>App Publishing Platform</label>
+            </value>
+            <value>
+                <fullName>Audience Measurement</fullName>
+                <default>false</default>
+                <label>Audience Measurement</label>
+            </value>
+            <value>
+                <fullName>Broadcasting solution</fullName>
+                <default>false</default>
+                <label>Broadcasting solution</label>
+            </value>
+            <value>
+                <fullName>CDN, P2P, Delivery</fullName>
+                <default>false</default>
+                <label>CDN, P2P, Delivery</label>
+            </value>
+            <value>
+                <fullName>CDN Provider</fullName>
+                <default>false</default>
+                <label>CDN Provider</label>
+            </value>
+            <value>
+                <fullName>CMS &amp; DAM</fullName>
+                <default>false</default>
+                <label>CMS &amp; DAM</label>
+            </value>
+            <value>
+                <fullName>Consulting company</fullName>
+                <default>false</default>
+                <label>Consulting company</label>
+            </value>
+            <value>
+                <fullName>Content Clipping</fullName>
+                <default>false</default>
+                <label>Content Clipping</label>
+            </value>
+            <value>
+                <fullName>Content Editing</fullName>
+                <default>false</default>
+                <label>Content Editing</label>
+            </value>
+            <value>
+                <fullName>Content Marketing Platform</fullName>
+                <default>false</default>
+                <label>Content Marketing Platform</label>
+            </value>
+            <value>
+                <fullName>Content Provider</fullName>
+                <default>false</default>
+                <label>Content Provider</label>
+            </value>
+            <value>
+                <fullName>Content Recommendation Engine</fullName>
+                <default>false</default>
+                <label>Content Recommendation Engine</label>
+            </value>
+            <value>
+                <fullName>Distribution Platform</fullName>
+                <default>false</default>
+                <label>Distribution Platform</label>
+            </value>
+            <value>
+                <fullName>E-Learning</fullName>
+                <default>false</default>
+                <label>E-Learning</label>
+            </value>
+            <value>
+                <fullName>Interactive Video</fullName>
+                <default>false</default>
+                <label>Interactive Video</label>
+            </value>
+            <value>
+                <fullName>IT Company</fullName>
+                <default>false</default>
+                <label>IT Company</label>
+            </value>
+            <value>
+                <fullName>Live Video</fullName>
+                <default>false</default>
+                <label>Live Video</label>
+            </value>
+            <value>
+                <fullName>MAP</fullName>
+                <default>false</default>
+                <label>MAP</label>
+            </value>
+            <value>
+                <fullName>Media and Marketing Agency</fullName>
+                <default>false</default>
+                <label>Media and Marketing Agency</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Payment Platform</fullName>
+                <default>false</default>
+                <label>Payment Platform</label>
+            </value>
+            <value>
+                <fullName>QoS/QoE Analytics</fullName>
+                <default>false</default>
+                <label>QoS/QoE Analytics</label>
+            </value>
+            <value>
+                <fullName>Recommendation System</fullName>
+                <default>false</default>
+                <label>Recommendation System</label>
+            </value>
+            <value>
+                <fullName>Rich Media Advertising</fullName>
+                <default>false</default>
+                <label>Rich Media Advertising</label>
+            </value>
+            <value>
+                <fullName>Social Media Management</fullName>
+                <default>false</default>
+                <label>Social Media Management</label>
+            </value>
+            <value>
+                <fullName>System Integrator</fullName>
+                <default>false</default>
+                <label>System Integrator</label>
+            </value>
+            <value>
+                <fullName>Text Services</fullName>
+                <default>false</default>
+                <label>Text Services</label>
+            </value>
+            <value>
+                <fullName>UGC</fullName>
+                <default>false</default>
+                <label>UGC</label>
+            </value>
+            <value>
+                <fullName>Web Analytics</fullName>
+                <default>false</default>
+                <label>Web Analytics</label>
+            </value>
+            <value>
+                <fullName>Web Developer and Design Agency&quot;</fullName>
+                <default>false</default>
+                <label>Web Developer and Design Agency&quot;</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

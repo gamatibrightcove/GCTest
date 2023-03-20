@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email will be sent to the customer when the case is closed by a Support Specialist - French - Updated December 2022</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CaseClose-FR</name>
+    <style>none</style>
+    <subject>Brightcove Case {!Case.CaseNumber} {!Case.Subject} [ {!Case.Thread_Id} ]</subject>
+    <textOnly>Cher/chère {!Contact.FirstName},
+
+Nous fermons votre cas.
+
+Ceci est un email de rappel concernant votre récente requête au support et votre expérience en travaillant avec {!Case.OwnerFirstName}.
+
+Numéro du cas: {!Case.CaseNumber}
+Sujet: {!Case.Subject}
+
+Si vous avez un moment, nous apprécierions votre retour d&#39;impressions.:
+
+https://www.getfeedback.com/r/5BXN8kGS?Case_Contact_ID={!Case.ContactId}&amp;Case_ID={!Case.Id}&amp;Case_Account_ID={!Case.Account_Account_ID__c}&amp;gf_id={!Contact.Email}{!Case.Id}&amp;Case_Closed_Date={!Case.ClosedDate}&amp;Case_Owner_Full_Name={!Case.OwnerFullName}
+
+Si vous avez besoin d&#39;assistance et/ou d&#39;information par rapport à ce cas, merci de répondre directement à cet email afin que nous puissions apporter plus d&#39;aide, Si nous ne recevons pas de réponse de votre part nous considérerons ce cas comme résolu.
+
+Cordialement,
+L&#39;équipe de Support Client Brightcove
+
+Le status de notre système est toujours disponible sur notre page de status, https://status.brightcove.com.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

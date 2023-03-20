@@ -1,0 +1,148 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+<center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0" width="625">
+	
+		<tr>
+			<td style="padding-bottom:0px;background-color:#f0f0f0" valign="top">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr>
+						<td align="left" valign="top">
+						<p style="padding:50px 50px;margin:0;color:#333;line-height:1.1;font-family:'Arial Black';font-size:34px">WELCOME TO SUPPORT</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:'Arial';font-size:15px;color:#333;line-height:150%" valign="top">
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Hello {{{Case.Zapier_Account_Name__c}}} team,</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">We were aware that your project with the Brightcove Global Services group was recently completed. Going forward, the Brightcove Technical Support team will support your request. We have the following support channels available for you to contact us:</p>
+
+						<table class="support-table" style="font-family:'Arial';color:#000000;font-size: 16px; margin-top: 0px; margin-bottom: 10px; width: 580px; border-collapse: collapse;">
+							
+								<tr>
+									<td class="availability" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong><a href="https://supportportal.brightcove.com/s/login/?language=en_US&amp;startURL=%2Fs%2F&amp;ec=302" style="text-decoration: none;color:#08088C;">Customer Support Portal</a> </strong></p>
+									</td>
+									<td class="details" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;">You can register to access the portal, create support cases, and access previous support requests.</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="availability" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>*Telephone</strong></p>
+									</td>
+									<td class="details" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;">You can find our support line numbers in the Customer Support Portal in the Support Details tab.</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="availability" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>*Chat</strong></p>
+									</td>
+									<td class="details" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;">To initiate a Chat Support request, you will have to register in the <a href="https://supportportal.brightcove.com/s/login/?language=en_US&amp;startURL=%2Fs%2F&amp;ec=302" style="text-decoration: none;color:#08088C;">Customer Support Portal</a>.</p>
+									</td>
+								</tr>
+							
+						</table>
+
+						<p style="font-family:'Arial';font-size:12px;color:#000000">* Only available for Gold, Platinum, and Platinum + support packages.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">You can find more information on how to register and use our Customer Support Portal <a href="https://general.support.brightcove.com/support/opening-case-with-brightcove-support.html" style="text-decoration: none;color: #08088C;">here</a>.<br />
+						<br />
+						While submitting your request via the <a href="https://supportportal.brightcove.com/s/login/?language=en_US&amp;startURL=%2Fs%2F&amp;ec=302" style="text-decoration: none;color: #08088C;">Customer Support Portal</a>, you will indicate the priority of the request.</p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Brightcove Product Priority Definitions</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000"><strong>Critical Requests (P1)</strong> are those where {{{Case.Zapier_Account_Name__c}}} experiences loss of the Brightcove Service or critical loss of significant publishing availability to a live production player<br />
+						<br />
+						<strong>Important Requests (P2)</strong> are those where the Brightcove Service is operational but {{{Case.Zapier_Account_Name__c}}} experiences blocking issues regarding expected publishing capabilities specific to a live production player (i.e. relating to uploads, console activity, specific players).<br />
+						<br />
+						<strong>Other Requests (P3)</strong> are all requests which are not defined as Critical or Important (including queries for account/user modifications).</p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Custom Solution Priority Definitions</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Support for custom work delivered by the Brightcove Global Services team will be guided by the following priority definitions:</p>
+
+						<table class="priorities-table" style="font-family:'Arial';color:#000000;font-size: 16px; margin-top: 0px; margin-bottom: 10px; width: 580px; border-collapse: collapse;">
+							
+								<tr>
+									<td class="priority" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Case Priority</strong></p>
+									</td>
+									<td class="business-priority" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Business Priority</strong></p>
+									</td>
+									<td class="technical-severity" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Technical Severity</strong></p>
+									</td>
+								</tr>
+								<tr>
+									<td class="priority" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;">P1</p>
+									</td>
+									<td class="business-priority" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Critical:</strong> If not delivered, the customer will experience financial or market share loss and/or will be at risk for legal action.<br />
+									<br />
+									<strong>High:</strong> Functionality used on a regular basis by most users and/or is on application’s critical path and/or critical to brand/reputation and/or critical to competitive advantage.</p>
+									</td>
+									<td class="technical-severity" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Sev 1:</strong> Results in the failure of the complete software system or of a subsystem with NO workaround; or failure of a software unit so that no work or testing can be carried out after the occurrence of the defect.<br />
+									<br />
+									<strong>Sev 2:</strong> Results in the failure of entire or part of the system, but there is a workaround, which allows further operation /testing of the system.</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="priority" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;">P2</p>
+									</td>
+									<td class="business-priority" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Medium:</strong> Functionality used by most users but not on a regular basis and/or is not on the application’s critical path and/or has an only moderate impact on brand/reputation and/or has only moderate relevance to competitive advantage.</p>
+									</td>
+									<td class="technical-severity" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Sev 3:</strong> Does not result in failure but causes the system to produce incorrect, incomplete, or inconsistent results; or negatively impacts usability.</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="priority" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;">P3</p>
+									</td>
+									<td class="business-priority" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Low:</strong> Functionality rarely used or used only by a small number of users and/or minimal impact to brand/reputation and/or minimal relevance to competitive advantage.</p>
+									</td>
+									<td class="technical-severity" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>Sev 4:</strong> Cosmetic error. No impact on functionality or usability.</p>
+									</td>
+								</tr>
+							
+						</table>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">System Status</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">We strongly suggest subscribing to our <a href="https://status.brightcove.com/" style="text-decoration: none;color: #08088C;">System Status Page</a> to receive real-time updates, major maintenance announcements. For more information about our System Status Page, please see <a href="https://studio.support.brightcove.com/support/viewing-brightcove-system-status-page.html" style="text-decoration: none;color: #08088C;">Viewing the Brightcove System Status Page.</a></p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Additional Resources</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">We also encourage you and your team to visit our <a href="https://supportportal.brightcove.com/s/login/?language=en_US&amp;startURL=%2Fs%2F&amp;ec=302" style="text-decoration: none;color: #08088C;">Support Center</a> to search our comprehensive support documentation - including articles, how-to's, and FAQs.<br />
+						<br />
+						If you have any additional questions, please do not hesitate to ask.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Best regards,<br />
+						<strong>The Brightcove Customer Support Team</strong></p>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</center>
+</div>
+</body>
+</html>

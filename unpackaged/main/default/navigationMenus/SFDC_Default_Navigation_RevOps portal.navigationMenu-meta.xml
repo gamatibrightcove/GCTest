@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>RevOps portal</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation</label>
+    <navigationMenuItem>
+        <label>My Cases</label>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/case-my-cases</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>The B-Hive</label>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://thebhive.brightcovegallery.com/</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>The RevOps Knowledge base</label>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>https://brightcove.atlassian.net/l/cp/7Tg1NTx5</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

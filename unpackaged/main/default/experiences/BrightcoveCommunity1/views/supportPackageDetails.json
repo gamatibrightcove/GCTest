@@ -1,0 +1,126 @@
+{
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "componentName" : "siteforce:sldsThreeCol444Layout",
+  "dataProviders" : [ ],
+  "id" : "c480d97f-c7dd-470a-a536-793fd78eca6a",
+  "label" : "Support Package Details",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"details-summary\">\n    <br>\n    <h1 class=\"details-title\">Brightcove Customer Support Overview</h1>\n</div>\n<hr>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "fce4aecc-b370-4470-a17b-d481cc90cc52",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9ef7e842-541c-4c66-8a11-fbda5b8ba016",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p class=\"details-paragraph\">In a world of rapid change Brightcove understands that product & technical expertise is critical to ongoing success. With a global presence and tiered approach Brightcove Support is committed to addressing your technical inquiries in a timely fashion - helping you extract the most value out of your online video.</p>\n<p class=\"details-paragraph\">With a global presence, Brightcove Support has offices in Boston, London, Sydney, Tokyo, South Korea, and Tempe - ensuring we’re always there to help.</p>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "a060ed92-2041-4a80-98ea-fe7e373ee8ac",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5c793ef1-5aa4-4b16-a5d1-0bca65095c8b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p class=\"details-paragraph\">All Customers enjoy access to our TSIA Certified* Technical Support team via web-based submission or email. For additional support options, Brightcove also provides separate Support Packages that provide access to Phone Support, Live Chat, Dedicated Live Event Support, 24x7x365 Support, & more.</p>\n<p class=\"details-paragraph\">Please contact your Brightcove business development representative for pricing on these additional packages.</p>\n<p class=\"details-paragraph\">\n    <a href=\"https://www.brightcove.com/en/services/customer-support\">Go Here to review the different support packages available</a>\n</p>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "d40029be-1150-4ee2-aa4e-f76148d0a88d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7531eb1d-2acc-4b1d-8113-3a87dd602250",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h3 class=\"details-subsub\">Business Hours</h3>\n<p class=\"details-paragraph\">Business Hours for Brightcove Support are Monday - Friday from 9 AM – 6 PM (excluding holidays).</p>\n<p class=\"details-paragraph\">Local Time is North America, Europe (GMT), Sydney, & Tokyo. Your contract will define the specific Business Hours available to you (typically based on region).</p>\n<h3 class=\"details-subsub\">Off Hours:</h3>\n<p class=\"details-paragraph\">Weekends, Holidays and 6 PM – 9 AM Local Time, Monday – Friday</p>\n<p class=\"details-paragraph\">Telephone Support is reserved for Gold and Platinum Support Packages.</p>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "68d66ca8-2e9e-4496-bd65-d89809ddf9b6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "46a88232-be0f-4de5-86a0-14f9762de220",
+    "regionName" : "sidebarAlt",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "allowPrepopulatePrechatFields" : true,
+        "avatarImgURL" : "",
+        "codeSettingsName" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://brightcove2--full.sandbox.my.salesforce.com",
+          "baseLiveAgentContentURL" : "https://c.la5-c1cs-ia5.salesforceliveagent.com/content",
+          "baseLiveAgentURL" : "https://d.la5-c1cs-ia5.salesforceliveagent.com/chat",
+          "buttonId" : "5738F000000GnQn",
+          "deploymentId" : "5728F000000Cb9h",
+          "enabledFeatures" : [ "LiveAgent" ],
+          "entryFeature" : "LiveAgent",
+          "eswConfigDevName" : "TSChat",
+          "eswConfigId" : "04I8F000000Cab2UAC",
+          "eswLiveAgentDevName" : "TSChat",
+          "gslbBaseURL" : "https://service.force.com",
+          "isOfflineCasesEnabled" : "1",
+          "orgId" : "00D8F0000008jAl"
+        },
+        "externalScripts" : "",
+        "externalStyles" : "",
+        "fallbackRouting" : "",
+        "offlineSupportMinimizedText" : "Contact Us",
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "snippetSettingsFile" : "Brightcove_SnapIn_Settings",
+        "storageDomain" : "",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "a30ac6d9-4401-425e-ad5d-b2fbd87cfa4b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f7f59789-38d2-46b2-a2a5-765012919a37",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Support Package Details"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "970dbe26-7587-413b-a7cf-cc6a0d3001f9",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "09ed6669-f75e-4610-985e-ddd1e6dc5904",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-support-package-details"
+}

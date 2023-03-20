@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Qualified Out Reason --></label>
+        <name>Qualified_Out_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Already a customer</masterLabel>
+            <translation><!-- Already a customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Could not engage</masterLabel>
+            <translation><!-- Could not engage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing solution</masterLabel>
+            <translation><!-- Existing solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never a fit</masterLabel>
+            <translation><!-- Never a fit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No budget</masterLabel>
+            <translation><!-- No budget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No champion</masterLabel>
+            <translation><!-- No champion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No need</masterLabel>
+            <translation><!-- No need --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No show</masterLabel>
+            <translation><!-- No show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not a business</masterLabel>
+            <translation><!-- Not a business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not a fit</masterLabel>
+            <translation><!-- Not a fit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not a fit now</masterLabel>
+            <translation><!-- Not a fit now --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not right time</masterLabel>
+            <translation><!-- Not right time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of business</masterLabel>
+            <translation><!-- Out of business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stopped communicating</masterLabel>
+            <translation><!-- Stopped communicating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor</masterLabel>
+            <translation><!-- Vendor --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Campaign Offer Type --></label>
+        <name>Campaign_Offer_Type__c</name>
+        <picklistValues>
+            <masterLabel>ABM</masterLabel>
+            <translation><!-- ABM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blog</masterLabel>
+            <translation><!-- Blog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Study</masterLabel>
+            <translation><!-- Case Study --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication Opt-In</masterLabel>
+            <translation><!-- Communication Opt-In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content</masterLabel>
+            <translation><!-- Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Bundle</masterLabel>
+            <translation><!-- Content Bundle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Sheet</masterLabel>
+            <translation><!-- Data Sheet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demo</masterLabel>
+            <translation><!-- Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Response (Conversation)</masterLabel>
+            <translation><!-- Direct Response (Conversation) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow / Like / Friend</masterLabel>
+            <translation><!-- Follow / Like / Friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift</masterLabel>
+            <translation><!-- Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guide</masterLabel>
+            <translation><!-- Guide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infographic</masterLabel>
+            <translation><!-- Infographic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inquiry</masterLabel>
+            <translation><!-- Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Beta Application</masterLabel>
+            <translation><!-- Product Beta Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase Promotion</masterLabel>
+            <translation><!-- Purchase Promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slideshow</masterLabel>
+            <translation><!-- Slideshow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Request</masterLabel>
+            <translation><!-- Support Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Survey</masterLabel>
+            <translation><!-- Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweepstakes</masterLabel>
+            <translation><!-- Sweepstakes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial</masterLabel>
+            <translation><!-- Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video</masterLabel>
+            <translation><!-- Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitepaper</masterLabel>
+            <translation><!-- Whitepaper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eBook</masterLabel>
+            <translation><!-- eBook --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

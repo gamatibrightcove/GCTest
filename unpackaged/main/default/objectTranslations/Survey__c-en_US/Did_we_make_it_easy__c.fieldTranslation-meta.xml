@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How easy did we make it for you to handle this issue? --></help>
+        <label><!-- Did we make it easy --></label>
+        <name>Did_we_make_it_easy__c</name>
+    </CustomFieldTranslation>

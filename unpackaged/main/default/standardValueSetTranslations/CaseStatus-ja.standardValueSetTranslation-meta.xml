@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Closed</masterLabel>
+        <translation>完了</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed - Customer has replied</masterLabel>
+        <translation>サポート対応中</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed - First Response</masterLabel>
+        <translation>完了</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed - No Response</masterLabel>
+        <translation>完了</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed - Spam</masterLabel>
+        <translation>完了</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed - Unresolved</masterLabel>
+        <translation>完了</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed as Duplicate</masterLabel>
+        <translation>完了</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Customer has replied</masterLabel>
+        <translation>サポート対応中</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Escalated</masterLabel>
+        <translation><!-- Escalated --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Merged</masterLabel>
+        <translation><!-- Merged --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Need To Close</masterLabel>
+        <translation>サポート対応中</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>New</masterLabel>
+        <translation>新規</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - 3rd Party</masterLabel>
+        <translation><!-- Pending - 3rd Party --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - CS Leadership</masterLabel>
+        <translation><!-- Pending - CS Leadership --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - CSM/Sales</masterLabel>
+        <translation><!-- Pending - CSM/Sales --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - Customer</masterLabel>
+        <translation>お客様ご連絡待ち</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - Customer - Info Provided</masterLabel>
+        <translation>お客様ご連絡待ち</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - Customer - Info provided - 8</masterLabel>
+        <translation>お客様ご連絡待ち</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - Customer - Need More Info</masterLabel>
+        <translation>お客様ご連絡待ち</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - Customer - Need More Info - 8</masterLabel>
+        <translation>お客様ご連絡待ち</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - ENG Task</masterLabel>
+        <translation>サポート対応中</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - Fix</masterLabel>
+        <translation>サポート対応中</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - Fix Review</masterLabel>
+        <translation>サポート対応中</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - Internal</masterLabel>
+        <translation><!-- Pending - Internal --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - Product Enhancement</masterLabel>
+        <translation>サポート対応中</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending - System Issue</masterLabel>
+        <translation><!-- Pending - System Issue --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

@@ -1,0 +1,163 @@
+{
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "a11e41ed-6361-4098-afa5-131deeb09aa1",
+  "label" : "Gold Support Package",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "a983abb1-4891-4c28-b8f4-ee031e13b086",
+          "columns" : [ {
+            "UUID" : "80ed431e-b392-4077-a4b9-a87226e033c6",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "8",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "d359de83-c83d-46aa-99d3-7291a4882a89",
+            "columnKey" : "548a6",
+            "columnName" : "Column 2",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "a983abb1-4891-4c28-b8f4-ee031e13b086",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"details-summary\">\n    <h1 class=\"details-title\">Gold Support Package Details</h1>\n    <p class=\"summary-paragraph\">In addition to all of the benefits of Silver Support, \n        Gold Support provides Phone & Chat Support for Named \n        Contacts as well as 24/7 assistance with critical issues. \n        Furthermore, Gold Support inquiries receive a higher \n        queue priority, ensuring your technical needs are addressed \n        swiftly.\n    </p>\n</div>\n<hr>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "c6a44a5a-1bb3-4e07-83c0-d4b80cac639d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "ja" : "6b3688bb-38bc-4d1d-b399-19ce18722390"
+          },
+          "renditions" : [ {
+            "id" : "6b3688bb-38bc-4d1d-b399-19ce18722390",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<div class=\"details-summary\">\n    <h1 class=\"details-title\">Gold サポートパッケージの詳細</h1>\n    <p class=\"summary-paragraph\">Gold サポートは、Silver サポートの全サービスに加え、貴社お問い合わせ担当者(ネームドコンタクト)に対する電話によるサポートを提供し、緊急で且つ致命的な問題が発生した際は、24 時間年中無休でいつでもご対応いたします。また問い合わせは Silver サポート に比べて Gold サポートのお客様が優先されるため、技術的なお問い合わせにもより迅速に対応いたします。\n    </p>\n</div>\n<hr>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<h2 class=\"details-sub\">Availability</h2>\n<h3 class=\"details-subsub\">Business Hours</h3>\n<p class=\"details-paragraph\">Business Hours for Brightcove Support are Monday - Friday from 9 AM – 6 PM (excluding holidays).</p>\n<p class=\"details-paragraph\">Local Time is North America, Europe (GMT), Sydney, & Tokyo. Your contract will define the specific Business Hours available to you (typically based on region).</p>\n<h3 class=\"details-subsub\">Off Hours:</h3>\n<p class=\"details-paragraph\">Weekends, Holidays and 6 PM – 9 AM Local Time, Monday – Friday</p>\n<br>\n<h2 class=\"details-sub\">Support Channels</h2>\n<p class=\"details-paragraph\">Unlimited Email Support</p>\n<p class=\"details-paragraph\">Portal Access for Named Contacts</p>\n<p class=\"details-paragraph\">Phone Support for Named Contacts</p>\n<p class=\"details-paragraph\">Live Chat for Named Contacts</p>\n<br>\n<h2 class=\"details-sub\">Named Contacts</h2>\n<p class=\"details-paragraph\">6 Named Contacts per organization (Additional contacts available) with the Gold Support Package.</p>\n<br>\n<h2 class=\"details-sub\">Response Times</h2>\n<h3 class=\"details-subsub\">Business and Off Hours:</h3>\n<p class=\"details-paragraph\"><b>Critical Requests – 30 Minutes</b></p>\n<p class=\"details-paragraph\"><b>Off Hours Critical Requests – 30 Minutes</b></p>\n<p class=\"details-paragraph\">Critical Requests include loss of the Brightcove Service or critical loss of significant publishing availability specific to a live production player.</p>\n<br>\n<p class=\"details-paragraph\"><b>Important Requests – 1 Business Hour</b></p>\n<p class=\"details-paragraph\"><b>Off Hours – Next Business Day</b></p>\n<p class=\"details-paragraph\">Important Requests are those where the Brightcove Service is operational, but there are blocking issues regarding expected publishing capabilities specific to a live production player.</p>\n<br>\n<p class=\"details-paragraph\"><b>Normal Requests – 2 Business Hours</b></p>\n<p class=\"details-paragraph\"><b>Off Hours – Next Business Day</b></p>\n<p class=\"details-paragraph\">Normal Requests are all inquiries which are not defined as Critical or Important</p>\n<br>\n<br>\n<p class=\"details-paragraph\">It is required that anyone submitting an issue is a registered user with Brightcove. Only Named Support Contacts can submit Critical Issues. All other registered users can submit non-Critical Issues using the web form.</p>\n<br>\n<h2 class=\"details-sub\">Live Event Support</h2>\n<p class=\"details-paragraph\">Included in your Gold Support Package is free coverage for 1 Live event with a maximum duration of 4 hours.</p>\n<br>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "b81d2a08-4ee1-46de-b387-4fd1aef2b646",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "ja" : "ff08e6ad-a1bf-4f9b-b511-52336def6dea"
+          },
+          "renditions" : [ {
+            "id" : "ff08e6ad-a1bf-4f9b-b511-52336def6dea",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<h2 class=\"details-sub\">サポート時</h2>\n<h3 class=\"details-subsub\">営業時間:</h3>\n<p class=\"details-paragraph\">月～金、日本時間午前10時～午後6時 (祝祭日を除く)</p>\n<p class=\"details-paragraph\">*ライブチャットサポートや Call me now は営業時間内のみご使用可能であり、原則、英語のみでのサポートとさせていただいております。</p>\n<h3 class=\"details-subsub\">営業時間外:</h3>\n<p class=\"details-paragraph\">営業時間以外の全時間.</p>\n<br>\n<h2 class=\"details-sub\">サポートチャンネル</h2>\n<p class=\"details-paragraph\">電子メールによるお問い合わせ（回数無制限）</p>\n<p class=\"details-paragraph\">サポートポータルサイトからのお問い合わせ</p>\n<p class=\"details-paragraph\">電話でのお問い合わせ（ネームドコンタクトのみ）</p>\n<p class=\"details-paragraph\">ライブチャット（英語）でのお問い合わせ（ネームドコンタクトのみ）</p>\n<br>\n<h2 class=\"details-sub\">ネームドコンタクト</h2>\n<p class=\"details-paragraph\">1 社につき、担当者 6 名様まで登録できます。（オプションで人数追加可能）</p>\n<br>\n<h2 class=\"details-sub\">初回応答時間</h2>\n<h3 class=\"details-subsub\">致命的な問題 (P1):</h3>\n<p class=\"details-paragraph\"><b>営業時間内: 30分</b></p>\n<p class=\"details-paragraph\"><b>営業時間外: 30分</b></p>\n<p class=\"details-paragraph\">「致命的な問題」とは、ブライトコーブ・サービスを使用した重要なオペレーションができない状態を意味します。\n営業時間外のお電話は、致命的な問題の場合のみとさせていただいております。営業時間外専用の番号にお電話いただきメッセージを残していただくことで、担当者が30分以内に応答させていただきます。</p>\n<br>\n<p class=\"details-paragraph\"><b>重要な問題 (P2): 1 営業時</b></p>\n<p class=\"details-paragraph\">「重要な問題」とは、ブライトコーブ・サービスを使用したオペレーションができるが、その機能性が顕著に低下している状態を意味します。</p>\n<br>\n<p class=\"details-paragraph\"><b>その他の問題 (P3): 2営業時間</b></p>\n<p class=\"details-paragraph\">「その他の問題」とは、致命的な問題及び重要な問題に該当しないその他すべての課題（一般的問い合わせも含む）を意味します。</p>\n<br>\n<br>\n<p class=\"details-paragraph\">営業時間外の「致命的な問題」に該当するお問い合わせの場合、営業時間外専用の電話番号までお問い合わせください。サポート担当者が不在の場合、メッセージを残していただくことで、後ほど、サポート担当者より折り返しさせていただきます。なお、お電話でのお問い合わせは、ネームドコンタクトにご登録いただいているご担当者様に限らせていただいておりますので、予めご了承ください。</p>\n<br>\n<h2 class=\"details-sub\">ライブイベントサポート</h2>\n<p class=\"details-paragraph\">最大 4 時間のライブイベント 1 件の無料対応</p>\n<br>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "80ed431e-b392-4077-a4b9-a87226e033c6",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"bc-card\">\n    <h3 class=\"card-title\">Named Support Contacts may call during all hours:</h3>\n    <br>\n    <h4 class=\"card-sub\">Current Support Numbers:</h4>\n        <p class=\"card-paragraph\">US: <a href=\"tel: +1 617 395 0500\">+1 617 395 0500</a></p>\n    <p class=\"card-paragraph\">UK: <a href=\"tel: +44 (0)203 513 0133\">+44 (0)203 513 0133</a></p>\n    <p class=\"card-paragraph\">Singapore: <a href=\"tel: +65 64 94 8870\">+65 64 94 8870</a></p>\n    <p class=\"card-paragraph\">France: <a href=\"tel: +33 174 181 427\">+33 174 181 427</a></p>\n    <p class=\"card-paragraph\">Spain: <a href=\"tel: +34 935 452 219\">+34 935 452 219</a></p>\n    <p class=\"card-paragraph\">Netherlands: <a href=\"tel: +31 207 083 795\">+31 207 083 795</a></p>\n    <p class=\"card-paragraph\">Germany: <a href=\"tel: +49 408 740 8204\">+49 408 740 8204</a></p>\n    <p class=\"card-paragraph\">Australia <a href=\"tel: +61 2 8520 3718\">+61 2 8520 3718</a></p>\n    <p class=\"card-paragraph\">Mexico <a href=\"tel: +52 55 462 40112\">+52 55 462 40112</a></p>\n    <p class=\"card-paragraph\">Colombia <a href=\"tel: +57 150 87521\">+57 150 87521</a></p>\n    <br>\n    <p class=\"card-paragraph\">While we cover several languages within our support organization, we cannot guarantee that your call will be answered in your specific language.</p>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "7f14b35b-758b-41fc-950e-ea37c5aa149c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "ja" : "354e5a9e-a697-4f4d-8963-dd96887e0ce2"
+          },
+          "renditions" : [ {
+            "id" : "354e5a9e-a697-4f4d-8963-dd96887e0ce2",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<div class=\"bc-card\">\n    <h3 class=\"card-title\">電話サポート: お電話でのお問い合わせは、下記の番号で承っております。</h3>\n    <br>\n    <p class=\"card-paragraph\">平日午前10時〜午後6時までの電話番号: <a href=\"tel: 03-6453-7733\">03-6453-7733</a></p>\n    <p class=\"card-paragraph\">上記の時間帯以外の電話番号(必ず留守番電話にメッセージをお残しください): <a href=\"tel: 03-4588-1446\">03-4588-1446</a></p>\n    <br>\n    <p class=\"card-paragraph\">お電話でのお問い合わせは、ネームドコンタクトにご登録いただいているご担当者様に限らせていただいておりますので、予めご了承ください。</p>\n</div>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "d359de83-c83d-46aa-99d3-7291a4882a89",
+        "regionLabel" : "Column 2",
+        "regionName" : "548a6",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "3b9e8330-bca5-4684-930d-da395694acaf",
+          "columns" : [ {
+            "UUID" : "cd9a5f3f-07c3-434b-9884-9d2230bd777c",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 80
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "3b9e8330-bca5-4684-930d-da395694acaf",
+      "regions" : [ {
+        "id" : "cd9a5f3f-07c3-434b-9884-9d2230bd777c",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "91278fb0-50b1-4e8e-9c7f-092d07897562",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Support Package Details"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "fe2cc4b4-11a5-45a4-980a-ff76c6addb9a",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a832439a-01c5-4b9b-a582-7b56d6cd9d0e",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-support-package-details"
+}

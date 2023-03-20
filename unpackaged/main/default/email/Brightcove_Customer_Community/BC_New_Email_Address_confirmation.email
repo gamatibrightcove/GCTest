@@ -1,0 +1,18 @@
+Hi,
+<p></p>
+We recently received a request to change your The Bright Spot account’s email address for username {!User.Username}.
+<p></p>
+Previous email address:  {!ChgEmailVer.OldEmail} 
+<p></p>
+New email address:   {!ChgEmailVer.NewEmail}
+<p></p>
+To finish changing your email address, go to the following link.  
+<p>&nbsp;</p>
+{!ChgEmailVer.URL}
+<p>&nbsp;</p>
+If you can't click the link, copy and paste it into your Web browser. If you have questions, please <a href="mailto:community@brightcove.com">contact us</a>.
+<p>&nbsp;</p>
+<p>The Bright Spot sent this message to {!User.Email}.&nbsp;</p>
+<p>To manage your notifications, <a href="{!Community_Url}"> log in</a> to The Bright Spot.</p>
+<p>&copy;2023 Brightcove, Inc. All rights reserved. 281 Summer Street, Boston, MA 02210, USA</p>
+<p><img src="https://brightcove--c.na171.content.force.com/servlet/servlet.ImageServer?id=0156f00003TTzaP&oid=00D300000000ab7&lastMod=1654801352000" alt="" width="100" height="100" /></p>

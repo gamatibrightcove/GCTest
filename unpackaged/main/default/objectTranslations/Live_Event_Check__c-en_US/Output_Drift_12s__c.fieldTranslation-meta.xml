@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Output Drift &lt;12s --></label>
+        <name>Output_Drift_12s__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Passed on Some Streams</masterLabel>
+            <translation><!-- Not Passed on Some Streams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Passed on all Streams</masterLabel>
+            <translation><!-- Not Passed on all Streams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passed on all Streams</masterLabel>
+            <translation><!-- Passed on all Streams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>正常</masterLabel>
+            <translation><!-- 正常 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>異常有</masterLabel>
+            <translation><!-- 異常有 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+<center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0" width="625">
+	
+		<tr>
+			<td style="padding-bottom:0px;background-color:#f0f0f0" valign="top">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr>
+						<td align="left" valign="top">
+						<p style="padding:50px 50px;margin:0;color:#000000;line-height:1.1;font-family:'Arial Black';font-size:34px;text-align:left">NOUS FERMONS VOTRE CAS</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:'Arial';font-size:15px;color:#000000;line-height:150%" valign="top">
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Cher/chère <strong>{{{Recipient.FirstName}}}</strong>,</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Ceci est un email de rappel concernant votre récente requête au support et votre expérience en travaillant avec <strong>{{{Case.OwnerFirstName}}}</strong>.<br />
+						<br />
+						Numéro du cas: <strong>{{{Case.CaseNumber}}}</strong><br />
+						Suject: <strong>{{{Case.Subject}}}</strong></p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Si vous avez un moment, nous apprécierions vos impressions. Sur une échelle de 1 à 5, avec 5 étant <strong><span style="color:#2ecc71;">très satisfait</span></strong> et 1 étant <strong><span style="color:#e74c3c;">très insatisfait</span></strong>, comment qualifieriez vous ce cas?</p>
+
+						<p style="text-align: center;"><br />
+						<span style="font-size:2em;"><strong><a href="https://www.getfeedback.com/r/JgDES73s?Case_Contact_ID={{{Case.ContactId}}}&amp;Case_ID={{{Case.Id}}}&amp;Case_Account_ID={{{Case.Account_Account_ID__c}}}&amp;Case_Contact={{{Case.Contact}}}&amp;Case_Account={{{Case.Account}}}&amp;Case_Owner_Full_Name={{{Case.OwnerFullName}}}&amp;Case_Case_Number={{{Case.CaseNumber}}}&amp;Case_Closed_Date={{{Case.ClosedDate}}}&amp;Case_Support_Package={{{Case.Support_Package__c}}}&amp;Case_Origin={{{Case.Origin}}}&amp;Contact_Email={{{Recipient.Email}}}&amp;Case_Account_Tier={{{Case.Account_Tier__c}}}&amp;Case_Account_Edition={{{Case.Account_Edition__c}}}&amp;Case_Survey_Number={{{Case.Survey_Number__c}}}&amp;gf_id={{{Recipient.Email}}}{{{Case.Id}}}&amp;gf_unique={{{Recipient.Email}}}{{{Case.Id}}}{{{Case.Days_since_last_email_sent_2__c}}}&amp;gf_q[11514510]=5" style="color: #0e9a0e; text-decoration:none;">5</a> <span style="color: #ffffff">|</span> <a href="https://www.getfeedback.com/r/JgDES73s?Case_Contact_ID={{{Case.ContactId}}}&amp;Case_ID={{{Case.Id}}}&amp;Case_Account_ID={{{Case.Account_Account_ID__c}}}&amp;Case_Contact={{{Case.Contact}}}&amp;Case_Account={{{Case.Account}}}&amp;Case_Owner_Full_Name={{{Case.OwnerFullName}}}&amp;Case_Case_Number={{{Case.CaseNumber}}}&amp;Case_Closed_Date={{{Case.ClosedDate}}}&amp;Case_Support_Package={{{Case.Support_Package__c}}}&amp;Case_Origin={{{Case.Origin}}}&amp;Contact_Email={{{Recipient.Email}}}&amp;Case_Account_Tier={{{Case.Account_Tier__c}}}&amp;Case_Account_Edition={{{Case.Account_Edition__c}}}&amp;Case_Survey_Number={{{Case.Survey_Number__c}}}&amp;gf_id={{{Recipient.Email}}}{{{Case.Id}}}&amp;gf_unique={{{Recipient.Email}}}{{{Case.Id}}}{{{Case.Days_since_last_email_sent_2__c}}}&amp;gf_q[11514510]=4" style="color: #a2c00a; text-decoration:none;">4</a> <span style="color: #ffffff">|</span> <a href="https://www.getfeedback.com/r/JgDES73s?Case_Contact_ID={{{Case.ContactId}}}&amp;Case_ID={{{Case.Id}}}&amp;Case_Account_ID={{{Case.Account_Account_ID__c}}}&amp;Case_Contact={{{Case.Contact}}}&amp;Case_Account={{{Case.Account}}}&amp;Case_Owner_Full_Name={{{Case.OwnerFullName}}}&amp;Case_Case_Number={{{Case.CaseNumber}}}&amp;Case_Closed_Date={{{Case.ClosedDate}}}&amp;Case_Support_Package={{{Case.Support_Package__c}}}&amp;Case_Origin={{{Case.Origin}}}&amp;Contact_Email={{{Recipient.Email}}}&amp;Case_Account_Tier={{{Case.Account_Tier__c}}}&amp;Case_Account_Edition={{{Case.Account_Edition__c}}}&amp;Case_Survey_Number={{{Case.Survey_Number__c}}}&amp;gf_id={{{Recipient.Email}}}{{{Case.Id}}}&amp;gf_unique={{{Recipient.Email}}}{{{Case.Id}}}{{{Case.Days_since_last_email_sent_2__c}}}&amp;gf_q[11514510]=3" style="color: #FFD300; text-decoration:none;">3</a> <span style="color: #ffffff">|</span> <a href="https://www.getfeedback.com/r/JgDES73s?Case_Contact_ID={{{Case.ContactId}}}&amp;Case_ID={{{Case.Id}}}&amp;Case_Account_ID={{{Case.Account_Account_ID__c}}}&amp;Case_Contact={{{Case.Contact}}}&amp;Case_Account={{{Case.Account}}}&amp;Case_Owner_Full_Name={{{Case.OwnerFullName}}}&amp;Case_Case_Number={{{Case.CaseNumber}}}&amp;Case_Closed_Date={{{Case.ClosedDate}}}&amp;Case_Support_Package={{{Case.Support_Package__c}}}&amp;Case_Origin={{{Case.Origin}}}&amp;Contact_Email={{{Recipient.Email}}}&amp;Case_Account_Tier={{{Case.Account_Tier__c}}}&amp;Case_Account_Edition={{{Case.Account_Edition__c}}}&amp;Case_Survey_Number={{{Case.Survey_Number__c}}}&amp;gf_id={{{Recipient.Email}}}{{{Case.Id}}}&amp;gf_unique={{{Recipient.Email}}}{{{Case.Id}}}{{{Case.Days_since_last_email_sent_2__c}}}&amp;gf_q[11514510]=2" style="color: #FF8C00; text-decoration:none;">2</a> <span style="color: #ffffff">|</span> <a href="https://www.getfeedback.com/r/JgDES73s?Case_Contact_ID={{{Case.ContactId}}}&amp;Case_ID={{{Case.Id}}}&amp;Case_Account_ID={{{Case.Account_Account_ID__c}}}&amp;Case_Contact={{{Case.Contact}}}&amp;Case_Account={{{Case.Account}}}&amp;Case_Owner_Full_Name={{{Case.OwnerFullName}}}&amp;Case_Case_Number={{{Case.CaseNumber}}}&amp;Case_Closed_Date={{{Case.ClosedDate}}}&amp;Case_Support_Package={{{Case.Support_Package__c}}}&amp;Case_Origin={{{Case.Origin}}}&amp;Contact_Email={{{Recipient.Email}}}&amp;Case_Account_Tier={{{Case.Account_Tier__c}}}&amp;Case_Account_Edition={{{Case.Account_Edition__c}}}&amp;Case_Survey_Number={{{Case.Survey_Number__c}}}&amp;gf_id={{{Recipient.Email}}}{{{Case.Id}}}&amp;gf_unique={{{Recipient.Email}}}{{{Case.Id}}}{{{Case.Days_since_last_email_sent_2__c}}}&amp;gf_q[11514510]=1" style="color: #FF0000; text-decoration:none;">1</a></strong></span></p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Si vous avez besoin d'assistance et/ou d'information par rapport à ce cas, merci de <strong>répondre directement</strong> à cet email afin que nous puissions apporter plus d'aide, Si nous ne recevons pas de réponse de votre part nous considérerons ce cas comme résolu.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Cordialement,<br />
+						<strong>L'équipe de Support Client Brightcove</strong></p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Vous avez la possibilité de voir tout vos tickets avec notre&nbsp;<a href="https://supportportal.brightcove.com/">Support Portal</a>&nbsp;, les statuts actuels de notre système sont toujours disponibles à partir de notre&nbsp;<a href="https://status.brightcove.com/">Status Page</a>.<br />
+						<br />
+						{{{Case.E2CP__Case_Thread_Id__c}}}</p>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</center>
+</div>
+</body>
+</html>

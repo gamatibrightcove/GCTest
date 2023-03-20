@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "15df661f-3e4d-46f4-bd98-8ccc7a5b73d3",
+  "appPageId" : "5072d3ab-f41f-4fa7-b393-eb19f68c4342",
+  "configurationTags" : [ ],
+  "id" : "e69cf91d-eec9-4f7b-bee3-154f739a8402",
+  "label" : "Register for An Account",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-registration",
+  "type" : "route",
+  "urlPrefix" : "registration"
+}

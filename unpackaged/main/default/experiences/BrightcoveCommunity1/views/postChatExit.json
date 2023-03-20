@@ -1,0 +1,48 @@
+{
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "1ace565d-bd3f-4ed5-9356-ecef94bb2473",
+  "label" : "Post Chat Exit",
+  "regions" : [ {
+    "id" : "4044d174-d04c-4e97-8499-cbc86c5984a3",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center\">Thank you for giving us your feedback!</p>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "4354b7a2-91c0-4471-869c-53266417658d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a08c3ebf-e0a7-4192-9e84-68b4d5f9fd13",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "df67d43d-1444-49d5-96ff-a3dfbf3bf7f2",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Post Chat Exit"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a01d8157-a6ae-41c8-ac42-5cd9fe16b181",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c9c76752-d8ed-43ec-b307-7ed88e09a721",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-post-chat-exit"
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Video Started After Countdown --></label>
+        <name>Video_Started_After_Countdown__c</name>
+    </CustomFieldTranslation>

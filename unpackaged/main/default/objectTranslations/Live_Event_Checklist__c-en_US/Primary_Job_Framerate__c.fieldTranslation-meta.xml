@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- 25 FPS / 30 FPS / 60 FPS --></help>
+        <label><!-- Primary Job Framerate --></label>
+        <name>Primary_Job_Framerate__c</name>
+    </CustomFieldTranslation>

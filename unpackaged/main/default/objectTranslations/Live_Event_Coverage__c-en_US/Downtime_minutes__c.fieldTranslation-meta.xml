@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If there were issues, for how long was the stream impacted? --></help>
+        <label><!-- Downtime minutes --></label>
+        <name>Downtime_minutes__c</name>
+    </CustomFieldTranslation>

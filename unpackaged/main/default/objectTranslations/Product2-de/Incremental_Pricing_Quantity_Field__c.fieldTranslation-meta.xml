@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When using QCP - Incremental Pricing this is the field on the Quote Line that is used to determine the quantity input --></help>
+        <label><!-- Incremental Pricing Quantity Field --></label>
+        <name>Incremental_Pricing_Quantity_Field__c</name>
+        <picklistValues>
+            <masterLabel>Number_of_Plays__c</masterLabel>
+            <translation><!-- Number_of_Plays__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Quantity__c</masterLabel>
+            <translation><!-- SBQQ__Quantity__c --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

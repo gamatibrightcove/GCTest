@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If checked bypasses product&apos;s Non Discountable status as it is required for a specific tier of pricing. Only used for Legacy pricing. --></help>
+        <label><!-- Custom Pricing Required --></label>
+        <name>Custom_Pricing_Required__c</name>
+    </CustomFieldTranslation>

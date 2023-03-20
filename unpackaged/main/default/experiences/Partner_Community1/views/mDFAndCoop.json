@@ -1,0 +1,33 @@
+{
+  "appPageId" : "2746e722-1a11-406a-a340-af73d0c0847c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "f925d202-292b-453a-8848-b884d9cd28f1",
+  "label" : "MDF and Coop",
+  "regions" : [ {
+    "id" : "35790291-64e1-46e8-97cb-26eb4091d035",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "             <p>                 <span style=\"font-size: 20px;\">Request and Manage your Market Developments Funds.</span>             </p>        "
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "e330a935-a6ef-496f-a80b-5e19253f6e4d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "97c4181d-6231-4eac-becb-37b6a9c048fb",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "88a2b4eb-f321-41f2-8d0a-4039eb92dc4b",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "mdf"
+}

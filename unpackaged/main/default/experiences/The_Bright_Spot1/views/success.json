@@ -1,0 +1,79 @@
+{
+  "appPageId" : "5072d3ab-f41f-4fa7-b393-eb19f68c4342",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "f2044910-f3cb-4b94-8b23-8dc9581366b1",
+  "label" : "Success",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "ec68c173-124b-4c9f-87df-94bc495ea8c9",
+          "columns" : [ {
+            "UUID" : "f7eaaf5d-2265-42ea-b278-4fdb1d5b319f",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "ec68c173-124b-4c9f-87df-94bc495ea8c9",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h2 style=\"text-align: center;\"><strong style=\"font-size: 16px; color: rgb(23, 43, 77);\">Thank you for joining The Bright Spot!</strong></h2><h2 style=\"text-align: center;\"><strong style=\"font-size: 16px; color: rgb(23, 43, 77);\">Check the email associated with your account for instructions to login.</strong></h2><h2 style=\"text-align: center;\"><strong style=\"font-size: 16px; color: rgb(23, 43, 77);\">If you do not receive the notification, please check your spam folder. </strong></h2><h2 style=\"text-align: center;\"><strong style=\"font-size: 16px; color: rgb(23, 43, 77);\">If you run into any problems, email </strong><a href=\"mailto:community@brightcove.com\" rel=\"noopener noreferrer\" target=\"null\" style=\"font-size: 16px; color: rgb(0, 82, 204); background-color: rgb(255, 255, 255);\"><strong>community@brightcove.com</strong></a></h2><p> </p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "5ad134c5-6e03-47be-8b4f-5a7e539713a2",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<h3 style=\"text-align: center;\"><a href=\"https://brightcovesupportcenter.force.com/thebrightspot/s/login/\" rel=\"noopener noreferrer\" target=\"_self\" style=\"font-size: 14px; color: rgb(0, 71, 178);\"><strong>Back to <u>Login</u></strong></a><strong style=\"color: rgb(102, 163, 224); font-family: helvetica;\">﻿</strong></h3>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "5da9b184-ad4d-4613-b115-bca5af339588",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f7eaaf5d-2265-42ea-b278-4fdb1d5b319f",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "eeb0bf74-e0d8-4f25-b8cc-b59e8eb9ee6e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Success"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a46945df-5920-4530-9e4b-6252017376ac",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "55ffb53a-8334-4fcb-ba42-bdfb261777ee",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-success"
+}

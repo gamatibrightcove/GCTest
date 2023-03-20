@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Black Screen or Slate Detection --></label>
+        <name>Black_Screen_or_Slate_Detection__c</name>
+    </CustomFieldTranslation>

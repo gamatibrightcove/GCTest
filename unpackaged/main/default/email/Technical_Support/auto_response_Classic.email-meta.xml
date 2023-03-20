@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>auto-response</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>auto-response Classic</name>
+    <style>none</style>
+    <subject>auto response - {!Case.Thread_Id} - {!Case.Subject}</subject>
+    <textOnly>{!Case.Support_Package__c} 
+{!Case.Account}
+ {!Case.Case}
+ {!Case.Thread_Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

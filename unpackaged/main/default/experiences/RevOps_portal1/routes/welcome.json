@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "8e62ab03-9cf6-4195-958d-7aaee08d931a",
+  "appPageId" : "78e82cba-2d3e-4a06-b8f4-2b7701c50289",
+  "configurationTags" : [ ],
+  "id" : "42790b69-2879-48ff-8e50-67ae0dc1edfc",
+  "label" : "Welcome",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-welcome",
+  "type" : "route",
+  "urlPrefix" : "welcome"
+}

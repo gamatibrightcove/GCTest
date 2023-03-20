@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;"><br />
+<span style="font-family:Arial,Helvetica,sans-serif;">Thank you for submitting your request to the Revenue Operations team. Information regarding your case is below:<br />
+<br />
+<span style="color:#e67e22;"><strong>Case Number</strong></span>:&nbsp;{{{Case.CaseNumber}}}<br />
+<span style="color:#e67e22;"><strong>Case Subject</strong></span>:&nbsp;{{{Case.Subject}}}<br />
+<span style="color:#e67e22;"><strong>Priority</strong></span>:&nbsp;{{{Case.Priority}}}<br />
+<br />
+A member of the revenue operations team will review your case shortly and will get back to you as soon as possible.<br />
+<br />
+If you have files, additional recipients, or additional information to provide that may help the Revenue Operations team resolve your request, please send them by replying to this email with the files attached.<br />
+<br />
+For more information/how-to please see the following tools:</span>
+<ul>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;">The </span><a href="https://brightcove.atlassian.net/wiki/spaces/REVOPS/overview"><span style="font-family:Arial,Helvetica,sans-serif;">Revenue Operations&nbsp;Knowledge</span></a> <span style="font-family:Arial,Helvetica,sans-serif;"> base&nbsp;</span></li>
+	<li><a href="https://thebhive.brightcovegallery.com/"><span style="font-family:Arial,Helvetica,sans-serif;">The B-Hive</span></a></li>
+</ul>
+<span style="font-family:Arial,Helvetica,sans-serif;">Thank you,<br />
+The Brightcove Revenue Operations team</span></body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "122d5725-ce2c-4b05-8143-4da3df50ae05",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "66879688-41e3-4626-ad63-29411b6ffb02",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Custom_Home_Embedded_Service_Chat_Component",
+  "id" : "12596b96-8816-4832-b304-dde1403cf145",
+  "type" : "experienceVariation"
+}

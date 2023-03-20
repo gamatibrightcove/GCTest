@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Bucketing of contact profile scores Strong (&gt; 80), Moderate (50-80), Weak (&lt; 50). --></help>
+        <label><!-- 6sense Contact Profile Fit --></label>
+        <name>x6sense_Contact_Profile_Fit__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Select which version this case is in regards to --></help>
+        <label>製品</label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>Audience Insights</masterLabel>
+            <translation><!-- Audience Insights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beacon</masterLabel>
+            <translation><!-- Beacon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove Campaign</masterLabel>
+            <translation><!-- Brightcove Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove Engage</masterLabel>
+            <translation><!-- Brightcove Engage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gallery</masterLabel>
+            <translation><!-- Gallery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HapYak</masterLabel>
+            <translation><!-- HapYak --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTT</masterLabel>
+            <translation><!-- OTT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ooyala</masterLabel>
+            <translation><!-- Ooyala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perform</masterLabel>
+            <translation><!-- Perform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PlayTV</masterLabel>
+            <translation><!-- PlayTV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Cloud</masterLabel>
+            <translation><!-- Video Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zencoder</masterLabel>
+            <translation><!-- Zencoder --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

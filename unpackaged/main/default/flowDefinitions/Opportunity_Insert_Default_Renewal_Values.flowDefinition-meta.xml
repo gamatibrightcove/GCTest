@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>3</activeVersionNumber>
+    <description>This flow sets the default values for renewal and add-on opportunity types. It also assigns the record type based on specific criteria</description>
+    <masterLabel>Opportunity - Before Insert - Default Values (Renewal/Add-On)</masterLabel>
+</FlowDefinition>

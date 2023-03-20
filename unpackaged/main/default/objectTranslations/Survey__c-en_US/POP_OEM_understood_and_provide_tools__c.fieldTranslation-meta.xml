@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Do you feel that your Onboarding Engagement Manager understood your company&apos;s video strategy and provided you the tools and training to help you achieve this? --></help>
+        <label><!-- POP OEM understood and provide tools --></label>
+        <name>POP_OEM_understood_and_provide_tools__c</name>
+    </CustomFieldTranslation>

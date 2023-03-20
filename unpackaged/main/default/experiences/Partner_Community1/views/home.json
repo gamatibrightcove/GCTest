@@ -1,0 +1,326 @@
+{
+  "appPageId" : "2746e722-1a11-406a-a340-af73d0c0847c",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "49a99bd3-5ed9-4a2c-a837-747e9aa2919c",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><br></p><p style=\"text-align: center;\"><strong style=\"color: rgb(51, 60, 78); font-size: 24px; background-color: rgb(254, 254, 254);\">Brightcove News</strong></p><p style=\"text-align: center;\"><br></p><p style=\"text-align: center;\"><br></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "2f4f12f5-5c8d-4d0b-8dda-12d900896f7f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f1c5a9aa-4f8b-437f-b7de-01a690002211",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "4177755d-d064-4511-a46f-815d70fe193f",
+          "activeTab" : "tab1",
+          "tabs" : [ {
+            "UUID" : "084ac15a-f36f-4889-8453-5b9d55e8604d",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "type" : "Home"
+              },
+              "fqn" : "forceCommunity:forceCommunityFeed"
+            } ],
+            "tabKey" : "tab2",
+            "tabName" : "ALL COMPANY"
+          }, {
+            "UUID" : "5399215b-7996-4df4-92b9-052431919c4d",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "fff87",
+            "tabName" : "WHAT I FOLLOW"
+          }, {
+            "UUID" : "23891f55-02ad-418c-b4a5-2ff7ef15a291",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "801d5",
+            "tabName" : "TO ME"
+          }, {
+            "UUID" : "4c43a8ab-cd90-4e9c-89f6-76318b3e679b",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "15395",
+            "tabName" : "CALENDAR"
+          }, {
+            "UUID" : "bfd32a33-19b3-4968-94a3-4fd2cad855cb",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "68dff",
+            "tabName" : "BOOKMARKED"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "4177755d-d064-4511-a46f-815d70fe193f",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "",
+            "defaultSortOrderHomeFeed" : "Relevance",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "feedDesign" : "DEFAULT",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "Home"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "481632ac-c397-4f27-a62b-6951313ecd02",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "084ac15a-f36f-4889-8453-5b9d55e8604d",
+        "regionLabel" : "ALL COMPANY",
+        "regionName" : "tab2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p>Use this HTML Editor to add your own markup.</p>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "3ac5fb3d-895c-4439-b58e-1b7040c48bce",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "context" : "GLOBAL",
+            "recordId" : "{!recordId}",
+            "width" : "SMALL"
+          },
+          "componentName" : "forceCommunity:feedPublisher",
+          "id" : "01441eb9-cfb4-40cc-af94-fc3f9a61b61e",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "",
+            "defaultSortOrderHomeFeed" : "Relevance",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "feedDesign" : "DEFAULT",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "News"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "5520919e-7286-4623-bedc-fde76ff61ee2",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "5399215b-7996-4df4-92b9-052431919c4d",
+        "regionLabel" : "WHAT I FOLLOW",
+        "regionName" : "fff87",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<hr style=\"margin:0px !important; border-color:#cccccc !important\">"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "fe5dfb2c-c4ef-47fd-a753-485da5159cff",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "context" : "GLOBAL",
+            "recordId" : "{!recordId}",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:feedPublisher",
+          "id" : "19d82fe4-6f8e-496f-82a4-279f19632fe2",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "",
+            "defaultSortOrderHomeFeed" : "Relevance",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "feedDesign" : "DEFAULT",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "UserProfile"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "0276bdea-0088-48da-bed3-68e5ff97b333",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "23891f55-02ad-418c-b4a5-2ff7ef15a291",
+        "regionLabel" : "TO ME",
+        "regionName" : "801d5",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "showCreateNewCalendar" : false,
+            "showOtherCalendars" : false,
+            "showSidebar" : true
+          },
+          "componentName" : "forceCommunity:calendar",
+          "id" : "64f58e71-5f77-4265-b728-f7f4889d35ff",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "4c43a8ab-cd90-4e9c-89f6-76318b3e679b",
+        "regionLabel" : "CALENDAR",
+        "regionName" : "15395",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<hr style=\"margin:0px !important; border-color:#cccccc !important\">"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "d30fb337-0dc4-43b1-901d-846204ea336a",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "",
+            "defaultSortOrderHomeFeed" : "Relevance",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "feedDesign" : "DEFAULT",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "Bookmarks"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "c1ee295b-0af7-43c5-b65d-85b37ae01995",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "bfd32a33-19b3-4968-94a3-4fd2cad855cb",
+        "regionLabel" : "BOOKMARKED",
+        "regionName" : "68dff",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "canChangeSorting" : true,
+        "defaultFilter" : "",
+        "defaultSortOrderHomeFeed" : "Relevance",
+        "defaultSortOrderTopicsFeed" : "Relevance",
+        "feedDesign" : "DEFAULT",
+        "hasFeedSearch" : true,
+        "subjectId" : "{!recordId}",
+        "type" : "Home"
+      },
+      "componentName" : "forceCommunity:forceCommunityFeed",
+      "id" : "abf1ab21-7fbd-4ca5-9391-f73789ce6aed",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cc51800e-d82f-4022-af97-98c3fd778386",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "rgb(254, 254, 254)",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 100,
+        "buttonRadius" : 0,
+        "buttonTextColor" : "rgba(66, 202, 91, 0)",
+        "buttonTextHoverColor" : "",
+        "confirmationMessage" : "Got it!",
+        "followUpPromptLabel" : "Can we close your question?",
+        "isAskFollowPromptEnabled" : true,
+        "isIncludeArticlesEnabled" : false,
+        "isIncludeDiscussionsEnabled" : true,
+        "isInitialSatisfactionPromptEnabled" : true,
+        "isPublisherDeflectionEnabled" : true,
+        "label" : "Make a Post",
+        "maxSuggestions" : 5,
+        "satisfactionPromptLabel" : "Did we help to answer your question?",
+        "showDetails" : true,
+        "showTopics" : true,
+        "uneditableTopics" : false
+      },
+      "componentName" : "forceCommunity:askCommunity",
+      "id" : "aa13ea00-fe21-43fe-8626-a9df3531c38e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : true,
+          "name" : "NewCustomerSuppCase"
+        } ],
+        "label" : "Contact Support"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "a6671a67-272a-4e2a-a0b4-e52f09e3c5d7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "headerLabel" : "Announcement",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:groupAnnouncement",
+      "id" : "3fe80d2e-3a7f-4531-b7ae-beaaa135e562",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5f9ed31b-4dff-46bc-a4d4-1230e9dc60c7",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "99d220d7-a22b-4d9c-b78c-4d95d310711e",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ec7da55e-cdd0-4c43-a4fa-834c75946f3c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "914ab5a9-e587-4764-a6f6-4d3fa97dba37",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

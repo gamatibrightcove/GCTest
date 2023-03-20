@@ -1,0 +1,163 @@
+{
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "f3957729-fa5b-4e53-a420-6b77988d64d8",
+  "label" : "Platinum Support Package",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "e839b4ce-b681-412b-a7f1-8ee46a442dfe",
+          "columns" : [ {
+            "UUID" : "f80a6950-96fc-491d-9783-42c1eaa65b2e",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "8",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "1895d4e4-03d7-41a3-84e2-f50eb71b6d83",
+            "columnKey" : "347e9",
+            "columnName" : "Column 2",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "e839b4ce-b681-412b-a7f1-8ee46a442dfe",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"details-summary\">\n    <h1 class=\"details-title\">Platinum Support Package Details</h1>\n    <p class=\"summary-paragraph\">In addition to all of the benefits of Gold Support, \n        Platinum Support provides true 24 x 7 x 365 assistance for ALL Support Requests, \n        while providing industry leading response times. Platinum Support also receives \n        the highest queue priority for all requests, ensuring your technical needs are \n        addressed as quickly as possible day or night. A dedicated Support Team handles \n        all Platinum cases during Business Hours and is available for monthly calls if \n        so desired.\n    </p>\n</div>\n<hr>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "b3305890-8e71-4572-9b84-fef595ede8f9",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "ja" : "c54bd9cf-4a7f-40b7-9e09-00332ad5053b"
+          },
+          "renditions" : [ {
+            "id" : "c54bd9cf-4a7f-40b7-9e09-00332ad5053b",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<div class=\"details-summary\">\n    <h1 class=\"details-title\">Platinum サポートパッケージ詳細</h1>\n    <p class=\"summary-paragraph\">Platinum サポートは、Gold  サポートの全サービスに加え、\n        ネームドコンタクトとしてご登録いただいたご担当者様への 24 時間年中無休のサポートを提供致します。Platinum サポートをご購入のお客様からのお問い合わせは、他のサポートパッケージのお客様よりも優先して対応させていただきます。\n    </p>\n</div>\n<hr>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<h2 class=\"details-sub\">Availability</h2>\n<h3 class=\"details-subsub\">Business Hours*</h3>\n<p class=\"details-paragraph\">Business Hours for Brightcove Support are Monday - Friday from 9 AM – 6 PM (excluding holidays).</p>\n<p class=\"details-paragraph\">Local Time is North America, Europe (GMT), Sydney, & Tokyo. Your contract will define the specific Business Hours available to you (typically based on region).</p>\n<h3 class=\"details-subsub\">Off Hours:</h3>\n<p class=\"details-paragraph\">Weekends, Holidays and 6 PM – 9 AM Local Time, Monday – Friday</p>\n<br>\n<p class=\"details-paragraph\">*Live Chat (Named Contacts only) and access to the Dedicated Support Team are only available during Business Hours.</p>\n<br>\n<h2 class=\"details-sub\">Named Contacts</h2>\n<p class=\"details-paragraph\">15 Named Contacts per organization (Additional contacts available) with the Platinum Support Package.</p>\n<br>\n<h2 class=\"details-sub\">Support Channels</h2>\n<p class=\"details-paragraph\">Unlimited Email Support</p>\n<p class=\"details-paragraph\">Portal Access for Named Contacts</p>\n<p class=\"details-paragraph\">Phone Support for Named Contacts</p>\n<p class=\"details-paragraph\">Live Chat for Named Contacts</p>\n<br>\n<h2 class=\"details-sub\">Response Times</h2>\n<h3 class=\"details-subsub\">Business and Off Hours:</h3>\n<p class=\"details-paragraph\"><b>Critical Requests – 15 Minutes</b></p>\n<p class=\"details-paragraph\">Critical Requests include loss of the Brightcove Service or critical loss of significant publishing availability specific to a live production player.</p>\n<br>\n<p class=\"details-paragraph\"><b>Important Requests – 30 Minutes</b></p>\n<p class=\"details-paragraph\">Important Requests are those where the Brightcove Service is operational, but there are blocking issues regarding expected publishing capabilities specific to a live production player.</p>\n<br>\n<p class=\"details-paragraph\"><b>Normal Requests – 1 Hour</b></p>\n<p class=\"details-paragraph\">Normal Requests are all inquiries which are not defined as Critical or Important</p>\n<br>\n<h2 class=\"details-sub\">Dedicated Support Team</h2>\n<p class=\"details-paragraph\">Having a Platinum Package gives you access to a Dedicated Support Team during business hours. This familiarity results in faster case resolution and better understanding on how you use Brightcove products.</p>\n<br>\n<p class=\"details-paragraph\">It is required that anyone submitting an issue is a registered user with Brightcove. Only Named Support Contacts can submit Critical Issues. All other registered users can submit non-Critical Issues using the web form.</p>\n<br>\n<h2 class=\"details-sub\">Live Event Support</h2>\n<p class=\"details-paragraph\">Included in your Platinum Package is Support for three Live Events (max. of 4 hours per Live Event) included at no cost. Please consult your Account Manager for further information.</p>\n<h2 class=\"details-sub\">Health Check-In</h2>\n<p class=\"details-paragraph\">You may schedule one Health Check-In Package per 12 month period at an agreed date and time. At that time you will receive up to 16 non-contiguous hours of remote best practices services. Please consult with your Account Manager for more information. Consultations may include:</p>\n<ul class=\"details-paragraph\">\n    <li>Implementation analysis in which Brightcove will examine your use of the Brightcove Service</li>\n    <li>Consultation regarding Company’s digital content strategy</li>\n    <li>Optimization of Company’s use of the Brightcove Service</li>\n    <li>Review of Company’s technical and business challenges and collaboration with Brightcove account management to recommend an appropriate engagement model for further assistance, if needed.</li>\n</ul>\n<br>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "f5001543-a963-49cc-9b4e-ac373fd86be8",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "ja" : "dd303a57-dabd-4800-8d25-e16e964f9465"
+          },
+          "renditions" : [ {
+            "id" : "dd303a57-dabd-4800-8d25-e16e964f9465",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<h2 class=\"details-sub\">ご利用可能時間</h2>\n<h3 class=\"details-subsub\">営業時間</h3>\n<p class=\"details-paragraph\">月～金、日本時間午前10時～午後6時 (祝祭日を除く)</p>\n<h3 class=\"details-subsub\">営業時間外</h3>\n<p class=\"details-paragraph\">営業時間以外の全時間</p>\n<br>\n<p class=\"details-paragraph\">*ライブチャットサポートは営業時間内(平日の日本時間午前10時～午後6時)でご利用可能となります。</p>\n<br>\n<h2 class=\"details-sub\">ネームドコンタクト</h2>\n<p class=\"details-paragraph\">15 名様まで</p>\n<br>\n<h2 class=\"details-sub\">サポートチャネル</h2>\n<p class=\"details-paragraph\">無制限のメールでのサポート</p>\n<p class=\"details-paragraph\">サポートポータル</p>\n<p class=\"details-paragraph\">電話サポート(ネームドコンタクトのみ)</p>\n<p class=\"details-paragraph\">ライブチャット(ネームドコンタクトのみ)</p>\n<br>\n<h2 class=\"details-sub\">初回応答時間</h2>\n<h3 class=\"details-subsub\">営業時間および営業時間外:</h3>\n<p class=\"details-paragraph\"><b>致命的な問題 (P1) – 15 分</b></p>\n<p class=\"details-paragraph\">致命的な問題 とは、ブライトコーブ・サービスを使用した重要なオペレーションができない状態を意味します。</p>\n<br>\n<p class=\"details-paragraph\"><b>重要な問題 (P2) – 30 分</b></p>\n<p class=\"details-paragraph\">重要な問題 とは、ブライトコーブ・サービスを使用したオペレーションができるが、その機能性が顕著に低下している状態を意味します。</p>\n<br>\n<p class=\"details-paragraph\"><b>その他の問題 – 1 時間</b></p>\n<p class=\"details-paragraph\">その他の問題 とは、致命的な問題及び重要な問題に該当しないその他すべての課題（一般的問い合わせも含む）を意味します。</p>\n<br>\n<h2 class=\"details-sub\">専用のサポートチーム:</h2>\n<p class=\"details-paragraph\">営業時間内、貴社のユースケースを理解した専用のサポートチームメンバーが対応をさせていただきます。これにより、問題解決までの時間を短縮する事が見込めます。</p>\n<br>\n<p class=\"details-paragraph\">致命的な問題に関しましては、ネームドコンタクトとしてご登録いただいているご担当者様のみからお問い合わせください。</p>\n<br>\n<h2 class=\"details-sub\">ライブイベントサポート</h2>\n<p class=\"details-paragraph\">Platinum (+) サポートパッケージでは、ライブ・イベント3回（1回の最大時間は4時間）のサポートを無償で含みます。ライブイベントサポートの詳細につきましては、担当アカウトマネージャまでご連絡いただけますようお願い致します。</p>\n<h2 class=\"details-sub\">ヘルスチェックイン</h2>\n<p class=\"details-paragraph\">ご契約の12ヶ月の間、事前に予約した日程で合計16時間分のヘルスチェックインをご利用いただけます。ヘルスチェックインは、主に下記の内容が含まれます。</p>\n<ul class=\"details-paragraph\">\n    <li>Brightcove サービスを有効的にご活用いただくためのコンサルティング業務</li>\n    <li>デジタルコンテンツストラテジーに関するコンサルティング業務</li>\n</ul>\n<br>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "f80a6950-96fc-491d-9783-42c1eaa65b2e",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"bc-card\">\n    <h3 class=\"card-title\">Named Support Contacts may call during all hours:</h3>\n    <br>\n    <h4 class=\"card-sub\">Current Support Numbers:</h4>\n        <p class=\"card-paragraph\">US: <a href=\"tel: +1 617 395 0500\">+1 617 395 0500</a></p>\n    <p class=\"card-paragraph\">UK: <a href=\"tel: +44 (0)203 513 0133\">+44 (0)203 513 0133</a></p>\n    <p class=\"card-paragraph\">Singapore: <a href=\"tel: +65 64 94 8870\">+65 64 94 8870</a></p>\n    <p class=\"card-paragraph\">France: <a href=\"tel: +33 174 181 427\">+33 174 181 427</a></p>\n    <p class=\"card-paragraph\">Spain: <a href=\"tel: +34 935 452 219\">+34 935 452 219</a></p>\n    <p class=\"card-paragraph\">Netherlands: <a href=\"tel: +31 207 083 795\">+31 207 083 795</a></p>\n    <p class=\"card-paragraph\">Germany: <a href=\"tel: +49 408 740 8204\">+49 408 740 8204</a></p>\n    <p class=\"card-paragraph\">Australia <a href=\"tel: +61 2 8520 3718\">+61 2 8520 3718</a></p>\n    <p class=\"card-paragraph\">Mexico <a href=\"tel: +52 55 462 40112\">+52 55 462 40112</a></p>\n    <p class=\"card-paragraph\">Colombia <a href=\"tel: +57 150 87521\">+57 150 87521</a></p>\n    <br>\n    <p class=\"card-paragraph\">While we cover several languages within our support organization, we cannot guarantee that your call will be answered in your specific language.</p>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "963bc391-d217-408c-9f63-27fc04db4789",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "ja" : "5275afb9-ab8d-4f8e-8973-04384d2ea263"
+          },
+          "renditions" : [ {
+            "id" : "5275afb9-ab8d-4f8e-8973-04384d2ea263",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<div class=\"bc-card\">\n    <h3 class=\"card-title\">電話サポート</h3>\n    <br>\n    <h4 class=\"card-sub\">お電話でのお問い合わせは、下記の番号で承っております。</h4>\n    <p class=\"card-paragraph\">平日午前10時〜午後6時までの電話番号: <a href=\"tel: 03-6453-7733\">03-6453-7733</a></p>\n    <p class=\"card-paragraph\">上記の時間帯以外の電話番号(必ず留守番電話にメッセージをお残しください): <a href=\"tel: 03-4588-1446\">03-4588-1446</a></p>\n    <br>\n    <p class=\"card-paragraph\">お電話でのお問い合わせは、ネームドコンタクトにご登録いただいているご担当者様に限らせていただいておりますので、予めご了承ください。</p>\n</div>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "1895d4e4-03d7-41a3-84e2-f50eb71b6d83",
+        "regionLabel" : "Column 2",
+        "regionName" : "347e9",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "90fc867b-b6e8-4733-b905-a3ff4e7612e5",
+          "columns" : [ {
+            "UUID" : "439e0f2e-5be6-4f07-8085-ca54f5a19f8f",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 80
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "90fc867b-b6e8-4733-b905-a3ff4e7612e5",
+      "regions" : [ {
+        "id" : "439e0f2e-5be6-4f07-8085-ca54f5a19f8f",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6b9a32ff-fd6e-43d5-8296-0d4864b98739",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Support Package Details"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c7cadb17-d648-40fb-bcc2-5a42a1e58378",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cdc96e41-839c-41c2-85fa-879c0318dad1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-support-package-details"
+}

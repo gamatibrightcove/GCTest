@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Meets / Exceeds highest output rendition? --></help>
+        <label><!-- Backup Job Bitrate --></label>
+        <name>Backup_Job_Bitrate__c</name>
+    </CustomFieldTranslation>

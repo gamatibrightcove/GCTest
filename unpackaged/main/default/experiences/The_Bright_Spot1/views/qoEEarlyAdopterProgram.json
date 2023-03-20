@@ -1,0 +1,85 @@
+{
+  "appPageId" : "5072d3ab-f41f-4fa7-b393-eb19f68c4342",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "cad080b4-b94f-42c8-8d69-b16bd10920af",
+  "label" : "QoE Early Adopter Program",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "107cbc3f-4a16-4b0b-9e51-d16fde5751f9",
+          "columns" : [ {
+            "UUID" : "099cc98e-5674-4fe4-a35c-88e9ea63722d",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "107cbc3f-4a16-4b0b-9e51-d16fde5751f9",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "bannerText" : "",
+            "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+            "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+            "pageType" : "",
+            "showSubTopics" : false,
+            "title" : "Early Adopter Program at Brightcove",
+            "uniqueNameOrId" : "QoE Early Adopter Program"
+          },
+          "componentName" : "forceCommunity:headline",
+          "id" : "0337117e-67e6-4ce3-bf24-cc76ca5e6ae1",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 16px; background-color: transparent;\">Brightcove is introducing a new offering for our media customers to provide QoE analytics and insights, strengthening our OTT offering. This initiative will bolster Brightcove’s live, linear and advertising solutions with standards-based streaming performance reporting plus insights into business impact.&nbsp;&nbsp;</span></p><p style=\"text-align: center;\"><br></p><p><span style=\"font-size: 16px; background-color: transparent;\">As part of this roll out, we are inviting you to be a part of our early adopter program to pilot this new functionality available in our Analytics module.&nbsp;</span></p><p><br></p><p style=\"text-align: center;\"><a href=\"https://forms.gle/y6YvLYF6XD6kXzWB6\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px; color: rgb(255, 255, 255); background-color: rgb(0, 71, 178);\">I am interested, take me to the sign up form</a></p><p><br></p><p><span style=\"font-size: 16px; background-color: transparent;\">By opting into this you will first get access to a well curated set of QOE analytics focused on the following:&nbsp;</span></p><p><br></p><ul><li><strong style=\"font-size: 16px; background-color: transparent;\">Troubleshooting</strong><span style=\"font-size: 16px; background-color: transparent;\">: What errors are my customers encountering? Are there issues with player, cdn, encoding that I should address?&nbsp;</span></li><li><strong style=\"font-size: 16px; background-color: transparent;\">Reporting</strong><span style=\"font-size: 16px; background-color: transparent;\">: How is my service performing across key QOE metrics? Are there trends that I should be aware of and address?&nbsp;</span></li><li><strong style=\"font-size: 16px;\">Monitoring</strong><span style=\"font-size: 16px;\">: Tracking of near real time metrics that can provide indication of consumer impact.&nbsp;</span></li></ul><p><br></p><p><strong style=\"font-size: 16px; background-color: transparent;\">We are still in the process of developing our insights portion of this product, but once we do, you will also get </strong><span style=\"font-size: 16px; background-color: transparent;\">QOE insights that enable you to understand correlations of analytics to business impacts and recommended interventions. These insights fall into the following categories:</span></p><p><br></p><ul><li><strong style=\"font-size: 16px; background-color: transparent;\">QOE Tolerance</strong><span style=\"font-size: 16px; background-color: transparent;\">: Understand when QOE metrics have an impact on user engagement</span></li><li><strong style=\"font-size: 16px; background-color: transparent;\">QOE Benchmarks</strong><span style=\"font-size: 16px; background-color: transparent;\">: Get&nbsp;&nbsp;a sense for how their QOE metrics compare to those of other customers</span></li><li><strong style=\"font-size: 16px; background-color: transparent;\">QOE Recommendations: </strong><span style=\"font-size: 16px; background-color: transparent;\">Based on heat map of error codes and QOE Metric thresholds, suggest areas for improvement</span></li></ul><p><br></p><p><span style=\"font-size: 16px; background-color: transparent;\">If you are interested in participating in this Early Adopter Program, fill in this </span><a href=\"https://forms.gle/jv9d3eYHsTU8ccc1A\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">short form</a><span style=\"font-size: 16px; background-color: transparent;\"> and our team will be in touch with you.&nbsp;</span></p><p><span style=\"font-size: 16px;\">&nbsp;</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "7d534e29-a2ab-4b9b-afa1-e8ce8f90caa4",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "099cc98e-5674-4fe4-a35c-88e9ea63722d",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "62255cd7-f7be-48c9-9981-6bd5abb4f29d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "QoE Early Adopter Program"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "bca71e8d-9c37-4e3b-9caf-5ea0eb5ca7a1",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "88c69d66-2b42-4952-b6ad-b5107343caf5",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-qoe-early-adopter-program"
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- T2 Dev Case Escalated By --></label>
+        <name>T2_Dev_Case_Escalated_By__c</name>
+        <relationshipLabel><!-- Cases (T2 Dev Case Escalated By) --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Include an additional list of email addresses separated by &apos;;&apos; semi-column --></help>
+        <label><!-- Additional CC --></label>
+        <name>Additional_CC__c</name>
+    </CustomFieldTranslation>

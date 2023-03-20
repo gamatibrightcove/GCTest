@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>AutoResponse email when a case is created for automated or premium monitoring</description>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>AutoResponse - NOC Monitoring - Japanese</name>
+    <style>none</style>
+    <subject>ライブストリームモニタリングアラート {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>LIVE STREAM MONITORING ALERT
+
+Hello {!Contact.FirstName},
+
+Our Network Operations Center has identified a potential issue impacting your live stream. We will contact you with more details shortly. A case was created with the following information:
+
+Case Number: {!Case.CaseNumber}
+Opened on: {!Case.CreatedDate}
+Subject: {!Case.Subject}
+
+Feel free to reply to this email with questions.
+
+Best regards, The Brightcove Network Operations Center
+
+You can see all of your cases in our Support Portal, and current system status is always available on our Status Page.
+
+Trouble seeing this email? View it as a Web page.
+Terms &amp; Conditions | Privacy | Preferences &amp; Unsubscribe
+©2020 Brightcove Inc. All rights reserved. 290 Congress Street 4th Floor, Boston MA 02210, USA</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

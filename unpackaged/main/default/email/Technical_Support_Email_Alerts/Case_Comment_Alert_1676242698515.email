@@ -1,0 +1,9 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">{{{Case.CaseNumber}}} for {{{Case.Account}}}{{{Case.Sales_Ops_Related_Account__c}}} has a new comment.<br />
+<a href="https://brightcove.my.salesforce.com/%7%7%7BCase.Id%7D%7D%7D" target="_blank">https://brightcove.my.salesforce.com/{{{Case.Id}}}</a><br />
+<br />
+{{{Case.Latest_Comment__c}}}</body>
+</html>

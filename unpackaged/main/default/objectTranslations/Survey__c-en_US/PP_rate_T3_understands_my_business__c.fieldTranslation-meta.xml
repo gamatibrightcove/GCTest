@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please rate your Tier 3 support rep:
+Understands my business and goals --></help>
+        <label><!-- PP rate T3 understands my business --></label>
+        <name>PP_rate_T3_understands_my_business__c</name>
+    </CustomFieldTranslation>

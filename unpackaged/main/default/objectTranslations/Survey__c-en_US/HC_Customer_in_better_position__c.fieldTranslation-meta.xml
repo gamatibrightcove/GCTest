@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Because of this program, I am in a better position to achieve my digital content strategy. --></help>
+        <label><!-- HC Customer in better position --></label>
+        <name>HC_Customer_in_better_position__c</name>
+    </CustomFieldTranslation>

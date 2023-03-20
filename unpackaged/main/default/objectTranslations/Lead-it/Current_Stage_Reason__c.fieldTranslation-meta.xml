@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Current Stage Reason --></label>
+        <name>Current_Stage_Reason__c</name>
+        <picklistValues>
+            <masterLabel>---------- A. Procedural ----------</masterLabel>
+            <translation><!-- - - - - - - - - - -  A. Procedural - - - - - - - - - -  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>---------- B. Bad data ----------</masterLabel>
+            <translation><!-- - - - - - - - - - -  B. Bad data - - - - - - - - - -  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>---------- C. Failure to communicate ----------</masterLabel>
+            <translation><!-- - - - - - - - - - -  C. Failure to communicate - - - - - - - - - -  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>---------- D. Not looking for solution ----------</masterLabel>
+            <translation><!-- - - - - - - - - - -  D. Not looking for solution - - - - - - - - - -  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>---------- E. Need exists but cannot sell ----------</masterLabel>
+            <translation><!-- - - - - - - - - - -  E. Need exists but cannot sell - - - - - - - - - -  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Already customer</masterLabel>
+            <translation><!-- Already customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Already working (duplicate)</masterLabel>
+            <translation><!-- Already working (duplicate) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad contact information</masterLabel>
+            <translation><!-- Bad contact information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business issue</masterLabel>
+            <translation><!-- Business issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chose another solution</masterLabel>
+            <translation><!-- Chose another solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clearing my workspace</masterLabel>
+            <translation><!-- Clearing my workspace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Could not engage</masterLabel>
+            <translation><!-- Could not engage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Functional limitation</masterLabel>
+            <translation><!-- Functional limitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job seeker</masterLabel>
+            <translation><!-- Job seeker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Keeping existing solution</masterLabel>
+            <translation><!-- Keeping existing solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left organization</masterLabel>
+            <translation><!-- Left organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Must work through 3rd party</masterLabel>
+            <translation><!-- Must work through 3rd party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No authority for solution</masterLabel>
+            <translation><!-- No authority for solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No interest in video</masterLabel>
+            <translation><!-- No interest in video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No problem to solve</masterLabel>
+            <translation><!-- No problem to solve --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No timeline for solution</masterLabel>
+            <translation><!-- No timeline for solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not a business</masterLabel>
+            <translation><!-- Not a business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not in relevant role</masterLabel>
+            <translation><!-- Not in relevant role --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not my territory</masterLabel>
+            <translation><!-- Not my territory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not properly qualified</masterLabel>
+            <translation><!-- Not properly qualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Released due to SLA</masterLabel>
+            <translation><!-- Released due to SLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stopped communicating</masterLabel>
+            <translation><!-- Stopped communicating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trash (Spam)</masterLabel>
+            <translation><!-- Trash (Spam) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unconfirmed possible need</masterLabel>
+            <translation><!-- Unconfirmed possible need --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unworkable economics</masterLabel>
+            <translation><!-- Unworkable economics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor</masterLabel>
+            <translation><!-- Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working other targets</masterLabel>
+            <translation><!-- Working other targets --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Coaching Recipient --></label>
+        <name>Escalation_Follow_up_Recipient__c</name>
+        <relationshipLabel><!-- Cases (Coaching Recipient) --></relationshipLabel>
+    </CustomFieldTranslation>

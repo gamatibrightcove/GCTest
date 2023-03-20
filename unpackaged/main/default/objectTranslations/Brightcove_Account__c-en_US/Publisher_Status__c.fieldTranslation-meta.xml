@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Current status of the publisher&apos;s account. Updated via sync from origin-services account. --></help>
+        <label><!-- Publisher Status --></label>
+        <name>Publisher_Status__c</name>
+        <picklistValues>
+            <masterLabel>APPROVED</masterLabel>
+            <translation><!-- APPROVED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLOSED</masterLabel>
+            <translation><!-- CLOSED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DENIED</masterLabel>
+            <translation><!-- DENIED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENROLLED</masterLabel>
+            <translation><!-- ENROLLED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOCKED</masterLabel>
+            <translation><!-- LOCKED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOCKED_NON_PAYMENT</masterLabel>
+            <translation><!-- LOCKED_NON_PAYMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOCKED_TRIAL_EXPIRED</masterLabel>
+            <translation><!-- LOCKED_TRIAL_EXPIRED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDING</masterLabel>
+            <translation><!-- PENDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNREQUESTED</masterLabel>
+            <translation><!-- UNREQUESTED --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

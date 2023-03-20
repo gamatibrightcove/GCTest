@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html style="overflow-y: hidden;">
+<head>
+	<title>Brightcove Support - Your Support Request has been received</title>
+</head>
+<body style="height: auto; min-height: auto;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0;" width="625">
+	<tbody>
+		<tr>
+			<td style="width: 100.0000%;">
+			<p><span style="font-size:26px;"><strong>サポートへのお問い合せを承りました</strong></span><br />
+			<br />
+			&nbsp;{{{Case.LastName_JP__c}}}様</p>
+
+			<p><br />
+			<br />
+			ブライトコーブサポートへのお問合せ誠にありがとうございます。下記のとおり、お問い合わせを承りました。</p>
+
+			<p>サポートケース番号: <strong>{{{Case.CaseNumber}}}</strong><br />
+			サポートケース作成日:&nbsp;<strong>{{{Case.CreatedDate}}}</strong><br />
+			表題:&nbsp;<strong>{{{Case.Subject}}}</strong></p>
+
+			<p>本メールは自動応答となっておりますが、後ほど、担当者がお問い合わせをレビューし、ご連絡差し上げます。</p>
+
+			<p>該当のお問い合わせに関して、添付ファイル等、追加での情報等がございましたら、本メールに返信する形でご連絡いただけますようお願い致します。</p>
+
+			<p><strong>ブライトコーブサポートチーム</strong></p>
+
+			<p>お客様の全てのサポートケースは、<a href="https://supportportal.brightcove.com/">サポートポータル</a>にてご覧いただけます。また、現在のシステム稼働状況は&nbsp;<a href="https://status.brightcove.com/">システムステータスページ</a>にてご覧いただけます。<br />
+			&nbsp;</p>
+
+			<table class="support-table" style="font-family:'Arial';color:#000000;font-size: 16px; margin-top: 0px; margin-bottom: 10px; width: 580px; border-collapse: collapse;">
+				<tbody>
+					<tr>
+						<td class="availability" style="border-bottom: 1.8px solid rgb(211, 211, 211); text-align: left; padding: 10px 1em; vertical-align: top;">&nbsp;</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: top;width: 93px;">
+						<p style="font-size: 14px; line-height: 22px;font-weight:bold;text-align:center;">SILVER</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: top;width: 93px;">
+						<p style="font-size: 14px; line-height: 22px;font-weight:bold;text-align:center;">GOLD</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: top;width: 93px;">
+						<p style="font-size: 14px; line-height: 22px;font-weight:bold;text-align:center;">PLATINUM</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: top;width: 93px;">
+						<p style="font-size: 14px; line-height: 22px;font-weight:bold;text-align:center;">PLATINUM +</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="availability" style="border-bottom: 1.8px solid rgb(211, 211, 211); text-align: left; padding: 10px 1em; vertical-align: center;">
+						<p style="font-size: 12px; line-height: 22px;">致命的な問題<br />
+						(初回応答)</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">2 営業時間</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">30 分</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">15 分</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">15 分</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="availability" style="border-bottom: 1.8px solid rgb(211, 211, 211); text-align: left; padding: 10px 1em; vertical-align:center;">
+						<p style="font-size: 12px; line-height: 22px;">重要な問題<br />
+						(初回応答)</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">9 営業時間</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">1 営業時間</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">30 分</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">30 分</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="availability" style="border-bottom: 1.8px solid rgb(211, 211, 211); text-align: left; padding: 10px 1em; vertical-align:center;">
+						<p style="font-size: 12px; line-height: 22px;">その他の問題<br />
+						(初回応答)</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">9 営業時間</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">2 営業時間</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">1 時間</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">1 時間</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="availability" style="border-bottom: 1.8px solid rgb(211, 211, 211); text-align: left; padding: 10px 1em; vertical-align:center;">
+						<p style="font-size: 12px; line-height: 22px;">**ライブイベントサポート</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">&nbsp;</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">1 イベント</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">3 イベント</p>
+						</td>
+						<td class="details" style="border-bottom: 1.8px solid rgb(211, 211, 211); padding: 10px 10px; vertical-align: center;text-align:center;">
+						<p style="font-size: 12px; line-height: 22px;text-align:center;">3 イベント</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p style="font-family:'Arial';font-size:12px;color:#000000">*営業時間のみ、且つ、Gold サポート以下ではチャット及び Call Me Now は 英語のみでの提供となります。<br />
+			**ライブイベントサポートで１イベントとカウントされる長さは最大で 4 時間までとなります</p>
+
+			<p style="font-family:'Arial';font-size:16px;color:#000000">Brightcove サービスにご登録されているユーザであればサポートポータルからどなたでもお問い合わせ可能ですが、致命的な問題やお電話でのお問い合わせはネームドコンタクトに限定させていただいております。なお、Platinum 及び Platinum Plus サポートは 2021年4月からの提供開始予定となっております。</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><br />
+<span style="font-family: Arial, Helvetica, sans-serif;">&nbsp;<br />
+{{{Case.E2CP__Case_Thread_Id__c}}}</span></p>
+
+<p><br />
+<span style="font-size:20px;"><strong><span style="font-family:Arial,Helvetica,sans-serif;">&nbsp;</span></strong></span></p>
+</body>
+</html>

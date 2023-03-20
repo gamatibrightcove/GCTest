@@ -1,0 +1,1625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Case Sub Reasons --></label>
+        <name>Case_Sub_reason__c</name>
+        <picklistValues>
+            <masterLabel>3rd Party - AEM</masterLabel>
+            <translation><!-- 3rd Party - AEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd Party - Drupal</masterLabel>
+            <translation><!-- 3rd Party - Drupal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd Party - Microsoft Teams</masterLabel>
+            <translation><!-- 3rd Party - Microsoft Teams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd Party - Salesforce</masterLabel>
+            <translation><!-- 3rd Party - Salesforce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd Party - Sharepoint</masterLabel>
+            <translation><!-- 3rd Party - Sharepoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd Party - Sitecore</masterLabel>
+            <translation><!-- 3rd Party - Sitecore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd Party - Wordpress</masterLabel>
+            <translation><!-- 3rd Party - Wordpress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd Party Analytics</masterLabel>
+            <translation><!-- 3rd Party Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd Party Integration - Other</masterLabel>
+            <translation><!-- 3rd Party Integration - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>API Outage</masterLabel>
+            <translation><!-- API Outage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>API Performance</masterLabel>
+            <translation><!-- API Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Control</masterLabel>
+            <translation><!-- Access Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accessibility</masterLabel>
+            <translation><!-- Accessibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account - Activate</masterLabel>
+            <translation><!-- Account - Activate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account - Activate (BC Internal)</masterLabel>
+            <translation><!-- Account - Activate (BC Internal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account - Add</masterLabel>
+            <translation><!-- Account - Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account - Downgrade</masterLabel>
+            <translation><!-- Account - Downgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account - Unlock</masterLabel>
+            <translation><!-- Account - Unlock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account - Upgrade</masterLabel>
+            <translation><!-- Account - Upgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Creation</masterLabel>
+            <translation><!-- Account Creation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Lock - Cancellation</masterLabel>
+            <translation><!-- Account Lock - Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Lock - Finance</masterLabel>
+            <translation><!-- Account Lock - Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Management</masterLabel>
+            <translation><!-- Account Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Settings</masterLabel>
+            <translation><!-- Account Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Trial Extension</masterLabel>
+            <translation><!-- Account Trial Extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account/Asset Configuration</masterLabel>
+            <translation><!-- Account/Asset Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Settings (CSAI)</masterLabel>
+            <translation><!-- Ad Settings (CSAI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Settings (Cloud Playout)</masterLabel>
+            <translation><!-- Ad Settings (Cloud Playout) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Settings (SSAI)</masterLabel>
+            <translation><!-- Ad Settings (SSAI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Settings (Studio)</masterLabel>
+            <translation><!-- Ad Settings (Studio) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Trafficking</masterLabel>
+            <translation><!-- Ad Trafficking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adobe Magento Commerce Integration</masterLabel>
+            <translation><!-- Adobe Magento Commerce Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advertising</masterLabel>
+            <translation><!-- Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agenda</masterLabel>
+            <translation><!-- Agenda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Akamai Analytics</masterLabel>
+            <translation><!-- Akamai Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Akamai Analytics Setup</masterLabel>
+            <translation><!-- Akamai Analytics Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics</masterLabel>
+            <translation><!-- Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics - Cloud Playout</masterLabel>
+            <translation><!-- Analytics - Cloud Playout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics - Data Issue</masterLabel>
+            <translation><!-- Analytics - Data Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics - Feature Parity Inquiries</masterLabel>
+            <translation><!-- Analytics - Feature Parity Inquiries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics - Live</masterLabel>
+            <translation><!-- Analytics - Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics - Performance Issues</masterLabel>
+            <translation><!-- Analytics - Performance Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics Inquiry</masterLabel>
+            <translation><!-- Analytics Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Android</masterLabel>
+            <translation><!-- Android --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Android SDK 5.x</masterLabel>
+            <translation><!-- Android SDK 5.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Android SDK 6.x</masterLabel>
+            <translation><!-- Android SDK 6.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Android SDK 7.x</masterLabel>
+            <translation><!-- Android SDK 7.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AppleTV</masterLabel>
+            <translation><!-- AppleTV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Errors</masterLabel>
+            <translation><!-- Application Errors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aspect Ratio Incorrect</masterLabel>
+            <translation><!-- Aspect Ratio Incorrect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aspera Setup</masterLabel>
+            <translation><!-- Aspera Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aspera Transfer</masterLabel>
+            <translation><!-- Aspera Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asset-level restrictions</masterLabel>
+            <translation><!-- Asset-level restrictions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audio</masterLabel>
+            <translation><!-- Audio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audio Processing</masterLabel>
+            <translation><!-- Audio Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audio settings</masterLabel>
+            <translation><!-- Audio settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audio-Only</masterLabel>
+            <translation><!-- Audio-Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audio/Video Sync Issue</masterLabel>
+            <translation><!-- Audio/Video Sync Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Captioning</masterLabel>
+            <translation><!-- Auto Captioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BC Employee Last Day</masterLabel>
+            <translation><!-- BC Employee Last Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BYO CDN Audit</masterLabel>
+            <translation><!-- BYO CDN Audit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Backend Issues (Dynamic Delivery)</masterLabel>
+            <translation><!-- Backend Issues (Dynamic Delivery) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad Quality / Artifacts</masterLabel>
+            <translation><!-- Bad Quality / Artifacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beacon Studio</masterLabel>
+            <translation><!-- Beacon Studio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing Module</masterLabel>
+            <translation><!-- Billing Module --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing/Credit Card</masterLabel>
+            <translation><!-- Billing/Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both Android/iOS</masterLabel>
+            <translation><!-- Both Android/iOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove Documentation</masterLabel>
+            <translation><!-- Brightcove Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove Live API</masterLabel>
+            <translation><!-- Brightcove Live API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove to Brightcove</masterLabel>
+            <translation><!-- Brightcove to Brightcove --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDN Akamai GTM</masterLabel>
+            <translation><!-- CDN Akamai GTM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDN China Delivery</masterLabel>
+            <translation><!-- CDN China Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDN Issues (BYO)</masterLabel>
+            <translation><!-- CDN Issues (BYO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDN Issues (House/Named)</masterLabel>
+            <translation><!-- CDN Issues (House/Named) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDN Migration</masterLabel>
+            <translation><!-- CDN Migration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDN Setup (Dynamic Delivery)</masterLabel>
+            <translation><!-- CDN Setup (Dynamic Delivery) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDN Switch</masterLabel>
+            <translation><!-- CDN Switch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDN/Origin</masterLabel>
+            <translation><!-- CDN/Origin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS</masterLabel>
+            <translation><!-- CMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaign Dashboard</masterLabel>
+            <translation><!-- Campaign Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation</masterLabel>
+            <translation><!-- Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Captions</masterLabel>
+            <translation><!-- Captions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Channel Monitoring</masterLabel>
+            <translation><!-- Channel Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Channel Output</masterLabel>
+            <translation><!-- Channel Output --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Channel issues</masterLabel>
+            <translation><!-- Channel issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chaptering</masterLabel>
+            <translation><!-- Chaptering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clipping</masterLabel>
+            <translation><!-- Clipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clips</masterLabel>
+            <translation><!-- Clips --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Captioning</masterLabel>
+            <translation><!-- Closed Captioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collections</masterLabel>
+            <translation><!-- Collections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed - Third Party</masterLabel>
+            <translation><!-- Completed - Third Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Config / Parameters / Settings</masterLabel>
+            <translation><!-- Config / Parameters / Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate (Brightcove.com)</masterLabel>
+            <translation><!-- Corporate (Brightcove.com) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create New</masterLabel>
+            <translation><!-- Create New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credentials</masterLabel>
+            <translation><!-- Credentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cross Device Resume (XDR)</masterLabel>
+            <translation><!-- Cross Device Resume (XDR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cue Points</masterLabel>
+            <translation><!-- Cue Points --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom CSS</masterLabel>
+            <translation><!-- Custom CSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Dev. Inquiry</masterLabel>
+            <translation><!-- Custom Dev. Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Domain</masterLabel>
+            <translation><!-- Custom Domain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Event Packages Enablement</masterLabel>
+            <translation><!-- Custom Event Packages Enablement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Fields</masterLabel>
+            <translation><!-- Custom Fields --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom HTML</masterLabel>
+            <translation><!-- Custom HTML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Integration</masterLabel>
+            <translation><!-- Custom Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Reporting</masterLabel>
+            <translation><!-- Custom Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom fields settings</masterLabel>
+            <translation><!-- Custom fields settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DD Account Settings</masterLabel>
+            <translation><!-- DD Account Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DD Account Setup</masterLabel>
+            <translation><!-- DD Account Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DD Account settings - Multiple Audio Tracks</masterLabel>
+            <translation><!-- DD Account settings - Multiple Audio Tracks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DD DRM Setup/Settings</masterLabel>
+            <translation><!-- DD DRM Setup/Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMCA - Notification to offender</masterLabel>
+            <translation><!-- DMCA - Notification to offender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMCA Notification</masterLabel>
+            <translation><!-- DMCA Notification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRM</masterLabel>
+            <translation><!-- DRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRM Issues (Dynamic Delivery)</masterLabel>
+            <translation><!-- DRM Issues (Dynamic Delivery) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DVR Adjustments</masterLabel>
+            <translation><!-- DVR Adjustments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Inquiry</masterLabel>
+            <translation><!-- Data Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Method</masterLabel>
+            <translation><!-- Delivery Method --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Device Management</masterLabel>
+            <translation><!-- Device Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discrepancies</masterLabel>
+            <translation><!-- Discrepancies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Domain Restriction</masterLabel>
+            <translation><!-- Domain Restriction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Download Timeout</masterLabel>
+            <translation><!-- Download Timeout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drawing</masterLabel>
+            <translation><!-- Drawing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOL - Static Delivery</masterLabel>
+            <translation><!-- EOL - Static Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eloqua Integration</masterLabel>
+            <translation><!-- Eloqua Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Encoder Settings</masterLabel>
+            <translation><!-- Encoder Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Encoding</masterLabel>
+            <translation><!-- Encoding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Encoding/Packaging</masterLabel>
+            <translation><!-- Encoding/Packaging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enhancement Request</masterLabel>
+            <translation><!-- Enhancement Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error processing (Backend)</masterLabel>
+            <translation><!-- Error processing (Backend) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error processing (Backend) - Legacy</masterLabel>
+            <translation><!-- Error processing (Backend) - Legacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Essential Enablement</masterLabel>
+            <translation><!-- Essential Enablement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FTP Error</masterLabel>
+            <translation><!-- FTP Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>False-positive alert</masterLabel>
+            <translation><!-- False-positive alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feature Not Supported</masterLabel>
+            <translation><!-- Feature Not Supported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>File Permissions Issue</masterLabel>
+            <translation><!-- File Permissions Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Formats &amp; Codecs</masterLabel>
+            <translation><!-- Formats &amp; Codecs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Front End Web or App</masterLabel>
+            <translation><!-- Front End Web or App --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gallery Module</masterLabel>
+            <translation><!-- Gallery Module --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Education</masterLabel>
+            <translation><!-- General Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Inquiry</masterLabel>
+            <translation><!-- General Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Requirements</masterLabel>
+            <translation><!-- General Requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generic Stream Concurrency</masterLabel>
+            <translation><!-- Generic Stream Concurrency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geo Filtering Setup</masterLabel>
+            <translation><!-- Geo Filtering Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geo Restriction</masterLabel>
+            <translation><!-- Geo Restriction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grant Portal Access</masterLabel>
+            <translation><!-- Grant Portal Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HLS Encryption Issues</masterLabel>
+            <translation><!-- HLS Encryption Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HLS Encryption Setup</masterLabel>
+            <translation><!-- HLS Encryption Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HLS encryption</masterLabel>
+            <translation><!-- HLS encryption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HTTP and Security</masterLabel>
+            <translation><!-- HTTP and Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hosting/Server settings</masterLabel>
+            <translation><!-- Hosting/Server settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot Spots</masterLabel>
+            <translation><!-- Hot Spots --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HubSpot Integration</masterLabel>
+            <translation><!-- HubSpot Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IIR/SIR Translation</masterLabel>
+            <translation><!-- IIR/SIR Translation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IP Restriction</masterLabel>
+            <translation><!-- IP Restriction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Images</masterLabel>
+            <translation><!-- Images --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Images (Thumbnails &amp; Poster)</masterLabel>
+            <translation><!-- Images (Thumbnails &amp; Poster) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Page Experiences</masterLabel>
+            <translation><!-- In-Page Experiences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Resolution</masterLabel>
+            <translation><!-- Incorrect Resolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingestion (Source S3)</masterLabel>
+            <translation><!-- Ingestion (Source S3) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingestion - SSAI</masterLabel>
+            <translation><!-- Ingestion - SSAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingestion Profiles</masterLabel>
+            <translation><!-- Ingestion Profiles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingestion Queue</masterLabel>
+            <translation><!-- Ingestion Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Input File Error</masterLabel>
+            <translation><!-- Input File Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Input Stream Failure</masterLabel>
+            <translation><!-- Input Stream Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration Libraries</masterLabel>
+            <translation><!-- Integration Libraries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid syntax</masterLabel>
+            <translation><!-- Invalid syntax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issue</masterLabel>
+            <translation><!-- Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issues - Backend</masterLabel>
+            <translation><!-- Issues - Backend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issues - CDN</masterLabel>
+            <translation><!-- Issues - CDN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issues - Input latency</masterLabel>
+            <translation><!-- Issues - Input latency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issues - Input quality</masterLabel>
+            <translation><!-- Issues - Input quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issues - Loading</masterLabel>
+            <translation><!-- Issues - Loading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issues - Login</masterLabel>
+            <translation><!-- Issues - Login --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issues - SSAI</masterLabel>
+            <translation><!-- Issues - SSAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Concurrency</masterLabel>
+            <translation><!-- Job Concurrency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Settings</masterLabel>
+            <translation><!-- Job Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job/Event Creation</masterLabel>
+            <translation><!-- Job/Event Creation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Label management</masterLabel>
+            <translation><!-- Label management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Form</masterLabel>
+            <translation><!-- Lead Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Hand Nav</masterLabel>
+            <translation><!-- Left Hand Nav --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License Keys Protection</masterLabel>
+            <translation><!-- License Keys Protection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Cloud Transcoding</masterLabel>
+            <translation><!-- Live Cloud Transcoding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live DRM</masterLabel>
+            <translation><!-- Live DRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Input</masterLabel>
+            <translation><!-- Live Input --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Monitoring UI</masterLabel>
+            <translation><!-- Live Monitoring UI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Redundancy</masterLabel>
+            <translation><!-- Live Redundancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Scheduling</masterLabel>
+            <translation><!-- Live Scheduling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Streaming</masterLabel>
+            <translation><!-- Live Streaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local / Last mile Network Issues</masterLabel>
+            <translation><!-- Local / Last mile Network Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Localization Update</masterLabel>
+            <translation><!-- Localization Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Login Issue</masterLabel>
+            <translation><!-- Login Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Latency</masterLabel>
+            <translation><!-- Low Latency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRSS Feed</masterLabel>
+            <translation><!-- MRSS Feed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRSS Ingestion</masterLabel>
+            <translation><!-- MRSS Ingestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Macroblocking</masterLabel>
+            <translation><!-- Macroblocking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mark Job As Free</masterLabel>
+            <translation><!-- Mark Job As Free --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Studio</masterLabel>
+            <translation><!-- Marketing Studio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketo Integration</masterLabel>
+            <translation><!-- Marketo Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketplace Activation</masterLabel>
+            <translation><!-- Marketplace Activation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media - Closed Captions</masterLabel>
+            <translation><!-- Media - Closed Captions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media - Image Capture</masterLabel>
+            <translation><!-- Media - Image Capture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media - Search</masterLabel>
+            <translation><!-- Media - Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media - Source replacement / retranscode</masterLabel>
+            <translation><!-- Media - Source replacement / retranscode --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media Module - (Other)</masterLabel>
+            <translation><!-- Media Module - (Other) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media Sharing</masterLabel>
+            <translation><!-- Media Sharing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media Sharing Setup</masterLabel>
+            <translation><!-- Media Sharing Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module - Audience</masterLabel>
+            <translation><!-- Module - Audience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module - Cloud Playout</masterLabel>
+            <translation><!-- Module - Cloud Playout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module - Live - API key</masterLabel>
+            <translation><!-- Module - Live - API key --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module - Live - Audio-only</masterLabel>
+            <translation><!-- Module - Live - Audio-only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module - Live - Low Latency</masterLabel>
+            <translation><!-- Module - Live - Low Latency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module - Live - Scheduling on/off</masterLabel>
+            <translation><!-- Module - Live - Scheduling on/off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module - Live Account Setup</masterLabel>
+            <translation><!-- Module - Live Account Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module - Live Trial Off</masterLabel>
+            <translation><!-- Module - Live Trial Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module - Live Trial On</masterLabel>
+            <translation><!-- Module - Live Trial On --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module - Live Trial extension</masterLabel>
+            <translation><!-- Module - Live Trial extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module - Social On</masterLabel>
+            <translation><!-- Module - Social On --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module - Zencoder - Forensic Watermarking</masterLabel>
+            <translation><!-- Module - Zencoder - Forensic Watermarking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOC Report</masterLabel>
+            <translation><!-- NOC Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Issue</masterLabel>
+            <translation><!-- Network Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No action</masterLabel>
+            <translation><!-- No action --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-DMCA Content Takedown</masterLabel>
+            <translation><!-- Non-DMCA Content Takedown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not displaying</masterLabel>
+            <translation><!-- Not displaying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notification Error</masterLabel>
+            <translation><!-- Notification Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ooyala to Brightcove</masterLabel>
+            <translation><!-- Ooyala to Brightcove --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Devices</masterLabel>
+            <translation><!-- Other Devices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Error Code</masterLabel>
+            <translation><!-- Other Error Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Output Options</masterLabel>
+            <translation><!-- Output Options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Output Settings</masterLabel>
+            <translation><!-- Output Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overlays</masterLabel>
+            <translation><!-- Overlays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password Reset</masterLabel>
+            <translation><!-- Password Reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Analytics API</masterLabel>
+            <translation><!-- Platform - Analytics API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Audience API</masterLabel>
+            <translation><!-- Platform - Audience API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - CMS API</masterLabel>
+            <translation><!-- Platform - CMS API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - CMS API - Master Retrieval API</masterLabel>
+            <translation><!-- Platform - CMS API - Master Retrieval API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Data Collection API</masterLabel>
+            <translation><!-- Platform - Data Collection API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Delivery Rules</masterLabel>
+            <translation><!-- Platform - Delivery Rules --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Delivery System API</masterLabel>
+            <translation><!-- Platform - Delivery System API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Dynamic Ingest API</masterLabel>
+            <translation><!-- Platform - Dynamic Ingest API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - EPG API</masterLabel>
+            <translation><!-- Platform - EPG API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Image API</masterLabel>
+            <translation><!-- Platform - Image API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - In-Page Experiences API</masterLabel>
+            <translation><!-- Platform - In-Page Experiences API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Ingest Profiles API</masterLabel>
+            <translation><!-- Platform - Ingest Profiles API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - OAuth API</masterLabel>
+            <translation><!-- Platform - OAuth API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Playback API</masterLabel>
+            <translation><!-- Platform - Playback API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Playback Restrictions - Authentication - Audit API</masterLabel>
+            <translation><!-- Platform - Playback Restrictions - Authentication - Audit API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Playback Restrictions - Authentication - Blacklist API</masterLabel>
+            <translation><!-- Platform - Playback Restrictions - Authentication - Blacklist API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Playback Restrictions - Authentication - Key API</masterLabel>
+            <translation><!-- Platform - Playback Restrictions - Authentication - Key API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Playback Restrictions - Devices API</masterLabel>
+            <translation><!-- Platform - Playback Restrictions - Devices API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Playback Restrictions - Playback Rights API</masterLabel>
+            <translation><!-- Platform - Playback Restrictions - Playback Rights API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Player Management API</masterLabel>
+            <translation><!-- Platform - Player Management API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Policy API</masterLabel>
+            <translation><!-- Platform - Policy API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - SSAI API</masterLabel>
+            <translation><!-- Platform - SSAI API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform - Social Syndication API</masterLabel>
+            <translation><!-- Platform - Social Syndication API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - Broken Ad</masterLabel>
+            <translation><!-- Playback - Broken Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - Freewheel Plugin</masterLabel>
+            <translation><!-- Playback - Freewheel Plugin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - Freewheel SDK</masterLabel>
+            <translation><!-- Playback - Freewheel SDK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - IMA3 Plugin</masterLabel>
+            <translation><!-- Playback - IMA3 Plugin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - IMA3 SDK</masterLabel>
+            <translation><!-- Playback - IMA3 SDK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - Malformed Ad Tag</masterLabel>
+            <translation><!-- Playback - Malformed Ad Tag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - Malformed or Empty Ad Response</masterLabel>
+            <translation><!-- Playback - Malformed or Empty Ad Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - Mobile</masterLabel>
+            <translation><!-- Playback - Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - SSAI - Cloud Playout</masterLabel>
+            <translation><!-- Playback - SSAI - Cloud Playout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - SSAI - Live</masterLabel>
+            <translation><!-- Playback - SSAI - Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - SSAI - VoD</masterLabel>
+            <translation><!-- Playback - SSAI - VoD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - Third Party Plugin</masterLabel>
+            <translation><!-- Playback - Third Party Plugin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback - VPAID</masterLabel>
+            <translation><!-- Playback - VPAID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback Authorization Service</masterLabel>
+            <translation><!-- Playback Authorization Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback Inquires</masterLabel>
+            <translation><!-- Playback Inquires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback Issues</masterLabel>
+            <translation><!-- Playback Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback Quality Issues</masterLabel>
+            <translation><!-- Playback Quality Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback Restriction On/Off</masterLabel>
+            <translation><!-- Playback Restriction On/Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback Restriction issue</masterLabel>
+            <translation><!-- Playback Restriction issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Player APIs</masterLabel>
+            <translation><!-- Player APIs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Player Load Time</masterLabel>
+            <translation><!-- Player Load Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Player Questions</masterLabel>
+            <translation><!-- Player Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Player Version 7 Update</masterLabel>
+            <translation><!-- Player Version 7 Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Players Module</masterLabel>
+            <translation><!-- Players Module --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playlist Management</masterLabel>
+            <translation><!-- Playlist Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plugins - Brightcove</masterLabel>
+            <translation><!-- Plugins - Brightcove --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plugins - Other</masterLabel>
+            <translation><!-- Plugins - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal</masterLabel>
+            <translation><!-- Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing &amp; Plans</masterLabel>
+            <translation><!-- Pricing &amp; Plans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem making payment</masterLabel>
+            <translation><!-- Problem making payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Release Notes and Documentation Task</masterLabel>
+            <translation><!-- Product Release Notes and Documentation Task --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projects</masterLabel>
+            <translation><!-- Projects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Publisher Notifications</masterLabel>
+            <translation><!-- Publisher Notifications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purge Deleted Videos</masterLabel>
+            <translation><!-- Purge Deleted Videos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quiz/Survey</masterLabel>
+            <translation><!-- Quiz/Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RTMP Outputs</masterLabel>
+            <translation><!-- RTMP Outputs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral BGS</masterLabel>
+            <translation><!-- Referral BGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral to BGS</masterLabel>
+            <translation><!-- Referral to BGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral to Business Security</masterLabel>
+            <translation><!-- Referral to Business Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral to CSM (AM)</masterLabel>
+            <translation><!-- Referral to CSM (AM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral to Finance</masterLabel>
+            <translation><!-- Referral to Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral to IT</masterLabel>
+            <translation><!-- Referral to IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral to Legal</masterLabel>
+            <translation><!-- Referral to Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral to PM</masterLabel>
+            <translation><!-- Referral to PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral to Sales</masterLabel>
+            <translation><!-- Referral to Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral to TS leadership</masterLabel>
+            <translation><!-- Referral to TS leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral to the NOC Team</masterLabel>
+            <translation><!-- Referral to the NOC Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registration issues</masterLabel>
+            <translation><!-- Registration issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected Request</masterLabel>
+            <translation><!-- Rejected Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remote Assets</masterLabel>
+            <translation><!-- Remote Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove Trial Account Restriction</masterLabel>
+            <translation><!-- Remove Trial Account Restriction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rendition Selection</masterLabel>
+            <translation><!-- Rendition Selection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renditions</masterLabel>
+            <translation><!-- Renditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renditions (quality/issues)</masterLabel>
+            <translation><!-- Renditions (quality/issues) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting</masterLabel>
+            <translation><!-- Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting Discrepancies</masterLabel>
+            <translation><!-- Reporting Discrepancies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for Billing Statement</masterLabel>
+            <translation><!-- Request for Billing Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resizing</masterLabel>
+            <translation><!-- Resizing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolution</masterLabel>
+            <translation><!-- Resolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retranscode or Transmux</masterLabel>
+            <translation><!-- Retranscode or Transmux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review Existing</masterLabel>
+            <translation><!-- Review Existing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revoke Portal Access</masterLabel>
+            <translation><!-- Revoke Portal Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roku</masterLabel>
+            <translation><!-- Roku --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Runtime restrictions (JWT) - Concurrent stream limit</masterLabel>
+            <translation><!-- Runtime restrictions (JWT) - Concurrent stream limit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Runtime restrictions (JWT) - Device limit</masterLabel>
+            <translation><!-- Runtime restrictions (JWT) - Device limit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Runtime restrictions (JWT) - Other</masterLabel>
+            <translation><!-- Runtime restrictions (JWT) - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S3 Error</masterLabel>
+            <translation><!-- S3 Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S3 Settings</masterLabel>
+            <translation><!-- S3 Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDK Plugins</masterLabel>
+            <translation><!-- SDK Plugins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEO</masterLabel>
+            <translation><!-- SEO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEO - Sitemap</masterLabel>
+            <translation><!-- SEO - Sitemap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSAI Tracing Logs</masterLabel>
+            <translation><!-- SSAI Tracing Logs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSL</masterLabel>
+            <translation><!-- SSL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSO</masterLabel>
+            <translation><!-- SSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Commerce Cloud B2C Integration</masterLabel>
+            <translation><!-- Salesforce Commerce Cloud B2C Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Integration</masterLabel>
+            <translation><!-- Salesforce Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduling</masterLabel>
+            <translation><!-- Scheduling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Migrating Customer - Cutover to VC</masterLabel>
+            <translation><!-- Self Migrating Customer - Cutover to VC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Set-Up Questions</masterLabel>
+            <translation><!-- Set-Up Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Settings</masterLabel>
+            <translation><!-- Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup</masterLabel>
+            <translation><!-- Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shopify</masterLabel>
+            <translation><!-- Shopify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Manifest TTL</masterLabel>
+            <translation><!-- Short Manifest TTL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sign-in</masterLabel>
+            <translation><!-- Sign-in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simulive Content</masterLabel>
+            <translation><!-- Simulive Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simulive Player</masterLabel>
+            <translation><!-- Simulive Player --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sites</masterLabel>
+            <translation><!-- Sites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SmartTV</masterLabel>
+            <translation><!-- SmartTV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social - Analytics</masterLabel>
+            <translation><!-- Social - Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social - Clipping</masterLabel>
+            <translation><!-- Social - Clipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social - Facebook</masterLabel>
+            <translation><!-- Social - Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social - Instagram</masterLabel>
+            <translation><!-- Social - Instagram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social - Live to Facebook</masterLabel>
+            <translation><!-- Social - Live to Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social - Live to YouTube</masterLabel>
+            <translation><!-- Social - Live to YouTube --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social - Twitter</masterLabel>
+            <translation><!-- Social - Twitter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social - YouTube</masterLabel>
+            <translation><!-- Social - YouTube --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social API</masterLabel>
+            <translation><!-- Social API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Sharing</masterLabel>
+            <translation><!-- Social Sharing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Source File Error/Settings</masterLabel>
+            <translation><!-- Source File Error/Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Source Issues</masterLabel>
+            <translation><!-- Source Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spreadsheet</masterLabel>
+            <translation><!-- Spreadsheet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Streaming Issues</masterLabel>
+            <translation><!-- Streaming Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stuck Job</masterLabel>
+            <translation><!-- Stuck Job --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Styling</masterLabel>
+            <translation><!-- Styling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Operations</masterLabel>
+            <translation><!-- Support Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support public docs</masterLabel>
+            <translation><!-- Support public docs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supported Encoders</masterLabel>
+            <translation><!-- Supported Encoders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Status Page</masterLabel>
+            <translation><!-- System Status Page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tags</masterLabel>
+            <translation><!-- Tags --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Template Package Configuration</masterLabel>
+            <translation><!-- Template Package Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Templates</masterLabel>
+            <translation><!-- Templates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Themes</masterLabel>
+            <translation><!-- Themes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transcode Failure</masterLabel>
+            <translation><!-- Transcode Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transcoding Error</masterLabel>
+            <translation><!-- Transcoding Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trending Now</masterLabel>
+            <translation><!-- Trending Now --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Account Inquiries</masterLabel>
+            <translation><!-- Trial Account Inquiries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UI Issue</masterLabel>
+            <translation><!-- UI Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UI Issues</masterLabel>
+            <translation><!-- UI Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to log in</masterLabel>
+            <translation><!-- Unable to log in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsupported Audio</masterLabel>
+            <translation><!-- Unsupported Audio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsupported Format</masterLabel>
+            <translation><!-- Unsupported Format --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update Billing Info</masterLabel>
+            <translation><!-- Update Billing Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update Existing</masterLabel>
+            <translation><!-- Update Existing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upload Error</masterLabel>
+            <translation><!-- Upload Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upload Module</masterLabel>
+            <translation><!-- Upload Module --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Error</masterLabel>
+            <translation><!-- User Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Management</masterLabel>
+            <translation><!-- User Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Sentiment</masterLabel>
+            <translation><!-- User Sentiment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VC Geo-restriction issues</masterLabel>
+            <translation><!-- VC Geo-restriction issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Metadata (Other)</masterLabel>
+            <translation><!-- Video Metadata (Other) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Processing</masterLabel>
+            <translation><!-- Video Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Quality</masterLabel>
+            <translation><!-- Video Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viewer Profiles</masterLabel>
+            <translation><!-- Viewer Profiles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual Event Config</masterLabel>
+            <translation><!-- Virtual Event Config --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual Event Experience</masterLabel>
+            <translation><!-- Virtual Event Experience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual Event Template Enablement</masterLabel>
+            <translation><!-- Virtual Event Template Enablement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watermarks</masterLabel>
+            <translation><!-- Watermarks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WebView</masterLabel>
+            <translation><!-- WebView --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wibbitz</masterLabel>
+            <translation><!-- Wibbitz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wicket (nativeresults)</masterLabel>
+            <translation><!-- Wicket (nativeresults) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zoom Integration</masterLabel>
+            <translation><!-- Zoom Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iFrames</masterLabel>
+            <translation><!-- iFrames --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iOS</masterLabel>
+            <translation><!-- iOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iOS SDK 5.x</masterLabel>
+            <translation><!-- iOS SDK 5.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iOS SDK 6.x</masterLabel>
+            <translation><!-- iOS SDK 6.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iRooms</masterLabel>
+            <translation><!-- iRooms --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

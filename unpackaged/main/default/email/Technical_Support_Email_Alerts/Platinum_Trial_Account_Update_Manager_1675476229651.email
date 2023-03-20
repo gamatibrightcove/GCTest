@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:start">Hi CS Leadership,<br />
+<br />
+{{{Opportunity.Name}}}&nbsp;for {{{Opportunity.Account}}} is a Platinum Trial account and has been updated. They already have a listed TS Manager ({{{Account.Platinum_CS_Manager__c}}}) or TS Rep ({{{Account.Platinum_CS_Rep__c}}}), so this just a notification that requires no extra action.<br />
+<br />
+As a reminder, instructions for CS Platinum Managers can be found here:<br />
+<a href="https://sites.google.com/a/brightcove.com/cs-managers/cs-manager-processes/platinum-program" target="_blank">https://sites.google.com/a/brightcove.com/cs-managers/cs-manager-processes/platinum-program</a><br />
+<br />
+Platinum Trial expiry date: {{{Opportunity.Platinum_Trial_Expiry_date__c}}}<br />
+Platinum Trial Max number of open cases: {{{Opportunity.Platinum_Trial_Max_Cases__c}}}<br />
+<br />
+Opportunity: {{{Opportunity.Name}}}<br />
+<a href="https://brightcove.my.salesforce.com/%7B!Opportunity.Id_18_Digit__c%7D" target="_blank">https://brightcove.my.salesforce.com/{{{Opportunity.Id_18_Digit__c}}}</a><br />
+<br />
+Account: {{{Opportunity.Account}}}<br />
+<a href="https://brightcove.my.salesforce.com/%7B!Opportunity.AccountId%7D" target="_blank">https://brightcove.my.salesforce.com/{{{Opportunity.AccountId}}}</a><br />
+<br />
+Thanks,<br />
+Automated Process</div>
+</body>
+</html>

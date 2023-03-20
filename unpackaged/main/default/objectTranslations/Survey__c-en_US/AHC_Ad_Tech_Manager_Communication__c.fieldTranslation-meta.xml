@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Ad Tech Manager effectively communicated ways that we could improve our use of the advertising features/settings (1 being Poor and 10 being Excellent) --></help>
+        <label><!-- AHC Ad Tech Manager Communication --></label>
+        <name>AHC_Ad_Tech_Manager_Communication__c</name>
+    </CustomFieldTranslation>

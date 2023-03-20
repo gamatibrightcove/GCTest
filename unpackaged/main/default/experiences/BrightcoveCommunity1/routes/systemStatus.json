@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "16ab1f40-0890-4f9f-b667-9cbb0ccfed1e",
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "configurationTags" : [ ],
+  "id" : "dd8dde2e-362e-4982-adb8-6ddbea5277bd",
+  "label" : "System Status",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-system-status",
+  "type" : "route",
+  "urlPrefix" : "system-status"
+}

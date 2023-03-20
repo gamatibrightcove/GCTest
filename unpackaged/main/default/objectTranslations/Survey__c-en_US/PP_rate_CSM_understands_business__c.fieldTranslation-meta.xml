@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please rate your Customer Success Manager:
+Understands my business and goals --></help>
+        <label><!-- PP rate CSM understands business --></label>
+        <name>PP_rate_CSM_understands_business__c</name>
+    </CustomFieldTranslation>

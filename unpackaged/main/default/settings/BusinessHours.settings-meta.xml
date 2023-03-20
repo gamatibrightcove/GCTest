@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessHoursSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>18:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>18:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>APAC</name>
+        <saturdayEndTime>18:00:00.000Z</saturdayEndTime>
+        <saturdayStartTime>09:00:00.000Z</saturdayStartTime>
+        <sundayEndTime>18:00:00.000Z</sundayEndTime>
+        <sundayStartTime>09:00:00.000Z</sundayStartTime>
+        <thursdayEndTime>18:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>Australia/Sydney</timeZoneId>
+        <tuesdayEndTime>18:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>18:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>18:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>18:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Americas</name>
+        <saturdayEndTime>18:00:00.000Z</saturdayEndTime>
+        <saturdayStartTime>09:00:00.000Z</saturdayStartTime>
+        <sundayEndTime>18:00:00.000Z</sundayEndTime>
+        <sundayStartTime>09:00:00.000Z</sundayStartTime>
+        <thursdayEndTime>18:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/Indiana/Indianapolis</timeZoneId>
+        <tuesdayEndTime>18:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>18:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>true</default>
+        <fridayEndTime>00:00:00.000Z</fridayEndTime>
+        <fridayStartTime>00:00:00.000Z</fridayStartTime>
+        <mondayEndTime>00:00:00.000Z</mondayEndTime>
+        <mondayStartTime>00:00:00.000Z</mondayStartTime>
+        <name>Default</name>
+        <saturdayEndTime>00:00:00.000Z</saturdayEndTime>
+        <saturdayStartTime>00:00:00.000Z</saturdayStartTime>
+        <sundayEndTime>00:00:00.000Z</sundayEndTime>
+        <sundayStartTime>00:00:00.000Z</sundayStartTime>
+        <thursdayEndTime>00:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>00:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/Los_Angeles</timeZoneId>
+        <tuesdayEndTime>00:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>00:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>00:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>00:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>18:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>18:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>EMEA</name>
+        <sundayEndTime>18:00:00.000Z</sundayEndTime>
+        <sundayStartTime>09:00:00.000Z</sundayStartTime>
+        <thursdayEndTime>18:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>Europe/London</timeZoneId>
+        <tuesdayEndTime>18:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>18:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>00:00:00.000Z</fridayEndTime>
+        <fridayStartTime>00:00:00.000Z</fridayStartTime>
+        <mondayEndTime>00:00:00.000Z</mondayEndTime>
+        <mondayStartTime>00:00:00.000Z</mondayStartTime>
+        <name>GDL</name>
+        <saturdayEndTime>00:00:00.000Z</saturdayEndTime>
+        <saturdayStartTime>00:00:00.000Z</saturdayStartTime>
+        <sundayEndTime>00:00:00.000Z</sundayEndTime>
+        <sundayStartTime>00:00:00.000Z</sundayStartTime>
+        <thursdayEndTime>00:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>00:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/Mexico_City</timeZoneId>
+        <tuesdayEndTime>00:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>00:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>00:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>00:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>18:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>18:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Japan</name>
+        <saturdayEndTime>18:00:00.000Z</saturdayEndTime>
+        <saturdayStartTime>09:00:00.000Z</saturdayStartTime>
+        <sundayEndTime>18:00:00.000Z</sundayEndTime>
+        <sundayStartTime>09:00:00.000Z</sundayStartTime>
+        <thursdayEndTime>18:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>Asia/Tokyo</timeZoneId>
+        <tuesdayEndTime>18:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>18:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>18:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>18:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Support - APAC Sidney</name>
+        <thursdayEndTime>18:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>Australia/Sydney</timeZoneId>
+        <tuesdayEndTime>18:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>18:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>19:00:00.000Z</fridayEndTime>
+        <fridayStartTime>10:00:00.000Z</fridayStartTime>
+        <mondayEndTime>19:00:00.000Z</mondayEndTime>
+        <mondayStartTime>10:00:00.000Z</mondayStartTime>
+        <name>Support - BCKK</name>
+        <thursdayEndTime>19:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>10:00:00.000Z</thursdayStartTime>
+        <timeZoneId>Asia/Tokyo</timeZoneId>
+        <tuesdayEndTime>19:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>10:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>19:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>10:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>18:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>18:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Support - Chennai</name>
+        <thursdayEndTime>18:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>Asia/Kolkata</timeZoneId>
+        <tuesdayEndTime>18:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>18:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>21:00:00.000Z</fridayEndTime>
+        <fridayStartTime>04:00:00.000Z</fridayStartTime>
+        <mondayEndTime>21:00:00.000Z</mondayEndTime>
+        <mondayStartTime>04:00:00.000Z</mondayStartTime>
+        <name>Support - Customer Support Business Hours</name>
+        <thursdayEndTime>21:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>04:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/Indiana/Indianapolis</timeZoneId>
+        <tuesdayEndTime>21:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>04:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>21:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>04:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>18:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>18:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Support - KO</name>
+        <thursdayEndTime>18:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>Asia/Seoul</timeZoneId>
+        <tuesdayEndTime>18:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>18:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>18:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>18:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Support - Mexico</name>
+        <thursdayEndTime>18:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/Mexico_City</timeZoneId>
+        <tuesdayEndTime>18:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>18:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>18:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>18:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Support - SP</name>
+        <thursdayEndTime>18:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>Asia/Singapore</timeZoneId>
+        <tuesdayEndTime>18:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>18:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>18:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>18:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Support - UK</name>
+        <thursdayEndTime>18:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>Europe/London</timeZoneId>
+        <tuesdayEndTime>18:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>18:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>21:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>21:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Support - US</name>
+        <thursdayEndTime>21:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/New_York</timeZoneId>
+        <tuesdayEndTime>21:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>21:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>18:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>18:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Support - US AZ</name>
+        <thursdayEndTime>18:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/Phoenix</timeZoneId>
+        <tuesdayEndTime>18:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>18:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>21:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>21:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Support - US CA</name>
+        <thursdayEndTime>21:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/Los_Angeles</timeZoneId>
+        <tuesdayEndTime>21:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>21:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <holidays>
+        <businessHours>APAC</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Anzac Day</name>
+        <recurrenceDayOfMonth>25</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>April</recurrenceMonthOfYear>
+        <recurrenceStartDate>2018-04-25</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>APAC</businessHours>
+        <description>Australia Day</description>
+        <isRecurring>true</isRecurring>
+        <name>Australia Day</name>
+        <recurrenceDayOfMonth>26</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-01-26</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-09-22</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Autumnal Equinox Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Autumnal Equinox day</name>
+        <recurrenceDayOfMonth>17</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>September</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-09-17</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-12-27</activityDate>
+        <description>UK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Boxing Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>APAC</businessHours>
+        <businessHours>EMEA</businessHours>
+        <description>Boxing Day</description>
+        <isRecurring>true</isRecurring>
+        <name>Boxing Day</name>
+        <recurrenceDayOfMonth>26</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-12-26</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-05-28</activityDate>
+        <description>Korea Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Buddha&#39;s Birthday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-05-05</activityDate>
+        <description>KK &amp; Korea Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Children&#39;s Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Childrens Day</name>
+        <recurrenceDayOfMonth>1</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>April</recurrenceMonthOfYear>
+        <recurrenceStartDate>2020-04-01</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>APAC</businessHours>
+        <businessHours>Americas</businessHours>
+        <businessHours>EMEA</businessHours>
+        <businessHours>Support - KO</businessHours>
+        <businessHours>Support - SP</businessHours>
+        <businessHours>Support - UK</businessHours>
+        <businessHours>Support - US</businessHours>
+        <businessHours>Support - US CA</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Christmas Day</name>
+        <recurrenceDayOfMonth>25</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2010-12-25</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Americas</businessHours>
+        <businessHours>Support - Customer Support Business Hours</businessHours>
+        <businessHours>Support - US</businessHours>
+        <businessHours>Support - US CA</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Columbus Day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Second</recurrenceInstance>
+        <recurrenceMonthOfYear>October</recurrenceMonthOfYear>
+        <recurrenceStartDate>2009-10-12</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Coming of Age Day</name>
+        <recurrenceDayOfMonth>8</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-01-08</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Constintution Memorial day</name>
+        <recurrenceDayOfMonth>3</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>May</recurrenceMonthOfYear>
+        <recurrenceStartDate>2018-05-03</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-05-03</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Constitution Day KK</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-07-17</activityDate>
+        <description>Korea Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Constitution Day Korea</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-11-04</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Culture Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-11-14</activityDate>
+        <description>Singapore Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Deepavali</name>
+    </holidays>
+    <holidays>
+        <businessHours>EMEA</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Early May bank holiday</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>First</recurrenceInstance>
+        <recurrenceMonthOfYear>May</recurrenceMonthOfYear>
+        <recurrenceStartDate>2018-05-07</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Emperor Birthday</name>
+        <recurrenceDayOfMonth>24</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-12-24</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>End of the year</name>
+        <recurrenceDayOfMonth>31</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-12-31</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-05-04</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Greenery Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Greenery Day</name>
+        <recurrenceDayOfMonth>4</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>May</recurrenceMonthOfYear>
+        <recurrenceStartDate>2018-05-04</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-10-26</activityDate>
+        <description>Singapore Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Hari Raya Haji</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-08-19</activityDate>
+        <description>Singapore Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Hari Raya Puasa</name>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Health-Sport Day</name>
+        <recurrenceDayOfMonth>10</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>October</recurrenceMonthOfYear>
+        <recurrenceStartDate>2018-10-10</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-12-25</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Holiday in lieu of Emperor&#39;s Birthday on Sunday</name>
+    </holidays>
+    <holidays>
+        <businessHours>Americas</businessHours>
+        <businessHours>Support - Customer Support Business Hours</businessHours>
+        <businessHours>Support - US</businessHours>
+        <businessHours>Support - US CA</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Independence Day</name>
+        <recurrenceDayOfMonth>4</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>July</recurrenceMonthOfYear>
+        <recurrenceStartDate>2009-07-04</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>JP 28th December</name>
+        <recurrenceDayOfMonth>28</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-12-28</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>JP 2nd Jan</name>
+        <recurrenceDayOfMonth>2</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-01-02</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>JP 3rd Jan</name>
+        <recurrenceDayOfMonth>3</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-01-03</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>JP Labour day</name>
+        <recurrenceDayOfMonth>23</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>November</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-11-23</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Americas</businessHours>
+        <businessHours>Support - Customer Support Business Hours</businessHours>
+        <businessHours>Support - US</businessHours>
+        <businessHours>Support - US CA</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Labor Day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>First</recurrenceInstance>
+        <recurrenceMonthOfYear>September</recurrenceMonthOfYear>
+        <recurrenceStartDate>2009-09-07</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-11-24</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Labor Thanksgiving Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-05-01</activityDate>
+        <description>Singapore Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Labour Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>EMEA</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Last May Bank Holiday</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Last</recurrenceInstance>
+        <recurrenceMonthOfYear>May</recurrenceMonthOfYear>
+        <recurrenceStartDate>2018-05-28</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-08-15</activityDate>
+        <description>Korea Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Liberation Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-07-16</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Marine Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Marine Day</name>
+        <recurrenceDayOfMonth>16</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>July</recurrenceMonthOfYear>
+        <recurrenceStartDate>2018-07-16</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Americas</businessHours>
+        <description>Martin Luther&#39;s day</description>
+        <isRecurring>true</isRecurring>
+        <name>Martin Luther&#39;s day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Third</recurrenceInstance>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-01-21</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-05-07</activityDate>
+        <description>UK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>May Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Americas</businessHours>
+        <businessHours>Support - Customer Support Business Hours</businessHours>
+        <businessHours>Support - US</businessHours>
+        <businessHours>Support - US CA</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Memorial Day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Last</recurrenceInstance>
+        <recurrenceMonthOfYear>May</recurrenceMonthOfYear>
+        <recurrenceStartDate>2009-05-25</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-06-06</activityDate>
+        <description>Korea Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Memorial Day Korea</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-10-01</activityDate>
+        <description>Korea Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Mid-Autumn Festival</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-08-09</activityDate>
+        <description>Singapore Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>National Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-10-03</activityDate>
+        <description>Korea Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>National Foundation Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>APAC</businessHours>
+        <businessHours>Americas</businessHours>
+        <businessHours>EMEA</businessHours>
+        <businessHours>Japan</businessHours>
+        <businessHours>Support - Customer Support Business Hours</businessHours>
+        <businessHours>Support - UK</businessHours>
+        <businessHours>Support - US</businessHours>
+        <businessHours>Support - US CA</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>New Year&#39;s Day</name>
+        <recurrenceDayOfMonth>1</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2011-01-01</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>APAC</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>October Long Weekend (Labour Day)</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>First</recurrenceInstance>
+        <recurrenceMonthOfYear>October</recurrenceMonthOfYear>
+        <recurrenceStartDate>2018-10-01</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Americas</businessHours>
+        <businessHours>Support - Customer Support Business Hours</businessHours>
+        <businessHours>Support - US</businessHours>
+        <businessHours>Support - US CA</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Patriot&#39;s Day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Third</recurrenceInstance>
+        <recurrenceMonthOfYear>April</recurrenceMonthOfYear>
+        <recurrenceStartDate>2009-04-20</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Americas</businessHours>
+        <businessHours>Support - Customer Support Business Hours</businessHours>
+        <businessHours>Support - US</businessHours>
+        <businessHours>Support - US CA</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>President&#39;s Day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Third</recurrenceInstance>
+        <recurrenceMonthOfYear>February</recurrenceMonthOfYear>
+        <recurrenceStartDate>2011-02-21</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>APAC</businessHours>
+        <description>Queen&#39;s Birthday</description>
+        <isRecurring>true</isRecurring>
+        <name>Queen&#39;s Birthday</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Second</recurrenceInstance>
+        <recurrenceMonthOfYear>June</recurrenceMonthOfYear>
+        <recurrenceStartDate>2018-06-11</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-06-05</activityDate>
+        <description>UK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Queen&#39;s Diamond Jubilee</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-09-17</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Respect for the Aged Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Respect of the Aged Day</name>
+        <recurrenceDayOfMonth>11</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>August</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-08-11</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-04-30</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Showa Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-10-08</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Sports Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-06-04</activityDate>
+        <description>UK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Spring Bank Holiday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-08-27</activityDate>
+        <description>UK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Summer Bank Holiday</name>
+    </holidays>
+    <holidays>
+        <businessHours>EMEA</businessHours>
+        <description>Last Monday of August</description>
+        <isRecurring>true</isRecurring>
+        <name>Summer bank holiday</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Last</recurrenceInstance>
+        <recurrenceMonthOfYear>August</recurrenceMonthOfYear>
+        <recurrenceStartDate>2018-08-27</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Americas</businessHours>
+        <businessHours>Support - Customer Support Business Hours</businessHours>
+        <businessHours>Support - US</businessHours>
+        <businessHours>Support - US CA</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Thanksgiving</name>
+        <recurrenceDayOfWeek>Thursday</recurrenceDayOfWeek>
+        <recurrenceInstance>Fourth</recurrenceInstance>
+        <recurrenceMonthOfYear>November</recurrenceMonthOfYear>
+        <recurrenceStartDate>2010-11-25</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Americas</businessHours>
+        <businessHours>Support - Customer Support Business Hours</businessHours>
+        <businessHours>Support - US</businessHours>
+        <businessHours>Support - US CA</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Thanksgiving - Day After</name>
+        <recurrenceDayOfWeek>Friday</recurrenceDayOfWeek>
+        <recurrenceInstance>Fourth</recurrenceInstance>
+        <recurrenceMonthOfYear>November</recurrenceMonthOfYear>
+        <recurrenceStartDate>2010-11-26</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Japan</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Vernal Equinox Day</name>
+        <recurrenceDayOfMonth>21</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>March</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-03-21</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-05-05</activityDate>
+        <description>Singapore Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Vesak Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Americas</businessHours>
+        <description>Veteran&#39;s day</description>
+        <isRecurring>true</isRecurring>
+        <name>Veteran&#39;s day</name>
+        <recurrenceDayOfMonth>12</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>November</recurrenceMonthOfYear>
+        <recurrenceStartDate>2019-11-12</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-12-30</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Year End Holiday 1</name>
+    </holidays>
+    <holidays>
+        <activityDate>2012-12-31</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Year End Holiday 2</name>
+    </holidays>
+    <holidays>
+        <activityDate>2013-01-01</activityDate>
+        <description>KK Holiday</description>
+        <isRecurring>false</isRecurring>
+        <name>Year End Holiday 3</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-02-06</activityDate>
+        <businessHours>EMEA</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>test holiday</name>
+    </holidays>
+</BusinessHoursSettings>

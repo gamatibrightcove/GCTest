@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>bc_logo_black2x100</masterLabel>
+    <originNetwork>BrightcoveCommunity</originNetwork>
+    <relationships>
+        <network>
+            <access>VIEWER</access>
+            <name>BrightcoveCommunity</name>
+        </network>
+        <network>
+            <access>VIEWER</access>
+            <name>RevOps portal</name>
+        </network>
+        <workspace>
+            <access>INFERRED</access>
+            <isManagingWorkspace>true</isManagingWorkspace>
+            <name>sfdc_asset_company_assets</name>
+        </workspace>
+    </relationships>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>bc_logo_black@2x-100.jpeg</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

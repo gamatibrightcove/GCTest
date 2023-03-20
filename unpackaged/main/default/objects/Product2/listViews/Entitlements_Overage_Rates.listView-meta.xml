@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entitlements_Overage_Rates</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>Oracle_Code__c</columns>
+    <columns>Product_Type__c</columns>
+    <columns>Entitlement_Type__c</columns>
+    <columns>Overage_Unit_of_Measure__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Entitlement_Type__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Entitlements &amp; Overage Rates</label>
+</ListView>

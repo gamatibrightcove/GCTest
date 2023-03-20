@@ -1,0 +1,280 @@
+{
+  "activeBrandingSetId" : "2f1845fe-59a9-4b2c-a863-94f40aafda95",
+  "customCSS" : "@font-face {\n    font-family: 'Public Sans';\n    /*src: url('/thebrightspot/s/sfsites/c/resource/PublicSans/PublicSans-Regular.ttf')*/\n    src: url('/s/sfsites/c/resource/PublicSans/PublicSans-Regular.ttf')\n}\n\n@font-face {\n    font-family: 'Public Sans Bold';\n    src: url('/s/sfsites/c/resource/PublicSans/PublicSans-Bold.ttf')\n    /*src: url('/thebrightspot/s/sfsites/c/resource/PublicSans/PublicSans-Bold.ttf')*/\n}\n\n.topicName {\n    color: #FC532B;\n}\n\n.deactivateAccount {\n    text-align: right;\n}\n\n.forceChatterSimpleFeedItemTopics--pill ul.topic-commaSeparatedList li a {\n    border-color: #FC532B;\n    border-radius: 40px;\n}\n\nfeeds_sorter-filter.slds-m-right_x-small.feeds-filter {\n    display: none;\n}\n\nfigcaption.slds-text-align_center.slds-text-color_weak.slds-p-horizontal_medium.slds-p-top_xx-large {\n    display: none;\n}\n\nlightning-button-icon-stateful.listViewManagerHeaderButton.quickFilterButton {\n    display: none;\n}\n\nbutton.dep-trigger {\n    visibility:hidden;\n    display:none !important\n}\n\nfeeds_best_answer-toggle {\n    visibility:hidden !important;\n}\n\nli[title=\"Downvote\"] {\n    visibility:hidden;\n    display:none !important;\n}\n\nli[title=\"Edit Topics\"] {\n    visibility:hidden;\n    display:none !important;\n}\n\nli[title=\"Bookmark\"] {\n    visibility:hidden;\n    display:none !important;\n}\na[title=\"Share with Group\"]{\n    visibility:hidden;\n    display:none !important;\n}\n\nimg.slds-illustration__svg.slds-m-bottom_none {\n    display: none;\n}\n\n.forceCommunityThemeNav.emberInnerHeader .mainNavItem .linkBtn:hover {\n    color: rgb(252, 173, 9) !important;\n    text-shadow: 0 0 4px rgb(0 0 0 / 50%) !important;\n}\n\nspan[aria-label=\"View All Badges\"] {\n    display: none;\n}\n\nlabel[for=\"bestAnswerCheckbox\"] {\n    display: none;\n}\n\ninput#bestAnswerCheckbox {\n    display: none;\n}\n\nlabel[for=\"profilePostCheckbox\"] {\n    display: none;\n}\n\ninput#profilePostCheckbox {\n    display: none;\n}\n\nlabel[for=\"profPostCommentCheckbox\"] {\n    display: none;\n}\n\ninput#profPostCommentCheckbox {\n    display: none;\n}\n\nlabel[for=\"commentAfterLikeCheckbox\"] {\n    display: none;\n}\n\ninput#commentAfterLikeCheckbox {\n    display: none;\n}\n\n.userRecognitionsHeader {\n    pointer-events: none;\n}",
+  "developerName" : "ember",
+  "id" : "290e5f54-1341-4da1-ab16-90856662aad6",
+  "label" : "Ember",
+  "layouts" : {
+    "Inner" : "3661444d-7c3a-47a2-a45b-10aa3e2f7cb2",
+    "Login" : "75c7e8a1-98f6-4c85-acc2-174636b4588d",
+    "ServiceNotAvailable" : "54b9a6e2-674d-4cab-94c6-5b63e416861b"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : { },
+    "componentName" : "salesforceIdentity:loginBody2",
+    "id" : "75c7e8a1-98f6-4c85-acc2-174636b4588d",
+    "label" : "Login",
+    "regions" : [ {
+      "id" : "e4d6cfe4-3f9a-4437-a136-a18d24874783",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "ab2e375b-1c66-45ad-b768-7997af26daa4",
+      "regionName" : "content",
+      "type" : "region"
+    }, {
+      "id" : "1f9ddfcb-5503-4135-9dba-990610ffcbd3",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1440,
+      "headerBgColor" : "rgba(255, 255, 255, 0.8)",
+      "isHeaderPinned" : true,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "3661444d-7c3a-47a2-a45b-10aa3e2f7cb2",
+    "label" : "Default",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "background" : "background: rgb(255,255,255)",
+          "backgroundOverlayColor" : "rgba(0, 0, 0, 0.3)",
+          "borderBottomColor" : "rgba(0, 15, 89, 0.8)",
+          "borderTopColor" : "rgba(255, 255, 255, 0)",
+          "bottomRowHeight" : 5,
+          "bottomRowOverlayColor" : "rgb(0, 0, 0)",
+          "containHeader" : true,
+          "containHeaderWidth" : 1531,
+          "dropdownBackgroundColor" : "rgb(255, 255, 255)",
+          "dropdownBackgroundHoverColor" : "",
+          "dropdownBorderColor" : "rgb(240, 240, 240)",
+          "dropdownTextColor" : "",
+          "dropdownTextHoverColor" : "rgb(255, 0, 0)",
+          "iconLinkColor" : "rgb(231, 231, 231)",
+          "iconLinkHoverColor" : "rgba(152, 224, 255, 0.9)",
+          "iconLinkTextShadowColor" : "rgba(0, 0, 0, 0.5)",
+          "linkActiveBorderColor" : "rgb(255, 255, 255)",
+          "linkColor" : "rgb(255, 255, 255)",
+          "linkHoverColor" : "rgb(252, 173, 9)",
+          "linkTextShadowColor" : "rgba(255, 255, 255, 0.3)",
+          "logoWidth" : 81,
+          "searchPosition" : "right",
+          "searchStyle" : "expanded",
+          "showAppLauncher" : false,
+          "showNotifications" : true,
+          "showProfileMenu" : true,
+          "showSearch" : true,
+          "topRowHeight" : 13
+        },
+        "componentName" : "forceCommunity:themeHeaderStacked",
+        "id" : "4691f7ab-92d3-4206-a4bd-815cf4d9c0ca",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "buttonBackgroundColor" : "",
+              "buttonBackgroundHoverColor" : "",
+              "buttonBorderColor" : "rgba(0, 0, 0, 0)",
+              "buttonBorderRadius" : 4,
+              "buttonText" : "Log in",
+              "buttonTextColor" : "",
+              "buttonTextHoverColor" : "",
+              "customizableUserProfileMenuEditor" : "Default_User_Profile_Menu1",
+              "menuStyleSettings" : "{\"selectedMenuStyleSetting\":\"iconOnly\",\"selectedIconSetting\":\"userAvatar\",\"includeCompanyName\":false,\"selectedTextOrientationSetting\":\"right\"}"
+            },
+            "componentName" : "forceCommunity:customizableUserProfileMenu",
+            "id" : "6fa8c6a8-902c-4f1c-b91d-053ca988348d",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "d5579104-65e6-43b2-b1d1-66a594436632",
+          "regionName" : "themeHeaderProfileMenu",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "rgb(255, 255, 255)",
+              "borderColor" : "rgba(0, 15, 89, 0.5)",
+              "borderRadius" : 4,
+              "borderStyle" : "outline",
+              "buttonColor" : "",
+              "buttonHoverColor" : "",
+              "crossObjectTypeaheadApiNames" : [ {
+                "isPublic" : true,
+                "name" : "FeedItem"
+              }, {
+                "isPublic" : true,
+                "name" : "KnowledgeArticleVersion"
+              } ],
+              "iconColor" : "rgba(0, 0, 0, 0.8)",
+              "placeholderText" : "Search",
+              "placeholderTextColor" : "rgba(0, 0, 0, 0.6)",
+              "showSearchButton" : false,
+              "textColor" : "rgba(0, 0, 0, 0.8)",
+              "typeaheadResultMax" : 5,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearch",
+            "id" : "64865bc9-6ae4-4919-af2c-fb384cd267e7",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "4abd2061-db49-4830-b08d-d698a418c18f",
+          "regionName" : "search",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "navAlignment" : "left",
+              "navItemThreshold" : 8,
+              "navigationMenuEditorRefresh" : "BrightSpot_Navigation"
+            },
+            "componentName" : "forceCommunity:themeNav",
+            "id" : "efe2aeaa-c415-41fa-87d9-d9fe8f098837",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "0b9f6e7f-4f5f-4045-8f3c-06d08ab98909",
+          "regionName" : "nav",
+          "type" : "region"
+        }, {
+          "id" : "75edb1c3-c813-47fe-918c-869445189c2d",
+          "regionName" : "cartIcon",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "bed68a88-6070-4e21-bfac-e5cbfca0d6f1",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "bgImage" : "background: rgba(241,241,241,0.4)",
+          "bgOverlayColor" : "rgba(0, 0, 0, 0.2)",
+          "captionText" : "",
+          "captionTextColor" : "rgba(0, 0, 0, 0.8)",
+          "captionTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "contentAlignment" : "center",
+          "contentWidth" : 100,
+          "ctaBtnOneBgColor" : "",
+          "ctaBtnOneBgHoverColor" : "",
+          "ctaBtnOneBorderColor" : "rgba(0, 0, 0, 0)",
+          "ctaBtnOneOpenNewTab" : false,
+          "ctaBtnOneText" : "Get Started",
+          "ctaBtnOneTextColor" : "",
+          "ctaBtnOneTextHoverColor" : "",
+          "ctaBtnOneUrl" : "https://community.brightcove.com/s/topic/0TO6f000000LzT9GAK/get-started",
+          "ctaBtnRadius" : 4,
+          "ctaBtnTwoBgColor" : "rgba(255, 255, 255, 0)",
+          "ctaBtnTwoBgHoverColor" : "rgba(255, 255, 255, 0.9)",
+          "ctaBtnTwoBorderColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoOpenNewTab" : false,
+          "ctaBtnTwoText" : "Secondary",
+          "ctaBtnTwoTextColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoTextHoverColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoUrl" : "",
+          "ctaShowBtnOne" : true,
+          "ctaShowBtnTwo" : false,
+          "fixedHeroWidth" : true,
+          "heroHeight" : 75,
+          "heroWidth" : 1920,
+          "showCaption" : false,
+          "showSubtitle" : true,
+          "showTitle" : true,
+          "subtitleText" : "Your community to connect, learn and share with the brightest minds in streaming video!",
+          "subtitleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "subtitleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "titleText" : "Welcome to The Bright Spot",
+          "titleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "titleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "type" : "callToAction"
+        },
+        "componentName" : "forceCommunity:themeHeroStarter",
+        "id" : "b5fad742-c27c-4849-a469-9c996964346d",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "rgb(255, 255, 255)",
+              "borderColor" : "rgba(0, 0, 0, 0.2)",
+              "borderRadius" : 4,
+              "borderStyle" : "outline",
+              "buttonColor" : "",
+              "buttonHoverColor" : "",
+              "crossObjectTypeaheadApiNames" : "",
+              "iconColor" : "rgb(255, 255, 255)",
+              "placeholderText" : "Ask a question...",
+              "placeholderTextColor" : "rgba(0, 0, 0, 0.6)",
+              "publicDropdownBackgroundColor" : "rgb(255, 255, 255)",
+              "publicDropdownBackgroundHoverColor" : "",
+              "publicDropdownBorderColor" : "rgb(240, 240, 240)",
+              "publicDropdownTextColor" : "",
+              "publicDropdownTextHoverColor" : "",
+              "showSearchButton" : true,
+              "textColor" : "rgba(0, 0, 0, 0.8)",
+              "typeaheadResultMax" : 6,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearchHero",
+            "id" : "5fbae92d-4966-40ae-9921-c2aa8d76b28b",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "bfd47324-90a7-4008-bc37-d8dad33aac3d",
+          "regionName" : "search",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "4d0f80ca-956a-4b75-bb9e-c2255945e5a9",
+      "regionName" : "themeHero",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<p style=\"text-align: center;background-color: black\"><a style=\"color:#000000;\">© 2022 Brightcove Inc. All rights reserved.\n    \n<p style=\"text-align: center;background-color: black;color: white;\"><a href=\"https://community.brightcove.com/s/community-guidelines\" style=\"color:#FFFFFF;\" target=\"_blank\">Community Guidelines</a> &middot; <a href=\"https://community.brightcove.com/s/the-bright-spot-privacy-policy?\" style=\"color:#FFFFFF;\" target=\"_blank\">Privacy Policy</a> &middot; <a href=\"https://community.brightcove.com/s/the-bright-spot-terms-of-use\"style=\"color:#FFFFFF\" target=\"_blank\">Terms of Use</a> &middot; <a href=\"https://www.brightcove.com/en/\" style=\"color:#FFFFFF\" target=\"_blank\">Brightcove.com</a> &middot; <a href=\"mailto:community@brighcove.com\" style=\"color:#FFFFFF\" target=\"_blank\">Email us at Community@brightcove.com</a>\n    </p>\n\n<p style=\"text-align: center;background-color: black\"><a style=\"color:#FFFFFF;\">© 2023 Brightcove Inc. All rights reserved.\n    <p style=\"text-align: center;background-color: black\"><a style=\"color:#000000;\">© 2023 Brightcove Inc. All rights reserved."
+        },
+        "componentName" : "forceCommunity:htmlBlock",
+        "id" : "5e0f9a48-f434-437b-a81b-9c85153ba78f",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "f118e9f0-e986-41b1-baf2-f38dde16a669",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1440,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "54b9a6e2-674d-4cab-94c6-5b63e416861b",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "a3c5c636-70e8-45c7-abf8-5ed5b939df02",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "683d1ff7-f7a4-49a0-bc4a-308538a7c5c7",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}

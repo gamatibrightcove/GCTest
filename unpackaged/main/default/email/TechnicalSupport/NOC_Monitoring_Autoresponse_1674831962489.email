@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+<center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0" width="625">
+	
+		<tr>
+			<td style="padding-bottom:0px;background-color:#f0f0f0" valign="top">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr>
+						<td align="left" valign="top">
+						<p style="padding:50px 50px 30px 50px;margin:0;color:#333;line-height:1.1;font-family:'Arial Black';font-size:34px;text-align:left">LIVE STREAM MONITORING ALERT</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:'Arial';font-size:15px;color:#333;line-height:150%" valign="top">
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Hello {{{Recipient.FirstName}}},</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Our Network Operations Center has identified a potential issue impacting your live stream. We will contact you with more details shortly.<br />
+						<br />
+						A case was created with the following information:</p>
+
+						<p>Case Number: <strong>{{{Case.CaseNumber}}}</strong><br />
+						Opened on: <strong>{{{Case.CreatedDate}}}</strong><br />
+						Subject: <strong>{{{Case.Subject}}}</strong></p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Feel free to reply to this email with questions.</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">Best regards,<br />
+						<strong>The Brightcove Network Operations Center</strong></p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">You can see all of your cases in our <a href="https://supportportal.brightcove.com/" style="color:#000000">Support Portal</a>, and current system status is always available on our <a href="https://status.brightcove.com/" style="color:#000000">Status Page</a>.<br />
+						<br />
+						{{{Case.E2CP__Case_Thread_Id__c}}}</p>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</center>
+</div>
+</body>
+</html>

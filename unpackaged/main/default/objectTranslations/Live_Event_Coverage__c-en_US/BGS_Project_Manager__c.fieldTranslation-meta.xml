@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- BGS Project Manager --></label>
+        <name>BGS_Project_Manager__c</name>
+        <relationshipLabel><!-- Live Event Coverage (BGS Project Manager) --></relationshipLabel>
+    </CustomFieldTranslation>

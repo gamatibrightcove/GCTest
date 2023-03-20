@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Primary Job CBR Enabled --></label>
+        <name>Primary_Job_CBR_Enabled__c</name>
+    </CustomFieldTranslation>

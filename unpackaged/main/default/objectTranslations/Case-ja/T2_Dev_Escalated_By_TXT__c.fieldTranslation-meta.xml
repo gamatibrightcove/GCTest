@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Contains the case owner when a case is escalated to T2dev. --></help>
+        <label><!-- T2 Dev Escalated By TXT --></label>
+        <name>T2_Dev_Escalated_By_TXT__c</name>
+    </CustomFieldTranslation>

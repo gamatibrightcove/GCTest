@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- BC Case Reason --></label>
+        <name>New_Case_Reason__c</name>
+        <picklistValues>
+            <masterLabel>API and Custom Dev</masterLabel>
+            <translation><!-- API and Custom Dev --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>API and Custom Dev - ZC</masterLabel>
+            <translation><!-- API and Custom Dev - ZC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access</masterLabel>
+            <translation><!-- Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Settings</masterLabel>
+            <translation><!-- Account Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Settings - AI</masterLabel>
+            <translation><!-- Account Settings - AI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Settings - ZC</masterLabel>
+            <translation><!-- Account Settings - ZC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administration</masterLabel>
+            <translation><!-- Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administration - ZC</masterLabel>
+            <translation><!-- Administration - ZC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advertising</masterLabel>
+            <translation><!-- Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics and Billing</masterLabel>
+            <translation><!-- Analytics and Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audience</masterLabel>
+            <translation><!-- Audience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audio/Video Quality</masterLabel>
+            <translation><!-- Audio/Video Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beacon</masterLabel>
+            <translation><!-- Beacon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove Campaign</masterLabel>
+            <translation><!-- Brightcove Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove Engage</masterLabel>
+            <translation><!-- Brightcove Engage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove Live</masterLabel>
+            <translation><!-- Brightcove Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS - Documentation (CS site/ Localization)</masterLabel>
+            <translation><!-- CS - Documentation (CS site/ Localization) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS Portal</masterLabel>
+            <translation><!-- CS Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud Playout</masterLabel>
+            <translation><!-- Cloud Playout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Delivery</masterLabel>
+            <translation><!-- Content Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Domain/SSL</masterLabel>
+            <translation><!-- Custom Domain/SSL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discovery</masterLabel>
+            <translation><!-- Discovery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution (Social)</masterLabel>
+            <translation><!-- Distribution (Social) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Encoding Settings</masterLabel>
+            <translation><!-- Encoding Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement Data</masterLabel>
+            <translation><!-- Engagement Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enhancement Request</masterLabel>
+            <translation><!-- Enhancement Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>File Transfers</masterLabel>
+            <translation><!-- File Transfers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gallery</masterLabel>
+            <translation><!-- Gallery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingestion</masterLabel>
+            <translation><!-- Ingestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Failures</masterLabel>
+            <translation><!-- Job Failures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Event Coverage</masterLabel>
+            <translation><!-- Live Event Coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live NOC</masterLabel>
+            <translation><!-- Live NOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Streaming (Akamai Legacy/Manual)</masterLabel>
+            <translation><!-- Live Streaming (Akamai Legacy/Manual) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metadata</masterLabel>
+            <translation><!-- Metadata --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Migration</masterLabel>
+            <translation><!-- Migration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Data</masterLabel>
+            <translation><!-- Missing Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile Development</masterLabel>
+            <translation><!-- Mobile Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New problem</masterLabel>
+            <translation><!-- New problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTT Flow</masterLabel>
+            <translation><!-- OTT Flow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback</masterLabel>
+            <translation><!-- Playback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback Restrictions</masterLabel>
+            <translation><!-- Playback Restrictions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports/Exports/Segments</masterLabel>
+            <translation><!-- Reports/Exports/Segments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Integrations</masterLabel>
+            <translation><!-- Retail Integrations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Sales Cloud Integration</masterLabel>
+            <translation><!-- Salesforce Sales Cloud Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Studio</masterLabel>
+            <translation><!-- Studio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Operations</masterLabel>
+            <translation><!-- Support Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Portal</masterLabel>
+            <translation><!-- Support Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV App Agency</masterLabel>
+            <translation><!-- TV App Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video.js</masterLabel>
+            <translation><!-- Video.js --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual Events</masterLabel>
+            <translation><!-- Virtual Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Player</masterLabel>
+            <translation><!-- Web Player --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Websites</masterLabel>
+            <translation><!-- Websites --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

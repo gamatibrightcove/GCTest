@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:start">Hello Support,<br />
+<br />
+Please unlock the following BC account:<br />
+<br />
+* BC Account ID: {{{BCAccount__c.BCAccountId__c}}}<br />
+* Account Name: {{{BCAccount__c.Name}}}<br />
+* Current publisher status: {{{BCAccount__c.Publisher_Status__c}}}<br />
+* New publisher status: APPROVED<br />
+<br />
+<br />
+When the change is complete, please confirm it to:<br />
+* {{{BCAccount__c.Extension_Authorized_By__c}}}<br />
+<br />
+If the contact for confirmation is "Brightcove Development", or is blank, do not send a confirmation after completing the change.<br />
+<br />
+<br />
+No changes should be made to Tier or Edition.<br />
+<br />
+<br />
+Thanks!<br />
+<br />
+<br />
+- - - - - - - - - -<br />
+<br />
+<br />
+ADDITIONAL INFORMATION:<br />
+<br />
+* Account Name: {{{BCAccount__c.Name}}}<br />
+* Account Profile: {{{BCAccount__c.Account_Owner_Profile__c}}}<br />
+* Account Tier: {{{BCAccount__c.Tier__c}}}<br />
+<br />
+* Primary Account Owner: {{{BCAccount__c.Primary_acct_owner_email__c}}}<br />
+<br />
+<br />
+* Original expiration date (trial accounts only): {{{BCAccount__c.Expiration_Date_Predefined__c}}}<br />
+* New expiration date (trial accounts only): {{{BCAccount__c.Account_Expiration_Date__c}}}<br />
+<br />
+<br />
+- - - - - - - - - -</div>
+</body>
+</html>

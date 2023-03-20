@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[BCLive Trial] Disable Account</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>BCLive Trial Event Disable Account</name>
+    <relatedEntityType>Account</relatedEntityType>
+    <style>none</style>
+    <subject>[BCLive Trial] Disable BCLive for the PudID: {{{Account.BC30Trial_PubID__c}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

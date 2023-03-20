@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template for Japanese Live Cases</description>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>LE-CaseClose-JA</name>
+    <style>none</style>
+    <subject>ライブイベントサポート {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>ご担当者様、
+
+ライブイベントサポートのご利用ありがとうございました。
+
+ケース番号: {!Case.CaseNumber}
+表題: {!Case.Subject}
+
+お手数をお掛け致しますが、サポート品質向上のため、下記アンケートへご協力いただければ幸いです。5 は非常に満足、1 が 非常に不満 となります。
+
+https://www.getfeedback.com/r/h7vb8XI1?Case_Contact_ID={!Case.ContactId}&amp;Case_ID={!Case.Id}&amp;Case_Account_ID={!Case.AccountId}&amp;Case_Contact={!Case.Contact}&amp;Case_Account={!Case.Account}&amp;Case_Owner_Full_Name={!Case.OwnerFullName}&amp;Case_Case_Number={!Case.CaseNumber}&amp;Case_Closed_Date={!Case.ClosedDate}&amp;Case_Support_Package={!Case.Support_Package__c}&amp;Case_Origin={!Case.Origin}&amp;Contact_Email={!Contact.Email}&amp;Case_Account_Tier={!Case.Account_Tier__c}&amp;Case_Account_Edition={!Case.Account_Edition__c}&amp;Case_Survey_Number={!Case.Survey_Number__c}&amp;gf_id={!Contact.Email}{!Case.Id}&amp;gf_unique={!Contact.Email}{!Case.Id}
+
+上記サポートケースに関して、引き続きのサポート対応をご希望の場合には、引き続き対応させていただきますので、本メールに直接ご返信ください。お客様からのご返信がない場合、該当のサポートケースはこのままクローズの状態となります。
+
+今後ともよろしくお願い致します。
+ブライトコーブ ネットワークオペレーションチーム
+
+お客様のサポートケースは全てサポート専用ポータルにてご覧いただくことが可能です。 また、現在のシステム稼働状況は、 システムステータスページ にてご覧いただけます。
+
+Terms &amp; Conditions | Privacy | Preferences &amp; Unsubscribe
+©2020 Brightcove Inc. All rights reserved. 290 Congress Street 4th Floor, Boston MA 02210, USA</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

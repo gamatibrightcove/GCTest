@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hi {{{Recipient.FirstName}}},<br />
+<br />
+We are reaching out because we have received a new business case regarding a new opportunity with the subject "{{{Case.Subject}}}"<br />
+<br />
+If Support is needed to activate an account based on this new contract we will need some additional information before we can continue with this configuration. Also, if there is some kind of <strong>Kickoff Date</strong> that we should be aware of, please let us know as this will help properly prioritize this configuration ticket.<br />
+<br />
+-Please provide the <strong>account ID</strong> in question<br />
+<br />
+-Confirm that the <strong>PAI is up to date</strong> and there is <strong>at least one named support contact</strong> for this account.<br />
+<br />
+-We would also need you to provide us with the <strong>Delivery Region for this account</strong>, currently, we provide these options:<br />
+US-east-1 (Virginia)<br />
+EU-west-1 (Dublin)<br />
+AP-northeast-1 (Tokyo)<br />
+AP-southeast-1 (Singapore)<br />
+AP-southeast-2 (Sydney)<br />
+<br />
+Once we have this information and we confirm the PAI and named support contacts are updated we will proceed to flip this account and share the configuration spreadsheet with you.<br />
+<br />
+Looking forward to your reply.<br />
+<br />
+All the best,<br />
+The Brightcove Support Team.<br />
+<br />
+{{{Case.E2CP__Case_Thread_Id__c}}}</body>
+</html>

@@ -1,0 +1,7 @@
+<p>Hello CS Leaders,&nbsp;</p>
+<p>This email is to inform you that {!Live_Event_Coverage__c.Name} created by {!Live_Event_Coverage__c.CreatedBy} has been marked as pro-bono.&nbsp;</p>
+<p>Last person to edit this LE Coverage was {!Live_Event_Coverage__c.LastModifiedBy}.</p>
+<p>Please contact the account owner to confirm approval from Finance and CS Leadership.</p>
+<p><a data-fr-linked="true" href="https://brightcove2--full.sandbox.lightning.force.com/lightning/r/Live_Event_Coverage__c/{!Live_Event_Coverage__c.Id}/view">https://brightcove2--full.sandbox.lightning.force.com/lightning/r/Live_Event_Coverage__c/{!Live_Event_Coverage__c.Id}/view</a></p>
+<p><br></p>
+<p>LINK: {!Live_Event_Coverage__c.Link}</p>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Do you have any other feedback on how we can make this service better? --></help>
+        <label><!-- CS Additional Feedback --></label>
+        <name>CS_Additional_Feedback__c</name>
+    </CustomFieldTranslation>

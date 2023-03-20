@@ -1,0 +1,19 @@
+Hi {!Receiving_User.FirstName},
+
+You’ve been enabled to join the new Revenue Operations portal. This is only the beginning of an exciting experience.
+
+In order to complete your registration, we would like to invite you to confirm your membership by clicking this link
+
+{!Community_Url}
+
+and using this username: {!Receiving_User.Username}.
+
+This first version of the portal will offer you the possibility to submit your cases to the Revenue Operations team and review the progress of existing ones.
+
+Please click on the link below to access the documentation page
+
+----
+https://docs.google.com/document/d/1BysCvvOLVzj3YD86_5Q6PPy6ficwDhjWWS996ff-cVA/edit?usp=sharing
+----
+
+Revenue Operations Team

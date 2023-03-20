@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If selected Increment Pricing will use the selected entitlement type as the quantity when calculating pricing --></help>
+        <label><!-- Use Entitlement Type as Quantity --></label>
+        <name>Use_Entitlement_Type__c</name>
+    </CustomFieldTranslation>

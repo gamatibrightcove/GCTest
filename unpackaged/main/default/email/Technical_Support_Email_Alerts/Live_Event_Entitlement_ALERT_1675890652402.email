@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<p>{{{Account.Name}}} has reached their Live Event Coverage allotment after your most recent request.<br />
+<br />
+Link to account:&nbsp;https://brightcove2--full.sandbox.lightning.force.com/lightning/r//account/{{{Account.Id}}}<br />
+<br />
+<br />
+Live Hours Available:&nbsp;{{{Account.Live_Event_Support_hours_available__c}}}<br />
+Live Hours Used:&nbsp;{{{Account.Live_Event_Support_Hours_used__c}}}<br />
+Live Hours Sold: {{{Account.Total_Live_Event_Support_hours_sold__c}}}<br />
+<br />
+Your request would put the customer below their available hours, please review and see if more hours need to be sold.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</body>
+</html>

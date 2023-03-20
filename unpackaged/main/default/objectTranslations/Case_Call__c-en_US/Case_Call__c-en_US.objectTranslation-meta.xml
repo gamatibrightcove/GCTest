@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Call</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Calls</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Case Call Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Call Memo/Next Steps field is required. --></errorMessage>
+        <name>Call_Memo_Next_Steps_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Start Time can&apos;t be greater than the End Time. --></errorMessage>
+        <name>Call_Time_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please specify the call intention --></errorMessage>
+        <name>Other_Call_Intention</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please specify the communication channel used. --></errorMessage>
+        <name>Other_Communication_Channel</name>
+    </validationRules>
+</CustomObjectTranslation>

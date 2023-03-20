@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Can we Win (provide more Value) and what is our Sales Strategy to beat it? --></help>
+        <label><!-- Sales Strategy to Win --></label>
+        <name>Sales_Strategy_to_Win__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+<center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0" width="625">
+	
+		<tr>
+			<td style="padding-bottom:0px;background-color:#f0f0f0" valign="top">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr>
+						<td align="left" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:'Arial';font-size:15px;color:#333;line-height:150%" valign="top">
+						<p style="margin-top:30px;">Case {{{Case.CaseNumber}}}, created on {{{Case.CreatedDate}}}<br />
+						{{{Case.Subject}}}</p>
+
+						<hr />
+						<p>{{{Case.E2CP__Most_Recent_Public_Comment_HTML__c}}}</p>
+
+						<hr />
+						<p style="font-family:'Arial';font-size:15px;color:#000000">You can see all of your cases in our <a href="https://supportportal.brightcove.com/" style="color:#000000">Support Portal</a>, and current system status is always available on our <a href="https://status.brightcove.com/" style="color:#000000">Status Page</a>.</p>
+
+						<p>Please join us on <a href="https://community.brightcove.com/s/" style="color:#000000">The Bright Spot</a>, Brightcove’s online community for customers and industry peers. A place to grow your network, share your expertise, and find inspiration from customer success.</p>
+
+						<hr />
+						<p style="font-family:'Arial';font-size:15px;color:#000000">{{{Case.E2CP__HistoryText__c}}}</p>
+
+						<p><br />
+						{{{Case.E2CP__Case_Thread_Id__c}}}</p>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</center>
+</div>
+</body>
+</html>

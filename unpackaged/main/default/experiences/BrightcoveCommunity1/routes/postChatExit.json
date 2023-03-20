@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "1ace565d-bd3f-4ed5-9356-ecef94bb2473",
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "configurationTags" : [ ],
+  "id" : "00b4cee9-d95a-4720-ba47-7e7f01446095",
+  "label" : "Post Chat Exit",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-post-chat-exit",
+  "type" : "route",
+  "urlPrefix" : "post-chat-exit"
+}

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Account_default_CC_list</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account default CC list</shortDescription>
+        <value>Account default CC list</value>
+    </labels>
+    <labels>
+        <fullName>Already_have_an_account</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Already have an account</shortDescription>
+        <value>Already have an account?</value>
+    </labels>
+    <labels>
+        <fullName>Attachment_name</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Attachment name</shortDescription>
+        <value>Attachment name</value>
+    </labels>
+    <labels>
+        <fullName>Auto_Response_New_Support</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AutoResponseNewSupport</shortDescription>
+        <value>Auto Response - New Support Packages</value>
+    </labels>
+    <labels>
+        <fullName>BatchJobMonitors</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BatchJobMonitors</shortDescription>
+        <value>rgrant@infogensolutions.com;tcoutu@brightcove.com;nlowe@brightcove.com</value>
+    </labels>
+    <labels>
+        <fullName>BrightSpotProfileName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BrightSpotProfileName</shortDescription>
+        <value>BrightSpot Community Login User</value>
+    </labels>
+    <labels>
+        <fullName>Call_me</fullName>
+        <categories>Lightning Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Call me</shortDescription>
+        <value>Call me</value>
+    </labels>
+    <labels>
+        <fullName>CommunityOwner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CommunityOwner</shortDescription>
+        <value>garroyo@brightcove.com</value>
+    </labels>
+    <labels>
+        <fullName>CommunitySelfRegAccountName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CommunitySelfRegAccountName</shortDescription>
+        <value>Brightcove Community SRU</value>
+    </labels>
+    <labels>
+        <fullName>Community_Case_Status_Awaiting_your_response</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Case Status: Awaiting your response</shortDescription>
+        <value>Awaiting your response</value>
+    </labels>
+    <labels>
+        <fullName>Community_Case_Status_Closed</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Case Status: Closed</shortDescription>
+        <value>Closed</value>
+    </labels>
+    <labels>
+        <fullName>Community_Case_Status_Closed_Awaiting</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Case Status: Closed - Awaiting</shortDescription>
+        <value>Closed - Awaiting</value>
+    </labels>
+    <labels>
+        <fullName>Community_Case_Status_In_Progress</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Case Status: In Progress</shortDescription>
+        <value>In progress</value>
+    </labels>
+    <labels>
+        <fullName>Community_Case_Status_New</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Case Status: New</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>Community_Case_Status_Resolved</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Case Status: Resolved</shortDescription>
+        <value>Resolved</value>
+    </labels>
+    <labels>
+        <fullName>Community_PwdReset_Hi</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community_PwdReset_Hi</shortDescription>
+        <value>Hi,</value>
+    </labels>
+    <labels>
+        <fullName>Community_PwdReset_L1</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community_PwdReset_L1</shortDescription>
+        <value>Your Brightcove Community password has been reset as per your request. Go to:</value>
+    </labels>
+    <labels>
+        <fullName>Community_PwdReset_Subject</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community_PwdReset_Subject</shortDescription>
+        <value>Your new Brightcove Community password</value>
+    </labels>
+    <labels>
+        <fullName>Community_WelcomeMsg_BC_Support</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community_WelcomeMsg_BC_Support</shortDescription>
+        <value>The Brightcove Team</value>
+    </labels>
+    <labels>
+        <fullName>Community_WelcomeMsg_L1</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community_WelcomeMsg_L1</shortDescription>
+        <value>Welcome to the Customer Support Portal, our web interface available to all Brightcove Customers that you can start using today to get in touch with our Technical Support team and keep track of any existing support cases.</value>
+    </labels>
+    <labels>
+        <fullName>Community_WelcomeMsg_L2</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community_WelcomeMsg_L2</shortDescription>
+        <value>Get started TODAY! Click here to login</value>
+    </labels>
+    <labels>
+        <fullName>Community_WelcomeMsg_Subject</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community_WelcomeMsg_Subject</shortDescription>
+        <value>Welcome to Brightcove Community</value>
+    </labels>
+    <labels>
+        <fullName>Community_WelcomeMsg_THX</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community_WelcomeMsg_THX</shortDescription>
+        <value>Thanks,</value>
+    </labels>
+    <labels>
+        <fullName>Delete_attachment</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete attachment</shortDescription>
+        <value>Delete attachment</value>
+    </labels>
+    <labels>
+        <fullName>Enter_additional_emails_separated_by_a_comma</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enter additional emails, separated by a comma</shortDescription>
+        <value>Enter additional emails, separated by a comma</value>
+    </labels>
+    <labels>
+        <fullName>First_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>First Name</shortDescription>
+        <value>First Name</value>
+    </labels>
+    <labels>
+        <fullName>If_like_to_add_emails_CC</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>If like to add emails CC</shortDescription>
+        <value>If you would like to add more email addresses to be copied on all communications related to this case, please include them in Additional CC field.</value>
+    </labels>
+    <labels>
+        <fullName>If_like_to_modify_CC</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>If like to modify CC</shortDescription>
+        <value>If you would like to modify your account&#39;s default CC list, you can do so by clicking on the top left corner of the screen and selecting My Account on the drop-down menu.</value>
+    </labels>
+    <labels>
+        <fullName>InfoProvided2Days_EN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>InfoProvided2Days-EN</shortDescription>
+        <value>This is just a quick note to ensure we clearly answered your request with our last email? If not, please let us know so we may further assist you. 
+
+We look forward to hearing back from you and hope you have a great day!</value>
+    </labels>
+    <labels>
+        <fullName>Just_chat</fullName>
+        <categories>Lightning Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Just chat</shortDescription>
+        <value>Just chat</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateBody_04I1O000000CaRq_1284110</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateBody_04I1O000000CaRq_1284110</shortDescription>
+        <value>To save the transcript, please go back and Click Save Transcript at the bottom of the chat window before closing the chat.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateBody_04I1O000000CaRq_5087228</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateBody_04I1O000000CaRq_5087228</shortDescription>
+        <value>To save the transcript, please go back and Click Save Transcript at the bottom of the chat window before closing the chat.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateBody_04I4C0000008OMl_2798789</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateBody_04I4C0000008OMl_2798789</shortDescription>
+        <value>To save the transcript, please go back and Click Save Transcript at the bottom of the chat window before closing the chat.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_CloseConfirmation_ChatStateBody_04I6f000000XZBA_6143844</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_CloseConfirmation_ChatStateBody_04I6f000000XZBA_6143844</shortDescription>
+        <value>To save the transcript, please go back and Click Save Transcript at the bottom of the chat window before closing the chat.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Chat_ExtendedHeader_ChatStateHeaderGreeting_04I540000004CIe_8383112</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Chat_ExtendedHeader_ChatStateHeaderGreeting_04I540000004CIe_8383112</shortDescription>
+        <value>Thanks for chatting with us. Ask me anything.</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_WithQueuePos_WaitingQueuePosMaxMessageSecondL_04I540000004CIe_7306616</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_WithQueuePos_WaitingQueuePosMaxMessageSecondL_04I540000004CIe_7306616</shortDescription>
+        <value>An agent is on the way.</value>
+    </labels>
+    <labels>
+        <fullName>Last_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Last Name</shortDescription>
+        <value>Last Name</value>
+    </labels>
+    <labels>
+        <fullName>Prechat_disclaimer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Prechat disclaimer</shortDescription>
+        <value>Please note that this chat request will be routed to our English-speaking Support Engineer.</value>
+    </labels>
+    <labels>
+        <fullName>Priority</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Priority</shortDescription>
+        <value>Priority</value>
+    </labels>
+    <labels>
+        <fullName>Refresh</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refresh</shortDescription>
+        <value>Refresh</value>
+    </labels>
+    <labels>
+        <fullName>Request_closure</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Request closure</shortDescription>
+        <value>Request closure</value>
+    </labels>
+    <labels>
+        <fullName>Search</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Search_by_Account_Name</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search by Account Name</shortDescription>
+        <value>Search by Account Name</value>
+    </labels>
+    <labels>
+        <fullName>Search_for_cases</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search for cases</shortDescription>
+        <value>Search for cases</value>
+    </labels>
+    <labels>
+        <fullName>Search_something_else</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search something else</shortDescription>
+        <value>We didn&#39;t find anything for you, try searching for something else!</value>
+    </labels>
+    <labels>
+        <fullName>SuccessPageURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SuccessPageURL</shortDescription>
+        <value>/thebrightspot/s/success</value>
+    </labels>
+    <labels>
+        <fullName>TBS_Privacy_Policy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TBS_Privacy_Policy</shortDescription>
+        <value>https://www.brightcove.com/en/legal/the-bright-spot-privacy-policy/</value>
+    </labels>
+    <labels>
+        <fullName>TBS_Terms_and_Conditions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TBS_Terms_and_Conditions</shortDescription>
+        <value>https://www.brightcove.com/en/legal/the-bright-spot-terms-of-use/</value>
+    </labels>
+    <labels>
+        <fullName>Test_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Test Label</shortDescription>
+        <value>This is only a test
+This is only a test</value>
+    </labels>
+    <labels>
+        <fullName>This_is_your_default_CC</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This is your default CC</shortDescription>
+        <value>This is your account&#39;s default CC list</value>
+    </labels>
+    <labels>
+        <fullName>Update_CC_recipients</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Update CC recipients</shortDescription>
+        <value>Update CC recipients</value>
+    </labels>
+    <labels>
+        <fullName>Update_additional_CC</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Update additional CC</shortDescription>
+        <value>Update additional CC</value>
+    </labels>
+    <labels>
+        <fullName>Update_default_CC_list</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Update default CC list</shortDescription>
+        <value>Update default CC list</value>
+    </labels>
+    <labels>
+        <fullName>Update_priority</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Update priority</shortDescription>
+        <value>Update priority</value>
+    </labels>
+    <labels>
+        <fullName>Uploaded_by</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Uploaded by</shortDescription>
+        <value>Uploaded by</value>
+    </labels>
+    <labels>
+        <fullName>View_attachment</fullName>
+        <categories>Lightning Web Components</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>View attachment</shortDescription>
+        <value>View attachment</value>
+    </labels>
+    <labels>
+        <fullName>Would_you_like_call</fullName>
+        <categories>Brightcove, Visualforce</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Would you like call</shortDescription>
+        <value>Would you like to request a call?</value>
+    </labels>
+    <labels>
+        <fullName>csat_part_1</fullName>
+        <categories>Brightcove, Visualforce</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>csat part 1</shortDescription>
+        <value>We value your feedback. Please take a moment to let us know how we did during this interaction.</value>
+    </labels>
+    <labels>
+        <fullName>csat_part_2</fullName>
+        <categories>Brightcove, Visualforce</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>csat part 2</shortDescription>
+        <value>On a scale from 1 to 5, with 5 being</value>
+    </labels>
+    <labels>
+        <fullName>csat_part_2_v2</fullName>
+        <categories>Brightcove, Visualforce</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>csat part 2</shortDescription>
+        <value>On a scale from 1 to 5, with 5 being</value>
+    </labels>
+    <labels>
+        <fullName>csat_part_3</fullName>
+        <categories>Brightcove, Visualforce</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>csat part 3</shortDescription>
+        <value>very satisfied</value>
+    </labels>
+    <labels>
+        <fullName>csat_part_3_v2</fullName>
+        <categories>Brightcove, Visualforce</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>csat part 3</shortDescription>
+        <value>very satisfied</value>
+    </labels>
+    <labels>
+        <fullName>csat_part_4</fullName>
+        <categories>Brightcove, Visualforce</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>csat part 4</shortDescription>
+        <value>and 1</value>
+    </labels>
+    <labels>
+        <fullName>csat_part_5</fullName>
+        <categories>Brightcove, Visualforce</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>csat part 5</shortDescription>
+        <value>very dissatisfied</value>
+    </labels>
+    <labels>
+        <fullName>csat_part_6</fullName>
+        <categories>Brightcove, Visualforce</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>csat part 6</shortDescription>
+        <value>how would you rate our chat support?</value>
+    </labels>
+</CustomLabels>

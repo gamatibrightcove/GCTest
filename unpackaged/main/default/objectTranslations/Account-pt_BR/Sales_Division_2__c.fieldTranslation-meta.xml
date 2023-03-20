@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Brightcove Sales Division that by default owns the account based on its geographic location --></help>
+        <label><!-- Sales Division 2 --></label>
+        <name>Sales_Division_2__c</name>
+    </CustomFieldTranslation>

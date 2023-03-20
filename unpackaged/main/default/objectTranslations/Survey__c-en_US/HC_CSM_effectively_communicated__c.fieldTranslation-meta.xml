@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How would you rate the following:
+Customer Success Manager effectively communicated ways that we could improve our integration. --></help>
+        <label><!-- HC CSM effectively communicated --></label>
+        <name>HC_CSM_effectively_communicated__c</name>
+    </CustomFieldTranslation>

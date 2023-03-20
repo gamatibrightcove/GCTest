@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Secondary Industry --></label>
+        <name>Secondary_Industry__c</name>
+        <picklistValues>
+            <masterLabel>Aerospace &amp; Defense</masterLabel>
+            <translation><!-- Aerospace &amp; Defense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Airlines</masterLabel>
+            <translation><!-- Airlines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associations</masterLabel>
+            <translation><!-- Associations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automobiles &amp; Parts</masterLabel>
+            <translation><!-- Automobiles &amp; Parts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boutique Design &amp; Development Shops</masterLabel>
+            <translation><!-- Boutique Design &amp; Development Shops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcasters &amp; Cable Networks</masterLabel>
+            <translation><!-- Broadcasters &amp; Cable Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction &amp; Materials</masterLabel>
+            <translation><!-- Construction &amp; Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Travel</masterLabel>
+            <translation><!-- Consumer Travel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Aggregators</masterLabel>
+            <translation><!-- Content Aggregators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crowdfunding</masterLabel>
+            <translation><!-- Crowdfunding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cultural Organizations</masterLabel>
+            <translation><!-- Cultural Organizations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design &amp; Marketing Agencies</masterLabel>
+            <translation><!-- Design &amp; Marketing Agencies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Learning</masterLabel>
+            <translation><!-- E-Learning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricity</masterLabel>
+            <translation><!-- Electricity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faith-based</masterLabel>
+            <translation><!-- Faith-based --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Federal Government</masterLabel>
+            <translation><!-- Federal Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Film Studios</masterLabel>
+            <translation><!-- Film Studios --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Drug Retailers</masterLabel>
+            <translation><!-- Food &amp; Drug Retailers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming &amp; eSports</masterLabel>
+            <translation><!-- Gaming &amp; eSports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gas, Water &amp; Multiutilities</masterLabel>
+            <translation><!-- Gas, Water &amp; Multiutilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Retailers</masterLabel>
+            <translation><!-- General Retailers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR &amp; Staffing</masterLabel>
+            <translation><!-- HR &amp; Staffing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation><!-- Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitals &amp; Medical Services</masterLabel>
+            <translation><!-- Hospitals &amp; Medical Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotels</masterLabel>
+            <translation><!-- Hotels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial Transportation</masterLabel>
+            <translation><!-- Industrial Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information Technology (IT)</masterLabel>
+            <translation><!-- Information Technology (IT) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large System Integrators</masterLabel>
+            <translation><!-- Large System Integrators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCNs (Multi Channel Networks)</masterLabel>
+            <translation><!-- MCNs (Multi Channel Networks) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Museums</masterLabel>
+            <translation><!-- Museums --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music</masterLabel>
+            <translation><!-- Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Media</masterLabel>
+            <translation><!-- New Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Profit</masterLabel>
+            <translation><!-- Non-Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Profit Media</masterLabel>
+            <translation><!-- Non-Profit Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online News</masterLabel>
+            <translation><!-- Online News --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay TV Distributors</masterLabel>
+            <translation><!-- Pay TV Distributors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performing Arts</masterLabel>
+            <translation><!-- Performing Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal &amp; Household Goods</masterLabel>
+            <translation><!-- Personal &amp; Household Goods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmaceutical</masterLabel>
+            <translation><!-- Pharmaceutical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print Publishing</masterLabel>
+            <translation><!-- Print Publishing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio</masterLabel>
+            <translation><!-- Radio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate</masterLabel>
+            <translation><!-- Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreational Services</masterLabel>
+            <translation><!-- Recreational Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurants &amp; Bars</masterLabel>
+            <translation><!-- Restaurants &amp; Bars --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schools &amp; Universities</masterLabel>
+            <translation><!-- Schools &amp; Universities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation><!-- Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports Leagues</masterLabel>
+            <translation><!-- Sports Leagues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State &amp; Local Government</masterLabel>
+            <translation><!-- State &amp; Local Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Services</masterLabel>
+            <translation><!-- Support Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel &amp; Tourism</masterLabel>
+            <translation><!-- Travel &amp; Tourism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Ad Network</masterLabel>
+            <translation><!-- Video Ad Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Production</masterLabel>
+            <translation><!-- Video Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Development Shop</masterLabel>
+            <translation><!-- Web Development Shop --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

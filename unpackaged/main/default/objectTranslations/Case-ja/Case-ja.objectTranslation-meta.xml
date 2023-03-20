@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>CS Escalation</layout>
+        <sections>
+            <label><!-- Admin --></label>
+            <section>Admin</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact/Account Information --></label>
+            <section>Contact/Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Escalated Case --></label>
+            <section>Escalated Case</section>
+        </sections>
+        <sections>
+            <label><!-- Follow-up process --></label>
+            <section>Follow-up process</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label><!-- Admin --></label>
+            <section>Admin</section>
+        </sections>
+        <sections>
+            <label><!-- Case Details --></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label><!-- Case Triaging --></label>
+            <section>Case Triaging</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Entitlement --></label>
+            <section>Entitlement</section>
+        </sections>
+        <sections>
+            <label><!-- Escalate to Tier 2 --></label>
+            <section>Escalate to Tier 2</section>
+        </sections>
+        <sections>
+            <label><!-- JIRA Component --></label>
+            <section>JIRA Component</section>
+        </sections>
+        <sections>
+            <label><!-- JIRA details --></label>
+            <section>JIRA details</section>
+        </sections>
+        <sections>
+            <label><!-- SLA &amp; Age Info --></label>
+            <section>SLA &amp; Age Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout Manager</layout>
+        <sections>
+            <label><!-- Admin --></label>
+            <section>Admin</section>
+        </sections>
+        <sections>
+            <label><!-- Case Details --></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label><!-- Case Triaging --></label>
+            <section>Case Triaging</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Entitlement --></label>
+            <section>Entitlement</section>
+        </sections>
+        <sections>
+            <label><!-- Escalate to Tier 2 --></label>
+            <section>Escalate to Tier 2</section>
+        </sections>
+        <sections>
+            <label><!-- JIRA Component --></label>
+            <section>JIRA Component</section>
+        </sections>
+        <sections>
+            <label><!-- JIRA details --></label>
+            <section>JIRA details</section>
+        </sections>
+        <sections>
+            <label><!-- SLA &amp; Age Info --></label>
+            <section>SLA &amp; Age Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Close Case Layout</layout>
+        <layoutType>CaseClose</layoutType>
+        <sections>
+            <label><!-- Case details --></label>
+            <section>Case details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NOC</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact/Account Information --></label>
+            <section>Contact/Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Escalated to Tier 2 --></label>
+            <section>Escalated to Tier 2</section>
+        </sections>
+        <sections>
+            <label><!-- JIRA details --></label>
+            <section>JIRA details</section>
+        </sections>
+        <sections>
+            <label><!-- Jira --></label>
+            <section>Jira</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NOC Close Case Layout</layout>
+        <layoutType>CaseClose</layoutType>
+        <sections>
+            <label><!-- Case Details --></label>
+            <section>Case Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Revops Portal</layout>
+        <sections>
+            <label><!-- Contact/Account Information --></label>
+            <section>Contact/Account Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Service Desk</layout>
+        <sections>
+            <label><!-- Admin --></label>
+            <section>Admin</section>
+        </sections>
+        <sections>
+            <label><!-- Case Details --></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label><!-- Case Triaging --></label>
+            <section>Case Triaging</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Entitlement --></label>
+            <section>Entitlement</section>
+        </sections>
+        <sections>
+            <label><!-- Escalate to Tier 2 --></label>
+            <section>Escalate to Tier 2</section>
+        </sections>
+        <sections>
+            <label><!-- JIRA Component --></label>
+            <section>JIRA Component</section>
+        </sections>
+        <sections>
+            <label><!-- JIRA details --></label>
+            <section>JIRA details</section>
+        </sections>
+        <sections>
+            <label><!-- SLA &amp; Age Info --></label>
+            <section>SLA &amp; Age Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Support Operations</layout>
+        <sections>
+            <label><!-- Admin --></label>
+            <section>Admin</section>
+        </sections>
+        <sections>
+            <label><!-- Case Details --></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label><!-- Case Triaging --></label>
+            <section>Case Triaging</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Entitlement --></label>
+            <section>Entitlement</section>
+        </sections>
+        <sections>
+            <label><!-- Escalate to Tier 2 --></label>
+            <section>Escalate to Tier 2</section>
+        </sections>
+        <sections>
+            <label><!-- JIRA Component --></label>
+            <section>JIRA Component</section>
+        </sections>
+        <sections>
+            <label><!-- JIRA details --></label>
+            <section>JIRA details</section>
+        </sections>
+        <sections>
+            <label><!-- SLA &amp; Age Info --></label>
+            <section>SLA &amp; Age Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TS Community - Case Layout</layout>
+        <sections>
+            <label><!-- Case details --></label>
+            <section>Case details</section>
+        </sections>
+        <sections>
+            <label><!-- View All --></label>
+            <section>View All</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Close Case (DealDesk) --></label>
+        <name>Close_Case_DealDesk</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Close Case - Escalation --></label>
+        <name>Close_Case_Escalation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Close Escalation --></label>
+        <name>Close_Escalation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NEW CLOSE CASE --></label>
+        <name>NEW_CLOSE_CASE</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- QA-Close Case --></label>
+        <name>QA_Close_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- TSCloseCase --></label>
+        <name>TSCloseCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Close as Duplicate --></label>
+        <name>Close_as_Duplicate</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Close as spam --></label>
+        <name>Close_as_spam</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Close case --></label>
+        <name>FLOW_Close_case</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>クローズ依頼</label>
+        <name>Request_closure</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Handoff --></label>
+        <name>Create_Handoff</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Status --></label>
+        <name>PendingCustomer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Close Case --></label>
+        <name>CloseCase2</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Account --></label>
+        <name>Update_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Used for escalations of cases --></description>
+        <label><!-- Case Escalation --></label>
+        <name>Case_Escalation</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Live Monitoring and Live Events Cases --></description>
+        <label><!-- NOC Cases --></label>
+        <name>NOC_Cases</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Tickets managed by the Revenue Operation (Service Desk) team --></description>
+        <label><!-- Sales Service Desk --></label>
+        <name>Sales_ServiceDesk</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For internal technical support operations ticket --></description>
+        <label><!-- Support Operations --></label>
+        <name>Support_Operations</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- for the Technical Support documentation create process. --></description>
+        <label><!-- TS Documentation --></label>
+        <name>TS_Documentation</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents the cases from customers managed by Technical Support team --></description>
+        <label><!-- Technical Support --></label>
+        <name>Technical_Support</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- BC Case Reason required before saving the record --></errorMessage>
+        <name>BCCaseReasonMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Before closing this case please create a Coaching Notes record and try again. --></errorMessage>
+        <name>CaseEscalationNeedsCoaching</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Priority field is required to create the record. --></errorMessage>
+        <name>CaseRequiresPriority</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed case summary is needed before closing the case --></errorMessage>
+        <name>CaseSummaryNeededBeforeClosing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed - Unresolved, Root Cause: Bug, System Issue, require a JIRA before closing the case. --></errorMessage>
+        <name>CaseUnresolvedRequresJira</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The case owner requires a value: please specify the case owner or the name of a queue. --></errorMessage>
+        <name>Case_Escalation_Requires_CaseOwner_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The change of the field &apos;Status&apos; is not allowed. --></errorMessage>
+        <name>Case_Status_cannot_change_by_portal_user</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the parent case before closing as duplicate --></errorMessage>
+        <name>ClosedasDuplicateParentNeeded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case Reason and Case Sub Reason are required. --></errorMessage>
+        <name>HasJIRARequiresReasonSubReason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You need to inform the customer and select the &quot;Informed customer&quot; checkbox before escalating the case to a T2 Queue --></errorMessage>
+        <name>Inform_the_customer_of_the_T2_Escalation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide a value for the field --></errorMessage>
+        <name>OtherCaseSubReasonrequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If T2 Escalation Reason=Other, then &apos;T2 Escalation Reason Other&apos; field is required to be filled in --></errorMessage>
+        <name>T2_Escalation_Other_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- T2 Escalation Process Reason is required --></errorMessage>
+        <name>T2_Escalation_Process_Reason_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field is required when filling 3rd Party Case field --></errorMessage>
+        <name>Third_party_field_required</name>
+    </validationRules>
+</CustomObjectTranslation>

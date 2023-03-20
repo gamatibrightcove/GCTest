@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Live Event Coverage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Live Event Coverage</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Live Event Coverage Layout</layout>
+        <sections>
+            <label><!-- Admins --></label>
+            <section>Admins</section>
+        </sections>
+        <sections>
+            <label><!-- Coverage Information --></label>
+            <section>Coverage Information</section>
+        </sections>
+        <sections>
+            <label><!-- Coverage Start Information - 24 hours notation (ex: 13:00 = 01:00PM) --></label>
+            <section>Coverage Start Information - 24 hours notation (ex: 13:00 = 01:00PM)</section>
+        </sections>
+        <sections>
+            <label><!-- Coverate End Information - 24-hour notation (ex: 13:00 = 01:00PM) --></label>
+            <section>Coverate End Information - 24-hour notation (ex: 13:00 = 01:00PM)</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Date/Time Information --></label>
+            <section>Date/Time Information</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Personel Information --></label>
+            <section>Personel Information</section>
+        </sections>
+        <sections>
+            <label><!-- Preferred Testing Time Information (30 mins included 24-hours notation) --></label>
+            <section>Preferred Testing Time Information (30 mins included 24-hours notation)</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Live Event Support --></label>
+        <name>Live_Event_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- To track customers and channels being monitored through the NOC Automated or Premium service --></description>
+        <label><!-- 24/7 Channel Monitoring --></label>
+        <name>X24_7_Channel_Monitoring</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must enter the name of the BGS Project Manager --></errorMessage>
+        <name>BGS_Engagement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter the amount of time the stream was down due to the reported issues. If none, enter 0. --></errorMessage>
+        <name>Downtime_should_be_added</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the URL to the High Profile Event notification form. If not able yet you can leave as TBD. Note you will be required to enter the form as soon as it is available. --></errorMessage>
+        <name>High_Profile_Event_must_enter_the_form</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please list any issues that arose. If none please enter &quot;NONE&quot; --></errorMessage>
+        <name>ListIssues</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please review the &apos;Live Event Support hours available&apos; field on the account. The amount available is not enough to cover the current request. --></errorMessage>
+        <name>LiveEventHoursAvailableNotAvailable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- MAX CCU - Actual value is required to close the LE --></errorMessage>
+        <name>Max_CCU_Actual_cannot_be_empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Event must end after it has started --></errorMessage>
+        <name>Negative_Duration</name>
+    </validationRules>
+</CustomObjectTranslation>

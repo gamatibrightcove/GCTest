@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Account_Brightcove_Community_SRU_name_change</fullName>
+        <description>Account - Brightcove Community SRU name change</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CS_Managers</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Technical_Support_Email_Alerts/Brightcove_Community_SRU_Account_Name_Change_1675476781480</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Platinum_CS_Manager_Assigned</fullName>
+        <description>Account - Platinum CS Manager Assigned</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Platinum_TS_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Technical_Support_Email_Alerts/Platinum_Manager_Assigned_1675478039559</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Platinum_CS_Rep_Assigned</fullName>
+        <description>Account - Platinum CS Rep Assigned</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Platinum_TS_Rep__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Technical_Support_Email_Alerts/Platinum_Rep_Assigned_1675477983005</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Platinum_alert_changed</fullName>
+        <ccEmails>cs_leadership@brightcove.com</ccEmails>
+        <description>Account - Platinum alert changed</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Technical_Support_Email_Alerts/Account_Platinum_Alert_changed_1676241727535</template>
+    </alerts>
+</Workflow>

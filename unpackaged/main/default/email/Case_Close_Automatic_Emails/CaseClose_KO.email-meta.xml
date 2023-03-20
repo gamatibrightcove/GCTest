@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email will be sent to the customer when the case is closed by a Support Specialist - Korean - Updated December 2021</description>
+    <encodingKey>ks_c_5601-1987</encodingKey>
+    <name>CaseClose-KO</name>
+    <style>none</style>
+    <subject>Brightcove Case {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>안녕하세요 {!Contact.FirstName}님,
+
+케이스 종료 고지
+
+이 메일은 최근에 저희 기술 지원 요원인 {!Case.OwnerFirstName}를 통해 리포트해 주신 기술 지원 요청 사항에 대한 후속 조치의 일환으로 보내 드리는 것입니다.
+
+기술지원 케이스 번호: {!Case.CaseNumber}
+제목: {!Case.Subject}
+
+잠시 시간을 내셔서 피드백을 주시면 대단히 감사하겠습니다. 1에서 10까지의 번호중, 10은 매우 만족이며 1은 매우 불만족 일때, 귀하께서 지원받은 사항을 평가하여 선택하여 주시기 바랍니다.
+
+https://www.getfeedback.com/r/5BXN8kGS?Case_Contact_ID={!Case.ContactId}&amp;Case_ID={!Case.Id}&amp;Case_Account_ID={!Case.Account_Account_ID__c}&amp;gf_id={!Contact.Email}{!Case.Id}&amp;Case_Closed_Date={!Case.ClosedDate}&amp;Case_Owner_Full_Name={!Case.OwnerFullName} 
+
+만약 해당 케이스에 대해 추가 정보나 지원이 필요하시면 이 메일에 직접 응답주시기 바랍니다. 별다른 추가 지원 요청이 없을때에는 해당 케이스는 해결된 것으로 보고 종료 하도록 하겠습니다.
+
+감사합니다,
+브라이트코브 기술지원팀.
+
+리포트 해주신 모든 써포트 케이스의 상태는 써포트 포탈 페이지  (https://supportportal.brightcove.com)를 통해, 현재 브라이트코브 시스템의 상태는 시스템 상태 페이지 (https://status.brightcove.com)를 통해 확인하실 수 있습니다..</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

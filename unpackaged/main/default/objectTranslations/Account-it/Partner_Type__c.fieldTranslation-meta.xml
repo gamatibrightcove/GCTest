@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Partner Type --></label>
+        <name>Partner_Type__c</name>
+        <picklistValues>
+            <masterLabel>Marketplace Partner&quot;</masterLabel>
+            <translation><!-- Marketplace Partner&quot; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master License Partner</masterLabel>
+            <translation><!-- Master License Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral Partner</masterLabel>
+            <translation><!-- Referral Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution Partner</masterLabel>
+            <translation><!-- Solution Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation><!-- Technology Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner - BC Resells</masterLabel>
+            <translation><!-- Technology Partner - BC Resells --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

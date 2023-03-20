@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Documentation Used --></label>
+        <name>Documentation_Used__c</name>
+        <picklistValues>
+            <masterLabel>Brightcove University</masterLabel>
+            <translation><!-- Brightcove University --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confluence</masterLabel>
+            <translation><!-- Confluence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation missing</masterLabel>
+            <translation><!-- Documentation missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No documentation needed</masterLabel>
+            <translation><!-- No documentation needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Documentation</masterLabel>
+            <translation><!-- Public Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Knowledge</masterLabel>
+            <translation><!-- Salesforce Knowledge --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

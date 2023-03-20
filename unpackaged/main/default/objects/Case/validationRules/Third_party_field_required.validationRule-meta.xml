@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Third_party_field_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (RecordTypeId = &#39;0128F000000W684QAC&#39;, /*Technical Support*/
+OR(
+$UserRole.Name = &quot;Technical Support Manager&quot;,
+$UserRole.Name = &quot;Technical Support Rep&quot;
+),
+AND(
+NOT(ISBLANK( X3rd_Party_Case__c )) , 
+ISPICKVAL( X3rd_Party__c , &#39;&#39;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>X3rd_Party__c</errorDisplayField>
+    <errorMessage>This field is required when filling 3rd Party Case field</errorMessage>
+</ValidationRule>

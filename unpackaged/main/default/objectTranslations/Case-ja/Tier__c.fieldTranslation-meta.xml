@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Case Triage Tier --></label>
+        <name>Tier__c</name>
+        <picklistValues>
+            <masterLabel>CSR</masterLabel>
+            <translation><!-- CSR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOC</masterLabel>
+            <translation><!-- NOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Operations</masterLabel>
+            <translation><!-- Support Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation><!-- Tier 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2 Dev</masterLabel>
+            <translation><!-- Tier 2 Dev --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2 Prod</masterLabel>
+            <translation><!-- Tier 2 Prod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 3</masterLabel>
+            <translation><!-- Tier 3 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

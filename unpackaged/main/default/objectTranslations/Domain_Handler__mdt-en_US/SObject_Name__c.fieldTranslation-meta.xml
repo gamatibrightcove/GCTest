@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- SObject Name --></label>
+        <name>SObject_Name__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Block_Pricing__c</masterLabel>
+            <translation><!-- Block_Pricing__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove_Account__c</masterLabel>
+            <translation><!-- Brightcove_Account__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation><!-- Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation><!-- Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom_Pricing__c</masterLabel>
+            <translation><!-- Custom_Pricing__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Log__c</masterLabel>
+            <translation><!-- Log__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OpportunityLineItem</masterLabel>
+            <translation><!-- OpportunityLineItem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OpportunitySplit</masterLabel>
+            <translation><!-- OpportunitySplit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order</masterLabel>
+            <translation><!-- Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricebook2</masterLabel>
+            <translation><!-- Pricebook2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product2</masterLabel>
+            <translation><!-- Product2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__BlockPrice__c</masterLabel>
+            <translation><!-- SBQQ__BlockPrice__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__ProductFeature__c</masterLabel>
+            <translation><!-- SBQQ__ProductFeature__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__ProductOption__c</masterLabel>
+            <translation><!-- SBQQ__ProductOption__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Quote__c</masterLabel>
+            <translation><!-- SBQQ__Quote__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Subscription__c</masterLabel>
+            <translation><!-- SBQQ__Subscription__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task</masterLabel>
+            <translation><!-- Task --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation><!-- User --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

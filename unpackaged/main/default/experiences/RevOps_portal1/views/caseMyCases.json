@@ -1,0 +1,142 @@
+{
+  "appPageId" : "78e82cba-2d3e-4a06-b8f4-2b7701c50289",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "62ceec09-41f5-47a7-b3c2-ada130b18bf0",
+  "label" : "Case - My Cases",
+  "regions" : [ {
+    "id" : "9c361b12-aec4-482c-bb35-1621a24af3a3",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "e522be25-f293-4b12-a5d1-dcb45bc04e10",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "07fdd4f3-56f7-4c12-a7fd-563fc465c59b",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Open Cases"
+          }, {
+            "UUID" : "5ac2d0d1-3798-41dc-b16e-eca867904fc5",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "My Closed Cases"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "e522be25-f293-4b12-a5d1-dcb45bc04e10",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Sales_Service_Desk_My_Open_Cases",
+            "layout" : "STANDARD",
+            "pageSize" : 15,
+            "scope" : "Case",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "1620f822-3a96-4db6-a5d0-47c0b184df4b",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "07fdd4f3-56f7-4c12-a7fd-563fc465c59b",
+        "regionLabel" : "Open Cases",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Sales_Service_Desk_My_Closed_Cases",
+            "layout" : "STANDARD",
+            "pageSize" : 10,
+            "scope" : "Case",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "db8724aa-5d83-4e73-a124-0b077546d3bc",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "5ac2d0d1-3798-41dc-b16e-eca867904fc5",
+        "regionLabel" : "My Closed Cases",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3e3c1c5c-edb1-4cbe-b240-cc1e26b40784",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 38,
+        "buttonRadius" : 20,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "label" : "Contact Revenue Operations"
+      },
+      "componentName" : "forceCommunity:contactSupportButton",
+      "id" : "b68769c1-7ef2-4431-be6d-6288e1daab1a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9093d38f-823e-4d67-9031-7e3aeed76d8e",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Case - My Cases"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "85ce4357-f517-4934-9c35-b14cd40eba23",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "35ed1cb7-0cb7-4a2c-aeaf-26add880d2c8",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-case-my-cases"
+}

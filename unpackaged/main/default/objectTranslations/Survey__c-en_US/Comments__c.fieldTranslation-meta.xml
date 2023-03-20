@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When you have completed the follow-up for the survey response, type your notes/comments here --></help>
+        <label><!-- Follow-up Complete Comments --></label>
+        <name>Comments__c</name>
+    </CustomFieldTranslation>

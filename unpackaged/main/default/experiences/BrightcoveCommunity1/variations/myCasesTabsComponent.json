@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "2d5bb154-ca93-4d8e-8b2c-f758c2f3ff94",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "2fc06111-3f66-4e82-8124-de94b9957d70",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "My_Cases_Tabs_Component",
+  "id" : "ac990974-1652-48da-85e1-0c5c5e5a2922",
+  "type" : "experienceVariation"
+}

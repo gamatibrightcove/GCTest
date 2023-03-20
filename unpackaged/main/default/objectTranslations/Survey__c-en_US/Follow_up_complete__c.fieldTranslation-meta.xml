@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Check this box when you have completed the follow-up that was required for this survey response --></help>
+        <label><!-- Follow-up complete? --></label>
+        <name>Follow_up_complete__c</name>
+    </CustomFieldTranslation>

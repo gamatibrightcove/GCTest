@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>CPQ Product Layout</layout>
+        <sections>
+            <label><!-- Accounting --></label>
+            <section>Accounting</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Pricing --></label>
+            <section>Custom Pricing</section>
+        </sections>
+        <sections>
+            <label>Precificação</label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label>Renovações</label>
+            <section>Renewals</section>
+        </sections>
+        <sections>
+            <label>Configuração do Salesforce CPQ</label>
+            <section>Salesforce CPQ Configuration</section>
+        </sections>
+        <sections>
+            <label>Assinaturas</label>
+            <section>Subscriptions</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label>Upgrades</label>
+            <section>Upgrades</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Product Layout</layout>
+        <sections>
+            <label><!-- Accounting --></label>
+            <section>Accounting</section>
+        </sections>
+        <sections>
+            <label><!-- CPQ Configuration --></label>
+            <section>CPQ Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Pricing --></label>
+            <section>Custom Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- Renewals --></label>
+            <section>Renewals</section>
+        </sections>
+        <sections>
+            <label><!-- Subscriptions --></label>
+            <section>Subscriptions</section>
+        </sections>
+        <sections>
+            <label><!-- Upgrades --></label>
+            <section>Upgrades</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

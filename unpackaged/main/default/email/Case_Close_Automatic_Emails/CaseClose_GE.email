@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Brightcove Customer Support Feedback</title>
+        <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <style type="text/css">
+               body, HTML { width:100%; height:100%; color:#717171; font-size:15px; line-height:22px; font-family:arial, helvetica, sans-serif; background-color:#f0f0f0; margin:0; padding:0; }
+         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+        p, span.paragraph { display:block; color:#717171; font-size:15px; line-height:22px; font-family:arial, helvetica, sans-serif;  }
+        .container { width:632px; margin:0 auto; background:#f8f8f8;}
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+    </style>
+</head>
+
+    <body>
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; height:100%; margin:0; padding:0; background-color:#f0f0f0;" bgcolor="#f0f0f0">
+            <tr>
+                <td align="center" valign="top" style="text-align:center;">
+                    <table align="center" width="632" cellspacing="0" cellpadding="0" border="0" style="width:632px; margin:0; padding:0; background-color:#f0f0f0; margin-left:auto; margin-right:auto; text-align:left;" bgcolor="#f0f0f0">
+                        <tr>
+                            <td width="202" align="left" valign="top" style="padding-top:10px;">
+
+                                <!-- ADD PREHEADER SNIPPET !-->
+                                <a href="https://status.brightcove.com/"><img src="https://img.brightcove.com/email/bc-logo-2016-retina.png" width="202" height="50" alt="Brightcove System Status Notice." border="0" /></a>
+                                <!-- END PREHEADER SNIPPET !-->
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table align="center" width="657" cellspacing="0" cellpadding="0" border="0" style="width:632px; margin:0; padding:0; background-color:#f0f0f0; margin-left:auto; margin-right:auto; text-align:left;" bgcolor="#f0f0f0">
+                        <tr>
+                            <td align="center" valign="top" width="657px" style="padding-top:15px;">
+                                <a href="https://status.brightcove.com/" style="text-decoration:none;">
+                                    <img src="https://img.brightcove.com/email/blue-header-retina.png" alt="" width="649" height="15px" border="0" style="width:649px; height:15px; display:block; max-height:15px;" >
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table align="center" width="649" cellspacing="0" cellpadding="0" border="0" style="width:633px; margin:0; padding:0; padding-left:1px; background-color:#f0f0f0; margin-left:auto; margin-right:auto; text-align:left;" bgcolor="#f0f0f0">
+                        <tr>
+                            <td width="632" valign="top" style="padding:10px 20px 20px 30px; border-right:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; border-left:1px solid #e5e5e5;" bgcolor="#ffffff">
+                                <p style="color:#717171; font-size:15px; line-height:22px; font-family:arial, helvetica, sans-serif; margin-bottom:15px; margin-top:10px;"><font style="font-size:36px; font-weight: bold;">Wir schliessen Ihre Support Anfrage ab</font><br/>
+
+                                    
+                                <p>Liebe/r <strong>{!Contact.FirstName}</strong>,</p>
+                                <p>Sie haben vor kurzem unseren Support kontaktiert. Waren Sie mit der Bearbeitung Ihres Anliegens durch <strong>{!Case.OwnerFirstName}</strong> zufrieden.</p>
+                                <p>Support Sache Nummer: <strong>{!Case.CaseNumber}</strong><br />Betreff: <strong>{!Case.Subject}</strong></p>
+                                <p>Sollten Sie einen Moment Zeit haben, würden wir uns über Ihr Feedback sehr freuen. Wie bewerten Sie bitte die Bearbeitung Ihrer Anfrage auf einer Skala von 1 bis 10? (10 - <span style="color: #0e9a0e; font-weight: bold;">sehr zufrieden</span> und 1 - <span style="color: #FF0000; font-weight: bold;">sehr unzufrieden</span>.)</p>
+                                <!-- Rating -->
+          <p style="text-align: center;"><br /><span style="font-size:2em;"><strong>
+<a style="color: #0e9a0e; text-decoration:none;" href="https://survey.clicktools.com/go?iv=2wlnyrnanisjb&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=1">10</a> <span style="color: #ffffff">|</span> <a style="color: #a2c00a; text-decoration:none;" href="https://survey.clicktools.com/go?iv=2wlnyrnanisjb&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=2">9</a> <span style="color: #ffffff">|</span> <a style="color: #cbc509; text-decoration:none;" href="https://survey.clicktools.com/go?iv=2wlnyrnanisjb&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=3">8</a> <span style="color: #ffffff">|</span> <a style="color: #FFD300; text-decoration:none;" href="https://survey.clicktools.com/go?iv=2wlnyrnanisjb&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=4">7</a> <span style="color: #ffffff">|</span> <a style="color: #FFAF00; text-decoration:none;" href="https://survey.clicktools.com/go?iv=2wlnyrnanisjb&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=5">6</a> <span style="color: #ffffff">|</span> <a style="color: #FF8C00; text-decoration:none;" href="https://survey.clicktools.com/go?iv=2wlnyrnanisjb&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=6">5</a> <span style="color: #ffffff">|</span> <a style="color: #FF6900; text-decoration:none;" href="https://survey.clicktools.com/go?iv=2wlnyrnanisjb&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=7">4</a> <span style="color: #ffffff">|</span> <a style="color: #FF4600; text-decoration:none;" href="https://survey.clicktools.com/go?iv=2wlnyrnanisjb&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=8">3</a> <span style="color: #ffffff">|</span> <a style="color: #FF2300; text-decoration:none;" href="https://survey.clicktools.com/go?iv=2wlnyrnanisjb&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=9">2</a> <span style="color: #ffffff">|</span> <a style="color: #FF0000; text-decoration:none;" href="https://survey.clicktools.com/go?iv=2wlnyrnanisjb&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Case.SuppliedEmail}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=10">1</a></strong></span></P>
+          <!-- End Rating -->
+          <p><br />Sollten Sie weitere Hilfe oder mehr Informationen benötigen, antworten Sie <strong>direkt auf</strong> diese E-Mail. Sollten wir nichts von Ihnen hören, betrachten wir Ihre Anfrage als abgeschlossen.</p>
+          <p>Mit freundlichen Grüßen,<br /><strong>The Brightcove Customer Support Team</strong></p>
+          <p>Sie können alle ihre Support-Tickets in unserem <a style="font-weight: bold; text-decoration: none; color: #409CB1;" href="https://supportportal.brightcove.com">Support Portal</a>, sehen und der derzeitige Status des Systemes ist auf unserer <a style="font-weight: bold; text-decoration: none; color: #409CB1;" href="https://status.brightcove.com/">Statusseite</a> verfügbar.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- End Body Table -->
+                    <!-- IMPLEMENT PREFENCE CENTER FOOTER -->
+   
+                                        <table align="center" width="632" cellspacing="0" cellpadding="0" border="0" style="width:632px; margin:0; padding:0; background-color:#f0f0f0; margin-left:auto; margin-right:auto; text-align:left;" bgcolor="#f0f0f0">
+    <tr>
+        <td valign="top" style="padding:25px 10px 30px 20px; background-color:#f0f0f0;" width="460px">
+
+            <font style="font-family:arial, helvetica, sans-serif; font-size:11px; color:#a1a1a1; line-height:16px;">
+                BRIGHTCOVE INC. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.<br><br>
+
+            &copy; 2017 Brightcove Inc. All rights reserved. 290 Congress Street, 4th Floor, Boston, MA 02210, USA<br>
+
+            <a style="color:#a1a1a1;" href="https://www.brightcove.com/en/terms-and-conditions?elq=018764716e37419ea49d430b5165946b&elqCampaignId=1122&elqaid=7106&elqat=1&elqTrackId=9c14c3240b064bf088bea2f69eba3295">Terms &amp; Conditions</a>&nbsp;&nbsp;&nbsp;<a style="color:#a1a1a1;" href="https://www.brightcove.com/en/privacy?elq=018764716e37419ea49d430b5165946b&elqCampaignId=1122&elqaid=7106&elqat=1&elqTrackId=c9deb494de654738839ccd085b813fc6">Privacy</a>&nbsp;&nbsp;&nbsp;<a style="font-family:arial, helvetica, sans-serif; font-size:11px; color:#a1a1a1; line-height:18px;" href="*|UNSUB|*">Manage Subscription</a> <br><br>
+
+        </td>
+        <td width="100" align="right" style="padding-bottom:50px; padding-top:25px; vertical-align:top;">
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://plus.google.com/100830370440271567091/posts"><img src="https://img.brightcove.com/email/bc-email-gplus-2016.png" alt="Google+" width="40" height="40" border="0" style="margin-right:5px;" /></a>
+                    </td>
+                    <td>
+                        <a href="https://twitter.com/bcovestatus"><img src="https://img.brightcove.com/email/bc-email-twitter-2016.png" alt="Twitter" width="40" height="40" border="0" style="margin-right:5px;" /></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top:7px;">
+                        <a href="https://www.facebook.com/Brightcove"><img src="https://img.brightcove.com/email/bc-email-facebook-2016.png" alt="Facebook" width="40" height="40" border="0" /></a>
+                    </td>
+                    <td style="padding-top:7px;">
+                        <a href="https://www.linkedin.com/company/brightcove"><img src="https://img.brightcove.com/email/bc-email-linkedin-2016.png" alt="LinkedIn" width="40" height="40" border="0" /></a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+                    <!--END PREFERENCE CENTER FOOTER -->
+                </td>
+            </tr>
+        </table>
+        <map name="Map2"><area shape="rect" coords="595,253,637,291" href="https://www.linkedin.com/company/brightcove" alt="Linkedin">
+            <area shape="rect" coords="547,253,589,291" href="https://www.facebook.com/Brightcove" alt="Facebook">
+            <area shape="rect" coords="499,254,544,291" href="https://twitter.com/brightcove" alt="Twitter">
+            <area shape="rect" coords="447,253,490,289" href="https://plus.google.com/100830370440271567091/posts" alt="Google+">
+        </map>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Used by Customer Support for Event Coverage Tracking. --></help>
+        <label><!-- Coverage Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Checking details with AM</masterLabel>
+            <translation><!-- Checking details with AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Automated Monitoring</masterLabel>
+            <translation><!-- Closed - Automated Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Completed [Business Hours]</masterLabel>
+            <translation><!-- Closed - Completed [Business Hours] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Completed [Mixed]</masterLabel>
+            <translation><!-- Closed - Completed [Mixed] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Completed [Off-Hours]</masterLabel>
+            <translation><!-- Closed - Completed [Off-Hours] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Duplicate</masterLabel>
+            <translation><!-- Closed - Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Premium Monitoring</masterLabel>
+            <translation><!-- Closed - Premium Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Rejected</masterLabel>
+            <translation><!-- Closed - Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need To Close</masterLabel>
+            <translation><!-- Need To Close --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open - Automated Monitoring</masterLabel>
+            <translation><!-- Open - Automated Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open - Premium Monitoring</masterLabel>
+            <translation><!-- Open - Premium Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending - CS - Assigning Resource</masterLabel>
+            <translation><!-- Pending - CS - Assigning Resource --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending - CS - Resource Booked</masterLabel>
+            <translation><!-- Pending - CS - Resource Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending - ProBono Event Rejected</masterLabel>
+            <translation><!-- Pending - ProBono Event Rejected --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

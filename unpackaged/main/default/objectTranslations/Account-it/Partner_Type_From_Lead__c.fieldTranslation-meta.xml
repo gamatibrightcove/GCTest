@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Partner Type From Lead --></label>
+        <name>Partner_Type_From_Lead__c</name>
+        <picklistValues>
+            <masterLabel>Non-Partner lead</masterLabel>
+            <translation><!-- Non-Partner lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner - Referral</masterLabel>
+            <translation><!-- Partner - Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner - Resell</masterLabel>
+            <translation><!-- Partner - Resell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution Partner</masterLabel>
+            <translation><!-- Solution Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation><!-- Technology Partner --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What was the last open Status for this Case before the Case was closed? --></help>
+        <label><!-- Last Open Status --></label>
+        <name>Last_Status__c</name>
+    </CustomFieldTranslation>

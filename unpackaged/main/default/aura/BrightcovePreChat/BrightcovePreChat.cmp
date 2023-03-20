@@ -1,0 +1,30 @@
+<aura:component implements="lightningsnapin:prechatUI,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="prechatFieldComponents" type="List" description="An array of objects representing the pre-chat fields specified in pre-chat setup."/>
+    <aura:attribute name="CurrentUser" type="Object"/>
+    <force:recordData recordId="{!$SObjectType.CurrentUser.Id}" 
+                      fields="Profile.Name, LanguageLocaleKey" 
+                      targetFields="{!v.CurrentUser}"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+    
+    <aura:locator target="startButton" description="Pre-chat form submit button."/>
+    
+    <aura:if isTrue="{!and(or(v.CurrentUser.Profile.Name == 'Portal Admin (Gold)', v.CurrentUser.Profile.Name == 'Portal User (Gold)'), v.CurrentUser.LanguageLocaleKey == 'ja')}">
+        <p style="font-size:12px; margin-top: 1.5rem; padding: 0 1.5rem 0 1.5rem">{!$Label.c.Prechat_disclaimer}</p>
+    </aura:if>
+    
+    <lightningsnapin:prechatAPI aura:id="prechatAPI"/>
+    
+    <div class="prechatUI">
+        <div class="prechatContent" aura:id="prechatContent">
+            <ul class="fieldsList">
+                <!-- Look in the controller's onInit function. This component dynamically creates the pre-chat field components -->
+                {!v.prechatFieldComponents}
+                <lightning:input type="toggle" label="{!$Label.c.Would_you_like_call}" name="togglevalue" onchange="{! c.handleToggleChange }" checked="false" messageToggleActive="{!$Label.c.Call_me}" messageToggleInactive="{!$Label.c.Just_chat}" class="slds-m-top_large" style="margin-left: 22px"/>
+            </ul>
+        </div>
+        <div class="startButtonWrapper">
+            <ui:button aura:id="startButton" class="startButton" label="{!$Label.LiveAgentPrechat.StartChat}" press="{!c.handleStartButtonClick}"/>
+        </div>
+    </div>
+</aura:component>

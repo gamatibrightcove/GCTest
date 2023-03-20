@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The ultimate owner of the Case. This is a team member based on the same timezone than the customer that will be ultimately responsible to guarantee the resolution of the case. --></help>
+        <label><!-- Handoff Owner --></label>
+        <name>Handoff_Owner__c</name>
+        <relationshipLabel><!-- Case Handoffs (Handoff Owner) --></relationshipLabel>
+    </CustomFieldTranslation>

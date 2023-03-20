@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When a closed case survey response is less than 4.4 is alerted</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CSAT2015 - Closed Case Low Score Manager alert</name>
+    <relatedEntityType>Survey__c</relatedEntityType>
+    <style>none</style>
+    <subject>Alert: Low closed case survey score</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "90332112-8980-4285-ad34-b727844db9e6",
+  "appPageId" : "2746e722-1a11-406a-a340-af73d0c0847c",
+  "configurationTags" : [ ],
+  "id" : "5299deac-9cc0-492d-be62-61a65e6ba581",
+  "label" : "Program Rules",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-program-rules",
+  "type" : "route",
+  "urlPrefix" : "program-rules"
+}

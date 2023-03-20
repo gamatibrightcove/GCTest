@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- What content would you lIke to see? --></label>
+        <name>What_content_would_you_lIke_to_see__c</name>
+    </CustomFieldTranslation>

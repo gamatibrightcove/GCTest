@@ -1,0 +1,147 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+<center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0" width="625">
+	
+		<tr>
+			<td style="padding-bottom:0px;background-color:#f0f0f0" valign="top">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr>
+						<td align="left" style="padding:50px 50px;margin:0;" valign="top">
+						<p style="padding:0;margin:0;color:#333;line-height:1.1;font-family:'Arial Black';font-size:34px;text-align:left">PLATINUM サポートのご案内</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:'Arial';font-size:15px;color:#333;line-height:150%" valign="top">
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">{{{Case.Zapier_Account_Name__c}}}&nbsp;御中</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">この度は、Platinum サポートのご購入及びネームドコンタクトのご登録ありがとうございました。本通知では、Platinum サポートに含まれるサービスの詳細及びカスタマーサポートへのお問い合わせ方法についてご案内させていただきます。<br />
+						<strong><u>カスタマーサポートへお問い合わせいただく際の重要な内容となりますので、ご一読いただき、保存していただけますようお願い致します。</u></strong></p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">&nbsp;</p>
+
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">Platinum サポートの詳細:</p>
+
+						<table class="support-table" style="font-family:'Arial';color:#000000;font-size: 16px; margin-top: 0px; margin-bottom: 10px; width: 580px; border-collapse: collapse;">
+							
+								<tr>
+									<td class="availability" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>利用可能<br />
+									時間:</strong></p>
+									</td>
+									<td class="details" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p><strong>営業時間:*</strong><br />
+									月～金、日本時間午前10時～午後6時 (祝祭日を除く)</p>
+
+									<p>&nbsp;</p>
+
+									<p><strong>営業時間外</strong>:<br />
+									営業時間以外の全時間</p>
+
+									<p>*ライブチャットサポートは平日の日本時間午前10時～午後6時までご利用可能となります。</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="availability" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>初回応答<br />
+									時間:</strong></p>
+									</td>
+									<td class="details" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p><strong>致命的な問題 (P1)</strong>: 15 分<br />
+									<strong>重要な問題 (P2)</strong>: 30 分<br />
+									<strong>その他の問題 (P3)</strong>: 1 時間</p>
+
+									<p><em>致命的な問題</em>&nbsp;とは、ブライトコーブ・サービスを使用した重要なオペレーションができない状態を意味します。<br />
+									<br />
+									<em>重要な問題</em>&nbsp;とは、ブライトコーブ・サービスを使用したオペレーションができるが、その機能性が顕著に低下している状態を意味します。<br />
+									<br />
+									<em>その他の問題</em>&nbsp;とは、致命的な問題及び重要な問題に該当しないその他すべての課題（一般的問い合わせも含む）を意味します。</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="availability" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); background: rgb(241, 241, 241); text-align: right; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;"><strong>ネームドコンタクト<br />
+									(最大15名様まで):</strong></p>
+									</td>
+									<td class="details" style="border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211); width: 440px; padding: 10px 1em; vertical-align: top;">
+									<p style="font-size: 16px; line-height: 22px;">{{{Case.AccountNamedContactList__c}}}</p>
+									</td>
+								</tr>
+							
+						</table>
+
+						<p><strong>サポートへのお問い合わせ方法:</strong></p>
+
+						<p>下記いずれかの方法にてお問い合わせいただけます。</p>
+
+						<p><strong>サポートポータル:</strong></p>
+
+						<p><a href="https://supportportal.brightcove.com/s/login/?language=ja" target="_blank">サポート専用ポータル</a>からサポートへお問い合わせいただけます。<br />
+						平日午前10時〜午後6時の間は、サポートポータルからライブチャットでのお問い合わせも可能です。なお、「致命的な問題」(P1) に該当するお問い合わせは、ネームドコンタクトにご登録いただいているご担当者様のみに限定させていただいております。<br />
+						* サポートポータルのパスワードは、<a href="https://supportportal.brightcove.com/secur/forgotpassword.jsp?language=ja" target="_blank">こちら</a>&nbsp;から設定いただけます。<br />
+						* サポートポータルと Video Cloud のアカウントは異なるという点にご注意ください。<br />
+						* 新しくネームドコンタクトにご登録いただいた方で且つこれまでにサポートポータルへのアクセス件をお持ちでなかった方には、後ほど「Brightcove サポートポータルのご案内」という表題のメールを別途お送り致します。<br />
+						&nbsp;</p>
+
+						<p><strong>電話:</strong></p>
+
+						<p><strong>平日午前10時〜午後6時までの電話番号:</strong><br />
+						03-6453-7733<br />
+						<strong>上記以外の時間帯の電話番号(緊急サポート専用):</strong><br />
+						03-4588-1446<br />
+						&nbsp;</p>
+
+						<p>サポート担当者が一定時間内に電話に出ることができなかった場合、メッセージを残していただくことで、後ほど、サポート担当者より折り返しさせていただきます。なお、電話でのお問い合わせは、ネームドコンタクトにご登録いただいているご担当者様に限らせていただいておりますので、予めご了承ください。<br />
+						&nbsp;</p>
+
+						<p><strong>システムステータスページ:</strong></p>
+
+						<p>現在のシステム稼働状況は<a href="https://status.brightcove.com/" target="_blank">システムステータスページ</a>&nbsp;(https://status.brightcove.com/) にてご覧いただけます。画面右上の"SUBSCRIBE" ボタンをクリックし、メールアドレスをご登録いただくことで、システム稼働状況に変化があった場合の通知をメールにて受信する可能です。(英語のみでの通知となりますこと、予めご了承いただけますようお願い致します。)詳細は、<a href="https://ja.apis.support.brightcove.com/support/viewing-brightcove-system-status-page.html" target="_blank">「Brightcove System のステータスページ」</a>をご参照いただけますようお願い致します。</p>
+
+						<p>&nbsp;</p>
+
+						<p><strong>ヘルスチェックイン:</strong></p>
+
+						<p>ご契約の12ヶ月の間、事前に予約した日程で合計16時間分のヘルスチェックインをご利用いただけます。ヘルスチェックインは、主に下記の内容が含まれます。</p>
+
+						<ul>
+							<li>Brightcove サービスを有効的にご活用いただくためのコンサルティング業務</li>
+							<li>デジタルコンテンツストラテジーに関するコンサルティング業務</li>
+						</ul>
+
+						<p><strong>専用のサポートチーム:</strong></p>
+
+						<p>営業時間内、貴社のユースケースを理解した専用のサポートチームメンバーが対応をさせていただきます。これにより、問題解決までの時間を短縮する事が見込めます。</p>
+
+						<p>&nbsp;</p>
+
+						<p><strong>ライブイベントサポート:</strong></p>
+
+						<p>Platinum サポートパッケージでは、ライブ・イベント3回（1回の最大時間は4時間）のサポートを無償で含みます。ライブイベントサポートの詳細につきましては、担当アカウトマネージャまでご連絡いただけますようお願い致します。</p>
+
+						<p>&nbsp;</p>
+
+						<p><strong>その他のリソース:</strong></p>
+
+						<p>技術的な情報をお探しの場合は、こちらの<a href="https://ja.support.brightcove.com/" target="_blank">Brightcove ドキュメントサイト</a>もご活用ください。FAQ 等、詳細な情報を記載しており、多くの場合、お探しの情報に辿り着く事ができることと存じます。 なお、サポートにお問い合わせいただくすべてのご担当者様は、Brightcove のシステムにユーザとして登録されていることが条件となります。また、電話でのお問い合わせや、致命的な問題に関するお問い合わせにつきましては、ネームドコンタクトにご登録いただいているご担当者様のみとさせていただいておりますので、予めご了承ください。</p>
+
+						<p>&nbsp;</p>
+
+						<p>- ブライトコーブサポートチーム</p>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</center>
+</div>
+</body>
+</html>

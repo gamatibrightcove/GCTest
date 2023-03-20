@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Used_Talla__c</fullName>
+    <description>Track whether or not Talla helped resolved the case</description>
+    <externalId>false</externalId>
+    <label>Documentation Used</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Used Salesforce Knowledge instead</fullName>
+                <default>false</default>
+                <label>Salesforce Knowledge</label>
+            </value>
+            <value>
+                <fullName>Public Documentation</fullName>
+                <default>false</default>
+                <label>Public Documentation</label>
+            </value>
+            <value>
+                <fullName>Confluence</fullName>
+                <default>false</default>
+                <label>Confluence</label>
+            </value>
+            <value>
+                <fullName>Brightcove University</fullName>
+                <default>false</default>
+                <label>Brightcove University</label>
+            </value>
+            <value>
+                <fullName>No documentation needed</fullName>
+                <default>false</default>
+                <label>No documentation needed</label>
+            </value>
+            <value>
+                <fullName>Documentation missing</fullName>
+                <default>false</default>
+                <label>Documentation missing</label>
+            </value>
+            <value>
+                <fullName>Brightcove Central</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Brightcove Central</label>
+            </value>
+            <value>
+                <fullName>Did not use Talla</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Did not use Talla</label>
+            </value>
+            <value>
+                <fullName>Solved the case with a regular article</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Talla to land on External docs</label>
+            </value>
+            <value>
+                <fullName>Solved the case with an [INT] article</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Talla to land on Internal docs</label>
+            </value>
+            <value>
+                <fullName>Talla was not useful in this case</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Talla was not useful in this case</label>
+            </value>
+            <value>
+                <fullName>Used documentation NOT in Talla</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Used documentation NOT in Talla</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

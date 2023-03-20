@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- T2 Escalation Reason --></label>
+        <name>T2_Escalation_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Lack of Documentation</masterLabel>
+            <translation><!-- Lack of Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of Knowledge/Training</masterLabel>
+            <translation><!-- Lack of Knowledge/Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per Leadership Instruction</masterLabel>
+            <translation><!-- Per Leadership Instruction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Straight to T2 - Per Process</masterLabel>
+            <translation><!-- Straight to T2 - Per Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time Spent</masterLabel>
+            <translation><!-- Time Spent --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

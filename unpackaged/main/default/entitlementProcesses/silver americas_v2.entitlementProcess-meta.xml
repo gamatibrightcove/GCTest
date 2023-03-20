@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <SObjectType>Case</SObjectType>
+    <active>true</active>
+    <description>This is for any customer in Americas division with Silver Support Package.</description>
+    <entryStartDateField>Case.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+    <isVersionDefault>true</isVersionDefault>
+    <milestones>
+        <businessHours>Americas</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Priority</field>
+            <operation>equals</operation>
+            <value>P1 - Critical</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Account.Sales_Division__c</field>
+            <operation>equals</operation>
+            <value>Americas</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>First Response</milestoneName>
+        <minutesToComplete>120</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>SLA_email_alert</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>SLA_Alerts_to_SLACK</name>
+                <type>OutboundMessage</type>
+            </actions>
+            <timeLength>-30</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Americas</businessHours>
+        <criteriaBooleanFilter>(1 OR 3) AND 2</criteriaBooleanFilter>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Priority</field>
+            <operation>equals</operation>
+            <value>P2 - Important</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Account.Sales_Division__c</field>
+            <operation>equals</operation>
+            <value>Americas</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Priority</field>
+            <operation>equals</operation>
+            <value>P3 - Normal</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>First Response</milestoneName>
+        <minutesToComplete>540</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>SLA_email_alert</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>SLA_Alerts_to_SLACK</name>
+                <type>OutboundMessage</type>
+            </actions>
+            <timeLength>-30</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <name>Silver Americas</name>
+    <versionMaster>55201000000Kyo6</versionMaster>
+    <versionNumber>2</versionNumber>
+</EntitlementProcess>

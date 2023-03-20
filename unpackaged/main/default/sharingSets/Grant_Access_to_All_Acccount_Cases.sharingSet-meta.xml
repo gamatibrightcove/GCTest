@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Case</object>
+        <objectField>Account</objectField>
+        <userField>Account</userField>
+    </accessMappings>
+    <description>Portal Admin access to cases</description>
+    <name>Grant Access to All Acccount Cases</name>
+    <profiles>Portal Admin - Gold</profiles>
+    <profiles>Portal Admin - Gold Plus - Japan</profiles>
+    <profiles>Portal Admin - Platinum</profiles>
+    <profiles>Portal Admin - Silver</profiles>
+</SharingSet>

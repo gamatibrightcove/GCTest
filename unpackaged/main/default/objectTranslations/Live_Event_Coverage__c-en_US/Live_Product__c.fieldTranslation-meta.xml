@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please specify the live-event product for this event. --></help>
+        <label><!-- Product --></label>
+        <name>Live_Product__c</name>
+        <picklistValues>
+            <masterLabel>Beacon</masterLabel>
+            <translation><!-- Beacon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove Live</masterLabel>
+            <translation><!-- Brightcove Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud Playout</masterLabel>
+            <translation><!-- Cloud Playout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gallery</masterLabel>
+            <translation><!-- Gallery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key Rotation</masterLabel>
+            <translation><!-- Key Rotation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Clipping</masterLabel>
+            <translation><!-- Live Clipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live DRM</masterLabel>
+            <translation><!-- Live DRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live DVR</masterLabel>
+            <translation><!-- Live DVR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Redundancy</masterLabel>
+            <translation><!-- Live Redundancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live SSAI</masterLabel>
+            <translation><!-- Live SSAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-live (Ingestion/Playback API/etc.)</masterLabel>
+            <translation><!-- Non-live (Ingestion/Playback API/etc.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pigeonhole</masterLabel>
+            <translation><!-- Pigeonhole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback Rights/Geo-restriction</masterLabel>
+            <translation><!-- Playback Rights/Geo-restriction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remote Asset (3rd party Live) - BC Managed</masterLabel>
+            <translation><!-- Remote Asset (3rd party Live) - BC Managed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remote Asset (3rd party Live) - BYO</masterLabel>
+            <translation><!-- Remote Asset (3rd party Live) - BYO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simulive</masterLabel>
+            <translation><!-- Simulive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual Events Template</masterLabel>
+            <translation><!-- Virtual Events Template --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

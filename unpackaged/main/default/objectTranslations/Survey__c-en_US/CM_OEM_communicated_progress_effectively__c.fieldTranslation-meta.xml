@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How would you rate the following for your Content Migration Project:
+Onboarding Engagment Manager communicated the progress of my project as often as I expected --></help>
+        <label><!-- CM OEM communicated progress effectively --></label>
+        <name>CM_OEM_communicated_progress_effectively__c</name>
+    </CustomFieldTranslation>

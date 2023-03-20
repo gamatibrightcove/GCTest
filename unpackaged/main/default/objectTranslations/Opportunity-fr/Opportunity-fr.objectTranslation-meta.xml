@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>CPQ Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Information --></label>
+            <section>Salesforce CPQ Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Layout</layout>
+        <sections>
+            <label><!-- CPQ Information --></label>
+            <section>CPQ Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Convert --></label>
+        <name>Convert</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Move to Sales Pipeline --></label>
+        <name>Move_to_Sales_Pipeline</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Quote --></label>
+        <name>New_Quote</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- System generated Opportunity used when an existing Contract is Amended --></description>
+        <label><!-- Add-On --></label>
+        <name>Add_On</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lead --></label>
+        <name>Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for selling products on a new contract (excluding renewal) --></description>
+        <label><!-- New Business --></label>
+        <name>New_Business</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- System generated Opportunity used for renewing a Contract at the end of its term --></description>
+        <label><!-- Renewal --></label>
+        <name>Renewal</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used when selling BGS. No ability to generate a quote. --></description>
+        <label><!-- Services Record Type --></label>
+        <name>Services_Record_Type</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Close Date cannot be past date --></errorMessage>
+        <name>Close_Date_cannot_be_null_or_past_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Close Date cannot be past date --></errorMessage>
+        <name>Close_Date_cannot_be_past_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Solution Document must be complete before Closed Won --></errorMessage>
+        <name>Closed_won_requires_Solution_Document</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Type must be selected --></errorMessage>
+        <name>Contract_Type_cannot_be_empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Qualified Out Reason must be selected to mark the Opportunity Stage as Disqualified. --></errorMessage>
+        <name>Disqualifed_Requires_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invoice Email(s) required --></errorMessage>
+        <name>InvoiceEmailRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lead Source must be selected to save --></errorMessage>
+        <name>Leadsource_cannot_be_empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to move to Stage 2 please complete the required Key Sales Handoff fields - Customer Business Model, Targeted Platforms, Competitors, Importance and Priority --></errorMessage>
+        <name>New_Business_Opp_Stage_2_fields_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to move to Stage 3 please complete the required Key Sales Handoff fields - Addressable Business Problems, Customer expected outcomes, Integrations required, Sales strategy to win, Value proposition, Budget source --></errorMessage>
+        <name>New_Business_Opp_Stage_3_fields_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to move to Stage 4 please complete the required Key Sales Handoff fields - Customer Success KPI&apos;s, Customer Buying steps, Mutual action plan, Proposal Document, Sales Engineer, Solution Document, Technical Win --></errorMessage>
+        <name>New_Business_Opp_Stage_4_fields_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to move to Closed please complete the required Key Sales Handoff fields - Anticipated RoadBlocks/challenges --></errorMessage>
+        <name>New_Business_Opp_closed_fields_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For Partner and Partner Type fields, if one field is completed both fields must have a value. --></errorMessage>
+        <name>Partner_Or_Partner_Type_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Opportunity Stage cannot regress to a previous Stage. --></errorMessage>
+        <name>Stage_Cannot_Regress</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Primary Quote cannot be blank in the current stage (2,3 or 4) --></errorMessage>
+        <name>Stage_must_contain_Primary_Quote</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fields cannot be updated after the opportunity is closed --></errorMessage>
+        <name>fields_cannot_be_updated_after_closed</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Deca5k8F000000CmxPQAS --></label>
+        <name>Deca5k8F000000CmxPQAS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Deca5k8F000000CmxZQAS --></label>
+        <name>Deca5k8F000000CmxZQAS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendWithDocuSign --></label>
+        <name>SendWithDocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

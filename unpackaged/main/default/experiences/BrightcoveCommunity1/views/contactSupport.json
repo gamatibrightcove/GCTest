@@ -1,0 +1,190 @@
+{
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "31441820-ce41-4f32-8bc2-b00bf28bd8ee",
+  "label" : "Contact Support",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\">There are several channels that can be used to contact Brightcove Support and open a case.</p><p style=\"text-align: center;\">Reviewing the Support Details link from&nbsp;the navigation bar will provide you with all the channels available to you.</p><p style=\"text-align: center;\"><br></p><p style=\"text-align: center;\">If your Support&nbsp;contract entitles you to Telephone Support,&nbsp;you will find the&nbsp;phone number for your region on that page as well.&nbsp;</p><p style=\"text-align: center;\">&nbsp;</p><p style=\"text-align: center;\">All Brightcove customers can open a support case by clicking the \"Submit a Case\" button below or simply send an email to <a href=\"mailto:bc_support@brightcove.com?subject=(insert%20brief%20description)\" rel=\"noopener noreferrer\" target=\"null\">bc_support@brightcove.com</a>.</p><p style=\"text-align: center;\">Including error messages, links to review specific behavior, screen shots, and steps to reproduce the issue can speed up the time to resolve&nbsp;your case.</p><p>&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "fdaf14e5-bbf7-427f-82f8-a9d923eb155a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "ja" : "b6487ac6-a228-47bf-9e51-694e5cbbbb53"
+      },
+      "renditions" : [ {
+        "id" : "b6487ac6-a228-47bf-9e51-694e5cbbbb53",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\">There are several channels that can be used to contact Brightcove Support and open a case.</p><p style=\"text-align: center;\">Reviewing the Support Details link from&nbsp;the navigation bar will provide you with all the channels available to you.</p><p style=\"text-align: center;\"><br></p><p style=\"text-align: center;\">If your Support&nbsp;contract entitles you to Telephone Support,&nbsp;you will find the&nbsp;phone number for your region on that page as well.&nbsp;</p><p style=\"text-align: center;\">&nbsp;</p><p style=\"text-align: center;\">All Brightcove customers can open a support case by clicking the \"Submit a Case\" button below or simply send an email to <a href=\"mailto:bc_support@brightcove.com?subject=(insert%20brief%20description)\" rel=\"noopener noreferrer\" target=\"null\">bc_support@brightcove.com</a>.</p><p style=\"text-align: center;\">Including error messages, links to review specific behavior, screen shots, and steps to reproduce the issue can speed up the time to resolve&nbsp;your case.</p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\">ブライトコーブサポートにお問い合わせいただく方法はいくつかございます。</p><p style=\"text-align: center;\"><br></p><p style=\"text-align: center;\">ナビゲーションバーの [サポート詳細] リンクをクリックして [サポート詳細] ページに移動することで、現在のご契約に含まれる全てのお問い合わせ方法をご覧いただけます。</p><p style=\"text-align: center;\"><br></p><p style=\"text-align: center;\">ご契約内で電話サポートのご利用が可能な場合には、 [サポート詳細] ページにお問い合わせ先の電話番号が表示されます。</p><p style=\"text-align: center;\"><br></p><p style=\"text-align: center;\">また、すべてのお客様は、下の「サポートケース作成」ボタンをクリックするか、bc_support@brightcove.com にメールを送信することにより、ブライトコーブサポートにお問い合わせいただけます。</p><p style=\"text-align: center;\"><br></p><p style=\"text-align: center;\">エラー メッセージ、特定の動作を確認できるページの URL、スクリーンショット、及び問題の再現手順をご提供いただくことにより、サポート対応の初動を早めることができます。</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "a6639b35-448a-417c-8a43-829aa5f95f90",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7a47eb68-efa8-46ec-8961-533f1c8d4e23",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : true,
+          "name" : "TSCommunityCreateCase"
+        } ],
+        "label" : "Submit a Case"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "0cd31799-c919-42bf-b9f7-19182013f173",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "ja" : "0cfca19f-7124-47a7-a357-76ebcc9c64ed"
+      },
+      "renditions" : [ {
+        "id" : "0cfca19f-7124-47a7-a357-76ebcc9c64ed",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "label" : "サポートケース作成"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "0af493d6-fef4-42ee-a618-1c35cbf5656a",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "036bdf47-d06a-421a-b0ed-a2455fde4cc3",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "allowPrepopulatePrechatFields" : true,
+        "avatarImgURL" : "",
+        "codeSettingsName" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://brightcove2--full.sandbox.my.salesforce.com",
+          "baseLiveAgentContentURL" : "https://c.la5-c1cs-ia5.salesforceliveagent.com/content",
+          "baseLiveAgentURL" : "https://d.la5-c1cs-ia5.salesforceliveagent.com/chat",
+          "buttonId" : "5738F000000GnQn",
+          "deploymentId" : "5728F000000Cb9h",
+          "enabledFeatures" : [ "LiveAgent" ],
+          "entryFeature" : "LiveAgent",
+          "eswConfigDevName" : "TSChat",
+          "eswConfigId" : "04I8F000000Cab2UAC",
+          "eswLiveAgentDevName" : "TSChat",
+          "gslbBaseURL" : "https://service.force.com",
+          "isOfflineCasesEnabled" : "1",
+          "orgId" : "00D8F0000008jAl"
+        },
+        "externalScripts" : "",
+        "externalStyles" : "",
+        "fallbackRouting" : "",
+        "offlineSupportMinimizedText" : "Contact Us",
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "snippetSettingsFile" : "Brightcove_SnapIn_Settings",
+        "storageDomain" : "",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "853c5d48-83ee-4caa-9678-aa744700b771",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "ja" : "10f0b0f0-a19c-4194-acab-3508afc499c7"
+      },
+      "renditions" : [ {
+        "id" : "10f0b0f0-a19c-4194-acab-3508afc499c7",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "defaultMinimizedText" : "専門家とチャットする",
+            "offlineSupportMinimizedText" : "お問い合わせ",
+            "offlineText" : "エージェントがオフライン",
+            "onlineLoadingText" : "読み込み中"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "allowPrepopulatePrechatFields" : true,
+        "avatarImgURL" : "",
+        "codeSettingsName" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://brightcove2--full.sandbox.my.salesforce.com",
+          "baseLiveAgentContentURL" : "https://c.la5-c1cs-ia5.salesforceliveagent.com/content",
+          "baseLiveAgentURL" : "https://d.la5-c1cs-ia5.salesforceliveagent.com/chat",
+          "buttonId" : "5738F000000GnQn",
+          "deploymentId" : "5728F000000Cb9h",
+          "enabledFeatures" : [ "LiveAgent" ],
+          "entryFeature" : "LiveAgent",
+          "eswConfigDevName" : "TSChat",
+          "eswConfigId" : "04I8F000000Cab2UAC",
+          "eswLiveAgentDevName" : "TSChat",
+          "gslbBaseURL" : "https://service.force.com",
+          "isOfflineCasesEnabled" : "1",
+          "orgId" : "00D8F0000008jAl"
+        },
+        "externalScripts" : "",
+        "externalStyles" : "",
+        "fallbackRouting" : "",
+        "offlineSupportMinimizedText" : "Contact Us",
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "snippetSettingsFile" : "Brightcove_SnapIn_Settings",
+        "storageDomain" : "",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "63a15a30-522d-4ba5-8033-1e7dee2cae4d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "efb322e4-065a-4d79-8f17-3baddeb1447b",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Contact Support"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "e75be045-adc1-4a83-96a4-86c029a13d80",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "38fe7886-2029-45e7-aa5e-07d700c19ed1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "contactsupport"
+}

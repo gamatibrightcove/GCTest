@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When creating a record of type &apos;QCP - Incremental Pricing&apos;, this value represents the included quantity to base our calculations off. --></help>
+        <label><!-- Included Quantity --></label>
+        <name>Included_Quantity__c</name>
+    </CustomFieldTranslation>

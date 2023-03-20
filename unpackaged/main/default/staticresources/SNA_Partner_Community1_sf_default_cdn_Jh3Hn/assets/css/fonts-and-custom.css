@@ -1,0 +1,1707 @@
+@font-face {
+    font-family: 'Gotham25font' ;
+    src: url('GothaProReg.otf');
+}
+@font-face {
+    font-family: 'Gotham25fontBold';
+    src: url('GothaProBol.otf');
+}
+
+.comm-page-feeditem-question .body{width: 100% !important}
+.comm-page-feeditem-question .cuf-singleFeedItemWrapper {padding:2% !important; padding-right: 0.1% !important;}
+/*---------1405-----------*/
+@media only screen and (max-width: 600px){#mainFooter,#mainFooter1 {display: none;}}
+@media only screen and (min-width: 601px){#mobFooter,#mobFooter1 {display: none;}}
+#mobFooter .myrow{
+	display: inline-flex !important;
+	width: 100% !important;
+	margin-top: 1rem !important;
+}
+
+#mobFooter .col50{
+	width: 50% !important;
+	padding: 0 0 0 1rem !important;
+}
+
+#mobFooter ul {
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+#mobFooter a{
+	text-decoration: none !important;
+}
+
+#mobFooter a:hover{
+	text-decoration: underline !important;
+}
+
+#mobFooter .col30{
+	width: 30% !important;
+	padding: 0 0 0 1rem !important;
+}
+
+#mobFooter .col70{
+	width: 70% !important;
+	padding-top: 25% !important;
+	text-align: center;
+	padding: 2rem 0 !important;
+    padding-left: 7% !important
+}
+
+#mobFooter .myrow  img{
+	width: 20% !important;
+}
+.myrowbot{padding-left:5% !important}
+/*----------------------------az--------------*/
+#mobFooter1 .myrow{
+	display: inline-flex !important;
+	width: 100% !important;
+	margin-top: 1rem !important;
+}
+
+#mobFooter1 .col50{
+	width: 50% !important;
+	padding: 0 0 0 1rem !important;
+}
+
+#mobFooter1 ul {
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+#mobFooter1 a{
+	text-decoration: none !important;
+}
+
+#mobFooter1 a:hover{
+	text-decoration: underline !important;
+}
+
+#mobFooter1 .col30{
+	width: 30% !important;
+	padding: 0 0 0 1rem !important;
+}
+
+#mobFooter1 .col70{
+	width: 70% !important;
+	padding-top: 25% !important;
+	text-align: center;
+	padding: 2rem 0 !important;
+    padding-left: 7% !important
+}
+
+#mobFooter1 .myrow  img{
+	width: 20% !important;
+}
+/*----------------------------aeaeae--------------*/
+@media only screen and (max-width: 600px)  {.carousel, .comm-page-home .forceCommunityRichText b{ display: none !important;}}
+
+
+.forceContentPreviewPlayerTopToolbar{
+    height: 3.25rem !important;
+}
+.forceContentModalPreviewPlayer {
+    background-color: #00B09C !important;
+}
+.slds-modal__container .forceChatterMessageBodyInputRichTextEditor{background-color:white !important}
+
+.comm-page-feeditem-question body {padding:1% !important}
+@media only screen and (max-width: 1300px){
+    .slds-grid.slds-grid_align-spread > .slds-size_10-of-12{
+        position: absolute;
+        bottom: 60%;
+        right: 1%;
+    }
+    .forceCommunityGroupHighlightStencilNapili.forceRecordLayout > .actions{
+        position: absolute;
+        top: 35%;
+        right: 4%;
+    }
+}
+@media screen and (min-width: 1301px) and (max-width: 1640px){
+    .forceCommunityGroupHighlightStencilNapili.forceRecordLayout > .actions{
+        position: absolute;
+        top: 35%;
+        right: 4%;
+    }
+    .forceCommunityGroupHighlightStencilNapili.forceRecordLayout > .slds-grid{
+        width: 100% !important;
+    }
+}
+.comm-page-files .slds-icon_xx-small{
+    color: #fff !important;
+}
+.comm-page-files .forceContentPreviewPlayerTopToolbar{
+    background: #00b09c !important;
+}
+.forceCommunityAccountBrandRecord{background:white !important}
+.comm-page-home .carousel{padding-bottom:3% !important}
+.forceCommunityUserSettings h1.texttitle{margin-left:3.7% !important}
+/*.siteforceDesignTimeRegion[data-region-name="sidebar"]{margin-right:2% !important; padding-right:4% !important}*/
+
+.forceChatterBasePublisher.baseDefault .cuf-publisherAttachmentBar .cuf-publisherAttachmentButton{border:transparent !important}
+
+.forceChatterBasePublisher.baseDefault .cuf-publisherAttachmentBar .cuf-publisherAttachmentButton:hover{border:transparent !important}
+.forceChatterPollPostDesktop .cuf-addChoiceButton:focus{background:#00b09c; color: white !important}
+
+.forceChatterPollPostDesktop .cuf-addChoiceButton:hover{background:#00b09c; color: white !important}
+.forceChatterPollPostDesktop .cuf-addChoiceButton{ background: white !important;
+    color: #00b09c;
+    border: 2px solid #00b09c !important;}
+.forceCommunityRecordDetail .uiInput--checkbox{border:none !important}
+.forceCommunityRecordDetail .uiInput--checkbox .inputLabel{margin-right:1% !important}
+.forceChatterEnterGroupDetails .uiInput--checkbox .inputLabel{margin-right:1% !important}
+.forceChatterEnterGroupDetails .uiInput--checkbox{border:none !important}
+.comm-page-detail-0F9 .forceRelatedListContainer{margin-left:1% !important}
+.comm-page-detail-0F9 .forceCommunityFeedPublisher .oneActionsComposer .uiTabBar .uiTabItem{padding:1% !important}
+.comm-page-detail-0F9 .forceCommunityFeedPublisher .oneActionsComposer .uiTabBar .tabs__nav{padding-top:1% !important; margin-top:-1.5% !important}
+.comm-page-detail-0F9 .forceCommunityRelatedRecords > .forceRelatedListContainer > .container > .container.forceRelatedListSingleContainer{margin-left:0 !important}
+.comm-page-detail-0F9 .slds-grid.slds-wrap .js-tabset.uiTabset--base.uiTabset--default.uiTabset.forceCommunityTabset{ margin-right: 1% !important}
+.comm-page-detail-0F9 .forceHighlightsPanel.forceCommunityRecordHeadline{margin-right:1% !important}
+.siteforceContentArea .comm-layout-column .ui-widget:not(:last-child){margin-bottom: 1rem !important;}
+.forceChatterGroupTileTemplate .slds-card{padding:2% !important; padding-right:0 !important}
+.forceCommunitySearchBox .search-field{border-radius: 0.25rem !important;}
+.forceCommunitySearchBox .search-button:hover{background-color:#006EB3 !important}
+.forceCommunitySearchBox .search-button{width:9% !important;}
+.slds-timeline__icon{border-color:transparent !important}
+.timelineRow .showMoreMarker{margin-left:1% !important;margin-right:1.5rem !important}
+.uiInputTextForAutocomplete[title="Search Contacts"]{border:none !Important}
+
+.modal-container .forceSearchLookupAdvanced{padding:1% !important}
+.forceSearchInputLookupDesktop .slds-box--border{border:none !important}
+.forceOutputLookupWithPreview a.textUnderline{border:none !important}
+.uiInputTextForAutocomplete[title="Search Products"]{border:none !Important}
+
+.uiInputTextForAutocomplete[title="Search People"]{border:none !Important}
+.comm-page-detail .slds-is-current.slds-path__item.runtime_sales_pathassistantPathAssistantTab > .tabHeader.slds-path__link .title.slds-path__title{
+    color: #005fb2 !important;
+}
+.changeOwnerContentBody {padding:1rem !important}
+.changeOwnerContentBody .uiInputCheckbox,.changeOwnerContentBody .uiInput--lookup{border:transparent !important}
+.comm-page-detail .slds-is-current.slds-path__item.runtime_sales_pathassistantPathAssistantTab > .tabHeader.slds-path__link > .current.slds-path__stage .title.slds-path__title{
+    color: #005fb2 !important;
+}
+.qe-viewCount{margin-left:25% !important}
+.forceChatterMessageBodyInputRichTextEditor{background-color:#F0F8FF !important}
+.forceQuickActionLayout .uiInputTextForAutocomplete, .forceQuickActionLayout .slds-box--border ,.forceQuickActionLayout .contentWrapper .slds-box--border{border:none !important}
+/*.slds-modal .forceCommunityCaseDeflection{visibility:hidden !important}*/
+.slds-timeline__icon .forceEntityIcon{ margin-left: 1rem; }
+/*.comm-page-detail .openActivities .slds-button.slds-button--neutral.showMoreButton.uiButton{visibility:hidden !Important}*/
+.slds-radio {border:transparent !important}
+.forceQuickActionLayout .uiInput--datetime+.datePicker-openIcon, .uiInput--datetime .datePicker-openIcon{margin-top:-1rem }
+.forceQuickActionLayout .runtime_sales_activitiesComposerPageBlockSectionEdit .forcePageBlockSectionRow{padding-top:1rem !important}
+/*.forceRecordEditActions .pageError {display:none !important}*/
+.forceChatterMessageDetailViewHeader .slds-button-group .slds-button{margin-left:5px !important; border-radius:0.25rem !important}
+.messageThread .message .cuf-entityLink{color:#006EB3 !important}
+.forceRelatedListSingleContainer .branding-actions a[title="Upload Files"]{border:none !important}
+.slds-button span[title="Follow"]{font-size:14px;color:#006dcc;font-weight:100}
+.slds-path .toggleButton[type="button"]{padding-bottom:3%;border-color:#0055A9 !important}
+/*.comm-page-detail .uiTabBar .uiTabItem .active .tabHeader[title="Activity"]{border-bottom:2px solid black !important ;}
+.comm-page-detail .uiTabset--default .tabs__item .active .tabHeader[title="Details"]{border-bottom:2px solid black !important ;}
+
+.comm-page-detail .uiTabset--default .tabs__item .active .tabHeader[title="Chatter"]{border-bottom:2px solid black !important ;}
+
+.comm-page-detail .uiTabset--default .tabs__item .active .tabHeader[title="Activity"]{border-bottom:2px solid black !important ;}
+
+.active .tabHeader[title="Email"]{border-bottom:1px solid blue !important ;}
+
+.active .tabHeader[title="New Event"]{border-bottom:1px solid blue !important ;}
+.active .tabHeader[title="New Task"]{border-bottom:1px solid blue !important ;}*/
+.comm-page-detail .forceCommunityActivityPanel .uiPill--default.pill,.uiPillContainer .orderedList{background:white !important}
+.forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete, .forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete:focus{background:white !important}
+.sendEmailQuickActionBody .uiPillContainer--default{background:white !important}
+.uiInput--default .form-element__label{padding-top:1rem !important}
+.comm-page-detail .siteforcePanelsContainer .modal-header .title{visibility:visible !important}
+.runtime_sales_activitiesActivityTimelineFixedLayout .timeline__button-more--top{position:inherit !important}
+.comm-page-messages .toolbar.top.forceContentBasePreviewToolbar.forceContentPreviewPlayerTopToolbar{
+    background: #00b09b !important;
+}
+.comm-page-messages .slds-button.slds-button--icon-inverse.staticActionButton.uiButton .slds-button__icon.slds-icon-utility-close.slds-icon_container.forceIcon .slds-icon.slds-icon_xx-small{
+    color: #fff !important;
+}
+.comm-page-messages .menuButton.slds-button_icon-border-inverse.slds-button.slds-button_icon-inverse.slds-button_icon-border-filled.slds-button_icon-x-small.slds-p-right_xxx-small .slds-icon.slds-icon_xx-small{
+    color: #fff !important;
+}
+.message .forceChatterFeedAuxBody .cuf-auxBody{background-color:transparent !important}
+.messages .message .slds-media{padding:1%;margin-left:0 !important;border-radius:0.25rem }
+.comm-page-messages .forceChatterMessageBodyInputRichTextEditor .slds-rich-text-editor{border:thin solid #dddbda}
+.comm-page-messages .slds-p-around_medium,.comm-page-messages .slds-p-around--medium{padding:2% !important}
+.forceCommunityUserProfileDetail .userBadge{display:none}
+.slds-dueling-list__options [aria-selected=true]:hover, .slds-dueling-list__options [aria-selected=true]:focus, .slds-picklist__options [aria-selected=true]:hover, .slds-picklist__options [aria-selected=true]:focus{background-color:rgb(220, 220, 220) !important}
+.slds-picklist__options .slds-is-selected{background-color:rgb(220, 220, 220)}
+ .emailuiEmailRelatedToContainer .slds-icon_container, .emailuiEmailRelatedToContainer  .slds-icon__container{margin-left:1% !Important}
+.emailuiEmailRelatedToContainer .inputWrapper, .emailuiEmailRelatedToContainer .contentWrapper{border:transparent !important}
+.slds-dueling-list__options [aria-selected=true], .slds-picklist__options [aria-selected=true]{background-color:rgb(220, 220, 220)}
+.modal-container .slds-dueling-list__column{display:block !important}
+.slds-dueling-list__column_responsive{overflow:visible  !important}
+.slds-icon-text-error{margin-left:0.2rem !important}
+.comm-page-detail-005 .uiTabBar{margin-left:-2.2% !important}
+.forceChatterMessagePublisherDesktop .uiButton[title="Attach up to 10 files"]:hover{border:transparent !important}
+
+.forceChatterMessagePublisherDesktop .uiButton[title="Attach up to 10 files"]{border:transparent !important;padding:2% !important;margin-left:15% !important;margin-bottom:15% !important}
+.forceChatterParticipantsInput input.invisibleInput, .forceChatterParticipantsInput input.invisibleInput:focus{border:transparent !important}
+.forceHoverPanel .uiButton[type="button"][title="Close"]:hover{background:transparent !important}
+.forceHoverPanel .uiButton[type="button"][title="Close"]{border:none !important}
+.emailuiEmailToolbarContainer .forceChatterPublisherAttachments .cuf-attachmentsItem .uiButton[type="button"]{border:none !important}
+.emailuiEmailToolbarContainer .forceChatterPublisherAttachments .cuf-attachmentsItem{padding:2px !important}
+.comm-page-detail-0F9 .uiButton[title="Attach up to 10 files"]:hover{border-color:white !important}
+.comm-page-detail-0F9 .slds-button--neutral.slds-is-selected:hover:not([disabled]){color:#00b09c !important}
+.forceCommunityUserSettings h2{margin-left:2% !important;font-weight:bold !important }
+.forceCommunityUserProfileDetail .userBadge{margin-left:1.5% !important;margin-top:1% !important}
+.comm-page-home .uiTab .cuf-attachmentsItem .uiButton[type="button"]{background:#F0F8FF !important}
+.comm-page-detail-005 .profileIconContainer {margin-top:1% }
+.comm-page-detail-0F9 header .owner .slds-button:hover{background-color:#00b09c !important;color:white !important}
+.comm-page-detail a[data-tab-name="New"] > .title.slds-path__title{
+    color: rgb(0, 95, 178) !important;
+}
+.comm-page-detail .tabset-border > .pa-scroller > .scroller > .pa-tabBar > .pa-tabs__nav > .slds-is-current.slds-path__item.runtime_sales_pathassistantPathAssistantTab > a > .title.slds-path__title:hover{
+    color: #005fb2 !important;
+}
+.comm-page-detail .slds-path__nav .slds-is-current .slds-path__title{
+   color: #fff !important; 
+}
+.comm-page-detail .slds-path__nav .slds-is-current .slds-path__title:hover{
+    color: #fff !important;
+}
+.forceChatterPublisherPresentationDesktop{background-color:#F0F8FF}
+.comm-page-detail-0F9 .cuf-commentActionButton .slds-button_icon-bare{width:100% !important}
+.qe-upVoteCount{margin-left: 25% !important}
+.qe-commentCount{margin-left:-50% !important}
+.comm-page-detail-0F9 header .slds-button:hover{color:white !important}
+.comm-page-home .uiTab .cuf-attachmentsItem .uiButton[type="button"]:hover{background:white !important}
+.comm-page-detail .forceCommunityActivityPanel .uiInputCheckbox .form-element__label{padding-right:1% !important}
+.comm-page-detail .forceCommunityActivityPanel .uiInputCheckbox{border:none !important}
+/*.emailuiEmailToolbarContainer .cuf-attachmentsList .cuf-attachmentsItem:nth-child(3){display:none !important}*/
+.comm-page-detail .forceCommunityActivityPanel .uiTab .cuf-attachmentsItem.uiButton[type="button"]{border:1px solid black !important}
+
+.comm-page-detail .slds-hint-parent{width:100% !important}
+.comm-page-home .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer > .uiTabBar > .tabs__nav > .tabs__item.uiTabItem > .tabHeader{
+    padding: 20px !important;
+}
+/*.comm-page-detail .forceCommunityActivityPanel .inputDate {padding-right:58rem !important;}
+.comm-page-detail .forceCommunityActivityPanel .slds-combobox__input{padding-right:58rem !important}*/
+/*.comm-page-detail .slds-form-element__control, .comm-page-detail .orderedList, .comm-page-detail .contentWrapper.slds-box--border, .comm-page-detail .pillContainerListItem{
+    display: contents !important;
+}
+.comm-page-detail-0F9 .js-tab.tabs__content.active.uiTab > div > .ui-widget > .forceCommunityFeedPublisher > .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer > .uiTabBar > .tabs__nav > .tabs__item.uiTabItem > .tabHeader{
+    padding: 20px !important;
+    background: #fff !important;
+    margin-top: 2px !important;
+}
+.comm-page-detail-0F9 .js-tab.tabs__content.active.uiTab > div > .ui-widget > .forceCommunityFeedPublisher > .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer > .uiTabBar > .tabs__nav{
+    margin-left: 7px !important;
+}
+.comm-page-home .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer > .uiTabBar > .tabs__nav{
+    margin-left: 5px !important;
+}
+.comm-page-home .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser > .slds-grid.dummyControlsContainer{
+    padding: 0 1rem 1rem !important;
+}*/
+.comm-page-home .forceCommunityFeedPublisher > .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer > .uiTabBar > .tabs__nav > .tabs__item.uiTabItem > .tabHeader{
+    padding: 20px !important;
+}
+.comm-page-home .forcePublisherQuickActionCollapser .dummyControlsContainer{
+    padding: 0 1rem 1rem !important;
+}
+/*.comm-page-home .ui-widget > .forceCommunityFeedPublisher > .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer > .uiTabBar > .tabs__nav > .tabs__item.active.uiTabItem > .tabHeader:focus, .active .tabHeader[title=“Question”], .active .tabHeader[title=“Post”]{
+    background: #fff !important;
+    -webkit-transition: background 300ms ease-in-out;
+    -moz-transition: background 300ms ease-in-out;
+    -ms-transition: background 300ms ease-in-out;
+    -o-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}*/
+.comm-page-detail-0F9 .forceChatterChatterGroupAnalyticsFeedHistory{
+    padding: 0 2% 2% !important;
+}
+.active .tabHeader[title="Engagement"]{border-bottom:2px solid black !important ;}
+
+.active .tabHeader[title="Chatter"]{border-bottom:2px solid black !important ;}
+.active .tabHeader[title="Activity"]{border-bottom:2px solid black !important ;}
+.active .tabHeader[title="Details"]{border-bottom:2px solid black !important ;}
+
+
+.forceChatterGroupDetailCard .header-title-container{margin-left:4.7% !important}
+.comm-page-detail-0F9 .js-tab.tabs__content.active.uiTab > div > .ui-widget{
+    margin-top: 12px !important;
+}
+.comm-page-detail-0F9 .js-tabset.uiTabset--base.uiTabset--default.uiTabset.forceCommunityTabset > .js-tab.tabs__content.active.uiTab > div{
+    margin-top: 10px !important;
+}
+.myHr{
+    margin-left: 8px !important;
+}
+.comm-page-detail-0F9 .cuf-feedItemHeader.cuf-media.l-first > .slds-post__header.slds-media > .cuf-media-right.forceChatterOverflowActionMenu.uiMenu > .slds-dropdown-trigger.slds-dropdown-trigger_click.cuf-feedItemActionTrigger.cuf-buttonIcon > .slds-button.slds-button_icon-border.slds-button_icon-x-small > lightning-primitive-icon{
+    padding-left: 0 !important;
+}
+.comm-page-detail-0F9 .slds-card__header.slds-grid > .slds-no-flex > .actionsContainer > .forceDeferredDropDownAction > .uiMenu.forceNoRowActions > .uiPopupTrigger > div > div > .menuTrigger > .forceIcon.slds-button__icon.slds-icon-utility-down.slds-icon_container > lightning-primitive-icon{
+    padding-left: 0 !important;
+}
+.comm-page-detail-0F9 .comm-page-detail-0F9 .slds-size_10-of-12{
+    width: 65% !important;
+}
+.comm-page-detail-0F9 div.uiMenu .slds-button.slds-button--icon-x-small.slds-button--icon-border-filled > .slds-button__icon.slds-icon-utility-down.slds-icon_container.forceIcon > lightning-primitive-icon{
+    padding-left: 0 !important;
+}
+.comm-page-detail-0F9 .slds-button.slds-button--icon-border-filled.oneActionsDropDown .uiMenu .uiPopupTrigger .slds-grid.slds-grid--vertical-align-center.slds-grid--align-center.sldsButtonHeightFix{
+    height: 2rem !important;
+}
+.comm-page-detail-0F9 .forceHighlightsPanel.forceCommunityRecordHeadline > .forceCommunityGroupHighlightStencilNapili.forceRecordLayout > .actions{
+    display: flex !important;
+    float: none !important;
+}
+.comm-page-detail-0F9 .forceCommunityRelatedRecords > .forceRelatedListContainer > .container > .container.forceRelatedListSingleContainer{
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+    margin-left: 6px;
+}
+.comm-page-detail-0F9 .forceHighlightsPanel.forceCommunityRecordHeadline{
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+}
+.comm-page-detail-0F9 .slds-grid.slds-wrap .js-tabset.uiTabset--base.uiTabset--default.uiTabset.forceCommunityTabset{
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+}
+.comm-page-detail-0F9 .slds-card.slds-card_boundary.forceBaseCard.forceChatterGroupDetailCard.forceCommunityGroupDetail{
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+	margin-top: 0 !important;
+}
+.comm-page-detail-0F9 .ui-widget.siteforceDesignTimeComponent > .actualNode > .forceCommunityRelatedRecords > .forceRelatedListContainer > .container{
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+	margin-left: 6px !important;
+}
+.comm-page-home .uiTab .uiButton .uiButton[type="button"][title="What would you like to know?"]:hover{
+   background-color: #fff !important;
+        border: 1px solid rgb(221, 219, 218) !important;
+
+    color: rgba(0, 68, 135, 1) !important;
+    
+}
+.uiButton[type="button"][title="What would you like to know?"]{
+       background-color: #fff !important;
+
+    border: 1px solid rgb(221, 219, 218) !important;
+    color: rgb(62, 62, 60) !important;
+    
+}
+.comm-page-detail .forceCommunityActivityPanel .uiTab .uiButton[type="button"][title="Write an email..."] {
+    border: 1px solid rgb(221, 219, 218) !important;
+    color: rgb(62, 62, 60) !important;
+    
+}
+.comm-page-detail .forceCommunityActivityPanel .uiTab .uiButton[type="button"][title="Write an email..."]:hover{
+    background-color: #fff !important;
+        border: 1px solid rgb(221, 219, 218) !important;
+
+    color: rgba(0, 68, 135, 1) !important;
+}
+.slds-path__guidance{background-color:#F6F8FA !important; padding-top:1% !important; margin-bottom:1% !important;padding-bottom:1%; margin-top:-0.1% !important}
+
+.comm-page-list .listViewManagerHeaderButton .chartButton{display:none}
+.forceCommunityUserSettings .profileVisibilitySection .profpublicLabel{margin-left:2% !important}
+/*.forceCommunityUserSettings .profileVisibilitySection .selectinputVisibility .select{margin-left:-140%}*/
+.forceCommunityUserSettings .accountSection .settingsLabel {margin-left:1%}
+.forceCommunityUserSettings .locationSection .select{margin-left:-5%}
+.forceCommunityUserSettings .userSettingTabs{margin-left:2%}
+.forceCommunityUserSettings .checkboxsectionreceive .uiInput{border:none !important}
+.forceCommunityUserSettings .checkboxsection .uiInput{border:none !important; margin-left:1%}
+.accountSection div,.locationSection div, .profileVisibilitySection div, .emailNotificationsSection div{margin-left:1%}
+.profileName{margin-left:1.4%;margin-top:2% ;display:none !important}
+.comm-page-usersettings .slds-m-top--medium{display:none}
+.comm-page-usersettings .tabs__nav{display:none}
+.forceCommunityUserSettings input[type=checkbox]:checked{background-color:#00b09c !important; border:none !important}
+.comm-page-usersettings .slds-button_neutral:hover, .comm-page-usersettings .slds-button--neutral [title="Cancel"]:hover{border:2px solid #00b09c !important; background-color:#00b09c !important; color:white !important}
+
+.comm-page-usersettings .slds-button_brand:hover, .slds-button--brand:hover{border:2px solid #00b09c !important; background-color:#00b09c; color:white !important}
+
+.comm-page-usersettings .slds-button_brand,.comm-page-usersettings .slds-button--brand{border:2px solid #00b09c !important; background-color:white; color:#00b09c !important}
+.comm-page-usersettings .slds-button_neutral, .comm-page-usersettings .slds-button--neutral [title="Cancel"]{border-width:2px !important}
+.comm-page-detail  .forceCommunityActivityPanel .uiTab .cuf-publisherShareButton[type="button"]:hover{border:2px solid #00b09c !important; background-color:#00b09c !important; color:white !important}
+
+.comm-page-detail  .forceCommunityActivityPanel .uiTab .cuf-publisherShareButton[type="button"]{border:2px solid #00b09c !important; background-color:white !important; color:#00b09c !important}
+.comm-page-detail .forceCommunityActivityPanel .forceSearchInputLookupDesktop .singlePill .pillText{width: calc(100% - 5rem);}
+
+/*.comm-page-detail .forceCommunityActivityPanel .contentWrapper {
+    
+        width:67rem !important
+    
+}
+.comm-page-detail .forceCommunityActivityPanel .pillContainerListItem{width:1090px ;display:block}*/
+.comm-page-detail .forceCommunityActivityPanel  .uiPill--default.pill {border:none !important}
+.comm-page-detail .forceCommunityActivityPanel .uiPillContainer--default .uiPillContainer .maxAllowed .focused{border:none !important}/*
+.comm-page-detail .forceCommunityActivityPanel .uiPill--default.pill{width:100%; max-width:1090px }
+.comm-page-detail .forceCommunityActivityPanel .tabHeader[title="New Task"] .forcePageBlockItemEdit{display:block}
+*/
+.userDetailHeader .slds-button{border:none }
+.comm-page-detail .slds-modal__footer .slds-button:hover{background-color:#00b09c !important ; color:white !important}
+.comm-page-detail .slds-modal__footer .slds-button+.slds-button{border:2px solid #00b09c !important }
+.forceModalActionContainer--footerAction .slds-float--left{display:none !important}
+.comm-page-detail .runtime_sales_pathassistantPathAssistantHeader .slds-path__mark-complete:hover{color:white !important}
+.cInviteCollegues .slds-modal__container{margin-top:5% !important}
+.cInviteCollegues .slds-button_neutral:hover,.cInviteCollegues .slds-button--neutral [title="Cancel"]:hover{background-color:#00b09c !important; color:white !important; border:2px solid #00b09c !important}
+
+.cInviteCollegues .slds-button_neutral,.cInviteCollegues .slds-button--neutral [title="Cancel"]{background-color:white !important; color:#00b09c!important; border:2px solid #00b09c !important}
+.cInviteCollegues .slds-button_brand,.cInviteCollegues .slds-button--brand{background-color:white !important; color:#00b09c!important; border:2px solid #00b09c !important}
+.cInviteCollegues .slds-button_brand:hover, .cInviteCollegues .slds-button--brand:hover, .cInviteCollegues .slds-button--neutral [title="Cancel"]:hover{background-color:#00b09c !important ; color:white !important}
+
+.cInviteCollegues{background-color:rgba(151, 163, 173, .7) !important}
+.quAc2 {padding-bottom:5% !important}
+.active .tabHeader[title="TO ME"]{border-bottom:2px solid black !important ;}
+.active .tabHeader[title="ALL COMPANY"]{border-bottom:2px solid black !important ;}
+.active .tabHeader[title="BOOKMARKED"]{border-bottom:2px solid black !important ;}
+
+.active .tabHeader[title="WHAT I FOLLOW"]{border-bottom:2px solid black !important ;}
+.tabHeader[title="Email"]:focus{text-decoration:none !important;}
+.tabHeader[title="New Event"]:focus{text-decoration:none !important}
+.tabHeader[title="New Task"]:focus{text-decoration:none !important}
+
+.cNDApage {background-color:red !important}
+#content{
+    max-width: 100% !important;
+}
+.comm-page-list-069 .forceContentModalPreviewPlayer .toolbar .uiButton[type="button"]{border: 2px solid white !important;}
+.comm-page-list-069 .forceContentModalPreviewPlayer .toolbar button{border: 2px solid white !important;}
+.comm-page-list-069 .forceContentModalPreviewPlayer .toolbar button:hover {border: 2px solid white !important; background-color:#069BB3 !important}
+
+.comm-page-list-069 .forceContentPreviewerActionsBar > .slds-dropdown-trigger > .uiPopupTrigger > div > div > .slds-button_icon-border-filled > .slds-button__icon  .slds-icon.slds-icon_xx-small{
+    color: white !important;
+    border:transparent !important
+}
+.comm-page-list-069 .forceContentPreviewPlayerTopToolbar{background-color:#00b09c !important; height:2.5rem !important; padding-top:0.5rem !important;}
+
+.comm-page-list-069 .forceContentModalPreviewPlayer{background-color:#00b09c !important; height:3rem !important;}
+
+.forceContentModalPreviewPlayer .toolbar button {border: 2px solid white !important;}
+.forceContentModalPreviewPlayer .toolbar button:hover {border: 2px solid white !important; background-color:#069BB3 !important}
+
+.comm-page-detail-005 .slds-icon-utility-close .slds-icon_xx-small{color:white !important}
+.comm-page-detail-005 .forceContentPreviewPlayerTopToolbar{background-color:#00b09c !important; height:2.5rem !important; padding-top:0.5rem !important;}
+.comm-page-detail-005 .forceContentModalPreviewPlayer{background-color:#00b09c !important; height:3rem !important;}
+/*.comm-page-detail-005 .forceContentPreviewerActionsBar > .slds-dropdown-trigger > .uiPopupTrigger > div > div > .slds-button_icon-border-filled{
+    background: #fff !important;
+}*/
+.comm-page-detail-005 .forceContentPreviewerActionsBar > .slds-dropdown-trigger > .uiPopupTrigger > div > div > .slds-button_icon-border-filled > .slds-button__icon  .slds-icon.slds-icon_xx-small{
+    color: white !important;
+    border:transparent !important
+}
+/*.comm-page-detail-005 .file-preview-close > .forceContentPreviewerAction > .slds-truncate > div > .slds-button.slds-button--icon-inverse.staticActionButton.uiButton{
+    background: #fff !important;
+}
+.comm-page-detail-005 .forceContentPreviewerActionsBar > .slds-truncate > div > .slds-button.slds-button--icon-inverse.previewerAction.uiButton{
+    background: #fff !important;
+    color: #000 !important;
+}
+.comm-page-detail-005 .forceContentPreviewerActionsBar > .slds-truncate > div > .slds-button.slds-button--icon-inverse.previewerAction.uiButton > .uiButton__icon--left{
+    color: #000 !important;
+}*/
+.comm-page-detail-005 .slds-icon-utility-close{color:white !important}
+
+.comm-page-detail-005 .forceActionsContainer .oneActionsDropDown{border:2px solid #00b09c !important; padding-bottom: 1.9rem;}
+.comm-page-detail-005 .forceActionsContainer .forceActionLink:hover{background-color:#00b09c; color:white !important;border-color:#00b09c; border:2px solid #00b09c !important }
+
+.comm-page-detail-005 .forceActionsContainer .forceActionLink{background-color:white; color:#00b09c !important;border-color:#00b09c; border:2px solid #00b09c !important}
+.comm-page-detail-005 .uiTabBar ul li a{border:none !important}
+.comm-page-detail-005 .tabHeader:focus{border:none !important}
+/*.comm-page-detail-005 .tabs__nav .active{border-bottom:2px solid black !important}*/
+
+.comm-page-detail-005 .listRecordTitle .uiOutputText{color:#006EB3;font-weight:bold }
+.commentInputArea{margin-bottom: 0.7% !important}
+.slds-button[title="View More Posts"]{background-color:white; color:#00b09c;border-color:#00b09c; border:2px solid #00b09c !important }
+.slds-button[title="View More Posts"]:hover{color:white !important }
+
+.forceCommunityForceCommunityFeed .forceChatterFeedBodyText a{color:#006EB3 !important; font-weight:bold !important }
+.forceCommunityForceCommunityFeed .cuf-auxBodyContent ul{background-color:white !important}
+.forceCommunityLeadInboxStencil a{
+
+color: #006EB3 !important;}
+.comm-page-detail-0F9 .forceCommunityFeedPublisher .uiTabBar .tabs__nav {background-color:#F0F8FF !important}
+.comm-page-detail-0F9 .forceCommunityFeedPublisher .tabs__content{background-color:#F0F8FF !important}
+.comm-page-detail-0F9 .forceCommunityFeedPublisher  {background-color:#F0F8FF !important}
+.comm-page-detail .slds-path__title{padding-bottom:1.8% !important}
+.slds-modal__footer .slds-button+.slds-button[title="Click, or press Ctrl+Enter"]{background-color:#00b09c !important; color:white !important}
+.modal-footer .qe-questionPostDesktopPanelAction {background-color:#00b09c !important; color:white !important}
+.quAc{display:block !important; text-align:center !important}
+.comm-page-detail .slds-modal__container .uiButton--modal-closeBtn:hover{background-color:transparent !important; color: #dddbda !important; border:none !important}
+
+.comm-page-detail .slds-modal__container .uiButton--modal-closeBtn{background-color:transparent !important; color: #dddbda !important; border:none !important}
+.tabset-border > .pa-scroller > .scroller > .pa-tabBar > .pa-tabs__nav > .slds-is-incomplete.slds-path__item.runtime_sales_pathassistantPathAssistantTab > a > span{
+    margin-left: 4% !important;
+}
+.tabset-border > .pa-scroller > .scroller > .pa-tabBar > .pa-tabs__nav > .slds-is-incomplete.slds-is-active.slds-path__item.runtime_sales_pathassistantPathAssistantTab > a > span{
+    color: #fff !important;
+    margin-left: 4% !important;
+}
+.tabset-border > .pa-scroller > .scroller > .pa-tabBar > .pa-tabs__nav > .slds-is-current.slds-is-active.slds-path__item.runtime_sales_pathassistantPathAssistantTab > a > .title.slds-path__title{
+    color: #fff !important;
+}
+.tabset-border > .pa-scroller > .scroller > .pa-tabBar > .pa-tabs__nav > .slds-is-current.slds-path__item.runtime_sales_pathassistantPathAssistantTab > a > .title.slds-path__title:hover{
+    color: #000 !important;
+}
+.tabset-border > .pa-scroller > .scroller > .pa-tabBar > .pa-tabs__nav > .slds-is-current.slds-path__item.runtime_sales_pathassistantPathAssistantTab > a:hover{
+    color: #000 !important;
+}
+.tabset-border > .pa-scroller > .scroller > .pa-tabBar > .pa-tabs__nav > .slds-is-current.slds-is-active.slds-path__item.runtime_sales_pathassistantPathAssistantTab > a > .title.slds-path__title:hover{
+    color: #fff !important;
+}
+.tabset-border > .pa-scroller > .scroller > .pa-tabBar > .pa-tabs__nav > .runtime_sales_pathassistantPathAssistantTab > a{
+    padding-bottom: 3.5% !important;
+}
+.slds-path__nav .slds-is-active .slds-path__link{color:transparent !important}
+
+.slds-path__nav .slds-is-active .slds-path__nav .slds-is-active .title{color:white !important}
+
+
+/*.comm-page-detail .slds-is-current .tabHeader .title  {  color: black !important}*/
+
+.slds-path__nav .slds-is-current .slds-path__title {color:blue !important}
+.pa-tabBar .slds-path__nav .slds-is-current::before .title, li.slds-path__nav .slds-is-current::after .slds-path__title {color:blue !important}
+li.slds-path__nav .slds-is-current::before, li.slds-path__nav .slds-is-current::after {color:blue !important}
+li.slds-path__nav .slds-is-current:before .slds-path__title, li.slds-path__nav .slds-is-current:after .slds-path__title {color:blue !important}
+.forceCommunityAskCommunity.askCommunityBtn:focus{background-color:white !important}
+.slds-path__nav .slds-is-current .slds-path__title{color:blue !important}
+.current .slds-path__stage .slds-path__title{color:blue !important}
+
+.slds-icon-utility-info .slds-icon_xx-small{color:#B0ADAB !important;margin-left:30% !important}
+.slds-path__nav .slds-is-current .title,.slds-path__nav .slds-is-active .title{color:rgb(0, 95, 178)
+    !important}
+.slds-path__nav .slds-is-current .slds-path__title{color:rgb(0, 95, 178) !important}
+.slds-is-current .slds-path__title{color:rgb(0, 95, 178) !important}
+.slds-is-active .slds-path__title{color:rgb(0, 95, 178) !important}
+.salesforceIdentitySelfRegister2 .inputIcon{display: none }
+.salesforceIdentityLoginForm2 .uiButton{background-color:#00b09c !important}
+.salesforceIdentityLoginForm2 .inputContainer{border-radius:25px !important}
+.salesforceIdentityLoginForm2 .inputBox{border-color:transparent !important}
+.salesforceIdentityLoginBody2 .cCenterPanel .slds-col--padded .ui-widget{margin-right:3.5% !important}
+.comm-page-self-register.communityLogoContainer{margin-bottom:1% !important;margin-right:4% !important}
+.salesforceIdentitySocialLogin2{margin-right:4% !important}
+.salesforceIdentitySelfRegister2{margin-right:4% !Important}
+.salesforceIdentitySelfRegister2 .inputBox{border:none !important}
+.salesforceIdentityLoginBody2 .cCenterPanel .siteforceContentArea{margin-top:-3%}
+.salesforceIdentitySocialLogin2 .uiButton{background-color:#00b09c !important}
+.salesforceIdentitySelfRegister2 .uiButton{background-color:#00b09c !important}
+
+.salesforceIdentitySelfRegister2 .inputContainer{margin-right:4% !Important}
+.comm-page-self-register{background-color:#F8F8F7 !important}
+.slds-has-dividers_right>.slds-list__item:after, .slds-has-dividers--right>.slds-list__item:after, .slds-has-dividers_right>.slds-item:after, .slds-has-dividers--right>.slds-item:after{display:none }
+.cuf-commentAge
+{
+   margin-left: 1%;
+}
+.closedConversationMessage
+{
+   margin-top: 0.5rem !important;
+}
+.cuf-showMoreComments{background-color:white !important; border-bottom:thin solid #dddbda !important}
+.cuf-feedback, .slds-feed__item-comments, .has-comments .inFeed .feed__item-comments--threadedCommunity .forceChatterFeedback--default .forceChatterFeedback{margin-left:-2% !important;margin-bottom:-2% !important}
+.cuf-commentLi {
+   margin-left: -10px !important;
+   background-color: #f3f6f8 !important;
+}
+.cuf-commentItem, .slds-comment, .comment--threadedCommunity, .forceChatterComment{
+   background-color: #f3f6f8 !important;
+   margin-left: 1% !important;
+}
+.commentInputArea{background-color:#f3f6f8 !important}
+.comm-page-list-701 .body{width:100% !important;padding:1rem !important;background-color:#B1C4DF !important;border-radius:0.25rem !important}
+.runtime_sales_emailtemplateuiEmailToolbar li:nth-of-type(2){display:none !important}
+.comm-page-list-0F9 .tableclsf{border:none !important}
+.comment__footer .slds-item
+{    border: 1px solid #dddbda;
+   padding-top:0.5%;
+    padding-bottom:0.5%;
+    padding-left:1%;
+    padding-right:1% !important;
+   border-radius: 1rem;
+    background-color:#F3F2F2
+}
+.slds-post__footer
+{
+    border-top: thin solid #dddbda;
+    padding-top: 1%;
+}
+
+.cuf-feedback, .commentInputArea, .forceChatterFeedback{background-color:#f3f6f8 !important}
+.forceChatterStyle .entityLinkHover .uiOutputText{border:transparent !important;font-weight:bold !Important}
+.comm-page-list-069 .forceActionsContainer .slds-button_neutral a[title="Uplad Files"] ,.comm-page-list-069 .forceActionsContainer .slds-button--neutral a[title="Upload Files"] {border:transparent !important}
+
+.comm-page-list-069 .forceContentModalPreviewPlayer .toolbar button,.comm-page-list-069  .forceContentModalPreviewPlayer .toolbar button:active{border:transparent !Important}
+.forceContentPreviewPlayerTopToolbar{background:#00B09C !important}
+
+
+
+.cuf-commentLi{margin-left:5% !important;}
+.slds-feed__item{border:thin solid #dddbda !important;padding-left:2% !important}
+.comm-page-detail .js-tab.tabs__content.active.uiTab > div > .ui-widget > .forceCommunityFeedPublisher > .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer > .uiTabBar{
+    border: none !important;
+}
+.comm-page-detail .js-tab.tabs__content.active.uiTab > div > .ui-widget > .forceCommunityFeedPublisher > .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer > section{
+    background: #F0F8FF !important;
+    border: none !important;
+}
+.comm-page-detail .js-tab.tabs__content.active.uiTab > div > .ui-widget > .forceCommunityFeedPublisher > .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer > .uiTabBar > .tabs__nav > .tabs__item.active.uiTabItem > .tabHeader{
+    background: #F0F8FF !important;
+}
+.comm-page-detail .js-tab.tabs__content.active.uiTab > div > .ui-widget > .forceCommunityFeedPublisher > .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer > .uiTabBar > .tabs__nav{
+    background: #F0F8FF !important;
+}
+.comm-page-detail .js-tab.tabs__content.active.uiTab > div > .ui-widget > .forceCommunityFeedPublisher > .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer{
+    background: #F0F8FF !important;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10) !important;
+	border: 1px solid #F0F8FF !important;
+}
+.comm-page-list-069 .slds-icon_xx-small {
+    color: white !important;
+}
+.comm-page-list-069 .slds-icon_xx-small{color:white !important}
+.comm-page-list-069 .file-preview-close.slds-align-right > .forceContentPreviewerAction > .slds-truncate > div > .slds-button.slds-button--icon-inverse.staticActionButton.uiButton:enabled{
+    color:white !important;
+    opacity: 1 !important;
+}
+.comm-page-custom-program-rules{background-color:#F1F1F1 !Important}
+.forceContentModalPreviewPlayer .preview .thumbnail .page{height:auto !important; vertical-align:center !important	}
+.pageImg{height:auto !important}
+.comm-page-list-069 .siteforce-Modal-Open use{color:white !Important}
+
+.pageImg{position: absolute; top: 200%;}
+.comm-page-custom-program-rules  .forceCommunityRichTextInline{padding:5% !important; background-color:white !important; border-radius:0.25rem !important;margin-top:3% ;margin: 2% 5.5%  }
+.comm-page-home .forceCommunityRichText b{margin-left:1.5% !important}
+
+.comm-page-detail .tabHeader[title="Chatter"].MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .tabs__item.active.uiTabItem .tabHeader{
+    background: transparent !important;
+    border-right: none !important;
+}
+.slds-modal__container.forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete,.slds-modal__container .forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete:focus{
+    border:none !important}
+.emailuiPillContainer .pillContainerListItem input[type=text].uiPillContainerAutoComplete{border-color:transparent !important}
+/*------.tabHeader.uiTab---.tabHeader--------[title="Chatter"]----------*/
+.forcePageBlockSection .slds-form-element .slds-form-element__control, .forcePageBlockSection .slds-form-element:not([class*="slds-size"]){padding-right:0% !important}
+.uiTabset--task .tabs__item.active > a {background-color: #F0F8FF !important;}
+.comm-page-detail.tabs__item .active .uiTabItem .tabHeader{background-color: #F0F8FF !important;}
+.comm-page-detail  .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer{
+    padding-top: .75rem !important;
+	background: #F0F8FF !important;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10) !important;
+    border: 1px solid #F0F8FF !important;
+}
+.comm-page-detail .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .uiTab{
+    border: 1px solid #F0F8FF !important;
+}
+.comm-page-detail .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .uiTab .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser{
+    background: #F0F8FF !important;
+    border: none !important;
+}
+.comm-page-detail .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .uiTab .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser .slds-grid.dummyControlsContainer{
+    background: #F0F8FF !important;
+    border: none !important;
+}
+.comm-page-detail .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .tabs__nav{
+    background: #F0F8FF !important;
+}
+.comm-page-detail .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser{
+    background: #F0F8FF !important;
+}
+/*----------------------------sadilnikad--------------*/
+.comm-page-home .MEDIUM .tabs__content{border-color:#f0f8ff !important}
+.comm-page-home .MEDIUM .uiTabset--base .uiTabset--task .uiTabset .oneActionsComposer .forceActionsContainer{background: #F0F8FF !important;}
+.comm-page-home .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .uiTabItem .tabHeader{
+    background: transparent !important;
+    border-right: none !important;
+}
+.slds-modal__container.forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete,.slds-modal__container .forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete:focus{border:none !important}
+.emailuiPillContainer .pillContainerListItem input[type=text].uiPillContainerAutoComplete{border-color:transparent !important}
+.comm-page-home .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer{
+	background: #F0F8FF !important;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10) !important;
+    border: 1px solid #F0F8FF !important;
+}
+.comm-page-home .bb8a1.js-tab.tabs__content.uiTab .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .uiTab{
+    border: 1px solid #F0F8FF !important;
+}
+.comm-page-home .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer  .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser{
+    background: #F0F8FF !important;
+    border: none !important;
+}
+.comm-page-home  .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer.uiTab .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser .slds-grid.dummyControlsContainer{
+    background: #F0F8FF !important;
+    border: none !important;
+}
+.comm-page-home  .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .tabs__nav{
+    background: #F0F8FF !important;
+}
+.comm-page-home  .MEDIUM.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser{
+    background: #F0F8FF !important;
+}
+
+.tabHeader[title="Chatter"].dummyControlsContainer{background-color:#00b09c !important}
+.slds-modal__container.forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete,.slds-modal__container .forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete:focus{border:none !important}
+.emailuiPillContainer .pillContainerListItem input[type=text].uiPillContainerAutoComplete{border-color:transparent !important}
+.forceCommunityFeedPublisher .bb8a1.js-tab.tabs__content.active.uiTab .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer{
+    padding-top: .75rem !important;
+	background: #F0F8FF !important;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10) !important;
+    border: 1px solid #F0F8FF !important;
+}
+.forceCommunityFeedPublisher.bb8a1.js-tab.tabs__content.active.uiTab .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .tabs__content.active.uiTab{
+    border: 1px solid #F0F8FF !important;
+}
+.forceCommunityFeedPublisher.bb8a1.js-tab.tabs__content.active.uiTab .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .tabs__content.active.uiTab .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser{
+    background: #F0F8FF !important;
+    border: none !important;
+}
+.forceCommunityFeedPublisher.bb8a1.js-tab.tabs__content.active.uiTab .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .tabs__content.active.uiTab .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser .slds-grid.dummyControlsContainer{
+    background: #F0F8FF !important;
+    border: none !important;
+}
+.forceCommunityFeedPublisher.bb8a1.js-tab.tabs__content.active.uiTab .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .tabs__nav{
+    background: #F0F8FF !important;
+}
+.forceCommunityFeedPublisher .bb8a1.js-tab.tabs__content.active.uiTab .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser{
+    background: #F0F8FF !important;
+}
+.inlineEditEnabled  .slds-section__title-action{max-width:97% }
+.inlineEditEnabled .input,.inlineEditEnabled .street,.inlineEditEnabled .form-element__row{max-width: 95%;}
+.runtime_sales_activitiesActivityTimelineFixedLayout ul{margin-left:1% !important}
+.comm-page-home .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .tabs__item.active.uiTabItem .tabHeader{
+    background: transparent !important;
+    border-right: none !important;
+}
+.slds-modal__container.forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete,.slds-modal__container .forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete:focus{border:none !important}
+.emailuiPillContainer .pillContainerListItem input[type=text].uiPillContainerAutoComplete{border-color:transparent !important}
+.comm-page-home .bb8a1.js-tab.tabs__content.active.uiTab .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer{
+	background: #F0F8FF !important;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10) !important;
+    border: 1px solid #F0F8FF !important;
+}
+.comm-page-home .bb8a1.js-tab.tabs__content.active.uiTab .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .tabs__content.active.uiTab{
+    border-width: 0px 1px 1px !important;
+    border-style: solid !important;
+    border-color: #F0F8FF !important;
+}
+.comm-page-home .bb8a1.js-tab.tabs__content.active.uiTab .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .tabs__content.active.uiTab .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser{
+    background: #F0F8FF !important;
+    border: none !important;
+}
+.comm-page-home .bb8a1.js-tab.tabs__content.active.uiTab .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .tabs__content.active.uiTab .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser .slds-grid.dummyControlsContainer{
+    background: #F0F8FF !important;
+    border: none !important;
+}
+.comm-page-home .bb8a1.js-tab.tabs__content.active.uiTab .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .tabs__nav{
+    background: #F0F8FF !important;
+}
+.comm-page-home .bb8a1.js-tab.tabs__content.active.uiTab .SMALL.uiTabset--base.uiTabset--task.uiTabset.oneActionsComposer.forceActionsContainer .testid__publisher-quick-action-collapser.collapsedState.forcePublisherQuickActionCollapser{
+    background: #F0F8FF !important;
+}
+.modal-container.uiInputTextForAutocomplete,.modal-container.uiAutocomplete {border-color:transparent !important}
+.forceChatterFeedAuxBody .cuf-auxBody{background-color:#f0f8ff}
+.forceCommunityForceCommunityFeed .cuf-entityLink{border-bottom:transparent !important; color:#006EB3 !important}
+.cuf-commentNameLink .uiOutputText{margin-left: 1%;}
+.forceChatterSimpleFeedItemTopics--pill ul.topic-commaSeparatedList li a{border-color:#dddbda !important}
+.commentActionPanel .slds-button,.commentActionPanel .slds-button--icon,.commentActionPanel .cuf-publisherAttachmentButton ,.commentActionPanel .slds-p-left--xxx-small ,.commentActionPanel .slds-p-right--xxx-small,.commentActionPanel .uiButton,.commentActionPanel .uiButton[type="button"]{border-color:transparent !important}
+
+.commentActionPanel.uiButton[type=“button”]{border-color:transparent !important}
+.slds-modal__container{height:50% !important}
+.slds-modal__header .slds-has-flexi-truncate{visibility:hidden !Important}
+.bottomBarLeft .slds-button,.bottomBarLeft .slds-button--icon,.bottomBarLeft .cuf-publisherAttachmentButton ,.bottomBarLeft .slds-p-left--xxx-small ,.bottomBarLeft .slds-p-right--xxx-small,.bottomBarLeft .uiButton,.bottomBarLeft .uiButton[type="button"]{border-color:transparent !important}
+.publisherAttachmentButton{border-color:transparent !important}
+.slds-path__title{margin-top:3.3% !important}
+.modal-body,.modal-header,.modal-footer,.modal-container{background-color:white !important; border:transparent !important}
+.comm-page-home .isPageWidthFixed-true > .siteforceSldsTwoCol84Layout > .slds-grid > .comm-layout-column > div{
+    padding-left: 2rem !important;
+    padding-right:4% !important;
+}
+.runtime_sales_leadConvertSectionDesktop .collapse,.runtime_sales_leadConvertSectionDesktop .entityPanel{border-radius:0.25rem !important}
+.runtime_sales_leadConvertOpportunityCheckBox{visibility:hidden !important}
+.uiButton[title="Share an update..."]{background-color:white !Important}
+.uiButton[title="Share an update..."]:hover{background-color:white !Important}
+
+.comm-page-home .ui-widget > .cloudx_cmsSS_uiCarousel > .slds-grid--pull-padded{
+    padding-left: 1.2rem !important;
+}
+.comm-page-home .ui-widget > .cloudx_cmsSS_uiCarousel > .slds-grid--pull-padded > .cloudx_cmsSS_uiBaseCarouselSlide{
+    width: 24% !important;
+	margin: .3rem !important;
+}
+.sidebar{margin-left:10% !important}
+.bottomBarLeft> .cuf-attachmentsItem .slds-button,.bottomBarLeft> .cuf-attachmentsItem  .slds-button--icon ,.bottomBarLeft> .cuf-attachmentsItem  .cuf-publisherAttachmentButton ,.bottomBarLeft> .cuf-attachmentsItem  .slds-p-left--xxx-small ,.bottomBarLeft> .cuf-attachmentsItem  .slds-p-right--xxx-small ,.bottomBarLeft> .cuf-attachmentsItem  .uiButton{border:1px solid #dddbda !important;background-color:#F9F9FA !important}
+.cuf-attachmentsItem .uiTab .uiButton[type="button"]{border:1px solid #dddbda !important;background-color:#F9F9FA !important}
+.bottomBarLeft.slds-button ,.bottomBarLeft button, .bottomBarLeft .uiTab .uiButton[type="button"], .bottomBar .uiButton {border:1px solid #dddbda !important;background-color:#F9F9FA !important}
+.bottomBarRight.slds-button ,.bottomBarRight button {border:2px solid #00b09c !important; background-color:white !important;color:#00b09c !important}
+.bottomBarRight.slds-button:hover ,.bottomBarRight button:hover {border:2px solid #00b09c !important; background-color:#00b09c !important;color:white !important}
+
+.comm-page-detail  .uiTab .uiButton[type="button"]{border:thin solid #dddbda !important; background-color:white !important;color:#08498A !important}
+.comm-page-custom-purchase-master-account .body{width: 100% !important;}
+.uiTabset--task .tabs__item.active::before{
+    background: transparent !important;
+}
+.slds-button_icon-border-filled, .slds-button--icon-border-filled, .slds-button_icon-border, .slds-button--icon-border{
+    border-color: #dddbda !important;
+}
+.slds-form-element__control.slds-button__icon{color:#f1f1f1 !important	}
+.slds-table th:focus, .slds-table th.slds-has-focus, .slds-table [role="gridcell"]:focus, .slds-table [role="gridcell"].slds-has-focus{
+    box-shadow: rgba(27, 82, 151, 1) 0 0 0 1px inset !important;
+}
+.slds-table_bordered:not(.slds-no-row-hover) tbody tr:hover > td:not(.slds-is-selected), .slds-table_bordered:not(.slds-no-row-hover) tbody tr:hover > th:not(.slds-is-selected), .slds-table_bordered:not(.slds-no-row-hover) tbody tr:focus > td:not(.slds-is-selected), .slds-table_bordered:not(.slds-no-row-hover) tbody tr:focus > th:not(.slds-is-selected), .slds-table--bordered:not(.slds-no-row-hover) tbody tr:hover > td:not(.slds-is-selected), .slds-table--bordered:not(.slds-no-row-hover) tbody tr:hover > th:not(.slds-is-selected), .slds-table--bordered:not(.slds-no-row-hover) tbody tr:focus > td:not(.slds-is-selected), .slds-table--bordered:not(.slds-no-row-hover) tbody tr:focus > th:not(.slds-is-selected){
+    box-shadow: rgb(221, 219, 218) 0 -1px 0 inset,rgb(221, 219, 218) 0 1px 0 inset !important;
+}
+.slds-rich-text-editor .slds-grid .slds-grid_vertical .slds-nowrap{border-color:#dddbda}
+.forceTopicPublisherTopicsWidget .forceChatterPillContainer .orderedList{border:none }
+.forceCommunityFeedPublisher .oneActionsComposer .uiTabBar .uiTabItem{
+   border-bottom:thin solid #dddbda;
+}
+.pipelineViewCardInnerWrapper > .slds-button_neutral{
+    background-color: #fff !important;
+}
+.runtime_sales_pipelineboardPipelineViewCardStencil .pipelineViewCardInnerWrapper{
+    border: #dddbda 1px solid !important;
+}
+.runtime_sales_pipelineboardPipelineViewColumnHeader .stageHeader{
+    background: #1b5297 !important;
+}
+ .comm-page-list-0F9 .tablecka{border:none !important}
+.forceCommunityReputationLeaderboard42 h2{padding-left:0 !important; }
+.forceChatterFeedItem .closedConversationMessage{border-color:#dddbda !important}
+/*.forceCommunityTabset{margin-right:1% }*/
+.forceCommunityRichText{margin-bottom:-1%;
+    margin-left:-0.7%
+    
+}
+.slds-grid .slds-m-right--xx-small.cPartnerStatus{margin-bottom: -0.5rem; padding-left:1px !important}
+.slds-feed__item{border-bottom:thin solid #dddbda }
+.forceDetailPanelDesktop .uiInput--input.input, .forceDetailPanelDesktop .uiInput--input .input, .textarea, .select, .uiInput--checkbox ,input, input.uiInput--checkbox,.default input .uiInput .uiInputTextForAutocomplete .uiInput--default .uiInput--input .uiInput .uiAutocomplete .uiInput--default .uiInput--lookup,.inputWrapper,.contentWrapper .slds-box--border,.lookup__menu,.slds-box--border,.runtime_sales_pipelineboardPipelineViewColumn .listContent
+{border:thin solid #dddbda !important}
+.comm-page-custom-knowledge-center .slds-col--padded,.comm-page-custom-knowledge-center .slds-p-top--x-small{margin-left: 1%;
+   margin-right: 1%;}
+.comm-page-custom-knowledge-center  .slds-x-small-order--3 {border-left:thin solid #dddbda}
+.comm-page-custom-knowledge-center .acknowlKnowledge .header{background-color:#f3f2f2 !important}
+.comm-page-custom-knowledge-center .slds-button{font-size:1rem !important; margin-bottom:1% !important;}
+.comm-page-detail-0F9 div.uiMenu lightning-primitive-icon{color: #fff !important;
+    padding-bottom: 17px;}
+.comm-page-detail-0F9 div.owner .slds-button_neutral {background-color:white !important;}
+.comm-page-detail-0F9 div.owner lightning-primitive-icon{display:none !important}
+/*.comm-page-detail-0F9 header .slds-button_neutral,.comm-page-detail-0F9 header .slds-button--neutral [title="Cancel"]{background-color:white !important;}
+.comm-page-detail-0F9 .slds-button__icon  {color: black !important;
+   padding-bottom: 16px !important;
+   padding-left: 5px !important;
+}*/
+/*.comm-page-detail-0F9 span[title="Member"]{margin-left: 17% !important}*/
+.comm-page-detail-0F9 .slds-size_10-of-12{/*margin-left:45% !important;*/ margin-top:1rem !important; width:80% !important }
+.comm-page-detail-0F9 header button{padding:0 !important; width:7rem !important;width:10rem !important ;font-weight:100 !important;border:0.5px solid #dddbda !important}
+.comm-page-detail-0F9 header .slds-button{ border:1px solid #dddbda !important; color:#00b09c !important; font-weight:100 !important}
+
+.comm-page-detail-0F9 header .slds-button:hover{ color:white !important; font-weight:100 !important; border:1px solid #dddbda !important;}
+.comm-page-detail-0F9 header.uiButton[type="button"]{border:0.5px solid #dddbda !important}
+.comm-page-detail-0F9 header.uiButton[type="button"]:hover{color:blue !important}
+.comm-page-detail-0F9 .slds-form-element {border-color:#dddbda !important}
+.comm-page-detail-0F9 .slds-grid .slds-grid_align-spread{ width:100% !important}
+.comm-page-detail-0F9 .body {width:100% !important; padding:1rem !important}
+.comm-page-detail-0F9 header div .slds-grid {  width:65% !important; float:left !important}
+.comm-page-detail-0F9 header .slds-float_right, .slds-float--right{/*float: left !important;*/}
+.forceCommunityGroupHighlightStencilNapili .actions{clear:right !important ;float: left  !important;}
+.comm-page-detail-0F9 header .forceCommunityGroupHighlightStencilNapili .forceRecordLayout{padding-top: 10%;}
+.comm-page-detail-0F9 header .actions{float: right !important;clear:right !important ; margin-top:1.2rem !important}
+.comm-page-detail-0F9 header .slds-size_10-of-12{float: left !important;
+   width: 75%;
+   clear: left !important;}
+.comm-page-detail-0F9 .displayCount {border:thin solid #dddbda !important}
+.comm-page-detail-0F9 .forceCommunityTabset { border-radius:.25rem !important}
+.comm-page-detail-0F9 .forceChatterChatterGroupAnalyticsFeedHistory,.comm-page-detail-0F9 .forceChatterChatterGroupAnalyticsTotals,.comm-page-detail-0F9 .forceChatterChatterGroupAnalyticsNewMembers {border:transparent !important; padding:2% !important}
+.comm-page-detail-0F9.slds-card{border:transparent !important}
+.comm-page-detail-0F9 .tabs__nav{ margin-top:0.5% !important; border-radius:.25rem !important }
+.comm-page-detail-0F9 .forceCommunityGroupHighlightStencilNapili{height:13rem !important; border:transparent !important;background-color:white !important}
+.comm-page-detail-0F9 .ui-widget{margin-bottom:0 !important }
+.comm-page-detail-0F9.siteforceContentArea .comm-layout-column .ui-widget:not(:last-child){margin-bottom:0% !important }
+
+.comm-page-detail-0F9 .forceChatterFeedInner{background-color:white !important;/* height:50rem !important*/}
+.comm-page-detail-0F9 .forceCommunityFeedPublisher{margin-top:1% !important; margin-bottom:0 !important}
+.comm-page-detail-0F9 .forceRelatedListCardDesktop{margin-left:1% !important; border: transparent !important;  padding: 1rem; }
+.comm-page-detail-0F9 .slds-cardl{margin-right:2% !important; border:none !important; border-radius:.25rem !important}
+.comm-page-detail-0F9 /*.slds-card .slds-card_boundary .forceBaseCard .forceChatterGroupDetailCard*/ .forceCommunityGroupDetail{margin-left:1% !important; border:transparent!important; border-radius:.25rem !important;margin-top:1% !important }
+/*.comm-page-detail-0F9{
+    background: #B1C4DF !important;
+}*/
+.comm-page-list-0F9.slds-cell-edit .cellContainer:hover,.comm-page-list-0F9.slds-cell-edit .cellContainer:active{border:transparent !important }
+.comm-page-list-0F9 .listViewContent{background-color:#f3f2f2 !important }
+.comm-page-list-0F9 .slds-input[name="search-input"]{border-color:#dddbda !important}
+.comm-page-list-0F9 button.slds-button button.slds-button_icon-bare{border:trnsparent !important}
+.comm-page-list-0F9 div.slds-cell-fixed{background-color:#FAFAF9 !important}
+.comm-page-list-0F9 .slds-th__action{background-color:#FAFAF9 !important}
+.comm-page-list-0F9 .slds-button{border-color:#dddbda}
+.salesforceIdentityLoginBody2{v:none !important}
+.forceCommunityLeadInbox{padding-right:inherit !important;padding-left:inherit !important;}
+.comm-page-list-0F9 table{border:1px solid #dddbda !important}
+.comm-page-list-0F9.slds-page-header--object-home ,.forceListViewManagerHeader{border:none !important}
+.comm-page-list-0F9 table tr td,.comm-page-list-0F9 .cellContainer{border-top:1px solid #dddbda !important}
+.forceListViewManagerGrid .listViewContent.slds-table--header-fixed_container {border-top:1px solid #dddbda !important}
+/*.comm-page-list-0F9 .listViewContent {border-bottom-left-radius:0.4rem  !important;border-bottom-right-radius:0.4rem !important;}*/
+.comm-page-list-0F9 body .isPageWidthFixed-true{width:100% !important; margin:0 !important }
+.comm-page-list-0F9>.siteforceThemeLayoutStarter>.body.isPageWidthFixed-true{padding:1rem  !important; width:100% !important ;border-radius: .25rem !important;}
+.comm-page-list-0F9>.forceCommunityRecordListDesktop .slds-page-header{background-color:#f3f2f2 !important;
+    
+	border-radius: .25rem !important;
+	background-clip: padding-box !important;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10) !important;
+    margin-top: .75rem !important;}
+.forceCommunityRecordListDesktop .slds-page-header{background-color:#f3f2f2 !important;/* border-top-left-radius:0.4rem !important;border-top-right-radius:0.4rem !important;*/}
+.comm-page-list-0F9{background-color:#B1C4DF !important}
+
+ .comm-page-list-0f9 .slds-page-header{
+   
+	border-radius: .25rem !important;
+	background-clip: padding-box !important;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10) !important;
+    margin-top: .75rem !important;
+}
+/*----------------------------------*/
+.comm-page-list-0F9.slds-page-header--object-home .slds-page-header_joined .slds-page-header_bleed .slds-page-header .slds-shrink-none .test-headerRegion .forceListViewManagerHeader{background-color:gray !important}
+.comm-page-list-0F9.forceCommunityRecordListDesktop .slds-page-header{background-color:gray !important}
+.comm-page-list-0F9 >.body .isPageWidthFixed-true{width:100% !important; margin:1rem !important}
+.salesforceIdentityLoginBody2{background-color:#f8f8f7 !important}
+.salesforceIdentitySelfRegister2 .inputContainer{margin-left:auto !important; margin-right:auto!important}
+.salesforceIdentityLoginBody2 .cCenterPanel{margin-top:5% !Important; width:25% !important; max-width:100% !important ;}
+.salesforceIdentitySelfRegister2 .inputContainer{border-radius:25px !important}
+.forceBaseListView thead th, .forceBaseListView tbody td, .forceBaseListView tbody th{border-color:#dddbda !important}
+.forceChatterBasePublisher.baseDefault .container .cuf-publisherAttachmentBar .cuf-publisherAttachmentButton{background-color:#F0F8FF !important}
+a[title="Upload Files"]{border:1px solid #dddbda !important}
+.slds-table_header-fixed_container:before, .slds-table--header-fixed_container:before{border-bottom:none !important}
+.slds-table .forceRecordLayout .slds-table--header-fixed .slds-table--edit .slds-table--bordered .resizable-cols .slds-table--resizable-cols .uiVirtualDataTable{border-top:none !important}
+.forceContentFilesHomeDesktop .fileList{border-left: none !important}
+.comm-page-list-069.slds-button a{border:none !important}
+.forcePageBlockItem{padding-left:1% !important}
+.comm-page-detail-005.forcePageBlockSection, .forcePageBlockSectionView{margin-left:-10px !important}
+
+/*----------------------------------*/
+.comm-page-list-0F9.slds-navigation-list-vertical .slds-is-active .slds-navigation-list-vertical__action, .slds-navigation-list-vertical .slds-is-active .slds-navigation-list--vertical__action, .slds-navigation-list--vertical .slds-is-active .slds-navigation-list-vertical__action, .slds-navigation-list--vertical .slds-is-active .slds-navigation-list--vertical__action{border-top-color:#dddbda !important; border-bottom-color:#dddbda !important}
+.comm-page-list-069.slds-navigation-list-vertical .slds-is-active .slds-navigation-list-vertical__action, .slds-navigation-list-vertical .slds-is-active .slds-navigation-list--vertical__action, .slds-navigation-list--vertical .slds-is-active .slds-navigation-list-vertical__action, .slds-navigation-list--vertical .slds-is-active .slds-navigation-list--vertical__action{border-top-color:#dddbda !important; border-bottom-color:#dddbda !important}
+.comm-page-list .slds-table--header-fixed .errorColumnHeader{
+    
+    padding: 16px 4px !important;
+}
+.comm-page-list{
+    background: #B1C4DF !important;
+}
+.comm-page-list thead .slds-text-title--caps th, .comm-page-list thead .slds-text-title--caps  div{
+    background-color: rgb(250, 250, 249) !important;
+}
+.comm-page-list thead .slds-text-title--caps  button{
+    background-color: transparent !important;
+}
+.comm-page-list thead .slds-text-title--caps th:hover, .comm-page-list thead .slds-text-title--caps  div:hover, .comm-page-list thead .slds-text-title--caps  button:hover{
+    background-color: rgb(255, 255, 255) !important;
+}
+.comm-page-list .slds-table--header-fixed_container{
+    padding-top: 0 !important;
+}
+.comm-page-list .slds-button_neutral, .comm-page-list .slds-button--neutral, .comm-page-list .slds-form-element__control input, .comm-page-list .slds-button_icon, .comm-page-list .slds-button_icon-border-filled{
+    border-color: rgb(217, 219, 221) !important;
+}
+.comm-page-list .slds-table_bordered, .comm-page-list .slds-table--bordered{
+    border-bottom: 1px solid rgb(221, 219, 218) !important;
+}
+.comm-page-list .slds-table_header-fixed_container::before, .comm-page-list .slds-table--header-fixed_container::before{
+    border-bottom: 1px solid rgb(221, 219, 218) !important;
+}
+.comm-page-list .slds-page-header--object-home{
+    border-bottom: 1px solid rgb(221, 219, 218) !important;
+}
+.comm-page-list .isPageWidthFixed-true{
+    width: 100% !important;
+    padding:0 1rem 0 1rem !important;
+}/*ovo sam promenio menja mi svuda u sivu i bas mi se vidi razlika od bele :bilo je jos F2F2F2*/
+.comm-page-list .isPageWidthFixed-true > .siteforceSldsOneColLayout{
+    margin: 1rem 0 0;
+    background-color: #f3f2f2;
+}
+.slds-grid > .slds-col > .slds-media{
+    margin-left: 0 !important;
+}
+.isPageWidthFixed-true .comm-layout-column{
+    padding: 0 !important;
+}
+.forceCommunityRecordListDesktop .slds-page-header{
+    padding: 1rem !important;
+}
+.triggerLinkText.selectedListView.uiOutputText{
+    color: rgb(8,7,7) !important;
+    font-weight: 700 !important;
+    font-size: 18px;
+}
+.slds-truncate.slds-page-header__title.slds-text-color--default > .forceListViewPicker{
+    border: 1px solid transparent !important;
+}
+.slds-truncate.slds-page-header__title.slds-text-color--default > .forceListViewPicker:hover{
+    border-bottom: 1px solid rgb(8,7,7) !important;
+}
+.uiOutputText.forceBreadCrumbItem{
+    font-weight: 700;
+    font-size: 13px;
+    color: rgb(62,62,60) !important;
+}
+force-list-view-manager-status-info span{
+    font-size: 12px;
+    color: rgb(8,7,7) !important;
+}
+.comm-page-list .uiVirtualDataTable a{
+    color: rgb(0, 109, 204);
+}
+.comm-page-list thead a{
+    color: rgb(81,79,77) !important;
+}
+.comm-page-list .uiOutputEmail{
+    padding: 0 !important;
+}
+.comm-page-list .slds-table th, .comm-page-list .slds-table td{
+    padding: 4px 0px !important;
+    border-top: 1px solid rgb(221, 219, 218) !important;
+}
+.comm-page-list thead a, .comm-page-list thead .selectionColumnHeader{
+    padding: 0 !important;
+}
+.comm-page-list table{
+   color: rgb(8,7,7) !important;
+}
+.comm-page-list .slds-button-group a{
+    color: #1b5297 !important;
+}
+.comm-page-list .slds-button-group li:hover{
+    background: #f3f2f2;
+}
+.comm-page-list .slds-button_icon-more:hover .slds-button__icon, .slds-button_icon-more:focus .slds-button__icon, .slds-button--icon-more:hover .slds-button__icon, .slds-button--icon-more:focus .slds-button__icon{
+    color: #1b5297 !important;
+    fill: #1b5297 !important;
+}
+.comm-page-list .forceRefreshButton button:hover{
+   color: #1b5297 !important;
+    fill: #1b5297 !important; 
+}
+.comm-page-list .lvmTooltipButton button:hover{
+    color: #1b5297 !important;
+    fill: #1b5297 !important; 
+}
+.comm-page-list .slds-dropdown-trigger button:hover{
+    color: #1b5297 !important;
+    fill: #1b5297 !important; 
+}
+.comm-page-detail{background-color:#F9F8FF}
+.comm-page-list{
+    background-color: #B1C4DF;
+}
+.comm-page-detail .siteforceThemeLayoutStarter > .body.isPageWidthFixed-true{
+    margin: 0 !important;
+    padding: 0 .75rem !important;
+    width: 100% !important;
+}
+.comm-page-detail .siteforceContentArea .comm-layout-column .ui-widget:not(:last-child){
+    margin-bottom: .75rem !important;
+}
+.comm-page-detail .slds-grid .slds-col--padded:nth-child(1){
+    padding-right: .75rem !important;
+}
+.comm-page-detail .entityNameTitle span{
+    color: #3e3e3c !important;
+    font-weight: 700;
+}
+.comm-page-detail .slds-page-header__title span{
+    color: rgb(8,7,7);
+    font-weight: 700;
+}
+.comm-page-detail .slds-page-header, .comm-page-list-069 .page-header--fileshome{
+    background-color: #f3f2f2 !important;
+    margin-top: 1rem !important;
+}
+.comm-page-list-069 .siteforceThemeLayoutStarter > .body.isPageWidthFixed-true{
+    width: 100% !important;
+    padding: 0 .75rem !important;
+}
+.comm-page-list-069 .forceContentFilesListDesktop .slds-page-header--fileshome{
+    padding: 1rem !important;
+    background-color: #f3f2f2 !important;
+}
+.comm-page-list-069.slds-cell-edit .cellContainer{border-color:#DDDBDA !important}
+
+.comm-page-list-069 h1 .test-fileshome-headerTitle, .comm-page-list-069 .countSortedByFilteredBy.uiOutputText{
+    margin-left: 0 !important;
+}
+.comm-page-list-069 .itemTitle,.forceOutputLookup, .oneActionsRibbon li.slds-button--neutral > a {color: #006dcc !important; }
+.comm-page-list-069.slds-navigation-list-vertical .slds-is-active .slds-navigation-list-vertical__action, .slds-navigation-list-vertical .slds-is-active .slds-navigation-list--vertical__action, .slds-navigation-list--vertical .slds-is-active .slds-navigation-list-vertical__action, .slds-navigation-list--vertical .slds-is-active .slds-navigation-list--vertical__action {border-left-color:#0070D2 !important}
+.comm-page-list-069.fileSource_item .slds-is-active{border-left:blue !important; border-top:none !important; border-right:none!important; border-bottom:0.3px solid #dddbda !important}
+
+.comm-page-detail .slds-grid button:hover{
+    color: #004487 !important;
+}
+.comm-page-detail .forceActionsContainer button{
+    border: 1px solid rgb(221, 219, 218) !important;
+}
+.comm-page-detail .forceActionsContainer button:hover{
+    border: 1px solid rgb(221, 219, 218) !important;
+    background-color: #f3f2f2 !important;
+}
+.comm-page-detail .branding-actions a{
+    color: #004487 !important;
+}
+.comm-page-detail .branding-actions li{
+    border: 1px solid rgb(221, 219, 218) !important;
+}
+.comm-page-detail .branding-actions a:hover{
+    background-color: #f3f2f2 !important;
+}
+.comm-page-detail .slds-page-header__detail-row a{
+    color: #005fb2 !important;
+}
+.comm-page-detail .uiPopupTrigger .slds-icon-utility-down{
+    padding-bottom: 35px !important;
+}
+.comm-page-detail .slds-is-complete .tabHeader .title{
+    color: #fff !important;
+}
+.comm-page-detail .runtime_sales_pathassistantPathAssistantHeader .slds-path__mark-complete{
+    background-color: rgba(27, 82, 151, 1) !important;
+    border-color: rgba(27, 82, 151, 1) !important;
+	color: #fff !important;
+}
+/*.comm-page-detail .runtime_sales_pathassistantPathAssistantHeader .uiOutputText{
+	color: #fff !important;
+}*/
+.comm-page-detail .runtime_sales_pathassistantPathAssistantHeader .slds-path__mark-complete:hover{
+    background-color: rgba(0, 68, 135, 1) !important;
+    border-color: rgba(0, 68, 135, 1) !important;
+}
+.comm-page-detail .slds-is-incomplete .tabHeader .slds-path__title{
+    color: rgb(8,7,7) !important;
+}
+.comm-page-detail .runtime_sales_pathassistantPathAssistant .slds-card, .comm-page-detail header .slds-page-header, .comm-page-list-069 .slds-page-header{
+    border: 1px solid rgb(221, 219, 218) !important;
+	border-radius: .25rem !important;
+	background-clip: padding-box !important;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10) !important;
+    margin-top: .75rem !important;
+}
+.comm-page-detail .slds-grid .uiTabset--base{
+    border: 1px solid rgb(221, 219, 218) !important;
+	border-radius: .25rem !important;
+	background-clip: padding-box !important;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10) !important;
+    margin-top: .75rem !important;
+    padding: .75rem 1rem !important;
+}
+.comm-page-detail .slds-grid .uiTabBar{
+    border-bottom: 1px solid rgb(221, 219, 218) !important;
+}
+.comm-page-detail .uiTabBar .tabHeader .title{
+    color: #3e3e3c !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+}
+
+.comm-page-detail .uiTabBar .tabHeader .title:focus{
+    font-weight: bold !important;
+}
+.comm-page-detail .uiTabBar .uiTabItem .tabHeader:focus{
+    box-shadow: transparent 0px 0px 0px inset !important;
+    border-bottom: 2px solid rgba(0, 112, 210, 1) !important;
+}
+.comm-page-detail .uiTabBar .uiTabItem .tabHeader{
+    padding-left: 1.5rem !important;
+	padding-right: 1.5rem !important;
+    margin-left: 0 !important;
+}
+.comm-page-detail .uiTabBar .uiTabItem .tabHeader:hover{
+    border-bottom: 2px solid rgba(0, 112, 210, 1) !important;
+}
+.comm-page-detail .uiTabset .uiTabBar .tabs__nav{
+    margin-left: 0 !important;
+}
+.comm-page-detail .slds-card .test-id__record-layout-container .test-id__section{
+    margin: 0 !important;
+    padding: 1rem .75rem !important;
+}
+.comm-page-detail .slds-card .test-id__record-layout-container .test-id__section .slds-form-element_readonly{
+    border-bottom: 1px solid rgb(221, 219, 218) !important;
+	margin-bottom: 0 !important;
+}
+.comm-page-detail .forceDetailPanelDesktop .uiTooltip{
+    left: 5px !important;
+}
+.comm-page-detail .forceDetailPanelDesktop .uiTooltip .slds-icon{
+    color: rgb(176, 173, 171) !important;
+}
+.comm-page-detail .slds-button_icon-small:hover{
+    color: rgb(0, 112, 210) !important;
+}
+.comm-page-detail .forceOutputLookupWithPreview a.textUnderline{
+    color: rgb(0, 109, 204);
+}
+.comm-page-detail .actualNode > #activityPanelContainer{
+    border: none !important;
+}
+.comm-page-detail .runtime_sales_activitiesActivityTimelineFixedLayout .filterMenuLink:hover{
+    color: rgba(0, 68, 135, 1) !important;
+}
+.comm-page-detail .slds-var-p-top_xx-small{
+    width: 100%;
+}
+.comm-page-detail .runtime_sales_activitiesActivityTimelineFixedLayout .slds-section__title::before{
+    border-bottom: 1px dashed rgb(221, 219, 218) !important; 
+}
+.comm-page-detail .slds-section .slds-button-section__buttons .testonly-refreshTimeline, .comm-page-detail .slds-section .slds-button-section__buttons .testonly-expandAll{
+    color: rgba(0, 68, 135, 1) !important;
+}
+.comm-page-detail .showMoreButton{
+    color: rgb(221, 219, 218) !important;
+    background-color: #fff !important;
+    cursor: default;
+    border: 1px solid rgb(221, 219, 218) !important;
+}
+.comm-page-detail .slds-media__body a{
+    color: rgb(8,7,7);
+}
+.comm-page-detail .slds-media__body .slds-card__header-link span{
+    font-weight: 700 !important;
+    font-size: 16px !important;
+}
+.comm-page-detail .slds-media__body a:hover, .comm-page-detail .slds-media__body a>span:hover{
+    color: #005fb2 !important;
+}
+.comm-page-detail .forceRelatedListSingleContainer article{
+    border: 1px solid rgb(221, 219, 218) !important;
+    margin-top: .75rem !important;
+}
+.comm-page-detal .slds-button--neutral.previous{
+    border: 1px solid rgb(221, 219, 218) !important;
+}
+.comm-page-detail .slds-path__scroll-controls .uiButton[type="button"]{
+    border: 1px solid rgb(221, 219, 218) !important;
+    color: rgb(112, 110, 107) !important;
+}
+.comm-page-detail .slds-path__scroll-controls .uiButton:hover{
+    color: #004487 !important;
+    background: rgb(244, 246, 249) !important;
+}
+.comm-page-detail .slds-path__scroll-controls .uiButton .slds-icon{
+    color: rgb(112, 110, 107) !important;
+}
+.comm-page-detail .cd-header .has-prev-next-buttons .slds-path__scroll-controls .uiButton .slds-icon:hover{
+    color: #004487 !important;
+}
+.comm-page-detail .dummyButtonCallToAction[type="button"][title="Write an email..."] {
+    border: 1px solid rgb(221, 219, 218) !important;
+    color: rgb(62, 62, 60) !important;
+}
+.comm-page-detail .dummyButtonCallToAction[type="button"][title="Write an email..."]:hover{
+    background-color: #fff !important;
+    color: rgba(0, 68, 135, 1) !important;
+}
+.comm-page-detail .slds-button--brand.testid__dummy-button-submit-action.slds-col.slds-no-space.dummyButtonSubmitAction{
+    border: 1px solid rgb(221, 219, 218) !important;
+    background-color: rgba(27, 82, 151, 1) !important;
+    color: rgb(255, 255, 255) !important;
+    border-color: rgba(0, 68, 135, 1) !important;
+}
+
+.comm-page-detail .slds-button--brand.testid__dummy-button-submit-action.slds-col.slds-no-space.dummyButtonSubmitAction:hover{
+    background: rgba(0, 68, 135, 1) !important;
+    color: #fff !important;
+}
+.comm-page-detail .openActivities .slds-button.slds-button--neutral.showMoreButton.uiButton{
+    border: 1px solid rgb(221, 219, 218) !important;
+    color: rgb(221, 219, 218) !important;
+    background: transparent !important;
+    border-color: rgb(221, 219, 218) !important;
+}
+.comm-page-detail .slds-button.slds-button--neutral.showMoreButton.uiButton{
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(221, 219, 218) !important;
+    border: 1px solid rgb(221, 219, 218) !important;
+}
+.comm-page-detail .slds-button-group .slds-button_icon-border-filled{
+    border: 1px solid rgb(217, 219, 221) !important;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.forceContentFilesListDesktop .slds-page-header--fileshome{background-color:#f3f2f2; width: 100% !important}
+.forceContentFilesHomeDesktop .forceContentFilesListDesktop{width:100% !important }
+
+
+/*.forceChatterScroller {overflow-x: hidden; overflow-y: scroll;}
+.cuf-feed /*.qe-subject-id-005e0000004nlqK{height:500px !important} */
+img.cPartnerStatus{padding:5% 10% !important}
+
+.fileSource_item  .slds-is-active .slds-navigation-list--vertical__action .slds-text-link--reset .slds-truncate{    background-color: rgb(0, 112, 210) !important;
+    border-color: rgb(221, 219, 218) !important;
+    border-left-color: rgb(0, 112, 210) !important;
+}
+
+.forceCommunityLeadInboxStencil .primaryField {margin-right:14%}
+
+/*-------------------------EDITjan11---------------------------------------------------------*/
+.comm-page-list-069 .slds-table{border:0.3px solid #dddbda !important; }
+.comm-page-list-069 .slds-table:hover{border-top:0.3px solid #dddbda !important}
+.comm-page-list-069.forceContentFilesHomeDesktop .fileList,.leftNav{border:0.3px solid #dddbda !Important}
+
+.slds-table_bordered tbody td, .slds-table_bordered tbody th, .slds-table--bordered tbody td, .slds-table--bordered tbody th {
+    border-color: #dddbda !important}
+.slds-table_bordered tbody td:hover, .slds-table_bordered tbody th:hover, .slds-table--bordered tbody td:hover, .slds-table--bordered tbody th:hover {
+    border-color: #dddbda !important}
+.forceCommunityCreateRecordForm{padding-right:4% !important}
+.timeline__button-more .slds-text-align--center .timeline__button-more--top.uiButton{background-color:blue !important} 
+.tabHeader[title="Tabtohide"]{height:0px !important}
+.uiButton[label="New Record Create"]{background-color:red !important } 
+.regLeadClass{display: -webkit-box; text-align:center !important;border:2px solid #00b09b !important ;background-color:#00b09c !important;; color:white !important; padding:4% 34.9%; /*font-family:Gotham25font !important;*/ font-weight:500 !important; font-size: 1rem !important;width:100% !important; border:none !important; }
+.regLeadClass:hover{    display: -webkit-box;text-align:center !important;/*border:2px solid #00b09b!important */;background-color:#00b09b !important;; color:white !important;   ; /*font-family:Gotham25font !important;*/}
+.comm-page-home .uiTab .uiButton[type="button"][title="Share an update..."]:hover{background-color:white !important; border-color:#dddbda !important; color:#006EB3 !important}
+.comm-page-home .uiTab .uiButton[type="button"]{background-color:#00b09b; color:white;transition:  0.3s !important; }
+.comm-page-home .uiTab .uiButton[type="button"]:hover{font-size:16px !important; font-weight:500 !important; background-color:#006EB3 !important;border-color:transparent !important}
+.slds-section {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    width: 50%;
+    margin-left: 25%;
+}
+/*.ul{
+    list-style-type: none !important;
+} */
+.forceCommunityReputationLeaderboard42 li>a, .forceCommunityReputationLeaderboard42 li>.comm-leaderboard__item>a {
+    color: #a89cff;
+}
+.forceChatterScroller .resizeCaptureFrameWrapper {
+    position: relative;
+   /* margin-left: 67px!important;*/
+}
+
+.ctaBtnOne 
+{
+    padding: 15px !important;
+    padding-left: 17px !important;
+    padding-right: 17px !important;
+    background-color:#95C13A!important;
+    font-weight:1000 !important;
+    font-size:14px !important;
+    height:60px !important;
+    width:230px !important;
+  	margin-left:auto;
+    margin-right:auto;
+    
+    
+    
+    
+    
+}
+.forceCommunityThemeProfileMenu .profile-icon {
+    height:30px!important;
+    width:30px!important;
+
+}
+.contentCaption{
+    
+   font-size:54px!important;
+}
+.contentTitle{
+      
+    font-size:54px!important;
+}
+.contentSubtitle
+{
+    
+        font-size:16px!important;
+
+}
+.link{
+    color: blue !important;
+}
+.slider .optional-titles .product-page-hero-cta {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    margin-right: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #95c039;}
+
+
+.slds-button_neutral[title="Reject"]{
+    color:white !important;
+    background-color:#EA4B96 !important;
+}
+.slds-button_neutral[title="Accept"]{
+    color:white !important;
+    background-color:#9DCC3C !important;}
+.siteforceThemeLayoutStarter[title="Terms and Conditions"]{
+    background-color:gray !important;
+    
+}
+.title{
+    color:black ;
+    font-weight:bold;
+}
+.comm-page-custom-terms-and-conditions
+{background-color:#F1F1F1 !important;/*}
+.siteforceThemeLayoutStarter{*/
+    background-image: url("https://img.brightcove.com/web/landing-pages/hub-sem/mark-pattern.png")!important;
+    background-color:#F1F1F1 !important;
+}
+/*  green
+{background-color:#94c039 !important;}
+*/
+
+.forceListViewPicker{background-color:transparent !important; border:3px solid white !important;}
+/*#339004*/
+.slds-button.isActiveItem {
+  
+    color: #00b09b !important;}
+
+/*.slds-image {border-radius:5px !important;}
+.slds-image--card {border-radius:5px !important;}
+.cloudx_cmsSS_uiImageBanner{border-radius:10px !important;}
+.slds-image__crop {border-radius:5px !important;}
+.slds-image__title { border-bottom-right-radius: 5px;border-bottom-left-radius: 5px !important;}
+.slds-image__title--card { border-bottom-right-radius: 5px;border-bottom-left-radius: 5px !important;}*/
+.slds-grid--align-center {
+    height:3rem !important;}
+.slds-p-vertical_small, .slds-p-vertical--small{padding-bottom: 0.1rem !important;}
+.themeLogo{margin-left:5% !important;}
+.slds-feed__item-comments.inFeed.feed__item-comments--threadedCommunity.forceChatterFeedback--default.forceChatterFeedback{background-color:#f3f6f8 !important; border:none;}
+/*.testid__publisher-quick-action-collapser.forcePublisherQuickActionCollapser*/
+.tabs__nav{background-color:white !important; border:none !important ; }
+.slds-button--brand.testid__dummy-button-submit-action.slds-col.slds-no-space.dummyButtonSubmitAction{background-color:#00b09b !important; color:white !important;}
+.tabs__content{border-color:white !important;}
+.tabHeader{border-color:white !important;}
+.slds-p-vertical--small{padding:0.2 !important} .slds-text-heading--small{line-height:1 !important;}
+/*.triggerLink{background-color:#00b09b !important}*/
+/*.slds-button {background-color:#00b09b !important}*/
+/*.slds-button--brand{background-color:#00b09b !important}*/
+/*.actionButton{background-color:#00b09b !important}*/
+
+
+.uiButton[type="button"]{border:2px solid #00b09b!important ;background-color:white; color:#00b09b ;font-size:1rem !important; font-weight:500!important;}
+.uiButton:hover[type="button"]{border:2px solid #00b09b!important ;background-color:#00b09b; color:white !important}
+.dummyButtonCallToAction[type="button"][title="Share an update..."]{background-color:white !important; border:1px solid #dddbda !important; color:#515151 !important}
+.dummyButtonCallToAction[type="button"][title="Share an update..."]:hover{background-color:white !important; border:1px solid #515151 !important; color:#515151 !important}
+
+.dummyButtonCallToAction[type="button"][title="Write an email..."]{background-color:white !important; border:1px solid #515151 !important; color:#515151 !important}
+
+/*.forceCommunityCreateRecordButton{border:3px solid #00b09b!important ;background-color:white !important;; color:#00b09b !important;}*/
+.forceCommunityCreateRecordButton{border:0px solid #00b09b!important ;background-color:white !important;; color:#00b09b !important;}
+.triggerLink{border:2px solid #00b09b !important ;background-color:white !important;; color:#00b09b !important; font-size:1rem !important;}
+.triggerLink:hover{border:2px solid #00b09b!important ;background-color:#00b09b !important;; color:white !important;}
+.forceListViewPicker{background-color:transparent !important; border:2px solid white !important;}
+.forceListViewPicker:hover{background-color:transparent !important; border:2px solid white !important;}
+
+
+
+
+.leaderboardRowWrapper{border-bottom: 1px solid white  !important;}
+
+.forceCommunityReputationLeaderboard42 {border-bottom:1px solid white !important}
+
+.dummyButtonCallToAction {margin-left:7% !important;padding: 0rem 3rem !important;}
+.tabHeader{margin-left:-5% !important; padding-bottom: 0% !important;}
+
+/*.ui-widget[data-component-label="Feed Publisher"]{border-top:1px solid #dddddd !important;}*/
+.tabs__nav{margin-left:4% !important;}
+.library-name-bl{background-color:#00B09C !important}
+.slds-text-body--small{color:#515151}
+.forceCommunityReputationLeaderboard42 h2{border-bottom: 1px solid black !important;
+   width: 100% !important;
+   padding: 0% !important ;
+	font-size: 21px;
+    font-weight: bold;
+padding-bottom:4% !important}
+.clear{margin-left:-5% !important;}
+.slds-media{margin-left:-2% !important;}
+.topicLink {color:#a89cff !important;}
+.askCommunityBtn.slds-button.forceCommunityAskCommunity{height: 4rem;
+   border: 2px solid #00b09c;
+   color: #00b09c !important; font-size: 1rem !important;
+    font-weight: 500 !important; }
+.askCommunityBtn.slds-button.forceCommunityAskCommunity:hover{height: 4rem;
+   border: 2px solid #00b09c;
+   background-color: #00b09c !important;
+	color:white !important;}
+
+
+
+.slds-modal__footer .slds-button+.slds-button{background-color:#00b09c !important;}
+
+
+.slds-modal__container{background-color: #f9f9fa !important;
+   height: auto!important;
+   margin-top: 2% !important;
+   padding: 1% !important;
+   color: black !important;
+    
+   /*width:auto !important;*/
+    
+   
+    max-height:93%;
+    
+    
+        
+       
+   
+}
+.slds-p-around_medium, .slds-p-around--medium{padding:0rem !important}
+.headerInvite{padding: 3% !important; margin-left:auto;
+    margin-right:auto;}
+/*.slds-modal .slds-fade-in-open .cQuickActions{margin-top: 5% !important;
+    background-color: #00AF9D !important;}*/
+
+.inputTextArea{
+border-color:#00b09c !important;}
+
+.slds-button_brand .slds-button--brand
+ {
+   border-color: white !important;
+   background-color: #00b09c !important;
+}
+.slds-button_neutral, .slds-button--neutral [title="Cancel"]{
+
+border-color: #00b09c !important;
+   background-color: white !important;
+    color: #00b09c !important;}
+
+.footerInvite{
+   padding: 2% !important;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:6%!important;
+}
+.slds-button_brand, .slds-button--brand
+{
+background-color: #00b09c;
+    border-color:white !important;
+}
+/*.slds-modal, .slds-fade-in-open .cQuickActions{background-image:url('https://i.ibb.co/9NpZcjG/bg-2.png ')!important;
+margin-top:5% ;
+background-color:#00b09c ;
+background: no-repeat;
+    background-size: cover;}
+*/
+
+
+
+
+.forceCommunityLeadInbox{border:2px solid white !important;}
+.quAc{display: -webkit-box; text-align:-webkit-center;border:2px solid #00b09b !important ;background-color:white !important;; color:#00b09b !important; padding-top:1rem;height:4rem !important; width:100% !important;/*font-family:Gotham25font !important;*/ font-weight:500 !important; font-size:1rem !important;}
+.quAc:hover{    display: -webkit-box;text-align:-webkit-center !important;border:2px solid #00b09b!important ;background-color:#00b09b !important;; color:white !important;   ; /*font-family:Gotham25font !important;*/}
+
+.uiButton[label="Contact Support"]{border:2px solid #00b09b!important ;background-color:red; color:#00b09b !important ;font-weight:bold !important; font-size: 1rem !important;}
+.uiButton:hover[type="button"]{border:2px solid #00b09b!important ;background-color:#00b09b; color:white !important}
+
+
+/*.slds-col--padded .uiButton{background-color:red !important;}*/
+
+.forceFilterListDeprecated.dark{ border-top:1px solid #515151 !important; padding-top:2% !important; margin-top:2% !important; }
+
+
+
+.icon[title="Lead"]{background-color:#d5277d}
+.slds-grid .slds-border--bottom .slds-p-vertical--small{border-bottom:1px solid white !important}
+.slds-dropdown-trigger .slds-dropdown-trigger_click{padding-bottom:3px !important}
+.uiOutputEmail{padding-bottom:6% !important }
+.slds-grid .slds-m-right--xx-small {
+    
+    font-size: 21px;
+    font-weight: bold;
+}
+.slds-button_brand:hover, .slds-button_brand:focus, .slds-button--brand:hover, .slds-button--brand:focus {background-color:#00b09c !important}
+
+
+.slds-modal__footer .slds-button+.slds-button {
+    background-color: white !important;
+    border-width:2px !important;
+    color:#00b09c !important;
+}
+.slds-modal__footer .slds-button+.slds-button:hover {
+    background-color: #00b09c !important;
+    color:white !important;
+}
+.slds-modal__close {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: -3.5rem;
+    right: -2.5rem;
+}
+
+.test-fileshome-headerTitle.uiOutputText{margin-left:5% !important;}
+.countSortedByFilteredBy.uiOutputText{margin-left:5% !important;}
+PartnerStatus{font-size:22px; font-weight:900 !important;}
+.slds-page-header .slds-page-header--object-home{background:transparent !important}
+/*.uiTabBar{border-bottom: 1px solid black}*/
+
+
+.modal-container .slds-modal__container{padding:0.5rem !important;}
+.forceDetailPanelDesktop.slds-card {
+    margin-bottom: 0;
+    padding: 0rem 0rem;
+}
+.forceRelatedListCardDesktop{padding-left:2% !important}
+.openActivities {width:100% !important}
+.activityHistories{width:100% !important}
+.slds-path__title{padding-bottom:4.3% !important}
+/*.slds-is-active{
+    background-color:red !important;
+}*/
+
+.forcePageBlockSection, .forcePageBlockSectionView {margin-left:0% !important; width:100%}
+#content {background-image: url('/resource/Sign_Up_img') !important;}
+
+
+/*jebenibordermamumujebem*/.slds-table_bordered td:hover,.slds-table_bordered td:focus, .slds-table--bordered td:hover,.slds-table--bordered td:hover {
+   
+    border-top: transparent !important;
+    border-bottom: transparent !important
+}
+.slds-table_bordered:hover, .slds-table--bordered:hover {
+    border-collapse: separate;
+    border-top: transparent!important;
+    border-bottom: transparent!important;
+}
+
+.slds-modal__header{
+    
+    border-bottom: 1.2px solid rgb(223, 223, 223) !important;
+}
+.slds-modal__footer{
+    border-top: 1.2px solid rgb(223, 223, 223) !important;
+}
+.uiInput--checkbox input, input.uiInput--checkbox{
+    display: inline-block !important;
+}
+.slds-col_padded, .slds-col--padded {
+   padding-right: 0rem !important;
+   padding-left: 0rem !important;
+}
+.salesforceIdentityLoginBody2 .cCenterPanel:before{
+    bottom: 0px !important;
+    right: 0px !important;
+}
+.myBodyClass{
+    
+    /*background-color: red !important;*/
+    
+    
+    
+}
+.data-grid-table-cell .data-grid-table-cell-start .data-grid-header-cell .lightning-table-action-cell{
+    
+    max-width: 20px ;
+}
+.MasterAccountContainer{
+    padding-top:1%;
+    background-image: url('/sfsites/c/resource/Master_Account_Page_bg2') !important;
+    background-size: cover;
+    padding-left: 15%;
+    margin-bottom: 30px;
+}
+.confirm-purchase-button{
+    /*border-image:linear-gradient(to right, #099ab1, #d5277d 49%, #ffc513 98%) !important;*/
+    /*-webkit-border-image: -webkit-gradient(to right, #099ab1, #d5277d 49%, #ffc513 98%)!important;*/
+    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#099ab1), to(#d5277d), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+}
+
+.uiTabset--task .tabs__item>a{
+    border: 0px !important;
+}
+.input-field-forma input{
+    height:3rem !important;
+}
+:root { --dxp-c-section-columns-max-width: 1440px; }

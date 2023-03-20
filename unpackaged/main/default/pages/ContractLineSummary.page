@@ -1,0 +1,49 @@
+<apex:page showHeader="false" sidebar="false" cache="false" contentType="text/xml" controller="ContractLineSummaryController">
+    <block>
+        <table table-layout="fixed" width="100%" border-color="#000000" border-width="1px" border-style="solid" font-size="9pt">
+            <apex:repeat var="column" value="{!lineColumns}">
+                <table-column column-width="{!column.SBQQ__Width__c}%" />
+            </apex:repeat>
+            <table-body>
+                <table-row>
+                    <apex:repeat var="column" value="{!lineColumns}">
+                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                            <block text-align="center" font-weight="bold">
+                                {!column.Name}
+                            </block>
+                        </table-cell>
+                    </apex:repeat>
+                </table-row>
+                <apex:repeat var="lineItem" value="{!lineSummaries}">
+                    <table-row>
+                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                            <block text-align="left">
+                                {!lineItem.productCode}
+                            </block>
+                        </table-cell>
+                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                            <block text-align="left">
+                                {!lineItem.productName}
+                            </block>
+                        </table-cell>
+                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                            <block text-align="left">
+                                {!lineItem.quantity}
+                            </block>
+                        </table-cell>
+                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                            <block text-align="left">
+                                {!lineItem.description}
+                            </block>
+                        </table-cell>
+                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                            <block text-align="right">
+                                {!lineItem.termPrice}
+                            </block>
+                        </table-cell>
+                    </table-row>
+                </apex:repeat>
+            </table-body>
+        </table>
+    </block>
+</apex:page>

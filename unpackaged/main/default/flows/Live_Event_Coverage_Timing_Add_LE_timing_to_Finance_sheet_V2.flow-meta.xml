@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Live Event Coverage Fianance outbound</description>
+        <name>Live_Event_Coverage_Fianance_outbound</name>
+        <label>Live Event Coverage Fianance outbound</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <actionName>Live_Event_Coverage_Timing__c.Live_Event_Coverage_Fianance_outbound</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <description>It sends the outbound message to create the payment in the spreadsheet</description>
+    <environments>Default</environments>
+    <interviewLabel>Live Event Coverage Timing - Add LE timing to Finance sheet V2 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Live Event Coverage Timing - Add LE timing to Finance sheet V2</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Live_Event_Coverage_Fianance_outbound</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <object>Live_Event_Coverage_Timing__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

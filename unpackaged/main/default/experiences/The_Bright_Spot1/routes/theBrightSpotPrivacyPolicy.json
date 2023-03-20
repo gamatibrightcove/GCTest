@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "4a54168d-817b-4581-9515-492075ac51cf",
+  "appPageId" : "5072d3ab-f41f-4fa7-b393-eb19f68c4342",
+  "configurationTags" : [ ],
+  "id" : "a2ff8984-19ea-4279-9fce-b2307a1c45a7",
+  "label" : "The Bright Spot Privacy Policy",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-the-bright-spot-privacy-policy",
+  "type" : "route",
+  "urlPrefix" : "the-bright-spot-privacy-policy"
+}

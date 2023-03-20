@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;"><span style="font-family:Century Gothic,Arial,Helvetica,sans-serif;">THE BELOW CASE HAS BEEN ESCALATED MULTIPLE TIMES<br />
+<br />
+Case Number: {{{Case.CaseNumber}}}<br />
+Subject: {{{Case.Subject}}}<br />
+Owner: {{{Case.OwnerFullName}}}<br />
+<br />
+Account: {{{Case.Account}}}<br />
+<br />
+Case URL :&nbsp;</span><a href="https://brightcove.my.salesforce.com/%7B!Case.Id%7D" target="_blank">https://brightcove.my.salesforce.com/{{{Case.Id}}}</a>&nbsp;</body>
+</html>

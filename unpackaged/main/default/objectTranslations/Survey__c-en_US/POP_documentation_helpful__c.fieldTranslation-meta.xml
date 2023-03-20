@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Do you feel you the documentation provided by your Onboarding Engagement Manager was helpful? --></help>
+        <label><!-- POP documentation helpful --></label>
+        <name>POP_documentation_helpful__c</name>
+    </CustomFieldTranslation>

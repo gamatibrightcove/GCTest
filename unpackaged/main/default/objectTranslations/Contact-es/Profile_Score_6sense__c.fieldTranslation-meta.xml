@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A measure of how similar a person is to your typical buyer or buying committee members for a given product or service, using demographic factors along with historical opportunity history. --></help>
+        <label><!-- Profile Score (6sense) --></label>
+        <name>Profile_Score_6sense__c</name>
+    </CustomFieldTranslation>

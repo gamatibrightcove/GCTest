@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Snapins_Case_PrechatQuickAction_08h7g000000Gmh0_1672314025535</description>
+    <fieldOverrides>
+        <field>Case_Language__c</field>
+        <formula>IF (ISPICKVAL($User.LanguageLocaleKey,&quot;ja&quot;), &quot;Japanese&quot;, &quot;English&quot;)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Origin</field>
+        <literalValue>Live Chat</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status</field>
+        <literalValue>New</literalValue>
+    </fieldOverrides>
+    <label>Snapins_Case_PrechatQuickAction_08h7g000000Gmh0_1672314025535</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsTopToBottom</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Subject</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns />
+    </quickActionLayout>
+    <targetObject>Case</targetObject>
+    <targetRecordType>Case.Technical_Support</targetRecordType>
+    <type>Create</type>
+</QuickAction>

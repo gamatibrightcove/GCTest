@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Platinum and Gold User/Admin</audienceName>
+    <container>BrightcoveCommunity</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <profile>portal admin - silver</profile>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>Profile</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <profile>portal user - silver</profile>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>Profile</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <profile>portal user - silver - self reg</profile>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>Profile</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <entityField>LanguageLocaleKey</entityField>
+                <entityType>User</entityType>
+                <fieldValue>ja</fieldValue>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>3</criteriaNumber>
+            <criterionValue>
+                <entityField>LanguageLocaleKey</entityField>
+                <entityType>User</entityType>
+                <fieldValue>ja</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>4</criteriaNumber>
+            <criterionValue>
+                <profile>portal user - gold</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>4</criteriaNumber>
+            <criterionValue>
+                <profile>portal user - gold - self reg</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>4</criteriaNumber>
+            <criterionValue>
+                <profile>portal admin - gold</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+    </criteria>
+    <formula>(1 AND 2) OR (3 AND 4)</formula>
+    <formulaFilterType>CustomLogicMatches</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>dad80554-e300-4ede-9f05-287aaa0b144d$#$f7f74386-37ef-452c-9334-8ec16955ad1d</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Custom_Home_Embedded_Service_Chat_1_Component</targetValue>
+        </target>
+        <target>
+            <groupName>ff19d5fc-7445-42cb-adf8-857cfe44d7a0$#$eeef4aaa-5515-4bf6-acc0-514ddd2a171b</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Case_Detail_Embedded_Service_Chat_1_Component</targetValue>
+        </target>
+        <target>
+            <groupName>f797b894-dd70-4cc8-81fe-6b717e2c4e48$#$ced63bcb-f384-4114-9737-cf34b5604158</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Create_Record_Embedded_Service_Chat_1_Component</targetValue>
+        </target>
+        <target>
+            <groupName>16ab1f40-0890-4f9f-b667-9cbb0ccfed1e$#$6de8ebb4-714f-4cbb-bdc7-694e588aa604</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>System_Status_Embedded_Service_Chat_1_Component</targetValue>
+        </target>
+    </targets>
+</Audience>

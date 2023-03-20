@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInternalUserLogin>false</allowInternalUserLogin>
+    <allowMembersToFlag>false</allowMembersToFlag>
+    <changePasswordTemplate>Brightcove_Customer_Community/BC_Reset_Password_Email</changePasswordTemplate>
+    <chgEmailVerNewTemplate>unfiled$public/CommunityVerificationEmailTemplate</chgEmailVerNewTemplate>
+    <chgEmailVerOldTemplate>unfiled$public/CommunityVerificationEmailTemplate</chgEmailVerOldTemplate>
+    <communityRoles />
+    <description>It was called &quot;Customer Experience&quot; community</description>
+    <deviceActEmailTemplate>unfiled$public/CommunityDeviceActEmailTemplate</deviceActEmailTemplate>
+    <disableReputationRecordConversations>true</disableReputationRecordConversations>
+    <emailFooterText>©2022 Brightcove, Inc. All rights reserved. 281 Summer Street, Boston, MA 02210, USA</emailFooterText>
+    <emailSenderAddress>community@brightcove.com</emailSenderAddress>
+    <emailSenderName>The Bright Spot Community</emailSenderName>
+    <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
+    <enableDirectMessages>false</enableDirectMessages>
+    <enableExperienceBundleBasedSnaOverrideEnabled>true</enableExperienceBundleBasedSnaOverrideEnabled>
+    <enableGuestChatter>true</enableGuestChatter>
+    <enableGuestFileAccess>true</enableGuestFileAccess>
+    <enableGuestMemberVisibility>true</enableGuestMemberVisibility>
+    <enableInvitation>false</enableInvitation>
+    <enableKnowledgeable>true</enableKnowledgeable>
+    <enableMemberVisibility>true</enableMemberVisibility>
+    <enableNicknameDisplay>true</enableNicknameDisplay>
+    <enablePrivateMessages>false</enablePrivateMessages>
+    <enableReputation>false</enableReputation>
+    <enableShowAllNetworkSettings>true</enableShowAllNetworkSettings>
+    <enableSiteAsContainer>true</enableSiteAsContainer>
+    <enableTalkingAboutStats>true</enableTalkingAboutStats>
+    <enableTopicAssignmentRules>true</enableTopicAssignmentRules>
+    <enableTopicSuggestions>true</enableTopicSuggestions>
+    <enableUpDownVote>true</enableUpDownVote>
+    <forgotPasswordTemplate>Brightcove_Customer_Community/BC_Reset_Password_Email</forgotPasswordTemplate>
+    <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
+    <lockoutTemplate>Brightcove_Customer_Community/BC_User_Lockout_Notification</lockoutTemplate>
+    <networkMemberGroups>
+        <permissionSet>The_Bright_Spot_Community</permissionSet>
+        <profile>Admin</profile>
+        <profile>BrightSpot Community Login User</profile>
+    </networkMemberGroups>
+    <networkPageOverrides>
+        <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
+        <forgotPasswordPageOverrideSetting>Standard</forgotPasswordPageOverrideSetting>
+        <homePageOverrideSetting>Designer</homePageOverrideSetting>
+        <loginPageOverrideSetting>Standard</loginPageOverrideSetting>
+        <selfRegProfilePageOverrideSetting>Standard</selfRegProfilePageOverrideSetting>
+    </networkPageOverrides>
+    <picassoSite>The_Bright_Spot1</picassoSite>
+    <selfRegistration>true</selfRegistration>
+    <sendWelcomeEmail>true</sendWelcomeEmail>
+    <site>The_Bright_Spot</site>
+    <siteArchiveStatus>NotArchived</siteArchiveStatus>
+    <status>Live</status>
+    <tabs>
+        <defaultTab>home</defaultTab>
+        <standardTab>Chatter</standardTab>
+    </tabs>
+    <urlPathPrefix>thebrightspot</urlPathPrefix>
+    <verificationTemplate>unfiled$public/CommunityVerificationEmailTemplate</verificationTemplate>
+    <welcomeTemplate>Brightcove_Customer_Community/BC_Authentication_Email</welcomeTemplate>
+</Network>

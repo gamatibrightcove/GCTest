@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:start">Hi CS Leadership,<br />
+<br />
+{{{Opportunity.Name}}}&nbsp;for {{{Opportunity.Account}}} was just Closed Won with Platinum+ Support. &nbsp;They don't have a listed CS Manager or CS Rep. Please do the Platinum Kickoff and assign a CS Manager and CS Rep to their Account. Instructions can be found here:<br />
+<a href="https://sites.google.com/a/brightcove.com/cs-managers/cs-manager-processes/platinum-program" target="_blank">https://sites.google.com/a/brightcove.com/cs-managers/cs-manager-processes/platinum-program</a><br />
+<br />
+Opportunity:&nbsp;{{{Opportunity.Name}}}<br />
+<a href="https://brightcove.my.salesforce.com/%7B!Opportunity.Id_18_Digit__c%7D" target="_blank">https://brightcove.my.salesforce.com/{{{Opportunity.Id_18_Digit__c}}}</a><br />
+<br />
+Account: {{{Opportunity.Account}}}<br />
+<a href="https://brightcove.my.salesforce.com/%7B!Opportunity.AccountId%7D" target="_blank">https://brightcove.my.salesforce.com/{{{Opportunity.AccountId}}}</a><br />
+<br />
+Thanks,<br />
+Support Operations</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "appPageId" : "5072d3ab-f41f-4fa7-b393-eb19f68c4342",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "8ee825d0-24d8-4bf5-9962-e185e6ce7c35",
+  "label" : "Community Guidelines",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "3688e57b-e5ce-44d4-a433-5ea80d7d3425",
+          "columns" : [ {
+            "UUID" : "b5c61a2b-2373-4685-8105-b853196ca30a",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "3688e57b-e5ce-44d4-a433-5ea80d7d3425",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1 style=\"text-align: center;\"><strong>The Bright Spot Community Guidelines</strong></h1><p><br></p><p><span style=\"font-size: 16px;\">The Bright Spot™ is a Brightcove Community (the “Community”) connecting Brightcove customers, partners, and video streaming professionals and video marketers. Here you can find content, discussions, inspiration, and opportunities to share and collaborate.&nbsp;&nbsp;Welcome to the community!</span></p><p><br></p><p><br></p><p><strong style=\"font-size: 16px;\">BUILDING A STRONG COMMUNITY:&nbsp;</strong><span style=\"font-size: 16px;\">Brightcove is committed to providing an inclusive and welcoming environment for a diverse range of perspectives and representation.</span></p><p><br></p><ul><li><u style=\"font-size: 14px;\">Be welcoming and open-minded</u><span style=\"font-size: 14px;\">: Brightcove believes in diversity in all forms - talent, strengths, backgrounds, and ideas, in order to inspire conversation and innovation. Together we can cultivate a culture of kindness and creativity.</span></li><li><u style=\"font-size: 14px;\">Ask questions (about video)</u><span style=\"font-size: 14px;\">: Let’s learn and make awesome things together - share amazing stories, create, inspire, and engage the world with our video content and innovations.</span></li><li><u style=\"font-size: 14px;\">Healthy debate</u><span style=\"font-size: 14px;\">: Disagreements or differences of opinion are part of life. There is rarely only one way to solve a problem. When there is a difference of opinion Community members must engage in healthy and respectful debate. Brightcove expects Community members to be civil and refrain from any attacks of a personal nature.</span></li><li><u style=\"font-size: 14px;\">See something sketchy? Let us know immediately</u><span style=\"font-size: 14px;\">: Brightcove relies on Community members to let us know when an issue needs to be addressed. If you see something within the Community you believe violates these Guidelines or our Terms of Use, please report it to us by emailing at </span>community@brightcove.com.</li></ul><p><br></p><p><br></p><p><strong style=\"font-size: 16px;\">UNACCEPTABLE BEHAVIOR AND CONTENT:&nbsp;</strong><span style=\"font-size: 16px;\">Brightcove believes in creating an environment that is inclusive and welcoming, where everyone—customers, employees, partners, and community members—are treated with respect and dignity.</span></p><p><br></p><ul><li><u style=\"font-size: 14px;\">Abuse and intimidation</u><span style=\"font-size: 14px;\">: You may not post abusive gestures, actions, harassment and/or obscene language— including but not limited to hate speech and slurs of any kind.</span></li><li><u style=\"font-size: 14px;\">Violent threats</u><span style=\"font-size: 14px;\">: You may not post content of any kind that threatens violence. We will report any threats of violence that pose a safety risk to any person or entity to law enforcement. Additionally, any member threatening violence will have their account immediately and permanently terminated.</span></li><li><u style=\"font-size: 14px;\">Bullying and harassment:</u><span style=\"font-size: 14px;\">&nbsp;You may not post any content that may be perceived as bullying or harassment.</span></li><li><u style=\"font-size: 14px;\">Zero tolerance for Hate Speech</u><span style=\"font-size: 14px;\">: “Hate Speech” means any form of expression through which content contributors intend to vilify, humiliate, or incite hatred against a group or a class of persons on the basis of race, religion, skin color, sexual identity, gender identity, ethnicity, disability, or national origin. You may not post any content that may be perceived as Hate Speech.</span></li><li><u style=\"font-size: 14px;\">Impersonation</u><span style=\"font-size: 14px;\">: You may not impersonate any other person or entity in any form.</span></li><li><u style=\"font-size: 14px;\">Doxxing and invasion of privacy</u><span style=\"font-size: 14px;\">: You may not post any personal information (whether belonging to yourself or someone else), such as personal email addresses, phone numbers, physical addresses, credit card numbers, Social Security/National Identity numbers, passwords, photos, or videos.</span></li><li><u style=\"font-size: 14px;\">Sexually obscene content</u><span style=\"font-size: 14px;\">: You may not post any content that is obscene or pornographic. This does not mean that all nudity, or all content related to sexuality, is prohibited- exceptions may be made for artistic or educational purposes. Regardless of purpose, you may not post any violent sexual content or sexual content that may involve the exploitation or sexualization of minors.</span></li><li><u style=\"font-size: 14px;\">Graphic violence</u><span style=\"font-size: 14px;\">: You may not post any content that depicts death, violence or serious physical injury which may be perceived to be graphic violent content. Exceptions may be made for documentary and educational purposes.</span></li><li><u style=\"font-size: 14px;\">Misinformation and disinformation</u><span style=\"font-size: 14px;\">:You may not post any content that presents inaccurate or false information (misinformation), or is intentionally deceptive (disinformation), or is a misinterpretation of facts and events.</span></li><li><u style=\"font-size: 14px;\">Active malware or exploits</u><span style=\"font-size: 14px;\">: You may not take advantage of other Community members. We do not allow anyone to use our platform in support of any attacks that cause technical harm, such as using the Bright Spot as a means to deliver malicious executables or as an attack infrastructure, such as organizing denial of service (DoS) attacks or managing command and control servers. Technical harm includes but is not limited to overconsumption of resources, physical damage, downtime, denial of service, or data loss.</span></li><li><u style=\"font-size: 14px;\">Promotion and advertisement of goods and services</u><span style=\"font-size: 14px;\">: You may not use the Community to promote, advertise or sell any non-Brightcove goods or services.</span></li></ul><p><span style=\"font-size: 14px;\">&nbsp;</span></p><p><br></p><p><strong style=\"font-size: 16px;\">CONSEQUENCES:&nbsp;</strong><span style=\"font-size: 16px;\">There are a variety of actions that Brightcove may take when a Community member violates our Community Terms of Use and/or these Guidelines. We review each report of a potential violation on a case-by-case basis. In each case, we will have a team investigate the violation and its surrounding facts, and respond appropriately.</span></p><p><br></p><p><span style=\"font-size: 14px;\">Actions Brightcove may take in response to violation of the Community Guidelines and/or Terms of Use include but are not limited to:</span></p><p><br></p><ul><li><span style=\"font-size: 14px;\">Content Removal</span></li><li><span style=\"font-size: 14px;\">Content Blocking</span></li><li><span style=\"font-size: 14px;\">Member Account Suspension (temporary)</span></li><li><span style=\"font-size: 14px;\">Member Account Termination (permanent)</span></li></ul><p>&nbsp;</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "a5578ef5-0ac9-465e-8416-f613e406bf15",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "b5c61a2b-2373-4685-8105-b853196ca30a",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ec955b9f-1781-4245-9880-05fab68e53a3",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Community Guidelines"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "2bbc807d-7377-4f67-88c7-af06bc86e4c1",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e90a3c1e-209a-422e-b68b-5bb96080dac8",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-community-guidelines"
+}

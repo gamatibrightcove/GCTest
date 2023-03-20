@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Clicking enabling this field will send alerts to the CS room for 72 hours. --></help>
+        <label><!-- Monitor My Case --></label>
+        <name>Monitor_My_Case__c</name>
+    </CustomFieldTranslation>

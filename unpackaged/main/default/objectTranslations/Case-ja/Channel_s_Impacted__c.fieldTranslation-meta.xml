@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A comma-separated list of channels that were impacted by the issue reported on this case --></help>
+        <label><!-- Channel(s) Impacted --></label>
+        <name>Channel_s_Impacted__c</name>
+    </CustomFieldTranslation>

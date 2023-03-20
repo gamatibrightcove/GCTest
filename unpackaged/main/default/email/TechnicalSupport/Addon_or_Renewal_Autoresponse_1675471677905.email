@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hi {{{Recipient.FirstName}}},<br />
+<br />
+We are reaching out because we have received a new automatic case regarding a new opportunity with the subject "{{{Case.Subject}}}"<br />
+<br />
+We were wondering if there is any action needed from support for this case or if we should close it for the time being. <strong>Please let us know if there are any upgrades or downgrades to the contract that the Customer Support Team needs to configure on the customer's accounts</strong><br />
+<br />
+Let us know how to proceed. Looking forward to your reply.<br />
+<br />
+Thank you,<br />
+The Brightcove Support Team.<br />
+<br />
+{{{Case.E2CP__Case_Thread_Id__c}}}</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>it is used to send an email alert 5 mins before the SLAs</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SUPPORT: SLA Alert</name>
+    <style>none</style>
+    <subject>{!Case.CaseNumber} -  SLA Alert</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

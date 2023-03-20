@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email will be sent to the customer when the case is closed by a Support Specialist - English - with GetFeedback URLs</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Case Close Automatic Emails</name>
+    <style>none</style>
+    <subject>Brightcove Case {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+We&#39;re closing your case.
+
+This is a follow-up email in regards to your recent support request and your experience working with {!Case.OwnerFirstName}.
+
+Case Number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+
+If you have a moment, we would really appreciate your feedback:
+
+https://www.getfeedback.com/r/4Fv5flK7?Case_Contact_ID={!Case.ContactId}&amp;Case_ID={!Case.Id}&amp;Case_Account_ID={!Case.Account_Account_ID__c}&amp;gf_id={!Contact.Email}{!Case.Id}&amp;Case_Closed_Date={!Case.ClosedDate}&amp;Case_Owner_Full_Name={!Case.OwnerFullName}
+
+If you require further assistance and/or information regarding this specific case, please reply directly to this email so we may provide additional support. If we do not hear back from you we will consider the case resolved.
+
+Regards,
+The Brightcove Customer Support Team
+
+The current system status is always available at http://status.brightcove.com</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Feedback Category --></label>
+        <name>Feedback_Category__c</name>
+        <picklistValues>
+            <masterLabel>Communication issues</masterLabel>
+            <translation><!-- Communication issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not understand the request</masterLabel>
+            <translation><!-- Did not understand the request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of knowledge</masterLabel>
+            <translation><!-- Lack of knowledge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of urgency</masterLabel>
+            <translation><!-- Lack of urgency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slow responses</masterLabel>
+            <translation><!-- Slow responses --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

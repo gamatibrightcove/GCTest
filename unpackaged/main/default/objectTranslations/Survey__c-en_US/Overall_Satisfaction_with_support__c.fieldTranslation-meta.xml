@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What is your overall satisfaction with Brightcove Support? --></help>
+        <label><!-- Overall Satisfaction with support --></label>
+        <name>Overall_Satisfaction_with_support__c</name>
+    </CustomFieldTranslation>

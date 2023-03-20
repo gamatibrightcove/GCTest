@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- DRM --></label>
+        <name>DRM__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>不使用</masterLabel>
+            <translation><!-- 不使用 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>使用</masterLabel>
+            <translation><!-- 使用 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

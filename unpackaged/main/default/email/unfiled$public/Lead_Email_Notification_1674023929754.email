@@ -1,0 +1,12 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Lead Name -&nbsp;{{{Recipient.Name}}}<br />
+<br />
+Company Name - {{{Recipient.Company}}}<br />
+<br />
+Country -&nbsp;{{{Recipient.Country}}}<br />
+<br />
+Campaign Name</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:start">You are now the CS Manager for &nbsp;{{{Account.Name}}}<br />
+<a href="https://brightcove.my.salesforce.com/%7B!Account.Id_18_Digit__c%7D" target="_blank">https://brightcove.my.salesforce.com/{{{Account.Id_18_Digit__c}}}</a><br />
+<br />
+If this is a Platinum account (not Platinum PLUS) please see instructions here:<br />
+<a href="https://sites.google.com/a/brightcove.com/cs-managers/cs-manager-processes/platinum-program" target="_blank">https://sites.google.com/a/brightcove.com/cs-managers/cs-manager-processes/platinum-program</a><br />
+<br />
+If this is a Platinum PLUS account, please see:<br />
+<a href="https://sites.google.com/a/brightcove.com/cs-managers/cs-manager-processes/platinum-program/platinum-plus" target="_blank">https://sites.google.com/a/brightcove.com/cs-managers/cs-manager-processes/platinum-program/platinum-plus</a></div>
+</body>
+</html>

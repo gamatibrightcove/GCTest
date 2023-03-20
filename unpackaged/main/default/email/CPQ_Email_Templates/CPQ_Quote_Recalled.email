@@ -1,0 +1,22 @@
+<messaging:emailTemplate subject="Quote Recalled: {!relatedTo.Quote__r.Name}, {!relatedTo.Quote__r.SBQQ__Opportunity2__r.Owner.Name}"  relatedToType="sbaa__Approval__c">
+<messaging:HtmlEmailBody >
+<html>
+<body>
+Hello, the following quote has been recalled:
+
+<p>
+<p><b>Quote Name:</b>&nbsp;<apex:outputLink value="https://brightcove.my.salesforce.com/{!relatedTo.Quote__r.Id}" >{!relatedTo.Quote__r.Name}</apex:outputLink></p>
+<p><b>Opportunity Name:</b>&nbsp;<apex:outputLink value="https://na34.salesforce.com/{!relatedTo.Quote__r.SBQQ__Opportunity2__r.Id}" >{!relatedTo.Quote__r.SBQQ__Opportunity2__r.Name}</apex:outputLink></p>
+<p><b>Opportunity Owner:</b>{!relatedTo.Quote__r.SBQQ__Opportunity2__r.Owner.Name}</p>
+<p><b>Quote Total:</b>&nbsp;<apex:outputField value=" {!relatedTo.Quote__r.SBQQ__NetAmount__c}"/></p>
+
+
+
+
+
+<p style="color:white"><apex:outputText value="{!relatedTo.Id}"/></p>
+</p>
+</body>
+</html>
+</messaging:HtmlEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Campaign Segment --></label>
+        <name>Campaign_Segment__c</name>
+        <picklistValues>
+            <masterLabel>Arts &amp; Entertainment</masterLabel>
+            <translation><!-- Arts &amp; Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcaster</masterLabel>
+            <translation><!-- Broadcaster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Festivals</masterLabel>
+            <translation><!-- Festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Publishers</masterLabel>
+            <translation><!-- Publishers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports</masterLabel>
+            <translation><!-- Sports --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

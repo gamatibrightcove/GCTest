@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "cda4c5cf-ddd3-45c4-b3cd-e585eb862af4",
+  "appPageId" : "5072d3ab-f41f-4fa7-b393-eb19f68c4342",
+  "configurationTags" : [ ],
+  "id" : "8ec1e4d4-da61-4410-beb1-4617fd26df4a",
+  "label" : "Insider Program",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-insider-program",
+  "type" : "route",
+  "urlPrefix" : "insider-program"
+}

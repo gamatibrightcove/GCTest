@@ -1,0 +1,10 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Support package {!Case.Support_Package__c}<br />
+Account: {!Case.Account}<br />
+Case Number: {!Case.CaseNumber}<br />
+Subject: {!Case.Subject}<br />
+&nbsp;</body>
+</html>

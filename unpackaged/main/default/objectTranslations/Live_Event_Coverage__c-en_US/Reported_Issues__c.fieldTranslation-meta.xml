@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Issues observed or reported during the event --></help>
+        <label><!-- Reported Issues --></label>
+        <name>Reported_Issues__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Live Event Test Checklist</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Live Event Test Checklists</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Live Event Test Checklist Layout</layout>
+        <sections>
+            <label><!-- Channel Checklist Details --></label>
+            <section>Channel Checklist Details</section>
+        </sections>
+        <sections>
+            <label><!-- Cloud DVR --></label>
+            <section>Cloud DVR</section>
+        </sections>
+        <sections>
+            <label><!-- Cloud Playout --></label>
+            <section>Cloud Playout</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- DRM --></label>
+            <section>DRM</section>
+        </sections>
+        <sections>
+            <label><!-- Job Details --></label>
+            <section>Job Details</section>
+        </sections>
+        <sections>
+            <label><!-- Live Event Test Checklist Details --></label>
+            <section>Live Event Test Checklist Details</section>
+        </sections>
+        <sections>
+            <label><!-- SSAI --></label>
+            <section>SSAI</section>
+        </sections>
+        <sections>
+            <label><!-- Test Results and Conclusion --></label>
+            <section>Test Results and Conclusion</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Live Event Check --></label>
+        <name>Live_Event_Check</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Live Event Test --></label>
+        <name>Live_Event_Test</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

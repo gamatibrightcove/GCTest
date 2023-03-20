@@ -1,0 +1,16 @@
+Hi {!User.FirstName},
+<p></p>
+We received a request to change the email address for {!User.Username}. Please make sure the following changes are correct:
+<p></p>
+Previous email address: {!ChgEmailVer.OldEmail} 
+<p><p>
+New email address: {!ChgEmailVer.NewEmail}
+<p></p>
+If you didn't request this change, please <a href="mailto:community@brightcove.com">contact us</a> immediately.
+<p><p>
+- The Bright Spot Team
+<p>&nbsp;</p>
+<p>The Bright Spot sent this message to {!User.Email}.&nbsp;</p>
+<p>To manage your notifications, <a href="{!Community_Url}"> log in</a> to The Bright Spot.</p>
+<p>&copy;2023 Brightcove, Inc. All rights reserved. 281 Summer Street, Boston, MA 02210, USA</p>
+<p><img src="https://brightcove--devopfocus--c.documentforce.com/servlet/servlet.ImageServer?id=0156s0000007rFZ&oid=00D6s0000004eDg&lastMod=1654760672000" alt="" width="100" height="100" /></p>

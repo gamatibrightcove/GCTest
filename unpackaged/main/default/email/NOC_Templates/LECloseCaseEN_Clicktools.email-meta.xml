@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CSAT Survey for NOC Cases</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>LE-CaseClose-EN-Clicktools</name>
+    <style>none</style>
+    <subject>Live Event Support {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>Brightcove Customer Support Feedback
+
+WE ARE CLOSING YOUR CASE
+
+Dear {!Contact.FirstName},
+
+This is a follow-up email in regards to your recent live event support request and your experience working with {!Case.OwnerFirstName}.  Case Number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+
+If you have a moment, we would really appreciate your feedback. On a scale of 1 to 5, with 5 being very satisfied and 1 being very dissatisfied how would you rate this case?
+
+
+https://survey.clicktools.com/go?iv=ryhdq48c6nke&amp;q1={!Case.ContactId}&amp;q2={!Case.Id}&amp;q3={!Case.AccountId}&amp;q4={!Case.Contact}&amp;q5={!Contact.Email}&amp;q6={!Case.Account}&amp;q7={!Case.OwnerFullName}&amp;q8={!Case.CaseNumber}&amp;q9={!Case.ClosedDate}&amp;q10=1&amp;q15=1
+
+
+If you require further assistance and/or information regarding this specific case, please reply directly to this email so we may provide additional support. If we do not hear back from you we will consider the case resolved.
+
+Warm regards,
+The Brightcove Customer Support Team
+
+You can see all of your cases in our Support Portal, and the current system status is always available on our Status Page.
+
+Trouble seeing this email? View it as a Web page.
+Terms &amp; Conditions | Privacy | Preferences &amp; Unsubscribe
+©2020 Brightcove Inc. All rights reserved. 290 Congress Street 4th Floor, Boston MA 02210, USA</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

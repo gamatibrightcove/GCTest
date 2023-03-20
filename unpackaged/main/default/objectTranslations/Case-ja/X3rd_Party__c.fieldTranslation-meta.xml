@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- 3rd Party --></label>
+        <name>X3rd_Party__c</name>
+        <picklistValues>
+            <masterLabel>3play</masterLabel>
+            <translation><!-- 3play --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AWS</masterLabel>
+            <translation><!-- AWS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accedo</masterLabel>
+            <translation><!-- Accedo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Akamai</masterLabel>
+            <translation><!-- Akamai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleeng</masterLabel>
+            <translation><!-- Cleeng --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CloudFront</masterLabel>
+            <translation><!-- CloudFront --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cvent</masterLabel>
+            <translation><!-- Cvent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dalet</masterLabel>
+            <translation><!-- Dalet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evergent</masterLabel>
+            <translation><!-- Evergent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fastly</masterLabel>
+            <translation><!-- Fastly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gigya</masterLabel>
+            <translation><!-- Gigya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google</masterLabel>
+            <translation><!-- Google --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haivision</masterLabel>
+            <translation><!-- Haivision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hapyak</masterLabel>
+            <translation><!-- Hapyak --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IAB</masterLabel>
+            <translation><!-- IAB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iris.TV</masterLabel>
+            <translation><!-- Iris.TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neustar</masterLabel>
+            <translation><!-- Neustar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pigeonhole</masterLabel>
+            <translation><!-- Pigeonhole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vizio</masterLabel>
+            <translation><!-- Vizio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>castLabs</masterLabel>
+            <translation><!-- castLabs --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

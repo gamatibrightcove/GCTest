@@ -1,0 +1,132 @@
+{
+  "appPageId" : "d56c9ef6-9ffd-47d7-afb6-e3ecc0631426",
+  "componentName" : "siteforce:sldsThreeCol363Layout",
+  "dataProviders" : [ ],
+  "id" : "bf828a19-01ca-40b8-a2c3-ce9088ac12f6",
+  "label" : "Register",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h4 style=\"text-align: center;\"><br></h4><h4 style=\"text-align: center;\"><strong>Join the community to receive personalized information and customer support.</strong></h4><p><br></p><p style=\"text-align: center;\"><br></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "f779e142-c51d-451b-b52e-4501e8808319",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "ja" : "8b8a1e13-d0ae-48af-b215-9035f5c23543"
+      },
+      "renditions" : [ {
+        "id" : "8b8a1e13-d0ae-48af-b215-9035f5c23543",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 18px;\">登録してサポートポータルを使用する</span></p><p style=\"text-align: center;\"><br></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "accountId" : "",
+        "confirmPasswordLabel" : "Confirm Password",
+        "emailLabel" : "Email",
+        "extraFieldsFieldSet" : "",
+        "firstnameLabel" : "First Name",
+        "includePasswordField" : false,
+        "lastnameLabel" : "Last Name",
+        "passwordLabel" : "Create Password",
+        "regConfirmUrl" : "./CheckPasswordResetEmail",
+        "startUrl" : "",
+        "submitButtonLabel" : "Sign Up"
+      },
+      "componentName" : "salesforceIdentity:selfRegister2",
+      "id" : "b3ac9e18-b110-40f5-8439-eb510cb1dd56",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "ja" : "72ba8426-9257-44dc-9e5c-fb9308938e9f"
+      },
+      "renditions" : [ {
+        "id" : "72ba8426-9257-44dc-9e5c-fb9308938e9f",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "confirmPasswordLabel" : "パスワード確認",
+            "firstnameLabel" : "名",
+            "lastnameLabel" : "姓",
+            "passwordLabel" : "パスワード作成",
+            "submitButtonLabel" : "登録"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "headerText" : "",
+        "showHeader" : false,
+        "useCommunityDomainSso" : true
+      },
+      "componentName" : "salesforceIdentity:socialLogin2",
+      "id" : "9339c875-535e-42bf-aec9-903d4fc500e8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><a href=\"/Login\" rel=\"noopener noreferrer\" target=\"_self\">Already have an account?</a></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "25dfd002-8ca8-47c9-aba5-5c1ad2c8c365",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "ja" : "b8fb805e-6ce9-4e95-b424-6142a292ed30"
+      },
+      "renditions" : [ {
+        "id" : "b8fb805e-6ce9-4e95-b424-6142a292ed30",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\"><a href=\"./\" target=\"_self\">既にアカウントをお持ちですか？</a></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "55749973-8e4f-4893-b711-c024a4a7fa0c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Register"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ad2b1a68-6eca-4727-a1cc-99dff7ac09a6",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d3c51aee-723f-4ea4-86aa-29d7f8c7f78f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "id" : "132420f8-c1e0-4367-8705-07fc34178a6e",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "66f64145-ce01-49e5-b81f-be753675b83a",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "dd9f1ec4-53ad-4e71-8707-437e03ffed60",
+    "regionName" : "sidebarAlt",
+    "type" : "region"
+  }, {
+    "id" : "00de0129-6f16-43ec-8614-e825216a0549",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "self-register"
+}

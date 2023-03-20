@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Last Closed-Won Opty Name --></label>
+        <name>Last_Closed_Won_Opty__c</name>
+        <relationshipLabel><!-- Cases (Last Closed-Won Opty) --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email will be sent to the customer when the case is closed by a Support Specialist - Catalan</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CaseClose-CA</name>
+    <style>none</style>
+    <subject>Brightcove Case {!Case.CaseNumber} {!Case.Subject} [ {!Case.Thread_Id} ]</subject>
+    <textOnly>Resolución de su ticket de soporte
+
+Estimado/a {!Contact.FirstName},
+
+Le escribimos en relación al siguiente ticket con nuestro equipo de soporte técnico y su experiencia trabajando con {!Case.OwnerFirstName}.
+
+Caso: {!Case.CaseNumber}
+Asunto: {!Case.Subject}
+
+Le agradeceriamos que dedicara un minuto de su atención para valorar nuestro servicio. En una escala del 1 al 10, considerando 10 como muy satisfactorio y 1 muy poco satisfactorio, cual seria su valoración?
+
+http://survey.clicktools.com/go?iv=1t7vqb1yqkv8r&amp;q1={!Case.ContactId}&amp;q2={!Case.Id}&amp;q3={!Case.AccountId}&amp;q4={!Case.Contact}&amp;q5={!Case.Account}&amp;q6={!Case.OwnerFullName}&amp;q7={!Case.CaseNumber}&amp;q8={!Case.ClosedDate}&amp;q10={!Case.Support_Package__c}&amp;q11={!Case.Origin}&amp;q12={!Case.SuppliedEmail}&amp;q9={!Case.Account_Tier__c}&amp;q13={!Case.Account_Edition__c}&amp;q14=1
+
+
+Si necesita mas asistencia y/o información acerca de este ticket, por favor responda directamente a este mensaje para que podamos atenderle. Si no recibimos noticias suyas consideraremos este ticket resuelto.
+
+Saludos,
+
+Equipo de Soporte Técnico de Brightcove</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

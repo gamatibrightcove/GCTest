@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Technical Support Rep</label>
+    <permissionSets>Global_Read</permissionSets>
+    <permissionSets>Knowledge_Create_Articles</permissionSets>
+    <permissionSets>Knowledge_Edit_Articles</permissionSets>
+    <permissionSets>Knowledge_View_All_Articles</permissionSets>
+    <permissionSets>Technical_Support</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

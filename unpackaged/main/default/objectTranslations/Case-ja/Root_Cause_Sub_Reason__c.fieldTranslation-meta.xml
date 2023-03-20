@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Root Cause Sub Reason --></label>
+        <name>Root_Cause_Sub_Reason__c</name>
+        <picklistValues>
+            <masterLabel>3rd party/vendor</masterLabel>
+            <translation><!-- 3rd party/vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accedo</masterLabel>
+            <translation><!-- Accedo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Network</masterLabel>
+            <translation><!-- Ad Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Partner</masterLabel>
+            <translation><!-- Ad Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adobe</masterLabel>
+            <translation><!-- Adobe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Akamai</masterLabel>
+            <translation><!-- Akamai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amazon</masterLabel>
+            <translation><!-- Amazon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aspera</masterLabel>
+            <translation><!-- Aspera --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BGS Retainer / Warranty</masterLabel>
+            <translation><!-- BGS Retainer / Warranty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Backlogged</masterLabel>
+            <translation><!-- Backlogged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove</masterLabel>
+            <translation><!-- Brightcove --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDN</masterLabel>
+            <translation><!-- CDN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSM Follow-up</masterLabel>
+            <translation><!-- CSM Follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configuration / Enviroment</masterLabel>
+            <translation><!-- Configuration / Enviroment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Delivery</masterLabel>
+            <translation><!-- Content Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Code</masterLabel>
+            <translation><!-- Custom Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Reports</masterLabel>
+            <translation><!-- Custom Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dalet - Flex</masterLabel>
+            <translation><!-- Dalet - Flex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation><!-- Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation Incomplete</masterLabel>
+            <translation><!-- Documentation Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation Missing</masterLabel>
+            <translation><!-- Documentation Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation Wrong</masterLabel>
+            <translation><!-- Documentation Wrong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evergent</masterLabel>
+            <translation><!-- Evergent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>How to / Knowledge gap</masterLabel>
+            <translation><!-- How to / Knowledge gap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limelight</masterLabel>
+            <translation><!-- Limelight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance window</masterLabel>
+            <translation><!-- Maintenance window --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misconfiguration</masterLabel>
+            <translation><!-- Misconfiguration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network</masterLabel>
+            <translation><!-- Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neustar</masterLabel>
+            <translation><!-- Neustar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New project / engagement</masterLabel>
+            <translation><!-- New project / engagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Partner</masterLabel>
+            <translation><!-- Other Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pigeonhole</masterLabel>
+            <translation><!-- Pigeonhole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question Answered</masterLabel>
+            <translation><!-- Question Answered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Enablement</masterLabel>
+            <translation><!-- Support Enablement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Survey</masterLabel>
+            <translation><!-- Support Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System / Account Configuration</masterLabel>
+            <translation><!-- System / Account Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Review &amp; Monitoring</masterLabel>
+            <translation><!-- Ticket Review &amp; Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time tracker</masterLabel>
+            <translation><!-- Time tracker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tool Creation &amp; Improvement</masterLabel>
+            <translation><!-- Tool Creation &amp; Improvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unexpected Outcome</masterLabel>
+            <translation><!-- Unexpected Outcome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update</masterLabel>
+            <translation><!-- Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Requested (AOK)</masterLabel>
+            <translation><!-- User Requested (AOK) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Requested (System Deficiency)</masterLabel>
+            <translation><!-- User Requested (System Deficiency) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workaround Provided</masterLabel>
+            <translation><!-- Workaround Provided --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

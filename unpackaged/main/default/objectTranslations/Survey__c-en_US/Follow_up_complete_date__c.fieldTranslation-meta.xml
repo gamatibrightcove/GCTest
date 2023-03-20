@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Date for when the follow-up has been completed --></help>
+        <label><!-- Follow-up complete date --></label>
+        <name>Follow_up_complete_date__c</name>
+    </CustomFieldTranslation>

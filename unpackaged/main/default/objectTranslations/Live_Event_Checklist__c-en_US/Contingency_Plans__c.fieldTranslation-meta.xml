@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Backup encoder, backup network, etc. If the customer has no plans, suggest that they at least consider OBS as a backup encoder. --></help>
+        <label><!-- Contingency Plans --></label>
+        <name>Contingency_Plans__c</name>
+    </CustomFieldTranslation>

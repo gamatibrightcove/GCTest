@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- 1080 - High / 720p - Main --></help>
+        <label><!-- Primary Profile --></label>
+        <name>Primary_Profile__c</name>
+    </CustomFieldTranslation>

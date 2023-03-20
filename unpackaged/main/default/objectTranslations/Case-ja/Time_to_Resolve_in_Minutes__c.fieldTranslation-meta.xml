@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This field contains the amount of time spent resolving this case 
+60=1hour, 120=2hours,180=3hours, 240=4hours, 300=5hours --></help>
+        <label><!-- Time to Resolve in Minutes --></label>
+        <name>Time_to_Resolve_in_Minutes__c</name>
+    </CustomFieldTranslation>

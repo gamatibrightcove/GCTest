@@ -1,0 +1,51 @@
+{
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "3efcb926-e0eb-49ee-a685-a2d32c1b1fd2",
+  "label" : "User Profile",
+  "regions" : [ {
+    "id" : "12bfc282-4e96-407a-b061-068851c8d178",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "id" : "{!recordId}",
+        "profileTabLabel" : "Profile",
+        "richTextValue" : "<img alt='Banner image at the top of the page' class='sfdcCbImage' src='/sfsites/c/img/community/cpt/cpt-profile-banner.png'/>",
+        "settingsTabLabel" : "Settings & Preferences",
+        "showBannerImage" : true,
+        "showSettingsTab" : true
+      },
+      "componentName" : "forceCommunity:userProfileWithBanner",
+      "id" : "a34a9adb-ce48-4d0c-9891-c2988c520809",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "ja" : "fcff779f-c43b-41c5-9f5e-d0fe3827d09a"
+      },
+      "renditions" : [ {
+        "id" : "fcff779f-c43b-41c5-9f5e-d0fe3827d09a",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "profileTabLabel" : "プロフィール",
+            "richTextValue" : "<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.Brightcove_Banner.1}\" /><img class=\"sfdcCbImage\" src=\"{!contentAsset.bclogo805770.1}\" style=\"width: 985.451px; height: 219.896px;\" /><img class=\"sfdcCbImage\" src=\"https://brightcovesupportcenter--live.na79.force.com/sfsites/c/img/community/cpt/cpt-profile-banner.png\" /></p>",
+            "settingsTabLabel" : "設定"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "1c4164a7-417f-487a-88dc-83c264d183b2",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "2e7f8086-020f-4284-9705-5400f457d396",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-005"
+}

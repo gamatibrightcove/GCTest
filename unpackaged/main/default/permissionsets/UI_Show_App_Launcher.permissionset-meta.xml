@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Show App Launcher in Experiences Builder sites permission is enabled</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>UI - Show App Launcher</label>
+</PermissionSet>

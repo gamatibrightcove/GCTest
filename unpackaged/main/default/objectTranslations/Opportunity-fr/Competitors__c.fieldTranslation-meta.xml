@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Who are we competing with for this deal? --></help>
+        <label><!-- Competitors --></label>
+        <name>Competitors__c</name>
+        <picklistValues>
+            <masterLabel>Akamai</masterLabel>
+            <translation><!-- Akamai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amazon Web Services</masterLabel>
+            <translation><!-- Amazon Web Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bitmovin</masterLabel>
+            <translation><!-- Bitmovin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandlive</masterLabel>
+            <translation><!-- Brandlive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDNetworks</masterLabel>
+            <translation><!-- CDNetworks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comcast Technology Solutions (thePlatform or CTS)</masterLabel>
+            <translation><!-- Comcast Technology Solutions (thePlatform or CTS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cvent</masterLabel>
+            <translation><!-- Cvent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIY</masterLabel>
+            <translation><!-- DIY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DaCast (Vzaar)</masterLabel>
+            <translation><!-- DaCast (Vzaar) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dailymotion</masterLabel>
+            <translation><!-- Dailymotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deltatre</masterLabel>
+            <translation><!-- Deltatre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dubb</masterLabel>
+            <translation><!-- Dubb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Encoding.com</masterLabel>
+            <translation><!-- Encoding.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endeavor (NeuLion)</masterLabel>
+            <translation><!-- Endeavor (NeuLion) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing Customer</masterLabel>
+            <translation><!-- Existing Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grabyo</masterLabel>
+            <translation><!-- Grabyo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hopin</masterLabel>
+            <translation><!-- Hopin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBM</masterLabel>
+            <translation><!-- IBM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J-stream</masterLabel>
+            <translation><!-- J-stream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JW Player</masterLabel>
+            <translation><!-- JW Player --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kaltura</masterLabel>
+            <translation><!-- Kaltura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limelight Platform</masterLabel>
+            <translation><!-- Limelight Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mediastream</masterLabel>
+            <translation><!-- Mediastream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Stream</masterLabel>
+            <translation><!-- Microsoft Stream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moving Image 24</masterLabel>
+            <translation><!-- Moving Image 24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muvi</masterLabel>
+            <translation><!-- Muvi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mux</masterLabel>
+            <translation><!-- Mux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On24</masterLabel>
+            <translation><!-- On24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panopto</masterLabel>
+            <translation><!-- Panopto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piksel</masterLabel>
+            <translation><!-- Piksel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qumu</masterLabel>
+            <translation><!-- Qumu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rainfocus</masterLabel>
+            <translation><!-- Rainfocus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SeaChange</masterLabel>
+            <translation><!-- SeaChange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SkillUpJapan</masterLabel>
+            <translation><!-- SkillUpJapan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>StreamAMG</masterLabel>
+            <translation><!-- StreamAMG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switch Media</masterLabel>
+            <translation><!-- Switch Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tata</masterLabel>
+            <translation><!-- Tata --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twenty Three Video</masterLabel>
+            <translation><!-- Twenty Three Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verizon Digital Media Services (VDMS)</masterLabel>
+            <translation><!-- Verizon Digital Media Services (VDMS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Videolicious</masterLabel>
+            <translation><!-- Videolicious --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vidyard</masterLabel>
+            <translation><!-- Vidyard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vimeo (Livestream)</masterLabel>
+            <translation><!-- Vimeo (Livestream) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vimond</masterLabel>
+            <translation><!-- Vimond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viostream</masterLabel>
+            <translation><!-- Viostream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wirewax</masterLabel>
+            <translation><!-- Wirewax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wistia</masterLabel>
+            <translation><!-- Wistia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YoSpace</masterLabel>
+            <translation><!-- YoSpace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YouTube</masterLabel>
+            <translation><!-- YouTube --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YouTube for Publishers</masterLabel>
+            <translation><!-- YouTube for Publishers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zype</masterLabel>
+            <translation><!-- Zype --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

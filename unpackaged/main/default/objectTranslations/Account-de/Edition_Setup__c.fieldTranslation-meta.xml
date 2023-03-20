@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The edition type that support should use to create this account. --></help>
+        <label><!-- Edition Setup --></label>
+        <name>Edition_Setup__c</name>
+        <picklistValues>
+            <masterLabel>*** BEACON ***</masterLabel>
+            <translation><!-- *** BEACON *** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>***DMBU***</masterLabel>
+            <translation><!-- ***DMBU*** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>***MEDIA***</masterLabel>
+            <translation><!-- ***MEDIA*** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>***OLD SKUs***</masterLabel>
+            <translation><!-- ***OLD SKUs*** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basic</masterLabel>
+            <translation><!-- Basic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove Beacon Advanced</masterLabel>
+            <translation><!-- Brightcove Beacon Advanced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove Elite (VMS+EVS)</masterLabel>
+            <translation><!-- Brightcove Elite (VMS+EVS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove Live Only</masterLabel>
+            <translation><!-- Brightcove Live Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise 1</masterLabel>
+            <translation><!-- Enterprise 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise 10</masterLabel>
+            <translation><!-- Enterprise 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise 25</masterLabel>
+            <translation><!-- Enterprise 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise 5</masterLabel>
+            <translation><!-- Enterprise 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise 50</masterLabel>
+            <translation><!-- Enterprise 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise Elite</masterLabel>
+            <translation><!-- Enterprise Elite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise Elite 2.0</masterLabel>
+            <translation><!-- Enterprise Elite 2.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise Unlimited</masterLabel>
+            <translation><!-- Enterprise Unlimited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise Video Suite 2.0 - Enterprise</masterLabel>
+            <translation><!-- Enterprise Video Suite 2.0 - Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise Video Suite 2.0 - Starter</masterLabel>
+            <translation><!-- Enterprise Video Suite 2.0 - Starter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Studio Essential</masterLabel>
+            <translation><!-- Marketing Studio Essential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Studio Premium</masterLabel>
+            <translation><!-- Marketing Studio Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Studio Starter</masterLabel>
+            <translation><!-- Marketing Studio Starter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTT Flow Advanced Package</masterLabel>
+            <translation><!-- OTT Flow Advanced Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTT Flow Connected Package</masterLabel>
+            <translation><!-- OTT Flow Connected Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTT Flow Core Package</masterLabel>
+            <translation><!-- OTT Flow Core Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTT Flow X Advanced Package</masterLabel>
+            <translation><!-- OTT Flow X Advanced Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTT Flow X Connected Package</masterLabel>
+            <translation><!-- OTT Flow X Connected Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTT Flow X Core Package</masterLabel>
+            <translation><!-- OTT Flow X Core Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perform</masterLabel>
+            <translation><!-- Perform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pro</masterLabel>
+            <translation><!-- Pro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pro Starter</masterLabel>
+            <translation><!-- Pro Starter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Cloud Advantage</masterLabel>
+            <translation><!-- Video Cloud Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Cloud Elite</masterLabel>
+            <translation><!-- Video Cloud Elite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Cloud Essential</masterLabel>
+            <translation><!-- Video Cloud Essential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Cloud Express III</masterLabel>
+            <translation><!-- Video Cloud Express III --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Cloud Select</masterLabel>
+            <translation><!-- Video Cloud Select --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Cloud Ultimate</masterLabel>
+            <translation><!-- Video Cloud Ultimate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite - Starter Plus</masterLabel>
+            <translation><!-- Video Marketing Suite - Starter Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 1.0 - Enterprise</masterLabel>
+            <translation><!-- Video Marketing Suite 1.0 - Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 1.0 - Enterprise Elite</masterLabel>
+            <translation><!-- Video Marketing Suite 1.0 - Enterprise Elite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 1.0 - Pro</masterLabel>
+            <translation><!-- Video Marketing Suite 1.0 - Pro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 1.0 - Pro-Starter</masterLabel>
+            <translation><!-- Video Marketing Suite 1.0 - Pro-Starter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 2.0 - Enterprise</masterLabel>
+            <translation><!-- Video Marketing Suite 2.0 - Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 2.0 - Enterprise Elite</masterLabel>
+            <translation><!-- Video Marketing Suite 2.0 - Enterprise Elite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 2.0 - Professional</masterLabel>
+            <translation><!-- Video Marketing Suite 2.0 - Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 2.0 - Starter</masterLabel>
+            <translation><!-- Video Marketing Suite 2.0 - Starter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 3.0 - Elite</masterLabel>
+            <translation><!-- Video Marketing Suite 3.0 - Elite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 3.0 Enterprise</masterLabel>
+            <translation><!-- Video Marketing Suite 3.0 Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 3.0 Professional</masterLabel>
+            <translation><!-- Video Marketing Suite 3.0 Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 3.0 Starter I (Contract)</masterLabel>
+            <translation><!-- Video Marketing Suite 3.0 Starter I (Contract) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 3.0 Starter I (Credit Card)</masterLabel>
+            <translation><!-- Video Marketing Suite 3.0 Starter I (Credit Card) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 3.0 Starter II (Contract)</masterLabel>
+            <translation><!-- Video Marketing Suite 3.0 Starter II (Contract) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Marketing Suite 3.0 Starter II (Credit Card)</masterLabel>
+            <translation><!-- Video Marketing Suite 3.0 Starter II (Credit Card) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

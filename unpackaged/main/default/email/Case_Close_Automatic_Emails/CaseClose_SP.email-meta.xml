@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email will be sent to the customer when the case is closed by a Support Specialist - Spanish - Updated December 2021</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CaseClose-SP</name>
+    <style>none</style>
+    <subject>Brightcove Case {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>Resolución de su ticket de soporte 
+
+Estimado/a {!Contact.FirstName}, 
+
+Le escribimos en relación al siguiente ticket con nuestro equipo de soporte técnico y su experiencia trabajando con {!Case.OwnerFirstName}. 
+
+Caso: {!Case.CaseNumber} 
+Asunto: {!Case.Subject} 
+
+Le agradeceríamos que dedicara un minuto de su atención para valorar nuestro servicio. En una escala del 1 al 5, considerando 5 como muy satisfactorio y 1 muy poco satisfactorio, cual seria su valoración? 
+
+https://www.getfeedback.com/r/5BXN8kGS?Case_Contact_ID={!Case.ContactId}&amp;Case_ID={!Case.Id}&amp;Case_Account_ID={!Case.Account_Account_ID__c}&amp;gf_id={!Contact.Email}{!Case.Id}&amp;Case_Closed_Date={!Case.ClosedDate}&amp;Case_Owner_Full_Name={!Case.OwnerFullName}
+
+
+Si necesita mas asistencia y/o información acerca de este ticket, por favor responda directamente a este mensaje para que podamos atenderle. Si no recibimos noticias suyas consideraremos este ticket resuelto. 
+
+Saludos, 
+Equipo de Soporte Técnico de Brightcove 
+
+Puede acceder a todos sus casos de soporte en nuestro Portal de Soporte (https://supportportal.brightcove.com) y el estado actual del sistema está siempre disponible en nuestra Página de Estado del Sistema (https://status.brightcove.com).</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- T2 Escalation Process Reason --></label>
+        <name>T2_Escalation_Process_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Akamai Analytics Setup</masterLabel>
+            <translation><!-- Akamai Analytics Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Akamai Analytics Troubleshooting</masterLabel>
+            <translation><!-- Akamai Analytics Troubleshooting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Akamai CDN</masterLabel>
+            <translation><!-- Akamai CDN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Android SDK</masterLabel>
+            <translation><!-- Android SDK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BC Open Source</masterLabel>
+            <translation><!-- BC Open Source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BYO/Named CDN Setup</masterLabel>
+            <translation><!-- BYO/Named CDN Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS Connector</masterLabel>
+            <translation><!-- CMS Connector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRM Setup</masterLabel>
+            <translation><!-- DRM Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Collection API</masterLabel>
+            <translation><!-- Data Collection API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enable Digital Master</masterLabel>
+            <translation><!-- Enable Digital Master --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOS SDK</masterLabel>
+            <translation><!-- IOS SDK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ooyala API</masterLabel>
+            <translation><!-- Ooyala API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ooyala Live</masterLabel>
+            <translation><!-- Ooyala Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P1 - Brightcove Live</masterLabel>
+            <translation><!-- P1 - Brightcove Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playback Restrictions</masterLabel>
+            <translation><!-- Playback Restrictions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSO Setup</masterLabel>
+            <translation><!-- SSO Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSO Troubleshooting</masterLabel>
+            <translation><!-- SSO Troubleshooting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[Zen] API and Custom Dev</masterLabel>
+            <translation><!-- [Zen] API and Custom Dev --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[Zen] DRM</masterLabel>
+            <translation><!-- [Zen] DRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[Zen] Integration Library</masterLabel>
+            <translation><!-- [Zen] Integration Library --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[Zen] Invalid Syntax</masterLabel>
+            <translation><!-- [Zen] Invalid Syntax --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

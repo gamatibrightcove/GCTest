@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Business Development Rep</label>
+    <permissionSets>Account_RecordType_Customer</permissionSets>
+    <permissionSets>Account_RecordType_Partner</permissionSets>
+    <permissionSets>BDR_Edit</permissionSets>
+    <permissionSets>Edit_BDR</permissionSets>
+    <permissionSets>Global_Read</permissionSets>
+    <permissionSets>Opportunity_RecordType_Add_On</permissionSets>
+    <permissionSets>Opportunity_RecordType_Lead</permissionSets>
+    <permissionSets>Opportunity_RecordType_New_Business</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

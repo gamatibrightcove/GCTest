@@ -1,0 +1,141 @@
+{
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "componentName" : "siteforce:sldsThreeCol363Layout",
+  "dataProviders" : [ ],
+  "id" : "f797b894-dd70-4cc8-81fe-6b717e2c4e48",
+  "label" : "Create Record",
+  "regions" : [ {
+    "id" : "68880861-3053-46cf-aa45-84fcb6e73616",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "allowAttachments" : true,
+        "attachmentLabel" : "Upload File",
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "rgb(255, 255, 255)",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : "",
+        "buttonRadius" : 0,
+        "buttonTextColor" : "rgb(0, 0, 0)",
+        "buttonTextHoverColor" : "",
+        "callToAction" : false,
+        "callToActionButtonText" : "",
+        "callToActionText" : "",
+        "callToActionUrl" : "",
+        "confirmationSubtext" : "We’ll get back to you soon.",
+        "confirmationText" : "Your case was created.",
+        "guestQuickActionName" : "Select or configure a global action",
+        "headerSubtitle" : "Tell us how we can help.",
+        "headerTitle" : "Contact Support",
+        "isMicrobatch" : false,
+        "quickActionName" : "TSCommunityCreateCase",
+        "requestSummaryText" : "Case summary"
+      },
+      "componentName" : "forceCommunity:contactSupportForm",
+      "id" : "fd0a3782-8986-4505-af38-652d1c89b0f9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "376af699-e339-452b-8a89-e5e434c4802d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "allowPrepopulatePrechatFields" : true,
+        "avatarImgURL" : "",
+        "codeSettingsName" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://brightcove2--full.sandbox.my.salesforce.com",
+          "baseLiveAgentContentURL" : "https://c.la5-c1cs-ia5.salesforceliveagent.com/content",
+          "baseLiveAgentURL" : "https://d.la5-c1cs-ia5.salesforceliveagent.com/chat",
+          "buttonId" : "5738F000000GnQn",
+          "deploymentId" : "5728F000000Cb9h",
+          "enabledFeatures" : [ "LiveAgent" ],
+          "entryFeature" : "LiveAgent",
+          "eswConfigDevName" : "TSChat",
+          "eswConfigId" : "04I8F000000Cab2UAC",
+          "eswLiveAgentDevName" : "TSChat",
+          "gslbBaseURL" : "https://service.force.com",
+          "isOfflineCasesEnabled" : "1",
+          "orgId" : "00D8F0000008jAl"
+        },
+        "externalScripts" : "",
+        "externalStyles" : "",
+        "fallbackRouting" : "",
+        "offlineSupportMinimizedText" : "Contact Us",
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "snippetSettingsFile" : "Brightcove_SnapIn_Settings",
+        "storageDomain" : "",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "1d69172d-e3bb-4d4d-8588-3cd0d955a148",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "allowPrepopulatePrechatFields" : true,
+        "avatarImgURL" : "",
+        "codeSettingsName" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://brightcove2--full.sandbox.my.salesforce.com",
+          "baseLiveAgentContentURL" : "https://c.la5-c1cs-ia5.salesforceliveagent.com/content",
+          "baseLiveAgentURL" : "https://d.la5-c1cs-ia5.salesforceliveagent.com/chat",
+          "buttonId" : "5738F000000GnQn",
+          "deploymentId" : "5728F000000Cb9h",
+          "enabledFeatures" : [ "LiveAgent" ],
+          "entryFeature" : "LiveAgent",
+          "eswConfigDevName" : "TSChat",
+          "eswConfigId" : "04I8F000000Cab2UAC",
+          "eswLiveAgentDevName" : "TSChat",
+          "gslbBaseURL" : "https://service.force.com",
+          "isOfflineCasesEnabled" : "1",
+          "orgId" : "00D8F0000008jAl"
+        },
+        "externalScripts" : "",
+        "externalStyles" : "",
+        "fallbackRouting" : "",
+        "offlineSupportMinimizedText" : "Contact Us",
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "snippetSettingsFile" : "Brightcove_SnapIn_Settings",
+        "storageDomain" : "",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "ced63bcb-f384-4114-9737-cf34b5604158",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3c6cada4-2075-46b0-80ae-d41adf7d8b37",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "id" : "c5cc48e1-3cac-4537-844c-dc828d4adeaf",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "1311ec12-2462-47ab-911e-08f27fa06f9e",
+    "regionName" : "sidebarAlt",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "createrecord"
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Video/Audio Quality Defects --></label>
+        <name>Video_Audio_Quality_Defects__c</name>
+    </CustomFieldTranslation>

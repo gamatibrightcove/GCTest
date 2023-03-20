@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-response case creation JP</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Case - Autoresponse JP</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Brightcove サポート受付完了通知: {{{Case.CaseNumber}}} : {{{Case.Subject}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

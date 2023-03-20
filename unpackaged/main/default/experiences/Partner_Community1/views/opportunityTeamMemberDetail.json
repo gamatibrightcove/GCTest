@@ -1,0 +1,66 @@
+{
+  "appPageId" : "2746e722-1a11-406a-a340-af73d0c0847c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "5425b573-5860-4f43-b2cf-a56f8f0580ec",
+  "label" : "Opportunity Team Member Detail",
+  "regions" : [ {
+    "id" : "9c108833-f9de-48ac-9bb2-c01a55f7bfeb",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "933b2a81-e29e-4784-8949-210600da73dd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "detailsTabLabel" : "Details",
+        "discussionsTabLabel" : "Feed",
+        "recordId" : "{!recordId}",
+        "relatedTabLabel" : "Related",
+        "showLegacyActivityComposer" : false,
+        "tab1Type" : "details",
+        "tab2Type" : "related",
+        "tab3Type" : "chatter",
+        "tab4Type" : "none",
+        "timelineTabLabel" : "Activity"
+      },
+      "componentName" : "forceCommunity:recordHomeTabs",
+      "id" : "b9722d2b-9e2f-4cea-b08a-90add97b75a5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1aaa5b83-cf90-4651-8507-d5e5cf75d207",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "fec1fcb7-ebdc-413b-ae96-e1d0dcde4315",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c2ab9ee9-8cb3-45ed-96f3-75214c6fae2c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "11a267e2-b535-4ebe-a57a-01887c06afcf",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-00q"
+}

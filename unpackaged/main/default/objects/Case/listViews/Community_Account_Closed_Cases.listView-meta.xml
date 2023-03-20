@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Community_Account_Closed_Cases</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>NAME</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.CLOSED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed as Duplicate,Closed - Spam</value>
+    </filters>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.NOC_Cases,Case.Technical_Support</value>
+    </filters>
+    <filters>
+        <field>CASES.EMAIL</field>
+        <operation>notContain</operation>
+        <value>brightcove.com</value>
+    </filters>
+    <filters>
+        <field>BC_Internal_employee__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <label>Community: Account Closed Cases</label>
+</ListView>

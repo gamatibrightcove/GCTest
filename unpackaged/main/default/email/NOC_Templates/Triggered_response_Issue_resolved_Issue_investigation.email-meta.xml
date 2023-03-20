@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Triggered response:  Issue resolved email related to the investigation while supporting a live event</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Triggered response: Issue resolved - Issue investigation</name>
+    <style>none</style>
+    <subject>Investigating on-going issue {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>ISSUE RESOLVED -  LIVE EVENT ISSUE INVESTIGATION
+
+Hello {!Contact.FirstName},
+
+We would like to let you know that our Network Operations Center has resolved or provided the steps that led to the resolution of the reported live event issue. . We will provide the tehnical details related to the resolution shortly:
+
+Case Number: {!Case.CaseNumber}
+Opened on: {!Case.CreatedDate}
+Engineer assigned: {!Case.OwnerFullName}
+Subject: {!Case.Subject}
+
+Feel free to reply to this email with questions.
+
+Best regards,
+The Brightcove Network Operations Center
+
+You can see all of your cases in our Support Portal, and current system status is always available on our Status Page.
+
+Terms &amp; Conditions | Privacy
+©2020 Brightcove Inc. All rights reserved. 290 Congress Street 4th Floor, Boston MA 02210, USA</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

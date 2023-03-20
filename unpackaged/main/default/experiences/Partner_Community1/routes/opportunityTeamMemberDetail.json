@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "5425b573-5860-4f43-b2cf-a56f8f0580ec",
+  "appPageId" : "2746e722-1a11-406a-a340-af73d0c0847c",
+  "configurationTags" : [ ],
+  "id" : "ead68f61-c612-4d77-bc4b-83064a249faf",
+  "label" : "Opportunity Team Member Detail",
+  "routeType" : "detail-00q",
+  "type" : "route",
+  "urlPrefix" : "opportunityteammember"
+}

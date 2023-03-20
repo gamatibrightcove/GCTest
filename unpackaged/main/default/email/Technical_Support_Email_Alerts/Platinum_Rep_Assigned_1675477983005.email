@@ -1,0 +1,10 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:start"><br />
+You are now the CS Rep for&nbsp;{{{Account.Name}}}<br />
+<a href="https://brightcove.my.salesforce.com/%7B!Account.Id_18_Digit__c%7D" target="_blank">https://brightcove.my.salesforce.com/{{{Account.Id_18_Digit__c}}}</a></div>
+</body>
+</html>

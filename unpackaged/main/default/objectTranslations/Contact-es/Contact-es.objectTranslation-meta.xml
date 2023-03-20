@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- 6sense --></label>
+            <section>6sense</section>
+        </sections>
+        <sections>
+            <label><!-- Communications --></label>
+            <section>Communications</section>
+        </sections>
+        <sections>
+            <label><!-- Current State --></label>
+            <section>Current State</section>
+        </sections>
+        <sections>
+            <label><!-- D&amp;B --></label>
+            <section>D&amp;B</section>
+        </sections>
+        <sections>
+            <label><!-- Distribution engine --></label>
+            <section>Distribution engine</section>
+        </sections>
+        <sections>
+            <label><!-- MIGRATION - REMOVED BEFORE GO-LIVE --></label>
+            <section>MIGRATION - REMOVED BEFORE GO-LIVE</section>
+        </sections>
+        <sections>
+            <label><!-- NPS --></label>
+            <section>NPS</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TS Community</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Opportunity (Lead) --></label>
+        <name>New_Lead_Opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Opportunity --></label>
+        <name>New_Opportunity</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Email must be provided in order to save --></errorMessage>
+        <name>Email_field_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A reason must be selected if the Contact is no longer active. --></errorMessage>
+        <name>Inactive_Reason_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Previous Contact record that was selected is still Active.  Please deactivate that Contact before assigning it as the Previous Contact. --></errorMessage>
+        <name>Previous_Contact_cannot_be_Active</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Rejected Reason must be set if a Contact is Rejected --></errorMessage>
+        <name>Rejected_Leads_Require_Reason</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

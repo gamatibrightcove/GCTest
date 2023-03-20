@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:start">Hi {{{Account.OwnerFullName}}} , {{{Account.Platinum_CS_Manager__c}}}<br />
+<br />
+the Platinum Trial for the {{{Account.Name}}} has expired.<br />
+<br />
+Platinum Trial expiry date: {{{Account.Platinum_Trial_Expiry_date__c}}}<br />
+Platinum Trial Max number of open cases: {{{Account.Platinum_Trial_Account_Max_Cases__c}}}<br />
+The number of cases opened during the Platinum Trial: {{{Account.PlatTrial_Open_Cases_Count__c}}}<br />
+<br />
+<br />
+The Platinum Alerts, for this account, is now disabled and the Video Cloud Support Package has been switched back to {{{Account.Support_package__c}}}<br />
+<br />
+Thanks,<br />
+Support Operations</div>
+</body>
+</html>

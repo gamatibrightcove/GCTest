@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Tier Pricing Type --></label>
+        <name>Tier_Pricing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Base Price</masterLabel>
+            <translation><!-- Base Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Base Price * Quantity</masterLabel>
+            <translation><!-- Base Price * Quantity --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

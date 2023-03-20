@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How likely are you to recommend the Live Monitoring Package? --></help>
+        <label><!-- Would you recommend NOC? --></label>
+        <name>Would_you_recommend_NOC__c</name>
+    </CustomFieldTranslation>

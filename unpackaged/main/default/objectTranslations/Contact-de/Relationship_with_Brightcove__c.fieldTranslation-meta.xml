@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Relationship with Brightcove --></label>
+        <name>Relationship_with_Brightcove__c</name>
+        <picklistValues>
+            <masterLabel>Brightcove employee</masterLabel>
+            <translation><!-- Brightcove employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-customer / Fan / Advocate / Prospect</masterLabel>
+            <translation><!-- Non-customer / Fan / Advocate / Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

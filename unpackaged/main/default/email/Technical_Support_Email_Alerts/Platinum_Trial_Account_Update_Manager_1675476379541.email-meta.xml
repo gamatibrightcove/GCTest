@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When a New opportunity for Platinum Trial is created this email alerts TS leadership</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Platinum Trial Account Needs Owner</name>
+    <relatedEntityType>Opportunity</relatedEntityType>
+    <style>none</style>
+    <subject>[Platinum Manager] {{{Opportunity.Account}}} is now Platinum Trial and needs a CS Manager</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+   <head>
+      <title>Brightcove Customer Support Feedback</title>
+      <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <style>
+         @import url('https://www.fontify.me/wf/d1d1943239bdc1297f6ae30575e05fd5');
+         body{
+         font-family: font89466;
+         }
+      </style>
+      <div bgcolor="#f0f0f0" marginwidth="0" marginheight="0" style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+         <center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+            <table border="0" cellpadding="0" cellspacing="0" width="625" align="center" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0">
+               <!----Header----->   
+               <tr>
+                    <td id="header" align="left" valign="top" width="100%" style="text-align:left;background-color:#FFCE00;padding:40px 0 40px 50px">
+                        
+                        <a href="http://www.brightcove.com/en" style="border-bottom:none" target="_blank">
+                               <img src="https://files.brightcove.com/BROlogos/BrightcoveOrange.png" href="https://supportportal.brightcove.com/s/" width="25%">
+                            </a>
+                    </td>
+                </tr>
+               <!----Content----->               
+               <tr>
+                  <td valign="top" style="padding-bottom:0px;background-color:#f0f0f0">
+                     <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <!----Subject-----> 
+                        <tr>
+                           <td align="left" valign="top" style="padding:50px 50px;margin:0;">
+                             <p style="padding:0;margin:0;color:#333;line-height:1.1;font-family:&#39;Arial Black&#39;;font-size:22px;text-align:left"> ライブサポートケース対応完了のお知らせ</p>                           
+                           </td>
+                        </tr>
+                        <!----Message-----> 
+                        <tr>
+                           <td align="left" valign="top" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:&#39;Arial&#39;;font-size:15px;color:#000000;line-height:150%">
+                              <p style="font-family:&#39;Arial&#39;;font-weight: bold;font-size:18px;color:#000000">
+                                 <strong>ご担当者様</strong>
+                              </p>
+                              <p style="font-family:&#39;Arial&#39;;font-size:16px;color:#000000">
+                                 ライブイベントサポートのご利用ありがとうございました。<br><br> 
+                                 ケース番号: <strong>{!Case.CaseNumber}</strong><br>
+                                 表題: <strong>{!Case.Subject}</strong>
+                              </p>
+
+                              <p style="font-family:&#39;Arial&#39;;font-size:16px;color:#000000">
+                                 お手数をお掛け致しますが、サポート品質向上のため、下記アンケートへご協力いただければ幸いです。10 は<span style="color: #0e9a0e; font-weight: bold;">非常に満足</span>、1 が <span style="color: #FF0000; font-weight: bold;">非常に不満</span> となります。
+                              </p>
+                                                              <!-- Rating -->
+           <p style="text-align: center;"><br /><span style="font-size:2em;"><strong>
+<a style="color: #0e9a0e; text-decoration:none;" href="https://survey.clicktools.com/go?iv=3257prqe9e19x&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Contact.Email}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=1&q20={!Case.Survey_Number__c} ">10</a> <span style="color: #ffffff">|</span> <a style="color: #a2c00a; text-decoration:none;" href="https://survey.clicktools.com/go?iv=3257prqe9e19x&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Contact.Email}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=2&q20={!Case.Survey_Number__c} ">9</a> <span style="color: #ffffff">|</span>
+ <a style="color: #cbc509; text-decoration:none;" href="https://survey.clicktools.com/go?iv=3257prqe9e19x&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Contact.Email}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=3&q20={!Case.Survey_Number__c} ">8</a> <span style="color: #ffffff">|</span> <a style="color: #FFD300; text-decoration:none;" href="https://survey.clicktools.com/go?iv=3257prqe9e19x&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Contact.Email}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=4&q20={!Case.Survey_Number__c} ">7</a> <span style="color: #ffffff">|</span> <a style="color: #FFAF00; text-decoration:none;" href="https://survey.clicktools.com/go?iv=3257prqe9e19x&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Contact.Email}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=5&q20={!Case.Survey_Number__c} ">6</a> <span style="color: #ffffff">|</span> <a style="color: #FF8C00; text-decoration:none;" href="https://survey.clicktools.com/go?iv=3257prqe9e19x&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Contact.Email}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=6&q20={!Case.Survey_Number__c} ">5</a> <span style="color: #ffffff">|</span> <a style="color: #FF6900; text-decoration:none;" href="https://survey.clicktools.com/go?iv=3257prqe9e19x&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Contact.Email}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=7&q20={!Case.Survey_Number__c} ">4</a> <span style="color: #ffffff">|</span> <a style="color: #FF4600; text-decoration:none;" href="https://survey.clicktools.com/go?iv=3257prqe9e19x&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Contact.Email}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=8&q20={!Case.Survey_Number__c} ">3</a> <span style="color: #ffffff">|</span> <a style="color: #FF2300; text-decoration:none;" href="https://survey.clicktools.com/go?iv=3257prqe9e19x&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Contact.Email}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=9&q20={!Case.Survey_Number__c} ">2</a> <span style="color: #ffffff">|</span> <a style="color: #FF0000; text-decoration:none;" href="https://survey.clicktools.com/go?iv=3257prqe9e19x&q1={!Case.ContactId}&q2={!Case.Id}&q3={!Case.AccountId}&q4={!Case.Contact}&q5={!Case.Account}&q6={!Case.OwnerFullName}&q7={!Case.CaseNumber}&q8={!Case.ClosedDate}&q10={!Case.Support_Package__c}&q11={!Case.Origin}&q12={!Contact.Email}&q9={!Case.Account_Tier__c}&q13={!Case.Account_Edition__c}&q14=10&q20={!Case.Survey_Number__c} ">1</a></strong></span></P>
+          <!-- End Rating -->
+ 
+<br>
+                              <p style="font-family:&#39;Arial&#39;;font-size:16px;color:#000000">
+                                 上記サポートケースに関して、引き続きのサポート対応をご希望の場合には、引き続き対応させていただきますので、本メールに<strong>直接ご返信</strong>ください。お客様からのご返信がない場合、該当のサポートケースはこのままクローズの状態となります。
+                              </p>
+                              <p style="font-family:&#39;Arial&#39;;font-size:16px;color:#000000">	
+                                 今後ともよろしくお願い致します。<br><strong>ブライトコーブ ネットワークオペレーションチーム</strong>
+                              </p>
+                              <p style="font-family:&#39;Arial&#39;;font-size:16px;color:#000000">
+ お客様のサポートケースは全て <a href="https://supportportal.brightcove.com/" style="color:#000000">サポート専用ポータル</a>にてご覧いただくことが可能です。
+また、現在のシステム稼働状況は、 <a href="https://status.brightcove.com/" style="color:#000000">システムステータスページ</a> にてご覧いただけます。
+                              </p>
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <tr id ="footer">
+                    <td align="left" bgcolor="#000000" valign="top" style="padding:30px 50px">
+                        <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                            	<td style="padding:26px 0 25px 0!important;">
+                            	<a href="https://supportportal.brightcove.com/s/" style="border-bottom:none;" target="_blank">
+                                	 <img src="https://img.en25.com/EloquaImages/clients/Brightcove/{96ea4b12-0582-43e8-8f51-8e72c73120e9}_bc-logo-white.png" width="120" height="18">
+                            	</a>
+                            	</td>
+                            </tr>
+                            <tr>
+                            	<td style="padding-bottom:19px;">
+                            		<a style="padding-right:29px;" href="https://www.linkedin.com/company/brightcove/" target="_blank"><img src="https://img.brightcove.com/brightcove-new-brand-2020/social-media/in-icon@2x.png" width="20"></a>
+                            		<a style="padding-right:29px;" href="https://twitter.com/brightcove" target="_blank"><img src="https://img.brightcove.com/brightcove-new-brand-2020/social-media/tw-icon@2x.png" width="20"></a>
+                            		<a style="padding-right:29px;" href="https://www.facebook.com/Brightcove" target="_blank"><img src="https://img.brightcove.com/brightcove-new-brand-2020/social-media/fb-icon@2x.png" width="20"></a>
+                            	<td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" style="font-family:&#39;Arial&#39;;font-size:12px;color:#fff;text-align:left;line-height:120%;padding-bottom:0">
+                                    <strong>Trouble seeing this email?</strong>
+                                    <a href="http://app.now.brightcove.com/e/es.aspx?s=~~eloqua..type--emailfield..syntax--siteid..innerText--siteid..encodeFor--url~~&amp;e=~~eloqua..type--emailfield..syntax--elqemailsaveguid..innerText--elqemailsaveguid..encodeFor--url~~&amp;elqTrackId=d3b876cd99044e68b7a6404121492e1c" style="color:#fff!important;border-bottom:1px solid;text-decoration:none!important;border-bottom:0" target="_blank">View it as a Web page.</a>
+                                </td>
+                            </tr>                            
+                            <tr>
+                            	<td align="center" valign="top" style="padding:5px 0 26px 0;font-family:&#39;Arial&#39;;font-size:12px;color:#fff;text-align:left;line-height:120%">
+                                    <a style="color:#fff!important;border-bottom:1px solid;text-decoration:underline;border-bottom:0" href="http://www.brightcove.com/en/terms-and-conditions?elqTrackId=9c14c3240b064bf088bea2f69eba3295&amp;elqTrack=true" target="_blank">Terms &amp; Conditions</a>  | 
+                                    <a style="color:#fff!important;border-bottom:1px solid;text-decoration:underline;border-bottom:0" href="https://www.brightcove.com/en/legal/privacy?elqTrackId=c9deb494de654738839ccd085b813fc6&amp;elqTrack=true" target="_blank">Privacy</a>   |  
+                                    <a style="color:#fff!important;border-bottom:1px solid;text-decoration:underline;border-bottom:0" href="http://app.now.brightcove.com/e/sl.aspx?s=~~eloqua..type--emailfield..syntax--siteid..innerText--siteid..encodeFor--url~~" target="_blank">Preferences &amp; Unsubscribe</a>
+                                    </br>
+                                    </br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" style="font-family:&#39;Arial&#39;;font-size:11px;color:#fff;text-align:left;line-height:120%;padding-bottom:20px">
+                                   ©2020 Brightcove Inc. All rights reserved. 290 Congress Street 4th Floor, Boston MA 02210, USA
+                                </td>
+                            </tr>                           
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>   
+    </body>
+</html>

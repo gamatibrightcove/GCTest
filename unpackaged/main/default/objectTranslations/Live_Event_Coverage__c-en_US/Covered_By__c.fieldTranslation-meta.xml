@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Covered By --></label>
+        <name>Covered_By__c</name>
+        <picklistValues>
+            <masterLabel>Both TS and NOC</masterLabel>
+            <translation><!-- Both TS and NOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOC</masterLabel>
+            <translation><!-- NOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TS</masterLabel>
+            <translation><!-- TS --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

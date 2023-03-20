@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CSAT Survey for NOC Cases</description>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>LE-CaseClose-JA-2020</name>
+    <style>none</style>
+    <subject>ライブイベントサポート {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>ご担当者様、
+
+ライブイベントサポートのご利用ありがとうございました。
+
+ケース番号: {!Case.CaseNumber}
+表題: {!Case.Subject}
+
+お手数をお掛け致しますが、サポート品質向上のため、下記アンケートへご協力いただければ幸いです。10 は非常に満足、1 が 非常に不満 となります。
+
+https://survey.clicktools.com/go?iv=lyx2kov0is0s&amp;q1={!Case.ContactId}&amp;q2={!Case.Id}&amp;q3={!Case.Account_Account_ID__c}&amp;q4={!Case.Contact}&amp;q5={!Contact.Email}&amp;q6={!Case.Account}&amp;q7={!Case.OwnerFullName}&amp;q8={!Case.CaseNumber}&amp;q9={!Case.ClosedDate}&amp;q10=1&amp;q15=1
+
+上記サポートケースに関して、引き続きのサポート対応をご希望の場合には、引き続き対応させていただきますので、本メールに直接ご返信ください。お客様からのご返信がない場合、該当のサポートケースはこのままクローズの状態となります。
+
+今後ともよろしくお願い致します。
+ブライトコーブ ネットワークオペレーションチーム
+
+お客様のサポートケースは全てサポート専用ポータルにてご覧いただくことが可能です。 また、現在のシステム稼働状況は、 システムステータスページ にてご覧いただけます。
+
+Terms &amp; Conditions | Privacy | Preferences &amp; Unsubscribe
+©2020 Brightcove Inc. All rights reserved. 290 Congress Street 4th Floor, Boston MA 02210, USA</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

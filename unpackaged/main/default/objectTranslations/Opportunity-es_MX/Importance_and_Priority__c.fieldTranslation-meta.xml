@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Who are they important to; is it a high Priority? --></help>
+        <label><!-- Importance and Priority --></label>
+        <name>Importance_and_Priority__c</name>
+    </CustomFieldTranslation>

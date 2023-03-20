@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:start">Case {{{Case.CaseNumber}}} has received a message indicating that it is potentially urgent.<br />
+<br />
+Case Number: {{{Case.CaseNumber}}}<br />
+Account Name: {{{Case.Account}}}<br />
+<br />
+Please review:<br />
+<a href="https://brightcove.my.salesforce.com/%7B%7B%7BCase.Id%7D%7D%7D" target="_blank">https://brightcove.my.salesforce.com/{{{Case.Id}}}</a><br />
+<br />
+Text Body:<br />
+{{{Case.E2CP__Most_Recent_Public_Comment__c}}}</div>
+</body>
+</html>

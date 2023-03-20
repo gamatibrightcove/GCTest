@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Pick up the ones used to communicate with the customer/case contact. Internal chats with engineering, TS, etc. shouldn&apos;t be considered. --></help>
+        <label><!-- Communication Channels (external) --></label>
+        <name>Communication_Channels__c</name>
+        <picklistValues>
+            <masterLabel>Brightcove Video</masterLabel>
+            <translation><!-- Brightcove Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email/Case Comments</masterLabel>
+            <translation><!-- Email/Case Comments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Go To Meeting</masterLabel>
+            <translation><!-- Go To Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Go to Assist</masterLabel>
+            <translation><!-- Go to Assist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Meet</masterLabel>
+            <translation><!-- Google Meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Video/Phone Bridge</masterLabel>
+            <translation><!-- Other Video/Phone Bridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slack</masterLabel>
+            <translation><!-- Slack --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

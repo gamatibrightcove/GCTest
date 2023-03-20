@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>BrightcoveCommunity</container>
+    <containerType>Network</containerType>
+    <label>TileMenuDocum</label>
+    <navigationMenuItem>
+        <label>Documentation</label>
+        <menuItemBranding>
+            <tileImage>HD19Tile1</tileImage>
+        </menuItemBranding>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>https://support.brightcove.com</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Brightcove University</label>
+        <menuItemBranding>
+            <tileImage>HD15Tile2</tileImage>
+        </menuItemBranding>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>https://www.brightcove.com/en/university</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Developer Docs</label>
+        <menuItemBranding>
+            <tileImage>HD14Tile3</tileImage>
+        </menuItemBranding>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>https://apis.support.brightcove.com/</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

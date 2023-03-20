@@ -1,0 +1,255 @@
+{
+  "appPageId" : "5072d3ab-f41f-4fa7-b393-eb19f68c4342",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "dataProviders" : [ ],
+  "id" : "03689275-5632-4f4c-a80d-68053aca1bd2",
+  "label" : "Home",
+  "regions" : [ {
+    "id" : "f0b638ae-7a3f-4d69-9caf-cee6c7fa5800",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "articleListPageSize" : 5,
+        "showTitle" : true,
+        "title" : "Announcement:",
+        "topicId" : "{!topicId}"
+      },
+      "componentName" : "selfService:topicRelatedArticle",
+      "id" : "d363e8f4-3c3e-4847-a6f0-7f9d5c2b6760",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e299be16-c2e9-4690-9e2a-ff8e8617ec08",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 100,
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "confirmationMessage" : "Got it!",
+        "followUpPromptLabel" : "Can we close your question?",
+        "isAskFollowPromptEnabled" : true,
+        "isIncludeArticlesEnabled" : false,
+        "isIncludeDiscussionsEnabled" : true,
+        "isInitialSatisfactionPromptEnabled" : true,
+        "isPublisherDeflectionEnabled" : true,
+        "label" : "Ask a Question",
+        "maxSuggestions" : 5,
+        "satisfactionPromptLabel" : "Did we help to answer your question?",
+        "showDetails" : false,
+        "showTopics" : false,
+        "uneditableTopics" : false
+      },
+      "componentName" : "forceCommunity:askCommunity",
+      "id" : "f5e8fad1-9128-43b2-b25e-cc9aeeffbb07",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "eb6c0427-739e-4fa5-b739-e76e4e08aa65",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "d8653db7-34a6-45be-b969-70eb748bf2b4",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Community Feed"
+          }, {
+            "UUID" : "1c56c355-25f2-4c32-99d8-3db7cea1d0e6",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Get to know others"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "eb6c0427-739e-4fa5-b739-e76e4e08aa65",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "",
+            "defaultSortOrderHomeFeed" : "Relevance",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "feedDesign" : "DEFAULT",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "Home"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "e7bff31a-369e-47f6-b460-eaa804e39a83",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "d8653db7-34a6-45be-b969-70eb748bf2b4",
+        "regionLabel" : "Community Feed",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "id" : "{!feedItemId}"
+          },
+          "componentName" : "forceCommunity:feedItemDetail",
+          "id" : "6fb0dfcf-988a-4f29-842c-d03eb1086e57",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1c56c355-25f2-4c32-99d8-3db7cea1d0e6",
+        "regionLabel" : "Get to know others",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5e8bb027-64f1-4113-90d2-5cb73cb60b8b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "194a5511-1d47-4457-8402-b15988c2941b",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "12f75dfe-7d54-4fdf-a848-6182300b54a0",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Useful Links"
+          }, {
+            "UUID" : "ec2a6dfa-f2cf-410e-9b4c-78070261e112",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Upcoming Events"
+          }, {
+            "UUID" : "7e7d36a9-a468-4bb2-9689-459f97f09e22",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Guidelines"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "194a5511-1d47-4457-8402-b15988c2941b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "maxWidth" : 100,
+            "overlayColor" : "rgba(0,0,0,0.4)",
+            "overlayHoverColor" : "",
+            "radius" : 0,
+            "showTitle" : false,
+            "textAlignment" : "center",
+            "textBgColor" : "rgba(0,0,0,0)",
+            "textBgHoverColor" : "rgba(0,0,0,0)",
+            "textColor" : "",
+            "textHoverColor" : "",
+            "textPosition" : "top center",
+            "title" : "Featured Topics"
+          },
+          "componentName" : "forceTopic:featuredTopics",
+          "id" : "859cd809-fafc-4d8f-92d9-c9be5791fe80",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "12f75dfe-7d54-4fdf-a848-6182300b54a0",
+        "regionLabel" : "Useful Links",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "",
+            "defaultSortOrderHomeFeed" : "Relevance",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "feedDesign" : "DEFAULT",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "Record"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "5b4c63dd-f6fc-42fb-856b-ec3277331401",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ec2a6dfa-f2cf-410e-9b4c-78070261e112",
+        "regionLabel" : "Upcoming Events",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p><br></p><p><span style=\"font-size: 14px;\">The Bright Spot™ is a Brightcove Community (the “Community”) connecting Brightcove customers, partners, and video streaming professionals and video marketers. Please take a moment to</span><a href=\"https://brightcove--sitepreview.na171.force.com/thebrightspot/s/community-guidelines?\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px; background-color: rgb(255, 255, 255);\"> </a><a href=\"https://community.brightcove.com/s/community-guidelines\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px; color: rgb(0, 71, 178); background-color: rgb(255, 255, 255);\"><u>review our Community Guidelines</u></a><a href=\"https://brightcove--sitepreview.na171.force.com/thebrightspot/s/community-guidelines?\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px; background-color: rgb(255, 255, 255);\">.</a></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "5f9dc603-c098-4c50-acc9-b31cf735b44c",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "7e7d36a9-a468-4bb2-9689-459f97f09e22",
+        "regionLabel" : "Guidelines",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9c778425-ae41-4b5d-86e3-c53ee161ba5a",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "e0e34fd2-8e16-4b5d-8681-a304d6ada875",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "The Bright Spot: A Brightcove Community"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ebf6b378-3013-47f6-9a8f-ca5068e4443b",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "73c8a30a-b599-4e51-bf96-8bc6970938ca",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

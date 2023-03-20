@@ -1,0 +1,2689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- D&amp;B Connect --></label>
+        <name>DNB_Connect_Classics</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- DocuSign Apps Launcher --></label>
+        <name>DocuSignForSalesforceCore</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Email to Case Premium --></label>
+        <name>Email_to_Case_Premium</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Gong.io --></label>
+        <name>Gong_Interaction</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Gong.io --></label>
+        <name>Gong_Interaction_Classic</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Loopio --></label>
+        <name>Loopio</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- ZoomInfo --></label>
+        <name>ZoomInfo</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Advanced Approvals --></label>
+        <name>AdvancedApprovals</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Gainsight --></label>
+        <name>JBara</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Salesforce CPQ --></label>
+        <name>QuoteQuickly</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Distribution Engine --></label>
+        <name>Distribution_Engine</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- WorkIt! --></label>
+        <name>WorkIt</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- D&amp;B Connect --></label>
+        <name>DB_Connect</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- D&amp;B Connect --></label>
+        <name>DNB_Connect_LTNG</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Email to Case Premium --></label>
+        <name>Email_to_Case_Premium_LEX</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Lead Generation --></label>
+        <name>Lead_Generation</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Relationship Management --></label>
+        <name>Relationship_Management</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Sales Leadership --></label>
+        <name>Sales_Leadership</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Sales Operations --></label>
+        <name>Sales_Operations</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- Account default CC list --></label>
+        <name>Account_default_CC_list</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Already have an account --></label>
+        <name>Already_have_an_account</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attachment name --></label>
+        <name>Attachment_name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AutoResponseNewSupport --></label>
+        <name>Auto_Response_New_Support</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BatchJobMonitors --></label>
+        <name>BatchJobMonitors</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BrightSpotProfileName --></label>
+        <name>BrightSpotProfileName</name>
+    </customLabels>
+    <customLabels>
+        <label>折返し電話リクエスト</label>
+        <name>Call_me</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CommunityOwner --></label>
+        <name>CommunityOwner</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CommunitySelfRegAccountName --></label>
+        <name>CommunitySelfRegAccountName</name>
+    </customLabels>
+    <customLabels>
+        <label>お客様からのご連絡待ち</label>
+        <name>Community_Case_Status_Awaiting_your_response</name>
+    </customLabels>
+    <customLabels>
+        <label>解決済</label>
+        <name>Community_Case_Status_Closed</name>
+    </customLabels>
+    <customLabels>
+        <label>解決済／お客様ご連絡待ち</label>
+        <name>Community_Case_Status_Closed_Awaiting</name>
+    </customLabels>
+    <customLabels>
+        <label>サポート対応中</label>
+        <name>Community_Case_Status_In_Progress</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Community Case Status: New --></label>
+        <name>Community_Case_Status_New</name>
+    </customLabels>
+    <customLabels>
+        <label>解決済み</label>
+        <name>Community_Case_Status_Resolved</name>
+    </customLabels>
+    <customLabels>
+        <label>お客様</label>
+        <name>Community_PwdReset_Hi</name>
+    </customLabels>
+    <customLabels>
+        <label>Brightcove Community (サポートポータル) のパスワードがリセットされました。下記のページからパスワードの再設定を行って下さい。</label>
+        <name>Community_PwdReset_L1</name>
+    </customLabels>
+    <customLabels>
+        <label>Brightcove サポートポータル: パスワード再設定</label>
+        <name>Community_PwdReset_Subject</name>
+    </customLabels>
+    <customLabels>
+        <label>ブライトコーブサポートチーム</label>
+        <name>Community_WelcomeMsg_BC_Support</name>
+    </customLabels>
+    <customLabels>
+        <label>Brightcove サポートポータルへようこそ。サポートポータルでは、Brightcove サポートへのお問い合わせ、お問い合わせの状況確認、過去のお問い合わせの閲覧などを行うことができます。下記のボタンをクリックしてパスワードを設定していただくことで、サポートポータルをご使用開始できます(Video Cloud スタジオとは別システムとなりますので、ご注意下さい)。</label>
+        <name>Community_WelcomeMsg_L1</name>
+    </customLabels>
+    <customLabels>
+        <label>サポートポータルのパスワードを設定する</label>
+        <name>Community_WelcomeMsg_L2</name>
+    </customLabels>
+    <customLabels>
+        <label>Brightcove サポートポータルのご案内</label>
+        <name>Community_WelcomeMsg_Subject</name>
+    </customLabels>
+    <customLabels>
+        <label>------</label>
+        <name>Community_WelcomeMsg_THX</name>
+    </customLabels>
+    <customLabels>
+        <label>添付ファイルを削除する</label>
+        <name>Delete_attachment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Enter additional emails, separated by a comma --></label>
+        <name>Enter_additional_emails_separated_by_a_comma</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- First Name --></label>
+        <name>First_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- If like to add emails CC --></label>
+        <name>If_like_to_add_emails_CC</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- If like to modify CC --></label>
+        <name>If_like_to_modify_CC</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- InfoProvided2Days-EN --></label>
+        <name>InfoProvided2Days_EN</name>
+    </customLabels>
+    <customLabels>
+        <label>チャットリクエスト</label>
+        <name>Just_chat</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LA_Chat_CloseConfirmation_ChatStateBody_04I1O000000CaRq_1284110 --></label>
+        <name>LA_Chat_CloseConfirmation_ChatStateBody_04I1O000000CaRq_1284110</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LA_Chat_CloseConfirmation_ChatStateBody_04I1O000000CaRq_5087228 --></label>
+        <name>LA_Chat_CloseConfirmation_ChatStateBody_04I1O000000CaRq_5087228</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LA_Chat_CloseConfirmation_ChatStateBody_04I4C0000008OMl_2798789 --></label>
+        <name>LA_Chat_CloseConfirmation_ChatStateBody_04I4C0000008OMl_2798789</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LA_Chat_CloseConfirmation_ChatStateBody_04I6f000000XZBA_6143844 --></label>
+        <name>LA_Chat_CloseConfirmation_ChatStateBody_04I6f000000XZBA_6143844</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LA_Chat_ExtendedHeader_ChatStateHeaderGreeting_04I540000004CIe_8383112 --></label>
+        <name>LA_Chat_ExtendedHeader_ChatStateHeaderGreeting_04I540000004CIe_8383112</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LA_Waiting_WithQueuePos_WaitingQueuePosMaxMessageSecondL_04I540000004CIe_7306616 --></label>
+        <name>LA_Waiting_WithQueuePos_WaitingQueuePosMaxMessageSecondL_04I540000004CIe_7306616</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last Name --></label>
+        <name>Last_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>チャットサポートは英語のみでのご提供となります。</label>
+        <name>Prechat_disclaimer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Priority --></label>
+        <name>Priority</name>
+    </customLabels>
+    <customLabels>
+        <label>更新</label>
+        <name>Refresh</name>
+    </customLabels>
+    <customLabels>
+        <label>閉鎖をリクエストする</label>
+        <name>Request_closure</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Share button label --></label>
+        <name>SBQQ__Share</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search --></label>
+        <name>Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search by Account Name --></label>
+        <name>Search_by_Account_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>検索ワードを入力してください</label>
+        <name>Search_for_cases</name>
+    </customLabels>
+    <customLabels>
+        <label>該当のキーワードを含むサポートケースはヒットしませんでした</label>
+        <name>Search_something_else</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SuccessPageURL --></label>
+        <name>SuccessPageURL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TBS_Privacy_Policy --></label>
+        <name>TBS_Privacy_Policy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TBS_Terms_and_Conditions --></label>
+        <name>TBS_Terms_and_Conditions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Test Label --></label>
+        <name>Test_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This is your default CC --></label>
+        <name>This_is_your_default_CC</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Update CC recipients --></label>
+        <name>Update_CC_recipients</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Update additional CC --></label>
+        <name>Update_additional_CC</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Update default CC list --></label>
+        <name>Update_default_CC_list</name>
+    </customLabels>
+    <customLabels>
+        <label>優先度の更新</label>
+        <name>Update_priority</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Uploaded by --></label>
+        <name>Uploaded_by</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- View attachment --></label>
+        <name>View_attachment</name>
+    </customLabels>
+    <customLabels>
+        <label>電話をリクエストしますか？</label>
+        <name>Would_you_like_call</name>
+    </customLabels>
+    <customLabels>
+        <label>サポート品質向上のため、今回のチャットサポートを評価いただけますでしょうか。</label>
+        <name>csat_part_1</name>
+    </customLabels>
+    <customLabels>
+        <label>今回のチャットサポートを 1～5 で評価いただけますでしょうか。</label>
+        <name>csat_part_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- csat part 2 --></label>
+        <name>csat_part_2_v2</name>
+    </customLabels>
+    <customLabels>
+        <label>5 は とても満足</label>
+        <name>csat_part_3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- csat part 3 --></label>
+        <name>csat_part_3_v2</name>
+    </customLabels>
+    <customLabels>
+        <label>、</label>
+        <name>csat_part_4</name>
+    </customLabels>
+    <customLabels>
+        <label>1 はとても不満 です</label>
+        <name>csat_part_5</name>
+    </customLabels>
+    <customLabels>
+        <label>。</label>
+        <name>csat_part_6</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Share --></label>
+        <name>dfsle__Share</name>
+    </customLabels>
+    <customPageWebLinks>
+        <label><!-- DocuSign Setup --></label>
+        <name>Setup</name>
+    </customPageWebLinks>
+    <customPageWebLinks>
+        <label><!-- SetupLink --></label>
+        <name>SetupLink</name>
+    </customPageWebLinks>
+    <customPageWebLinks>
+        <label><!-- ConfigurationPanelLink --></label>
+        <name>ConfigurationPanelLink</name>
+    </customPageWebLinks>
+    <customPageWebLinks>
+        <label><!-- WorkIt! Setup --></label>
+        <name>WorkIt_Setup</name>
+    </customPageWebLinks>
+    <customPageWebLinks>
+        <label><!-- Load Setup Data --></label>
+        <name>LoadSetupData</name>
+    </customPageWebLinks>
+    <customPageWebLinks>
+        <label><!-- Configure Salesforce CPQ --></label>
+        <name>ConfigureQuoteQuickly</name>
+    </customPageWebLinks>
+    <customPageWebLinks>
+        <label><!-- Configure Salesforce CPQ Advanced Approvals --></label>
+        <name>ConfigureSBAA</name>
+    </customPageWebLinks>
+    <customPageWebLinks>
+        <label><!-- Email to Case Premium Setup Wizard --></label>
+        <name>Email_to_Case_Premium_Setup_Wizard</name>
+    </customPageWebLinks>
+    <customTabs>
+        <label><!-- 6sense Admin --></label>
+        <name>Admin</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- DocuSign Setup --></label>
+        <name>Setup</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- 6sense Dashboards --></label>
+        <name>X6sense_Sales_Dashboards</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- ZoomInfo (VF) --></label>
+        <name>ZoomInfo</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- ZoomInfo --></label>
+        <name>ZoomInfo_LWC</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Distribution Console --></label>
+        <name>Console</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Distribution Analytics --></label>
+        <name>Distribution_Analytics</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Distribution Classifier --></label>
+        <name>Distribution_Classifier</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Distribution Tags --></label>
+        <name>Distribution_Tags</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Distribution Logs --></label>
+        <name>Logs</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Distribution Sync --></label>
+        <name>Manage_Holidays</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Distribution Availability --></label>
+        <name>Out_of_office</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Distribution Settings --></label>
+        <name>Settings</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Adoption Explorer --></label>
+        <name>AE</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Administration --></label>
+        <name>Administration</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Journey Orchestrator --></label>
+        <name>Alerts</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Engagement --></label>
+        <name>AllAdoption</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Transactions --></label>
+        <name>All_Transactions</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Churn --></label>
+        <name>Churn</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Cockpit --></label>
+        <name>Cockpit</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- D&amp;B Package Admin --></label>
+        <name>Connect_Admin_Classic</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- D&amp;B Package Admin --></label>
+        <name>Connect_Admin_LTNG</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Customer Success 360 --></label>
+        <name>CustomerSuccess360</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Customers --></label>
+        <name>Customers</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- D&amp;B Project Setup --></label>
+        <name>DNB_Project_Setup</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- D&amp;B Project Setup --></label>
+        <name>D_B_Connect_Setup</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Duplicates --></label>
+        <name>Duplicates_Classic</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Duplicates --></label>
+        <name>Duplicates_LTNG</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Marketing Cloud --></label>
+        <name>ExactTargetPhoenix</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- CX Center --></label>
+        <name>ExperienceCenter</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Family Tree --></label>
+        <name>Family_Tree_Classic</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Family Tree --></label>
+        <name>Family_Tree_LTNG</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Gainsight --></label>
+        <name>Gainsight</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Gainsight Mobile --></label>
+        <name>GainsightMobile</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Gainsight NXT --></label>
+        <name>GainsightNXT</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Vault --></label>
+        <name>Insights</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- NPS® --></label>
+        <name>NPS</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- NPS® 2.0 --></label>
+        <name>NPSV2</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Renewal Center --></label>
+        <name>Renewal_Center</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Send Analytics --></label>
+        <name>Send_Analytics</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Survey --></label>
+        <name>Survey</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Survey 2.0 --></label>
+        <name>SurveyV2</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Timeline --></label>
+        <name>Timeline</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Usage Tracker --></label>
+        <name>UsageTracking</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Timeline --></label>
+        <name>Comment_List</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Email to Case Premium Setup --></label>
+        <name>Email_to_Case_Premium_Setup</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Email to Case Premium Setup Wizard --></label>
+        <name>Setup_Wizard</name>
+    </customTabs>
+    <flowDefinitions>
+        <flows />
+        <fullName>Account_Before_Save_flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Live_Event_Coverage_Timing_Add_LE_timing_to_Finance_sheet_V2</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>tmpLECStandard</name>
+            </choices>
+            <choices>
+                <name>tmpLEChannelMonitoring</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Coverage_Information_Section3</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Coverage_Information_Section3_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Coverage_Information_Section3_Column2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxValues</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_formBGSProjectManager</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_formCoverage_Information</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_formCoverage_Information_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_formCoverage_Information_Column2</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_formDate_Time_Information</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_formDate_Time_Information_Column1</name>
+                </fields>
+                <fields>
+                    <name>el_29</name>
+                </fields>
+                <fields>
+                    <name>el_30</name>
+                </fields>
+                <fields>
+                    <name>el_31</name>
+                </fields>
+                <fields>
+                    <name>el_32</name>
+                </fields>
+                <fields>
+                    <name>el_33</name>
+                </fields>
+                <fields>
+                    <name>el_34</name>
+                </fields>
+                <fields>
+                    <name>el_35</name>
+                </fields>
+                <fields>
+                    <name>form247MonitoringTitle2</name>
+                </fields>
+                <fields>
+                    <name>tmpFormProduct</name>
+                </fields>
+                <name>Copy_1_of_Coverage_Information</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Account_Information</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Account_Information_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Account_Information_Column2</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Live_Event_Coverage_Section3</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Live_Event_Coverage_Section3_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Live_Event_Coverage_Section3_Column2</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Personel_Information</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Personel_Information_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_formCommunicationURL</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxValues</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_formEventPointOfContact</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_formTypeOfLE</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_tmpAccountName</name>
+                </fields>
+                <fields>
+                    <name>el_19</name>
+                </fields>
+                <fields>
+                    <name>el_20</name>
+                </fields>
+                <fields>
+                    <name>el_21</name>
+                </fields>
+                <fields>
+                    <name>el_22</name>
+                </fields>
+                <fields>
+                    <name>el_23</name>
+                </fields>
+                <fields>
+                    <name>el_24</name>
+                </fields>
+                <fields>
+                    <name>el_25</name>
+                </fields>
+                <fields>
+                    <name>el_26</name>
+                </fields>
+                <fields>
+                    <name>el_27</name>
+                </fields>
+                <fields>
+                    <name>el_28</name>
+                </fields>
+                <fields>
+                    <name>formTitleMonitoring</name>
+                </fields>
+                <name>Copy_1_of_Live_Event_Coverage</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Coverage_Information_Section4</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Coverage_Information_Section4_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Coverage_Information_Section4_Column2</name>
+                </fields>
+                <fields>
+                    <name>el_12</name>
+                </fields>
+                <fields>
+                    <name>el_13</name>
+                </fields>
+                <fields>
+                    <name>el_14</name>
+                </fields>
+                <fields>
+                    <name>el_15</name>
+                </fields>
+                <fields>
+                    <name>el_16</name>
+                </fields>
+                <fields>
+                    <name>el_17</name>
+                </fields>
+                <fields>
+                    <name>el_18</name>
+                </fields>
+                <fields>
+                    <name>form2AccountInformation</name>
+                </fields>
+                <fields>
+                    <name>form2AccountInformationSection2</name>
+                </fields>
+                <fields>
+                    <name>form2Account_Information</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>form2Account_Information_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>form2Account_Information_Column2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxValues</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value />
+                    </inputParameters>
+                    <name>formBGSProjectManager</name>
+                </fields>
+                <fields>
+                    <name>formCoverage_Information</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>formCoverage_Information_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>formCoverage_Information_Column2</name>
+                </fields>
+                <fields>
+                    <name>formDate_Time_Information</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>formDate_Time_Information_Column1</name>
+                </fields>
+                <name>Coverage_Information</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Account_Information</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Account_Information_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Account_Information_Column2</name>
+                </fields>
+                <fields>
+                    <name>Live_Event_Coverage_Section3</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Live_Event_Coverage_Section3_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Live_Event_Coverage_Section3_Column2</name>
+                </fields>
+                <fields>
+                    <name>Personel_Information</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Personel_Information_Column1</name>
+                </fields>
+                <fields>
+                    <name>TitleAccountInfomation</name>
+                </fields>
+                <fields>
+                    <name>el_0</name>
+                </fields>
+                <fields>
+                    <name>el_1</name>
+                </fields>
+                <fields>
+                    <name>el_10</name>
+                </fields>
+                <fields>
+                    <name>el_11</name>
+                </fields>
+                <fields>
+                    <name>el_2</name>
+                </fields>
+                <fields>
+                    <name>el_3</name>
+                </fields>
+                <fields>
+                    <name>el_4</name>
+                </fields>
+                <fields>
+                    <name>el_5</name>
+                </fields>
+                <fields>
+                    <name>el_6</name>
+                </fields>
+                <fields>
+                    <name>el_7</name>
+                </fields>
+                <fields>
+                    <name>el_8</name>
+                </fields>
+                <fields>
+                    <name>el_9</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <name>formCommunicationURL</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxValues</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>formEventPointOfContact</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <name>formLiveEventURL</name>
+                </fields>
+                <fields>
+                    <name>formTypeOfLE</name>
+                </fields>
+                <fields>
+                    <name>tmpAccountLEHavl</name>
+                </fields>
+                <fields>
+                    <name>tmpAccountName</name>
+                </fields>
+                <fields>
+                    <name>tmpformProduct1</name>
+                </fields>
+                <name>Live_Event_Coverage</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>formErrorHoursDisplayTxt</name>
+                </fields>
+                <name>formNoHoursAvailable</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>formChooseRecordType</name>
+                </fields>
+                <fields>
+                    <name>formType_of_Live_Event_request</name>
+                </fields>
+                <fields>
+                    <name>tmpToREmove</name>
+                </fields>
+                <name>mainFormChooseRecordType</name>
+            </screens>
+        </flows>
+        <fullName>Account_New_Live_Event_Coverate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>tmpLatestComment</name>
+            </textTemplates>
+        </flows>
+        <fullName>CaseComment_UpdateLatestComment</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_AlertMultipleEscalations</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_CSATSurveyEmailAlert</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>tmpClosedFirstResponse</name>
+            </choices>
+            <choices>
+                <name>tmpClosedNoResponse</name>
+            </choices>
+            <choices>
+                <name>tmpClosedSpam</name>
+            </choices>
+            <choices>
+                <name>tmpClosedStatus</name>
+            </choices>
+            <choices>
+                <name>tmpClosedUnresolved</name>
+            </choices>
+            <choices>
+                <name>tmpClosedasDuplicate</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Case_Information</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Case_Information_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Case_Information_Column2</name>
+                </fields>
+                <fields>
+                    <name>el_0</name>
+                </fields>
+                <fields>
+                    <name>el_1</name>
+                </fields>
+                <fields>
+                    <name>el_2</name>
+                </fields>
+                <fields>
+                    <name>el_3</name>
+                </fields>
+                <fields>
+                    <name>el_4</name>
+                </fields>
+                <fields>
+                    <name>el_5</name>
+                </fields>
+                <fields>
+                    <name>el_6</name>
+                </fields>
+                <fields>
+                    <name>el_7</name>
+                </fields>
+                <fields>
+                    <name>formCase_Triage_Tier</name>
+                </fields>
+                <fields>
+                    <name>formClose_Case_Summary4</name>
+                </fields>
+                <fields>
+                    <name>formLanguage</name>
+                </fields>
+                <fields>
+                    <name>formOther_Case_sub_reason</name>
+                </fields>
+                <fields>
+                    <name>formStatus2</name>
+                </fields>
+                <fields>
+                    <name>header_Close_Case_Screen1</name>
+                </fields>
+                <fields>
+                    <name>tmpGlossaryLink</name>
+                </fields>
+                <name>Close_Case</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_formStatus2</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_tmpGlossaryLink</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Case_Information</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_2_of_Case_Information_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_2_of_Case_Information_Column2</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_formCase_Triage_Tier</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_formLanguage</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_formOther_Case_sub_reason</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_header_Close_Case_Screen1</name>
+                </fields>
+                <fields>
+                    <name>el_10</name>
+                </fields>
+                <fields>
+                    <name>el_11</name>
+                </fields>
+                <fields>
+                    <name>el_12</name>
+                </fields>
+                <fields>
+                    <name>el_8</name>
+                </fields>
+                <fields>
+                    <name>el_9</name>
+                </fields>
+                <fields>
+                    <name>form2Close_case_summary</name>
+                </fields>
+                <name>Copy_1_of_Close_Case</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_formErrorPage1</name>
+                </fields>
+                <name>Copy_1_of_Field_Required</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>formErrorPage1</name>
+                </fields>
+                <name>formErrorField_Required</name>
+            </screens>
+        </flows>
+        <fullName>Case_CloseFormV3</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_Coaching_Notes_Coaching_Completed</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_Coaching_Notes_Needs_Manager_Review</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_DealDesk_CreateAssignToQueue</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_EscalationFollowUpCompleted</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_EscalationUpdateParentCase</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_MarkFollow_up_Completed</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_NewCSEscalationAlert</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>tmpEmailBody</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpEmailBodyRich</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpEmailSubject</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpInfoProvided_EN_HTML</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpInfoProvided_EN_TXT</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpInfoProvided_JP_HTML</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpInfoProvided_JP_TXT</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpInfoProvided_KO_HTML</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpInfoProvided_KO_TXT</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpNeedMoreInfo_EN_HTML</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpNeedMoreInfo_EN_TXT</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpNeedMoreInfo_JP_HTML</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpNeedMoreInfo_JP_TXT</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpNeedMoreInfo_KO_HTML</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpNeedMoreInfo_KO_TXT</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpTextCommentTemplate</name>
+            </textTemplates>
+        </flows>
+        <fullName>Case_Notice1Notice2Update</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_P1_Flow_priority_update</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_Portal_moves_to_NewUnassigned</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_Priority_change_upgraded</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_UpdateSLADueDateTime</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_WebChatUpdateFirstResponse</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>ChatTrascript_AddCaseComment</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>CoachingNotes_NewCoachingNotesInitFields</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>CoachingNotes_UpdateCompletedDate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>Description_Text</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Email_Body</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Email_Sender</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Email_Subject</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Email_recipient</name>
+            </textTemplates>
+        </flows>
+        <fullName>Contact_BC_Portal_New_User</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Gong_for_Salesforce_Enrich_Contacts_and_Leads</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Gong_for_Salesforce_Update_Participant_Contact_Role</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Gong_for_Salesforce_Update_main_competitors</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>LiveEventCoverageCheckList_updateParentCaseReportSent</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>tmpWarningEmailAlert</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpWarningEmailAlertSubject</name>
+            </textTemplates>
+        </flows>
+        <fullName>LiveEventCoverage_CreateNotEnoughHoursAlert</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>LiveEventTestCheckList_UpdateLiveEventChecklist</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Live_Event_Coverage_Create_Live_Event_Case</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Live_Event_Coverage_UpdateOwnerManager</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Live_Event_CreateSlackAlert</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_BackupTriggeredSendWorkflow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_BackupWorkflow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_FailBackupWorkflow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_NewSupportRequest</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_PopulateBackupWorkflow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_PopulateTrigSendBackupWorkflow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_ScheduledSend</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_SendClassFrom</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_SendComplete</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_SendFailed</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_SendStatusDateTime</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_TrackingAsOfIER</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>MCC_TrackingAsOfSD</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>User_Assign_BrightSpot_Permission_Set</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>tmpNotEnoughHoursEmailBody</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpSubject</name>
+            </textTemplates>
+        </flows>
+        <fullName>updateLiveHoursAvailable</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Account_Brightcove_Community_SRU_name_change</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Account_Platinum_TS_Rep_Assigned</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Account_Platinum_TS_manager_assigned</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Account_Platinum_alert_changed</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>CaseComment_NewPortalCommnet</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>closedStatus_Closed</name>
+            </choices>
+            <choices>
+                <name>closedStatus_Closed_First_Response</name>
+            </choices>
+            <choices>
+                <name>closedStatus_Closed_Unresolved</name>
+            </choices>
+            <choices>
+                <name>closedStatus_ClosedasDuplicate</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Close_Case_Details_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Close_Case_Details_Section1_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Close_Case_Details_Section1_Column2</name>
+                </fields>
+                <fields>
+                    <name>Close_Case_Details_Section2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Close_Case_Details_Section2_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Close_Case_Details_Section2_Column2</name>
+                </fields>
+                <fields>
+                    <name>Close_Case_Details_Section3</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Close_Case_Details_Section3_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Close_Case_Details_Section3_Column2</name>
+                </fields>
+                <fields>
+                    <name>Close_Case_Status</name>
+                </fields>
+                <fields>
+                    <name>el_0</name>
+                </fields>
+                <fields>
+                    <name>el_1</name>
+                </fields>
+                <fields>
+                    <name>el_2</name>
+                </fields>
+                <fields>
+                    <name>el_3</name>
+                </fields>
+                <fields>
+                    <name>el_4</name>
+                </fields>
+                <fields>
+                    <name>el_5</name>
+                </fields>
+                <fields>
+                    <name>el_6</name>
+                </fields>
+                <fields>
+                    <name>el_7</name>
+                </fields>
+                <fields>
+                    <name>el_8</name>
+                </fields>
+                <fields>
+                    <name>el_9</name>
+                </fields>
+                <fields>
+                    <name>formCommunication_Channel_external</name>
+                </fields>
+                <fields>
+                    <name>formDocumentation_Used</name>
+                </fields>
+                <fields>
+                    <name>recordIdTextDisplay</name>
+                </fields>
+                <fields>
+                    <name>tmpCaseRecordType</name>
+                </fields>
+                <fields>
+                    <name>tmpGlossaryandRootCause</name>
+                </fields>
+                <fields>
+                    <name>tmpPriority</name>
+                </fields>
+                <fields>
+                    <name>tmpSubject</name>
+                </fields>
+                <fields>
+                    <name>tmpSupportPackage</name>
+                </fields>
+                <name>Close_Case_Details</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Close_Case_Details_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Close_Case_Details_Section1_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Close_Case_Details_Section1_Column2</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Close_Case_Details_Section2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Close_Case_Details_Section2_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Close_Case_Details_Section2_Column2</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Close_Case_Details_Section3</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Close_Case_Details_Section3_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>Copy_1_of_Close_Case_Details_Section3_Column2</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Close_Case_Status</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_recordIdTextDisplay</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_tmpCaseRecordType</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_tmpGlossaryandRootCause</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_tmpPriority</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_tmpSubject</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_tmpSupportPackage</name>
+                </fields>
+                <fields>
+                    <name>el_10</name>
+                </fields>
+                <fields>
+                    <name>el_11</name>
+                </fields>
+                <fields>
+                    <name>el_12</name>
+                </fields>
+                <fields>
+                    <name>el_13</name>
+                </fields>
+                <fields>
+                    <name>el_14</name>
+                </fields>
+                <fields>
+                    <name>el_15</name>
+                </fields>
+                <fields>
+                    <name>el_16</name>
+                </fields>
+                <fields>
+                    <name>el_17</name>
+                </fields>
+                <fields>
+                    <name>el_18</name>
+                </fields>
+                <name>Copy_1_of_Close_Case_Details</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>formCaseSummaryMissing</name>
+                </fields>
+                <fields>
+                    <name>tmpAdditionalInformation</name>
+                </fields>
+                <fields>
+                    <name>tmpBCCaseReasonMissing</name>
+                </fields>
+                <fields>
+                    <name>tmpCaseLanguageMissing</name>
+                </fields>
+                <fields>
+                    <name>tmpCaseSubReasonMissing</name>
+                </fields>
+                <fields>
+                    <name>tmpCaseTriageMissing</name>
+                </fields>
+                <fields>
+                    <name>tmpFooter</name>
+                </fields>
+                <fields>
+                    <name>tmpHeaderMissingInfo</name>
+                </fields>
+                <fields>
+                    <name>tmpOtherCaseSubReason</name>
+                </fields>
+                <fields>
+                    <name>tmpRootCaseMissing</name>
+                </fields>
+                <name>formMissingInformationTitle</name>
+            </screens>
+        </flows>
+        <fullName>Case_Close_Case_Form_2</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>errorMessage</name>
+                </fields>
+                <name>Unable_to_access_the_record</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>el_0</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value />
+                    </inputParameters>
+                    <name>formAcceptedByUser</name>
+                </fields>
+                <fields>
+                    <name>formCaseHandoffInformation</name>
+                </fields>
+                <fields>
+                    <name>formCase_Hanoff_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>formCase_Hanoff_Section1_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value />
+                    </inputParameters>
+                    <name>formCase_Hanoff_Section1_Column2</name>
+                </fields>
+                <fields>
+                    <name>formFROMregion</name>
+                </fields>
+                <fields>
+                    <name>tmpHandoff_Notes</name>
+                </fields>
+                <name>formCase_Hanoff</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>formMonitorMyCase</name>
+                </fields>
+                <name>formErrorThe_case_is_monitored</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>formErrorOwner</name>
+                </fields>
+                <name>formNeedsOwner</name>
+            </screens>
+        </flows>
+        <fullName>Case_CreateHandoff</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_DMCA_Notification</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_NOCCase_autoresponse</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_NeedToCloseFlagByPortalUser</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_PlatinumAndPlusAlert</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_PortalAutoresponses</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_PortalUpdateEntitlementIds</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_Potentially_Urgent_CS_Case_Message</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_Priority_change_downgraded</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_ScheduledTicketCreate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_Support_Package_Create</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_UpdateEntitlementId</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_UpdateNeedToCloseFlagStatus</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_Weekend_New_Case_Categorise</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>LinkCaseToLE_LiveEventCovegateHasCaseUpdate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>LiveEventCheckList_CreateReport</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>LiveEventCoverage_UpdateAccountHoursAvailable</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>LiveEventCoverage_UpdateDateTimeClosed</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Live_Event_Coverage_24_hour_before_event_test_starts_alert</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Live_Event_Coverage_UpdateContactDetails</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Live_Event_Coverage_Updates_on_LEs</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>TSSurvey_CSATUpdateCaseSurveyResponse</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>TSSurvey_CSAT_Low_Score_alert</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>TSSurvey_Perfect_10_score_email_alert</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>CaseEscalationT2</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>CaseFirstResponse</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>CaseHandoff_NewRecordToSlack</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_AMCaseToQueue</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_CaseSummaryFieldsUpdate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_ClearNotice1_Notice2Fields</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_Create_Title_c</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_LastEmailReceivedDateTimeUpdate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_LastEmailSentDateTimeUpdate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_MonitoMyCaseSlackTSAlert</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_MonitorMyCaseNOCCases</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_MonitorMyCaseSetFalseAfter72Hours</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_MonitorMyCaseStamp</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_Pending3rdPartyToPendingInternal3Days</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_PendingCustomerToPendingInternal7Days</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_PendingFixToPendingFixReview8Days</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_SupportPackageAccountupdate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_customer_has_replied</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Case_updateTypeOfEscalation</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Contract_Before_Insert_Default_Values</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Lead_Assignment_Notification</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Opportunity_Insert_Default_Renewal_Values</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>ProcessAsyncDistributionEvent</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>case_closed_flow_survey_id_04k8F00000000ftQAA</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>Closed_Won_Subject</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Email_Body</name>
+            </textTemplates>
+        </flows>
+        <fullName>Opportunity</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Send_Scheduled_Comment</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- Snapins_Case_PrechatQuickAction_08h8F000000CaXy_1677661155933 --></label>
+        <name>Snapins_Case_PrechatQuickAction_08h8F000000CaXy_1677661155933</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Contact_PrechatQuickAction_08h8F000000CaXy_1677661155669 --></label>
+        <name>Snapins_Contact_PrechatQuickAction_08h8F000000CaXy_1677661155669</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Case --></label>
+        <name>NewCustomerSuppCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Case_OfflineCaseQuickAction_08h8F000000CaXy_1676465415785 --></label>
+        <name>Snapins_Case_OfflineCaseQuickAction_08h8F000000CaXy_1676465415785</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Case_OfflineCaseQuickAction_08h8F000000CaYD_1676404092920 --></label>
+        <name>Snapins_Case_OfflineCaseQuickAction_08h8F000000CaYD_1676404092920</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Case_PrechatQuickAction_08h8F000000CaWW_1676493260852 --></label>
+        <name>Snapins_Case_PrechatQuickAction_08h8F000000CaWW_1676493260852</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Case_PrechatQuickAction_08h8F000000CaYD_1676404095465 --></label>
+        <name>Snapins_Case_PrechatQuickAction_08h8F000000CaYD_1676404095465</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Contact_PrechatQuickAction_08h8F000000CaWW_1676493259741 --></label>
+        <name>Snapins_Contact_PrechatQuickAction_08h8F000000CaWW_1676493259741</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Contact_PrechatQuickAction_08h8F000000CaYD_1676404095414 --></label>
+        <name>Snapins_Contact_PrechatQuickAction_08h8F000000CaYD_1676404095414</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Guest Community Case --></label>
+        <name>GuestCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Community Case --></label>
+        <name>NewCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Case --></label>
+        <name>SoCreateCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- TSCommunityCreateCase --></label>
+        <name>TSCommunityCreateCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Account --></label>
+        <name>New_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Case_OfflineCaseQuickAction_08h7g000000Gmh0_1672228061727 --></label>
+        <name>Snapins_Case_OfflineCaseQuickAction_08h7g000000Gmh0_1672228061727</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Case_OfflineCaseQuickAction_08h7g000000Gmh5_1672321960233 --></label>
+        <name>Snapins_Case_OfflineCaseQuickAction_08h7g000000Gmh5_1672321960233</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Case_OfflineCaseQuickAction_08h8F000000CaWW_1672846760962 --></label>
+        <name>Snapins_Case_OfflineCaseQuickAction_08h8F000000CaWW_1672846760962</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Case_PrechatQuickAction_08h7g000000Gmh0_1672314025535 --></label>
+        <name>Snapins_Case_PrechatQuickAction_08h7g000000Gmh0_1672314025535</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Case_PrechatQuickAction_08h7g000000Gmh5_1672739953184 --></label>
+        <name>Snapins_Case_PrechatQuickAction_08h7g000000Gmh5_1672739953184</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Contact_PrechatQuickAction_08h7g000000Gmh0_1672314025447 --></label>
+        <name>Snapins_Contact_PrechatQuickAction_08h7g000000Gmh0_1672314025447</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Snapins_Contact_PrechatQuickAction_08h7g000000Gmh5_1672739953078 --></label>
+        <name>Snapins_Contact_PrechatQuickAction_08h7g000000Gmh5_1672739953078</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Follow Up --></label>
+        <name>Follow_Up</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <prompts>
+        <name>analyticsGuidance</name>
+        <promptVersions>
+            <name>DE Analytics guidance</name>
+        </promptVersions>
+    </prompts>
+    <reportTypes>
+        <description><!-- Opportunities with Accounts and Drift Conversation --></description>
+        <label><!-- Opportunities with Accounts and Drift Conversation --></label>
+        <name>Account_with_Opportunities_and_Drift_Conversations</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Drift Opportunity Conversations --></label>
+            <name>Drift Opportunity Conversations</name>
+        </sections>
+        <sections>
+            <label><!-- Drift Related Opportunities --></label>
+            <name>Drift Related Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with 6sense Account Product Score --></description>
+        <label><!-- Accounts with 6sense Account Product Score --></label>
+        <name>Accounts_with_6sense_Account_Product_Score</name>
+        <sections>
+            <label><!-- 6sense Predictive Intelligence - Accounts --></label>
+            <name>6sense Predictive Intelligence - Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Conversations and Trackers --></description>
+        <label><!-- Accounts with Conversations and Trackers --></label>
+        <name>Accounts_with_Conversations_and_Trackers</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Gong Conversations --></label>
+            <name>Gong Conversations</name>
+        </sections>
+        <sections>
+            <label><!-- Trackers --></label>
+            <name>Trackers</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Competitors Trackers and Opportunity Stages --></description>
+        <label><!-- Competitors Trackers and Opportunity Stages --></label>
+        <name>Competitors_Trackers_and_Opportunity_Stages</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts with 6sense Contact Product Score --></description>
+        <label><!-- Contacts with 6sense Contact Product Score --></label>
+        <name>Contacts_with_6sense_Contact_Product_Score</name>
+        <sections>
+            <label><!-- 6sense Predictive Intelligence - Contacts --></label>
+            <name>6sense Predictive Intelligence - Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads with 6sense Lead Product Score --></description>
+        <label><!-- Leads with 6sense Lead Product Score --></label>
+        <name>Leads_with_6sense_Lead_Product_Score</name>
+        <sections>
+            <label><!-- 6sense Predictive Intelligence - Leads --></label>
+            <name>6sense Predictive Intelligence - Leads</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Contacts and Drift Conversation --></description>
+        <label><!-- Opportunities with Contacts and Drift Conversation --></label>
+        <name>Opportunities_with_Contacts_with_Conversation</name>
+        <sections>
+            <label><!-- Contact Roles --></label>
+            <name>Contact Roles</name>
+        </sections>
+        <sections>
+            <label><!-- Drift Conversations --></label>
+            <name>Drift Conversations</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Gong Conversations and contacts --></description>
+        <label><!-- Opportunities with Gong Conversations and contacts --></label>
+        <name>Opportunities_with_Gong_Conversations_and_contacts</name>
+        <sections>
+            <label><!-- Conversations --></label>
+            <name>Conversations</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Participants --></label>
+            <name>Participants</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Topics appearing in Opportunities --></description>
+        <label><!-- Topics appearing in Opportunities --></label>
+        <name>Topics_appearing_in_Opportunities</name>
+        <sections>
+            <label><!-- Conversations --></label>
+            <name>Conversations</name>
+        </sections>
+        <sections>
+            <label><!-- Gong Conversations --></label>
+            <name>Gong Conversations</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Topics --></label>
+            <name>Topics</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Trackers appearing in Opportunities --></description>
+        <label><!-- Trackers appearing in Opportunities --></label>
+        <name>Trackers_appearing_in_Opportunities</name>
+        <sections>
+            <label><!-- Conversations --></label>
+            <name>Conversations</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Trackers --></label>
+            <name>Trackers</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Users with or without Email Sends --></description>
+        <label><!-- Users with or without Email Sends --></label>
+        <name>Users_with_or_without_Email_Sends</name>
+        <sections>
+            <label><!-- Email Sends (Owner) --></label>
+            <name>Email Sends (Owner)</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Quotes with Quote Documents --></description>
+        <label><!-- Opportunities with Quotes with Quote Documents --></label>
+        <name>Opportunities_with_Quotes_with_Quote_Documents</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Quotes with Quote Line Groups --></description>
+        <label><!-- Opportunities with Quotes with Quote Line Groups --></label>
+        <name>Opportunities_with_Quotes_with_Quote_Line_Groups</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Quotes with Quote Lines --></description>
+        <label><!-- Opportunities with Quotes with Quote Lines --></label>
+        <name>Opportunities_with_Quotes_with_Quote_Lines</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Quotes and Pricing Guidance Metrics --></description>
+        <label><!-- Quotes and Pricing Guidance Metrics --></label>
+        <name>Quotes_and_Pricing_Guidance_Metrics</name>
+        <sections>
+            <label><!-- Quote Line Pricing Guidance --></label>
+            <name>Quote Line Pricing Guidance</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Live Event Coverage with Live Event Coverage Timings --></description>
+        <label><!-- Accounts with Live Event Coverage with Live Event Coverage Timings --></label>
+        <name>Accounts_with_Live_Event_Coverage_with_Live_Event_Coverage_Timings</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Live Event Coverage --></label>
+            <name>Live Event Coverage</name>
+        </sections>
+        <sections>
+            <label><!-- Live Event Coverage Timings --></label>
+            <name>Live Event Coverage Timings</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cases with Time --></description>
+        <label><!-- Cases with Time --></label>
+        <name>Cases_with_Time</name>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Time Entries --></label>
+            <name>Time Entries</name>
+        </sections>
+        <sections>
+            <label><!-- Timings --></label>
+            <name>Timings</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- DE Rejected Assignments --></description>
+        <label><!-- DE Rejected Assignments --></label>
+        <name>DE_Rejected_Assignments</name>
+        <sections>
+            <label><!-- Distribution logs --></label>
+            <name>Distribution logs</name>
+        </sections>
+        <sections>
+            <label><!-- Distribution reject logs --></label>
+            <name>Distribution reject logs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Metadata - Entity &amp; Field Definitions --></description>
+        <label><!-- Metadata - Entity &amp; Field Definitions --></label>
+        <name>Metadata_Entity_Field_Definitions</name>
+        <sections>
+            <label><!-- Entity Definitions --></label>
+            <name>Entity Definitions</name>
+        </sections>
+        <sections>
+            <label><!-- Field Definitions --></label>
+            <name>Field Definitions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Contacts with Daily Engagements --></description>
+        <label><!-- Accounts with Contacts with Daily Engagements --></label>
+        <name>Accounts_with_Contacts_with_Daily_Engagements</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Contact Daily Metrics --></label>
+            <name>Contact Daily Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Call Script Monthly Engagement --></description>
+        <label><!-- Call Script Monthly Engagement --></label>
+        <name>Call_Script_Monthly_Engagement</name>
+        <sections>
+            <label><!-- Call Script Monthly Metrics --></label>
+            <name>Call Script Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Call Scripts --></label>
+            <name>Call Scripts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Call Script Engagement Report --></description>
+        <label><!-- Call Script Engagement Report --></label>
+        <name>Call_Template</name>
+        <sections>
+            <label><!-- Call Scripts --></label>
+            <name>Call Scripts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts and Cadence Trackers --></description>
+        <label><!-- Contacts and Cadence Trackers --></label>
+        <name>Contacts_and_Sales_Cadence_Trackers</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts with Daily Engagements --></description>
+        <label><!-- Contacts with Daily Engagements --></label>
+        <name>Contacts_with_Daily_Engagements</name>
+        <sections>
+            <label><!-- Contact Daily Metrics --></label>
+            <name>Contact Daily Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts with Monthly Engagements --></description>
+        <label><!-- Contacts with Monthly Engagements --></label>
+        <name>Contacts_with_Monthly_Engagements</name>
+        <sections>
+            <label><!-- Contact Monthly Metrics --></label>
+            <name>Contact Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Email Template Engagement Report --></description>
+        <label><!-- Email Template Engagement Report --></label>
+        <name>Email_Template</name>
+        <sections>
+            <label><!-- Email Templates --></label>
+            <name>Email Templates</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Email Template Monthly Engagement --></description>
+        <label><!-- Email Template Monthly Engagement --></label>
+        <name>Email_Template_Monthly_Engagement</name>
+        <sections>
+            <label><!-- Email Template Monthly Metrics --></label>
+            <name>Email Template Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Email Templates --></label>
+            <name>Email Templates</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads With or Without Cadence Trackers --></description>
+        <label><!-- Leads With or Without Cadence Trackers --></label>
+        <name>Leads_With_or_Without_Sales_Cadence_Trackers</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads and Cadence Trackers --></description>
+        <label><!-- Leads and Cadence Trackers --></label>
+        <name>Leads_and_Sales_Cadence_Trackers</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads with Daily Engagements --></description>
+        <label><!-- Leads with Daily Engagements --></label>
+        <name>Leads_with_Daily_Engagements</name>
+        <sections>
+            <label><!-- Lead Daily Metrics --></label>
+            <name>Lead Daily Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads with Monthly Engagements --></description>
+        <label><!-- Leads with Monthly Engagements --></label>
+        <name>Leads_with_Monthly_Engagements</name>
+        <sections>
+            <label><!-- Lead Monthly Metrics --></label>
+            <name>Lead Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cadences &amp; Steps with Monthly Metrics --></description>
+        <label><!-- Cadences &amp; Steps with Monthly Metrics --></label>
+        <name>Sales_Cadences_Steps_with_Monthly_Metrics</name>
+        <sections>
+            <label><!-- Cadence Step Monthly Metrics --></label>
+            <name>Cadence Step Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Cadence Steps --></label>
+            <name>Cadence Steps</name>
+        </sections>
+        <sections>
+            <label><!-- Cadences --></label>
+            <name>Cadences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Sales Cadences &amp; Steps --></description>
+        <label><!-- Sales Cadences &amp; Steps --></label>
+        <name>Sales_Cadences_amp_Steps</name>
+        <sections>
+            <label><!-- Sales Cadence Steps --></label>
+            <name>Sales Cadence Steps</name>
+        </sections>
+        <sections>
+            <label><!-- Sales Cadences --></label>
+            <name>Sales Cadences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cadences &amp; Trackers --></description>
+        <label><!-- Cadences &amp; Trackers --></label>
+        <name>Sales_Cadences_amp_Trackers</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Cadences --></label>
+            <name>Cadences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cadences and Trackers (Inner join) --></description>
+        <label><!-- Cadences and Trackers (Inner join) --></label>
+        <name>Sales_Cadences_and_Trackers_Inner_join</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Cadences --></label>
+            <name>Cadences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Users with Daily Metrics --></description>
+        <label><!-- Users with Daily Metrics --></label>
+        <name>Users_with_Daily_Metrics</name>
+        <sections>
+            <label><!-- User Daily Metrics --></label>
+            <name>User Daily Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Users with Monthly Engagements --></description>
+        <label><!-- Users with Monthly Engagements --></label>
+        <name>Users_with_Monthly_Engagements</name>
+        <sections>
+            <label><!-- User Monthly Metrics --></label>
+            <name>User Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Screen Flows --></description>
+        <label><!-- Screen Flows --></label>
+        <name>screen_flows_prebuilt_crt</name>
+        <sections>
+            <label><!-- Flow Interview Log Entries --></label>
+            <name>Flow Interview Log Entries</name>
+        </sections>
+        <sections>
+            <label><!-- Flow Interview Logs --></label>
+            <name>Flow Interview Logs</name>
+        </sections>
+    </reportTypes>
+</Translations>

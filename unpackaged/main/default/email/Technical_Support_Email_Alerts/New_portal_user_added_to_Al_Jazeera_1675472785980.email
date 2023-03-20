@@ -1,0 +1,8 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hello Team.<br />
+<br />
+Portal User:&nbsp;{{{Case.SuppliedEmail}}} has been added to the portal under the account Al Jazeera Network - Parent. Please notify Digital-support&nbsp;<a href="mailto:digital-support@aljazeera.net">digital-support@aljazeera.net</a>&nbsp;that this has taken place so that they can approve or deny of this user's addition to the portal.</body>
+</html>

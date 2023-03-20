@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Initially reported Issue
+Actions that have been taken so far
+Current Status of the Issue
+Next actions required 
+Explain if there is any specific reason why this needs a handoff   
+Contact details --></help>
+        <label><!-- Handoff Notes --></label>
+        <name>Handoff_Notes__c</name>
+    </CustomFieldTranslation>

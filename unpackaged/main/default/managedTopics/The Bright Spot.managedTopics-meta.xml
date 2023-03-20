@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>The Bright Spot.Content:Bright Spot</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Bright Spot</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>The Bright Spot.Content:Developer Discussions</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Developer Discussions</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>The Bright Spot.Content:General Discussions</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>General Discussions</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>The Bright Spot.Content:Introductions &amp; Community Tools</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Introductions &amp; Community Tools</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>The Bright Spot.Content:PLAY 2022</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>PLAY 2022</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>The Bright Spot.Content:Success Stories &amp; Use Cases</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Success Stories &amp; Use Cases</name>
+        <parentName></parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>The Bright Spot.Content:Tips &amp; Tricks</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Tips &amp; Tricks</name>
+        <parentName></parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>The Bright Spot.Navigational:General Discussions</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>General Discussions</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>The Bright Spot.Navigational:Introductions &amp; Community Tools</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Introductions &amp; Community Tools</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>The Bright Spot.Navigational:Success Stories &amp; Use Cases</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Success Stories &amp; Use Cases</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>The Bright Spot.Navigational:Tips &amp; Tricks</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Tips &amp; Tricks</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+</ManagedTopics>

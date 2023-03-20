@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Max input bitrate and resolution is 20MBPS/1080p or lower. --></help>
+        <label><!-- Max input bitrate/resolution 20MB/1080p --></label>
+        <name>Max_input_bitrate_resolution_20MB_1080p__c</name>
+    </CustomFieldTranslation>

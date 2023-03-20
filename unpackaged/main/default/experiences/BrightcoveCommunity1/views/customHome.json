@@ -1,0 +1,304 @@
+{
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "dad80554-e300-4ede-9f05-287aaa0b144d",
+  "label" : "Custom Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "a97ba9d4-b7ac-475c-97b8-3a99f428ed33",
+          "columns" : [ {
+            "UUID" : "c9a4a9ee-7c3c-462a-982e-9cddcf81164d",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "a97ba9d4-b7ac-475c-97b8-3a99f428ed33",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"custom-hero\">\n    <div class=\"hero-balancer\">\n        <h1 class=\"hero-title\">\n            WELCOME TO THE          \n        </h1>\n        <h1 class=\"hero-subtitle\">\n            SUPPORT PORTAL\n        </h1>\n        <br>\n        <a href=\"https://brightcove2--full.sandbox.my.site.com/community/s/createrecord/TSCommunityCreateCase\" class=\"action-btn primary-btn\">CREATE A CASE</a>\n    </div>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "47319d7a-8dc9-42da-8d25-7c19f5515d15",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "ja" : "e18bc6af-ef08-4e23-bfad-cf430ed00c83"
+          },
+          "renditions" : [ {
+            "id" : "e18bc6af-ef08-4e23-bfad-cf430ed00c83",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<div class=\"custom-hero\">\n    <div class=\"hero-balancer\">\n        <span></span><br>\n        <h1 class=\"hero-title\">\n            BRIGHTCOVE サポートへようこそ       \n        </h1>\n        <br><br><br>\n        <a href=\"https://brightcove2--full.sandbox.my.site.com/community/s/createrecord/TSCommunityCreateCase\" class=\"action-btn primary-btn\">新規サポートケース作成</a>\n    </div>\n</div>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "c9a4a9ee-7c3c-462a-982e-9cddcf81164d",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "7e4cc9a9-af37-4d0e-ad82-5ac27ef3d91c",
+          "columns" : [ {
+            "UUID" : "095b797a-7bf8-4535-a3a4-e6a81381c0ce",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 400
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "7e4cc9a9-af37-4d0e-ad82-5ac27ef3d91c",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "bannerBackgroundColor" : "",
+            "bannerPosition" : "top",
+            "bannerSizePercent" : 15,
+            "borderRadius" : 0,
+            "boxShadow" : false,
+            "haveBanner" : true,
+            "iconBackgroundColor" : "rgb(255,255,255)",
+            "iconSize" : "large",
+            "noImageColor" : "rgb(212, 212, 212)",
+            "overlay" : "rgba(0,0,0,0.01)",
+            "templateType" : "full",
+            "tileMenuEditor" : "TileMenuDocum",
+            "titleColor" : "",
+            "titleFontSize" : "large",
+            "titleHorizontalAlign" : "center"
+          },
+          "componentName" : "community_navigation:tileMenu",
+          "id" : "29b8c6ff-c118-44dc-82fb-246e6ed16765",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "bannerBackgroundColor" : "",
+            "bannerPosition" : "top",
+            "bannerSizePercent" : 15,
+            "borderRadius" : 0,
+            "boxShadow" : false,
+            "haveBanner" : true,
+            "iconBackgroundColor" : "rgb(255,255,255)",
+            "iconSize" : "medium",
+            "noImageColor" : "rgb(212, 212, 212)",
+            "overlay" : "rgba(0,0,0,0.01)",
+            "templateType" : "full",
+            "tileMenuEditor" : "TileMenuDocumJapan",
+            "titleColor" : "",
+            "titleFontSize" : "medium",
+            "titleHorizontalAlign" : "center"
+          },
+          "componentName" : "community_navigation:tileMenu",
+          "id" : "eb733d7c-9726-4af2-abc6-89b1bf443bcd",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "095b797a-7bf8-4535-a3a4-e6a81381c0ce",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "44acdb1a-ad77-4bb3-b8b7-3f8d0c263156",
+          "columns" : [ {
+            "UUID" : "2f7f014b-6101-4bec-b1e4-7ec9bfa98c7f",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 82
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "44acdb1a-ad77-4bb3-b8b7-3f8d0c263156",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0); font-family: arial;\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.CSE_LogoBLACK.1}\" style=\"width: 324.167px; height: 114.625px;\"></span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "fe0f2b35-9aa0-4c10-b3c2-89bdf80813c9",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "2f7f014b-6101-4bec-b1e4-7ec9bfa98c7f",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "d41634e0-0037-4556-a1b3-0b2e3270402b",
+          "columns" : [ {
+            "UUID" : "f5667411-0d4e-44e6-90bd-5f6ea6f08462",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 41
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "d41634e0-0037-4556-a1b3-0b2e3270402b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "allowPrepopulatePrechatFields" : true,
+            "avatarImgURL" : "",
+            "codeSettingsName" : "",
+            "defaultMinimizedText" : "チャットサポート",
+            "displayHelpButton" : true,
+            "eswConfigurationJSON" : {
+              "baseCoreURL" : "https://brightcove2--full.sandbox.my.salesforce.com",
+              "baseLiveAgentContentURL" : "https://c.la5-c1cs-ia5.salesforceliveagent.com/content",
+              "baseLiveAgentURL" : "https://d.la5-c1cs-ia5.salesforceliveagent.com/chat",
+              "buttonId" : "5738F000000Gnp1",
+              "deploymentId" : "5728F000000Cb9h",
+              "enabledFeatures" : [ "LiveAgent" ],
+              "entryFeature" : "LiveAgent",
+              "eswConfigDevName" : "TSChat_Japanese",
+              "eswConfigId" : "04I8F000000CafsUAC",
+              "eswLiveAgentDevName" : "EmbeddedServiceLiveAgent_Parent04I8F000000CafsUAC_1863786f64f",
+              "gslbBaseURL" : "https://service.force.com",
+              "isOfflineCasesEnabled" : "0",
+              "orgId" : "00D8F0000008jAl"
+            },
+            "externalScripts" : "",
+            "externalStyles" : "",
+            "fallbackRouting" : "",
+            "offlineSupportMinimizedText" : "Contact Us",
+            "offlineText" : "Agent Offline",
+            "onlineLoadingText" : "ロード中",
+            "prechatBackgroundImgURL" : "",
+            "smallCompanyLogoImgURL" : "",
+            "snippetSettingsFile" : "Brightcove_SnapIn_Settings",
+            "storageDomain" : "",
+            "waitingStateBackgroundImgURL" : ""
+          },
+          "componentName" : "forceCommunity:embeddedService",
+          "id" : "66879688-41e3-4626-ad63-29411b6ffb02",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "allowPrepopulatePrechatFields" : true,
+            "avatarImgURL" : "",
+            "codeSettingsName" : "",
+            "defaultMinimizedText" : "Chat with an Expert",
+            "displayHelpButton" : true,
+            "eswConfigurationJSON" : {
+              "baseCoreURL" : "https://brightcove2--full.sandbox.my.salesforce.com",
+              "baseLiveAgentContentURL" : "https://c.la5-c1cs-ia5.salesforceliveagent.com/content",
+              "baseLiveAgentURL" : "https://d.la5-c1cs-ia5.salesforceliveagent.com/chat",
+              "buttonId" : "5738F000000GnQn",
+              "deploymentId" : "5728F000000Cb9h",
+              "enabledFeatures" : [ "LiveAgent" ],
+              "entryFeature" : "LiveAgent",
+              "eswConfigDevName" : "TSChat",
+              "eswConfigId" : "04I8F000000Cab2UAC",
+              "eswLiveAgentDevName" : "TSChat",
+              "gslbBaseURL" : "https://service.force.com",
+              "isOfflineCasesEnabled" : "0",
+              "orgId" : "00D8F0000008jAl"
+            },
+            "externalScripts" : "",
+            "externalStyles" : "",
+            "fallbackRouting" : "",
+            "offlineSupportMinimizedText" : "Contact Us",
+            "offlineText" : "Agent Offline",
+            "onlineLoadingText" : "Loading",
+            "prechatBackgroundImgURL" : "",
+            "smallCompanyLogoImgURL" : "",
+            "snippetSettingsFile" : "Brightcove_SnapIn_Settings",
+            "storageDomain" : "",
+            "waitingStateBackgroundImgURL" : ""
+          },
+          "componentName" : "forceCommunity:embeddedService",
+          "id" : "f7f74386-37ef-452c-9334-8ec16955ad1d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f5667411-0d4e-44e6-90bd-5f6ea6f08462",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fbac2139-bb89-48d9-87c0-e76998af100c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "249d4a7d-bcad-4c0d-809d-beb1db174b37",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4f9ff779-a0ef-4ae4-9145-7498dacd4751",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">2+ Email Flag Activated<br />
+<br />
+Case Contact --- {{{Case.Contact}}}<br />
+Account --- {{{Case.Account}}}<br />
+Support Package --- {{{Case.Support_Package__c}}}<br />
+Case Supplied Name &amp; Email --- {{{Case.SuppliedName}}} {{{Case.SuppliedEmail}}}<br />
+<br />
+Subject --- {{{Case.Subject}}}<br />
+<br />
+Click on the link to access the case: {{{Case.Link}}}</body>
+</html>

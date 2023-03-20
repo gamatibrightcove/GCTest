@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- New Business = brand new logo
+
+Upgrade = upgrading an Express customer to higher edition
+
+Add-on = selling to existing customer
+
+Renewal = existing deal renewed at end of its term
+
+Early Renewal = existing deal renewed before current term is up --></help>
+        <label><!-- Deal Type --></label>
+        <name>Deal_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add-On</masterLabel>
+            <translation><!-- Add-On --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debook</masterLabel>
+            <translation><!-- Debook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Renewal</masterLabel>
+            <translation><!-- Early Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Business</masterLabel>
+            <translation><!-- New Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

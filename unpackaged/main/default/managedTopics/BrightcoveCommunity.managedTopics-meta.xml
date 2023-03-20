@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>BrightcoveCommunity.Featured:Live Streaming</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Live Streaming</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>All discussions related to Live Streaming</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>BrightcoveCommunity.Featured:Video Encoding</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Video Encoding</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>Video Encoding discussions</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>BrightcoveCommunity.Featured:Video Playback</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Video Playback</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription>Video Playback</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>BrightcoveCommunity.Navigational:Advertising</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Advertising</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription>Advertising discussions</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>BrightcoveCommunity.Navigational:Analytics</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Analytics</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription>Analytics discussions</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>BrightcoveCommunity.Navigational:Brightcove Player Development</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Brightcove Player Development</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription>Developing and publishing with the Brightcove Player.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>BrightcoveCommunity.Navigational:Live Streaming</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Live Streaming</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription>All discussions related to Live Streaming</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>BrightcoveCommunity.Navigational:Using Brightcove API&#39;s</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Using Brightcove API&#39;s</name>
+        <parentName></parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>BrightcoveCommunity.Navigational:Video Encoding</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Video Encoding</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>Video Encoding discussions</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>BrightcoveCommunity.Navigational:Video Playback</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Video Playback</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>Video Playback</topicDescription>
+    </managedTopic>
+</ManagedTopics>

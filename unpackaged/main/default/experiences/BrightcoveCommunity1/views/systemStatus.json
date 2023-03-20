@@ -1,0 +1,127 @@
+{
+  "appPageId" : "7ccc3dfd-e2f6-4fd2-98bf-e1246280053c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "16ab1f40-0890-4f9f-b667-9cbb0ccfed1e",
+  "label" : "System Status",
+  "regions" : [ {
+    "id" : "de0541bd-db9a-4e59-af36-aab9f4e2dcb3",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"status-container\">\n    <div class=\"sfdcCbVideoContainer\">\n        <iframe allowfullscreen=\"\" frameborder=\"0\" height=\"1700\" src=\"https://status.brightcove.com/\" width=\"590\"></iframe>\n    </div>\n</div>\n<!--render facet: 13:91;a-->"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "dd2335f6-3070-4c0e-83ef-eb947b707181",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "74ac7526-06ad-4118-a5d9-64116b11fac7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "allowPrepopulatePrechatFields" : true,
+        "avatarImgURL" : "",
+        "codeSettingsName" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://brightcove2--full.sandbox.my.salesforce.com",
+          "baseLiveAgentContentURL" : "https://c.la5-c1cs-ia5.salesforceliveagent.com/content",
+          "baseLiveAgentURL" : "https://d.la5-c1cs-ia5.salesforceliveagent.com/chat",
+          "buttonId" : "5738F000000GnQn",
+          "deploymentId" : "5728F000000Cb9h",
+          "enabledFeatures" : [ "LiveAgent" ],
+          "entryFeature" : "LiveAgent",
+          "eswConfigDevName" : "TSChat",
+          "eswConfigId" : "04I8F000000Cab2UAC",
+          "eswLiveAgentDevName" : "TSChat",
+          "gslbBaseURL" : "https://service.force.com",
+          "isOfflineCasesEnabled" : "1",
+          "orgId" : "00D8F0000008jAl"
+        },
+        "externalScripts" : "",
+        "externalStyles" : "",
+        "fallbackRouting" : "",
+        "offlineSupportMinimizedText" : "Contact Us",
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "snippetSettingsFile" : "Brightcove_SnapIn_Settings",
+        "storageDomain" : "",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "451628df-a9d1-4a45-9d9d-2e7bb5ffd5e7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "allowPrepopulatePrechatFields" : true,
+        "avatarImgURL" : "",
+        "codeSettingsName" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://brightcove2--full.sandbox.my.salesforce.com",
+          "baseLiveAgentContentURL" : "https://c.la5-c1cs-ia5.salesforceliveagent.com/content",
+          "baseLiveAgentURL" : "https://d.la5-c1cs-ia5.salesforceliveagent.com/chat",
+          "buttonId" : "5738F000000GnQn",
+          "deploymentId" : "5728F000000Cb9h",
+          "enabledFeatures" : [ "LiveAgent" ],
+          "entryFeature" : "LiveAgent",
+          "eswConfigDevName" : "TSChat",
+          "eswConfigId" : "04I8F000000Cab2UAC",
+          "eswLiveAgentDevName" : "TSChat",
+          "gslbBaseURL" : "https://service.force.com",
+          "isOfflineCasesEnabled" : "1",
+          "orgId" : "00D8F0000008jAl"
+        },
+        "externalScripts" : "",
+        "externalStyles" : "",
+        "fallbackRouting" : "",
+        "offlineSupportMinimizedText" : "Contact Us",
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "snippetSettingsFile" : "Brightcove_SnapIn_Settings",
+        "storageDomain" : "",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "6de8ebb4-714f-4cbb-bdc7-694e588aa604",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3a2d9fb9-c224-46dc-8c8f-b3046e2fe025",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "Brightcove System Status",
+        "title" : "System Status"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "eaae4343-5994-4bd1-aeca-b398b14c5843",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e7f4e974-779d-4a4a-9572-3d47def95232",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-system-status"
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- T2 to provide explanation on why it was a poor escalation here --></help>
+        <label><!-- Incomplete Escalation to T2 Info --></label>
+        <name>T2_Escalation_Notes__c</name>
+    </CustomFieldTranslation>

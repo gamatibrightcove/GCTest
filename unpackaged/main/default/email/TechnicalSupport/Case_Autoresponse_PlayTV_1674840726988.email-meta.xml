@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>DO NOT ALTER THIS EMAILS SUBJECT LINE WITHOUT UPDATING WORKFLOW ACTION FOR FIRST EMAIL SENT FIELD This email template will be used to send an auto-response to NEW Support Publishers when they submit a case</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case - Autoresponse PlayTV</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Case {{{Case.CaseNumber}}} has been received. {{{Case.Subject}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

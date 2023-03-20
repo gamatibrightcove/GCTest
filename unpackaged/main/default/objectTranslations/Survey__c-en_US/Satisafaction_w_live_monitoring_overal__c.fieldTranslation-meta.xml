@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How would you rate our Live Monitoring Service overall? --></help>
+        <label><!-- Satisfaction w live monitoring overall --></label>
+        <name>Satisafaction_w_live_monitoring_overal__c</name>
+    </CustomFieldTranslation>

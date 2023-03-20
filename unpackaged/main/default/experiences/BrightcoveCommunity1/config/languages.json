@@ -1,0 +1,15 @@
+{
+  "defaultCode" : "en_US",
+  "defaultLabel" : "English (US)",
+  "id" : "8a7af992-efb9-4a5c-895f-471f40243615",
+  "languages" : [ {
+    "countryCode" : "",
+    "fallbackLanguageId" : null,
+    "id" : "46940ded-81ba-41ab-9e2e-b4869c189019",
+    "isActive" : true,
+    "label" : "Japanese - 日本語",
+    "languageCode" : "ja",
+    "type" : "language"
+  } ],
+  "type" : "languageContainer"
+}

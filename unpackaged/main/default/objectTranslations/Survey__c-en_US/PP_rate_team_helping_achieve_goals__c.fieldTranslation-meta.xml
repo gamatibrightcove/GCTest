@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please rate the Platinum+ team:
+Helping you achieve your goals --></help>
+        <label><!-- PP rate team helping achieve goals --></label>
+        <name>PP_rate_team_helping_achieve_goals__c</name>
+    </CustomFieldTranslation>

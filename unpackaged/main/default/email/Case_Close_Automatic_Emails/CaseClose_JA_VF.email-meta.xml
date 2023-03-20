@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <available>true</available>
+    <description>Survey Template for the users CC&#39;d on the case if Language is Japanese</description>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>CaseClose-JA-VF</name>
+    <style>none</style>
+    <subject>Brightcove Case  [  ]</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

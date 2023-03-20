@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+<center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0" width="625">
+	
+		<tr>
+			<td style="padding-bottom:0px;background-color:#f0f0f0" valign="top">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr>
+						<td align="left" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:'Arial';font-size:15px;color:#333;line-height:150%" valign="top">
+						<p style="margin-top:30px;">{{{Case.CreatedDate}}} 에 생성된 케이스 {{{Case.CaseNumber}}}<br />
+						{{{Case.Subject}}}</p>
+
+						<hr />
+						<p>안녕하세요 <strong> {{{Recipient.FirstName}}}님</strong>,</p>
+
+						<p>지난번 요청하셨던 사항에 대해서 보내드렸던 메일이 충분한 답변이 되었는지 문의 드리기 위해 메일 보냅니다. 만약 충분한 답변이 되지 않았다면 말씀해 주시기 바랍니다, 계속 지원할 수 있도록 하겠습니다.</p>
+
+						<p>빠른 시간내에 회신 주시면 감사하겠습니다. 즐거운 하루 되길 바랍니다!</p>
+
+						<p>{{{Case.OwnerFirstName}}}<br />
+						<strong>The Brightcove Customer Support Team</strong></p>
+
+						<p><a href="https://supportportal.brightcove.com">Support Portal</a> 에서 모두 확인하실 수 있으며, 현재 시스템 상태는 <a href="https://status.brightcove.com">Status Page</a> 링크를 통해 확인하실 수 있습니다.</p>
+
+						<hr />
+						<p style="font-family:'Arial';font-size:15px;color:#000000">지난번에 드렸던 회신 {{{Case.Last_Email_Sent__c}}}:<br />
+						{{{Case.E2CP__Most_Recent_Public_Comment__c}}}<br />
+						{{{Case.E2CP__HistoryText__c}}}<br />
+						<br />
+						{{{Case.E2CP__Case_Thread_Id__c}}}</p>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</center>
+</div>
+</body>
+</html>

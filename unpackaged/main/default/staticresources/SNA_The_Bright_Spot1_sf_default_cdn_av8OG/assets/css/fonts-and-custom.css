@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Public Sans';
+    /*src: url(../resource/PublicSans/PublicSans-Regular.ttf)*/
+    src: url(../resource/PublicSans/PublicSans-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Public Sans Bold';
+    src: url(../resource/PublicSans/PublicSans-Bold.ttf)
+    /*src: url(../resource/PublicSans/PublicSans-Bold.ttf)*/
+}
+
+.topicName {
+    color: #FC532B;
+}
+
+.deactivateAccount {
+    text-align: right;
+}
+
+.forceChatterSimpleFeedItemTopics--pill ul.topic-commaSeparatedList li a {
+    border-color: #FC532B;
+    border-radius: 40px;
+}
+
+feeds_sorter-filter.slds-m-right_x-small.feeds-filter {
+    display: none;
+}
+
+figcaption.slds-text-align_center.slds-text-color_weak.slds-p-horizontal_medium.slds-p-top_xx-large {
+    display: none;
+}
+
+lightning-button-icon-stateful.listViewManagerHeaderButton.quickFilterButton {
+    display: none;
+}
+
+button.dep-trigger {
+    visibility:hidden;
+    display:none !important
+}
+
+feeds_best_answer-toggle {
+    visibility:hidden !important;
+}
+
+li[title="Downvote"] {
+    visibility:hidden;
+    display:none !important;
+}
+
+li[title="Edit Topics"] {
+    visibility:hidden;
+    display:none !important;
+}
+
+li[title="Bookmark"] {
+    visibility:hidden;
+    display:none !important;
+}
+a[title="Share with Group"]{
+    visibility:hidden;
+    display:none !important;
+}
+
+img.slds-illustration__svg.slds-m-bottom_none {
+    display: none;
+}
+
+.forceCommunityThemeNav.emberInnerHeader .mainNavItem .linkBtn:hover {
+    color: rgb(252, 173, 9) !important;
+    text-shadow: 0 0 4px rgb(0 0 0 / 50%) !important;
+}
+
+span[aria-label="View All Badges"] {
+    display: none;
+}
+
+label[for="bestAnswerCheckbox"] {
+    display: none;
+}
+
+input#bestAnswerCheckbox {
+    display: none;
+}
+
+label[for="profilePostCheckbox"] {
+    display: none;
+}
+
+input#profilePostCheckbox {
+    display: none;
+}
+
+label[for="profPostCommentCheckbox"] {
+    display: none;
+}
+
+input#profPostCommentCheckbox {
+    display: none;
+}
+
+label[for="commentAfterLikeCheckbox"] {
+    display: none;
+}
+
+input#commentAfterLikeCheckbox {
+    display: none;
+}
+
+.userRecognitionsHeader {
+    pointer-events: none;
+}
+:root { --dxp-c-section-columns-max-width: 1440px; }

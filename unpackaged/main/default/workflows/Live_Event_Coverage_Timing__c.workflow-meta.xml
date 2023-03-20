@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <outboundMessages>
+        <fullName>Live_Event_Coverage_Fianance_outbound</fullName>
+        <apiVersion>57.0</apiVersion>
+        <description>Live Event Coverage Fianance outbound</description>
+        <endpointUrl>https://hooks.zapier.com/hooks/catch/466295/3tochp/</endpointUrl>
+        <fields>Compensation_USD__c</fields>
+        <fields>Coverage_Duration_hours__c</fields>
+        <fields>Coverage_Engineer__c</fields>
+        <fields>CurrencyIsoCode</fields>
+        <fields>End_of_Coverage__c</fields>
+        <fields>Id</fields>
+        <fields>LEC_Link__c</fields>
+        <fields>LE_Account__c</fields>
+        <fields>LE_Owner_text__c</fields>
+        <fields>Live_Event_Link__c</fields>
+        <fields>Name</fields>
+        <fields>Off_Hours_Covered__c</fields>
+        <fields>Rep_For_Payment_text__c</fields>
+        <fields>Start_of_Coverage__c</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>api@brightcove.com</integrationUser>
+        <name>Live Event Coverage Finance outbound</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+</Workflow>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- ICP Sell Product - Quadrant Value --></help>
+        <label><!-- ICP Sell Product - Quadrant --></label>
+        <name>ICP_Sell_Product_Quadrant__c</name>
+        <picklistValues>
+            <masterLabel>Acquire 1</masterLabel>
+            <translation><!-- Acquire 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acquire 2</masterLabel>
+            <translation><!-- Acquire 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunistic 1</masterLabel>
+            <translation><!-- Opportunistic 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunistic 2</masterLabel>
+            <translation><!-- Opportunistic 2 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

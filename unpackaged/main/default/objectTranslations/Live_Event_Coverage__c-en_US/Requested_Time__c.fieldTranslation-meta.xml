@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Requested during --></label>
+        <name>Requested_Time__c</name>
+        <picklistValues>
+            <masterLabel>Boston/GDL Business Hour</masterLabel>
+            <translation><!-- Boston/GDL Business Hour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London Business Hour</masterLabel>
+            <translation><!-- London Business Hour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sydney Business Hour</masterLabel>
+            <translation><!-- Sydney Business Hour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tokyo Business Hour</masterLabel>
+            <translation><!-- Tokyo Business Hour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekend</masterLabel>
+            <translation><!-- Weekend --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

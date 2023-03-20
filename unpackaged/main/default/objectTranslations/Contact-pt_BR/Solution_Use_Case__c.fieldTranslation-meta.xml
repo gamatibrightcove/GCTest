@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Solution Use Case --></label>
+        <name>Solution_Use_Case__c</name>
+        <picklistValues>
+            <masterLabel>Arts &amp; Entertainment</masterLabel>
+            <translation><!-- Arts &amp; Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcasting</masterLabel>
+            <translation><!-- Broadcasting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting / Resale</masterLabel>
+            <translation><!-- Consulting / Resale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer communication</masterLabel>
+            <translation><!-- Customer communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Festivals</masterLabel>
+            <translation><!-- Festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Communication / Live Streaming</masterLabel>
+            <translation><!-- Internal Communication / Live Streaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal communication</masterLabel>
+            <translation><!-- Internal communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor relations</masterLabel>
+            <translation><!-- Investor relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Events / 24x7 Channels</masterLabel>
+            <translation><!-- Live Events / 24x7 Channels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Linear Simulcast / 24x7</masterLabel>
+            <translation><!-- Live Linear Simulcast / 24x7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing (commercial)</masterLabel>
+            <translation><!-- Marketing (commercial) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing (non-profit)</masterLabel>
+            <translation><!-- Marketing (non-profit) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media monetization</masterLabel>
+            <translation><!-- Media monetization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media transcoding</masterLabel>
+            <translation><!-- Media transcoding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monetization</masterLabel>
+            <translation><!-- Monetization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTT</masterLabel>
+            <translation><!-- OTT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performing Arts</masterLabel>
+            <translation><!-- Performing Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Publishing</masterLabel>
+            <translation><!-- Publishing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports</masterLabel>
+            <translation><!-- Sports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual Events</masterLabel>
+            <translation><!-- Virtual Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eCommerce</masterLabel>
+            <translation><!-- eCommerce --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

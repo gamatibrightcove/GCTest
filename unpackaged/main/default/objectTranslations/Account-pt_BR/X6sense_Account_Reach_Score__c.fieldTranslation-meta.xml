@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- 6sense Account Reach Score --></label>
+        <name>X6sense_Account_Reach_Score__c</name>
+    </CustomFieldTranslation>

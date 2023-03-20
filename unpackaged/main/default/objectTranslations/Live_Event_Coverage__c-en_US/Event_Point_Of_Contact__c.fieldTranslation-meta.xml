@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The primary person to contact during the event coverage &amp; to setup a time to test. --></help>
+        <label><!-- Event Main Point Of Contact --></label>
+        <name>Event_Point_Of_Contact__c</name>
+        <relationshipLabel><!-- Live Event Coverage --></relationshipLabel>
+    </CustomFieldTranslation>

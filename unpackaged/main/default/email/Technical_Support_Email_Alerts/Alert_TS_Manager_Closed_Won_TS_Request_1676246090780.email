@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<table height="400" style="font-family:arial; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial" width="600">
+	
+		<tr>
+			<td aeditid="c1r1" locked="0" style="background-color:#ffffff" teditid="c1r1"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial">Hey,</span></span></span>
+			<div>&nbsp;</div>
+			</td>
+		</tr>
+		<tr>
+			<td aeditid="c1r2" locked="0" style="background-color:#ffffff" teditid="c1r2">
+			<div><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">You are receiving this email because a new TS Request opportunity has been Closed - Won</span></span></span></span></span></span></div>
+
+			<div>&nbsp;</div>
+
+			<div><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial">Please make sure that the corresponding Live Event request has been created accordingly.</span></span></span></span></span></span></div>
+
+			<div>&nbsp;</div>
+
+			<div>&nbsp;</div>
+
+			<div><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><font face="arial"><font face="arial"><font style="color:#000000; font-family:arial; font-size:12pt">Customer:&nbsp;</font></font>{{{Opportunity.Account}}}</font></span></span></span></div>
+
+			<div><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial"><font face="arial">Opportunity:&nbsp;{{{Opportunity.Link}}}</font></span></span></span></span></span></span></div>
+
+			<div><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt"><span style="color:#000000"><span style="font-family:arial"><font face="arial">Owner:&nbsp;{{{Opportunity.OwnerFullName}}}</font></span></span></span></span></span></span></div>
+			</td>
+		</tr>
+		<tr>
+			<td aeditid="c1r3" locked="0" style="background-color:#ffffff" teditid="c1r3">
+			<div><span style="font-size:16px"><span style="color:#000000"><span style="font-family:arial"><span style="font-size:12pt">Thank you!</span></span></span></span></div>
+			</td>
+		</tr>
+	
+</table>
+</body>
+</html>

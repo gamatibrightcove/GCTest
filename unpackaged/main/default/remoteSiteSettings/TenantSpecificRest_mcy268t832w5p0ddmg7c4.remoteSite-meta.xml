@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://mcy268t832w5p0ddmg7c4bxdp0wm.rest.marketingcloudapis.com</url>
+</RemoteSiteSetting>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CURRENTLY USING DRAFT URLs: This email will be sent to the customer when the case is closed by a Support Specialist - Japanese - with GetFeedback URLs</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CaseClose-JA</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Brightcove サポートケース: {{{Case.CaseNumber}}}  {{{Case.Subject}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

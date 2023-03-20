@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- SalesOps Case Resolution --></label>
+        <name>SalesOps_Case_Resolution__c</name>
+        <picklistValues>
+            <masterLabel>6Sense</masterLabel>
+            <translation><!-- 6Sense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACV/TotalACV adjustment</masterLabel>
+            <translation><!-- ACV/TotalACV adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alyce</masterLabel>
+            <translation><!-- Alyce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Answer provided</masterLabel>
+            <translation><!-- Answer provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Termination</masterLabel>
+            <translation><!-- Client Termination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client hand-off</masterLabel>
+            <translation><!-- Client hand-off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Duplicate</masterLabel>
+            <translation><!-- Closed Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compensation issue</masterLabel>
+            <translation><!-- Compensation issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract ID update</masterLabel>
+            <translation><!-- Contract ID update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Cleanup</masterLabel>
+            <translation><!-- Data Cleanup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Datanyze</masterLabel>
+            <translation><!-- Datanyze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DiscoverOrg</masterLabel>
+            <translation><!-- DiscoverOrg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DocuSign</masterLabel>
+            <translation><!-- DocuSign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation Created</masterLabel>
+            <translation><!-- Documentation Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation Provided</masterLabel>
+            <translation><!-- Documentation Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Case</masterLabel>
+            <translation><!-- Duplicate Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E/MRR adjustment</masterLabel>
+            <translation><!-- E/MRR adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eloqua</masterLabel>
+            <translation><!-- Eloqua --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gainsight</masterLabel>
+            <translation><!-- Gainsight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gong.io</masterLabel>
+            <translation><!-- Gong.io --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InsightSquare</masterLabel>
+            <translation><!-- InsightSquare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kapost</masterLabel>
+            <translation><!-- Kapost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kimble</masterLabel>
+            <translation><!-- Kimble --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Adjustment</masterLabel>
+            <translation><!-- Manual Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New MRR adjustment</masterLabel>
+            <translation><!-- New MRR adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Created or Removed</masterLabel>
+            <translation><!-- Opportunity Created or Removed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Splits/Team</masterLabel>
+            <translation><!-- Opportunity Splits/Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oppty - Workflow Create</masterLabel>
+            <translation><!-- Oppty - Workflow Create --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oppty - Workflow Edit</masterLabel>
+            <translation><!-- Oppty - Workflow Edit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outreach</masterLabel>
+            <translation><!-- Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner change</masterLabel>
+            <translation><!-- Owner change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent account update</masterLabel>
+            <translation><!-- Parent account update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product item customization</masterLabel>
+            <translation><!-- Product item customization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provided or Removed Tool Access</masterLabel>
+            <translation><!-- Provided or Removed Tool Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rate cards issue</masterLabel>
+            <translation><!-- Rate cards issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redirected To Appropropriate Resource</masterLabel>
+            <translation><!-- Redirected To Appropropriate Resource --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report Created</masterLabel>
+            <translation><!-- Report Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RevOps portal</masterLabel>
+            <translation><!-- RevOps portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing region update</masterLabel>
+            <translation><!-- Routing region update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing rule update</masterLabel>
+            <translation><!-- Routing rule update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing team update</masterLabel>
+            <translation><!-- Routing team update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC Field Edited, Updated or Created</masterLabel>
+            <translation><!-- SFDC Field Edited, Updated or Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC Record Merge</masterLabel>
+            <translation><!-- SFDC Record Merge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC Rule or Workflow Created</masterLabel>
+            <translation><!-- SFDC Rule or Workflow Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDCHelp</masterLabel>
+            <translation><!-- SFDCHelp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Navigator</masterLabel>
+            <translation><!-- Sales Navigator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Permission Change</masterLabel>
+            <translation><!-- Salesforce Permission Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent to Pricing Committee</masterLabel>
+            <translation><!-- Sent to Pricing Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Status Update</masterLabel>
+            <translation><!-- Status Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tableau</masterLabel>
+            <translation><!-- Tableau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User - Activation</masterLabel>
+            <translation><!-- User - Activation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User - Deactivate</masterLabel>
+            <translation><!-- User - Deactivate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User - Group management</masterLabel>
+            <translation><!-- User - Group management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User - Profile management</masterLabel>
+            <translation><!-- User - Profile management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User - Role management</masterLabel>
+            <translation><!-- User - Role management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Xactly - Obero</masterLabel>
+            <translation><!-- Xactly - Obero --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yesware</masterLabel>
+            <translation><!-- Yesware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZoomInfo</masterLabel>
+            <translation><!-- ZoomInfo --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Default Comment (non-platinum)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>New comment template HTML 2023</name>
+    <style>none</style>
+    <subject>Brightcove Case {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>===&gt; Please place your reply above this line &lt;===
+
+{!Case.E2CP__Most_Recent_Public_Comment_HTML__c}
+
+
+***************************
+
+***Please join us on The Bright Spot at &lt;https://community.brightcove.com/s/&gt;, Brightcove’s online community for customers and industry peers.
+A place to grow your network, share your expertise, and find inspiration from customer success.***
+
+
+***************************
+
+{!Case.E2CP__HistoryText__c}
+
+***************************
+
+Case: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+Description: {!Case.Description}
+
+{!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

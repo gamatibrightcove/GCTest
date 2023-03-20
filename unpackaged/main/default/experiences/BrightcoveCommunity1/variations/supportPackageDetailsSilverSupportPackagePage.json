@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "dc6b65df-08d1-4ba6-85a1-72939594caeb",
+    "propertyOverrides" : {
+      "activeViewId" : "b2f76107-c78a-4e8b-8f49-dcb4c6b2307e"
+    },
+    "targetId" : "ae366f36-7340-4bf4-8741-5d599684250f",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Support_Package_Details_Silver_Support_Package_Page",
+  "id" : "5d09ac69-d697-4c4e-ba3e-ee127c5a7298",
+  "type" : "experienceVariation"
+}

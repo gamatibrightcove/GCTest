@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- SalesOps Question subject --></label>
+        <name>Sales_Ops_Question_subject__c</name>
+        <picklistValues>
+            <masterLabel>3rd Party Resell</masterLabel>
+            <translation><!-- 3rd Party Resell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amend contract</masterLabel>
+            <translation><!-- Amend contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approval issue</masterLabel>
+            <translation><!-- Approval issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BGS</masterLabel>
+            <translation><!-- BGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beacon Live</masterLabel>
+            <translation><!-- Beacon Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bundle issue</masterLabel>
+            <translation><!-- Bundle issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract add-on</masterLabel>
+            <translation><!-- Contract add-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract naming</masterLabel>
+            <translation><!-- Contract naming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract renewal</masterLabel>
+            <translation><!-- Contract renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Bundle</masterLabel>
+            <translation><!-- Custom Bundle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discounts</masterLabel>
+            <translation><!-- Discounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise BYOCDN</masterLabel>
+            <translation><!-- Enterprise BYOCDN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise DRM</masterLabel>
+            <translation><!-- Enterprise DRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entry Points Pricing</masterLabel>
+            <translation><!-- Entry Points Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evergent</masterLabel>
+            <translation><!-- Evergent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feature request</masterLabel>
+            <translation><!-- Feature request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy Contract</masterLabel>
+            <translation><!-- Legacy Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi CDN</masterLabel>
+            <translation><!-- Multi CDN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One Off Request</masterLabel>
+            <translation><!-- One Off Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oppty xMRR - xACV</masterLabel>
+            <translation><!-- Oppty xMRR - xACV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAS LA</masterLabel>
+            <translation><!-- PAS LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price books</masterLabel>
+            <translation><!-- Price books --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question</masterLabel>
+            <translation><!-- Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Pricing</masterLabel>
+            <translation><!-- Quote Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote approval</masterLabel>
+            <translation><!-- Quote approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote custom item</masterLabel>
+            <translation><!-- Quote custom item --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote standard item</masterLabel>
+            <translation><!-- Quote standard item --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rate Cards manual adjustment</masterLabel>
+            <translation><!-- Rate Cards manual adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VMS Starter Add-Ons</masterLabel>
+            <translation><!-- VMS Starter Add-Ons --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

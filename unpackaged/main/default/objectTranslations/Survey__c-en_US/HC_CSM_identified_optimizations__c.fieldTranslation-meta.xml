@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How would you rate the following:
+Customer Success Manager identified ways that we could optimize our use. --></help>
+        <label><!-- HC CSM identified optimizations --></label>
+        <name>HC_CSM_identified_optimizations__c</name>
+    </CustomFieldTranslation>

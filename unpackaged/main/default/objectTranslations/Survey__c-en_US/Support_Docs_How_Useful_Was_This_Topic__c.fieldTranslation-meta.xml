@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Support Docs - How Useful Was This Topic --></label>
+        <name>Support_Docs_How_Useful_Was_This_Topic__c</name>
+    </CustomFieldTranslation>

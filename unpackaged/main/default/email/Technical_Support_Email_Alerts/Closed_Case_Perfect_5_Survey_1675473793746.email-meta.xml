@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When a closed case survey response is a perfect 5</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Closed Case Perfect 5 Survey</name>
+    <relatedEntityType>Survey__c</relatedEntityType>
+    <style>none</style>
+    <subject>Alert: PERFECT 5 closed case survey score</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

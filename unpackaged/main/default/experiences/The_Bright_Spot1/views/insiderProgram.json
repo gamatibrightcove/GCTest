@@ -1,0 +1,85 @@
+{
+  "appPageId" : "5072d3ab-f41f-4fa7-b393-eb19f68c4342",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "cda4c5cf-ddd3-45c4-b3cd-e585eb862af4",
+  "label" : "Insider Program",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "3d0ce023-fdd0-4214-b77a-c8221ea5a06b",
+          "columns" : [ {
+            "UUID" : "a47af974-25b6-4759-995c-eb36a297c902",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "3d0ce023-fdd0-4214-b77a-c8221ea5a06b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "bannerText" : "",
+            "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+            "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+            "pageType" : "",
+            "showSubTopics" : true,
+            "title" : "Become a Brightcove Insider and help shape the future of streaming video",
+            "uniqueNameOrId" : ""
+          },
+          "componentName" : "forceCommunity:headline",
+          "id" : "02cb3a37-f178-40b3-bbb9-9787936904ae",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"background-color: transparent; font-size: 14px;\">Here at Brightcove, if we’re not pondering ways to move the streaming industry forward, then we’re thinking of our customers and what they need.</span></p><p><br></p><p><span style=\"background-color: transparent; font-size: 14px;\">With this in mind we invite you to join the Brightcove Insider Program, an exclusive global network of Brightcove customers who are actively helping us develop our products. As a Brightcove Insider, you will make an impact on the future of video streaming as well as your own, because your input will allow us to create the products and features that you want.</span></p><p><br></p><p><span style=\"background-color: transparent; font-size: 14px;\">As a Brightcove Insider, you will:&nbsp;</span></p><ol><li><span style=\"background-color: transparent; font-size: 14px;\">Get a preview of new Brightcove features before they’re generally available.</span></li><li><span style=\"background-color: transparent; font-size: 14px;\">Learn directly from our product team on new features and functions.</span></li><li><span style=\"background-color: transparent; font-size: 14px;\">Meet other Brightcove customers and early adopters to exchange ideas, tips, and best practices.</span></li><li><span style=\"background-color: transparent; font-size: 14px;\">Earn a Brightcove Insider badge and become an influencer in our user community.</span></li><li><span style=\"background-color: transparent; font-size: 14px;\">Receive a special surprise gift from us as a token of our gratitude for your contribution.</span></li></ol><p><br></p><p><span style=\"background-color: transparent; font-size: 14px;\">Sounds good? Become a Brightcove Insider now.</span></p><p><br></p><p><a href=\"https://community.brightcove.com/s/group/0F96f000000g08UCAQ/brightcove-insiders\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\"><strong>Join the Group</strong></a></p><p><br></p><p><strong style=\"background-color: transparent; font-size: 14px;\">What happens next</strong></p><p><br></p><p><span style=\"background-color: transparent; font-size: 14px;\">Once you join the group, you’ll get a chance to meet and talk with like-minded professionals. You will learn about upcoming initiatives like our Early Adopter and Design Partner Programs, focus groups we’re planning, and lots more that you will be eligible to participate in (assuming you meet certain criteria, of course). You can apply to join whichever seems relevant to your role, your responsibilities, or how your organization uses streaming</span></p><p><br></p><p><a href=\"https://community.brightcove.com/s/group/0F96f000000g08UCAQ/brightcove-insiders\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\"><strong>Join the Group</strong></a></p><p><br></p><p><span style=\"font-size: 14px;\">&nbsp;</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "23998827-ead2-41fd-bb45-fb8136e9305f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a47af974-25b6-4759-995c-eb36a297c902",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "567ac34c-2a13-4400-a766-256d745d5510",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Insider Program"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "3ea3a4f9-a36b-4a73-8e29-23aaa855526a",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4ebdb480-2379-45a0-9ac6-b859254baaba",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-insider-program"
+}

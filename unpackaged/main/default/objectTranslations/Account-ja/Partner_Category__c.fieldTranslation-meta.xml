@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Partner Category --></label>
+        <name>Partner_Category__c</name>
+        <picklistValues>
+            <masterLabel>Ad Network</masterLabel>
+            <translation><!-- Ad Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Network/Exchange</masterLabel>
+            <translation><!-- Ad Network/Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Server</masterLabel>
+            <translation><!-- Ad Server --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App Publishing Platform</masterLabel>
+            <translation><!-- App Publishing Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audience Measurement</masterLabel>
+            <translation><!-- Audience Measurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcasting solution</masterLabel>
+            <translation><!-- Broadcasting solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDN Provider</masterLabel>
+            <translation><!-- CDN Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDN, P2P, Delivery</masterLabel>
+            <translation><!-- CDN, P2P, Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS &amp; DAM</masterLabel>
+            <translation><!-- CMS &amp; DAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting company</masterLabel>
+            <translation><!-- Consulting company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Clipping</masterLabel>
+            <translation><!-- Content Clipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Editing</masterLabel>
+            <translation><!-- Content Editing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Marketing Platform</masterLabel>
+            <translation><!-- Content Marketing Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Provider</masterLabel>
+            <translation><!-- Content Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Recommendation Engine</masterLabel>
+            <translation><!-- Content Recommendation Engine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution Platform</masterLabel>
+            <translation><!-- Distribution Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Learning</masterLabel>
+            <translation><!-- E-Learning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Company</masterLabel>
+            <translation><!-- IT Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interactive Video</masterLabel>
+            <translation><!-- Interactive Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Video</masterLabel>
+            <translation><!-- Live Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAP</masterLabel>
+            <translation><!-- MAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media and Marketing Agency</masterLabel>
+            <translation><!-- Media and Marketing Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Platform</masterLabel>
+            <translation><!-- Payment Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QoS/QoE Analytics</masterLabel>
+            <translation><!-- QoS/QoE Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recommendation System</masterLabel>
+            <translation><!-- Recommendation System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rich Media Advertising</masterLabel>
+            <translation><!-- Rich Media Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Management</masterLabel>
+            <translation><!-- Social Media Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Integrator</masterLabel>
+            <translation><!-- System Integrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text Services</masterLabel>
+            <translation><!-- Text Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UGC</masterLabel>
+            <translation><!-- UGC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Analytics</masterLabel>
+            <translation><!-- Web Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Developer and Design Agency&quot;</masterLabel>
+            <translation><!-- Web Developer and Design Agency&quot; --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

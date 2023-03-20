@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "f2044910-f3cb-4b94-8b23-8dc9581366b1",
+  "appPageId" : "5072d3ab-f41f-4fa7-b393-eb19f68c4342",
+  "configurationTags" : [ ],
+  "id" : "9c970156-833d-4c3a-b71f-b2bd25cf4c88",
+  "label" : "Success",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-success",
+  "type" : "route",
+  "urlPrefix" : "success"
+}

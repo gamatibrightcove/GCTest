@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Account Edition --></label>
+        <name>Account_Edition__c</name>
+        <picklistValues>
+            <masterLabel>BASIC</masterLabel>
+            <translation><!-- BASIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORE</masterLabel>
+            <translation><!-- CORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENTERPRISE</masterLabel>
+            <translation><!-- ENTERPRISE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVS_Internal_Starter_2_Annual</masterLabel>
+            <translation><!-- EVS_Internal_Starter_2_Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVS_Internal_Starter_2_Monthly</masterLabel>
+            <translation><!-- EVS_Internal_Starter_2_Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVS_Sales_Starter_1_Annual</masterLabel>
+            <translation><!-- EVS_Sales_Starter_1_Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVS_Sales_Starter_1_Monthly</masterLabel>
+            <translation><!-- EVS_Sales_Starter_1_Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVS_Sales_Starter_2_Annual</masterLabel>
+            <translation><!-- EVS_Sales_Starter_2_Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVS_Sales_Starter_2_Monthly</masterLabel>
+            <translation><!-- EVS_Sales_Starter_2_Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPRESS_100</masterLabel>
+            <translation><!-- EXPRESS_100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPRESS_200</masterLabel>
+            <translation><!-- EXPRESS_200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPRESS_500</masterLabel>
+            <translation><!-- EXPRESS_500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPRESS_PROMO_29</masterLabel>
+            <translation><!-- EXPRESS_PROMO_29 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPRESS_PROMO_39</masterLabel>
+            <translation><!-- EXPRESS_PROMO_39 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPRESS_PROMO_5</masterLabel>
+            <translation><!-- EXPRESS_PROMO_5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Express Retention $199 Conversion</masterLabel>
+            <translation><!-- Express Retention $199 Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Express Retention $99 Conversion</masterLabel>
+            <translation><!-- Express Retention $99 Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growth</masterLabel>
+            <translation><!-- Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launch</masterLabel>
+            <translation><!-- Launch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Once</masterLabel>
+            <translation><!-- Once --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRO</masterLabel>
+            <translation><!-- PRO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRO_I</masterLabel>
+            <translation><!-- PRO_I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRO_II</masterLabel>
+            <translation><!-- PRO_II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRO_III</masterLabel>
+            <translation><!-- PRO_III --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay-As-You-Go</masterLabel>
+            <translation><!-- Pay-As-You-Go --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perform - Standard</masterLabel>
+            <translation><!-- Perform - Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traction</masterLabel>
+            <translation><!-- Traction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VMS_Starter_1_Annual</masterLabel>
+            <translation><!-- VMS_Starter_1_Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VMS_Starter_1_Monthly</masterLabel>
+            <translation><!-- VMS_Starter_1_Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VMS_Starter_2_Annual</masterLabel>
+            <translation><!-- VMS_Starter_2_Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VMS_Starter_2_Monthly</masterLabel>
+            <translation><!-- VMS_Starter_2_Monthly --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

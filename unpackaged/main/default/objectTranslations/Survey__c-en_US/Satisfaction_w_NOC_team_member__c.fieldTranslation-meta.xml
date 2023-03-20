@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How would you rate the Brightcove NOC team member with whom you worked? --></help>
+        <label><!-- Satisfaction w NOC team member --></label>
+        <name>Satisfaction_w_NOC_team_member__c</name>
+    </CustomFieldTranslation>

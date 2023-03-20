@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- SalesOps Question Area --></label>
+        <name>SalesOps_Question_Area__c</name>
+        <picklistValues>
+            <masterLabel>Billing Questions</masterLabel>
+            <translation><!-- Billing Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPQ</masterLabel>
+            <translation><!-- CPQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compensation</masterLabel>
+            <translation><!-- Compensation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Case</masterLabel>
+            <translation><!-- Duplicate Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding &amp; Training</masterLabel>
+            <translation><!-- Onboarding &amp; Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Products &amp; Pricing</masterLabel>
+            <translation><!-- Products &amp; Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing requests</masterLabel>
+            <translation><!-- Routing requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC - Accounts</masterLabel>
+            <translation><!-- SFDC - Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC - Administration</masterLabel>
+            <translation><!-- SFDC - Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC - BCAccount</masterLabel>
+            <translation><!-- SFDC - BCAccount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC - Leads Contacts &amp; Activities</masterLabel>
+            <translation><!-- SFDC - Leads Contacts &amp; Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC - Miscellaneous</masterLabel>
+            <translation><!-- SFDC - Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC - Opportunities</masterLabel>
+            <translation><!-- SFDC - Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC - Reporting</masterLabel>
+            <translation><!-- SFDC - Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Tools</masterLabel>
+            <translation><!-- Sales Tools --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

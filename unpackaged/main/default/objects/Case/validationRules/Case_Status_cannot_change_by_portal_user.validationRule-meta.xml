@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Status_cannot_change_by_portal_user</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED( Status ),
+CONTAINS($UserRole.DeveloperName , &quot;Portal&quot;) 
+)</errorConditionFormula>
+    <errorMessage>The change of the field &#39;Status&#39; is not allowed.</errorMessage>
+</ValidationRule>

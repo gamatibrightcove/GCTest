@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Live event created with Digital Rights Management(DRM) from the Encryption dropdown of the Advanced options. --></help>
+        <label><!-- Live event created with DRM --></label>
+        <name>Live_event_created_with_DRM__c</name>
+    </CustomFieldTranslation>

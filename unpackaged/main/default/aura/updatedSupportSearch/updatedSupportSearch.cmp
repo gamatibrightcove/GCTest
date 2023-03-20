@@ -1,0 +1,129 @@
+<aura:component controller="updatedSupportCtrl"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes"
+    access="global">
+    <aura:attribute name="term" type="String" />
+    <aura:attribute name="page" type="String" default="1" />
+    <aura:attribute name="hasSearched" type="Boolean" />
+    <aura:attribute name="hasResults" type="Boolean" />
+    <aura:attribute name="searchResults" type="Object[]" />
+    <aura:attribute name="searchCount" type="String" default="0" />
+    <aura:attribute name="pageResults" type="Object[]" />
+    <aura:attribute name="caseResults" type="Case[]" />
+    <aura:attribute name="caseCount" type="String" default="0" />
+    <aura:attribute name="questionResults" type="FeedItem[]" />
+    <aura:attribute name="questionCount" type="String" default="0" />
+    <aura:attribute name="IsSpinner" type="Boolean" />
+    <aura:attribute name="caseId" type="String" />
+    <aura:attribute name="caseModalIsOpen" type="Boolean" />
+    <aura:attribute name="forumId" type="String" />
+    <aura:attribute name="forumModalIsOpen" type="Boolean" />
+    <div style="overflow:none;width:100%;" class="slds-is-relative">
+        <lightning:layout horizontalAlign="spread" class="parentwide">
+            <lightning:layoutItem class="parentwide">
+                <div aura:id="messages"></div>
+                <lightning:layoutItem class="parentwide">
+                    <div class="slds-form--inline slds-p-top_xx-small slds-p-bottom_x-small">
+                        <div class="search-input slds-form-element">
+                            <ui:inputText aura:id="term" label="" class="form-control" value="{!v.term}"
+                                placeholder="{!$Label.c.Search_for_cases}" keyup="{!c.searchEnter}" />
+                        </div>
+                        <div class="slds-form-element">
+                            <lightning:button label="{!$Label.c.Search}" onclick="{!c.doSearch}" type="submit" />
+                        </div>
+                    </div>
+                </lightning:layoutItem>
+                <aura:if isTrue="{!v.IsSpinner}">
+
+                </aura:if>
+                <aura:if isTrue="{!!v.IsSpinner}">
+
+
+                    <aura:if isTrue="{!v.hasSearched}">
+
+                        <aura:if isTrue="{!v.hasResults}">
+                            <lightning:layoutItem padding="around-small">
+                                <lightning:tabset variant="scoped" class="parentwide">
+                                    <lightning:tab>
+                                        <aura:set attribute="label">
+                                            Cases ({!v.caseCount})
+                                        </aura:set>
+                                        <div style="width:100%;">
+                                            <div class="slds-grid slds-wrap">
+                                                <table class="slds-table slds-table_bordered slds-table_fixed-layout">
+                                                    <thead>
+                                                        <tr class="slds-text-title--caps">
+                                                            <th scope="col" class="slds-cell-shrink">
+                                                            </th>
+                                                            <th scope="col" class="slds-truncate">
+                                                                Case Number
+                                                            </th>
+                                                            <th colspan="2" scope="col" class="slds-truncate">
+                                                                Subject
+                                                            </th>
+                                                            <th scope="col" class="slds-truncate">
+                                                                Case Status
+                                                            </th>
+                                                            <th scope="col" class="slds-truncate">
+                                                                Priority
+                                                            </th>
+                                                            <th scope="col" class="slds-truncate">
+                                                                Date/Time Opened
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <aura:iteration items="{!v.caseResults}" var="res">
+                                                            <tr class="slds-hint-parent">
+                                                                <td class="slds-cell-shrink">
+                                                                    <div onclick="{!c.handleClickCase}"
+                                                                        data-recordid="{!res.Id}">
+                                                                        <lightning:icon iconName="utility:preview"
+                                                                            size="small" />
+                                                                    </div>
+                                                                </td>
+                                                                <td data-label="casenumber" class="slds-truncate">
+                                                                    <div onclick="{!c.handleClickLink}"
+                                                                        data-recordid="{!res.Id}"><a
+                                                                            onclick="{!c.handleClickLink}"
+                                                                            target="_blank">{!res.CaseNumber}</a></div>
+                                                                </td>
+                                                                <td colspan="2" data-label="subject"
+                                                                    class="slds-truncate">
+                                                                    {!res.Subject}
+                                                                </td>
+                                                                <td data-label="status" class="slds-truncate">
+                                                                    {!res.Status}
+                                                                </td>
+                                                                <td data-label="priority" class="slds-truncate">
+                                                                    {!res.Priority}
+                                                                </td>
+                                                                <td data-label="createddate" class="slds-truncate">
+                                                                    <lightning:formattedDateTime
+                                                                        value="{!res.CreatedDate}" />
+                                                                </td>
+                                                            </tr>
+                                                        </aura:iteration>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </lightning:tab>
+                                </lightning:tabset>
+                            </lightning:layoutItem>
+
+                            <!--<aura:set attribute="else">
+                            We didn't find anything for you, try searching for something else!
+                        </aura:set>-->
+                        </aura:if>
+                        <aura:if isTrue="{!!v.hasResults}">
+                            {!$Label.c.Search_something_else}
+                        </aura:if>
+                        <aura:set attribute="else">
+                            &nbsp;
+                        </aura:set>
+                    </aura:if>
+                </aura:if>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

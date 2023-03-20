@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Captures the latest date on which the contact opted out from receiving phone communication from Brightcove. --></help>
+        <label><!-- Phone - Opt-Out Date --></label>
+        <name>Phone_Opt_Out_Date__c</name>
+    </CustomFieldTranslation>

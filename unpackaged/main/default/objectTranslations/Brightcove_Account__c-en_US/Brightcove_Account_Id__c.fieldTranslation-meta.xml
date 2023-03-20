@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The Pub ID of the Brightcove account&apos;s Id in our own database. Updated via sync from origin-services account. --></help>
+        <label><!-- Brightcove Account Id --></label>
+        <name>Brightcove_Account_Id__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,133 @@
+{
+  "appPageId" : "d56c9ef6-9ffd-47d7-afb6-e3ecc0631426",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "9f1c132e-d58f-421a-bd1c-53863da8ed0d",
+  "label" : "Login",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "employeeLoginLinkLabel" : "Are you an employee? Login here"
+      },
+      "componentName" : "salesforceIdentity:employeeLoginLink2",
+      "id" : "0ab40037-145d-4ddf-a9f5-6e618f1fd57f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"container\">\n  <div class=\"box-collection\">\n    <ul class=\"column\">\n      <li class=\"box\"> \n          <div class=\"center\">\n              \n <img class=\"grid\" src=\"https://brightcove2--full.sandbox.file.force.com/servlet/servlet.ImageServer?id=0158F000000Po8M&oid=00D8F0000008jAl&lastMod=1674554655000\">\n              <br>\n              <a href=\"http://support.brightcove.com/\">PRODUCT DOCUMENTATION</a>\n              <h5 class=\"grid\">All you need to know about Brightcove products as a user or developer.</h5>\n          </div>\n      </li>\n      <li class=\"box\">\n          <div class=\"center\">\n              <img class=\"grid\" src=\"https://brightcove2--full.sandbox.file.force.com/servlet/servlet.ImageServer?id=0158F000000Po8L&oid=00D8F0000008jAl&lastMod=1674554655000\"> \n\n<br>\n              <a href=\"https://www.brightcove.com/en/university\">BRIGHTCOVE UNIVERSITY</a>\n              <h5 class=\"grid\">On-demand, engaging courses so you can learn on your own time, at your own pace.</h5>\n          </div>\n      </li>\n      <li class=\"box\">\n          <div class=\"center\">\n              <img class=\"grid\" src=\"https://brightcove2--full.sandbox.file.force.com/servlet/servlet.ImageServer?id=0158F000000Po8O&oid=00D8F0000008jAl&lastMod=1674554655000\"> \n\n<br>\n              <a href=\"https://status.brightcove.com/\">STATUS PAGE</a>\n              <h5 class=\"grid\">Stay informed of the status of Brightcove services at all times and get alerts to your email, phone or via RSS feed</h5>\n          </div>\n      </li>\n    </ul>\n    <ul class=\"column\">\n      <li class=\"box\">\n          <div class=\"center\">\n              <img class=\"grid\" src=\"https://brightcove2--full.sandbox.file.force.com/servlet/servlet.ImageServer?id=0158F000000Po8P&oid=00D8F0000008jAl&lastMod=1674554655000\">\n\n<br>\n              <a href=\"https://www.brightcove.com/en/services/customer-support\">SUPPORT PACKAGES</a>\n              <h5 class=\"grid\">Learn about our different support service offerings.</h5>\n          </div>\n      </li>\n      <li class=\"box\"> \n          <div class=\"center\">\n              <img class=\"grid\" src=\"https://brightcove2--full.sandbox.file.force.com/servlet/servlet.ImageServer?id=0158F000000Po8Q&oid=00D8F0000008jAl&lastMod=1674554655000\">\n\n<br>\n              <a href=\"https://www.brightcove.com/en/webinars\">WEBINARS</a>\n              <h5 class=\"grid\">Keep up to date with the latest video strategies</h5>\n          </div>\n      </li>\n      <li class=\"box\">\n          <div class=\"center\">\n              <img class=\"grid\" src=\"https://brightcove2--full.sandbox.file.force.com/servlet/servlet.ImageServer?id=0158F000000Po8N&oid=00D8F0000008jAl&lastMod=1674554655000\">\n\n<br>\n              <a href=\"https://www.brightcove.com/en/events\">EVENTS</a>\n              <h5 class=\"grid\">Find and attend relevant industry events</h5>\n          </div>\n      </li>\n    </ul>\n  </div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "ec8a1f4c-1f34-472d-8563-924b4eb621f3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "ja" : "22d14a89-b18d-4e93-8d39-9f52495c424d"
+      },
+      "renditions" : [ {
+        "id" : "22d14a89-b18d-4e93-8d39-9f52495c424d",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"container\">\n  <div class=\"box-collection\">\n    <ul class=\"column\">\n      <li class=\"box\"> \n      \t<div class=\"center\">\n      \t\t<img class=\"grid\" src=\"https://c.na171.content.force.com/servlet/servlet.ImageServer?id=0156f00003Y1RCr&oid=00D300000000ab7&lastMod=1595015871000\"><br><br>\n      \t\t<a href=\"https://ja.support.brightcove.com/\">製品ドキュメント</a>\n      \t\t<h5 class=\"grid\">ブライトコーブ製品に関するドキュメントやデベロップメントガイドをご覧いただけます。</h5>\n      \t</div>\n      </li>\n      <li class=\"box\">\n      \t<div class=\"center\">\n      \t\t<img class=\"grid\" src=\"https://c.na171.content.force.com/servlet/servlet.ImageServer?id=0156f00003Y1RCq&oid=00D300000000ab7&lastMod=1595015807000\"><br><br>\n      \t\t<a href=\"https://www.brightcove.com/ja/university\">BRIGHTCOVE 大学 (英語)</a>\n      \t\t<h5 class=\"grid\">ブライトコーブ製品に関するオンデマンドのトレーニングを受講することができます。</h5>\n      \t</div>\n\t  </li>\n      <li class=\"box\">\n      \t<div class=\"center\">\n      \t\t<img class=\"grid\" src=\"https://c.na171.content.force.com/servlet/servlet.ImageServer?id=0156f00003Y1RCt&oid=00D300000000ab7&lastMod=1595015819000\"><br><br>\n      \t\t<a href=\"https://status.brightcove.com/\">システムステータスページ(英語)</a>\n      \t\t<h5 class=\"grid\">現在のサービスの状態をご覧いただけます。メールやRSS フィードでのご購読も可能です。</h5>\n      \t</div>\n      </li>\n    </ul>\n    <ul class=\"column\">\n      <li class=\"box\">\n      \t<div class=\"center\">\n      \t\t<img class=\"grid\" src=\"https://c.na171.content.force.com/servlet/servlet.ImageServer?id=0156f00003Y1RCu&oid=00D300000000ab7&lastMod=1595015830000\"><br><br>\n      \t\t<a href=\"https://www.brightcove.com/ja/services/customer-support\">サポートパッケージ</a>\n      \t\t<h5 class=\"grid\">サポートパッケージの詳細及び比較をご覧いただけます</h5>\n      \t</div>\n      </li>\n      <li class=\"box\"> \n      \t<div class=\"center\">\n      \t\t<img class=\"grid\" src=\"https://c.na171.content.force.com/servlet/servlet.ImageServer?id=0156f00003Y1RCv&oid=00D300000000ab7&lastMod=1595015841000\"><br><br>\n      \t\t<a href=\"https://www.brightcove.com/ja/webinars\">ウェビナ(英語)</a>\n      \t\t<h5 class=\"grid\">最新の動画ストラテジに関する情報をご覧いただけます。</h5>\n      \t</div>\n      </li>\n      <li class=\"box\">\n      \t<div class=\"center\">\n      \t\t<img class=\"grid\" src=\"https://c.na171.content.force.com/servlet/servlet.ImageServer?id=0156f00003Y1RCs&oid=00D300000000ab7&lastMod=1595015856000\"><br><br>\n      \t\t<a href=\"https://www.brightcove.com/ja/events\">イベント(英語)</a>\n      \t\t<h5 class=\"grid\">関連した業界のイベントを見つけることができます。</h5>\n      \t</div>\n      </li>\n    </ul>\n  </div>\n</div>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "6d9bf5ab-575f-4466-b26b-5f3902824468",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Login"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d7d3e5ff-fa3e-40be-9f9e-c7d1028557d2",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b89a05ec-eb8e-4609-93a9-67383abb0a88",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "id" : "658b5429-baa6-4e45-ba6e-c29f3f006fbd",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"login\">\n    <h2>BRIGHTCOVE SUPPORT PORTAL LOGIN</h2>\n\t<span>*Support Portal credentials are not associated with Studio credentials*</span>\n\t</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "0a77363d-0da5-4f72-b031-88efbee4710d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "ja" : "ff716ae1-9c78-4bee-b8c1-a50fb34117fa"
+      },
+      "renditions" : [ {
+        "id" : "ff716ae1-9c78-4bee-b8c1-a50fb34117fa",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"login\">\n    <h2>ブライトコーブサポートへのお問い合わせにはログインが必要となります</h2>\n\t<span>* 新しいサポートポータルを全てのお客様にご活用いただけるよう、旧 Web フォームは廃止となりました。なお、サポートポータル(本システム)とVideo Cloud スタジオは異なるシステムであることから、ログイン情報(ユーザ名とパスワード)は関連しておりません。サポートポータルへログインするためのメールアドレス及びパスワードをご登録いただいていない場合には、下記の「新規登録」をクリックしてご登録ください。</span>\n\t</div>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "forgotPasswordLabel" : "Forgot your password?",
+        "forgotPasswordUrl" : "/ForgotPassword",
+        "loginButtonLabel" : "Log in",
+        "passwordLabel" : "Password",
+        "selfRegisterLabel" : "Sign up",
+        "selfRegisterUrl" : "/CommunitiesSelfReg",
+        "startUrl" : "",
+        "usernameLabel" : "Username"
+      },
+      "componentName" : "salesforceIdentity:loginForm2",
+      "id" : "03421a98-d586-4830-8e84-a674d418308b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "ja" : "ea8d1135-964a-41ed-862f-700ea21dc98b"
+      },
+      "renditions" : [ {
+        "id" : "ea8d1135-964a-41ed-862f-700ea21dc98b",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "forgotPasswordLabel" : "パスワードをお忘れの場合",
+            "loginButtonLabel" : "ログイン",
+            "passwordLabel" : "パスワード",
+            "selfRegisterLabel" : "新規登録",
+            "usernameLabel" : "ユーザ名"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"text-align:center;\">\n    <p > Trouble resetting your password?<br/>\n    <a href=\"https://general.support.brightcove.com/support/reset-support-portal-password.html\">review the process here</a>\n    </p>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "65419beb-07de-4ba9-a9e2-a407b42e86c8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a9f3b438-53f3-4780-91e7-d48c96a3528f",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "ac913024-2a2e-41f6-aab9-bc8803a0888a",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "login-home"
+}

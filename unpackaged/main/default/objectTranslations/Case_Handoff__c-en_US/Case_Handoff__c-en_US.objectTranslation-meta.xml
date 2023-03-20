@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Handoff</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Handoffs</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Case Handoff Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- If you own a case from a customer, that needs to be actioned from support team members during the next time zones and 24 hours. --></description>
+        <label><!-- Multiple Region Handoff --></label>
+        <name>Multiple_Region_Handoff</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- If you own a case from a customer not based in your region and it requires someone on the customer&apos;s timezone to handle it. --></description>
+        <label><!-- Single Region Handoff --></label>
+        <name>Single_Region_Handoff</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t handoff a case that is being monitored --></errorMessage>
+        <name>Cant_Handoff_a_Case_Watch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The case must have an owner before handing it over --></errorMessage>
+        <name>Case_must_have_an_owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- From region must match your region --></errorMessage>
+        <name>From_Region_and_User_Region_must_match</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must own the handoff for a customer in  your region. --></errorMessage>
+        <name>Own_Handoff_In_User_Region</name>
+    </validationRules>
+</CustomObjectTranslation>

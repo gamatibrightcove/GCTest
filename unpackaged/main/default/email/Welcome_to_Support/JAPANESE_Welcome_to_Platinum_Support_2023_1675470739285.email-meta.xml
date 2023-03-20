@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>JAPANESE template for Welcome email for Platinum Support customers</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>JAPANESE - Welcome to Platinum Support 2023</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Brightcove Platinum サポートのご案内 - {{{Case.Zapier_Account_Name__c}}} 様</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

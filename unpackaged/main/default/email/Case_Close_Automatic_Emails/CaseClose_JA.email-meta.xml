@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email will be sent to the customer when the case is closed by a Support Specialist - Japanese - with GetFeedback URLs</description>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>CaseClose-JA</name>
+    <style>none</style>
+    <subject>Brightcove Case {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>ご担当者様,
+
+この度は、Brightcove サポートへお問い合わせいただき、誠にありがとうございました。
+お問合わせいただいた下記サポートケースをクローズとさせていただきます。
+
+ケース番号: {!Case.CaseNumber}
+表題: {!Case.Subject}
+担当: {!Case.OwnerFirstName}.
+
+また、もしよろしければ、今後サポート品質を向上させるため、本サポートケースの対応に関するアンケートにご協力いただければと存じます。
+アンケートは 1 から 5 までの数値で評価いただく形となっており、最高点(非常にご満足いただけた場合) が 5、最低点(非常にご不満の場合) が 1 となっております。
+
+https://www.getfeedback.com/r/i4c0srTk?Case_Contact_ID={!Case.ContactId}&amp;Case_ID={!Case.Id}&amp;Case_Account_ID={!Case.Account_Account_ID__c}&amp;gf_id={!Contact.Email}{!Case.Id}&amp;Case_Closed_Date={!Case.ClosedDate}&amp;Case_Owner_Full_Name={!Case.OwnerFullName}
+
+本サポートケースは一旦クローズとさせていただきますが、お送りした回答にご不明な点または回答漏れなどがございましたら、
+引き続き対応させていただきますので、お気軽に本メールに直接ご返信いただく形でお知らせいただければと存じます。
+
+今後ともよろしくお願い申し上げます。
+Brightcove カスタマーサポートチーム
+
+お客様のサポートケースは全て、&lt;a href=&quot;https://supportportal.brightcove.com&quot;&gt;サポート専用ポータル&lt;/a&gt;にてご覧いただくことが可能です。
+また、現在のシステム稼働状況は、&lt;a href=&quot;https://status.brightcove.com&quot;&gt;システムステータスページ&lt;/a&gt;にてご覧いただけます。</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

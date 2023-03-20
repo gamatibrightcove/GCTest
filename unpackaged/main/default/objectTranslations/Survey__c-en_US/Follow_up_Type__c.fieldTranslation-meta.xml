@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What type of follow-up is required for this survey? --></help>
+        <label><!-- Follow-up Type --></label>
+        <name>Follow_up_Type__c</name>
+        <picklistValues>
+            <masterLabel>Coaching</masterLabel>
+            <translation><!-- Coaching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Call</masterLabel>
+            <translation><!-- Customer Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Call &amp; Coaching</masterLabel>
+            <translation><!-- Customer Call &amp; Coaching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Only</masterLabel>
+            <translation><!-- Internal Only --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

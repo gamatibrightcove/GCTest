@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Root Cause --></label>
+        <name>Root_Cause__c</name>
+        <picklistValues>
+            <masterLabel>3rd Party</masterLabel>
+            <translation><!-- 3rd Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bug</masterLabel>
+            <translation><!-- Bug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDN Slowness</masterLabel>
+            <translation><!-- CDN Slowness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSM/Sales/BGS/Finance</masterLabel>
+            <translation><!-- CSM/Sales/BGS/Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client/delivery error</masterLabel>
+            <translation><!-- Client/delivery error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer training gaps</masterLabel>
+            <translation><!-- Customer training gaps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data not available</masterLabel>
+            <translation><!-- Data not available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data processing</masterLabel>
+            <translation><!-- Data processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOL (End of Life)</masterLabel>
+            <translation><!-- EOL (End of Life) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enhancement Request</masterLabel>
+            <translation><!-- Enhancement Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>False-positive alert</masterLabel>
+            <translation><!-- False-positive alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Input latency</masterLabel>
+            <translation><!-- Input latency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live system failure</masterLabel>
+            <translation><!-- Live system failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Issue</masterLabel>
+            <translation><!-- Product Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Source Encoder</masterLabel>
+            <translation><!-- Source Encoder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Source Issue (network, upload speed, ISP)</masterLabel>
+            <translation><!-- Source Issue (network, upload speed, ISP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Issue</masterLabel>
+            <translation><!-- System Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task</masterLabel>
+            <translation><!-- Task --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Error</masterLabel>
+            <translation><!-- User Error --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

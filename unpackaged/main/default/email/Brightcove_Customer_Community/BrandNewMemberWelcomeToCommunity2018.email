@@ -1,0 +1,120 @@
+<messaging:emailTemplate subject="{!$Label.Community_WelcomeMsg_Subject}" recipientType="User" relatedToType="Community" language="{!recipient.LanguageLocaleKey}">
+<messaging:htmlEmailBody >
+
+<html>
+   <head>
+      <title>Brightcove Support Portal</title>
+      <META http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <!---<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap" rel="stylesheet"></link>-->
+   </head>
+   <body>
+      <!--<style>
+         @import url('https://www.fontify.me/wf/d1d1943239bdc1297f6ae30575e05fd5');
+         body{
+         font-family: font89466;
+         }
+      </style>-->
+      <div bgcolor="#f0f0f0" marginwidth="0" marginheight="0" style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+         <center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+            <table border="0" cellpadding="0" cellspacing="0" width="625" align="center" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0">
+               <!----Header----->   
+               <tr>
+                  <td id="header" align="left" valign="top" width="100%" style="text-align:left;background-color:#08088C;padding:40px 0 40px 50px">
+                     <a href="http://www.brightcove.com/en" style="border-bottom:none" target="_blank">
+                     <img src="https://img.brightcove.com/web/logos/Brightcove_Blue_2020_600.png" href="https://supportportal.brightcove.com/s/" width="25%"></img>
+                     </a>
+                  </td>
+               </tr>
+               <!----Content----->               
+               <tr>
+                  <td valign="top" style="padding-bottom:0px;background-color:#f0f0f0">
+                                   <table align="center" width="649" cellspacing="0" cellpadding="0" border="0" style="width:633px; margin:0; padding:0; padding-left:1px; background-color:#f0f0f0; margin-left:auto; margin-right:auto; text-align:left;" bgcolor="#f0f0f0">
+                  <tr>
+                     <td width="632" valign="top" style="padding:10px 20px 20px 30px; border-right:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; border-left:1px solid #e5e5e5; font-family:Arial; ;font-size:16px; color:#000000;" bgcolor="#ffffff">
+                        <br/><br/>
+                         {!IF(recipient.LanguageLocaleKey == 'ja', '', 'Hi ')}{!IF(recipient.LanguageLocaleKey == 'ja', 'お客様', recipient.FirstName)}{!IF(recipient.LanguageLocaleKey == 'ja', '、', ',')}
+                        <br/>
+                        <br/>
+                        {!$Label.Community_WelcomeMsg_L1}<br/>
+                        <br/>
+                        <table align="center" >
+                            <tbody>
+                                <tr>
+                                    <td width="250" height="25" style="text-align:center;background-color:#FF5000;border-radius:4px 4px 4px 4px;padding-top:10px;padding-bottom:10px">
+                                        <center>
+                                            <table align="center">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="text-align:center;">
+                                                        <font color="#FFFFFF" style="font-family:arial;font-size:16px;line-height:22px"><strong>
+                                                            <a href="{!$Network.NetworkUrlForUserEmails}" style="font-family:arial;font-size:16px;line-height:22px;color:#fff;text-decoration:none;" target="_blank">{!$Label.Community_WelcomeMsg_L2}</a></strong>
+                                                        </font>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                 </table>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                      <br/>
+                      <br/>
+                        {!$Label.Community_WelcomeMsg_THX}
+                        <br/>
+                        {!$Label.Community_WelcomeMsg_BC_Support}
+                        <br/><br/>
+
+                     </td>
+                  </tr>
+               </table>
+                  </td>
+               </tr>
+               <!----Footer----->                
+               <tr id ="footer">
+                  <td align="left" bgcolor="#00000" valign="top" style="padding:30px 50px">
+                     <table bgcolor="#00000" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                           <td style="padding:26px 0 25px 0!important;">
+                              <a href="https://supportportal.brightcove.com/s/" style="border-bottom:none;" target="_blank">
+                              <img src="https://files.brightcove.com/BROlogos/BrightcoveWhite.png" width="120" height="18"></img>
+                              </a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="padding-bottom:19px;">
+                              <a style="padding-right:29px;" href="https://www.linkedin.com/company/brightcove/" target="_blank"><img src="https://img.brightcove.com/brightcove-new-brand-2020/social-media/in-icon@2x.png" width="20"></img></a>
+                              <a style="padding-right:29px;" href="https://twitter.com/brightcove" target="_blank"><img src="https://img.brightcove.com/brightcove-new-brand-2020/social-media/tw-icon@2x.png" width="20"></img></a>
+                              <a style="padding-right:29px;" href="https://www.facebook.com/Brightcove" target="_blank"><img src="https://img.brightcove.com/brightcove-new-brand-2020/social-media/fb-icon@2x.png" width="20"></img></a>
+                           </td>
+                        </tr><!-- 
+                        <tr>
+                           <td align="center" valign="top" style="font-family:&#39;Arial&#39;;font-size:12px;color:#fff;text-align:left;line-height:120%;padding-bottom:0">
+                              <strong>Trouble seeing this email?</strong>
+                              <a href="http://app.now.brightcove.com/e/es.aspx?s=~~eloqua..type--emailfield..syntax--siteid..innerText--siteid..encodeFor--url~~&amp;e=~~eloqua..type--emailfield..syntax--elqemailsaveguid..innerText--elqemailsaveguid..encodeFor--url~~&amp;elqTrackId=d3b876cd99044e68b7a6404121492e1c" style="color:#fff!important;border-bottom:1px solid;text-decoration:none!important;border-bottom:0" target="_blank">View it as a Web page.</a>
+                           </td>
+                        </tr> -->
+                        <tr>
+                           <td align="center" valign="top" style="padding:5px 0 26px 0;font-family:Arial;font-size:12px;color:#fff;text-align:left;line-height:120%">
+                              <a style="color:#fff!important;border-bottom:1px solid;text-decoration:underline;border-bottom:0" href="http://www.brightcove.com/en/terms-and-conditions?elqTrackId=9c14c3240b064bf088bea2f69eba3295&amp;elqTrack=true" target="_blank">Terms &amp; Conditions</a>  | 
+                              <a style="color:#fff!important;border-bottom:1px solid;text-decoration:underline;border-bottom:0" href="https://www.brightcove.com/en/legal/privacy?elqTrackId=c9deb494de654738839ccd085b813fc6&amp;elqTrack=true" target="_blank">Privacy</a>
+                              <br></br>
+                              <br></br>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="top" style="font-family:Arial;font-size:11px;color:#fff;text-align:left;line-height:120%;padding-bottom:20px">
+                              ©2021 Brightcove Inc. All rights reserved. 290 Congress Street 4th Floor, Boston MA 02210, USA
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+            </table>
+         </center>
+      </div>
+   </body>
+</html>
+
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

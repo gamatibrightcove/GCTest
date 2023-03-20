@@ -1,0 +1,23 @@
+{
+  "appPageId" : "2746e722-1a11-406a-a340-af73d0c0847c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "e4478db3-4a83-4f69-924b-e021ca25bb60",
+  "label" : "Opportunity Team Member List",
+  "regions" : [ {
+    "id" : "d38e2a95-a313-4d32-9758-57fe9764ad1d",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "af05a771-1c60-4c33-a527-8b40774152a5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3bf342ad-d5ef-42d7-8039-6760356d4fa0",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-00q"
+}

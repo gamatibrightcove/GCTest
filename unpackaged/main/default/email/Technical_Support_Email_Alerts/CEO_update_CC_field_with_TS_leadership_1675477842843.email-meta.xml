@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert sent to TS leadership when CEO is included in Tickets by customers</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CEO update CC field with TS leadership</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>[IMPORTANT] Case n. {{{Case.CaseNumber}}} includes the CEO</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

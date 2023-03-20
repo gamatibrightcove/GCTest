@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CSAT Survey for NOC Cases</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>LE-CaseClose-EN</name>
+    <style>none</style>
+    <subject>Live Event Support {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>Brightcove Customer Support Feedback
+
+WE ARE CLOSING YOUR CASE
+
+Dear {!Contact.FirstName},
+
+This is a follow-up email in regards to your recent live event support request and your experience working with {!Case.OwnerFirstName}.  Case Number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+
+If you have a moment, we would really appreciate your feedback. On a scale of 1 to 5, with 5 being very satisfied and 1 being very dissatisfied how would you rate this case?
+
+
+https://www.getfeedback.com/r/h7vb8XI1?Case_Contact_ID={!Case.ContactId}&amp;Case_ID={!Case.Id}&amp;Case_Account_ID={!Case.AccountId}&amp;Case_Contact={!Case.Contact}&amp;Case_Account={!Case.Account}&amp;Case_Owner_Full_Name={!Case.OwnerFullName}&amp;Case_Case_Number={!Case.CaseNumber}&amp;Case_Closed_Date={!Case.ClosedDate}&amp;Case_Support_Package={!Case.Support_Package__c}&amp;Case_Origin={!Case.Origin}&amp;Contact_Email={!Contact.Email}&amp;Case_Account_Tier={!Case.Account_Tier__c}&amp;Case_Account_Edition={!Case.Account_Edition__c}&amp;Case_Survey_Number={!Case.Survey_Number__c}&amp;gf_id={!Contact.Email}{!Case.Id}&amp;gf_unique={!Contact.Email}{!Case.Id}
+
+
+If you require further assistance and/or information regarding this specific case, please reply directly to this email so we may provide additional support. If we do not hear back from you we will consider the case resolved.
+
+Warm regards,
+The Brightcove Customer Support Team
+
+You can see all of your cases in our Support Portal, and the current system status is always available on our Status Page.
+
+Trouble seeing this email? View it as a Web page.
+Terms &amp; Conditions | Privacy | Preferences &amp; Unsubscribe
+©2020 Brightcove Inc. All rights reserved. 290 Congress Street 4th Floor, Boston MA 02210, USA</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

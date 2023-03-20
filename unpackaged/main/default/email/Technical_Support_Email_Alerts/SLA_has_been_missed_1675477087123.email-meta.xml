@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To alert thecs_leadership@brightcove.com when a case has hit it&#39;s SLA and has received no response</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SLA has been missed</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>SLA Missed: {{{Case.CaseNumber}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email will be sent to the customer when the case is closed by a Support Specialist - Italian - Updated March 2017</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CaseClose-IT</name>
+    <style>none</style>
+    <subject>Brightcove Case {!Case.CaseNumber} [ {!Case.Thread_Id} ] {!Case.Subject}</subject>
+    <textOnly>Gentile {!Contact.FirstName},
+
+Stiamo per chiudere questo ticket.
+
+Questa email ha per oggetto la recente richiesta di supporto e la collaborazione con l&#39;assistente {!Case.OwnerFirstName}.
+
+Numero del ticket: {!Case.CaseNumber}
+Oggetto: {!Case.Subject}
+
+Se ha un momento, le vorremmo gentilmente chiedere un cordiale feedback:
+
+https://survey.clicktools.com/go?iv=ghtixcfc7q6k&amp;q1={!Case.ContactId}&amp;q2={!Case.Id}&amp;q3={!Case.AccountId}&amp;q4={!Case.Contact}&amp;q5={!Case.Account}&amp;q6={!Case.OwnerFullName}&amp;q7={!Case.CaseNumber}&amp;q8={!Case.ClosedDate}&amp;q10={!Case.Support_Package__c}&amp;q11={!Case.Origin}&amp;q12={!Case.SuppliedEmail}&amp;q9={!Case.Account_Tier__c}&amp;q13={!Case.Account_Edition__c}&amp;q14=1
+
+Se dovesse aver bisogno di ulteriori assistenza e/o informazioni riguardanti questo specifico ticket, può rispondere direttamente a questa mail, cosí da poterle fornire ulteriore supporto. In caso contrario, considereremo questo caso risolto.
+
+Cordialmente,
+The Brightcove Customer Support Team
+
+E&#39; possibile visionare l&#39;avanzamento dei ticket aperti sul nostro Support Portal, https://supportportal.brightcove.com. Lo stato dei nostri sistemi e&#39; disponibile nella nostra Status Page, https://status.brightcove.com.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

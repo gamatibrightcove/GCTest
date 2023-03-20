@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- SObject --></label>
+        <name>SObject__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brightcove_Account__c</masterLabel>
+            <translation><!-- Brightcove_Account__c --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Event Coverage Hours Type --></label>
+        <name>Event_Coverage_Hours_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bulk (50+)</masterLabel>
+            <translation><!-- Bulk (50+) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

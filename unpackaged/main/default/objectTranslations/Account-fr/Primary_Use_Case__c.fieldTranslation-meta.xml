@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Primary Use Case --></label>
+        <name>Primary_Use_Case__c</name>
+        <picklistValues>
+            <masterLabel>Corporate Comms</masterLabel>
+            <translation><!-- Corporate Comms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow markets</masterLabel>
+            <translation><!-- Grow markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live</masterLabel>
+            <translation><!-- Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing &amp; Sales</masterLabel>
+            <translation><!-- Marketing &amp; Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTT</masterLabel>
+            <translation><!-- OTT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual Events</masterLabel>
+            <translation><!-- Virtual Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eCommerce</masterLabel>
+            <translation><!-- eCommerce --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

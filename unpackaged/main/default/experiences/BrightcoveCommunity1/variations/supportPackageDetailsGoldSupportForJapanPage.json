@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "9d3e3f3f-6d3b-465c-b331-f1566221f337",
+    "propertyOverrides" : {
+      "activeViewId" : "c888059d-9369-4917-9831-044b9c49a455"
+    },
+    "targetId" : "ae366f36-7340-4bf4-8741-5d599684250f",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Support_Package_Details_Gold_Support_for_Japan_Page",
+  "id" : "35eed673-c0ed-4a50-8322-5e9aa9dde955",
+  "type" : "experienceVariation"
+}

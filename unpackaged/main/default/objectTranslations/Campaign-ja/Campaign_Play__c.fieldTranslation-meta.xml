@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Campaign Play --></label>
+        <name>Campaign_Play__c</name>
+        <picklistValues>
+            <masterLabel>Engage People</masterLabel>
+            <translation><!-- Engage People --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monetize Content</masterLabel>
+            <translation><!-- Monetize Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sell Products</masterLabel>
+            <translation><!-- Sell Products --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="min-width:100%!important;max-width:100%!important;width:100%!important;margin:0;padding:0;background-color:#f0f0f0">
+<center style="background-color:#f0f0f0;margin:0;padding:0;max-width:100%!important;width:100%!important;min-width:100%!important">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;min-width:600px;margin:0;padding:0" width="625">
+	
+		<tr>
+			<td style="padding-bottom:0px;background-color:#f0f0f0" valign="top">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr>
+						<td align="left" style="padding:50px 50px 30px 50px;margin:0;color:#333;" valign="top">
+						<p style="padding:0;margin:0;color:#333;line-height:1.1;font-family:'Arial Black';font-size:34px;text-align:left">BRIGHTCOVE サポート:ライブチャットサポート通知</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" style="padding:0 50px 50px 50px;margin:0;text-align:left;font-family:'Arial';font-size:15px;color:#333;line-height:150%" valign="top">
+						<p style="font-family:'Arial';font-weight: bold;font-size:18px;color:#000000">ご担当者様,<br />
+						&nbsp;</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">ライブチャットでのお問い合わせありがとうござました。ライブチャットでのお問い合わせいただいた件について、下記のとおりサポートケースを作成致しましたのでお知らせ致します</p>
+
+						<ul style="font-family:'Arial';font-size:16px;color:#000000;margin-left:25px;list-style-type: none;">
+							<li>サポートケース番号:&nbsp;<strong>{{{Case.CaseNumber}}}</strong></li>
+							<li>サポートケース作成日:&nbsp;<strong>{{{Case.CreatedDate}}}</strong></li>
+							<li>件名:<strong>{{{Case.Subject}}}</strong></li>
+							<li>チャット内容のログ:<br />
+							<strong>{{{Case.Case_Comment__c}}}</strong></li>
+						</ul>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">チャットでのお問い合わせ内容について弊社からの回答をお待ちの状態である場合、上記のサポートケースから弊社サポート担当がご連絡させていただきますので、しばらくお待ちいただけますようお願い致します。</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">また、該当のサポートケースは <a href="https://supportportal.brightcove.com/s/login/?language=ja">サポートポータル</a> からご参照いただけます。</p>
+
+						<p style="font-family:'Arial';font-size:16px;color:#000000">引き続きよろしくお願い致します。<br />
+						<strong>ブライトコーブサポートチーム</strong></p>
+
+						<p style="font-family:'Arial';font-size:15px;color:#000000">これまでに作成いただきた全てのサポートケースは <a href="https://supportportal.brightcove.com/s/login/?language=ja">サポートポータル</a> にて、現在のシステム稼働状況は <a href="https://status.brightcove.com/">システムステータス</a> にてご覧いただけます。<br />
+						<br />
+						{{{Case.E2CP__Case_Thread_Id__c}}}</p>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</center>
+</div>
+</body>
+</html>
