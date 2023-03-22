@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This field controls the visibility settings of the view. Example the view could set as publicly visible or only visible to a particular user (private) --></help>
+        <label><!-- Visibility --></label>
+        <name>JBCXM__Visibility__c</name>
+    </CustomFieldTranslation>

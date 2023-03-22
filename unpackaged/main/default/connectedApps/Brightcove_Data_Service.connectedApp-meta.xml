@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>salesforce@brightcove.com</contactEmail>
+    <description>Application for syncing information between Salesforce and Brightcove systems</description>
+    <label>Brightcove Data Service</label>
+    <oauthConfig>
+        <callbackUrl>https://brightcove.com</callbackUrl>
+        <certificate>MIIDxDCCAqwCCQD5oBGAoCPqSDANBgkqhkiG9w0BAQsFADCBozELMAkGA1UEBhMCVVMxFjAUBgNVBAgMDU1hc3NhY2h1c2V0dHMxDzANBgNVBAcMBkJvc3RvbjETMBEGA1UECgwKQnJpZ2h0Y292ZTEUMBIGA1UECwwLRW5naW5lZXJpbmcxFzAVBgNVBAMMDmJyaWdodGNvdmUuY29tMScwJQYJKoZIhvcNAQkBFhh0ZWFtLWNvcmVAYnJpZ2h0Y292ZS5jb20wHhcNMjMwMzIwMTExNjMyWhcNMjQwMzE5MTExNjMyWjCBozELMAkGA1UEBhMCVVMxFjAUBgNVBAgMDU1hc3NhY2h1c2V0dHMxDzANBgNVBAcMBkJvc3RvbjETMBEGA1UECgwKQnJpZ2h0Y292ZTEUMBIGA1UECwwLRW5naW5lZXJpbmcxFzAVBgNVBAMMDmJyaWdodGNvdmUuY29tMScwJQYJKoZIhvcNAQkBFhh0ZWFtLWNvcmVAYnJpZ2h0Y292ZS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCz1z5kimX59lx5SicJnLL1j78beGRFmGYFtsWyjqnfA1PormJq0tXQfFL95pchPMT/Mov8ynOT/6+qcxegKi5UltddVnRxnHR6Vp2c3zPMB4OQl7Mv+HsQrLSTEeIsHtruDoWyeLkeFuvsxlgTraaEJZSSkaNj0bQcifD134pv8sT1cxMRRVhI2JcuNjCXvBgWhjKKq1VVydbBS4XTkHNnG1bJOfhCFwf4KY9OF1O6hf4anv7Lc1MByuPzLu+a5zsq9kxGwWZVJM82xDiNBO69PQyMCxyq5T13RXrTW05/wgaHjdQ5I7zo7R7DBVLYMs6Q2oq1fzuN6u8s1XPYwuxhAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAAhaXuWQKWESSOQI7zAr7C4MN76LFF9xCsGOegingnr0yO+g4GpnIP09eMEm+mQzdWEQphBYMMrTfuvWrEFSWQ+0FspblVtiktMPn4xVOBMx4HLg8A52HrUSddzwarrSZMSsZ+lYTnzL4HPZTfxh2DaKO4yJRNe7J/tXJzfLf3PYWCZU5bLtdV55w1l+k6YNkzeaR1kyN79+5zS5hOU6njJsPRN97SnJPBSAqfzqFt8IooowpWG5z9Tuo4DIVvq1QLBzsGLkHxJxeaDCN7bOP6hHXkHpgNOsh9Oor+2BV0KLiUzDgFLfN1u3YuQz6FPNUHBSr7YBkP8P8FJWvSej/eU=</certificate>
+        
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+</ConnectedApp>

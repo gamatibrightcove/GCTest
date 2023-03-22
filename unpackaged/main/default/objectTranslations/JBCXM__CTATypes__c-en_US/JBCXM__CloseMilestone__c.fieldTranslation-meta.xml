@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- CloseMilestone --></label>
+        <name>JBCXM__CloseMilestone__c</name>
+        <relationshipLabel><!-- CloseMilestone --></relationshipLabel>
+    </CustomFieldTranslation>

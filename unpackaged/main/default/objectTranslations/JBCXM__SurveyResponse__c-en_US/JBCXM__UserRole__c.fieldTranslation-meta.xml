@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Role of the user providing the comment. --></help>
+        <label><!-- User Role --></label>
+        <name>JBCXM__UserRole__c</name>
+    </CustomFieldTranslation>

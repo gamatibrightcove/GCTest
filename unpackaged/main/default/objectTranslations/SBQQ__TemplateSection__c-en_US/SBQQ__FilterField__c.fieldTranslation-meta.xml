@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Field used to filter records rendered by this section. --></help>
+        <label><!-- Filter Field --></label>
+        <name>SBQQ__FilterField__c</name>
+        <picklistValues>
+            <masterLabel>Hide_From_Legacy_Rate_Cards__c</masterLabel>
+            <translation><!-- Hide_From_Legacy_Rate_Cards__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional</masterLabel>
+            <translation><!-- Optional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paperwork_Product_Type__c</masterLabel>
+            <translation><!-- Paperwork_Product_Type__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Type__c</masterLabel>
+            <translation><!-- Product_Type__c --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

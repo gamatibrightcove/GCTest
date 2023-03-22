@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__All</fullName>
+    <columns>NAME</columns>
+    <columns>DriftData__Conversation_ID__c</columns>
+    <columns>DriftData__Contact__c</columns>
+    <columns>DriftData__Lead__c</columns>
+    <columns>DriftData__Playbook_Name__c</columns>
+    <columns>DriftData__Account__c</columns>
+    <columns>DriftData__Teammate__c</columns>
+    <columns>DriftData__Conversation_Close_Time__c</columns>
+    <columns>DriftData__Conversation_Start_Time__c</columns>
+    <columns>DriftData__Email_Captured__c</columns>
+    <columns>DriftData__Meeting_Booked__c</columns>
+    <columns>DriftData__Influenced_Look_Back_Period_fx__c</columns>
+    <columns>DriftData__Playbook_ID__c</columns>
+    <columns>DriftData__Has_Teammate__c</columns>
+    <columns>DriftData__Has_Bot__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

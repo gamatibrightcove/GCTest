@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- SLAs will only apply to records that are active. --></help>
+        <label><!-- SLAs respect active status --></label>
+        <name>n2de__SLAs_respect_active_status__c</name>
+    </CustomFieldTranslation>

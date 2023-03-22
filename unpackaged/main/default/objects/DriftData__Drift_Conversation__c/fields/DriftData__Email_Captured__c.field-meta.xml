@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Email_Captured__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>True if email was captured during the conversation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>True if email was captured during the conversation.</inlineHelpText>
+    <label>Email Captured</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

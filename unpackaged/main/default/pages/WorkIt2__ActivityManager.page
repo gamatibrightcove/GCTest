@@ -1,0 +1,3 @@
+<apex:page controller="WorkIt2.ActivityController" setup="true"  title="Advanced Session Types - WorkIt! Setup">
+    <!-- V4:Deprecated -->
+</apex:page>

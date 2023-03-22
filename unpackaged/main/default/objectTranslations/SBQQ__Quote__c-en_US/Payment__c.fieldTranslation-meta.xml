@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Payment --></label>
+        <name>Payment__c</name>
+        <picklistValues>
+            <masterLabel>別途備考欄をご参照ください。</masterLabel>
+            <translation><!-- 別途備考欄をご参照ください。 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>月末締め翌月15日支払い</masterLabel>
+            <translation><!-- 月末締め翌月15日支払い --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>月末締め翌月末支払い</masterLabel>
+            <translation><!-- 月末締め翌月末支払い --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>請求書発行日から120日以内支払い</masterLabel>
+            <translation><!-- 請求書発行日から120日以内支払い --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>請求書発行日から45日以内支払い</masterLabel>
+            <translation><!-- 請求書発行日から45日以内支払い --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>請求書発行日から60日以内支払い</masterLabel>
+            <translation><!-- 請求書発行日から60日以内支払い --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>請求書発行日から90日以内支払い</masterLabel>
+            <translation><!-- 請求書発行日から90日以内支払い --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

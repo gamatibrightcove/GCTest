@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The level at which sticky assignment matching should occur. --></help>
+        <label><!-- Sticky match level --></label>
+        <name>n2de__Sticky_match_level__c</name>
+        <picklistValues>
+            <masterLabel>Distributor</masterLabel>
+            <translation><!-- Distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team</masterLabel>
+            <translation><!-- Team --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

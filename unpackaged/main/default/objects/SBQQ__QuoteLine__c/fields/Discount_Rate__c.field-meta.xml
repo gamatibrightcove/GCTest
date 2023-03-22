@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discount_Rate__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, &quot;Amendment&quot;), SBQQ__Product__r.Custom_Amend__c), 0.0, SBQQ__TotalDiscountRate__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Discount Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

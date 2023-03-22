@@ -1,0 +1,174 @@
+<apex:page controller="n2de.Team_DistributionHours_Controller" tabStyle="n2de__Team__c" sidebar="false" standardStylesheets="false"
+    docType="html-5.0" title="Distribution Engine: Distribution Hours" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+            window.addEventListener("load", function () {
+                <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                <c:Team_TeamBase attrTeamId="{!JSENCODE(TeamId)}"/>
+                <c:PageContext />
+
+                const getIsQ2QTeam = new n2.dataProvider.VisualForce({
+                    id: 'get-is-q2q-team',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_DistributionHours_Controller.isQ2QTeam}'
+                        }
+                    }
+                });
+
+                const getShiftNames = new n2.dataProvider.VisualForce({
+                    id: 'get-shift-names',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_DistributionHours_Controller.getShiftNames}'
+                        }
+                    }
+                });
+
+                const getTimezones = new n2.dataProvider.VisualForce({
+                    id: 'get-timezones',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_DistributionHours_Controller.getTimezones}'
+                        }
+                    }
+                });
+
+                const getShiftHours = new n2.dataProvider.VisualForce({
+                    id: 'get-shift-hours',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_DistributionHours_Controller.getShiftHours}'
+                        }
+                    }
+                });
+
+                const getTeamHours = new n2.dataProvider.VisualForce({
+                    id: 'get-team-hours',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_DistributionHours_Controller.getTeamHours}'
+                        }
+                    },
+                    modeled: true
+                });
+
+                const saveTeamHours = new n2.dataProvider.VisualForce({
+                    id: 'save-team-hours',
+                    methods: {
+                        post: {
+                            method: '{!$RemoteAction.Team_DistributionHours_Controller.saveTeamHours}'
+                        }
+                    }
+                });
+
+                const getTeamMemberHours = new n2.dataProvider.VisualForce({
+                    id: 'get-team-member-hours',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_DistributionHours_Controller.getTeamMemberHours}'
+                        }
+                    },
+                    modeled: true
+                });
+
+                const saveTeamMemberHours = new n2.dataProvider.VisualForce({
+                    id: 'save-team-member-hours',
+                    methods: {
+                        post: {
+                            method: '{!$RemoteAction.Team_DistributionHours_Controller.saveTeamMemberHours}'
+                        }
+                    }
+                });
+
+                const getTeamHolidayRegionOptions = new n2.dataProvider.VisualForce({
+                    id: 'get-holiday-region-options',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_DistributionHours_Controller.getHolidayRegions}'
+                        }
+                    }
+                });
+
+                const getTeamHolidayRegion = new n2.dataProvider.VisualForce({
+                    id: 'get-team-holiday-region',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_DistributionHours_Controller.getTeamHolidayRegion}'
+                        }
+                    },
+                    modeled: true
+                });
+
+                const saveTeamHolidayRegion = new n2.dataProvider.VisualForce({
+                    id: 'save-team-holiday-region',
+                    methods: {
+                        post: {
+                            method: '{!$RemoteAction.Team_DistributionHours_Controller.saveTeamHolidayRegion}'
+                        }
+                    }
+                });
+
+                const getShiftHoursUsage = new n2.dataProvider.VisualForce({
+                    id: 'get-shift-hours-usage',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_DistributionHours_Controller.getShiftHoursUsage}'
+                        }
+                    },
+                    modeled: true
+                });
+
+                const isShiftPlannerEnabled = new n2.dataProvider.VisualForce({
+                     id: 'is-shift-planner-enabled',
+                     methods: {
+                         get: {
+                             method: '{!$RemoteAction.Team_DistributionHours_Controller.isShiftPlannerEnabled}'
+                         }
+                     }
+                 });
+
+                const toggleShiftPlanner = new n2.dataProvider.VisualForce({
+                      id: 'toggle-shift-planner',
+                      methods: {
+                          get: {
+                              method: '{!$RemoteAction.Team_DistributionHours_Controller.toggleShiftPlanner}'
+                          }
+                      }
+                });
+
+                const getShiftPlannerForTeam = new n2.dataProvider.VisualForce({
+                     id: 'get-shift-planner-for-team',
+                     methods: {
+                         get: {
+                             method: '{!$RemoteAction.Team_DistributionHours_Controller.getShiftPlannerForTeam}'
+                         }
+                     }
+               });
+
+               const saveShiftPlanner = new n2.dataProvider.VisualForce({
+                   id: 'save-shift-planner',
+                   methods: {
+                       post: {
+                           method: '{!$RemoteAction.Team_DistributionHours_Controller.saveShiftPlanner}'
+                       }
+                   }
+               });
+
+                const distributionHoursPage = new n2.de.page.team.DistributionHours({
+                    id: 'distribution-hours-page'
+                });
+
+                distributionHoursPage.render();
+            });
+        </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

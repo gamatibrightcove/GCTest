@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Teammate__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Drift Teammate who first responded to the Drift conversation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Drift Teammate who first responded to the Drift conversation</inlineHelpText>
+    <label>Teammate (First)</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Drift_Conversations</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

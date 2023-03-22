@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Current Monthly Recurring Revenue (MRR) of the Customer, net of all transactions to-date. --></help>
+        <label><!-- MRR --></label>
+        <name>JBCXM__MRR__c</name>
+    </CustomFieldTranslation>

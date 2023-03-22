@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- There should be only main transaction at one time. Usually the New Business or the most Resent Renewal transaction available for a Customer. --></help>
+        <label><!-- Main --></label>
+        <name>JBCXM__Main__c</name>
+    </CustomFieldTranslation>

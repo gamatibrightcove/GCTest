@@ -1,0 +1,110 @@
+<apex:page controller="n2de.Tags_TagAssignmentList_Controller" tabStyle="Distribution_Tags__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Tag Assignment List" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+                window.addEventListener('load', function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}" attrCurrentUserId="{!$User.Id}"/>
+                    <c:PageContext />
+
+                    const getTagFilterData = new n2.dataProvider.Static({
+                        id: 'get-tag-filter-data',
+                        data: {
+                            tagCollectionId: '{!JSENCODE(TagCollectionId)}',
+                            tagId: '{!JSENCODE(TagId)}'
+                        }
+                    });
+
+                    const getTeams = new n2.dataProvider.VisualForce({
+                        id: 'get-teams',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagAssignmentList_Controller.getTeams}'
+                            }
+                       }
+                    });
+
+                    const getTagCollections = new n2.dataProvider.VisualForce({
+                        id: 'get-tag-collections',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagAssignmentList_Controller.getTagCollections}'
+                            }
+                        }
+                    });
+
+                    const getTags = new n2.dataProvider.VisualForce({
+                        id: 'get-tags',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagAssignmentList_Controller.getTags}'
+                            }
+                        }
+                    });
+
+                    const getUserTagAssignmentsData = new n2.dataProvider.VisualForce({
+                        id: 'get-user-tag-assignments',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagAssignmentList_Controller.getUserTagAssignments}'
+                            }
+                        }
+                    });
+
+
+                    const getTagAssignmentHistory = new n2.dataProvider.VisualForce({
+                        id: 'get-tag-assignment-history',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagAssignmentList_Controller.getTagAssignmentHistory}'
+                            }
+                        }
+                    });
+
+                    const getCollectionTagAssignments = new n2.dataProvider.VisualForce({
+                        id: 'get-collection-tag-assignments',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagAssignmentList_Controller.getCollectionTagAssignments}'
+                            }
+                        }
+                    });
+
+                    const saveTagAssignments = new n2.dataProvider.VisualForce({
+                        id: 'save-tag-assignments',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Tags_TagAssignmentList_Controller.saveTagAssignments}',
+                                config: {
+                                    timeout: 120000
+                                }
+                            }
+                        }
+                    });
+
+                    const cloneTagAssignments = new n2.dataProvider.VisualForce({
+                        id: 'clone-tag-assignments',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Tags_TagAssignmentList_Controller.cloneTagAssignments}',
+                                config: {
+                                    timeout: 120000
+                                }
+                            }
+                        }
+                    });
+
+                    const tagAssignmentListPage = new n2.de.page.tags.TagAssignmentList({
+                        id: 'tags-tag-assignment-list'
+                    });
+                    tagAssignmentListPage.render();
+                });
+            </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

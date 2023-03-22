@@ -1,0 +1,163 @@
+<apex:page controller="n2de.AssignmentSimulation_Results_Controller" tabStyle="n2de__Simulated_distribution__c" sidebar="false" standardStylesheets="false" docType="html-5.0"
+           title="Distribution Engine: Assignment Simulation Results" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+        <script defer="defer" src="{!URLFOR($Resource.dejs, 'js/luxon.js')}"></script>
+
+        <script defer="defer">
+                window.addEventListener("load", function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:PageContext />
+
+                    const getSimulatedDistributionId = new n2.dataProvider.Static({
+                        id: 'simulated-distribution-id',
+                        data: {
+                            simulatedDistributionId: '{!JSENCODE(SimulatedDistributionId)}'
+                        }
+                    });
+
+                    const getRefererURL = new n2.dataProvider.Static({
+                        id: 'referer-url',
+                        data: {
+                            refererURL: '{!JSENCODE(RefererURL)}'
+                        }
+                    });
+
+                    const recordData = new n2.dataProvider.Static({
+                        id: 'get-record-data',
+                        data: {
+                            recordId: '{!JSENCODE(RecordId)}'
+                        }
+                    });
+
+                    const runAssignmentSimulation = new n2.dataProvider.VisualForce({
+                        id: 'run-assignment-simulation',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.AssignmentSimulation_Results_Controller.runAssignmentSimulation}'
+                            }
+                        }
+                    });
+
+                    const getAssignmentSimulationConfig = new n2.dataProvider.VisualForce({
+                        id: 'get-assignment-simulation',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.AssignmentSimulation_Results_Controller.getAssignmentSimulationConfig}'
+                            }
+                        }
+                    });
+
+                    const getAssignmentSimulationQuickResult = new n2.dataProvider.VisualForce({
+                        id: 'get-assignment-simulation-quick-result',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.AssignmentSimulation_Results_Controller.getQuickAssignmentSimulationResult}'
+                            }
+                        }
+                    });
+
+                    const getBasicSObjectUIVOByRecordId = new n2.dataProvider.VisualForce({
+                        id: 'get-basic-sobject-ui-vo-by-record-id',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.AssignmentSimulation_Results_Controller.getBasicSObjectUIVOByRecordId}'
+                            }
+                        }
+                    });
+
+                    const getQueuesForSObjectType = new n2.dataProvider.VisualForce({
+                        id: 'get-queues-for-sobject-type',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.AssignmentSimulation_Results_Controller.getQueuesForSObjectType}'
+                            }
+                        }
+                    });
+
+                    const getAvailableUsers = new n2.dataProvider.VisualForce({
+                        id: 'get-available-users',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.AssignmentSimulation_Results_Controller.getAvailableUsers}'
+                            }
+                        }
+                    });
+
+                    const getExistingStatusFields = new n2.dataProvider.VisualForce({
+                        id: 'get-existing-status-fields',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.AssignmentSimulation_Results_Controller.getExistingStatusFields}'
+                            }
+                        }
+                    });
+
+                    const isClassifierEnabled = new n2.dataProvider.VisualForce({
+                        id: 'is-classifier-enabled',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.AssignmentSimulation_Results_Controller.isClassifierEnabled}'
+                            }
+                        }
+                    });
+
+                    const getStatusFieldValues = new n2.dataProvider.VisualForce({
+                        id: 'get-status-field-values',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.AssignmentSimulation_Results_Controller.getPicklistFieldSelectOptions}'
+                            }
+                        }
+                    });
+
+                    const getAssignmentSimulationResultsUIVO = new n2.dataProvider.VisualForce({
+                        id: 'get-assignment-simulation-team-and-record',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.AssignmentSimulation_Results_Controller.getAssignmentSimulationTeamAndRecordUIVO}'
+                            }
+                        }
+                    });
+
+                    const getAssignmentSimulationDistributorResultsForTeam = new n2.dataProvider.VisualForce({
+                        id: 'get-assignment-simulation-distributor-results-for-team',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.AssignmentSimulation_Results_Controller.getAssignmentSimulationDistributorResultsForTeam}',
+                                config: {
+                                    buffer: false,
+                                    timeout: 120000
+                                }
+                            }
+                        }
+                    });
+
+                    const getAssignmentSimulationResultByDistributorUIVO = new n2.dataProvider.VisualForce({
+                        id: 'get-assignment-simulation-result-by-distributor',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.AssignmentSimulation_Results_Controller.getAssignmentSimulationResultsByDistributor}',
+                                config: {
+                                    buffer: false,
+                                    timeout: 120000
+                                }
+                            }
+                        }
+                    });
+
+                    const assignmentSimulationResultsPage = new n2.de.page.assignmentSimulation.AssignmentSimulationResults({
+                        id: 'assignment-simulation-results-page'
+                    });
+
+                    assignmentSimulationResultsPage.render();
+                });
+            </script>
+    </head>
+
+    <body/>
+
+    </html>
+</apex:page>

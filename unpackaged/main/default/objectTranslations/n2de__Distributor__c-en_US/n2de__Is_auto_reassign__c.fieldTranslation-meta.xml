@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked object records will be re-assigned to a specified queue or user when the distribution of that record hits an SLA. --></help>
+        <label><!-- Auto re-assign enabled --></label>
+        <name>n2de__Is_auto_reassign__c</name>
+    </CustomFieldTranslation>

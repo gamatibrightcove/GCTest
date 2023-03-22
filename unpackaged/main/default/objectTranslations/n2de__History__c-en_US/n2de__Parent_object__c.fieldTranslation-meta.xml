@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Type of the parent object this change was part of. --></help>
+        <label><!-- Parent object type --></label>
+        <name>n2de__Parent_object__c</name>
+    </CustomFieldTranslation>

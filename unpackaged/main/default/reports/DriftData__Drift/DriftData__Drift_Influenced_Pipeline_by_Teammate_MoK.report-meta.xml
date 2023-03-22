@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Opportunity.Id:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Opportunities</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>DriftData__Drift_Conversation__c.DriftData__Playbook_ID__c:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Unique Playbooks</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>DriftData__Drift_Conversation__c.DriftData__Conversation_ID__c:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Unique Conversations</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_34311257</developerName>
+        <masterLabel>Deal Size</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Opportunity$Amount</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1,000</to>
+            </sourceValues>
+            <value>&lt; 1K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1,000</from>
+                <to>10,000</to>
+            </sourceValues>
+            <value>1K to 10K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>10,000</from>
+            </sourceValues>
+            <value>&gt; 10K</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CloseDate</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$Amount</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Type</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityContactRoles.DriftData__Drift_Conversations__r$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityContactRoles.DriftData__Drift_Conversations__r$DriftData__Contact__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityContactRoles.DriftData__Drift_Conversations__r$DriftData__Conversation_URL__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityContactRoles.DriftData__Drift_Conversations__r$DriftData__Playbook_Name_Formatted__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityContactRoles.DriftData__Drift_Conversations__r$DriftData__Conversation_Source_URL_Path__c</field>
+    </columns>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF (
+    AND (
+            DATEVALUE(Opportunity.CreatedDate) - DATEVALUE  (DriftData__Drift_Conversation__c.DriftData__Conversation_Start_Time__c) &lt;= DriftData__Drift_Conversation__c.DriftData__Influenced_Look_Back_Period_fx__c,
+            Opportunity.CloseDate - DATEVALUE(DriftData__Drift_Conversation__c.DriftData__Conversation_Start_Time__c) &gt; 0
+         ), 
+1, 0 )</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>If the number of days between the conversation start date and opportunity created date are ≤ the Influenced Look-Back Period, and the conversation happened prior to the opportunity close date, the value will be set to [1]. If false, [0].</description>
+        <developerName>CDF1</developerName>
+        <label>Look-Back Period Check</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <description>Displays opportunities created year-to-date with contacts who had Drift conversations, grouped by teammate.</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>CDF1</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Amount</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Amount</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityContactRoles.DriftData__Drift_Conversations__r$DriftData__Has_Site_Visitor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Id</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>Opportunity$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.OpportunityContactRoles.DriftData__Drift_Conversations__r$DriftData__Teammate_Name_Formated__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Drift Pipeline | Contacts w/Convo (TM)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>DriftData__Opportunities_with_Contacts_with_Conversation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

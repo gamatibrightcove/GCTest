@@ -1,0 +1,38 @@
+<apex:page controller="WorkIt2.ContextEditController" setup="true" title="Context Edit - WorkIt! Setup">
+    <apex:form >    
+        <apex:sectionHeader title="WorkIt! Setup" subtitle="Context Manager"/>
+        <apex:pageBlock mode="edit" title="Context Edit" rendered="{!c.WorkIt2__isCustom__c}">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!SaveReturn}"/>
+                <apex:commandButton value="Cancel" action="{!CancelReturn}" immediate="true"/>                
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection columns="1">
+            <apex:inputField value="{!c.Name}"/>
+            <apex:inputField value="{!c.WorkIt2__Description__c}"/>
+            <apex:inputField value="{!c.WorkIt2__Pattern__c}" style="width:600px"/>
+            <apex:inputField value="{!c.WorkIt2__Pattern_Rel__c}" style="width:600px"/>
+            <apex:inputField value="{!c.WorkIt2__Pattern_Alt__c}" style="width:600px"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        <apex:pageBlock mode="edit" title="Context Override Settings" id="overPb" rendered="{!NOT(c.WorkIt2__isCustom__c)}">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!SaveReturn}"/>
+                <apex:commandButton value="Cancel" action="{!CancelReturn}" immediate="true"/>                
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection columns="1">
+                <apex:outputField value="{!c.Name}"/>
+                <apex:outputField value="{!c.WorkIt2__Description__c}"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection columns="1">
+                <apex:inputField value="{!c.WorkIt2__Pattern__c}" style="width:600px"/>
+                <apex:inputField value="{!c.WorkIt2__Pattern_Rel__c}" style="width:600px"/>
+                <apex:inputField value="{!c.WorkIt2__Pattern_Alt__c}" style="width:600px"/>
+            </apex:pageBlockSection>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

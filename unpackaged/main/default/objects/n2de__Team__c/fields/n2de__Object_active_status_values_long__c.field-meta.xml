@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Object_active_status_values_long__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A semicolon delimited list of &quot;active&quot; values</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Selected picklist values that denote that an object is &quot;active&quot;.</inlineHelpText>
+    <label>Active status values</label>
+    <length>10000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

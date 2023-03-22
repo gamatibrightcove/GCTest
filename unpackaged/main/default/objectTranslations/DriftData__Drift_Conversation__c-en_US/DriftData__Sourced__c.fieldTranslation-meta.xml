@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- True if Salesforce Lead or Contact associated with the Drift conversation was created by Drift. --></help>
+        <label><!-- Sourced --></label>
+        <name>DriftData__Sourced__c</name>
+    </CustomFieldTranslation>

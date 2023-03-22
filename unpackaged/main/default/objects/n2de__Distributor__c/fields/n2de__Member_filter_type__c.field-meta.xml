@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Member_filter_type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Determines the type of member filtering for this distributor. Either select team members manually to create a sub team or use tags to limit distribution to matching team members.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Determines the type of member filtering for this distributor. Either select team members manually to create a sub team or use tags to limit distribution to matching team members.</inlineHelpText>
+    <label>Member filter type</label>
+    <length>80</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

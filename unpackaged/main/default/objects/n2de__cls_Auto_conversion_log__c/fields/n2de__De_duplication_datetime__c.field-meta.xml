@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__De_duplication_datetime__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Date time the SObject was de-duplicated</description>
+    <externalId>false</externalId>
+    <label>De-duplication datetime</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

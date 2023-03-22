@@ -1,0 +1,45 @@
+<apex:page controller="n2de.Logs_SchedulerLogList_Controller" tabStyle="Logs__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Scheduler Log List" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+            window.addEventListener('load', function() {
+                <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                <c:LogsContext attrHasArchivingBeenEnabled="{!HasArchivingBeenEnabled}"/>
+                <c:PageContext />
+
+                const getPageUrlParams = new n2.dataProvider.Static({
+                    id: 'get-page-url-params',
+                    data: {
+                        logType: '{!JSENCODE(LogType)}',
+                        status: '{!JSENCODE(Status)}'
+                    }
+                });
+
+                const getSchedulerLogs = new n2.dataProvider.VisualForce({
+                    id: 'get-scheduler-logs',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Logs_SchedulerLogList_Controller.getSchedulerLogResponse}',
+                            config: {
+                                buffer: false,
+                                timeout: 120000
+                            }
+                        }
+                    }
+                });
+
+                const schedulerLogListPage = new n2.de.page.logs.SchedulerLogList({
+                    id: 'scheduler-log-list-page'
+                });
+                schedulerLogListPage.render();
+            });
+        </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

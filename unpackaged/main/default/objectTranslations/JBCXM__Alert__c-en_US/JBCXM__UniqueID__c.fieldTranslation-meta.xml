@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This field Uniquely Identifies an alert can be used as an ExternalID --></help>
+        <label><!-- Unique ID --></label>
+        <name>JBCXM__UniqueID__c</name>
+    </CustomFieldTranslation>

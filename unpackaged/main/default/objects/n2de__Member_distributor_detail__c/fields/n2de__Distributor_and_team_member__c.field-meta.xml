@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Distributor_and_team_member__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>true</externalId>
+    <label>Distributor/team member ids</label>
+    <length>37</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Is_alert__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked, will enable the creation of SLAs, based upon a time period and condition.</inlineHelpText>
+    <label>SLAs</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

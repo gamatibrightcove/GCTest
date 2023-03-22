@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Enter the date on which the last remedial action was taken or proposed to be taken. --></help>
+        <label><!-- Next Step Date --></label>
+        <name>JBCXM__NextStepDate__c</name>
+    </CustomFieldTranslation>

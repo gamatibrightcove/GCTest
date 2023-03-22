@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- New events of the selected types will cause the next action to be automatically completed on the related lead or case object. --></help>
+        <label><!-- Event types to auto-action --></label>
+        <name>n2de__Event_types_to_action__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Select the reason that resulted in this Alert. The list of reasons is customizable for your organization. --></help>
+        <label><!-- Reason --></label>
+        <name>JBCXM__Reason__c</name>
+        <relationshipLabel><!-- Alerts (Reason) --></relationshipLabel>
+    </CustomFieldTranslation>

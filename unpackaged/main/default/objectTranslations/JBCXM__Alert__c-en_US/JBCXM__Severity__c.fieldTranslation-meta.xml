@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Alert Severity (or &quot;Alert Probability&quot;) indicates the probability of occurence of the Alert event. --></help>
+        <label><!-- Severity --></label>
+        <name>JBCXM__Severity__c</name>
+        <relationshipLabel><!-- Alerts --></relationshipLabel>
+    </CustomFieldTranslation>

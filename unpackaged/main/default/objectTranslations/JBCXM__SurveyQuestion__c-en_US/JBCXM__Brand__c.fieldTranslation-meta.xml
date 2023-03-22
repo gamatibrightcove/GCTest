@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Brand --></label>
+        <name>JBCXM__Brand__c</name>
+        <picklistValues>
+            <masterLabel>CXPI</masterLabel>
+            <translation><!-- CXPI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NPS</masterLabel>
+            <translation><!-- NPS --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

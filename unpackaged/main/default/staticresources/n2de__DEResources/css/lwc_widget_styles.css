@@ -1,0 +1,73 @@
+.n2-status-toggle-menu > button {
+    border: none;
+	font-weight: bold;
+	color: black;
+}
+.n2-sort-by-select > button {
+    color: grey;
+    font-weight: bold;
+    border: none;
+}
+.n2-status-toggle-menu > button > lightning-primitive-icon {
+    color: gray;
+    padding-left: 16px;
+}
+.n2-logs-link {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #49b800;
+}
+.n2-logs-link:hover {
+    cursor: pointer;
+	color: black;
+}
+.n2-default-pull-btn {
+	background-color: #49b800;
+	border: none;
+	border-radius: var(--lwc-buttonBorderRadius,.25rem) var(--lwc-buttonBorderRadius,.25rem) 0;
+}
+.n2-default-pull-btn > button {
+	background-color: #49b800;
+	border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .0625rem;
+}
+.n2-default-pull-btn > button:hover {
+	background-color: #49b800;
+	border: none;
+    color: black;
+	font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .0625rem;
+}
+.n2-default-pull-btn > button:focus {
+	background-color: #49b800;
+	border: none;
+	font-weight: bold;
+	outline: none;
+	box-shadow: none;
+   	color: black;
+    text-transform: uppercase;
+    letter-spacing: .0625rem;
+}
+.n2-pull-menu > button {
+	background-color: #49b800;
+	border: none;
+	color: white;
+}
+.n2-pull-menu > button:hover {
+	color: black;
+}
+.n2-assigned-to-me-modal-footer {
+    display: flex;
+}
+.n2-assigned-to-me-modal-footer-link {
+    text-align: left;
+    flex: 0;
+    min-width: 300px;
+}
+.n2-assigned-to-me-modal-footer-button {
+    flex: 1;
+}

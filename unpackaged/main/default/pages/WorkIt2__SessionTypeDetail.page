@@ -1,0 +1,51 @@
+<apex:page standardController="WorkIt2__Session_Type__c" extensions="WorkIt2.SessionTypeExtension" title="Session Type: {!title}">
+    
+    <apex:sectionHeader subtitle="{!title}" title="Session Type"/>
+    <apex:form >
+    <div class="workit mgmt">
+        <apex:pageBlock title="Session Type Detail" mode="detail">
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton value="Edit" action="{!Edit}"/>
+                <apex:commandButton value="Delete" action="{!Delete}" onclick="return confirm('Are you sure?');"/>
+                <apex:commandButton value="Clone" action="{!cloneSessionType}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection >
+                <apex:outputField value="{!WorkIt2__Session_Type__c.name}" />    
+                <apex:outputField value="{!WorkIt2__Session_Type__c.WorkIt2__Priority__c}"/>
+                <apex:outputField value="{!WorkIt2__Session_Type__c.WorkIt2__Group__c}"/>
+                <apex:outputField value="{!WorkIt2__Session_Type__c.WorkIt2__Active__c}"/>
+                <apex:outputField value="{!WorkIt2__Session_Type__c.CreatedById}"/>
+                <apex:outputField value="{!WorkIt2__Session_Type__c.LastModifiedById}"/>
+                <apex:outputField value="{!WorkIt2__Session_Type__c.CreatedDate}"/>
+                <apex:outputField value="{!WorkIt2__Session_Type__c.LastModifiedDate}"/>
+            </apex:pageBlockSection>
+            
+            <apex:actionRegion >
+            <apex:pageBlockSection title="Objects and Record Types" columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Limit Objects"/>
+                    <apex:outputPanel >
+                        <apex:repeat value="{!SelectedObjects}" var="v">
+                            {!v.label}<br/>
+                        </apex:repeat>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            </apex:actionRegion>
+            <apex:actionRegion >
+            <apex:pageBlockSection title="Session Contexts" columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Limit Contexts"/>
+                    <apex:outputPanel >
+                        <apex:repeat value="{!SelectedContexts}" var="v">
+                            {!v.label}<br/>
+                        </apex:repeat>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>            
+            </apex:pageBlockSection>
+            </apex:actionRegion>
+        </apex:pageBlock>
+    </div>
+    </apex:form>
+</apex:page>

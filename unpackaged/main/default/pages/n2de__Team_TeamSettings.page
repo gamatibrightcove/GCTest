@@ -1,0 +1,166 @@
+<apex:page standardController="n2de__Team__c" extensions="n2de.Team_TeamSettings_Controller" tabStyle="n2de__Team__c" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Team Settings" action="{!prInit}">
+    <html>
+
+        <head>
+            <c:PageHead />
+
+            <script defer="defer">
+                window.addEventListener("load", function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:Team_TeamBase attrTeamId="{!JSENCODE(TeamId)}"/>
+                    <c:PageContext />
+
+                    const getIsQ2QTeam = new n2.dataProvider.VisualForce({
+                        id: 'get-is-q2q-team',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.isQ2QTeam}'
+                            }
+                        }
+                    });
+
+                    const getTeamSettings = new n2.dataProvider.VisualForce({
+                        id: 'get-team-settings',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.getTeamSettings}'
+                            }
+                        },
+                        modeled: true
+                    });
+
+                    const getTeamNames = new n2.dataProvider.VisualForce({
+                        id: 'get-team-names',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.getOtherTeamNames}'
+                            }
+                        }
+                    });
+
+                    const getTeamObjectFieldOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-team-object-field-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.getAllFieldOptions}'
+                            }
+                        }
+                    });
+
+                    const getPicklistFieldSelectOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-pick-list-field-select-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.getPicklistFieldSelectOptions}'
+                            }
+                        }
+                    });
+
+                    const getActiveStatusFields = new n2.dataProvider.VisualForce({
+                        id: 'get-active-status-field-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.getActiveStatusFieldOptions}'
+                            }
+                        }
+                    });
+
+                    const getActiveStatusValues = new n2.dataProvider.VisualForce({
+                        id: 'get-active-status-value-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.getActiveStatusValueOptions}'
+                            }
+                        }
+                    });
+
+                    const getLoadBalancingOptions = new n2.dataProvider.Static({
+                        id: 'get-load-balancing-options',
+                        data: ['Daily', 'Weekly', 'Monthly', 'Active Count / Value']
+                    });
+
+                    const getAssignmentFields = new n2.dataProvider.VisualForce({
+                        id: 'get-assignment-field-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.getAssignmentFieldOptions}'
+                            }
+                        }
+                    });
+
+                    const getActiveTotalValueFieldOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-active-total-value-field-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.getActiveTotalValueFieldOptions}'
+                            }
+                        }
+                    });
+
+                    const getTeamManagers = new n2.dataProvider.VisualForce({
+                        id: 'get-team-managers',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.getTeamManagers}'
+                            }
+                        }
+                    });
+
+                    const getTeamChangeHistory = new n2.dataProvider.VisualForce({
+                        id: 'get-change-history',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.getTeamChangeHistory}'
+                            }
+                        }
+                    });
+
+                    const saveTeamSettings = new n2.dataProvider.VisualForce({
+                        id: 'save-team-settings',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.saveTeamSettings}'
+                            }
+                        }
+                    });
+
+                    const deleteTeam = new n2.dataProvider.VisualForce({
+                        id: 'delete-team',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.deleteTeam}'
+                            }
+                        }
+                    });
+
+                    const toggleActive = new n2.dataProvider.VisualForce({
+                        id: 'toggle-active',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.toggleActiveState}'
+                            }
+                        }
+                    });
+
+                    const cloneTeam = new n2.dataProvider.VisualForce({
+                        id: 'clone-team',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamSettings_Controller.cloneTeam}'
+                            }
+                        }
+                    });
+
+                    const teamSettingsPage = new n2.de.page.team.TeamSettings({
+                        id: 'team-settings-page'
+                    });
+
+                    teamSettingsPage.render();
+                });
+            </script>
+        </head>
+
+        <body></body>
+
+    </html>
+</apex:page>

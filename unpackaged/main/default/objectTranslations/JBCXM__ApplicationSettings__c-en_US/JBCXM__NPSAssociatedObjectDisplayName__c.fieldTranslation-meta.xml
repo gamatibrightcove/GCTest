@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What is the Display field name that should be used in Reports. For eg: (&apos;Opportunity Name&apos; if The name within the Opportunity object is associated with NPS) --></help>
+        <label><!-- NPS Associated Object Display Name --></label>
+        <name>JBCXM__NPSAssociatedObjectDisplayName__c</name>
+    </CustomFieldTranslation>

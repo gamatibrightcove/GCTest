@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Forecast Booking Date --></help>
+        <label><!-- Fcst Booking Date --></label>
+        <name>JBCXM__FcstBookingDate__c</name>
+    </CustomFieldTranslation>

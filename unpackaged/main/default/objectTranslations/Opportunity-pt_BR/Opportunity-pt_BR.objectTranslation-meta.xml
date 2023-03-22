@@ -1,87 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <layouts>
         <layout>CPQ Opportunity Layout</layout>
         <sections>
@@ -115,6 +33,18 @@
     <quickActions>
         <label><!-- New Quote --></label>
         <name>New_Quote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Order --></label>
+        <name>SBQQ__CreateOrderLightning</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Recall Approvals --></label>
+        <name>sbaa__RecallMobile</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit for Approval --></label>
+        <name>sbaa__SubmitMobile</name>
     </quickActions>
     <recordTypes>
         <description><!-- System generated Opportunity used when an existing Contract is Amended --></description>
@@ -209,7 +139,162 @@
         <name>Deca5k8F000000CmxZQAS</name>
     </webLinks>
     <webLinks>
+        <label><!-- View_Opportunity_in_Gong --></label>
+        <name>Gong__View_Opportunity_in_Gong</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Loopio_Project --></label>
+        <name>Loopio__Create_Loopio_Project</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+    <webLinks>
         <label><!-- SendWithDocuSign --></label>
         <name>SendWithDocuSign</name>
     </webLinks>
+    <webLinks>
+        <label><!-- PreviewApprovals --></label>
+        <name>sbaa__PreviewApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RecallApprovals --></label>
+        <name>sbaa__RecallApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ResendRequestEmail --></label>
+        <name>sbaa__ResendRequestEmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SubmitForApproval --></label>
+        <name>sbaa__SubmitForApproval</name>
+    </webLinks>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Deal Desk --></label>
+        <name>sbaa__DealDesk</name>
+    </fieldSets>
 </CustomObjectTranslation>

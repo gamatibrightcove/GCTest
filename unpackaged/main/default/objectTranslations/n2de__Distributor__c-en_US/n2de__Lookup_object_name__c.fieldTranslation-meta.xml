@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The object to lookup to find a matching record to obtain the user to assign to. --></help>
+        <label><!-- Lookup object --></label>
+        <name>n2de__Lookup_object_name__c</name>
+    </CustomFieldTranslation>

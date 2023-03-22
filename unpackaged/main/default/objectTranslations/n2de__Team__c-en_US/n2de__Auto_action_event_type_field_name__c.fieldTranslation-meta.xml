@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A field on the Event object that contains an event type --></help>
+        <label><!-- Event type field --></label>
+        <name>n2de__Auto_action_event_type_field_name__c</name>
+    </CustomFieldTranslation>

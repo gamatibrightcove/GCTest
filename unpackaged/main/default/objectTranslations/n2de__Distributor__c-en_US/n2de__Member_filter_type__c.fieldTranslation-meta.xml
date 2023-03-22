@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Determines the type of member filtering for this distributor. Either select team members manually to create a sub team or use tags to limit distribution to matching team members. --></help>
+        <label><!-- Member filter type --></label>
+        <name>n2de__Member_filter_type__c</name>
+    </CustomFieldTranslation>

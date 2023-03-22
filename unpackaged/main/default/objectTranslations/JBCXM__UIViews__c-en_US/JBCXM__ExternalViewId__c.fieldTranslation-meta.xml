@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This field references the external MDA view (reporting space) id. --></help>
+        <label><!-- External View Id --></label>
+        <name>JBCXM__ExternalViewId__c</name>
+    </CustomFieldTranslation>

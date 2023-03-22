@@ -1,0 +1,55 @@
+<apex:page controller="n2de.Logs_ArchiveLogList_Controller" tabStyle="Logs__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Archive Log List" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+            window.addEventListener('load', function() {
+                <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                <c:LogsContext attrHasArchivingBeenEnabled="{!HasArchivingBeenEnabled}"/>
+                <c:PageContext />
+
+                const getArchiveLogs = new n2.dataProvider.VisualForce({
+                    id: 'get-archive-logs',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Logs_ArchiveLogList_Controller.getArchiveLogResponse}',
+                            config: {
+                                buffer: false,
+                                timeout: 120000
+                            }
+                        }
+                    }
+                });
+
+                const restoreArchivedLogs = new n2.dataProvider.VisualForce({
+                    id: 'restore-archived-logs',
+                    methods: {
+                        post: {
+                            method: '{!$RemoteAction.Logs_ArchiveLogList_Controller.restoreArchivedRecords}'
+                        }
+                    }
+                });
+
+                const getFilterOptionData = new n2.dataProvider.VisualForce({
+                    id: 'get-filter-option-data',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Logs_ArchiveLogList_Controller.getFilterOptionData}'
+                        }
+                    }
+                });
+
+                const archiveLogListPage = new n2.de.page.logs.ArchiveLogList({
+                    id: 'archive-log-list-page'
+                });
+                archiveLogListPage.render();
+            });
+        </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

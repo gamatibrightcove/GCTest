@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- User Id --></label>
+        <name>JBCXM__UserId__c</name>
+        <relationshipLabel><!-- Survey Participants (User Id) --></relationshipLabel>
+    </CustomFieldTranslation>

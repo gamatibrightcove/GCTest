@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- RecurrenceType --></label>
+        <name>JBCXM__RecurrenceType__c</name>
+        <picklistValues>
+            <masterLabel>RecursDaily</masterLabel>
+            <translation><!-- RecursDaily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RecursEveryWeekDay</masterLabel>
+            <translation><!-- RecursEveryWeekDay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RecursMonthly</masterLabel>
+            <translation><!-- RecursMonthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RecursMonthlyNth</masterLabel>
+            <translation><!-- RecursMonthlyNth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RecursWeekly</masterLabel>
+            <translation><!-- RecursWeekly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RecursYearly</masterLabel>
+            <translation><!-- RecursYearly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RecursYearlyNth</masterLabel>
+            <translation><!-- RecursYearlyNth --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

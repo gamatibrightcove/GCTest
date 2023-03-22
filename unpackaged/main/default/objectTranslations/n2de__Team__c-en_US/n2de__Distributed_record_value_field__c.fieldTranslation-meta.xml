@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Name of the field on the distributed record that relates to that record&apos;s value --></help>
+        <label><!-- Value field --></label>
+        <name>n2de__Distributed_record_value_field__c</name>
+    </CustomFieldTranslation>

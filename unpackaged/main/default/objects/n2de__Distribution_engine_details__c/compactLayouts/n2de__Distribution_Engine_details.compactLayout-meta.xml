@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Distribution_Engine_details</fullName>
+    <fields>Name</fields>
+    <fields>n2de__Territory__c</fields>
+    <fields>n2de__Matched_account__c</fields>
+    <fields>n2de__Matched_contact__c</fields>
+    <fields>n2de__Matched_lead__c</fields>
+    <fields>n2de__Matched_account_type__c</fields>
+    <fields>n2de__Domain__c</fields>
+    <fields>n2de__Is_personal_email__c</fields>
+    <fields>LastModifiedById</fields>
+    <label>Distribution Engine Details</label>
+</CompactLayout>

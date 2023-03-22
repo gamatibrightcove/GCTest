@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Update_all_conversion_objects__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Update all objects involved in a Lead conversion</inlineHelpText>
+    <label>Update all conversion objects</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

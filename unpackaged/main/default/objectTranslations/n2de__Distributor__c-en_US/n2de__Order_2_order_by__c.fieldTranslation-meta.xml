@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Order field 2 by ascending (Asc) or decending (Desc) sequence --></help>
+        <label><!-- Order by 2 --></label>
+        <name>n2de__Order_2_order_by__c</name>
+        <picklistValues>
+            <masterLabel>Asc</masterLabel>
+            <translation><!-- Asc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Desc</masterLabel>
+            <translation><!-- Desc --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

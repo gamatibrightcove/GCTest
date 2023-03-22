@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The Salesforce queue that this distributor will distribute objects from. --></help>
+        <label><!-- Queue --></label>
+        <name>n2de__Queue_id__c</name>
+    </CustomFieldTranslation>

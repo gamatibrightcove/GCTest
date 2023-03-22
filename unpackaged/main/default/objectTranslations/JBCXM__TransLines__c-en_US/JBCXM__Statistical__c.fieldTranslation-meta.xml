@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Statistical Amount under the Transaction Line. --></help>
+        <label><!-- Statistical --></label>
+        <name>JBCXM__Statistical__c</name>
+    </CustomFieldTranslation>

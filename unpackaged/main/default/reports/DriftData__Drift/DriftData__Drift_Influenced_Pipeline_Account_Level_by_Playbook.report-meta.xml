@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>OPPORTUNITY_ID:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Opportunities</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>FK_DriftData__Drift_Conversation__c.DriftData__Conversation_ID__c:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Unique Conversations</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>FK_DriftData__Drift_Conversation__c.DriftData__Playbook_ID__c:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Unique Playbooks</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$DriftData__Drift_Conversation__c.DriftData__Contact__c</field>
+    </columns>
+    <columns>
+        <field>FK_$DriftData__Drift_Conversation__c.DriftData__Conversation_URL__c</field>
+    </columns>
+    <columns>
+        <field>FK_$DriftData__Drift_Conversation__c.DriftData__Teammate_Name_Formated__c</field>
+    </columns>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF (
+    AND (
+            DATEVALUE(CREATED_DATE) - DATEVALUE  (FK_DriftData__Drift_Conversation__c.DriftData__Conversation_Start_Time__c) &lt;= FK_DriftData__Drift_Conversation__c.DriftData__Influenced_Look_Back_Period_fx__c,
+            CLOSE_DATE - DATEVALUE(FK_DriftData__Drift_Conversation__c.DriftData__Conversation_Start_Time__c) &gt; 0
+         ), 
+1, 0 )</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>If the number of days between the conversation start date and opportunity created date are ≤ the Influenced Look-Back Period, and the conversation happened prior to the opportunity close date, the value will be set to [1]. If false, [0].</description>
+        <developerName>CDF1</developerName>
+        <label>Look-Back Period Check</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <description>Displays opportunities created year-to-date with accounts that had Drift conversations, grouped by playbook.</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>CDF1</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AMOUNT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AMOUNT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$DriftData__Drift_Conversation__c.DriftData__Has_Site_Visitor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY_ID</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$DriftData__Drift_Conversation__c.DriftData__Playbook_Name_Formatted__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Drift Pipeline | Accounts w/Convo (PB)</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityCustomEntity$DriftData__Drift_Opportunity_Conversation__c@DriftData__Drift_Opportunity_Conversation__c.DriftData__Drift_Conversation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

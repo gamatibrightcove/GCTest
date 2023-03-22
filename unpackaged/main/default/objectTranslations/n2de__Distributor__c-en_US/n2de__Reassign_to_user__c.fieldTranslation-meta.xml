@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The Salesforce user that this distributor will re-assign objects to. --></help>
+        <label><!-- Re-assign to user --></label>
+        <name>n2de__Reassign_to_user__c</name>
+        <relationshipLabel><!-- Distributors (Re-assign to user) --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Classifier object --></label>
+        <name>n2de__Classifier_object__c</name>
+        <relationshipLabel><!-- Classifier fields --></relationshipLabel>
+    </CustomFieldTranslation>

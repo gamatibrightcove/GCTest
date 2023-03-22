@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Source Object  like &quot;Alert&quot;,&quot;SurveyResponses&quot;  and &quot;Transactions&quot; etc --></help>
+        <label><!-- Source Object --></label>
+        <name>JBCXM__SourceObject__c</name>
+    </CustomFieldTranslation>

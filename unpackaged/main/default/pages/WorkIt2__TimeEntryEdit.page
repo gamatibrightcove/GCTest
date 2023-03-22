@@ -1,0 +1,33 @@
+<apex:page standardController="WorkIt2__Time_Entry__c" title="Time Entry Edit: {!WorkIt2__Time_Entry__c.name}">
+    <apex:form >
+         <apex:sectionHeader title="Time Entry Edit" subtitle="{!WorkIt2__Time_Entry__c.name}"/>
+         <apex:pageBlock title="Time Entry Edit" id="teEditBlock" mode="edit">
+             <apex:pageMessages />
+             <apex:pageBlockButtons >
+                 <apex:commandButton value="Save" action="{!save}"/>
+                 <apex:commandButton value="Cancel" action="{!cancel}"/>                
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Information" columns="2">
+                
+                <apex:inputField value="{!WorkIt2__Time_Entry__c.WorkIt2__Session_Type__c}" required="true"/>
+                
+                <apex:inputField value="{!WorkIt2__Time_Entry__c.WorkIt2__Timing__c}"/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Start Time" for="st"/>
+                    <apex:inputField id="st" value="{!WorkIt2__Time_Entry__c.WorkIt2__Start__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem rendered="{!ISNULL(WorkIt2__Time_Entry__c.WorkIt2__Force_End__c)}">
+                    <apex:outputLabel value="End Time" for="hb"/>
+                    <apex:inputField id="hb" required="true" value="{!WorkIt2__Time_Entry__c.WorkIt2__Heartbeat__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!NOT(ISNULL(WorkIt2__Time_Entry__c.WorkIt2__Force_End__c))}">
+                    <apex:outputLabel value="End Time" for="fe"/>
+                    <apex:inputField id="fe" required="true" value="{!WorkIt2__Time_Entry__c.WorkIt2__Force_End__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem />
+                <apex:inputField value="{!WorkIt2__Time_Entry__c.WorkIt2__Comment__c}" style="width:280px; height:130px"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__CQL_Score__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Conversation Qualified Lead (CQL) score applied to the contact in the Drift conversation. Values between [-1, 3] correspond to the number of CQL lightning bolts. -1 means Disqualified, 0 means No score.</description>
+    <externalId>false</externalId>
+    <formula>DriftData__Drift_Conversation__r.DriftData__CQL_Score__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Conversation Qualified Lead (CQL) score applied to the contact in the Drift conversation. Values between [-1, 3] correspond to the number of CQL lightning bolts. -1 means Disqualified, 0 means No score.</inlineHelpText>
+    <label>CQL Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

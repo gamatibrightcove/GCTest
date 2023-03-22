@@ -26,6 +26,22 @@
         <minutesToComplete>120</minutesToComplete>
         <timeTriggers>
             <actions>
+                <name>Case_Missed_SLA</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Case_Missed_SLA_date_time</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Case_Missed_SLA_Follow_up_needed</name>
+                <type>OutboundMessage</type>
+            </actions>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <timeTriggers>
+            <actions>
                 <name>SLA_email_alert</name>
                 <type>Alert</type>
             </actions>
@@ -58,6 +74,22 @@
         </milestoneCriteriaFilterItems>
         <milestoneName>First Response</milestoneName>
         <minutesToComplete>540</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case_Missed_SLA</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Case_Missed_SLA_date_time</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Case_Missed_SLA_Follow_up_needed</name>
+                <type>OutboundMessage</type>
+            </actions>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
         <timeTriggers>
             <actions>
                 <name>SLA_email_alert</name>

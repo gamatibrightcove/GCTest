@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Tag_collection__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Collection of tags to set weightings for.</inlineHelpText>
+    <label>Tag collection</label>
+    <referenceTo>n2de__Tag_Category__c</referenceTo>
+    <relationshipLabel>Distribution tag weighting patterns</relationshipLabel>
+    <relationshipName>Distribution_tag_weightings</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

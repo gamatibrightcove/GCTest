@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Field on quote object used for testing this condition. --></help>
+        <label><!-- Tested Field --></label>
+        <name>SBQQ__TestedField__c</name>
+        <picklistValues>
+            <masterLabel>Customer Amount</masterLabel>
+            <translation><!-- Customer Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deal_Type__c</masterLabel>
+            <translation><!-- Deal_Type__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Amount</masterLabel>
+            <translation><!-- List Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Amount</masterLabel>
+            <translation><!-- Net Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricebook_Name__c</masterLabel>
+            <translation><!-- Pricebook_Name__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Amount</masterLabel>
+            <translation><!-- Regular Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Type__c</masterLabel>
+            <translation><!-- SBQQ__Type__c --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

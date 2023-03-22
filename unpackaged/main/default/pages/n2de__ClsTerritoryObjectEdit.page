@@ -1,0 +1,1026 @@
+<apex:page id="ClsTerritoryObjectEdit" tabStyle="Distribution_Classifier__tab" sideBar="false" standardStylesheets="false" docType="html-5.0" controller="n2de.ClsTerritoryObjectEditController" action="{!init}">
+    <html lang="en" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/deps/n2-design-system/styles/salesforce-lightning-design-system-legacy.min.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/css/n2.de.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.n2Components, 'css/n2.min.css')}"/>
+        <style>
+            .slds-scope .slds-tabs_scoped__link span[title] {
+                cursor: pointer;
+            }
+        </style>
+        <script>
+            window.n2__sldsIconsPrefix = '{!JSENCODE(URLFOR($Asset.SLDS, "assets/icons"))}';
+            window.n2__locale = '{!JSENCODE(Locale)}';
+            window.n2__timeZone = '{!JSENCODE(TimeZone)}';
+        </script>
+        <script defer="defer" src="{!URLFOR($Resource.n2Components, '/js/thirdParty.min.js')}"></script>
+        <script onload="initComponents();" defer="defer" src="{!URLFOR($Resource.n2Components, 'js/n2.min.js')}"></script>
+        <script>
+            var objectId = '{!ObjectId}';
+            var objectName = '{!JSENCODE(ObjectName)}';
+
+
+            loadMappingDataDictionary = function() {
+                // Initialise the Heroku utilities
+                n2.sf.heroku.initAuth('{!JSENCODE(HerokuBaseUrl)}', function() {
+                    return n2.util.promise().reject('Please refresh the page.');
+                }, {!ServerTime}, JSON.parse('{!AuthHeaders}'));
+
+                // Fetch the mapping data from Heroku and send to SF if id is different
+                n2.sf.heroku.get('/json/mapping-data.json')
+                    .done(function(mappingData) {
+                        if (mappingData.id !== '{!JSENCODE(ImportedDataId)}') {
+                            var mappingDataString = JSON.stringify(mappingData);
+                            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.loadMappingData}', mappingDataString, function(response, event) {
+                                if (event.statusCode !== 200) {
+                                    n2.message.error(n2.sf.util.getMessageFromEvent('Failed to import mapping data dictionary', event));
+                                }
+                            });
+                        }
+                    })
+                    .fail(function(xhr, status, error) {
+                        n2.message.error('Failed to fetch mapping data dictionary: ' + (error || xhr.status));
+                    });
+            }
+
+            initComponents = function() {
+                // If we have no objectId then error and return to the list page
+                if (objectId.length === 0) {
+                    n2.message.show({
+                        text: 'No valid object ID was found so you will be redirected to the list page to select another object.',
+                        heading: 'Error',
+                        handlers: {
+                            'ok': function() {
+                                n2.sf.util.navigate('{!Namespace}ClsTerritoryObjectList');
+                            }
+                        }
+                    });
+                    return;
+                }
+
+                initNav('Territory Object Settings');
+
+                // Create a promise to get the object fields so it can be used in multiple places
+                var filterFieldLabels;
+                var filterFieldsDeferred = n2.util.promise();
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.getObjectFields}', objectName, 'filters', function(response, event) {
+                    if (event.statusCode === 200 && response) {
+                        filterFieldLabels = {};
+                        n2.util.each(response, function(index, field) {
+                            filterFieldLabels[field.name] = field.label;
+                        });
+                        filterFieldsDeferred.resolve(response);
+                    } else {
+                        n2.message.error('Error getting object fields: ' + event.message);
+                        filterFieldsDeferred.resolve([]);
+                    }
+                }, {
+                    escape: false
+                });
+
+                var matchFieldLabels;
+                var matchFieldsDeferred = n2.util.promise();
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.getObjectFields}', objectName, 'matches', function(response, event) {
+                    if (event.statusCode === 200 && response) {
+                        matchFieldLabels = {};
+                        n2.util.each(response, function(index, field) {
+                            matchFieldLabels[field.name] = field.label;
+                        });
+                        matchFieldsDeferred.resolve(response);
+                    } else {
+                        n2.message.error('Error getting object fields: ' + event.message);
+                        matchFieldsDeferred.resolve([]);
+                    }
+                }, {
+                    escape: false
+                });
+
+                // Store the data that needs to be loaded into the filters grid here so that it can be updated when loading the add/edit modal
+                var filtersDataToLoad = [];
+                var filterRowNumber;
+
+                // Determine if we should be excluding the not operators in the filter logic builders
+                var excludedOperators = '{!NotOperatorsDisabled}' === 'true' ? n2.const.SF.NOT_OPERATORS : [];
+
+                // Create a promise to get the maps so it can be used in multiple places
+                var mapsDeferred = n2.util.promise();
+                var mapNames;
+
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.getMaps}', function(response, event) {
+                    if (event.statusCode === 200 && response) {
+                        // Get the name and id of the maps out of the response
+                        var maps = n2.util.map(response, function(map) {
+                            return {
+                                label: map.name,
+                                value: map.mapId
+                            };
+                        });
+                        mapNames = {};
+                        n2.util.each(response, function(index, map) {
+                            mapNames[map.mapId] = map.name;
+                        });
+                        mapsDeferred.resolve(maps);
+                    } else {
+                        n2.message.error('Error getting maps: ' + event.message);
+                        mapsDeferred.resolve([]);
+                    }
+                }, {
+                    escape: false
+                });
+
+                // Tabs
+                n2.cm.addComponent('tabs', {
+                    id: 'tabs-object',
+                    selector: '#tabs-object',
+                    tabs: [{
+                        label: 'Map Filters',
+                        selector: '#tabs-object-filters'
+                    }, {
+                        label: 'Field Matches',
+                        selector: '#tabs-object-fields',
+                        icon: {
+                            title: 'No field matches specified, which means no records will be processed for this object',
+                            icon: 'warning',
+                            iconSprite: 'utility',
+                            iconCls: 'slds-icon-text-warning slds-hide n2__field-matches-warning'
+                        }
+                    }, {
+                        label: 'Delay Processing Filter',
+                        selector: '#tabs-object-processing'
+                    }]
+                });
+
+                // Map filters tab
+                n2.cm.addComponent('select', {
+                    id: 'select-default-map',
+                    selector: '#select-default-map',
+                    label: 'Default map',
+                    help: 'Used when none of the filters match',
+                    required: true,
+                    defaultValue: '{!JSENCODE(DefaultMapId)}',
+                    data: function() {
+                        return mapsDeferred;
+                    },
+                    handlers: {
+                        'change': function(value) {
+                            if (value) {
+                                n2.spinner.show();
+                                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.saveDefaultMap}', objectId, value, function(response, event) {
+                                    n2.spinner.hide();
+                                    if (event.statusCode === 200) {
+                                        n2.toast.show({
+                                            text: 'Your changes have been saved'
+                                        });
+                                    } else {
+                                        n2.message.error('Error updating default map: ' + event.message);
+                                    }
+                                });
+
+                            }
+                        }
+                    },
+                    cls: 'slds-size_1-of-1 slds-medium-size_1-of-2 slds-x-large-size_1-of-3'
+                });
+                var dataTableFilters = n2.cm.addComponent('data-table', {
+                    id: 'data-table-filters',
+                    selector: '#data-table-filters',
+                    key: 'ex',
+                    label: 'Filters',
+                    help: 'Displayed in order of precedence',
+                    reorder: true,
+                    storeData: true,
+                    columns: [{
+                            name: 'mapName',
+                            title: 'Map',
+                            width: '20%'
+                        },
+                        {
+                            name: 'f',
+                            title: 'Filter',
+                            html: true,
+                            format: function(objectFilters) {
+                                return n2.sf.util.formatFilters(objectFilters, filterFieldLabels);
+                            },
+                            formatTooltip: function(value, formattedValue) {
+                                return formattedValue.replace('<i>', '').replace('</i>', '');
+                            }
+                        }
+                    ],
+                    actions: [{
+                        title: 'Edit',
+                        action: function(id, rowNum, data) {
+                            // Set the filter data before show as the reset triggered by showing the dialog will cause it to be loaded
+                            filtersDataToLoad = data.f;
+                            filterRowNumber = data.ex;
+
+                            // Edit the filter
+                            var component = n2.cm.getComponent('modal-add-map-filter');
+                            component.show(function() {
+                                component.setHeading('Edit Map Filter');
+                                n2.cm.setValue('select-add-map-filter-map', data.mid);
+                            });
+                        }
+                    }, {
+                        title: 'Delete',
+                        action: function(id, rowNum, data) {
+                            n2.message.show({
+                                text: 'Are you sure you want to delete the filter for map \'' + data.mapName + '\'?',
+                                heading: 'Delete Filter',
+                                theme: 'warning',
+                                buttons: 'yesno',
+                                handlers: {
+                                    'yes': function() {
+                                        // Delete the filter and refresh the table
+                                        dataTableFilters.mask();
+                                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.deleteObjectFilter}', objectId, id, function(response, event) {
+                                            if (event.statusCode === 200) {
+                                                dataTableFilters.refresh();
+                                                n2.toast.show({
+                                                    text: 'Your changes have been saved'
+                                                });
+                                            } else {
+                                                n2.message.error('Error deleting filter: ' + event.message);
+                                                dataTableFilters.unmask();
+                                            }
+                                        });
+                                    }
+                                }
+                            });
+                        }
+                    }],
+                    data: function(page, rowsPerPage, sortColumn, sortAscending, callback) {
+                        // Get the filters then call the callback to load the data
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.getObjectFilters}', objectId, function(response, event) {
+                            if (event.statusCode === 200 && response) {
+                                n2.util.each(response, function(index, objectFilter) {
+                                    objectFilter.mapName = mapNames[objectFilter.mid];
+                                });
+                                callback(response, response.length);
+                            } else {
+                                n2.message.error('Error getting object filters: ' + event.message);
+                                callback([], 0);
+                            }
+                        }, {
+                            escape: false
+                        });
+                    },
+                    handlers: {
+                        'reordered': function() {
+                            // Update the new order in SF
+                            dataTableFilters.mask();
+                            var newValues = n2.cm.getValue('data-table-filters');
+                            var newOrderList = n2.util.map(newValues, function(newValue) {
+                                return newValue.index;
+                            });
+                            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.reorderObjectFilters}', objectId, newOrderList, function(response, event) {
+                                if (event.statusCode === 200) {
+                                    n2.toast.show({
+                                        text: 'Your changes have been saved'
+                                    });
+                                } else {
+                                    n2.message.error('Error re-ordering filters: ' + event.message);
+                                }
+                                dataTableFilters.unmask();
+                            });
+                        }
+                    }
+                });
+                n2.cm.addComponent('button', {
+                    id: 'btn-add-map-filter',
+                    selector: '#btn-add-map-filter',
+                    text: 'Add Map Filter',
+                    handlers: {
+                        'click': function() {
+                            // Reset the filter data before show as the reset triggered by showing the dialog will cause it to be loaded
+                            filtersDataToLoad = [];
+                            filterRowNumber = null;
+                            // Load the add filter modal
+                            var component = n2.cm.getComponent('modal-add-map-filter');
+                            component.show();
+                        }
+                    }
+                });
+
+                    // Field Matches tab
+                    // Create promise to get the fields data, then each table can get the ones they are interested in
+                    var fieldMatchesDeferred;
+                    var refreshFieldMatchesDeferred = function() {
+                        fieldMatchesDeferred = n2.util.promise();
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.getFieldMatches}', objectId, function(response, event) {
+                            if (event.statusCode === 200 && response) {
+                                fieldMatchesDeferred.resolve(response);
+                                // Show or hide the tab warning if there are no field matches
+                                if (response.length === 0) {
+                                    n2j$('svg.n2__field-matches-warning').removeClass('slds-hide');
+                                } else {
+                                    n2j$('svg.n2__field-matches-warning').addClass('slds-hide');
+                                }
+                            } else {
+                                n2.message.error('Error getting object fields: ' + event.message);
+                                fieldMatchesDeferred.resolve([]);
+                            }
+                        }, {
+                            escape: false
+                        });
+                    };
+                    refreshFieldMatchesDeferred();
+
+                    var deleteFieldMatch = function(matchId, dataTable) {
+                        // Delete the field type and refresh the table
+                        dataTable.mask();
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.deleteFieldMatch}', matchId, function(response, event) {
+                            if (event.statusCode === 200) {
+                                refreshFieldMatchesDeferred();
+                                dataTable.refresh();
+                                n2.toast.show({
+                                    text: 'Your changes have been saved'
+                                });
+                            } else {
+                                n2.message.error('Error deleting field match object: ' + event.message);
+                                dataTable.unmask();
+                            }
+                        });
+                    };
+
+                    var saveNewFieldMatch = function(fieldName, resolveTo, dataType, dataTable) {
+                        dataTable.mask();
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.saveFieldMatch}',
+                            objectId, fieldName, resolveTo, dataType, function(response, event) {
+                                if (event.statusCode === 200) {
+                                    refreshFieldMatchesDeferred();
+                                    dataTable.refresh();
+                                    n2.toast.show({
+                                        text: 'Your changes have been saved'
+                                    });
+                                } else {
+                                    n2.message.error('Error saving field match: ' + event.message);
+                                    dataTable.unmask();
+                                }
+                        });
+                    };
+
+                    var reorderFieldMatches = function(resolveToType, dataTable) {
+                        dataTable.mask();
+                        var newOrderMap = {};
+                        var newValues = dataTable.getValue();
+                        n2.util.each(newValues, function(index, newValue) {
+                            newOrderMap[newValue.key] = newValue.index;
+                        });
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.reorderFieldMatches}', objectId, resolveToType, newOrderMap, function(response, event) {
+                            if (event.statusCode === 200) {
+                                refreshFieldMatchesDeferred();
+                                dataTable.refresh();
+                                n2.toast.show({
+                                    text: 'Your changes have been saved'
+                                });
+                            } else {
+                                n2.message.error('Error re-ordering field matches: ' + event.message);
+                                dataTable.unmask();
+                            }
+                        });
+                    };
+
+                    // HTML for delete icon
+                    var deleteIcon = n2.ui.renderTemplate('<svg class="slds-icon slds-icon_x-small slds-icon-text-error"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{sldsIconsPrefix}}/utility-sprite/svg/symbols.svg#close" /></svg>');
+                    var dataTableFieldsCountry = n2.cm.addComponent('data-table', {
+                        id: 'data-table-fields-country',
+                        selector: '#data-table-fields-country',
+                        label: 'Country',
+                        key: 'id',
+                        reorder: true,
+                        columns: [{
+                            name: 'fieldName',
+                            title: 'Field',
+                            format: function(value) {
+                                return matchFieldLabels[value] || value;
+                            }
+                        }, {
+                            name: 'dataType',
+                            title: 'Type'
+                        }, {
+                            name: '',
+                            title: '',
+                            format: function() {
+                                return deleteIcon;
+                            },
+                            formatTooltip: function() {
+                                return 'Delete field';
+                            },
+                            html: true,
+                            width: '3rem',
+                            action: function(id) {
+                                deleteFieldMatch(id, dataTableFieldsCountry);
+                            }
+                        }],
+                        data: function(page, rowsPerPage, sortColumn, sortAscending, callback) {
+                            // Filter the country fields from the fields promise then call the callback to load the data
+                            fieldMatchesDeferred.then(function(fields) {
+                                callback(n2.util.map(fields, function(field) {
+                                    return field.resolveTo === 'Country' ? field : null;
+                                }));
+                            });
+                        },
+                        handlers: {
+                            'reordered': function() {
+                                reorderFieldMatches('Country', dataTableFieldsCountry);
+                            }
+                        }
+                    });
+                    var dataTableFieldsState = n2.cm.addComponent('data-table', {
+                        id: 'data-table-fields-state',
+                        selector: '#data-table-fields-state',
+                        label: 'State/Province',
+                        key: 'id',
+                        reorder: true,
+                        columns: [{
+                            name: 'fieldName',
+                            title: 'Field',
+                            format: function(value) {
+                                return matchFieldLabels[value] || value;
+                            }
+                        }, {
+                            name: 'dataType',
+                            title: 'Type',
+                            format: function(value) {
+                                return value || 'State';
+                            }
+                        }, {
+                            name: '',
+                            title: '',
+                            format: function() {
+                                return deleteIcon;
+                            },
+                            formatTooltip: function() {
+                                return 'Delete field';
+                            },
+                            html: true,
+                            width: '3rem',
+                            action: function(id) {
+                                // Delete the field type and refresh the table
+                                deleteFieldMatch(id, dataTableFieldsState);
+                            }
+                        }],
+                        data: function(page, rowsPerPage, sortColumn, sortAscending, callback) {
+                            // Filter the state fields from the fields promise then call the callback to load the data
+                            fieldMatchesDeferred.then(function(fields) {
+                                callback(n2.util.map(fields, function(field) {
+                                    return field.resolveTo === 'State' ? field : null;
+                                }));
+                            });
+                        },
+                        handlers: {
+                            'reordered': function() {
+                                reorderFieldMatches('State', dataTableFieldsState);
+                            }
+                        }
+                    });
+                    var dataTableFieldsPostal = n2.cm.addComponent('data-table', {
+                        id: 'data-table-fields-postal',
+                        selector: '#data-table-fields-postal',
+                        label: 'Zip/Postal',
+                        key: 'id',
+                        reorder: true,
+                        columns: [{
+                            name: 'fieldName',
+                            title: 'Field',
+                            format: function(value) {
+                                return matchFieldLabels[value] || value;
+                            }
+                        }, {
+                            name: '',
+                            title: '',
+                            format: function() {
+                                return deleteIcon;
+                            },
+                            formatTooltip: function() {
+                                return 'Delete field';
+                            },
+                            html: true,
+                            width: '3rem',
+                            action: function(id) {
+                                // Delete the field type and refresh the table
+                                deleteFieldMatch(id, dataTableFieldsPostal);
+                            }
+                        }],
+                        data: function(page, rowsPerPage, sortColumn, sortAscending, callback) {
+                            // Filter the postal fields from the fields promise then call the callback to load the data
+                            fieldMatchesDeferred.then(function(fields) {
+                                callback(n2.util.map(fields, function(field) {
+                                    return field.resolveTo === 'Zip' ? field : null;
+                                }));
+                            });
+                        },
+                        handlers: {
+                            'reordered': function() {
+                                reorderFieldMatches('Zip', dataTableFieldsPostal);
+                            }
+                        }
+                    });
+                    n2.cm.addComponent('button', {
+                        id: 'btn-add-fields-country',
+                        selector: '#btn-add-fields-country',
+                        text: 'Add Country Field'
+                    });
+                    n2.cm.addComponent('button', {
+                        id: 'btn-add-fields-state',
+                        selector: '#btn-add-fields-state',
+                        text: 'Add State/Province Field'
+                    });
+                    n2.cm.addComponent('button', {
+                        id: 'btn-add-fields-postal',
+                        selector: '#btn-add-fields-postal',
+                        text: 'Add Zip/Postal Field'
+                    });
+
+                    // Delay processing tab
+                    // Update the label with the current filter
+                    var delayFilterDeferred;
+                    refreshDelayFilter = function() {
+                        // Create a promise to get the delay filter so it can be used in multiple places
+                        delayFilterDeferred = n2.util.promise();
+                        delayFilterDeferred.done(function(filtersAndLogic) {
+                            var filters = filtersAndLogic.filters;
+                            if (n2.util.isArray(filters) && filters.length > 0) {
+                                n2j$('#label-delay-filter').html(n2.sf.util.formatFilters(filters, filterFieldLabels));
+                            } else {
+                                n2j$('#label-delay-filter').text('No delay processing filter defined');
+                            }
+                        });
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.getProcessingFilter}', objectId, function(response, event) {
+                            if (event.statusCode === 200 && response) {
+                                delayFilterDeferred.resolve(response);
+                            } else {
+                                n2.message.error('Error getting delay filter: ' + event.message);
+                                delayFilterDeferred.resolve([]);
+                            }
+                        }, {
+                            escape: false
+                        });
+                    };
+                    refreshDelayFilter();
+                    n2.cm.addComponent('button', {
+                        id: 'btn-edit-delay-filter',
+                        selector: '#btn-edit-delay-filter',
+                        style: 'brand',
+                        text: 'Edit'
+                    });
+                    if ({!ForMatchingProcessing || ForAutoConversionProcessing}) {
+                        n2j$('#n2__lead-delay-info').removeClass('slds-hide');
+                    }
+
+                    // Modal for adding map filter
+                    n2.cm.addComponent('select', {
+                        id: 'select-add-map-filter-map',
+                        selector: '#select-add-map-filter-map',
+                        label: 'Map',
+                        required: true,
+                        data: function() {
+                            return mapsDeferred;
+                        },
+                        cls: 'slds-size_1-of-1 slds-medium-size_1-of-2 slds-x-large-size_1-of-3'
+                    });
+                    n2.cm.addComponent('logic-filters', {
+                        id: 'logic-filters-add-map-filter-filters',
+                        selector: '#logic-filters-add-map-filter-filters',
+                        label: 'Filter',
+                        excludedOperators: excludedOperators,
+                        includeFiscalPeriods: false,
+                        maxRows: 1,
+                        required: true,
+                        data: function(callback) {
+                            callback({
+                                filters: filtersDataToLoad
+                            });
+                        },
+                        dataFieldsList: function() {
+                            // Return a promise to get the fields
+                            return filterFieldsDeferred;
+                        },
+                        dataValuesList: function(fieldName, fieldType, operator) {
+                            // Return a promise to get the field values for the selected field, if there is no field name just return null
+                            if (!fieldName) {
+                                return null;
+                            }
+
+                            var deferred = n2.util.promise();
+                            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.getFieldValues}', objectName, fieldName, function(response, event) {
+                                if (event.statusCode === 200 && response) {
+                                    deferred.resolve(response);
+                                } else {
+                                    n2.message.error('Error getting field values: ' + event.message);
+                                    deferred.resolve([]);
+                                }
+                            }, {
+                                escape: false
+                            });
+                            return deferred;
+                        }
+                    });
+                    n2.cm.addComponent('modal', {
+                        id: 'modal-add-map-filter',
+                        selector: '',
+                        bodySelector: '#modal-add-map-filter-body',
+                        heading: 'Add Map Filter',
+                        size: 'medium',
+                        handlers: {
+                            'ok': function() {
+                                // Save the new or changed filter to SF then refresh the table
+                                n2.spinner.show();
+                                var values = n2.cm.getModalValues('modal-add-map-filter');
+                                var newFilter = {
+                                    mid: values['select-add-map-filter-map'],
+                                    f: values['logic-filters-add-map-filter-filters'].filters
+                                };
+                                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.saveObjectFilter}', objectId, filterRowNumber, newFilter, function(response, event) {
+                                    n2.spinner.hide();
+                                    if (event.statusCode === 200) {
+                                        n2.cm.refresh('data-table-filters');
+                                        n2.toast.show({
+                                            text: 'Your changes have been saved'
+                                        });
+                                    } else {
+                                        n2.message.error('Error saving filter: ' + event.message);
+                                    }
+                                });
+                            }
+                        }
+                    });
+
+                    // Modals for adding field matches
+                    n2.cm.addComponent('select', {
+                        id: 'select-add-fields-country-field',
+                        selector: '#select-add-fields-country-field',
+                        label: 'Field',
+                        required: true,
+                        data: function() {
+                            return matchFieldsDeferred;
+                        },
+                        cls: 'slds-size_1-of-1 slds-x-large-size_1-of-2'
+                    });
+                    n2.cm.addComponent('select', {
+                        id: 'select-add-fields-country-type',
+                        selector: '#select-add-fields-country-type',
+                        label: 'Type',
+                        required: true,
+                        data: ['Country', 'Domain', 'Phone', 'State'],
+                        cls: 'slds-size_1-of-1 slds-x-large-size_1-of-2'
+                    });
+                    n2.cm.addComponent('modal', {
+                        id: 'modal-add-fields-country',
+                        selector: '#n2__btn-add-fields-country',
+                        bodySelector: '#modal-add-fields-country-body',
+                        heading: 'Add Country Field',
+                        handlers: {
+                            'ok': function() {
+                                var values = n2.cm.getModalValues('modal-add-fields-country');
+                                var fieldName = values['select-add-fields-country-field'];
+                                var dataType = values['select-add-fields-country-type'];
+                                saveNewFieldMatch(fieldName, 'Country', dataType, dataTableFieldsCountry);
+                            }
+                        }
+                    });
+                    n2.cm.addComponent('select', {
+                        id: 'select-add-fields-state-field',
+                        selector: '#select-add-fields-state-field',
+                        label: 'Field',
+                        required: true,
+                        data: function() {
+                            return matchFieldsDeferred;
+                        },
+                        cls: 'slds-size_1-of-1 slds-x-large-size_1-of-2'
+                    });
+                    n2.cm.addComponent('select', {
+                        id: 'select-add-fields-state-type',
+                        selector: '#select-add-fields-state-type',
+                        label: 'Type',
+                        required: true,
+                        data: ['Phone', 'State'],
+                        cls: 'slds-size_1-of-1 slds-x-large-size_1-of-2'
+                    });
+                    n2.cm.addComponent('modal', {
+                        id: 'modal-add-fields-state',
+                        selector: '#n2__btn-add-fields-state',
+                        bodySelector: '#modal-add-fields-state-body',
+                        heading: 'Add State/Province Field',
+                        handlers: {
+                            'ok': function() {
+                                var values = n2.cm.getModalValues('modal-add-fields-state');
+                                var fieldName = values['select-add-fields-state-field'];
+                                var dataType = values['select-add-fields-state-type'];
+                                saveNewFieldMatch(fieldName, 'State', dataType, dataTableFieldsState);
+                            }
+                        }
+                    });
+                    n2.cm.addComponent('select', {
+                        id: 'select-add-fields-postal-field',
+                        selector: '#select-add-fields-postal-field',
+                        label: 'Field',
+                        required: true,
+                        data: function() {
+                            return matchFieldsDeferred;
+                        },
+                        cls: 'slds-size_1-of-1 slds-x-large-size_1-of-2'
+                    });
+                    n2.cm.addComponent('modal', {
+                        id: 'modal-add-fields-postal',
+                        selector: '#n2__btn-add-fields-postal',
+                        bodySelector: '#modal-add-fields-postal-body',
+                        heading: 'Add Zip/Postal Field',
+                        handlers: {
+                            'ok': function() {
+                                var values = n2.cm.getModalValues('modal-add-fields-postal');
+                                var fieldName = values['select-add-fields-postal-field'];
+                                saveNewFieldMatch(fieldName, 'Zip', '', dataTableFieldsPostal);
+                            }
+                        }
+                    });
+
+                    // Modal for editing delay filter
+                    n2.cm.addComponent('logic-filters', {
+                        id: 'logic-filters-delay-filter',
+                        selector: '#logic-filters-delay-filter',
+                        label: 'Filters',
+                        excludedOperators: excludedOperators,
+                        includeFiscalPeriods: false,
+                        maxRows: 1,
+                        required: false,
+                        data: function(callback) {
+                            delayFilterDeferred.done(function(filters) {
+                                callback(filters);
+                            });
+                        },
+                        dataFieldsList: function() {
+                            // Return a promise to get the fields
+                            return filterFieldsDeferred;
+                        },
+                        dataValuesList: function(fieldName, fieldType, operator) {
+                            // Return a promise to get the field values for the selected field, if there is no field name just return null
+                            if (!fieldName) {
+                                return null;
+                            }
+                            var deferred = n2.util.promise();
+                            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.getFieldValues}', objectName, fieldName, function(response, event) {
+                                if (event.statusCode === 200 && response) {
+                                    deferred.resolve(response);
+                                } else {
+                                    n2.message.error('Error getting field values: ' + event.message);
+                                    deferred.resolve([]);
+                                }
+                            }, {
+                                escape: false
+                            });
+                            return deferred;
+                        }
+                    });
+                    n2.cm.addComponent('modal', {
+                        id: 'modal-delay-filter',
+                        selector: '#n2__btn-edit-delay-filter',
+                        bodySelector: '#modal-delay-filter-body',
+                        heading: 'Edit Delay Processing Filter',
+                        size: 'medium',
+                        handlers: {
+                            'ok': function() {
+                                // Save the filters to SF then refresh the data
+                                n2.spinner.show();
+                                var filterList = n2.cm.getValue('logic-filters-delay-filter');
+                                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectEditController.saveProcessingFilter}', objectId, filterList, function(response, event) {
+                                    n2.spinner.hide();
+                                    if (event.statusCode === 200) {
+                                        refreshDelayFilter();
+                                        n2.toast.show({
+                                            text: 'Your changes have been saved'
+                                        });
+                                    } else {
+                                        n2.message.error('Error saving processing filter: ' + event.message);
+                                    }
+                                });
+
+
+                            }
+                        }
+                    });
+
+                    // Back button
+                    n2.cm.addComponent('button', {
+                        id: 'btn-back-to-objects',
+                        selector: '#btn-back-to-objects',
+                        text: 'Back to Object Settings',
+                        style: 'link',
+                        icon: 'back',
+                        iconSprite: 'utility',
+                        handlers: {
+                            'click': function() {
+                                n2.sf.util.navigate('{!Namespace}ClsTerritoryObjectList');
+                            }
+                        },
+                        cls: 'slds-m-right_small'
+                    });
+
+                    loadMappingDataDictionary();
+                };
+            </script>
+        <script defer="defer" src="{!URLFOR($Resource.DEResources, 'scripts/ga.js')}"></script>
+    </head>
+
+    <div class="slds-scope n2__full-height">
+        <div class="n2__full-height">
+            <div class="n2-de-page n2-de-classifier-v1 n2_full-width">
+                <div class="n2-vertical-navigation n2-de-vertical-navigation n2_navigation slds-m-top_xx-large">
+                    <c:ClsNavigation pkgNamespace="{!Namespace}"/>
+                </div>
+                <div class="n2_main">
+                    <div class="n2-de-header slds-page-header slds-no-flex">
+                        <div class="slds-page-header__row">
+                            <div class="slds-page-header__col-title">
+                                <div class="slds-media slds-media_center">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container">
+                                            <svg class="slds-icon n2_icon slds-icon_small" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#standard_objects')}"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <h1 title="Territories > Object Settings > {!ObjectName}" class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate">Territories > Object Settings > {!ObjectName}</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-page-header__col-actions">
+                                <span id="btn-back-to-objects"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <article class="n2_content">
+                        <div class="slds-card__body slds-p-around_medium">
+                            <div id="tabs-object"></div>
+                            <div id="tabs-object-filters" class="slds-grid slds-wrap">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <div class="slds-card__header slds-grid">
+                                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                            <div class="slds-media__body">
+                                                <div class="slds-text-title">Which maps do you want to use for this object?</div>
+                                            </div>
+                                        </header>
+                                    </div>
+                                    <div class="slds-card__body slds-card__body_inner slds-border_top">
+                                        <div class="slds-form-element slds-m-top_medium">
+                                            <div class="slds-form-element__group">
+                                                <div class="slds-form-element__row">
+                                                    <span id="select-default-map"></span>
+                                                </div>
+                                                <div class="slds-form-element__row">
+                                                    <span id="data-table-filters"></span>
+                                                </div>
+                                                <div class="slds-form-element__row slds-m-top_small">
+                                                    <span id="btn-add-map-filter"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tabs-object-fields" class="slds-grid slds-wrap">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <div class="slds-card__header slds-grid">
+                                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                            <div class="slds-media__body">
+                                                <div class="slds-text-title">Which fields should be used to determine the territory for the record?</div>
+                                            </div>
+                                            <div class="n2_actions">
+                                                <a href="https://help.nc-squared.com/detecting-territories" target="_blank" class="n2_help-link slds-grid slds-grid_vertical-align-center">
+                                                    <svg class="slds-icon slds-icon_x-small slds-m-right_xx-small slds-col slds-no-flex slds-icon-text-default" aria-hidden="true">
+                                                        <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#question')}"></use>
+                                                    </svg>
+                                                    <span class="slds-col">Help</span>
+                                                </a>
+                                            </div>
+                                        </header>
+                                    </div>
+                                    <div class="slds-card__body slds-card__body_inner slds-border_top">
+                                        <div class="slds-form-element slds-m-top_medium">
+                                            <div class="slds-form-element__group">
+                                                <div class="slds-form-element__row">
+                                                    <span id="data-table-fields-country"></span>
+                                                </div>
+                                                <div class="slds-form-element__row slds-m-top_small">
+                                                    <span id="btn-add-fields-country"></span>
+                                                </div>
+                                                <div class="slds-form-element__row slds-m-top_medium">
+                                                    <span id="data-table-fields-state"></span>
+                                                </div>
+                                                <div class="slds-form-element__row slds-m-top_small">
+                                                    <span id="btn-add-fields-state"></span>
+                                                </div>
+                                                <div class="slds-form-element__row slds-m-top_medium">
+                                                    <span id="data-table-fields-postal"></span>
+                                                </div>
+                                                <div class="slds-form-element__row slds-m-top_small">
+                                                    <span id="btn-add-fields-postal"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tabs-object-processing" class="slds-grid slds-wrap">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <div class="slds-card__header slds-grid">
+                                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                            <div class="slds-media__body">
+                                                <div class="slds-text-title">You can delay processing records until they meet the criteria below (e.g. to wait for an enrichment tool to complete before stamping a record with a territory)</div>
+                                            </div>
+                                            <div class="slds-no-flex">
+                                                <span id="btn-edit-delay-filter"></span>
+                                            </div>
+                                        </header>
+                                    </div>
+                                    <div class="slds-card__body slds-card__body_inner slds-border_top">
+                                        <div class="slds-form-element slds-m-top_medium">
+                                            <div id="n2__lead-delay-info" class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light slds-m-bottom_medium slds-hide" role="status">
+                                                <div class="slds-media__figure">
+                                                        <span class="slds-icon_container slds-icon-utility-info" title="Information">
+                                                            <svg class="slds-icon slds-icon_small slds-icon-text-default" aria-hidden="true">
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}"/>
+                                                            </svg>
+                                                            <span class="slds-assistive-text">Information</span>
+                                                        </span>
+                                                </div>
+                                                <div class="slds-media__body">
+                                                    <p>{!DelayFilterMessage}</p>
+                                                </div>
+                                            </div>
+                                            <span id="label-delay-filter"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div id="modal-add-map-filter-body" class="slds-form slds-form_compound">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__group">
+                        <div class="slds-form-element__row">
+                            <span id="select-add-map-filter-map"></span>
+                        </div>
+                        <div class="slds-form-element__row">
+                            <span id="logic-filters-add-map-filter-filters"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-add-fields-country-body" class="slds-form slds-form_compound">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__group">
+                        <div class="slds-form-element__row">
+                            <span id="select-add-fields-country-field"></span>
+                        </div>
+                        <div class="slds-form-element__row">
+                            <span id="select-add-fields-country-type"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-add-fields-state-body" class="slds-form slds-form_compound">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__group">
+                        <div class="slds-form-element__row">
+                            <span id="select-add-fields-state-field"></span>
+                        </div>
+                        <div class="slds-form-element__row">
+                            <span id="select-add-fields-state-type"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-add-fields-postal-body" class="slds-form slds-form_compound">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__group">
+                        <div class="slds-form-element__row">
+                            <span id="select-add-fields-postal-field"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-delay-filter-body" class="slds-form slds-form_compound">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__group">
+                        <div class="slds-form-element__row">
+                            <span id="logic-filters-delay-filter"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </html>
+
+</apex:page>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>The method used to control the maximum number of objects that are distributed to members of the team.</inlineHelpText>
+    <label>Cap type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Half hourly</fullName>
+                <default>false</default>
+                <label>Half hourly</label>
+            </value>
+            <value>
+                <fullName>Hourly</fullName>
+                <default>false</default>
+                <label>Hourly</label>
+            </value>
+            <value>
+                <fullName>Daily</fullName>
+                <default>false</default>
+                <label>Daily</label>
+            </value>
+            <value>
+                <fullName>Load balanced</fullName>
+                <default>false</default>
+                <label>Load balanced</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Type of alert functionality to use for this team --></help>
+        <label><!-- Alert type --></label>
+        <name>n2de__Alert_type__c</name>
+        <picklistValues>
+            <masterLabel>Custom Date/Time</masterLabel>
+            <translation><!-- Custom Date/Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time Period</masterLabel>
+            <translation><!-- Time Period --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Auto-conversion rule --></label>
+        <name>n2de__Auto_conversion_rule__c</name>
+        <relationshipLabel><!-- Auto conversion rule --></relationshipLabel>
+    </CustomFieldTranslation>

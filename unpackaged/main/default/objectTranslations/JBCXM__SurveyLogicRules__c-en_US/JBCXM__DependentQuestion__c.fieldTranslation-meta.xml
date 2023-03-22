@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- DependentQuestion --></label>
+        <name>JBCXM__DependentQuestion__c</name>
+        <relationshipLabel><!-- SurveyLogicRules (DependentQuestion) --></relationshipLabel>
+    </CustomFieldTranslation>

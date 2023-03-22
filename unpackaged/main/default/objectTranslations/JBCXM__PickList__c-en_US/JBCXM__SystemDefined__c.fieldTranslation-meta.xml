@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Boolean value to indicate whether the record is system defined. --></help>
+        <label><!-- System Defined --></label>
+        <name>JBCXM__SystemDefined__c</name>
+    </CustomFieldTranslation>

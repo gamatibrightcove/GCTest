@@ -1,0 +1,68 @@
+<apex:page controller="n2de.Console_AppMonitoring_Controller" tabStyle="Console__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Application Monitoring" action="{!prInit}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+            window.addEventListener('load', function() {
+                <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}" attrIsMobileApp="{!$User.UIThemeDisplayed == 'Theme4t'}"/>
+                <c:PageContext />
+
+                const getAppStatus = new n2.dataProvider.VisualForce({
+                    id: 'get-app-status',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_AppMonitoring_Controller.getAppStatus}'
+                        }
+                    }
+                });
+
+                const getDistributionStatus = new n2.dataProvider.VisualForce({
+                    id: 'get-distribution-status',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_AppMonitoring_Controller.getDistributionStatus}'
+                        }
+                    }
+                });
+
+                const getHealthCheckerStatus = new n2.dataProvider.VisualForce({
+                    id: 'get-health-checker-status',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_AppMonitoring_Controller.getHealthCheckerStatus}'
+                        }
+                    }
+                });
+
+                const getClassifierStatus = new n2.dataProvider.VisualForce({
+                    id: 'get-classifier-status',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_AppMonitoring_Controller.getClassifierStatus}'
+                        }
+                    }
+                });
+
+                const getObjectSyncStatus = new n2.dataProvider.VisualForce({
+                    id: 'get-object-sync-status',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_AppMonitoring_Controller.getObjectSyncStatus}'
+                        }
+                    }
+                });
+
+                const applicationMonitoringPage = new n2.de.page.console.ApplicationMonitoring({
+                    id: 'application-monitoring-page'
+                });
+                applicationMonitoringPage.render();
+            });
+        </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

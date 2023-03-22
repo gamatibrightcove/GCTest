@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- ZoomInfo Enrich Status --></label>
+        <name>DOZISF__ZoomInfo_Enrich_Status__c</name>
+        <picklistValues>
+            <masterLabel>Company Enrich Only</masterLabel>
+            <translation><!-- Company Enrich Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enriched</masterLabel>
+            <translation><!-- Enriched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No-Match</masterLabel>
+            <translation><!-- No-Match --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

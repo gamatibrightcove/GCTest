@@ -1,0 +1,115 @@
+<apex:page id="ObjectSync_ActionsList" controller="n2de.ObjectSync_Actions_Controller" tabStyle="Manage_Holidays__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Object Sync" action="{!init}">
+
+    <html>
+
+        <head>
+            <c:PageHead />
+
+            <script defer="defer">
+                    window.addEventListener('load', function() {
+                        <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                        <c:PageContext />
+
+                        const actionsData = new n2.dataProvider.VisualForce({
+                            id: 'get-object-sync-actions',
+                            methods: {
+                                get: {
+                                    method: '{!$RemoteAction.ObjectSync_Actions_Controller.getObjectSyncActions}'
+                                }
+                            }
+                        });
+
+                        const activateActions = new n2.dataProvider.VisualForce({
+                            id: 'activate-object-sync-actions',
+                            methods: {
+                                post: {
+                                    method: '{!$RemoteAction.ObjectSync_Actions_Controller.activateObjectSyncActions}'
+                                }
+                            }
+                        });
+
+                        const deactivateActions = new n2.dataProvider.VisualForce({
+                            id: 'deactivate-object-sync-actions',
+                            methods: {
+                                post: {
+                                    method: '{!$RemoteAction.ObjectSync_Actions_Controller.deactivateObjectSyncActions}'
+                                }
+                            }
+                        });
+
+                        const deleteActions = new n2.dataProvider.VisualForce({
+                            id: 'delete-object-sync-actions',
+                            methods: {
+                                post: {
+                                    method: '{!$RemoteAction.ObjectSync_Actions_Controller.deleteObjectSyncActions}'
+                                }
+                            }
+                        });
+
+                        const distributionObjectOptions = new n2.dataProvider.VisualForce({
+                            id: 'get-distribution-object-options',
+                            methods: {
+                                get: {
+                                    method: '{!$RemoteAction.ObjectSync_Actions_Controller.getDistributionObjectOptions}'
+                                }
+                            }
+                        });
+
+                        const relatedObjectOptions = new n2.dataProvider.VisualForce({
+                            id: 'get-related-object-options',
+                            methods: {
+                                get: {
+                                    method: '{!$RemoteAction.ObjectSync_Actions_Controller.getRelatedObjectOptions}'
+                                }
+                            }
+                        });
+
+                        const getTeamObjectFieldOptions = new n2.dataProvider.VisualForce({
+                            id: 'get-team-object-field-options',
+                            methods: {
+                                get: {
+                                    method: '{!$RemoteAction.ObjectSync_Actions_Controller.getAllFieldOptions}'
+                                }
+                            }
+                        });
+
+                        const getPicklistFieldSelectOptions = new n2.dataProvider.VisualForce({
+                            id: 'get-pick-list-field-select-options',
+                            methods: {
+                                get: {
+                                    method: '{!$RemoteAction.ObjectSync_Actions_Controller.getPicklistFieldSelectOptions}'
+                                }
+                            }
+                        })
+
+                        const saveAction = new n2.dataProvider.VisualForce({
+                            id: 'save-object-sync-action',
+                            methods: {
+                                post: {
+                                    method: '{!$RemoteAction.ObjectSync_Actions_Controller.saveObjectSyncAction}'
+                                }
+                            }
+                        });
+
+                        const reorderObjectSyncActions = new n2.dataProvider.VisualForce({
+                            id: 'reorder-object-sync-actions',
+                            methods: {
+                                post: {
+                                    method: '{!$RemoteAction.ObjectSync_Actions_Controller.reorderObjectSyncActions}'
+                                }
+                            }
+                        });
+
+                        const objectSyncActionsPage = new n2.de.page.objectSync.ObjectSyncActions({
+                            id: 'object-sync-actions'
+                        });
+                        objectSyncActionsPage.render();
+                    });
+                </script>
+        </head>
+
+        <body></body>
+
+    </html>
+
+</apex:page>

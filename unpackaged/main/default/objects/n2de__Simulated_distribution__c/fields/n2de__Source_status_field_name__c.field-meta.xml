@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Source_status_field_name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Source status field name</description>
+    <externalId>false</externalId>
+    <label>Source status field name</label>
+    <length>60</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,95 @@
+<apex:page controller="n2de.Availability_OutOfOffice_Controller" tabStyle="Out_of_office__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Out of Office" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+                window.addEventListener('load', function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}" attrCurrentUserId="{!$User.Id}"/>
+                    <c:PageContext />
+
+                    const outOfOffices = new n2.dataProvider.VisualForce({
+                        id: 'get-out-of-offices',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_OutOfOffice_Controller.getOutOfOffices}'
+                            }
+                        }
+                    });
+
+                    const deleteOfOffices = new n2.dataProvider.VisualForce({
+                        id: 'delete-out-of-offices',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Availability_OutOfOffice_Controller.deleteOutOfOffices}'
+                            }
+                        }
+                    });
+
+                    const saveOutOfOffice = new n2.dataProvider.VisualForce({
+                        id: 'save-out-of-office',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Availability_OutOfOffice_Controller.saveOutOfOffice}'
+                            }
+                        }
+                    });
+
+                    const getTeams = new n2.dataProvider.VisualForce({
+                        id: 'get-teams',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_OutOfOffice_Controller.getTeams}'
+                            }
+                        }
+                    });
+
+                    const getUserTeamMembers = new n2.dataProvider.VisualForce({
+                        id: 'get-user-team-members',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_OutOfOffice_Controller.getUserTeamMembers}'
+                            }
+                        }
+                    });
+
+                    const getQueueTeamMembers = new n2.dataProvider.VisualForce({
+                        id: 'get-queue-team-members',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_OutOfOffice_Controller.getQueueTeamMembers}'
+                            }
+                        }
+                    });
+
+                    const getTimeZoneOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-timezone-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_OutOfOffice_Controller.getTimezones}'
+                            }
+                        }
+                    });
+
+                    const getOutOfOfficeChangeHistory = new n2.dataProvider.VisualForce({
+                        id: 'get-out-of-office-change-history',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_OutOfOffice_Controller.getOutOfOfficeChangeHistory}'
+                            }
+                        }
+                    });
+
+                    const availabilityOutOfOfficePage = new n2.de.page.availability.OutOfOffice({
+                        id: 'availability-out-of-office-page'
+                    });
+                    availabilityOutOfOfficePage.render();
+                });
+            </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Influenced_By_Drift__c</fullName>
+    <deprecated>false</deprecated>
+    <description>If the number of days between the conversation start date and opportunity created date is less-than-or-equal-to the Influenced Look-Back Period, and the conversation happened prior to the opportunity close date, the value will be set to true. The Influenced Look-Back Period can be changed in Setup &gt; Custom Settings &gt; Drift Settings.</description>
+    <externalId>false</externalId>
+    <formula>IF (
+    AND (
+            DATEVALUE( DriftData__Opportunity__r.CreatedDate ) - DATEVALUE  (DriftData__Drift_Conversation__r.DriftData__Conversation_Start_Time__c) &lt;= DriftData__Drift_Conversation__r.DriftData__Influenced_Look_Back_Period_fx__c,
+            DriftData__Opportunity__r.CloseDate - DATEVALUE(DriftData__Drift_Conversation__r.DriftData__Conversation_Start_Time__c) &gt; 0
+         ), 
+true, false )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If the number of days between the conversation start date and opportunity created date is less-than-or-equal-to the Influenced Look-Back Period, and the conversation happened prior to the opportunity close date, the value will be set to true. The Influenced Look-Back Period can be changed in Setup &gt; Custom Settings &gt; Drift Settings.</inlineHelpText>
+    <label>Influenced By Drift</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

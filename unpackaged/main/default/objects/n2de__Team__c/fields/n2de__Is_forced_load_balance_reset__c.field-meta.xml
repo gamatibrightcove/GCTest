@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Is_forced_load_balance_reset__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Is a forced reset of the load balanced values of all team members required? This will usually happen when switching between load balancing by count and record value</inlineHelpText>
+    <label>Is load balanced reset required</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

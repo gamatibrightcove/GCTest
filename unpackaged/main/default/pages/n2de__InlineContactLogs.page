@@ -1,0 +1,3 @@
+<apex:page standardController="Contact">
+    <c:InlineLogs2 recordName="Contact" recordId="{!contact.Id}"/>
+</apex:page>

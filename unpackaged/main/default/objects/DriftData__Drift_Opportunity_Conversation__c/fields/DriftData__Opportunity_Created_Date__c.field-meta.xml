@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Opportunity_Created_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Opportunity Created Date of the record referenced by this junction object.</description>
+    <externalId>false</externalId>
+    <formula>DriftData__Opportunity__r.CreatedDate</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The Opportunity Created Date of the record referenced by this junction object.</inlineHelpText>
+    <label>Opportunity Created Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

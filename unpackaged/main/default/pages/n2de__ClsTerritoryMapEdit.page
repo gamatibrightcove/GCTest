@@ -1,0 +1,906 @@
+<apex:page id="ClsTerritoryMapEdit" tabStyle="Distribution_Classifier__tab" sideBar="false" standardStylesheets="false" docType="html-5.0" controller="n2de.ClsTerritoryMapEditController" action="{!init}">
+    <html lang="en" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/deps/n2-design-system/styles/salesforce-lightning-design-system-legacy.min.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/css/n2.de.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.n2Components, 'css/n2.min.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.n2Components, 'css/maps.min.css')}"/>
+        <style>
+            #n2__btn-back-to-maps {
+                vertical-align: bottom;
+            }
+        </style>
+        <script>
+            window.n2__sldsIconsPrefix = '{!JSENCODE(URLFOR($Asset.SLDS, "assets/icons"))}';
+            window.n2__locale = '{!JSENCODE(Locale)}';
+            window.n2__timeZone = '{!JSENCODE(TimeZone)}';
+        </script>
+        <script defer="defer" src="{!URLFOR($Resource.n2Components, '/js/thirdParty.min.js')}"></script>
+        <script defer="defer" src="{!URLFOR($Resource.n2Components, '/js/n2.min.js')}"></script>
+        <script onload="initComponents();" defer="defer" src="{!URLFOR($Resource.n2Components, '/js/maps.min.js')}"></script>
+        <script defer="defer" src="https://maps.google.com/maps/api/js?key={!MapsKey}&callback=n2.maps.Setup.initMap"></script>
+        <script>
+            var mapId = '{!MapId}';
+            var mapName;
+            var mapNames;
+            updateMapName = function(name) {
+                mapName = name;
+                var title = 'Territories > Maps > ' + name;
+                n2j$('h1#n2__title').attr('title', title);
+                n2j$('span#n2__title-name').text(title);
+            };
+
+            var isEditable = '{!IsReadOnly}' === 'false';
+            var isDraft = null;
+            updateDraft = function(draft) {
+                // Show or hide the draft message in the title and enable or disable the activate button depending on whether we have items
+                isDraft = draft;
+                if (isDraft) {
+                    n2j$('span#n2__title-draft').removeClass('slds-hide');
+                    if (n2.maps.TerritoryItems.hasTerritoryItems()) {
+                        n2.cm.enable('n2__btn-activate-map');
+                    } else {
+                        n2.cm.disable('n2__btn-activate-map');
+                    }
+                } else {
+                    n2j$('span#n2__title-draft').addClass('slds-hide');
+                    n2.cm.disable('n2__btn-activate-map');
+                }
+            };
+
+            saveTerritoryRemoteHandler = function(territory, geometry) {
+                n2.spinner.show();
+                // As this is not typed on the server pass as a separate serialised string
+                var defaultZoom = territory.defaultZoom ? JSON.stringify(territory.defaultZoom) : '';
+                territory.geometry = JSON.stringify(geometry);
+                var result = n2.util.promise();
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapEditController.saveTerritory}', mapId, territory, defaultZoom, function(response, event) {
+                    // Delete the geometry that was needed in the service so that it isn't persisted on the client
+                    delete territory.geometry;
+
+                    if (event.statusCode === 200 && response) {
+                        mapId = response.mapid;
+                        // When a save is made we know we are definitely now a draft
+                        updateDraft(true);
+                        n2.spinner.hide();
+                        result.resolve();
+                        n2.toast.show({
+                            text: 'Your changes have been saved'
+                        });
+                    } else {
+                        n2.spinner.hide();
+                        n2.message.error('Failed to save territory: ' + event.message);
+                        result.reject();
+                    }
+                });
+
+                return result;
+            };
+
+            saveTerritoryDeleteRemoteHandler = function(territory) {
+                n2.spinner.show();
+                var result = n2.util.promise();
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapEditController.deleteTerritory}', mapId, territory.executionOrder, function(response, event) {
+                    if (event.statusCode === 200 && response) {
+                        mapId = response;
+                        updateDraft(true);
+                        n2.spinner.hide();
+                        result.resolve();
+                        n2.toast.show({
+                            text: 'Your changes have been saved'
+                        });
+                    } else {
+                        n2.spinner.hide();
+                        n2.message.error('Failed to delete territory: ' + event.message);
+                        result.reject();
+                    }
+                });
+                return result;
+            };
+
+            saveTerritorieReorderRemoteHandler = function(changedTerritories) {
+                n2.spinner.show();
+                var result = n2.util.promise();
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapEditController.reorderTerritories}', mapId, changedTerritories, function(response, event) {
+                   if (event.statusCode == 200 && response) {
+                        mapId = response;
+                        updateDraft(true);
+                        n2.spinner.hide();
+                        result.resolve();
+                        n2.toast.show({
+                            text: 'Your changes have been saved'
+                        });
+                    } else {
+                        n2.spinner.hide();
+                        n2.message.error('Failed to save territories: ' + event.message);
+                        result.reject();
+                    }
+                });
+                return result;
+            };
+
+            loadMappingDataRemoteHandler = function(mappingData) {
+                if (mappingData.id !== '{!JSENCODE(ImportedDataId)}') {
+                    var result = n2.util.promise();
+                    var mappingDataString = JSON.stringify(mappingData);
+                    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapEditController.loadMappingData}', mappingDataString, function(response, event) {
+                        if (event.statusCode === 200) {
+                            result.resolve();
+                        } else {
+                            result.reject();
+                        }
+                    });
+                    return result;
+                }
+            };
+
+            var maxTerritories = Number({!MaxTerritories});
+            editModeHandler = function(editMode, territoryName) {
+                if (isEditable) {
+                    if (editMode) {
+                        // Hide the view buttons and show the edit buttons
+                        n2.cm.disable('n2__btn-activate-map');
+                        n2.cm.disable('n2__btn-edit-map');
+                        n2.cm.disable('n2__btn-back-to-maps');
+                        n2.cm.hide('n2__btn-add-territory');
+                        n2.cm.hide('n2__btn-reorder-territory');
+                        n2.cm.show('n2__btn-cancel-territory');
+                        n2.cm.show('n2__btn-save-territory');
+                        n2.cm.show('n2__btn-import-territory');
+                        n2.cm.hide('n2__input-filter-territories');
+                        n2j$('span#n2__no-territories-message').addClass('slds-hide');
+
+                        // Populate the territory name
+                        n2j$('span#n2__territory-name').text('> ' + territoryName).attr('title', territoryName).removeClass('slds-hide');
+
+                        // Hide the too many territories message and show the territories container
+                        n2j$('div#n2__too-many-territories-message').addClass('slds-hide');
+                        n2j$('div#n2__territories-container').removeClass('slds-hide');
+                    } else {
+                        // If draft and has territory items enable the activate button
+                        if (isDraft && n2.maps.TerritoryItems.hasTerritoryItems()) {
+                            n2.cm.enable('n2__btn-activate-map');
+                        }
+                        // Hide the edit buttons and show the view buttons
+                        n2.cm.enable('n2__btn-edit-map');
+                        n2.cm.enable('n2__btn-back-to-maps');
+                        n2.cm.show('n2__btn-add-territory');
+                        n2.cm.show('n2__btn-reorder-territory');
+                        n2.cm.hide('n2__btn-cancel-territory');
+                        n2.cm.hide('n2__btn-save-territory');
+                        n2.cm.hide('n2__btn-import-territory');
+                        n2.cm.show('n2__input-filter-territories');
+
+                        // Hide the territory name
+                        n2j$('span#n2__territory-name').addClass('slds-hide');
+
+                        // Check the number of territories
+                        if (n2.maps.Context.territories.length >= maxTerritories) {
+                            n2.cm.disable('n2__btn-add-territory');
+                            n2j$('div#n2__too-many-territories-message').removeClass('slds-hide');
+                        } else {
+                            n2.cm.enable('n2__btn-add-territory');
+                            n2j$('div#n2__too-many-territories-message').addClass('slds-hide');
+                        }
+                    }
+                } else {
+                    if (editMode) {
+                        // Show the cancel button, hide the filter and populate the territory name
+                        n2.cm.show('n2__btn-cancel-territory');
+                        n2.cm.hide('n2__input-filter-territories');
+                        n2j$('span#n2__territory-name').text('> ' + territoryName).attr('title', territoryName).removeClass('slds-hide');
+                    } else {
+                        // Hide the cancel button and territory name and show the filter
+                        n2.cm.hide('n2__btn-cancel-territory');
+                        n2.cm.show('n2__input-filter-territories');
+                        n2j$('span#n2__territory-name').addClass('slds-hide');
+                    }
+                }
+            };
+
+            noTerritoriesHandler = function(noTerritories) {
+                // Depending on whether there are no territories, update the panel
+                if (noTerritories) {
+                    n2j$('span#n2__no-territories-message' + (isEditable ? '' : '-readonly')).removeClass('slds-hide');
+                    n2j$('div#n2__territories-container').addClass('slds-hide');
+                } else {
+                    n2j$('span#n2__no-territories-message' + (isEditable ? '' : '-readonly')).addClass('slds-hide');
+                    n2j$('div#n2__territories-container').removeClass('slds-hide');
+                }
+            };
+
+            var editPropertiesIndex = -1;
+            editTerritoryPropertiesHandler = function(territory) {
+                // Set the variable so we know when saving we are editing a specific territory
+                editPropertiesIndex = territory._index;
+                var component = n2.cm.getComponent('modal-add-territory');
+                component.show(function() {
+                    // Set the heading and current values
+                    component.setHeading('Edit Territory');
+                    n2.cm.setValue('text-add-territory-name', territory.name, false);
+                    n2.cm.setValue('cp-add-territory-color', territory.color, false);
+                    n2j$('div#n2__edit-territory-warning').removeClass('slds-hide');
+                });
+            };
+
+            deleteTerritoryHandler = function(territory) {
+                // Prompt then delete the given territory - client side only
+                n2.message.show({
+                    text: 'Are you sure you want to delete territory \'' + territory.name + '\'?',
+                    heading: 'Delete Territory',
+                    theme: 'warning',
+                    buttons: 'yesno',
+                    handlers: {
+                        'yes': function() {
+                            n2.maps.Territories.deleteTerritory(territory._index);
+                        }
+                    }
+                });
+            };
+
+            initComponents = function() {
+                // If we have no mapId then error and return to the list page
+                if (mapId.length === 0) {
+                    n2.maps.Context.stopInit = true;
+                    n2.message.show({
+                        text: 'No valid map ID was found so you will be redirected to the list page to select another map.',
+                        heading: 'Error',
+                        handlers: {
+                            'ok': function() {
+                                n2.sf.util.navigate('{!Namespace}ClsTerritoryMapList');
+                            }
+                        }
+                    });
+                    return;
+                }
+
+                n2.spinner.show();
+
+                // If in classic resize to full height, and if in lightning set height of main panel to help scrolling
+                n2.sf.util.checkFullHeightClassic();
+                if (!n2.sf.util.isInClassic()) {
+                    var header = n2j$('#n2__map-header');
+                    var headerHeight = header.outerHeight(true) + header.offset().top;
+                    n2j$('#n2__map-main').css('height', 'calc(100% - ' + headerHeight + 'px)');
+                }
+
+                // Update the map name in the heading
+                updateMapName('{!JSENCODE(MapName)}');
+
+                // Update the draft heading
+                updateDraft('{!JSENCODE(MapStatus)}' === '{!JSENCODE(MapStatusDraft)}');
+
+                // Update the readonly heading
+                if (!isEditable) {
+                    n2j$('span#n2__title-readonly').removeClass('slds-hide');
+                }
+
+                // Get the maximum number of territories
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapEditController.getMaxTerritories}', mapId, function(response, event) {
+                    if (event.statusCode === 200 && n2.util.isNumber(response)) {
+                        maxTerritories = Number(response);
+                    }
+                });
+
+                var loadTerritoriesRemoteRequest = n2.util.promise();
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapEditController.loadTerritoryMap}', mapId, function(response, event) {
+                    if (event.statusCode === 200 && response) {
+                        n2.util.each(response.territories, function(index, territory) {
+                            if (territory.defaultZoom) {
+                                territory.defaultZoom = JSON.parse(territory.defaultZoom);
+                            }
+                        });
+                        loadTerritoriesRemoteRequest.resolve(response.territories);
+                    } else {
+                        n2.spinner.hide();
+                        n2.message.error('Failed to fetch territories: ' + event.message);
+                        loadTerritoriesRemoteRequest.reject();
+                    }
+                }, {
+                    escape: false
+                });
+
+                var loadGeometriesRemoteRequest = n2.util.promise();
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapEditController.loadGeometries}', mapId, function(response, event) {
+                    if (event.statusCode === 200 && response) {
+                        n2.util.each(response, function(index, geo) {
+                            response[index] = JSON.parse(geo);
+                        });
+                        loadGeometriesRemoteRequest.resolve(response);
+                    } else {
+                        n2.spinner.hide();
+                        n2.message.error('Failed to fetch geometries: ' + event.message);
+                        loadGeometriesRemoteRequest.reject();
+                    }
+                }, {
+                    escape: false
+                });
+
+                var fetchAuthHeader = function(path, type) {
+                    var result = n2.util.promise();
+                    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapEditController.getAuthHeader}', type, path, function(response, event) {
+                        if (event.statusCode === 200 && response) {
+                            result.resolve(response);
+                        } else {
+                            result.reject('An error occurred refreshing the Heroku authentication credentials');
+                        }
+                    });
+                    return result;
+                };
+
+                // Initialise the Heroku utilities
+                n2.sf.heroku.initAuth('{!JSENCODE(HerokuBaseUrl)}', fetchAuthHeader, {!ServerTime}, JSON.parse('{!AuthHeaders}'));
+
+                // Initialise the maps context
+                n2.maps.Context.init({
+                    isEditable: isEditable,
+                    loadTerritoriesPromise: loadTerritoriesRemoteRequest,
+                    loadGeometriesPromise: loadGeometriesRemoteRequest,
+                    map: 'n2__map',
+                    saveTerritoryHandler: saveTerritoryRemoteHandler,
+                    saveTerritoryDeleteHandler: saveTerritoryDeleteRemoteHandler,
+                    saveTerritorieReorderHandler: saveTerritorieReorderRemoteHandler,
+                    mappingDataLoadedHandler: loadMappingDataRemoteHandler,
+                    editModeHandler: editModeHandler,
+                    editTerritoryPropertiesHandler: editTerritoryPropertiesHandler,
+                    deleteTerritoryHandler: deleteTerritoryHandler,
+                    noTerritoriesHandler: noTerritoriesHandler,
+                    breadcrumb: 'ol#n2__breadcrumb',
+                    territories: 'ul#n2__territories',
+                    maxItems: Number({!MaxItems})
+                });
+
+                n2.cm.addComponent('button', {
+                    id: 'btn-back-to-maps',
+                    selector: '#btn-back-to-maps',
+                    text: 'Back to Maps',
+                    style: 'link',
+                    icon: 'back',
+                    iconSprite: 'utility',
+                    handlers: {
+                        'click': function() {
+                           n2.sf.util.navigate('{!Namespace}ClsTerritoryMapList');
+                        }
+                    },
+                    cls: 'slds-m-right_small'
+                });
+                n2.cm.addComponent('button', {
+                    id: 'btn-edit-map',
+                    selector: '#btn-edit-map',
+                    text: 'Edit Name',
+                    handlers: {
+                        'click': function() {
+                            var component = n2.cm.getComponent('modal-edit-map');
+                            component.show(function() {
+                                // Set the current value
+                                n2.cm.setValue('text-edit-map-name', mapName, false);
+                            });
+                        }
+                    }
+                });
+                if (isEditable) {
+                    n2.cm.addComponent('button', {
+                        id: 'btn-activate-map',
+                        selector: '#btn-activate-map',
+                        text: 'Activate Map',
+                        style: 'brand',
+                        disabled: true,
+                        handlers: {
+                            'click': function() {
+                                n2.spinner.show();
+                                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapEditController.activateTerritoryMap}', mapId, function(response, event) {
+                                    if (event.statusCode === 200) {
+                                        n2.sf.util.navigate('{!Namespace}ClsTerritoryMapList');
+                                    } else {
+                                        n2.spinner.hide();
+                                        n2.message.error('Failed to activate map: ' + event.message);
+                                    }
+                                });
+                            }
+                        }
+                    });
+                    n2.cm.addComponent('button', {
+                        id: 'btn-add-territory',
+                        selector: '#btn-add-territory',
+                        text: 'Add Territory',
+                        cls: 'slds-hide'
+                    });
+                    n2.cm.addComponent('button', {
+                        id: 'btn-add-territory-none',
+                        selector: '#btn-add-territory-none',
+                        text: 'here',
+                        style: 'link'
+                    });
+                    n2.cm.addComponent('button', {
+                        id: 'btn-import-territory',
+                        selector: '#btn-import-territory',
+                        text: 'Import Items',
+                        cls: 'slds-hide'
+                    });
+                    n2.cm.addComponent('button', {
+                        id: 'btn-reorder-territory',
+                        selector: '#btn-reorder-territory',
+                        text: 'Reorder Territories'
+                    });
+                    n2.cm.addComponent('button', {
+                        id: 'btn-save-territory',
+                        selector: '#btn-save-territory',
+                        text: 'Save',
+                        style: 'brand',
+                        handlers: {
+                            'click': n2.maps.Territories.updateCurrentTerritoryItems
+                        },
+                        cls: 'slds-hide'
+                    });
+                }
+                n2.cm.addComponent('button', {
+                    id: 'btn-cancel-territory',
+                    selector: '#btn-cancel-territory',
+                    text: 'Cancel',
+                    handlers: {
+                        'click': n2.maps.Territories.loadTerritories
+                    },
+                    cls: 'slds-hide'
+                });
+                n2.cm.addComponent('input', {
+                    id: 'input-filter-territories',
+                    selector: '#input-filter-territories',
+                    placeholder: 'Quick Find',
+                    icon: 'search',
+                    iconSprite: 'utility',
+                    showClear: true,
+                    handlers: {
+                        'type': n2.maps.Territories.updatePanel
+                    },
+                    cls: 'slds-p-bottom_small'
+                });
+
+                // Edit map modal
+                n2.cm.addComponent('input', {
+                    id: 'text-edit-map-name',
+                    selector: '#text-edit-map-name',
+                    label: 'Map name',
+                    required: true,
+                    validation: function(name) {
+                        if (name) {
+                            // Check it's length
+                            if (name.length > 80) {
+                                return 'Maximum length is 80 characters';
+                            }
+                            // Check it's a unique name
+                            var lowerName = name.toLowerCase();
+                            if (mapName.toLowerCase() !== lowerName && mapNames.indexOf(lowerName) !== -1) {
+                                return 'Map name must be unique';
+                            }
+                        }
+                        return true;
+                    },
+                    cls: 'slds-size_1-of-1'
+                });
+                n2.cm.addComponent('modal', {
+                    id: 'modal-edit-map',
+                    selector: '',
+                    bodySelector: '#modal-edit-map-body',
+                    heading: 'Edit Map Name',
+                    handlers: {
+                        'ok': function() {
+                            // Check if we have changed
+                            var values = this.getValues();
+                            var newMapName = values['text-edit-map-name'];
+                            if (mapName === newMapName) {
+                                return;
+                            }
+
+                            n2.spinner.show();
+                            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapEditController.saveMapName}', mapId, newMapName, function(response, event) {
+                                if (event.statusCode === 200 && response) {
+                                    mapId = response;
+                                    updateMapName(newMapName);
+                                    // When a save is made we know we are definitely now a draft
+                                    updateDraft(true);
+                                    n2.spinner.hide();
+                                    n2.toast.show({
+                                        text: 'Your changes have been saved'
+                                    });
+                                } else {
+                                    n2.spinner.hide();
+                                    n2.message.error('Failed to save map name: ' + event.message);
+                                }
+                            });
+                        }
+                    }
+                });
+
+                // Add territory modal
+                if (isEditable) {
+                    n2.cm.addComponent('input', {
+                        id: 'text-add-territory-name',
+                        selector: '#text-add-territory-name',
+                        label: 'Territory name',
+                        required: true,
+                        validation: function(name) {
+                            if (name) {
+                                // Check it's length
+                                if (name.length > 80) {
+                                    return 'Maximum length is 80 characters';
+                                }
+                                // Check it's a unique name
+                                var duplicate = false;
+                                var lowerName = name.toLowerCase();
+                                n2.util.each(n2.maps.Context.territories, function(index, territory) {
+                                    if (editPropertiesIndex !== index && territory.name.toLowerCase() === lowerName) {
+                                        duplicate = true;
+                                        return false;
+                                    }
+                                });
+                                if (duplicate) {
+                                    return 'Territory name must be unique';
+                                }
+                            }
+                            return true;
+                        },
+                        cls: 'slds-size_1-of-1'
+                    });
+                    n2.cm.addComponent('color', {
+                        id: 'cp-add-territory-color',
+                        selector: '#cp-add-territory-color',
+                        label: 'Choose a color',
+                        colors: n2.maps.Constants.TERRITORY_COLORS,
+                        defaultColor: '#0000FF',
+                        cls: 'slds-size_1-of-1',
+                        help: 'Select a color from the dropdown list or type one into the text box',
+                        required: true
+                    });
+                    n2.cm.addComponent('modal', {
+                        id: 'modal-add-territory',
+                        selector: '#n2__btn-add-territory, #n2__btn-add-territory-none',
+                        bodySelector: '#modal-add-territory-body',
+                        heading: 'Add Territory',
+                        handlers: {
+                            'show': function() {
+                                // Set the colour to a random one and reset the properties index to -1 to indicate we are adding
+                                n2.cm.setValue('cp-add-territory-color', n2.maps.Constants.TERRITORY_COLORS[Math.floor((Math.random() * n2.maps.Constants.TERRITORY_COLORS.length))].color, false);
+                                editPropertiesIndex = -1;
+                                // Hide the edit warning
+                                n2j$('div#n2__edit-territory-warning').addClass('slds-hide');
+                            },
+                            'ok': function() {
+                                var values = this.getValues();
+                                // If we have no edit properties index call the method to create a new territory
+                                if (editPropertiesIndex === -1) {
+                                    return n2.maps.Territories.createTerritory(values['text-add-territory-name'], values['cp-add-territory-color']);
+                                } else {
+                                    // Otherwise just update the instance with the new values
+                                    return n2.maps.Territories.updateTerritory(editPropertiesIndex, values['text-add-territory-name'], values['cp-add-territory-color']);
+                                }
+                            }
+                        }
+                    });
+
+                    // Import territory items modal
+                    n2.cm.addComponent('select', {
+                        id: 'select-import-level',
+                        selector: '#select-import-level',
+                        label: 'Zoom Level',
+                        help: 'The zoom level determines how the import process resolves the item to a recognised value. You can use \'Autodetect\' to import a mixture of zoom levels in one attempt',
+                        required: true,
+                        defaultValue: n2.maps.Constants.IMPORT_TYPE_AUTODETECT,
+                        data: [{
+                                label: 'Autodetect',
+                                value: n2.maps.Constants.IMPORT_TYPE_AUTODETECT
+                            },
+                            {
+                                label: n2.maps.Constants.ZOOM_TYPE_DESCRIPTIONS[n2.maps.Constants.ZOOM_TYPE_COUNTRY],
+                                value: n2.maps.Constants.ZOOM_TYPE_COUNTRY
+                            },
+                            {
+                                label: n2.maps.Constants.ZOOM_TYPE_DESCRIPTIONS[n2.maps.Constants.ZOOM_TYPE_STATE],
+                                value: n2.maps.Constants.ZOOM_TYPE_STATE
+                            },
+                            {
+                                label: n2.maps.Constants.ZOOM_TYPE_DESCRIPTIONS[n2.maps.Constants.ZOOM_TYPE_POSTAL_DETAIL],
+                                value: n2.maps.Constants.ZOOM_TYPE_POSTAL
+                            }
+                        ],
+                        cls: 'slds-size_1-of-2'
+                    });
+                    n2.cm.addComponent('select', {
+                        id: 'select-import-country',
+                        selector: '#select-import-country',
+                        label: 'Country',
+                        help: 'The country determines how the import process resolves the ' + n2.maps.Constants.ZOOM_TYPE_DESCRIPTIONS[n2.maps.Constants.ZOOM_TYPE_STATE] + ' and ' + n2.maps.Constants.ZOOM_TYPE_DESCRIPTIONS[n2.maps.Constants.ZOOM_TYPE_POSTAL_DETAIL] + ' items to a recognised value. You can use \'Autodetect\' to import a mixture of items related to different countries in one attempt',
+                        required: true,
+                        defaultValue: n2.maps.Constants.IMPORT_TYPE_AUTODETECT,
+                        data: function() {
+                            var values = n2.util.map(n2.maps.Constants.IMPORT_COUNTRIES, function(key, value) {
+                                return {
+                                    label: key,
+                                    value: value
+                                };
+                            })
+                            values.push({
+                                label: 'Autodetect',
+                                value: n2.maps.Constants.IMPORT_TYPE_AUTODETECT
+                            });
+                            return values;
+                        },
+                        cls: 'slds-size_1-of-2'
+                    });
+                    n2.cm.addComponent('select', {
+                        id: 'select-import-delimiter',
+                        selector: '#select-import-delimiter',
+                        label: 'Separator',
+                        help: 'The separator is used when pasting or typing into the items box below to determine the boundary for individual items',
+                        required: true,
+                        defaultValue: 'Empty',
+                        data: [{
+                                label: 'Tab or New Line',
+                                value: 'Empty'
+                            },
+                            {
+                                label: 'Comma',
+                                value: ','
+                            },
+                            {
+                                label: 'Semicolon',
+                                value: ';'
+                            }
+                        ],
+                        handlers: {
+                            'change': function(value) {
+                                pillImportList.setDelimiter(value === 'Empty' ? [] : value);
+                            }
+                        },
+                        cls: 'slds-size_1-of-2'
+                    });
+                    var pillImportList = n2.cm.addComponent('pill-list', {
+                        id: 'pill-import-list',
+                        selector: '#pill-import-list',
+                        pillLabelKey: '_name',
+                        delimiter: [],
+                        label: 'Items',
+                        help: 'Type or paste the items to import them separated by either the separator specified above, a tab or a new line. For items that contain the separator they should be surrounded by quotes',
+                        required: true,
+                        minHeight: '84px',
+                        showClear: true,
+                        handlers: {
+                            'add': function(labels) {
+                                return n2.maps.Import.getTerritoryItems(labels, n2.cm.getValue('select-import-level'), n2.cm.getValue('select-import-country'));
+                            }
+                        },
+                        cls: 'slds-size_1-of-1'
+                    });
+                    n2.cm.addComponent('modal', {
+                        id: 'modal-import-territory',
+                        selector: '#n2__btn-import-territory',
+                        bodySelector: '#modal-import-territory-body',
+                        heading: 'Import Territory Items',
+                        handlers: {
+                            'ok': function() {
+                                n2.maps.TerritoryItems.addItems(n2.cm.getValue('pill-import-list'));
+                            }
+                        }
+                    });
+
+                    // Reorder territories modal
+                    n2.cm.addComponent('data-table', {
+                        id: 'data-table-reorder-territories',
+                        selector: '#data-table-reorder-territories',
+                        reorder: true,
+                        rowNumbers: true,
+                        key: 'executionOrder',
+                        data: function() {
+                            arguments[4](n2.util.map(n2.maps.Context.territories, function(territory) {
+                                return {
+                                    name: territory.name,
+                                    executionOrder: territory.executionOrder
+                                };
+                            }));
+                            },
+                        columns: [{
+                            name: 'name',
+                            title: 'Name'
+                        }]
+                    });
+                    n2.cm.addComponent('modal', {
+                        id: 'modal-reorder-territory',
+                        selector: '#n2__btn-reorder-territory',
+                        bodySelector: '#modal-reorder-territory-body',
+                        heading: 'Reorder Territories',
+                        handlers: {
+                            'ok': function() {
+                                // Loop through the rows updating the execution order where it has changed
+                                var values = n2.cm.getValue('data-table-reorder-territories');
+                                var changedTerritories = {};
+                                n2.util.each(values, function(index, row) {
+                                    if (Number(row.key) !== row.index) {
+                                        changedTerritories[Number(row.key)] = row.index;
+                                    }
+                                });
+                                return n2.maps.Territories.reorderTerritories(changedTerritories);
+                            }
+                        }
+                    });
+                } else {
+                    n2j$('#modal-add-territory-body').addClass('slds-hide');
+                    n2j$('#modal-import-territory-body').addClass('slds-hide');
+                    n2j$('#modal-reorder-territory-body').addClass('slds-hide');
+                }
+
+                // Get the map names for validation
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapEditController.getMaps}', function(response, event) {
+                    if (event.statusCode === 200 && response) {
+                        mapNames = n2.util.map(response, function(map) {
+                            return map.name.toLowerCase();
+                        });
+                    } else {
+                        n2.message.error('Error getting maps: ' + event.message);
+                        mapNames = [];
+                    }
+                }, {
+                    escape: false
+                });
+
+                n2.spinner.hide();
+            };
+        </script>
+        <script defer="defer" src="{!URLFOR($Resource.DEResources, 'scripts/ga.js')}"></script>
+    </head>
+
+    <body>
+    <div class="slds-scope n2__full-height">
+        <div class="n2__full-height">
+            <div class="n2-de-page n2-de-classifier-v1 n2-de-classifier-territory-map-edit n2_full-width">
+                <div class="n2_main">
+                <div id="n2__map-header">
+                    <div class="n2-de-header slds-page-header slds-no-flex">
+                        <div class="slds-page-header__row">
+                            <div class="slds-page-header__col-title">
+                                <div class="slds-media slds-media_center">
+                                    <div class="slds-media__figure">
+                                            <span class="slds-icon_container">
+                                                <svg class="slds-icon n2_icon slds-icon_small" aria-hidden="true">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#location')}"/>
+                                                </svg>
+                                            </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <h1 id="n2__title" title="Territories > Maps > {!MapName}" class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate"><span id="n2__title-name">Territories > Maps > {!MapName}</span><span id="n2__title-draft" class="slds-hide"> (Draft)</span><span id="n2__title-readonly" class="slds-hide"> (Read-Only)</span></h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-page-header__col-actions">
+                                <span id="btn-back-to-maps"></span>
+                                <span id="btn-edit-map"></span>
+                                <span id="btn-activate-map"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="n2__map-main" class="slds-col slds-grid n2__full-height">
+                    <div class="slds-col slds-size_1-of-3 slds-x-large-size_1-of-4">
+                        <div class="slds-panel slds-border_around slds-grid slds-grid_vertical n2__full-height">
+                            <div class="slds-panel__section slds-border_bottom slds-grid slds-grid_vertical slds-no-flex">
+                                <div>
+                                    <h2 class="slds-truncate slds-text-heading_small">
+                                        <span>Territories</span>
+                                        <span id="n2__territory-name" class="slds-hide"></span>
+                                    </h2>
+                                </div>
+                                <div class="slds-col slds-text-align_right slds-p-top_small">
+                                    <span id="btn-reorder-territory"></span>
+                                    <span id="btn-add-territory"></span>
+                                    <span id="btn-import-territory"></span>
+                                    <span id="btn-cancel-territory"></span>
+                                    <span id="btn-save-territory"></span>
+                                    <div id="n2__too-many-territories-message" class="slds-p-top_small slds-text-align_center slds-hide">
+                                            <span class="slds-icon_container slds-icon-utility-warning" title="Warning">
+                                                <svg class="slds-icon slds-icon_x-small slds-icon-text-warning" aria-hidden="true">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}"/>
+                                                </svg>
+                                                <span class="slds-assistive-text">Warning</span>
+                                            </span>
+                                        <span>You have added the maximum number of territories to this map. Please contact <a href="mailto:support@nc-squared.com">support</a> for assistance.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-panel__section slds-col slds-grid">
+                                <span class="slds-text-heading_small slds-col slds-align-content-center slds-text-align_center slds-hide" id="n2__no-territories-message">No territories created, create one <span id="btn-add-territory-none"></span></span>
+                                <span class="slds-text-heading_small slds-col slds-align-content-center slds-text-align_center slds-hide" id="n2__no-territories-message-readonly">No territories created</span>
+                                <div id="n2__territories-container" class="slds-col slds-grid slds-grid_vertical" style="width: 100%;">
+                                    <span id="input-filter-territories"></span>
+                                    <ul class="slds-col slds-scrollable_y n2__territories" id="n2__territories" style="max-width: 100%;"></ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="slds-col slds-panel slds-grid slds-grid_vertical">
+                        <div class="n2__breadcrumb-container slds-p-around_x-small">
+                            <nav role="navigation" aria-label="Breadcrumbs">
+                                <ol class="slds-breadcrumb slds-list_horizontal slds-wrap" id="n2__breadcrumb"></ol>
+                            </nav>
+                        </div>
+                        <div id="n2__map" class="slds-col"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div id="modal-edit-map-body" class="slds-form slds-form_compound">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__group">
+                        <div class="slds-form-element__row slds-form-element__help">
+                        <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small slds-align-middle" title="Warning">
+                            <svg class="slds-icon slds-icon_x-small slds-icon-text-warning" aria-hidden="true">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}" />
+                            </svg>
+                            <span class="slds-assistive-text">Warning</span>
+                        </span>
+                            <span>Once activated, if you change the map name, we recommend re-classifying records that have been classified but not assigned to avoid incorrect distributions.</span>
+                        </div>
+                        <div class="slds-form-element__row">
+                            <span id="text-edit-map-name"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-add-territory-body" class="slds-form slds-form_compound">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__group">
+                        <div id="n2__edit-territory-warning" class="slds-form-element__row slds-form-element__help slds-hide">
+                        <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small slds-align-middle" title="Warning">
+                            <svg class="slds-icon slds-icon_x-small slds-icon-text-warning" aria-hidden="true">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}" />
+                            </svg>
+                            <span class="slds-assistive-text">Warning</span>
+                        </span>
+                            <span>Once activated, if you change any territory names, we recommend re-classifying records that have been classified but not assigned to avoid incorrect distributions.</span>
+                        </div>
+                        <div class="slds-form-element__row">
+                            <span id="text-add-territory-name"></span>
+                        </div>
+                        <div class="slds-form-element__row">
+                            <span id="cp-add-territory-color"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-import-territory-body" class="slds-form slds-form_compound">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__group">
+                        <div class="slds-form-element__row">
+                            <span id="select-import-level"></span>
+                        </div>
+                        <div class="slds-form-element__row">
+                            <span id="select-import-country"></span>
+                        </div>
+                        <div class="slds-form-element__row">
+                            <span id="select-import-delimiter"></span>
+                        </div>
+                        <div class="slds-form-element__row">
+                            <span id="pill-import-list"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-reorder-territory-body" class="slds-form slds-form_compound">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__group">
+                        <div class="slds-form-element__row">
+                            <span id="data-table-reorder-territories"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+    </html>
+
+</apex:page>

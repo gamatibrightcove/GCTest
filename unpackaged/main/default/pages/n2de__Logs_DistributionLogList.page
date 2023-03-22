@@ -1,0 +1,91 @@
+<apex:page controller="n2de.Logs_DistributionLogList_Controller" tabStyle="Logs__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Distribution Log List" action="{!init}">
+    <apex:includeLightning />
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+                window.addEventListener('load', function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}" attrCurrentUserId="{!$User.Id}"/>
+                    <c:LogsContext attrHasArchivingBeenEnabled="{!HasArchivingBeenEnabled}"/>
+                    <c:PageContext />
+
+                    const getPageUrlParams = new n2.dataProvider.Static({
+                        id: 'get-page-url-params',
+                        data: {
+                            teamId: '{!JSENCODE(TeamId)}',
+                            userId: '{!JSENCODE(MyUserId)}',
+                            distributorId: '{!JSENCODE(DistributorId)}',
+                            status: '{!JSENCODE(Status)}'
+                        }
+                    });
+
+                    const getIsLoggedEnabled = new n2.dataProvider.Static({
+                        id: 'get-show-last-action',
+                        data: {
+                            displayLastAction: {!DisplayLastAction}
+                        }
+                    });
+
+                    const getDistributionLogs = new n2.dataProvider.VisualForce({
+                        id: 'get-distribution-logs',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Logs_DistributionLogList_Controller.getDistributionLogResponse}',
+                                config: {
+                                    buffer: false,
+                                    timeout: 120000
+                                }
+                            }
+                        }
+                    });
+
+                    const getFilterOptionData = new n2.dataProvider.VisualForce({
+                        id: 'get-filter-option-data',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Logs_DistributionLogList_Controller.getFilterOptionData}'
+                            }
+                        }
+                    });
+
+                    const retryOnHoldAssignments = new n2.dataProvider.VisualForce({
+                        id: 'retry-on-hold-assignments',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Logs_DistributionLogList_Controller.retryOnHoldAssignments}'
+                            }
+                        }
+                    });
+
+                    const deleteDistributionLogs = new n2.dataProvider.VisualForce({
+                        id: 'delete-distribution-logs',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Logs_DistributionLogList_Controller.deleteDistributionLogs}'
+                            }
+                        }
+                    });
+
+                    const retryAllOnHoldAssignments = new n2.dataProvider.VisualForce({
+                        id: 'retry-all-on-hold-assignments',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Logs_DistributionLogList_Controller.retryAllOnHoldAssignments}'
+                            }
+                        }
+                    });
+
+                    const distributionLogListPage = new n2.de.page.logs.DistributionLogList({
+                        id: 'distribution-log-list-page'
+                    });
+                    distributionLogListPage.render();
+                });
+            </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

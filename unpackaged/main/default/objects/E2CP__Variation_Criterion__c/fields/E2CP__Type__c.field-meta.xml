@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>E2CP__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Type of this Criterion either &#39;Field Criterion&#39; or &#39;Inbound Address&#39;.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <length>32</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

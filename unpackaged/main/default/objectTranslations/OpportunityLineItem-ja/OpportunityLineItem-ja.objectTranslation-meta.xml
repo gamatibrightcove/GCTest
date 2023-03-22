@@ -3,4 +3,12 @@
     
     
     
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Deal Desk --></label>
+        <name>sbaa__DealDesk</name>
+    </fieldSets>
 </CustomObjectTranslation>

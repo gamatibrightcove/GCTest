@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If this transaction is Renewable and Renewed (Even Renewal with upsell/Downsell), The Renewal transaction look. This is a self relation object --></help>
+        <label><!-- Renewal Transaction --></label>
+        <name>JBCXM__RenewalTransaction__c</name>
+        <relationshipLabel><!-- Transaction Header (Renewed Transaction) --></relationshipLabel>
+    </CustomFieldTranslation>

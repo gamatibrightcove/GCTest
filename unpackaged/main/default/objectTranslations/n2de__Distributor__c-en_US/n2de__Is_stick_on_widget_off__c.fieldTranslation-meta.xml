@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, sticky assignment rules will be retained when a team member is logged out of the widget, but within working hours. --></help>
+        <label><!-- Retain sticky on widget logout --></label>
+        <name>n2de__Is_stick_on_widget_off__c</name>
+    </CustomFieldTranslation>

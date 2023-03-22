@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Email or UserName of the user how did the action. --></help>
+        <label><!-- User Name --></label>
+        <name>JBCXM__UserName__c</name>
+    </CustomFieldTranslation>

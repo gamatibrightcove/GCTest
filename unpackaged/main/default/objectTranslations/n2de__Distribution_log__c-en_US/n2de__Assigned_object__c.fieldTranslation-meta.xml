@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Assigned object name. --></help>
+        <label><!-- Assigned object --></label>
+        <name>n2de__Assigned_object__c</name>
+    </CustomFieldTranslation>

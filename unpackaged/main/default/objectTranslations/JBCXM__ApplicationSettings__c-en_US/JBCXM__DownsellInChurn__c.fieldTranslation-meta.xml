@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Check to consider downsell in churn dashboard. --></help>
+        <label><!-- Downsell In Churn --></label>
+        <name>JBCXM__DownsellInChurn__c</name>
+    </CustomFieldTranslation>

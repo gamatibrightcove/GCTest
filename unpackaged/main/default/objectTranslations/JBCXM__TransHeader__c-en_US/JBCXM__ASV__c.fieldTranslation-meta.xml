@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Annual Subscription Value calculated based on the Booking and Term. --></help>
+        <label><!-- ASV Delta --></label>
+        <name>JBCXM__ASV__c</name>
+    </CustomFieldTranslation>

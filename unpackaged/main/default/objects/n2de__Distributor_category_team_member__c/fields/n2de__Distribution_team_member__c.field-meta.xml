@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Distribution_team_member__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Distribution team member</label>
+    <referenceTo>n2de__Team_member__c</referenceTo>
+    <relationshipLabel>Distributor category team members</relationshipLabel>
+    <relationshipName>Distributor_category_team_members</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

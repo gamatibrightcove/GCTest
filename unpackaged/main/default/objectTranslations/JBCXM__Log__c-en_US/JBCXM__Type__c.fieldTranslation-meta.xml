@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Types like &quot;API&quot;,&quot;Application&quot;  and &quot;Other&quot; etc --></help>
+        <label><!-- Type --></label>
+        <name>JBCXM__Type__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,895 @@
+/*Copyright: © 2020 NC Squared Ltd, All Rights Reserved*/
+/* Additional styling for breadcrumbs when we don't want them as links */
+.slds-scope .slds-breadcrumb .slds-list__item>span,
+.slds-scope .slds-breadcrumb__item>span {
+    display: block;
+    padding: 0 0.5rem;
+}
+
+.slds-scope .slds-breadcrumb .slds-list__item:first-child>span,
+.slds-scope .slds-breadcrumb__item:first-child>span {
+    padding-left: 0;
+}
+
+/* General styling */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* From Salesforce common.css to remove spacing at top of page */
+.skiplink {
+    position: absolute
+}
+
+.n2__full-height {
+    height: 100%;
+}
+
+/* Root container of the page, to fix an issue in IE11 in classic where the table stretches well outside the page */
+td.slds-scope div.n2__root-container {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+td.slds-scope div.n2__root-container div.n2__root-container-row {
+    display: table-row;
+}
+
+.n2__color-primary {
+    color: rgb(21, 137, 238);
+}
+
+.n2__no-selection {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Get text in center of button */
+.n2__text-center-button {
+    line-height: 2.075rem;
+}
+
+/* Resolve Edge issue where element doesn't get mouse events when over the SVG */
+.n2__component svg,
+.n2__component use {
+    pointer-events: none;
+}
+
+/* Background pattern and gradient overrides */
+.slds-brand-band.n2__brand-background {
+    background-color: rgb(160, 180, 206);
+    z-index: 1;
+}
+
+/* When in lightning apply overflow to background so that it extends the whole page */
+body.slds-scope .slds-brand-band.n2__brand-background {
+    overflow: auto;
+}
+
+.slds-brand-band.n2__brand-background:before {
+    background-image: url('../images/banner-brand-default.png'), linear-gradient(to top, rgb(160, 180, 206), rgb(27, 95, 158));
+}
+
+.slds-brand-band.n2__brand-background:after {
+    background-image: none;
+}
+
+/* Additional padding */
+.slds-col_padded_right {
+    padding-right: 0.75rem;
+}
+
+/* To fix an issue where menus can take up space and add scrollbars when not visible, especially in accordion where they could be at the bottom - ideally position would be updated */
+.n2__dropdown.slds-dropdown-trigger_hover .slds-dropdown {
+    display: none;
+}
+
+.n2__dropdown.slds-dropdown-trigger_hover:hover .slds-dropdown,
+.n2__dropdown.slds-dropdown-trigger_hover:focus .slds-dropdown {
+    display: block;
+}
+
+.slds-dropdown.n2__dropdown-target {
+    transform: none;
+    z-index: 9100;
+}
+
+/* Make the z-indexes higher than that of a modal dialog */
+div.n2__message-box-backdrop {
+    z-index: 9500;
+}
+
+section.n2__message-box {
+    z-index: 9501;
+}
+
+/* Remove focus outline from the picker */
+section.n2__message-box div.slds-modal__container {
+    outline: none;
+}
+
+/* Preserve new lines and whitespace provided in the text */
+div.n2__message-box-content {
+    white-space: pre-wrap;
+}
+
+/* Additional x-large sizes for layout */
+@media (min-width: 80em) {
+
+    .slds-scope [class*="slds-x-large-size_"] {
+        -ms-flex: none;
+        flex: none;
+    }
+
+    .slds-scope .slds-x-large-size_xxx-small {
+        width: 3rem;
+    }
+
+    .slds-scope .slds-x-large-size_xx-small {
+        width: 6rem;
+    }
+
+    .slds-scope .slds-x-large-size_x-small {
+        width: 12rem;
+    }
+
+    .slds-scope .slds-x-large-size_small {
+        width: 15rem;
+    }
+
+    .slds-scope .slds-x-large-size_medium {
+        width: 20rem;
+    }
+
+    .slds-scope .slds-x-large-size_large {
+        width: 25rem;
+    }
+
+    .slds-scope .slds-x-large-size_x-large {
+        width: 40rem;
+    }
+
+    .slds-scope .slds-x-large-size_xx-large {
+        width: 60rem;
+    }
+
+    .slds-scope .slds-x-large-size_1-of-1 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-x-large-size_1-of-2 {
+        width: 50%;
+    }
+
+    .slds-scope .slds-x-large-size_2-of-2 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-x-large-size_1-of-3 {
+        width: 33.3333333333%;
+    }
+
+    .slds-scope .slds-x-large-size_2-of-3 {
+        width: 66.6666666667%;
+    }
+
+    .slds-scope .slds-x-large-size_3-of-3 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-x-large-size_1-of-4 {
+        width: 25%;
+    }
+
+    .slds-scope .slds-x-large-size_2-of-4 {
+        width: 50%;
+    }
+
+    .slds-scope .slds-x-large-size_3-of-4 {
+        width: 75%;
+    }
+
+    .slds-scope .slds-x-large-size_4-of-4 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-x-large-size_1-of-5 {
+        width: 20%;
+    }
+
+    .slds-scope .slds-x-large-size_2-of-5 {
+        width: 40%;
+    }
+
+    .slds-scope .slds-x-large-size_3-of-5 {
+        width: 60%;
+    }
+
+    .slds-scope .slds-x-large-size_4-of-5 {
+        width: 80%;
+    }
+
+    .slds-scope .slds-x-large-size_5-of-5 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-x-large-size_1-of-6 {
+        width: 16.6666666667%;
+    }
+
+    .slds-scope .slds-x-large-size_2-of-6 {
+        width: 33.3333333333%;
+    }
+
+    .slds-scope .slds-x-large-size_3-of-6 {
+        width: 50%;
+    }
+
+    .slds-scope .slds-x-large-size_4-of-6 {
+        width: 66.6666666667%;
+    }
+
+    .slds-scope .slds-x-large-size_5-of-6 {
+        width: 83.3333333333%;
+    }
+
+    .slds-scope .slds-x-large-size_6-of-6 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-x-large-size_1-of-7 {
+        width: 14.2857142857%;
+    }
+
+    .slds-scope .slds-x-large-size_2-of-7 {
+        width: 28.5714285714%;
+    }
+
+    .slds-scope .slds-x-large-size_3-of-7 {
+        width: 42.8571428571%;
+    }
+
+    .slds-scope .slds-x-large-size_4-of-7 {
+        width: 57.1428571429%;
+    }
+
+    .slds-scope .slds-x-large-size_5-of-7 {
+        width: 71.4285714286%;
+    }
+
+    .slds-scope .slds-x-large-size_6-of-7 {
+        width: 85.7142857143%;
+    }
+
+    .slds-scope .slds-x-large-size_7-of-7 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-x-large-size_1-of-8 {
+        width: 12.5%;
+    }
+
+    .slds-scope .slds-x-large-size_2-of-8 {
+        width: 25%;
+    }
+
+    .slds-scope .slds-x-large-size_3-of-8 {
+        width: 37.5%;
+    }
+
+    .slds-scope .slds-x-large-size_4-of-8 {
+        width: 50%;
+    }
+
+    .slds-scope .slds-x-large-size_5-of-8 {
+        width: 62.5%;
+    }
+
+    .slds-scope .slds-x-large-size_6-of-8 {
+        width: 75%;
+    }
+
+    .slds-scope .slds-x-large-size_7-of-8 {
+        width: 87.5%;
+    }
+
+    .slds-scope .slds-x-large-size_8-of-8 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-x-large-size_1-of-12 {
+        width: 8.3333333333%;
+    }
+
+    .slds-scope .slds-x-large-size_2-of-12 {
+        width: 16.6666666667%;
+    }
+
+    .slds-scope .slds-x-large-size_3-of-12 {
+        width: 25%;
+    }
+
+    .slds-scope .slds-x-large-size_4-of-12 {
+        width: 33.3333333333%;
+    }
+
+    .slds-scope .slds-x-large-size_5-of-12 {
+        width: 41.6666666667%;
+    }
+
+    .slds-scope .slds-x-large-size_6-of-12 {
+        width: 50%;
+    }
+
+    .slds-scope .slds-x-large-size_7-of-12 {
+        width: 58.3333333333%;
+    }
+
+    .slds-scope .slds-x-large-size_8-of-12 {
+        width: 66.6666666667%;
+    }
+
+    .slds-scope .slds-x-large-size_9-of-12 {
+        width: 75%;
+    }
+
+    .slds-scope .slds-x-large-size_10-of-12 {
+        width: 83.3333333333%;
+    }
+
+    .slds-scope .slds-x-large-size_11-of-12 {
+        width: 91.6666666667%;
+    }
+
+    .slds-scope .slds-x-large-size_12-of-12 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-x-large-order_1 {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .slds-scope .slds-x-large-order_2 {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .slds-scope .slds-x-large-order_3 {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    .slds-scope .slds-x-large-order_4 {
+        -ms-flex-order: 4;
+        order: 4;
+    }
+
+    .slds-scope .slds-x-large-order_5 {
+        -ms-flex-order: 5;
+        order: 5;
+    }
+
+    .slds-scope .slds-x-large-order_6 {
+        -ms-flex-order: 6;
+        order: 6;
+    }
+
+    .slds-scope .slds-x-large-order_7 {
+        -ms-flex-order: 7;
+        order: 7;
+    }
+
+    .slds-scope .slds-x-large-order_8 {
+        -ms-flex-order: 8;
+        order: 8;
+    }
+
+    .slds-scope .slds-x-large-order_9 {
+        -ms-flex-order: 9;
+        order: 9;
+    }
+
+    .slds-scope .slds-x-large-order_10 {
+        -ms-flex-order: 10;
+        order: 10;
+    }
+
+    .slds-scope .slds-x-large-order_11 {
+        -ms-flex-order: 11;
+        order: 11;
+    }
+
+    .slds-scope .slds-x-large-order_12 {
+        -ms-flex-order: 12;
+        order: 12;
+    }
+}
+
+@media (max-width: 80em) {
+
+    .slds-scope [class*="slds-max-x-large-size_"] {
+        -ms-flex: none;
+        flex: none;
+    }
+
+    .slds-scope .slds-max-x-large-size_xxx-small {
+        width: 3rem;
+    }
+
+    .slds-scope .slds-max-x-large-size_xx-small {
+        width: 6rem;
+    }
+
+    .slds-scope .slds-max-x-large-size_x-small {
+        width: 12rem;
+    }
+
+    .slds-scope .slds-max-x-large-size_small {
+        width: 15rem;
+    }
+
+    .slds-scope .slds-max-x-large-size_medium {
+        width: 20rem;
+    }
+
+    .slds-scope .slds-max-x-large-size_large {
+        width: 25rem;
+    }
+
+    .slds-scope .slds-max-x-large-size_x-large {
+        width: 40rem;
+    }
+
+    .slds-scope .slds-max-x-large-size_xx-large {
+        width: 60rem;
+    }
+
+    .slds-scope .slds-max-x-large-size_1-of-1 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-max-x-large-size_1-of-2 {
+        width: 50%;
+    }
+
+    .slds-scope .slds-max-x-large-size_2-of-2 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-max-x-large-size_1-of-3 {
+        width: 33.3333333333%;
+    }
+
+    .slds-scope .slds-max-x-large-size_2-of-3 {
+        width: 66.6666666667%;
+    }
+
+    .slds-scope .slds-max-x-large-size_3-of-3 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-max-x-large-size_1-of-4 {
+        width: 25%;
+    }
+
+    .slds-scope .slds-max-x-large-size_2-of-4 {
+        width: 50%;
+    }
+
+    .slds-scope .slds-max-x-large-size_3-of-4 {
+        width: 75%;
+    }
+
+    .slds-scope .slds-max-x-large-size_4-of-4 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-max-x-large-size_1-of-5 {
+        width: 20%;
+    }
+
+    .slds-scope .slds-max-x-large-size_2-of-5 {
+        width: 40%;
+    }
+
+    .slds-scope .slds-max-x-large-size_3-of-5 {
+        width: 60%;
+    }
+
+    .slds-scope .slds-max-x-large-size_4-of-5 {
+        width: 80%;
+    }
+
+    .slds-scope .slds-max-x-large-size_5-of-5 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-max-x-large-size_1-of-6 {
+        width: 16.6666666667%;
+    }
+
+    .slds-scope .slds-max-x-large-size_2-of-6 {
+        width: 33.3333333333%;
+    }
+
+    .slds-scope .slds-max-x-large-size_3-of-6 {
+        width: 50%;
+    }
+
+    .slds-scope .slds-max-x-large-size_4-of-6 {
+        width: 66.6666666667%;
+    }
+
+    .slds-scope .slds-max-x-large-size_5-of-6 {
+        width: 83.3333333333%;
+    }
+
+    .slds-scope .slds-max-x-large-size_6-of-6 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-max-x-large-size_1-of-7 {
+        width: 14.2857142857%;
+    }
+
+    .slds-scope .slds-max-x-large-size_2-of-7 {
+        width: 28.5714285714%;
+    }
+
+    .slds-scope .slds-max-x-large-size_3-of-7 {
+        width: 42.8571428571%;
+    }
+
+    .slds-scope .slds-max-x-large-size_4-of-7 {
+        width: 57.1428571429%;
+    }
+
+    .slds-scope .slds-max-x-large-size_5-of-7 {
+        width: 71.4285714286%;
+    }
+
+    .slds-scope .slds-max-x-large-size_6-of-7 {
+        width: 85.7142857143%;
+    }
+
+    .slds-scope .slds-max-x-large-size_7-of-7 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-max-x-large-size_1-of-8 {
+        width: 12.5%;
+    }
+
+    .slds-scope .slds-max-x-large-size_2-of-8 {
+        width: 25%;
+    }
+
+    .slds-scope .slds-max-x-large-size_3-of-8 {
+        width: 37.5%;
+    }
+
+    .slds-scope .slds-max-x-large-size_4-of-8 {
+        width: 50%;
+    }
+
+    .slds-scope .slds-max-x-large-size_5-of-8 {
+        width: 62.5%;
+    }
+
+    .slds-scope .slds-max-x-large-size_6-of-8 {
+        width: 75%;
+    }
+
+    .slds-scope .slds-max-x-large-size_7-of-8 {
+        width: 87.5%;
+    }
+
+    .slds-scope .slds-max-x-large-size_8-of-8 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-max-x-large-size_1-of-12 {
+        width: 8.3333333333%;
+    }
+
+    .slds-scope .slds-max-x-large-size_2-of-12 {
+        width: 16.6666666667%;
+    }
+
+    .slds-scope .slds-max-x-large-size_3-of-12 {
+        width: 25%;
+    }
+
+    .slds-scope .slds-max-x-large-size_4-of-12 {
+        width: 33.3333333333%;
+    }
+
+    .slds-scope .slds-max-x-large-size_5-of-12 {
+        width: 41.6666666667%;
+    }
+
+    .slds-scope .slds-max-x-large-size_6-of-12 {
+        width: 50%;
+    }
+
+    .slds-scope .slds-max-x-large-size_7-of-12 {
+        width: 58.3333333333%;
+    }
+
+    .slds-scope .slds-max-x-large-size_8-of-12 {
+        width: 66.6666666667%;
+    }
+
+    .slds-scope .slds-max-x-large-size_9-of-12 {
+        width: 75%;
+    }
+
+    .slds-scope .slds-max-x-large-size_10-of-12 {
+        width: 83.3333333333%;
+    }
+
+    .slds-scope .slds-max-x-large-size_11-of-12 {
+        width: 91.6666666667%;
+    }
+
+    .slds-scope .slds-max-x-large-size_12-of-12 {
+        width: 100%;
+    }
+
+    .slds-scope .slds-max-x-large-order_1 {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .slds-scope .slds-max-x-large-order_2 {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .slds-scope .slds-max-x-large-order_3 {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    .slds-scope .slds-max-x-large-order_4 {
+        -ms-flex-order: 4;
+        order: 4;
+    }
+
+    .slds-scope .slds-max-x-large-order_5 {
+        -ms-flex-order: 5;
+        order: 5;
+    }
+
+    .slds-scope .slds-max-x-large-order_6 {
+        -ms-flex-order: 6;
+        order: 6;
+    }
+
+    .slds-scope .slds-max-x-large-order_7 {
+        -ms-flex-order: 7;
+        order: 7;
+    }
+
+    .slds-scope .slds-max-x-large-order_8 {
+        -ms-flex-order: 8;
+        order: 8;
+    }
+
+    .slds-scope .slds-max-x-large-order_9 {
+        -ms-flex-order: 9;
+        order: 9;
+    }
+
+    .slds-scope .slds-max-x-large-order_10 {
+        -ms-flex-order: 10;
+        order: 10;
+    }
+
+    .slds-scope .slds-max-x-large-order_11 {
+        -ms-flex-order: 11;
+        order: 11;
+    }
+
+    .slds-scope .slds-max-x-large-order_12 {
+        -ms-flex-order: 12;
+        order: 12;
+    }
+}
+
+/* Transitions to fade in/out the toast and prevent the container from taking the clicks */
+div.n2__toast {
+    transition: all ease-in-out 0.75s;
+    pointer-events: none;
+}
+
+div.n2__toast-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out 0.75s;
+}
+
+div.n2__toast>div.slds-notify_toast {
+    pointer-events: auto;
+}
+
+/* Preserve new lines and whitespace provided in the text */
+h2.n2__toast-content {
+    white-space: pre-wrap;
+}
+
+/* Some additional spacing before the help icon */
+div.n2__checkbox-toggle label.slds-checkbox_toggle div.slds-form-element__icon {
+    padding-left: 0.5rem;
+}
+
+/* Ensure clickable area is contained to label and toggle */
+div.n2__checkbox-toggle div.slds-form-element__control {
+    display: inline-block;
+}
+
+/* Improve highlighting on selected colour */
+section.n2__color-picker li.slds-color-picker__swatch {
+    border: 1px transparent solid;
+    border-radius: .125rem;
+}
+
+section.n2__color-picker li.slds-color-picker__swatch.selected {
+    border-color: rgb(0, 0, 0);
+}
+
+/* Remove focus outline from the picker */
+section.n2__color-picker {
+    outline: none;
+}
+
+table.n2__table .n2__table-column-action {
+    width: 2.25rem;
+}
+
+table.n2__table .n2__table-column-reorder {
+    width: 4.25rem;
+}
+
+table.n2__table .n2__table-column-rownum {
+    width: 3.5rem;
+}
+
+/* Improve alignment and height of headings */
+table.n2__table th.n2__table-column-action,
+table.n2__table th.slds-is-sortable {
+    padding: 0;
+}
+
+/* Styling for reorder buttons */
+table.n2__table .n2__table-reorder-handle {
+    cursor: move;
+}
+
+table.n2__table>tbody>tr div.n2__table-reorder-arrows>button {
+    opacity: 0;
+}
+
+table.n2__table>tbody>tr:hover:not(.n2__dragging) div.n2__table-reorder-arrows>button,
+table.n2__table>tbody>tr:not(.n2__dragging) div.n2__table-reorder-arrows>button:focus {
+    opacity: 1;
+}
+
+table.n2__table>tbody>tr:first-child button.n2__table-reorder-up,
+table.n2__table>tbody>tr:last-child button.n2__table-reorder-down,
+table.n2__table>tbody>tr:only-child div.n2__table-reorder-handle {
+    visibility: hidden !important;
+}
+
+table.n2__table>tbody>tr.n2__dragging {
+    z-index: 1000;
+    border: 1px solid #dddbda;
+    box-shadow: #dddbda 0 -1px 0 inset, #dddbda 0 1px 0 inset;
+    background-color: #f3f2f2;
+    cursor: move;
+}
+
+div.n2__table-footer {
+    margin-top: 0.25rem;
+}
+
+div.n2__table-footer select.n2__table-rows-per-page {
+    width: auto;
+}
+
+div.n2__table-footer div.n2__table-selected {
+    position: absolute;
+    margin-left: 9.5rem;
+}
+
+/* To fix an issue with visibilty in components overriding modal visibility */
+.slds-scope .slds-modal {
+    right: auto;
+    left: -5000px;
+}
+
+.slds-scope .slds-modal.slds-fade-in-open {
+    right: 0;
+    left: 0;
+}
+
+/* Override pointer for progress items so they are not clickable, except for the completed ones */
+section.n2__modal-wizard li.slds-progress__item>button {
+    cursor: default;
+}
+
+section.n2__modal-wizard li.slds-progress__item.slds-is-completed>button {
+    cursor: pointer;
+}
+
+/* Add a wrapper around progress bar so that it looks correct in IE11 */
+div.n2__progress-wrapper {
+    flex: 1 1 auto;
+    margin: auto;
+}
+
+div.n2__progress-wrapper > div.slds-progress {
+    max-width: 90%;
+}
+
+/* Make the pill list input appear invisible */
+input.n2__pill-list-input {
+    background: transparent;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+    min-height: 1.625rem;
+}
+
+input.n2__pill-list-input::-ms-clear {
+    display: none;
+}
+
+/* Change cursor when over editable container */
+div.n2__pill-list-container-editable {
+    cursor: text;
+}
+
+div.n2__component span.slds-pill__remove {
+    cursor: pointer;
+}
+
+/* Show error border on pill container list */
+div.n2__component div.slds-has-error div.slds-pill_container {
+    border-color: #c23934;
+}
+
+/* If a min-height is set ensure the listbox is at the top */
+div.n2__component div.slds-pill_container ul.slds-listbox {
+    align-self: flex-start;
+}
+
+/* Preserve new lines and whitespace provided in the response message */
+div.n2__component div.n2__pill-list-message {
+    white-space: pre-wrap;
+}
+
+/* Add some extra padding around the group headings */
+div.n2__component.slds-tree_container h4 {
+    padding: 1rem 0 .5rem .75rem;
+}
+
+li.n2__tree-item-disabled {
+    color: #DDDBDA;
+}
+
+/* Hide the delete button if there is only one row */
+table.n2__logic-filters.n2__logic-filters-required>tbody>tr:only-child>th>div[title="Delete filter"] {
+    visibility: hidden;
+}
+
+table.n2__logic-filters div.n2__component.n2__required-padding {
+    padding-bottom: 20px;
+}

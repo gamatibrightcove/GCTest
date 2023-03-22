@@ -1,0 +1,543 @@
+<apex:page id="ClsMatchSettings" tabStyle="Distribution_Classifier__tab" sideBar="false" standardStylesheets="false" docType="html-5.0" controller="n2de.ClsMatchSettingsController" action="{!init}">
+    <html lang="en" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/deps/n2-design-system/styles/salesforce-lightning-design-system-legacy.min.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/css/n2.de.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.n2Components, '/css/n2.min.css')}"/>
+        <style>
+            .n2__settings-fields span.slds-form-element__label {
+                width: 200px;
+            }
+
+            tr.n2__type-disabled td {
+                color: #DDDBDA !important;
+            }
+        </style>
+        <script>
+            window.n2__sldsIconsPrefix = '{!JSENCODE(URLFOR($Asset.SLDS, 'assets/icons'))}';
+            window.n2__locale = '{!JSENCODE(Locale)}';
+            window.n2__timeZone = '{!JSENCODE(TimeZone)}';
+        </script>
+        <script defer="defer" src="{!URLFOR($Resource.n2Components, 'js/thirdParty.min.js')}"></script>
+        <script onload="initComponents();" defer="defer" src="{!URLFOR($Resource.n2Components, 'js/n2.min.js')}"></script>
+        <script>
+            loadDomainsDictionary = function() {
+                // Initialise the Heroku utilities
+                n2.sf.heroku.initAuth('{!JSENCODE(HerokuBaseUrl)}', function() {
+                    return n2.util.promise().reject('Please refresh the page.');
+                }, {!ServerTime}, JSON.parse('{!AuthHeaders}'));
+
+                // Fetch the domains from Heroku and send to SF if id is different
+                n2.sf.heroku.get('/json/domains.json')
+                    .done(function(domains) {
+                        if (domains.id !== '{!JSENCODE(ImportedDataId)}') {
+                            var domainsJson = JSON.stringify(domains);
+                            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchSettingsController.loadDomainsData}', domainsJson, function(response, event) {
+                                if (event.statusCode !== 200) {
+                                    n2.message.error(n2.sf.util.getMessageFromEvent('Failed to import domains dictionary', event));
+                                }
+                            });
+                        }
+                    })
+                    .fail(function(xhr, status, error) {
+                        n2.message.error('Failed to fetch domains dictionary: ' + (error || xhr.status));
+                    });
+            };
+
+            showHideMessages = function(jobRunning, stopInProgress, isUnderMaintenance) {
+                if (isUnderMaintenance) {
+                    n2j$('div#n2__enable-maintenance-mode-warn').removeClass('slds-hide');
+                } else {
+                    n2j$('div#n2__enable-maintenance-mode-warn').addClass('slds-hide');
+                    // Show the data preparation message if job is running, and if being stopped show some different text
+                    if (jobRunning) {
+                        n2j$('div#n2__enable-info').removeClass('slds-hide');
+                        if (stopInProgress) {
+                            n2j$('span#n2__enable-info-preparing').addClass('slds-hide');
+                            n2j$('span#n2__enable-info-stopping').removeClass('slds-hide');
+                            n2.cm.disable('checkbox-lead-enabled');
+                        } else {
+                            n2j$('span#n2__enable-info-preparing').removeClass('slds-hide');
+                            n2j$('span#n2__enable-info-stopping').addClass('slds-hide');
+                        }
+                    } else {
+                        n2j$('div#n2__enable-info').addClass('slds-hide');
+                        n2j$('span#n2__enable-info-preparing').addClass('slds-hide');
+                        n2j$('span#n2__enable-info-stopping').addClass('slds-hide');
+                    }
+
+                    // If we're not stopping, and we have some matching enabled, enable the toggle
+                    if ({!SomeMatchingEnabled} && !stopInProgress) {
+                        n2.cm.enable('checkbox-lead-enabled');
+                    } else if (!{!SomeMatchingEnabled}) {
+                        // If there are no matching objects enabled, disable the toggle, unless matching is already enabled in which case we allow it to be turned off
+                        if (n2.cm.getValue('checkbox-lead-enabled')) {
+                            n2.cm.enable('checkbox-lead-enabled');
+                        } else {
+                            n2.cm.disable('checkbox-lead-enabled');
+                        }
+                    }
+                }
+            };
+
+            showHideClassifierFailedMessage = function(hasClassifierFailed) {
+                if (hasClassifierFailed) {
+                    n2j$('div#n2__classifier-failed-needs-restart').removeClass('slds-hide');
+                } else {
+                    n2j$('div#n2__classifier-failed-needs-restart').addClass('slds-hide');
+                }
+            };
+            showHideEnableClassifierMessage = function(classifierEnabled) {
+                if (!classifierEnabled) {
+                    n2j$('div#n2__classifier-on-info').removeClass('slds-hide');
+                } else {
+                    n2j$('div#n2__classifier-on-info').addClass('slds-hide');
+                }
+            };
+            isPreparingDataForMatching = function() {
+                return !n2j$('span#n2__enable-info-preparing').hasClass('slds-hide');
+            }
+            hideMatchDataPrepError = function() {
+                n2j$('#n2__match-data-prep-failure').addClass('slds-hide');
+            }
+            showMatchDataPrepError = function(apexJobId) {
+                if (isPreparingDataForMatching()) {
+                    hideMatchDataPrepError();
+                    return;
+                }
+                n2j$('#n2__match-data-prep-failure').removeClass('slds-hide');
+                if (n2.sf.util.isInClassic()) {
+                    n2j$('#n2_match-data-prep-failure-link').attr('href', '/apexpages/setup/listAsyncApexJobs.apexp');
+                }
+                n2j$('#n2__match-data-prep-failure-jobid-text').text(apexJobId);
+            }
+            hasMatchDataPrepFailed = function() {
+                n2.spinner.show();
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchSettingsController.getLastClassifierMatchDataPrepFailedJobId}', function(response, event) {
+                    n2.spinner.hide();
+                    if (event.statusCode === 200) {
+                        if (response !== null) {
+                            showMatchDataPrepError(response);
+                        } else {
+                            hideMatchDataPrepError();
+                        }
+                    } else {
+                        n2.message.error('Error determining whether the last classifier match data prep job failed : ' + event.message);
+                    }
+                }, {
+                    escape: false
+                });
+            };
+
+            initComponents = function() {
+                initNav('Match Settings');
+
+                n2.cm.addComponent('checkbox-toggle', {
+                    id: 'checkbox-lead-enabled',
+                    selector: '#checkbox-lead-enabled',
+                    label: 'Lead matching',
+                    onLabel: 'Enabled',
+                    offLabel: 'Disabled',
+                    defaultValue: {!LeadMatchingEnabled},
+                    disabled: true,
+                    help: {!SomeMatchingEnabled} ? ({!AccountDomainMatchingEnabled} ? 'Enabling lead matching will initiate a Batch job to prepare your data for matching' : '') : 'You will need to enable one of the object matches before you can turn on Lead matching',
+                    cls: 'slds-m-bottom_medium n2__settings-fields',
+                    handlers: {
+                        'change': function(value) {
+                            n2.spinner.show();
+                            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchSettingsController.toggleLeadMatchingEnabled}', value, function(response, event) {
+                                n2.spinner.hide();
+                                if (event.statusCode === 200) {
+                                    showHideMessages(response.jobRunning, response.stopInProgress, false);
+                                    showHideClassifierFailedMessage(response.hasClassifierFailed);
+                                    showHideEnableClassifierMessage(value);
+                                    if (response.jobRunning) {
+                                        hideMatchDataPrepError();
+                                    } else {
+                                        hasMatchDataPrepFailed();
+                                    }
+                                    n2.toast.show({
+                                        text: 'Your changes have been saved'
+                                    });
+                                } else {
+                                    //Reset value if an exception occurs
+                                    n2.cm.setValue('checkbox-lead-enabled', !value);
+                                    n2.message.error('Error updating enabled state: ' + event.message);
+                                }
+                            });
+                        }
+                    }
+                });
+
+                showHideClassifierFailedMessage({!ClassifierFailed});
+                showHideEnableClassifierMessage({!LeadMatchingEnabled});
+
+                n2.cm.addComponent('button', {
+                    id: 'btn-data-prep-refresh',
+                    selector: '#btn-data-prep-refresh',
+                    text: 'Check again',
+                    handlers: {
+                        'click': function() {
+                            n2j$('div#n2__enable-info_spinner').removeClass('slds-hide');
+                            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchSettingsController.getDataPrepJobStatus}', function(response, event) {
+                                n2j$('div#n2__enable-info_spinner').addClass('slds-hide');
+                                if (event.statusCode === 200 && response) {
+                                    showHideMessages(response.jobRunning, response.stopInProgress, false);
+                                    showHideClassifierFailedMessage(response.hasClassifierFailed);
+                                    if (!response.jobRunning) {
+                                        hasMatchDataPrepFailed();
+                                    }
+                                } else {
+                                    n2.message.error('Error getting status of data preparation job: ' + event.message);
+                                }
+                            });
+                        }
+                    }
+                });
+
+                // Show the maintenance and data preparation messages if needed
+                showHideMessages({!DataPrepJobsRunning}, {!DataPrepJobsStopping}, {!IsUnderMaintenance});
+
+                var statusData = [{
+                    name: 'Lead-to-Account',
+                    status: {!LeadAccountMatchingEnabled},
+                    type: 'account'
+                }, {
+                    name: 'Lead-to-Contact',
+                    status: {!LeadContactMatchingEnabled},
+                    type: 'contact'
+                }, {
+                    name: 'Lead-to-Lead',
+                    status: {!LeadLeadMatchingEnabled},
+                    type: 'lead'
+                }];
+                n2.cm.addComponent('data-table', {
+                    id: 'data-table-enabled',
+                    selector: '#data-table-enabled',
+                    key: 'type',
+                    storeData: true,
+                    paging: false,
+                    columns: [{
+                        name: 'name',
+                        title: 'Name',
+                        sortable: false
+                    }, {
+                        name: 'status',
+                        title: 'Status',
+                        sortable: false,
+                        format: function(value) {
+                            return value ? 'Enabled' : 'Disabled';
+                        }
+                    }, {
+                        name: 'type',
+                        title: '',
+                        sortable: false,
+                        format: function() {
+                            return 'Settings';
+                        },
+                        action: function(value) {
+                            n2.sf.util.navigate('{!Namespace}ClsMatchObject?type=' + value);
+                        }
+                    }],
+                    data: function() {
+                        arguments[4](statusData);
+                    },
+                    rowCls: function(row) {
+                        return row.status ? '' : 'n2__type-disabled';
+                    },
+                    cls: 'slds-m-bottom_medium'
+                });
+
+                // Determine if we should be excluding the not operators in the filter logic builders
+                var excludedOperators = '{!NotOperatorsDisabled}' === 'true' ? n2.const.SF.NOT_OPERATORS : [];
+
+                // Create a promise to get the lead object fields
+                var fieldsDeferred = n2.util.promise();
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchSettingsController.getObjectFields}', 'filters', function(response, event) {
+                    if (event.statusCode === 200 && response) {
+                        fieldsDeferred.resolve(response);
+                    } else {
+                        n2.message.error('Error getting object fields: ' + event.message);
+                        fieldsDeferred.resolve([]);
+                    }
+                }, {
+                    escape: false
+                });
+
+                getDataValuesList = function(fieldName) {
+                    // Return a promise to get the field values for the selected field, if there is no field name just return null
+                    if (!fieldName) {
+                        return null;
+                    }
+                    var fieldValuesDeferred = n2.util.promise();
+                    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchSettingsController.getFieldValues}', fieldName, function(response, event) {
+                        if (event.statusCode === 200 && response) {
+                            fieldValuesDeferred.resolve(response);
+                        } else {
+                            n2.message.error('Error getting field values: ' + event.message);
+                            fieldValuesDeferred.resolve([]);
+                        }
+                    }, {
+                        escape: false
+                    });
+                    return fieldValuesDeferred;
+                };
+
+                showCancelSave = function() {
+                    n2j$('#n2__save-footer').removeClass('slds-hide');
+                    n2.cm.disable('checkbox-lead-enabled');
+                };
+
+                hideCancelSave = function() {
+                    n2j$('#n2__save-footer').addClass('slds-hide');
+                    if ({!SomeMatchingEnabled}) {
+                        n2.cm.enable('checkbox-lead-enabled');
+                    }
+                };
+
+                n2.cm.addComponent('logic-filters', {
+                    id: 'logic-filters-delay-filter',
+                    selector: '#logic-filters-delay-filter',
+                    label: 'Delay processing filter',
+                    help: 'You can delay processing records until they meet the criteria below (e.g. to wait for an enrichment tool to complete before looking for a match)',
+                    excludedOperators: excludedOperators,
+                    includeFiscalPeriods: false,
+                    maxRows: 1,
+                    required: false,
+                    data: function(callback) {
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchSettingsController.getProcessingFilter}', function(response, event) {
+                            if (event.statusCode === 200 && response) {
+                                callback(response.filters);
+                                if (response.forTerritories || response.forAutoConversion) {
+                                    n2j$('#n2__lead-delay-info').removeClass('slds-hide');
+                                }
+                            } else {
+                                n2.message.error('Error getting delay filter: ' + event.message);
+                                callback({filters: []});
+                            }
+                        }, {
+                            escape: false
+                        });
+                    },
+                    dataFieldsList: function() {
+                        return fieldsDeferred;
+                    },
+                    dataValuesList: function(fieldName) {
+                        return getDataValuesList(fieldName);
+                    },
+                    handlers: {
+                        'change': function() {
+                            showCancelSave();
+                        }
+                    }
+                });
+
+                n2.cm.addComponent('button', {
+                    id: 'btn-cancel',
+                    selector: '#btn-cancel',
+                    text: 'Cancel',
+                    handlers: {
+                        'click': function() {
+                            hideCancelSave();
+                            n2.cm.refresh('logic-filters-delay-filter');
+                        }
+                    }
+                });
+                n2.cm.addComponent('button', {
+                    id: 'btn-save',
+                    selector: '#btn-save',
+                    text: 'Save',
+                    style: 'brand',
+                    handlers: {
+                        'click': function() {
+                            var filters = n2.cm.getValue('logic-filters-delay-filter');
+
+                            if (!n2.util.isNullOrUndefined(filters)) {
+                                n2.spinner.show();
+
+                                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchSettingsController.saveProcessingFilter}', filters, function(response, event) {
+                                    n2.spinner.hide();
+                                    if (event.statusCode === 200) {
+                                        hideCancelSave();
+                                        n2.toast.show({
+                                            text: 'Your changes have been saved'
+                                        });
+                                    } else {
+                                        n2.message.error('Error saving delay filter: ' + event.message);
+                                    }
+                                });
+                            }
+                        }
+                    }
+                });
+
+                // Load the domains dictionary
+                loadDomainsDictionary();
+
+                // Display error if Enable matching to account by domain is enabled and any of the last 2 (account domain deletion && account domain insert) ClsMatchDataPrepBatch jobs have failed
+                hasMatchDataPrepFailed();
+            };
+        </script>
+        <script defer="defer" src="{!URLFOR($Resource.DEResources, 'scripts/ga.js')}"></script>
+    </head>
+
+    <div class="slds-scope n2__full-height">
+        <div class="n2__full-height">
+            <div class="n2-de-page n2-de-classifier-v1 n2_full-width">
+                <div class="n2-vertical-navigation n2-de-vertical-navigation n2_navigation slds-m-top_xx-large">
+                    <c:ClsNavigation pkgNamespace="{!Namespace}"/>
+                </div>
+                <div class="n2_main">
+                    <div class="n2-de-header slds-page-header slds-no-flex">
+                        <div class="slds-page-header__row">
+                            <div class="slds-page-header__col-title">
+                                <div class="slds-media slds-media_center">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container">
+                                            <svg class="slds-icon n2_icon slds-icon_small" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#merge')}"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <h1 title="Lead Matching > Settings" class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate">Lead Matching > Settings</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-page-header__col-actions">
+                                <div class="slds-page-header__controls">
+                                    <div class="slds-page-header__control">
+                                        <div class="n2_actions">
+                                            <a href="https://help.nc-squared.com/classifier-lead-matching" target="_blank" class="n2_help-link slds-grid slds-grid_vertical-align-center">
+                                                <svg class="slds-icon slds-icon_x-small slds-m-right_xx-small slds-col slds-no-flex slds-icon-text-default" aria-hidden="true">
+                                                    <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#question')}"></use>
+                                                </svg>
+                                                <span class="slds-col">Help</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <article class="n2_content">
+                        <div class="slds-card__body slds-card__body_inner slds-p-top_small">
+                            <div class="slds-form">
+                                <div id="n2__enable-info" class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light slds-m-bottom_medium slds-is-relative slds-hide" role="status">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container slds-icon-utility-info" title="Information">
+                                            <svg class="slds-icon slds-icon_small slds-icon-text-default" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}"/>
+                                            </svg>
+                                            <span class="slds-assistive-text">Information</span>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <span id="n2__enable-info-preparing" class="slds-hide">
+                                            <p>We're just preparing your data for matching. Depending on the number of contacts in your org, this should be complete soon. Matching can continue whilst this happens, but matching to account by domain will not be accurate.</p>
+                                        </span>
+                                        <span id="n2__enable-info-stopping" class="slds-media__body slds-hide">
+                                            <p>We're just in the processing of stopping the data preparation, until this has been carried out you can't start matching again.</p>
+                                        </span>
+                                        <p><span id="btn-data-prep-refresh"></span></p>
+                                    </div>
+                                    <div class="slds-spinner_container slds-hide" id="n2__enable-info_spinner">
+                                        <div class="slds-spinner slds-spinner_small" role="status">
+                                            <span class="slds-assistive-text">Loading</span>
+                                            <div class="slds-spinner__dot-a"></div>
+                                            <div class="slds-spinner__dot-b"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="n2__classifier-failed-needs-restart" class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light slds-m-bottom_medium slds-hide" role="status">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container slds-icon-utility-warning" title="Warning">
+                                            <svg class="slds-icon slds-icon_small slds-icon-text-warning" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}"/>
+                                            </svg>
+                                            <span class="slds-assistive-text">Warning</span>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <p>The classifier has aborted. Please restart.</p>
+                                    </div>
+                                </div>
+                                <div id="n2__enable-maintenance-mode-warn" class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light slds-m-bottom_medium slds-is-relative slds-hide" role="status">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container slds-icon-utility-info" title="Warning">
+                                            <svg class="slds-icon slds-icon_small slds-icon-text-default" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}"/>
+                                            </svg>
+                                            <span class="slds-assistive-text">Warning</span>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <span id="n2__enable-maintenance-mode-warning-message">
+                                            <p>{!MaintenanceModeMessage}</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div id="n2__classifier-on-info" class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light slds-m-bottom_medium slds-hide" role="status">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container slds-icon-utility-info" title="Information">
+                                            <svg class="slds-icon slds-icon_small slds-icon-text-default" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}"/>
+                                            </svg>
+                                            <span class="slds-assistive-text">Information</span>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <p>{!EnableClassifierMsg}</p>
+                                    </div>
+                                </div>
+                                <div id="n2__match-data-prep-failure" class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light slds-m-bottom_medium slds-hide" role="status">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container slds-icon-utility-warning" title="Warning">
+                                            <svg class="slds-icon slds-icon_small slds-icon-text-warning" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}"/>
+                                            </svg>
+                                            <span class="slds-assistive-text">Warning</span>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <span id="n2__match-data-prep-failure-text" style="white-space: normal;">
+                                            An error occurred while preparing your data for matching (ClsMatchDataPrepBatch job with Apex Job Id: <span id="n2__match-data-prep-failure-jobid-text"></span>). This could affect the accuracy of the matching so please review the errors against the
+                                            <a id="n2_match-data-prep-failure-link" href="/lightning/setup/AsyncApexJobs/home" title="Open the Salesforce Apex Jobs page">batch job</a> or contact
+                                            <a id="n2_match-data-prep-failure-support-email" href="mailTo:support@nc-squared.com" title="Email Distribution Engine Support"> support@nc-squared.com</a> for assistance.
+                                        </span>
+                                    </div>
+                                </div>
+                                <span id="checkbox-lead-enabled"></span>
+                                <span id="data-table-enabled"></span>
+                                <div id="n2__lead-delay-info" class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light slds-m-bottom_medium slds-hide" role="status">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container slds-icon-utility-info" title="Information">
+                                            <svg class="slds-icon slds-icon_small slds-icon-text-default" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}"/>
+                                            </svg>
+                                            <span class="slds-assistive-text">Information</span>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <p>This delay processing filter impacts all classification of leads across territory, lead matching and auto-conversion processing for Leads.</p>
+                                    </div>
+                                </div>
+                                <span id="logic-filters-delay-filter"></span>
+                            </div>
+                            <div id="n2__save-footer" class="slds-docked-form-footer slds-hide">
+                                <span class="slds-m-right_small slds-align-middle"><b>You have unsaved changes</b></span>
+                                <span id="btn-cancel"></span>
+                                <span id="btn-save"></span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </html>
+</apex:page>

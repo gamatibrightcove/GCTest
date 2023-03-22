@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Time between first site visitor message and first Drift teammate’s response. --></help>
+        <label><!-- Teammate Response Time (sec) --></label>
+        <name>DriftData__Teammate_Response_Time__c</name>
+    </CustomFieldTranslation>

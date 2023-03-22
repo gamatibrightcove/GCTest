@@ -1,0 +1,70 @@
+<apex:page controller="WorkIt2.ContextController" setup="true"  title="Context Manager - WorkIt! Setup">
+    <apex:form >    
+        <apex:sectionHeader title="WorkIt! Setup" subtitle="Context Manager"/>
+        <apex:pageBlock title="Standard Contexts">    
+            <apex:pageBlockTable value="{!standardCtxs}" var="ctx">
+                <apex:column styleClass="actionColumn" headerValue="Action" style="width:80px">
+                    <apex:outputLink styleClass="actionLink" value="{!URLFOR($Page.WorkIt2__ContextEdit) + '?name=' + ctx.name}" rendered="{!NOT(ctx.WorkIt2__Overridden__c)}">Override</apex:outputLink>
+                    <apex:outputPanel rendered="{!ctx.WorkIt2__Overridden__c}">
+                        <apex:outputLink styleClass="actionLink" value="{!URLFOR($Page.WorkIt2__ContextEdit) + '?id=' + ctx.id}" >Edit</apex:outputLink>
+                        |&nbsp;
+                        <apex:commandLink styleClass="actionLink" action="{!delContext}" value="Reset" onclick="return(confirm('Are you sure?'))">
+                            <apex:param name="delName" value="{!ctx.name}"/>
+                        </apex:commandLink> 
+                    </apex:outputPanel>
+                </apex:column>
+                <apex:column value="{!ctx.name}" width="50px"/>
+                <apex:column value="{!ctx.WorkIt2__Description__c}"/>                
+                <apex:column headerValue="Overridden" style="width:80px;text-align:center">                
+                    <apex:image url="/img/checkbox_checked.gif" rendered="{!ctx.WorkIt2__Overridden__c}"/>
+                    <apex:image url="/img/checkbox_unchecked.gif" rendered="{!NOT(ctx.WorkIt2__Overridden__c)}"/>
+                </apex:column>
+                <apex:column value="{!ctx.lastmodifiedbyid}" width="150px"/>
+                <apex:column value="{!ctx.lastmodifieddate}" width="150px"/>                
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    
+        <apex:pageBlock title="Custom Contexts">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="New" action="{!newCtx}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!customCtxs}" var="ctx">
+                <apex:column styleClass="actionColumn" headerValue="Action" style="width:80px">
+                    <apex:outputLink styleClass="actionLink" value="{!URLFOR($Page.WorkIt2__ContextEdit) + '?id=' + ctx.id}">Edit</apex:outputLink>
+                    |&nbsp;
+                    <apex:commandLink styleClass="actionLink" action="{!delContext}" value="Del" onclick="return(confirm('Are you sure?'))">
+                        <apex:param name="delName" value="{!ctx.name}"/>
+                    </apex:commandLink> 
+                </apex:column>
+                <apex:column value="{!ctx.name}" width="50px"/>
+                <apex:column value="{!ctx.WorkIt2__Description__c}"/>
+                <apex:column value="{!ctx.lastmodifiedbyid}" width="150px"/>
+                <apex:column value="{!ctx.lastmodifieddate}" width="150px"/>                
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Related Objects">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="New" action="{!newRel}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!rel}" var="r">
+                <apex:column styleClass="actionColumn" headerValue="Action" style="width:80px">
+                    <apex:outputPanel rendered="{!r.WorkIt2__isCustom__c}">
+                        <apex:outputLink styleClass="actionLink" value="{!URLFOR($Page.WorkIt2__RelativeEdit) + '?id=' + r.id}">Edit</apex:outputLink>
+                        |&nbsp;
+                        <apex:commandLink styleClass="actionLink" action="{!delRelative}" value="Del" onclick="return(confirm('Are you sure?'))">
+                            <apex:param name="delName" value="{!r.name}"/>
+                        </apex:commandLink> 
+                    </apex:outputPanel>
+                </apex:column>
+                <apex:column value="{!r.name}" width="120px"/>
+                <!-- apex:column value="{!r.objName__c}" headerValue="Name" width="120px"/ -->
+                <apex:column value="{!r.WorkIt2__Rel_Field_Name__c}"/>
+                <apex:column value="{!r.lastmodifiedbyid}" width="150px"/>
+                <apex:column value="{!r.lastmodifieddate}" width="150px"/>                
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        
+    </apex:form>
+</apex:page>

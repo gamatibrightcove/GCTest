@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Id of queue if this is out of office for a Queue. --></help>
+        <label><!-- Queue --></label>
+        <name>n2de__Queue_id__c</name>
+    </CustomFieldTranslation>

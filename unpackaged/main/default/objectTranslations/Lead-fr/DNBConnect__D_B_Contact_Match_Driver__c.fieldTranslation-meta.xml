@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The driver explaining how the resulting match was found.
+Possible values include:
+Contact ID Lookup
+Email Lookup
+Company + Contact Match
+Company Family + Contact Match
+Company Only Match --></help>
+        <label><!-- D&amp;B Contact Match Driver --></label>
+        <name>DNBConnect__D_B_Contact_Match_Driver__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- New Business: First business transaction&lt;br&gt;&lt;br&gt;Renewal: Renewal date auto populated &lt;br&gt;&lt;br&gt;Upsell / Downsell: Subsequent Upsell or Downsell transactions&lt;br&gt;&lt;br&gt;Debook: Any corrections to the previously booked amounts&lt;br&gt;&lt;br&gt;Churn: Churn transaction --></help>
+        <label><!-- Booking Type --></label>
+        <name>JBCXM__OrderType__c</name>
+        <relationshipLabel><!-- Transaction Header (Order Type) --></relationshipLabel>
+    </CustomFieldTranslation>

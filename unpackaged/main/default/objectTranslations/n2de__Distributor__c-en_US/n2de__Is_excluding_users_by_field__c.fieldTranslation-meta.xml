@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Is excluding users by field --></label>
+        <name>n2de__Is_excluding_users_by_field__c</name>
+    </CustomFieldTranslation>

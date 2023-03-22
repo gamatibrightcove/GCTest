@@ -30,7 +30,7 @@
             <caseOrigin>Escalation</caseOrigin>
             <caseOwner>CS_Leadership</caseOwner>
             <caseOwnerType>Queue</caseOwnerType>
-            <casePriority>P1 - Critical</casePriority>
+            <casePriority>P3 - Normal</casePriority>
             <createTask>false</createTask>
             <emailAddress>cs_case_escalations_test@brightcove.com</emailAddress>
             

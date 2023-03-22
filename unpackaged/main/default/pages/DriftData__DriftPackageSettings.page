@@ -1,0 +1,195 @@
+<apex:page controller="DriftData.DriftPackageSettingsController" standardStylesheets="false" showHeader="false" sidebar="false">
+
+<link rel="stylesheet" href="https://use.typekit.net/kuz1djc.css" />
+<style>
+     #frame {
+     font-family: proxima-nova;
+     font-style: normal;
+     font-weight:400;
+     font-size: 14px;
+     color:#353f45;
+    }
+    .bold {
+        font-weight:bold;
+    }
+    a:link, a:visited, a:hover,a:active {
+        color:#0071EB;
+        text-decoration: none;
+    }
+    h1 {`
+        font-size: 28px;
+        font-weight: 600;
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight:600;
+    }
+    .step-instructions {
+        display:inline-block;
+        margin-bottom:5px;
+        margin-top: -8px;
+        vertical-align: middle;
+        margin-left:12px;
+    }
+    .screen-shot {
+        min-height:267px;
+        background: url("{!URLFOR($Resource.driftvfassets,'drift_permission_set.png')}");
+        background-position: right;
+        background-repeat: no-repeat;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 1;
+        align-self: flex-end;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+    .divider {
+        border: 1px solid #D6DDE1;
+        width:100%;
+        margin-top:35px;
+        margin-bottom:35px;
+    }
+    #content {
+        position: absolute;
+        left: 5.27%;
+        right:3.51%;
+        padding-left:32px;
+        background: #FFFFFF;
+    }
+    .primary-button {
+        width: 109px;
+        height: 32px;
+        left: 36px;
+        top: 12px;
+        color:#FFFFFF;
+        /* Blues/--color-p3-6 */
+        background: #0071EB;
+        border-radius: 3px;
+        margin-left:35px;
+    }
+    .checkmark {
+        display:inline-block;
+        width: 22px;
+        height:22px;
+        -ms-transform: rotate(45deg);
+        /* IE 9 */
+        -webkit-transform: rotate(45deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+    }
+    .checkmark_circle {
+        position: absolute;
+        width:22px;
+        height:22px;
+        background-color: green;
+        border-radius:11px;
+        left:0;
+        top:0;
+    }
+    .checkmark_stem {
+        position: absolute;
+        width:3px;
+        height:9px;
+        background-color:#fff;
+        left:11px;
+        top:6px;
+    }
+    .checkmark_kick {
+        position: absolute;
+        width:3px;
+        height:3px;
+        background-color:#fff;
+        left:8px;
+        top:12px;
+    }
+    .step {
+        display:inline-block;
+        width: 22px;
+        height:22px;
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        -webkit-transform: rotate(0deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    .step_circle {
+        position: absolute;
+        width:22px;
+        height:22px;
+        border: 2px solid #4E5C65;
+        border-radius:14px;
+        left:0;
+        text-align: center;
+        font-size:12px;
+        line-height:22px;
+        top:0;
+    }
+
+</style>
+<div id="frame">
+    <div id="content">
+        <h1>Getting started</h1>
+        <p>Follow the steps below to complete the setup process. If you have more questions regarding setup, check out our full help article <a href="https://gethelp.drift.com/hc/en-us/articles/360056529914" target="_new">here</a></p>
+        <div class="divider"></div>
+        <div>
+            <span class="checkmark">
+                <div class="checkmark_circle"></div>
+                <div class="checkmark_stem"></div>
+                <div class="checkmark_kick"></div>
+            </span>
+            <h4 class="step-instructions">Install the Drift for Salesforce app</h4>
+        </div>
+        <div class="divider"></div>
+        <div class="screen-shot">
+            <span class="step">
+                <div class="step_circle">2</div>
+            </span>
+            <h4 class="step-instructions">Assign permissions</h4>
+            <ul>
+                <li>Go to <a href="/lightning/setup/PermSets/home" target="_new">Permission Sets</a> (Setup > Users > Permission Sets)</li>
+                <li>Assign the <span class="bold">Administrator Permission Set</span> to the <span class="bold">Salesforce User</span> used to connect Drift and Salesforce.</li>
+            </ul>
+        </div>
+        <div class="divider"></div>
+        <div>
+            <span class="step">
+                <div class="step_circle">3</div>
+            </span>
+            <h4 class="step-instructions">Sync Drift conversation data to Salesforce</h4>
+            <ul>
+                <li>Click the button below to begin syncing data to Salesforce.</li>
+                <li>Please note that this can take up to 3 hours. You'll be notified via email once complete.</li>
+            </ul>
+        </div>
+        <button id="request_backfill" class="primary-button" onclick="sendBackfillRequest()">Start sync</button>
+        <div id="request_status_message"></div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    function sendBackfillRequest() {
+        document.getElementById("request_backfill").style.display = "none";
+
+        Visualforce.remoting.Manager.invokeAction(
+            '{!$RemoteAction.DriftPackageSettingsController.sendBackfillRequest}',
+            function(result, event){
+                if (event.status) {
+                    if (result) {
+                        document.getElementById('request_status_message').innerHTML = "<p>Sync in progress...</p>";
+                    } else {
+                        document.getElementById('request_status_message').innerHTML = "<p>Error submitting request.</p>";
+                    }
+                } else if (event.type === 'exception') {
+                    document.getElementById("request_status_message").innerHTML = 
+                        event.message + "<br/>\n<pre>" + event.where + "</pre>";
+                } else {
+                    document.getElementById("request_status_message").innerHTML = event.message;
+                }
+            }, 
+            {escape: true}
+        );
+    }
+</script>
+</apex:page>

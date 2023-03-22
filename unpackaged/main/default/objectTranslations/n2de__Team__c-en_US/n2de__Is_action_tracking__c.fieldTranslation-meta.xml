@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked will enable the ability to track actions on Leads and Cases --></help>
+        <label><!-- Time to Action --></label>
+        <name>n2de__Is_action_tracking__c</name>
+    </CustomFieldTranslation>

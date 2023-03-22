@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When enabled, allows objects to be re-assigned to a selected Salesforce user instead of a queue. --></help>
+        <label><!-- Re-assign to user enabled --></label>
+        <name>n2de__Is_reassign_to_user__c</name>
+    </CustomFieldTranslation>

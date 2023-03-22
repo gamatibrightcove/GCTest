@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Date and time when the Drift conversation closed. --></help>
+        <label><!-- Conversation Close Time --></label>
+        <name>DriftData__Conversation_Close_Time__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <validationRules>
+        <errorMessage><!-- Start Date cannot be greater than End date. --></errorMessage>
+        <name>JBCXM__EndDateValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start Date cannot be less than Publish Date --></errorMessage>
+        <name>JBCXM__StartDateValidation</name>
+    </validationRules>
+</CustomObjectTranslation>

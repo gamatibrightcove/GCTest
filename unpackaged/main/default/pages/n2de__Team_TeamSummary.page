@@ -1,0 +1,76 @@
+<apex:page standardController="n2de__Team__c" extensions="n2de.Team_TeamSummary_Controller" tabStyle="n2de__Team__c" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Team Summary" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+        <script defer="defer" src="{!URLFOR($Resource.dejs, 'js/c3.js')}"></script>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, 'css/c3.css')}"/>
+
+        <script defer="defer">
+            window.addEventListener("load", function() {
+                <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                <c:Team_TeamBase attrTeamId="{!JSENCODE(TeamId)}"/>
+                <c:PageContext />
+
+                const getTeamSummary = new n2.dataProvider.VisualForce({
+                    id: 'get-team-summary',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_TeamSummary_Controller.getTeamSummary}'
+                        }
+                    }
+                });
+
+                const getIsQ2QTeam = new n2.dataProvider.VisualForce({
+                    id: 'get-is-q2q-team',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_TeamSummary_Controller.isQ2QTeam}'
+                        }
+                    }
+                });
+
+                const getTeamMembers = new n2.dataProvider.VisualForce({
+                    id: 'get-team-members',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_TeamSummary_Controller.getTeamMembers}'
+                        }
+                    }
+                });
+
+                const getDistributors = new n2.dataProvider.VisualForce({
+                    id: 'get-team-distributors',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_TeamSummary_Controller.getDistributorListByType}'
+                        }
+                    }
+                });
+
+                const getTeamSummaryAnalytics = new n2.dataProvider.VisualForce({
+                    id: 'get-team-summary-analytics',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_TeamSummary_Controller.getTeamSummaryAnalytics}',
+                            config: {
+                                buffer: false,
+                                timeout: 120000
+                            }
+                        }
+                    }
+                });
+
+                const teamSummaryPage = new n2.de.page.team.TeamSummary({
+                    id: 'team-summary-page'
+                });
+
+                teamSummaryPage.render();
+            });
+        </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

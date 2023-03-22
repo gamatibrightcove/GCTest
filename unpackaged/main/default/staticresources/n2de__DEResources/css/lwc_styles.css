@@ -1,0 +1,86 @@
+.icon {
+	height: 18px;
+	width: 18px;
+	border-radius: 9px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.failure {
+	background-color: #FD5E4A; 
+}
+.success {
+	background-color: #49b800;
+}
+.n2_filter-criteria > span.slds-truncate {
+    display: inline-block;
+    vertical-align: bottom;
+    max-width: 96px;
+}
+.n2_filter-operator {
+    color: #98adcc;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 1px;
+}
+.n2_filter-row {
+    color: #98adcc;
+    padding-right: 0.25rem;
+}
+.n2_filter-value {
+    background-color: #ecf1f6;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 0 5px;
+}
+.n2-text-weak {
+    color: #98adcc;
+}
+.n2-negative-pill {
+    background-color: rgb(253, 94, 74, 0.2);
+    width: fit-content;
+    border-radius: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: solid;
+    color: #FD5E4A;
+	font-weight: bold;
+}
+.n2-red-text {
+    color: #FD5E4A;
+}
+.n2-link {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.n2-font-bold {
+    font-weight: bold;
+}
+.n2-popover-icon {
+    cursor: pointer;
+}
+
+.slds-accordion__summary > slot { 
+	order: 1;
+}
+.slds-accordion__summary .slds-accordion__summary-heading { 
+	order: 2;
+}
+.slds-accordion__summary-action {
+	padding-left: 10px !important;
+}
+.n2-test-accordion .section-control lightning-primitive-icon {
+    position: absolute;
+    right: 0;
+    border-radius: 16px;
+    border: 1px solid #F4F7FA;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.n2-test-accordion .section-control lightning-primitive-icon svg {
+    margin: 0 auto;
+}

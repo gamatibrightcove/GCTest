@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Holiday_Group__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>The holiday region that determines which company holidays this team subscribes to</inlineHelpText>
+    <label>Holiday Region</label>
+    <referenceTo>n2de__Holiday_group__c</referenceTo>
+    <relationshipLabel>Distribution teams</relationshipLabel>
+    <relationshipName>Distribution_teams</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

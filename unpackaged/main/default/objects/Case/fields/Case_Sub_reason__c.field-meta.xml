@@ -2037,6 +2037,16 @@
                 <default>false</default>
                 <label>Social - Instagram</label>
             </value>
+            <value>
+                <fullName>Ads Analytics/Insights Enablement</fullName>
+                <default>false</default>
+                <label>Ads Analytics/Insights Enablement</label>
+            </value>
+            <value>
+                <fullName>QoE Analytics/Insights Enablement</fullName>
+                <default>false</default>
+                <label>QoE Analytics/Insights Enablement</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Retail Integrations</controllingFieldValue>
@@ -2868,6 +2878,14 @@
         <valueSettings>
             <controllingFieldValue>Account Settings - AI</controllingFieldValue>
             <valueName>Essential Enablement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <valueName>Ads Analytics/Insights Enablement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <valueName>QoE Analytics/Insights Enablement</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Account Settings - ZC</controllingFieldValue>

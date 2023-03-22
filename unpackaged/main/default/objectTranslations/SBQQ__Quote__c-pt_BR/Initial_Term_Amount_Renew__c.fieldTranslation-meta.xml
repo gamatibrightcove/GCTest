@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Initial Term Amount (Renewables) --></label>
+        <name>Initial_Term_Amount_Renew__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The SOQL condition expression that will be used to filter this distributor. The expression must follow SOQL condition syntax and only the condition expression section is valid. Any other SOQL syntax is not valid, including the &apos;where&apos; keyword. --></help>
+        <label><!-- Advanced filter expression --></label>
+        <name>n2de__Filter_soql_string__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The selected field to be used for actions --></help>
+        <label><!-- Action field --></label>
+        <name>n2de__Object_action_field_name__c</name>
+    </CustomFieldTranslation>

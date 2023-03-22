@@ -1,0 +1,345 @@
+<apex:page id="ClsTerritoryMapList" tabStyle="Distribution_Classifier__tab" sideBar="false" standardStylesheets="false" docType="html-5.0" controller="n2de.ClsTerritoryMapListController" action="{!init}">
+    <html lang="en" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/deps/n2-design-system/styles/salesforce-lightning-design-system-legacy.min.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/css/n2.de.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.n2Components, '/css/n2.min.css')}"/>
+        <script>
+            window.n2__sldsIconsPrefix = '{!JSENCODE(URLFOR($Asset.SLDS, 'assets/icons'))}';
+            window.n2__locale = '{!JSENCODE(Locale)}';
+            window.n2__timeZone = '{!JSENCODE(TimeZone)}';
+        </script>
+        <script defer="defer" src="{!URLFOR($Resource.n2Components, 'js/thirdParty.min.js')}"></script>
+        <script onload="initComponents();" defer="defer" src="{!URLFOR($Resource.n2Components, 'js/n2.min.js')}"></script>
+        <script>
+            var mapNames = [];
+            checkMaxMaps = function(parentMapCount) {
+                if (parentMapCount >= Number({!MaxMaps})) {
+                    n2j$('#n2__too-many-maps-message').removeClass('slds-hide');
+                    n2.cm.disable('n2__btn-new-map');
+                } else {
+                    n2j$('#n2__too-many-maps-message').addClass('slds-hide');
+                    n2.cm.enable('n2__btn-new-map');
+                }
+            };
+
+            var clonedMapId = null;
+            cloneMapHandler = function(map) {
+                clonedMapId = map.mapId;
+                var component = n2.cm.getComponent('modal-new-map');
+                component.show(function() {
+                    // Set the heading and current values
+                    component.setHeading('Clone Map');
+                });
+            };
+
+            initComponents = function() {
+                initNav('Territory Maps');
+
+                // Modal for creating a new map
+                n2.cm.addComponent('button', {
+                    id: 'btn-new-map',
+                    selector: '#btn-new-map',
+                    style: 'brand',
+                    text: 'New Map',
+                    handlers: {
+                        'click': function() {
+                            clonedMapId = null;
+                         }
+                     }
+                });
+                n2.cm.addComponent('input', {
+                    id: 'text-new-map-name',
+                    selector: '#text-new-map-name',
+                    label: 'Map name',
+                    required: true,
+                    validation: function(name) {
+                        // Check it's length
+                        if (name.length > 80) {
+                            return 'Maximum length is 80 characters';
+                        }
+                        // Check it's a unique name
+                        if (name && mapNames.indexOf(name.toLowerCase()) !== -1) {
+                            return 'Map name must be unique';
+                        }
+                        return true;
+                    },
+                    cls: 'slds-size_1-of-1'
+                });
+                n2.cm.addComponent('modal', {
+                    id: 'modal-new-map',
+                    selector: '#n2__btn-new-map',
+                    bodySelector: '#modal-new-map-body',
+                    heading: 'New Map',
+                    handlers: {
+                        'ok': function() {
+                            n2.spinner.show();
+                            var values = n2.cm.getModalValues('modal-new-map');
+                            var mapName = values['text-new-map-name'];
+                            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapListController.createNewTerritoryMap}', mapName, clonedMapId, function(response, event) {
+                                if (event.statusCode === 200 && response) {
+                                    n2.sf.util.navigate('{!Namespace}ClsTerritoryMapEdit', 'mapid=' + encodeURIComponent(response));
+                                } else {
+                                    n2.spinner.hide();
+                                    n2.message.error('Error creating map: ' + event.message);
+                                }
+                            });
+                        }
+                    }
+                });
+
+                // Date table for maps list
+                var dataTableMaps = n2.cm.addComponent('data-table', {
+                    id: 'data-table-maps',
+                    selector: '#data-table-maps',
+                    key: 'mapId',
+                    paging: false,
+                    sortColumn: 'name',
+                    storeData: true,
+                    columns: [{
+                            name: 'name',
+                            title: 'Name',
+                            format: function(value, data) {
+                                if (data.status === '{!MapStatusDraft}') {
+                                    var resolvedName = value + ' (Draft';
+                                    if (data.parentName && value !== data.parentName) {
+                                        return resolvedName + ' of ' + data.parentName + ')';
+                                    }
+                                    return resolvedName + ')';
+                                }
+                                return value;
+                            },
+                            action: function(id) {
+                                n2.sf.util.navigate('{!Namespace}ClsTerritoryMapEdit', 'mapid=' + encodeURIComponent(id));
+                            }
+                        },
+                        {
+                            name: 'territoryCount',
+                            title: 'Territories',
+                            format: 'number',
+                            sortable: false,
+                            width: '6rem'
+                        },
+                        {
+                            name: 'territoryItemCount',
+                            title: 'Total Areas',
+                            format: 'number',
+                            sortable: false,
+                            width: '6rem'
+                        },
+                        {
+                            name: 'createdDate',
+                            title: 'Created',
+                            format: 'datetime',
+                            sortable: true
+                        },
+                        {
+                            name: 'lastModifiedDate',
+                            title: 'Modified',
+                            format: 'datetime',
+                            sortable: true
+                        },
+                        {
+                            name: 'status',
+                            title: 'Status',
+                            format: function(value) {
+                                return n2.ui.renderTemplate(
+                                    '<svg class="slds-icon slds-icon_x-small slds-icon-text-default"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{sldsIconsPrefix}}/utility-sprite/svg/symbols.svg#{{icon}}" /></svg>', {
+                                        icon: value === 'Active' ? 'check' : 'close'
+                                    });
+                            },
+                            formatTooltip: function(value) {
+                                return value;
+                            },
+                            sortable: false,
+                            html: true,
+                            width: '4rem'
+                        }
+                    ],
+                    actions: [{
+                        title: 'Edit',
+                        action: function(id) {
+                            n2.sf.util.navigate('{!Namespace}ClsTerritoryMapEdit', 'mapid=' + encodeURIComponent(id));
+                        },
+                        visible: function(id, data) {
+                            return data.isReadOnly === false;
+                        }
+                    }, {
+                        title: 'View',
+                        action: function(id) {
+                            n2.sf.util.navigate('{!Namespace}ClsTerritoryMapEdit', 'mapid=' + encodeURIComponent(id));
+                        },
+                        visible: function(id, data) {
+                            return data.isReadOnly !== false;
+                        }
+                    }, {
+                        title: 'Clone',
+                        action: function(id, rowNum, data) {
+                            cloneMapHandler(data);
+                        }
+                    }, {
+                        title: 'Delete',
+                        action: function(id, rowNum, data) {
+                            var mapName = data.name || id;
+                            n2.message.show({
+                                text: 'Are you sure you want to delete map \'' + mapName + '\'?',
+                                heading: 'Delete Map',
+                                theme: 'warning',
+                                buttons: 'yesno',
+                                handlers: {
+                                    'yes': function() {
+                                        // Delete the map and refresh the table
+                                        dataTableMaps.mask();
+                                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapListController.deleteTerritoryMap}', id, function(response, event) {
+                                            if (event.statusCode === 200) {
+                                                dataTableMaps.refresh();
+                                                n2.toast.show({
+                                                    text: 'Your changes have been saved'
+                                                });
+                                            } else {
+                                                n2.message.error('Error deleting map: ' + event.message);
+                                                dataTableMaps.unmask();
+                                            }
+                                        });
+                                    }
+                                }
+                            });
+                        },
+                        visible: function(id, data) {
+                            return data.inUse === false;
+                        }
+                    }],
+                    data: function(page, rowsPerPage, sortColumn, sortAscending, callback) {
+                        // Get the maps then call the callback to load the data
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryMapListController.getTerritoryMaps}', sortColumn, sortAscending, function(response, event) {
+                            if (event.statusCode === 200 && response) {
+                                mapNames = [];
+                                var lowerMapName;
+                                var parentMapCount = 0;
+                                n2.util.each(response.maps, function(index, map) {
+                                    lowerMapName = map.name.toLowerCase();
+                                    if (mapNames.indexOf(lowerMapName) === -1) {
+                                        mapNames.push(lowerMapName);
+                                    }
+                                    if (!map.parentName) {
+                                        parentMapCount++;
+                                    }
+                                });
+                                callback(response.maps, response.maps.length);
+                                checkMaxMaps(parentMapCount);
+
+                                // Update territory count label
+                                var totalMaxTerritories = Number({!TotalMaxTerritories});
+                                n2j$('#territory-count').text('Created ' + response.territoryCount + (response.territoryCount === 1 ? ' territory' : ' territories') + (totalMaxTerritories > 0 ? ' out of {!TotalMaxTerritories}.' : ''));
+                                if (totalMaxTerritories > 0 && response.territoryCount >= totalMaxTerritories) {
+                                    n2j$('#max-territory-count').removeClass('slds-hide');
+                                } else {
+                                    n2j$('#max-territory-count').addClass('slds-hide');
+                                }
+                            } else {
+                                n2.message.error('Error getting maps: ' + event.message);
+                                callback([], 0);
+                            }
+                        }, {
+                            escape: false
+                        });
+                    }
+                });
+            };
+        </script>
+        <script defer="defer" src="{!URLFOR($Resource.DEResources, 'scripts/ga.js')}"></script>
+    </head>
+    <div class="slds-scope n2__full-height">
+        <div class="n2__full-height">
+            <div class="n2-de-page n2-de-classifier-v1 n2_full-width">
+                <div class="n2-vertical-navigation n2-de-vertical-navigation n2_navigation slds-m-top_xx-large">
+                    <c:ClsNavigation pkgNamespace="{!Namespace}"/>
+                </div>
+                <div class="n2_main">
+                    <div class="n2-de-header slds-page-header slds-no-flex">
+                        <div class="slds-page-header__row">
+                            <div class="slds-page-header__col-title">
+                                <div class="slds-media slds-media_center">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container">
+                                            <svg class="slds-icon n2_icon slds-icon_small" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#location')}"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <h1 title="Territories > Maps" class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate">Territories > Maps</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-page-header__col-actions">
+                                <div class="slds-page-header__controls">
+                                    <div class="slds-page-header__control">
+                                        <div class="n2_actions">
+                                            <a href="https://help.nc-squared.com/create-a-map" target="_blank" class="n2_help-link slds-grid slds-grid_vertical-align-center">
+                                                <svg class="slds-icon slds-icon_x-small slds-m-right_xx-small slds-col slds-no-flex slds-icon-text-default" aria-hidden="true">
+                                                    <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#question')}"></use>
+                                                </svg>
+                                                <span class="slds-col">Help</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <article class="n2_content">
+                        <div class="slds-card__header slds-grid">
+                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                        <span class="slds-text-heading_small">Maps</span>
+                                    </h2>
+                                </div>
+                                <div class="slds-no-flex slds-grid">
+                                    <div id="n2__too-many-maps-message" class="n2__text-center-button slds-m-right_small slds-hide">
+                                            <span class="slds-icon_container slds-icon-utility-warning" title="Warning">
+                                                <svg class="slds-icon slds-icon_x-small slds-icon-text-warning" aria-hidden="true">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}"/>
+                                                </svg>
+                                                <span class="slds-assistive-text">Warning</span>
+                                            </span>
+                                        <span>You have created the maximum number of maps. Please contact <a href="mailto:support@nc-squared.com">support</a> for assistance.</span>
+                                    </div>
+                                    <span id="btn-new-map"></span>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="slds-card__body slds-card__body_inner">
+                            <span id="data-table-maps"></span>
+                            <p id="territory-count" class="slds-m-top_small"></p>
+                            <p id="max-territory-count" class="slds-hide">
+                                    <span class="slds-icon_container slds-icon-utility-warning" title="Warning">
+                                        <svg class="slds-icon slds-icon_x-small slds-icon-text-warning" aria-hidden="true">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}"/>
+                                        </svg>
+                                        <span class="slds-assistive-text">Warning</span>
+                                    </span>
+                                <span>You have created the maximum number of territories. Please contact <a href="mailto:support@nc-squared.com">support</a> for assistance.</span>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div id="modal-new-map-body" class="slds-form slds-form_compound">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__group">
+                        <div class="slds-form-element__row">
+                            <span id="text-new-map-name"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </html>
+</apex:page>

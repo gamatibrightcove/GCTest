@@ -1,0 +1,267 @@
+<apex:page controller="n2de.Team_TeamMemberList_Controller" tabStyle="n2de__Team__c" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Team Member List" action="{!init}">
+    <html>
+
+        <head>
+            <c:PageHead />
+
+            <script defer="defer">
+                window.addEventListener("load", function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:Team_TeamBase attrTeamId="{!JSENCODE(TeamId)}"/>
+                    <c:PageContext />
+
+                    const getIsQ2QTeam = new n2.dataProvider.VisualForce({
+                        id: 'get-is-q2q-team',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.isQ2QTeam}'
+                            }
+                        }
+                    });
+
+                    const getTeamMembers = new n2.dataProvider.VisualForce({
+                        id: 'get-team-members',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getTeamMembers}'
+                            }
+                        }
+                    });
+
+                    const toggleTeamMember = new n2.dataProvider.VisualForce({
+                        id: 'toggle-team-member',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.toggleTeamMember}'
+                            }
+                        }
+                    });
+
+                    const activateTeams = new n2.dataProvider.VisualForce({
+                        id: 'activate-team-members',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.activateTeamMembers}'
+                            }
+                        }
+                    });
+
+                    const deactivateTeams = new n2.dataProvider.VisualForce({
+                        id: 'deactivate-team-members',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.deactivateTeamMembers}'
+                            }
+                        }
+                    });
+
+                    const getUsedLicensesCount = new n2.dataProvider.VisualForce({
+                        id: 'get-used-licenses-count',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getUsedLicensesCount}'
+                            }
+                        }
+                    });
+
+                    const getUsersAvailableToBeTeamMembers = new n2.dataProvider.VisualForce({
+                        id: 'get-available-users',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getUsersAvailableToBeTeamMembers}',
+                                config: {
+                                    timeout: 120000
+                                }
+                            }
+                        }
+                    });
+
+                    const getProfiles = new n2.dataProvider.VisualForce({
+                        id: 'get-profiles',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getProfiles}'
+                            }
+                        }
+                    });
+
+                    const getRoles = new n2.dataProvider.VisualForce({
+                        id: 'get-roles',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getRoles}'
+                            }
+                        }
+                    });
+
+                    const getCreatedDateOptions = new n2.dataProvider.Static({
+                        id: 'get-created-date-options',
+                        data: [{
+                            label: 'Today',
+                            value: 'TODAY'
+                        }, {
+                            label: 'Yesterday',
+                            value: 'YESTERDAY'
+                        }, {
+                            label: 'This Week',
+                            value: 'THIS_WEEK'
+                        }, {
+                            label: 'Last Week',
+                            value: 'LAST_WEEK'
+                        }, {
+                            label: 'This Month',
+                            value: 'THIS_MONTH'
+                        }, {
+                            label: 'This Year',
+                            value: 'THIS_YEAR'
+                        }]
+                    });
+
+                    const getMaxTeamMembersPerTeam = new n2.dataProvider.VisualForce({
+                        id: 'get-max-team-members-per-team',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getMaxTeamMembersPerTeam}'
+                            }
+                        }
+                    });
+
+                    const addTeamMemberUsers = new n2.dataProvider.VisualForce({
+                        id: 'add-team-member-users',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.addTeamMemberUsers}'
+                            }
+                        }
+                    });
+
+                    const getQueuesAvailableToBeTeamMembers = new n2.dataProvider.VisualForce({
+                        id: 'get-available-tm-queues',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getQueuesAvailableToBeTeamMembers}'
+                            }
+                        }
+                    });
+
+                    const getTeamMembersChangeHistory = new n2.dataProvider.VisualForce({
+                        id: 'get-change-history',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getTeamMembersChangeHistory}'
+                            }
+                        }
+                    });
+
+                    const addTeamMemberQueues = new n2.dataProvider.VisualForce({
+                        id: 'add-team-member-queues',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.addTeamMemberQueues}'
+                            }
+                        }
+                    });
+
+                    const removeTeamMembers = new n2.dataProvider.VisualForce({
+                        id: 'remove-team-members',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.removeTeamMembers}'
+                            }
+                        }
+                    });
+
+                    const saveTeamMemberOutOfOffice = new n2.dataProvider.VisualForce({
+                        id: 'save-team-member-out-of-office',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.saveTeamMemberOutOfOffice}'
+                            }
+                        }
+                    });
+
+                    const getTimeZoneOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-timezone-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getTimezones}'
+                            }
+                        }
+                    });
+
+                    const getTeamMemberSetup = new n2.dataProvider.VisualForce({
+                        id: 'get-team-member-setup',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getTeamMemberSetup}'
+                            }
+                        }
+                    });
+
+                    const getShiftNames = new n2.dataProvider.VisualForce({
+                        id: 'get-shift-names',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getShiftNames}'
+                            }
+                        }
+                    });
+
+                    const getShiftHours = new n2.dataProvider.VisualForce({
+                        id: 'get-shift-hours',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getShiftHours}'
+                            }
+                        }
+                    });
+
+                    const getTeamHours = new n2.dataProvider.VisualForce({
+                        id: 'get-team-hours',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getTeamHours}'
+                            }
+                        }
+                    });
+
+                    const getTagCollectionAssignments = new n2.dataProvider.VisualForce({
+                        id: 'get-collection-tag-assignments',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getCollectionTagAssignments}'
+                            }
+                        }
+                    });
+
+                    const addTeamMemberUsersAdvanced = new n2.dataProvider.VisualForce({
+                        id: 'add-team-member-users-advanced',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.addTeamMemberUsersAdvanced}'
+                            }
+                        }
+                    });
+
+                    const getTeamMemberOnboardingSettings = new n2.dataProvider.VisualForce({
+                        id: 'get-team-member-onboarding-settings',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamMemberList_Controller.getTeamMemberOnboardingSettings}'
+                            }
+                        }
+                    });
+
+                    const teamMemberListPage = new n2.de.page.team.TeamMemberList({
+                        id: 'team-member-list-page'
+                    });
+
+                    teamMemberListPage.render();
+                });
+            </script>
+        </head>
+
+        <body></body>
+
+    </html>
+</apex:page>

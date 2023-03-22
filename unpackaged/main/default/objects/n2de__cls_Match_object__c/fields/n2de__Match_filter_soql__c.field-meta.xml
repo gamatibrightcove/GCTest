@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Match_filter_soql__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The SOQL filter to use to limit the records returned from matching</description>
+    <externalId>false</externalId>
+    <label>Match filter SOQL</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

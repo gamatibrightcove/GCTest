@@ -1,0 +1,42 @@
+<apex:page controller="n2de.Settings_AdvancedSettings_Controller" tabStyle="Settings__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Advanced Settings" action="{!init}">
+    <html>
+
+        <head>
+            <c:PageHead />
+
+            <script defer="defer">
+                window.addEventListener('load', function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:PageContext />
+
+                    const getAdvancedSettings = new n2.dataProvider.VisualForce({
+                        id: 'get-advanced-settings',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Settings_AdvancedSettings_Controller.getAdvancedSettings}'
+                            }
+                        },
+                        modeled: true
+                    });
+
+                    const saveAdvancedSettings = new n2.dataProvider.VisualForce({
+                        id: 'save-advanced-settings',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Settings_AdvancedSettings_Controller.saveAdvancedSettings}'
+                            }
+                        }
+                    });
+
+                    const advancedSettingsPage = new n2.de.page.settings.AdvancedSettings({
+                        id: 'advanced-settings-page'
+                    });
+                    advancedSettingsPage.render();
+                });
+            </script>
+        </head>
+
+        <body></body>
+
+    </html>
+</apex:page>

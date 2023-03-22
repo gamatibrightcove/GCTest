@@ -1,0 +1,301 @@
+<apex:page Controller="n2de.SupportSettingsController" sidebar="false" action="{!init}">
+    <apex:form >
+        <script type="text/javascript" src="{!URLFOR($Resource.DEResources, 'scripts/jquery-3.5.1.min.js')}"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.DEResources, 'scripts/jquery-migrate-3.3.0.min.js')}"></script>
+        <script src="{!URLFOR($Resource.DEResources, 'scripts/jquery-ui-1.10.4.min.js')}" type="text/javascript"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.DEResources, 'iphone-style-checkboxes/scripts/iphone-style-checkboxes.js')}"></script>
+        <link type="text/css" rel="stylesheet" href="{!URLFOR($Resource.DEResources, 'iphone-style-checkboxes/style.css')}"/>
+        <apex:sectionHeader subtitle="Support Settings"/>
+        <c:CommonMask />
+
+        <apex:pageBlock title="Custom Settings" id="page_block" mode="edit">
+            <apex:pageMessages />
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton id="go_button" action="{!checkSupportPassword}" rendered="{!NOT(passwordAccepted)}" value="Go"/>
+                <apex:commandButton id="edit_protected_settings_button" value="Edit protected settings" onclick="showMask()" oncomplete="hideMask()" rendered="{!passwordAccepted && !dataUtilsMode}" rerender="page_block" action="{!editProtectedSettings}"/>
+                <apex:commandButton id="save_protected_settings_button" value="Save protected settings" onclick="showMask()" oncomplete="hideMask()" rendered="{!passwordAccepted && !dataUtilsMode}" rerender="page_block" action="{!saveProtectedSettings}"/>
+                <apex:commandButton id="cancel_protected_settings_button" value="Cancel" onclick="showMask()" oncomplete="hideMask()" rendered="{!passwordAccepted && !dataUtilsMode}" rerender="page_block" action="{!cancelProtectedSettings}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockButtons location="top" rendered="{!passwordAccepted}">
+                <apex:commandButton id="save_button_top" value="Save general settings" onclick="showMask()" oncomplete="hideMask()" rendered="{!passwordAccepted && !dataUtilsMode}" rerender="page_block" action="{!saveSupportSettings}"/>
+                <apex:commandButton id="cancel_button_top" value="Cancel" onclick="showMask()" oncomplete="hideMask()" rendered="{!passwordAccepted && !dataUtilsMode}" rerender="page_block" action="{!cancelSupportSettings}"/>
+                <apex:commandButton id="data_utils_button" value="{!IF(dataUtilsMode, 'Back to settings', 'Data utils')}" action="{!toggleDataUtilsMode}" rendered="{!passwordAccepted}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection columns="2" rendered="{!NOT(passwordAccepted)}" id="password_block">
+                <apex:inputSecret id="password_input" label="Password: " value="{!supportPassword}" styleClass="requiredIndicator" size="45" maxlength="45"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Data utilities" id="data_utils" columns="1" collapsible="false" rendered="{!passwordAccepted && NOT(inEditMode) && dataUtilsMode}">
+                <apex:pageBlockSection columns="2" title="Clear sticky logs">
+                    <apex:inputText id="sticky_logs_team_id" label="Team Id" value="{!stickyLogsTeamId}"/>
+                    <apex:commandButton id="clear_sticky_logs_button" action="{!clearStickyLogs}" value="Clear sticky logs for team" onClick="return confirm('This will schedule a batch job to delete all sticky logs for the team')"/>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="1" title="Clear user application settings for users that aren't current team members">
+                    <apex:commandButton id="clear_user_settings_button" action="{!clearUserAppSettings}" value="Clear user app settings" onClick="return confirm('This will delete all application settings for users that aren\'t current team members')"/>
+                </apex:pageBlockSection>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="General Settings" id="settings_block" rendered="{!passwordAccepted && !dataUtilsMode}" columns="2" collapsible="false">
+                <apex:inputText id="processing" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Processing__c.label}" value="{!processing}" rendered="{!NOT(ProcessingModeFP.isOverride)}"/>
+                <apex:outputText label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Processing__c.label} - Feature Param" value="{!ProcessingModeFP.stringValue}" rendered="{!ProcessingModeFP.isOverride}"/>
+                <apex:inputText id="schedule_frequency" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Schedule_frequency__c.label}" value="{!schedulerFreq}"/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Schedule_log_duration__c.label}"/>
+                    <apex:selectList id="schedule_log_duration" value="{!scheduleLogDuration}" size="1">
+                        <apex:selectOptions value="{!LogDurationOptions}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:inputText id="scheduler_started_by" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Scheduler_started_by__c.label}" value="{!schedulerStartedBy}"/>
+                <apex:inputText id="user_activity_log_duration" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__User_activity_log_duration__c.label}" value="{!userLogDuration}"/>
+                <apex:inputCheckbox id="user_logout_reason_required" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__User_activity_log_reason__c.label}" value="{!userLogTrackReason}"/>
+                <apex:inputCheckbox id="user_login_mode_enabled" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__User_login_mode__c.label}" value="{!userLoginMode}"/>
+                <apex:inputText id="history_log_duration" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__History_log_duration__c.label}" value="{!historyLogDuration}"/>
+                <apex:inputCheckbox id="hourly_caps_disabled" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Hourly_caps_disabled__c.label}" value="{!hourlyCapsDisabled}"/>
+                <apex:pageBlockSectionItem />
+                <apex:inputCheckbox id="use_logsqueueable_method" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Use_LogsQueueable_method__c.label}" value="{!useLogsQueueable}"/>
+                <apex:inputText id="pull_distributor_locking" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Pull_distributor_locking__c.label}" value="{!pullDistributorLocking}"/>
+                <apex:inputCheckbox id="publish_distribution_events" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Publish_distribution_events__c.label}" value="{!publishDistributionEvents}"/>
+                <apex:inputCheckbox id="realtime_widget_notifications" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Real_time_widget_notifications__c.label}" value="{!realtimeWidgetNotifications}"/>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:inputText id="case_alert_condition_field_names" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Case_alert_condition_field_names__c.label}" value="{!caseAlertFieldNames}"/>
+                <apex:inputText id="lead_alert_condition_field_names" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Lead_alert_condition_field_names__c.label}" value="{!leadAlertFieldNames}"/>
+                <apex:inputCheckbox id="object_filters_not_operators_disabled" disabled="true" label="Object filter not operators disabled (Deprecated)" value="{!objectFiltersNotOperatorsDisabled}" rendered="{!NOT(NotOperatorsFP.isOverride)}"/>
+                <apex:inputCheckbox disabled="true" label="Object filter not operators disabled - Feature Param" value="{!NotOperatorsFP.booleanValue}" rendered="{!NotOperatorsFP.isOverride}"/>
+                <apex:inputCheckbox id="advanced_filters_enabled" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Advanced_filters_enabled__c.label}" value="{!advancedFiltersEnabled}"/>
+                <apex:inputCheckbox id="person_accounts_enabled" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Person_accounts_enabled__c.label}" value="{!personAccountsEnabled}"/>
+                <apex:inputCheckbox id="triggers_enabled" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Triggers_enabled__c.label}" value="{!triggerDistributorsEnabled}" rendered="{!NOT(TriggerDistsEnabledFP.isOverride)}"/>
+                <apex:inputCheckbox id="triggers_enabled_fp" disabled="true" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Triggers_enabled__c.label} - Feature Param" value="{!TriggerDistsEnabledFP.booleanValue}" rendered="{!TriggerDistsEnabledFP.isOverride}"/>
+                <apex:inputCheckbox id="custom_date_alerts_enabled" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Custom_date_alerts_enabled__c.label}" value="{!customDateAlertsEnabled}"/>
+                <apex:inputCheckbox id="display_last_action_logs" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Display_last_action_in_logs__c.label}" value="{!displayLastActionInLogs}"/>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:inputCheckbox id="calendar_integration_enabled" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Calendar_integration_enabled__c.label}" value="{!calendarIntegrationEnabled}"/>
+                <apex:inputText id="events_for_out_of_office" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Events_for_ooo__c.label}" value="{!eventsForOoO}"/>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:inputCheckbox id="load_balance_count_includes_lookups" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Load_balance_count_includes_lookups__c.label}" value="{!loadBalanceIncludesLookup}"/>
+                <apex:inputCheckbox id="load_balance_count_includes_stickies" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Load_balance_count_includes_stickies__c.label}" value="{!loadBalanceIncludesSticky}"/>
+                <apex:inputCheckbox id="load_balance_count_includes_pull" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Load_balance_count_includes_pull__c.label}" value="{!loadBalanceIncludesPull}"/>
+                <apex:inputText id="load_balance_limit" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Load_balance_limit__c.label}" value="{!loadBalanceLimit}"/>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:inputText id="reject_reason_opts" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Reject_reason_options__c.label}" value="{!rejectReasonOptions}"/>
+                <apex:inputCheckbox id="allow_custom_reject_reason" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Allow_custom_reject_reason__c.label}" value="{!allowCustomRejectReason}"/>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:inputText id="track_last_assignees" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Track_last_assignees__c.label}" value="{!trackNumberLastAssignees}"/>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:inputText id="distributor_record_limit" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Distributor_record_limit__c.label}" value="{!distributorRecordLimit}" rendered="{!NOT(RecordLimitFP.isOverride)}"/>
+                <apex:inputText id="parallel_assigner_record_limit" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Parallel_assigner_record_limit__c.label}" value="{!parallelAssignerRecordLimit}" />
+                <apex:outputText label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Distributor_record_limit__c.label} - Feature Param" value="{!RecordLimitFP.intValue}" rendered="{!RecordLimitFP.isOverride}"/>
+                <apex:inputText id="per_object_record_limits" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Per_object_record_limits__c.label}" value="{!perObjectRecordLimits}"/>
+                <apex:inputText id="per_object_assigner_record_limits" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Per_object_assigner_record_limits__c.label}" value="{!perObjectAssignerRecordLimits}"/>
+                <apex:inputText id="maximum_allowed_parallel_assigners" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Maximum_allowed_parallel_assigners__c.label}" value="{!maximumAllowedParallelAssigners}" />
+                <apex:inputText id="per_object_maximum_allowed_assigners" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Per_object_maximum_allowed_assigners__c.label}" value="{!perObjectMaximumAllowedAssigners}"/>
+                <apex:inputText id="maximum_allowed_cpu_usage" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Maximum_allowed_cpu_usage__c.label}" value="{!maximumAllowedCPUUsage}" rendered="{!NOT(MaximumAllowedCPUUsageFP.isOverride)}"/>
+                <apex:outputText label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Maximum_allowed_cpu_usage__c.label} - Feature Param" value="{!MaximumAllowedCPUUsageFP.intValue}" rendered="{!MaximumAllowedCPUUsageFP.isOverride}"/>
+                <apex:inputText id="per_object_maximum_allowed_cpu_usage" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Per_object_maximum_allowed_cpu_usage__c.label}" value="{!perObjectMaximumAllowedCPUUsage}"/>
+                <apex:inputText id="locking_error_limit" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Locking_error_limit__c.label}" value="{!lockingErrorLimit}"/>
+                <apex:inputText id="batch_size" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Batch_size__c.label}" value="{!batchSize}"/>
+                <apex:inputText id="alert_log_limit" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Alert_log_limit__c.label}" value="{!alertLogLimit}"/>
+                <apex:inputText id="archive_batch_size" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Archive_batch_size__c.label}" value="{!archiveBatchSize}"/>
+                <apex:inputText id="max_team_members_per_team" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Team_members_per_team__c.label}" value="{!maxTeamMembersPerTeam}"/>
+                <apex:inputText id="max_distributors_per_team" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Distributors_per_team__c.label}" value="{!maxDistributorsPerTeam}"/>
+                <apex:inputText id="max_pull_distributors_per_team" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Pull_distributors_per_team__c.label}" value="{!maxPullDistributorsPerTeam}"/>
+                <apex:inputText id="max_trigger_distributors_per_team" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Trigger_distributors_per_team__c.label}" value="{!maxTriggerDistributorsPerTeam}"/>
+                <apex:inputText id="max_pending_distributions_to_preload" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Max_pending_distributions_to_preload__c.label}" value="{!maxPendingDistributionsToPreload}"/>
+                <apex:inputText id="shift_planner_blocks_retention_weeks" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Housekeep_shift_planner_after_weeks__c.label}" value="{!shiftPlannerRetentionWeeks}"/>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:inputCheckbox id="health_checker_notify_admin" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Health_Check_Notify_Admin__c.label}" value="{!healthCheckerNotifyAdmin}"/>
+                <apex:inputText id="health_checker_delay_threshold" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Health_Checker_Delay_Threshold__c.label}" value="{!healthCheckerDelayThreshold}"/>
+                <apex:inputCheckbox id="health_checker_notify_managers" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Health_Check_Notify_Managers__c.label}" value="{!healthCheckerNotifyManagers}"/>
+                <apex:inputText id="health_checker_notify_list" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Health_Check_Notify_List__c.label}" value="{!healthCheckerNotifyList}"/>
+                <apex:inputText id="health_checker_frequency" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Health_Checker_Frequency__c.label}" value="{!healthCheckerFrequency}" rendered="{!NOT(HealthCheckerFrequencyFP.isOverride)}"/>
+                <apex:outputText label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Health_Checker_Frequency__c.label} - Feature Param" value="{!HealthCheckerFrequencyFP.intValue}" rendered="{!HealthCheckerFrequencyFP.isOverride}"/>
+                <apex:inputCheckbox id="disable_auto_adjust_teams_limit" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Disable_auto_adjust_teams_limit__c.label}" value="{!disableAutoAdjustTeamsLimit}"/>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:inputCheckbox id="debug_logging_level_is_error" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Debug_Logging_Level_Is_Error__c.label}" value="{!debugLoggingLevelError}"/>
+                <apex:inputCheckbox id="disable_exception_catch" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Exception_catch_is_disabled__c.label}" value="{!catchDisabled}"/>
+                <apex:inputText id="licensed_users" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Licenced_users__c.label}" value="{!licensedUsers}"/>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:inputText id="current_po_processing_status" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Prevent_overflow_processing_state__c.label}" value="{!currentPreventOverflowProcessingStatusJson}"/>
+                <apex:inputText id="processed_teams_1" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Processed_team_ids_1__c.label}" value="{!processedTeams1}"/>
+                <apex:inputText id="processed_teams_2" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Processed_team_ids_2__c.label}" value="{!processedTeams2}"/>
+                <apex:inputText id="processed_teams_3" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Processed_team_ids_3__c.label}" value="{!processedTeams3}"/>
+                <apex:inputText id="processed_teams_4" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Processed_team_ids_4__c.label}" value="{!processedTeams4}"/>
+                <apex:inputText id="processed_teams_5" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Processed_team_ids_5__c.label}" value="{!processedTeams5}"/>
+                <apex:inputText id="processed_teams_6" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Processed_team_ids_6__c.label}" value="{!processedTeams6}"/>
+                <apex:inputText id="processed_teams_7" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Processed_team_ids_7__c.label}" value="{!processedTeams7}"/>
+                <apex:inputText id="processed_teams_8" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Processed_team_ids_8__c.label}" value="{!processedTeams8}"/>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:inputCheckbox id="is_hold_off_records_check" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Is_hold_off_stuck_records__c.label}" value="{!isHoldOffStuckRecords}"/>
+                <apex:inputText id="hold_off_thresholds" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Hold_off_stuck_records_thresholds__c.label}" value="{!holdOffStuckRecordsThresholds}"/>
+                <apex:inputText id="hold_off_locking_thresholds" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Hold_off_thresholds_for_locking_errors__c.label}" value="{!holdOffStuckRecordsThresholdsForLockingErrors}"/>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                <apex:outputText id="app_settings_version" label="Config settings version" value="{!settingsVersion}"/>
+                <apex:outputText id="app_settings_runtime_version" label="Runtime settings version" value="{!settingsRuntimeVersion}"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Protected Settings" id="protected_block_edit" columns="1" collapsible="false" rendered="{!passwordAccepted && inEditMode && !dataUtilsMode}">
+                <apex:pageMessage summary="{!protectedWarningMsg}" severity="warning"/>
+                <apex:pageBlockSection columns="2">
+                    <apex:inputCheckbox id="scheduler_on" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Scheduler_on__c.label}" value="{!schedulerOn}"/>
+                    <apex:inputText id="currently_scheduled_processing_type" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Scheduler_processing_mode__c.label}" value="{!currentlyScheduledProcessingType}"/>
+                    <apex:inputText id="scheduler_job_sequence" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Scheduler_job_sequence__c.label}" value="{!schedulerJobSeq}"/>
+                    <apex:inputText id="scheduled_job_id" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Scheduled_job_id__c.label}" value="{!scheduledJobId}"/>
+                    <apex:inputCheckbox id="health_checker_started" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Health_checker_started__c.label}" value="{!healthCheckerStarted}"/>
+                    <apex:inputText id="health_checker_job_id" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Health_Checker_Job_Id__c.label}" value="{!healthCheckerJobId}"/>
+                    <apex:inputCheckbox id="is_chaining" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Is_chaining__c.label}" value="{!isChaining}"/>
+                    <apex:inputText id="last_distribution_sequence" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Last_distribution_sequence__c.label}" value="{!lastDistributionSeq}"/>
+                    <apex:inputCheckbox id="all_triggers_disabled" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__All_triggers_disabled__c.label}" value="{!allTriggersDisabled}"/>
+                    <apex:inputText id="max_teams_per_run" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Max_teams_per_run__c.label}" value="{!maxTeamsPerRun}"/>
+                    <apex:pageBlockSectionItem />
+                    <apex:pageBlockSectionItem />
+                    <apex:inputCheckbox id="disable_archiving" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Disable_archiving__c.label}" value="{!disableArchiving}"/>
+                    <apex:inputText id="archive_batch_job_id" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Archive_batch_job_id__c.label}" value="{!archiveBatchJobId}"/>
+                    <apex:inputText id="archive_job_id" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Archive_job_id__c.label}" value="{!archiveSchJobId}"/>
+                    <apex:inputText id="archive_older_than" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Archive_older_than__c.label}" value="{!archiveOlderThan}"/>
+                    <apex:inputText id="archive_queue_id" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Archive_queue_id__c.label}" value="{!archiveQueueId}"/>
+                </apex:pageBlockSection>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Protected Settings" id="protected_block" columns="1" collapsible="false" rendered="{!passwordAccepted && NOT(inEditMode) && !dataUtilsMode}">
+                <apex:pageMessage summary="{!protectedWarningMsg}" severity="warning"/>
+                <apex:pageBlockSection columns="2">
+                    <apex:inputCheckbox disabled="true" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Scheduler_on__c.label}" value="{!schedulerOn}"/>
+                    <apex:outputText label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Scheduler_processing_mode__c.label}" value="{!currentlyScheduledProcessingType}"/>
+                    <apex:outputText label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Scheduler_job_sequence__c.label}" value="{!schedulerJobSeq}"/>
+                    <apex:outputText label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Scheduled_job_id__c.label}" value="{!scheduledJobId}"/>
+                    <apex:inputCheckbox disabled="true" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Health_checker_started__c.label}" value="{!healthCheckerStarted}"/>
+                    <apex:outputText label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Health_Checker_Job_Id__c.label}" value="{!healthCheckerJobId}"/>
+                    <apex:inputCheckbox disabled="true" label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Is_chaining__c.label}" value="{!isChaining}"/>
+                    <apex:outputText label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Last_distribution_sequence__c.label}" value="{!lastDistributionSeq}"/>
+                    <apex:inputCheckbox disabled="true" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__All_triggers_disabled__c.label}" value="{!allTriggersDisabled}"/>
+                    <apex:outputText label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Max_teams_per_run__c.label}" value="{!maxTeamsPerRun}"/>
+                    <apex:pageBlockSectionItem />
+                    <apex:pageBlockSectionItem />
+                    <apex:inputCheckbox disabled="true" label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Disable_archiving__c.label}" value="{!disableArchiving}"/>
+                    <apex:outputText label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Archive_batch_job_id__c.label}" value="{!archiveBatchJobId}"/>
+                    <apex:outputText label="{!$ObjectType.n2de__Application_Settings_runtime__c.fields.n2de__Archive_job_id__c.label}" value="{!archiveSchJobId}"/>
+                    <apex:outputText label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Archive_older_than__c.label}" value="{!archiveOlderThan}"/>
+                    <apex:outputText label="{!$ObjectType.n2de__Application_Settings__c.fields.n2de__Archive_queue_id__c.label}" value="{!archiveQueueId}"/>
+                </apex:pageBlockSection>
+            </apex:pageBlockSection>
+
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Control Settings" id="control_settings_page_block" rendered="{!passwordAccepted}">
+            <apex:pageMessages />
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton id="rerun_maintenance_mode_class" value="Rerun Failed Job" rendered="{!isMaintenanceModeJobReRunnable}" onclick="showMask()" oncomplete="hideMask()" rerender="control_settings_page_block" action="{!rerunFailedMaintenanceModeJob}"/>
+                <apex:commandButton id="control_settings_save_button_top" value="Save control settings" onclick="showMask()" oncomplete="hideMask()" rendered="{!passwordAccepted && !dataUtilsMode}" rerender="control_settings_page_block" action="{!saveControlSettings}"/>
+                <apex:commandButton id="control_settings_cancel_button_top" value="Cancel" onclick="showMask()" oncomplete="hideMask()" rendered="{!passwordAccepted && !dataUtilsMode}" rerender="control_settings_page_block" action="{!cancelControlSettings}"/>
+                <apex:commandButton id="control_settings_run_full_data_migration_top" value="Rerun Full Migration" disabled="{!disableRerunFullMigration}" onclick="showMask()" oncomplete="hideMask()" rendered="{!passwordAccepted && !dataUtilsMode}" rerender="control_settings_page_block" action="{!rerunFullMigration}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Maintenance Mode Settings" id="maintenance_mode_settings" rendered="{!passwordAccepted && !dataUtilsMode}" columns="2" collapsible="false">
+                <apex:inputCheckbox id="maintenance_mode_enabled" styleClass="maintenance_mode" label="{!$ObjectType.n2de__Settings_control__c.fields.n2de__Maintenance_mode__c.label}" value="{!maintenanceMode}" onBlur="this.oldChecked = this.checked;" onClick="return addMaintenanceModeWarning(this);"/>
+                <apex:inputCheckbox id="maintenance_mode_failed" label="{!$ObjectType.n2de__Settings_control__c.fields.n2de__Maintenance_mode_failed__c.label}" value="{!maintenanceModeFailed}" disabled="true"/>
+                <apex:outputText id="maintenance_mode_start" label="{!$ObjectType.n2de__Settings_control__c.fields.n2de__Maintenance_mode_start_date__c.label}" value="{!maintenanceModeStartDatetime}"/>
+                <apex:outputText id="maintenance_mode_end" label="{!$ObjectType.n2de__Settings_control__c.fields.n2de__Maintenance_mode_end_date__c.label}" value="{!maintenanceModeEndDatetime}"/>
+                <apex:outputText id="maintenance_mode_classname" label="{!$ObjectType.n2de__Settings_control__c.fields.n2de__Maintenance_mode_classname__c.label}" value="{!maintenanceModeJobType}"/>
+            </apex:pageBlockSection>
+
+            <script>
+                /*
+                 * Display a warning where the maintenance mode checkbox is changed.
+                 */
+                function addMaintenanceModeWarning() {
+                    var agree = false;
+                    if (this.oldChecked) {
+                        agree = confirm('Disabling maintenance mode before maintenance has completed is not advisable. Are you sure you would like to continue?');
+                    } else {
+                        agree = confirm('Enabling maintenance mode will disable all distribution. Are you sure you would like to continue?');
+                    }
+
+                    if (agree) {
+                        this.oldChecked = !this.oldChecked;
+                    }
+                    return agree;
+                }
+            </script>
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Classifier Custom Settings" id="classifier_page_block" rendered="{!passwordAccepted && !dataUtilsMode}">
+            <apex:pageMessages />
+            <apex:pageBlockButtons location="top" rendered="{!passwordAccepted}">
+                <apex:commandButton id="cls_save_button" value="Save classifier settings" onclick="showMask()" oncomplete="hideMask()" rendered="{!passwordAccepted && !dataUtilsMode}" rerender="classifier_page_block" action="{!saveClassifierSettings}"/>
+                <apex:commandButton value="Cancel" onclick="showMask()" oncomplete="hideMask()" rendered="{!passwordAccepted && !dataUtilsMode}" rerender="classifier_page_block" action="{!cancelClassifierSettings}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Classifier Settings" id="classifier_block" columns="2" collapsible="false">
+                <apex:inputText id="cls_record_limit" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Record_limit__c.label}" value="{!clsRecordLimit}"/>
+                <apex:inputText id="cls_per_object_record_limits" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Per_object_record_limits__c.label}" value="{!clsPerObjectRecordLimits}"/>
+                <apex:inputText id="cls_qbl_de_duplication_record_limit" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Deduplication_record_limit__c.label}" value="{!clsQblDeduplicateRecordLimit}"/>
+                <apex:inputText id="cls_qbl_conversion_record_limit" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Conversion_record_limit__c.label}" value="{!clsQblConversionRecordLimit}"/>
+                <apex:inputText id="cls_batch_size" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Batch_size__c.label}" value="{!clsBatchSize}"/>
+                <apex:inputText id="cls_batch_de_duplication_record_limit" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Batch_deduplication_record_limit__c.label}" value="{!clsBatchDeduplicateRecordLimit}"/>
+                <apex:inputText id="cls_batch_conversion_record_limit" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Batch_conversion_record_limit__c.label}" value="{!clsBatchConversionRecordLimit}"/>
+                <apex:pageBlockSectionItem />
+                <apex:inputCheckbox id="cls_triggers_disabled" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Triggers_disabled__c.label}" value="{!clsTriggersDisabled}"/>
+                <apex:inputText id="cls_trigger_limit" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Trigger_limit__c.label}" value="{!triggerLimit}"/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Classifier_log_duration__c.label}"/>
+                    <apex:selectList id="cls_log_duration" value="{!clsLogDuration}" size="1">
+                        <apex:selectOptions value="{!LogDurationOptions}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Territories Settings" id="territories_block" columns="2" collapsible="false">
+                <apex:inputCheckbox id="cls_classifier_enabled" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Classifier_enabled__c.label}" value="{!territoriesEnabled}"/>
+                <apex:inputText id="cls_imported_data_id" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Imported_data_id__c.label}" value="{!importedDataId}"/>
+                <apex:inputText id="cls_heroku_base_url" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Heroku_base_url_design__c.label}" value="{!herokuBaseUrl}"/>
+                <apex:inputText id="cls_heroku_region" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Heroku_region__c.label}" value="{!herokuRegion}"/>
+                <apex:inputText id="cls_max_territories_per_map" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Max_territories_per_map__c.label}" value="{!maxTerritories}"/>
+                <apex:inputText id="cls_total_max_territories" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Total_max_territories__c.label}" value="{!totalMaxTerritories}"/>
+                <apex:inputText id="cls_max_territory_items" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Max_territory_items__c.label}" value="{!maxItems}"/>
+                <apex:inputText id="cls_max_maps" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Max_maps__c.label}" value="{!maxMaps}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Lead Matching Settings" id="matching_block" columns="2" collapsible="false">
+                <apex:inputText id="cls_imported_domain_data_id" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Imported_domain_data_id__c.label}" value="{!importedDomainDataId}"/>
+                <apex:inputCheckbox id="cls_lead_matching_enabled" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Match_enabled__c.label}" value="{!matchingEnabled}"/>
+                <apex:inputCheckbox id="cls_lead_to_account_matching_enabled" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Match_enable_account__c.label}" value="{!accountMatchingEnabled}"/>
+                <apex:inputCheckbox id="cls_account_domain_matching_enabled" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Match_enable_account_domains__c.label}" value="{!accountDomainMatchingEnabled}"/>
+                <apex:inputCheckbox id="cls_lead_to_contact_matching_enabled" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Match_enable_contact__c.label}" value="{!contactMatchingEnabled}"/>
+                <apex:inputCheckbox id="cls_lead_to_lead_matching_enabled" label="{!$ObjectType.n2de__Classifier_settings__c.fields.n2de__Match_enable_lead__c.label}" value="{!leadMatchingEnabled}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Object Sync Custom Settings" id="object_sync_page_block" rendered="{!passwordAccepted && !dataUtilsMode}">
+            <apex:pageMessages />
+            <apex:pageBlockButtons location="top" rendered="{!passwordAccepted}">
+                <apex:commandButton id="os_save_button" value="Save object sync settings" onclick="showMask()" oncomplete="hideMask()" rendered="{!passwordAccepted && !dataUtilsMode}" rerender="object_sync_page_block" action="{!saveObjectSyncSettings}"/>
+                <apex:commandButton value="Cancel" onclick="showMask()" oncomplete="hideMask()" rendered="{!passwordAccepted && !dataUtilsMode}" rerender="object_sync_page_block" action="{!cancelObjectSyncSettings}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection id="object_sync_block" columns="2" collapsible="false">
+                <apex:inputCheckbox id="obj_sync_enabled" label="{!$ObjectType.n2de__Object_sync_settings__c.fields.n2de__Object_sync_enabled__c.label}" value="{!objectSyncEnabled}"/>
+                <apex:inputText id="obj_sync_batch_size" label="{!$ObjectType.n2de__Object_sync_settings__c.fields.n2de__Batch_size__c.label}" value="{!objectSyncBatchSize}"/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.n2de__Object_sync_settings__c.fields.n2de__Object_sync_log_duration__c.label}"/>
+                    <apex:selectList id="obj_sync_log_duration" value="{!objectSyncLogDuration}" size="1">
+                        <apex:selectOptions value="{!LogDurationOptions}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+    </apex:form>
+</apex:page>

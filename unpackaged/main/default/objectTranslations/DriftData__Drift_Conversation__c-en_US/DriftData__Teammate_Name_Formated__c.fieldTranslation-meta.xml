@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A lookup of the Drift Conversation_Teammate field which replaces the null (-) value with “Bot Only” to add more context to reports and dashboards. --></help>
+        <label><!-- Teammate (First) (Reports Only) --></label>
+        <name>DriftData__Teammate_Name_Formated__c</name>
+    </CustomFieldTranslation>

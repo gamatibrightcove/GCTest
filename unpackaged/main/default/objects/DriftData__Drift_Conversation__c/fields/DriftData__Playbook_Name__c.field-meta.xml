@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Playbook_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Drift&#39;s playbook name.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Drift&#39;s playbook name.</inlineHelpText>
+    <label>Playbook Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

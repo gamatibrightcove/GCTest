@@ -1,0 +1,65 @@
+<apex:page controller="n2de.Team_TeamPerformance_Controller" tabStyle="n2de__Team__c" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Team Performance" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+        <script defer="defer">
+            window.addEventListener("load", function() {
+                <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                <c:Team_TeamBase attrTeamId="{!JSENCODE(TeamId)}"/>
+                <c:PageContext />
+
+                const getIsQ2QTeam = new n2.dataProvider.VisualForce({
+                    id: 'get-is-q2q-team',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_TeamPerformance_Controller.isQ2QTeam}'
+                        }
+                    }
+                });
+
+                const performanceMetrics = new n2.dataProvider.VisualForce({
+                    id: 'get-team-performance-metrics',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_TeamPerformance_Controller.getTeamPerformanceMetrics}'
+                        }
+                    }
+                });
+
+                const getPerformanceTagAssignments = new n2.dataProvider.VisualForce({
+                    id: 'get-performance-tag-assignments',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_TeamPerformance_Controller.getPerformanceTagAssignments}'
+                        }
+                    }
+                });
+
+                const saveTagAssignments = new n2.dataProvider.VisualForce({
+                    id: 'save-tag-assignments',
+                    methods: {
+                        post: {
+                            method: '{!$RemoteAction.Team_TeamPerformance_Controller.saveTagAssignments}',
+                            config: {
+                                timeout: 120000
+                            }
+                        }
+                    }
+                });
+
+                const teamPerformancePage = new n2.de.page.team.TeamPerformance({
+                    id: 'team-performance-page'
+                });
+
+                teamPerformancePage.render();
+
+            });
+        </script>
+    </head>
+
+    <body></body>
+
+    </html>
+
+</apex:page>

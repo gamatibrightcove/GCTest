@@ -1,0 +1,263 @@
+<apex:page id="ClsTerritoryObjectList" tabStyle="Distribution_Classifier__tab" sideBar="false" standardStylesheets="false" docType="html-5.0" controller="n2de.ClsTerritoryObjectListController">
+    <html lang="en" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/deps/n2-design-system/styles/salesforce-lightning-design-system-legacy.min.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/css/n2.de.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.n2Components, 'css/n2.min.css')}"/>
+        <script>
+            window.n2__sldsIconsPrefix = '{!JSENCODE(URLFOR($Asset.SLDS, "assets/icons"))}';
+            window.n2__locale = '{!JSENCODE(Locale)}';
+            window.n2__timeZone = '{!JSENCODE(TimeZone)}';
+        </script>
+        <script defer="defer" src="{!URLFOR($Resource.n2Components, '/js/thirdParty.min.js')}"></script>
+        <script onload="initComponents();" defer="defer" src="{!URLFOR($Resource.n2Components, '/js/n2.min.js')}"></script>
+        <script>
+            var allObjectNames = JSON.parse('{!SupportedObjects}');
+
+            initComponents = function() {
+                initNav('Territory Object Settings');
+
+                // Populated when the data is retrieved for the table so that we only show the remaining objects when adding new ones
+                var objectNames = [];
+
+                // Filters table and button
+                n2.cm.addComponent('button', {
+                    id: 'btn-add-object',
+                    selector: '#btn-add-object',
+                    style: 'brand',
+                    text: 'Add Object'
+                });
+                var dataTableObjects = n2.cm.addComponent('data-table', {
+                    id: 'data-table-objects',
+                    selector: '#data-table-objects',
+                    key: 'objectId',
+                    sortColumn: 'name',
+                    paging: false,
+                    storeData: true,
+                    columns: [{
+                        name: 'name',
+                        title: 'Name',
+                        action: function(id, rowNum, data) {
+                            n2.sf.util.navigate('{!Namespace}ClsTerritoryObjectEdit', 'objectid=' + encodeURIComponent(id));
+                        }
+                    },
+                        {
+                            name: 'linkedMapCount',
+                            title: 'Linked Maps',
+                            format: 'number',
+                            sortable: false
+                        },
+                        {
+                            name: 'defaultMapName',
+                            title: 'Default Map',
+                            sortable: true
+                        }
+                    ],
+                    actions: [{
+                        title: 'Edit',
+                        action: function(id, rowNum, data) {
+                            n2.sf.util.navigate('{!Namespace}ClsTerritoryObjectEdit', 'objectid=' + encodeURIComponent(id));
+                        }
+                    }, {
+                        title: 'Delete',
+                        action: function(id, rowNum, data) {
+                            n2.message.show({
+                                text: 'Are you sure you want to delete all configuration for object \'' + data.name + '\'?',
+                                heading: 'Delete Object',
+                                theme: 'warning',
+                                buttons: 'yesno',
+                                handlers: {
+                                    'yes': function() {
+                                        // Delete the linked object and field matches and refresh the table
+                                        dataTableObjects.mask();
+                                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectListController.deleteLinkedObject}', id, function(response, event) {
+                                            if (event.statusCode === 200) {
+                                                dataTableObjects.refresh();
+                                                n2.toast.show({
+                                                    text: 'Your changes have been saved'
+                                                });
+                                            } else {
+                                                n2.message.error('Error getting linked objects: ' + event.message);
+                                                dataTableObjects.unmask();
+                                            }
+                                        });
+                                    }
+                                }
+                            });
+                        }
+                    }],
+                    data: function(page, rowsPerPage, sortColumn, sortAscending, callback) {
+                        // Get the linked objects then call the callback to load the data
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectListController.getLinkedObjects}', sortColumn, sortAscending, function(response, event) {
+                            if (event.statusCode === 200 && response) {
+                                callback(response, response.length);
+                                // Store the object names for use in the add object dialog
+                                objectNames = n2.util.map(response, function(obj) {
+                                    return obj.name;
+                                });
+                            } else {
+                                n2.message.error('Error getting linked objects: ' + event.message);
+                                callback([], 0);
+                            }
+                        }, {
+                            escape: false
+                        });
+                    }
+                });
+
+                var mapsDeferred = n2.util.promise();
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectListController.getMaps}', function(response, event) {
+                    if (event.statusCode === 200 && response) {
+                        // Get the name and id of the maps out of the response
+                        var maps = n2.util.map(response, function(map) {
+                            return {
+                                label: map.name,
+                                value: map.mapId
+                            };
+                        });
+
+                        mapsDeferred.resolve(maps);
+                    } else {
+                        n2.message.error('Error getting maps: ' + event.message);
+                        mapsDeferred.resolve([]);
+                    }
+                }, {
+                    escape: false
+                });
+
+                // Modal for adding an object
+                n2.cm.addComponent('select', {
+                    id: 'select-add-object-type',
+                    selector: '#select-add-object-type',
+                    label: 'Object type',
+                    required: true,
+                    data: function() {
+                        return n2.util.map(allObjectNames, function(objectName) {
+                            // Filter out the existing objects
+                            return objectNames.indexOf(objectName) === -1 ? objectName : null;
+                        });
+                    },
+                    cls: 'slds-size_1-of-1 slds-x-large-size_1-of-2'
+                });
+                n2.cm.addComponent('select', {
+                    id: 'select-add-object-default-map',
+                    selector: '#select-add-object-default-map',
+                    label: 'Default map',
+                    required: true,
+                    data: function() {
+                        return mapsDeferred;
+                    },
+                    cls: 'slds-size_1-of-1 slds-x-large-size_1-of-2'
+                });
+                n2.cm.addComponent('modal', {
+                    id: 'modal-add-object',
+                    selector: '#n2__btn-add-object',
+                    bodySelector: '#modal-add-object-body',
+                    heading: 'Add Object',
+                    handlers: {
+                        'ok': function() {
+                            n2.spinner.show();
+                            var values = n2.cm.getModalValues('modal-add-object');
+                            var objectName = values['select-add-object-type'];
+                            var defaultMapId = values['select-add-object-default-map'];
+                            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritoryObjectListController.createNewLinkedObject}', objectName, defaultMapId, function(response, event) {
+                                if (event.statusCode === 200 && response) {
+                                    n2.sf.util.navigate('{!Namespace}ClsTerritoryObjectEdit', 'objectid=' + encodeURIComponent(response));
+                                } else {
+                                    n2.spinner.hide();
+                                    n2.message.error('Error creating new object: ' + event.message);
+                                }
+                            });
+                        },
+                        'show': function() {
+                            n2.cm.refresh('select-add-object-type');
+                        }
+                    }
+                });
+            };
+        </script>
+        <script defer="defer" src="{!URLFOR($Resource.DEResources, 'scripts/ga.js')}"></script>
+    </head>
+
+    <div class="slds-scope n2__full-height">
+        <div class="n2__full-height">
+            <div class="n2-de-page n2-de-classifier-v1 n2_full-width">
+                <div class="n2-vertical-navigation n2-de-vertical-navigation n2_navigation slds-m-top_xx-large">
+                    <c:ClsNavigation pkgNamespace="{!Namespace}"/>
+                </div>
+                <div class="n2_main">
+                    <div class="n2-de-header slds-page-header slds-no-flex">
+                        <div class="slds-page-header__row">
+                            <div class="slds-page-header__col-title">
+                                <div class="slds-media slds-media_center">
+                                    <div class="slds-media__figure">
+                                    <span class="slds-icon_container">
+                                        <svg class="slds-icon n2_icon slds-icon_small" aria-hidden="true">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#standard_objects')}"/>
+                                        </svg>
+                                    </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <h1 title="Territories > Object Settings" class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate">Territories > Object Settings</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-page-header__col-actions">
+                                <div class="slds-page-header__controls">
+                                    <div class="slds-page-header__control">
+                                        <div class="n2_actions">
+                                            <a href="https://help.nc-squared.com/object-settings" target="_blank" class="n2_help-link slds-grid slds-grid_vertical-align-center">
+                                                <svg class="slds-icon slds-icon_x-small slds-m-right_xx-small slds-col slds-no-flex slds-icon-text-default" aria-hidden="true">
+                                                    <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#question')}"></use>
+                                                </svg>
+                                                <span class="slds-col">Help</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <article class="n2_content">
+                        <div class="slds-card__header slds-grid">
+                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                        <span class="slds-text-heading_small">Objects</span>
+                                    </h2>
+                                    <div class="slds-text-title">Which objects do you want to be processed for territories?</div>
+                                </div>
+                                <div class="slds-no-flex">
+                                    <span id="btn-add-object"></span>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="slds-card__body slds-card__body_inner">
+                            <span id="data-table-objects"></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div id="modal-add-object-body" class="slds-form slds-form_compound">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__group">
+                        <div class="slds-form-element__row">
+                            <span id="select-add-object-type"></span>
+                        </div>
+                        <div class="slds-form-element__row">
+                            <span id="select-add-object-default-map"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </html>
+
+</apex:page>

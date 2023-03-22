@@ -1,0 +1,110 @@
+<apex:page controller="WorkIt2.SessionTypeListController" extensions="WorkIt2.SessionTypeExtension" tabStyle="WorkIt2__Session_Type__c" title="Session Type Edit: Multiple Session Types">
+    <style type="text/css">
+        .workit.mgmt div.multiSelect {width:650px}
+        .workit.mgmt .multiSelect .options {float:left;}
+        .workit.mgmt .multiSelect .options select {width:250px}
+        .workit.mgmt .multiSelect .buttons {float:left; width:100px; margin-top:55px;text-align:center}
+        .workit.mgmt .multiSelect .buttons input {width:80px; margin-bottom:7px}
+    </style>
+    
+    <apex:sectionHeader subtitle="Multiple Session Types" title="Session Type Edit"/>
+    <apex:form >
+    <div class="workit mgmt">
+        
+        <apex:pageBlock mode="edit">
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Save" action="{!saveMassAction}"/>
+                <apex:commandButton value="Cancel" action="{!cancelMassAction}" immediate="true"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageMessages />
+            
+            <apex:pageBlockSection collapsible="false" columns="1">
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Field to Update"/>
+                    <apex:actionRegion >
+                    <apex:selectList size="1" value="{!updateField}" rendered="{!NOT(massActionSubmitted)}">
+                        <apex:actionSupport event="onchange" rerender="fields"/>
+                        <apex:selectOption itemValue="" itemLabel="--None--"/>
+                        <apex:selectOptions value="{!multiEditFieldOptions}"/>
+                    </apex:selectList>
+                    <apex:outputText value="{!updateField}" rendered="{!massActionSubmitted}"/>
+                    </apex:actionRegion>
+                </apex:pageBlockSectionItem>
+            
+
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection collapsible="false" columns="1" id="fields">
+                <apex:pageBlockSectionItem rendered="{!updateField='priority__c'}">
+                    <apex:outputLabel value="New Value"/>
+                    <apex:inputField value="{!st.WorkIt2__Priority__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!updateField='group__c'}">
+                    <apex:outputLabel value="New Value"/>
+                    <apex:inputField value="{!st.WorkIt2__Group__c}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!updateField='active__c'}">
+                    <apex:outputLabel value="New Value"/>
+                    <apex:inputField value="{!st.WorkIt2__Active__c}"/>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem rendered="{!updateField='objects__c'}">
+                    <apex:outputLabel value="New Value"/>
+                    <apex:outputPanel >
+                        <div class="multiSelect">
+                            <div class="options">
+                                <apex:selectList id="objSelLeft" multiselect="true" size="10" value="{!objValsLeft}">
+                                    <apex:selectOption itemValue="" itemLabel="Available" itemDisabled="true"/>
+                                    <apex:selectOptions value="{!availableObjects}"/>
+                                </apex:selectList>
+                            </div>
+                            <div  class="buttons">
+                                <apex:commandButton value="Add >>" action="{!addObj}" title="Add" rerender="objSelLeft, objSelRight"/>
+                                <br/>
+                                <apex:commandButton value="<< Remove" action="{!removeObj}" title="Remove" rerender="objSelLeft, objSelRight"/>         
+                            </div>
+                            <div class="options">    
+                                <apex:selectList id="objSelRight" multiselect="true" size="10" value="{!objValsRight}" >
+                                    <apex:selectOption itemValue="" itemLabel="Limited" itemDisabled="true" rendered="{!NOT(objGlobal)}"/>
+                                    <apex:selectOption itemValue="" itemLabel="Global" itemDisabled="true" rendered="{!objGlobal}"/>
+                                    <apex:selectOptions value="{!selectedObjects}"/>              
+                                </apex:selectList>    
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!updateField='contexts__c'}">
+                    <apex:outputLabel value="New Value"/>
+                    <apex:outputPanel >
+                        <div class="multiSelect">
+                            <div class="options">
+                                <apex:selectList id="ctxSelLeft" multiselect="true" size="10" value="{!ctxValsLeft}">
+                                    <apex:selectOption itemValue="" itemLabel="Available" itemDisabled="true"/>
+                                    <apex:selectOptions value="{!availableContexts}"/>
+                                </apex:selectList>
+                            </div>
+                            <div  class="buttons">
+                                <apex:commandButton value="Add >>" action="{!addCtx}" title="Add" rerender="ctxSelLeft, ctxSelRight"/>
+                                <br/>
+                                <apex:commandButton value="<< Remove" action="{!removeCtx}" title="Remove" rerender="ctxSelLeft, ctxSelRight"/>         
+                            </div>
+                            <div class="options">    
+                                <apex:selectList id="ctxSelRight" multiselect="true" size="10" value="{!ctxValsRight}" >
+                                    <apex:selectOption itemValue="" itemLabel="Limited" itemDisabled="true" rendered="{!NOT(ctxGlobal)}"/>
+                                    <apex:selectOption itemValue="" itemLabel="Global" itemDisabled="true" rendered="{!ctxGlobal}"/>
+                                    <apex:selectOptions value="{!selectedContexts}"/>              
+                                </apex:selectList>    
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>            
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </div>
+    </apex:form>        
+</apex:page>

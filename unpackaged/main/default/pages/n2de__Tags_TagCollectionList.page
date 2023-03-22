@@ -1,0 +1,71 @@
+<apex:page controller="n2de.Tags_TagCollectionList_Controller" tabStyle="Distribution_Tags__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Tag Collection List" action="{!prInit}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+                window.addEventListener('load', function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}" attrCurrentUserId="{!$User.Id}"/>
+                    <c:PageContext />
+
+                    const tagCollections = new n2.dataProvider.VisualForce({
+                        id: 'get-tag-collections',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagCollectionList_Controller.getTagCollections}'
+                            }
+                        }
+                    });
+
+                    const getTagCollectionUsage = new n2.dataProvider.VisualForce({
+                        id: 'get-tag-collection-usage',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagCollectionList_Controller.getTagCollectionUsage}'
+                            }
+                        }
+                    });
+
+                    const addTagCollection = new n2.dataProvider.VisualForce({
+                        id: 'add-tag-collection',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Tags_TagCollectionList_Controller.createTagCollection}'
+                            }
+                        }
+                    });
+
+                    const editTagCollection = new n2.dataProvider.VisualForce({
+                        id: 'edit-tag-collection',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Tags_TagCollectionList_Controller.editTagCollection}'
+                            }
+                        }
+                    });
+
+                    const deleteTagCollections = new n2.dataProvider.VisualForce({
+                        id: 'delete-tag-collections',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Tags_TagCollectionList_Controller.deleteTagCollections}',
+                                config: {
+                                    timeout: 120000
+                                }
+                            }
+                        }
+                    });
+
+                    const tagCollectionListPage = new n2.de.page.tags.TagCollectionList({
+                        id: 'tags-tag-collection-list'
+                    });
+                    tagCollectionListPage.render();
+                });
+            </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

@@ -20,6 +20,30 @@
         <template>Technical_Support_Email_Alerts/Closed_Case_Perfect_5_Survey_1675473793746</template>
     </alerts>
     <outboundMessages>
+        <fullName>TSSurvey_Perfect_5</fullName>
+        <apiVersion>57.0</apiVersion>
+        <description>It&#39;s called when a perfect 5 is returned</description>
+        <endpointUrl>https://zapier.com/hooks/catch/opcs6p/</endpointUrl>
+        <fields>Account__c</fields>
+        <fields>Additional_Comment_in_regards_to_support__c</fields>
+        <fields>Case_Number__c</fields>
+        <fields>Case_Owner__c</fields>
+        <fields>Case__c</fields>
+        <fields>CreatedById</fields>
+        <fields>CreatedDate</fields>
+        <fields>Date_Case_was_Closed__c</fields>
+        <fields>Date_survey_submitted__c</fields>
+        <fields>Id</fields>
+        <fields>Name</fields>
+        <fields>Origin__c</fields>
+        <fields>Zapier_Survey_Account_Name__c</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>api@brightcove.com</integrationUser>
+        <name>TSSurvey - Perfect 5</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
         <fullName>TS_Survey_Low_Score_Alert</fullName>
         <apiVersion>57.0</apiVersion>
         <description>Low Score Alert</description>

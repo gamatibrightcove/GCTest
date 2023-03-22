@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Select display color. --></help>
+        <label><!-- Attribute1 --></label>
+        <name>JBCXM__Attribute1__c</name>
+    </CustomFieldTranslation>

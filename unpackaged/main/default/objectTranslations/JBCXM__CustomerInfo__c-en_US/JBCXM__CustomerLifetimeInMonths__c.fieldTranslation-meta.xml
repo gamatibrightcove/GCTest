@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This is a formula field that calculates the lifetime of a customer in Months. --></help>
+        <label><!-- Customer Lifetime in Months --></label>
+        <name>JBCXM__CustomerLifetimeInMonths__c</name>
+    </CustomFieldTranslation>

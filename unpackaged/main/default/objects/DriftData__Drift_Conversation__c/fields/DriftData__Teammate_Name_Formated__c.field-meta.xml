@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Teammate_Name_Formated__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A lookup of the Drift Conversation_Teammate field which replaces the null (-) value with “Bot Only” to add more context to reports and dashboards.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(DriftData__Teammate__r.FirstName +  DriftData__Teammate__r.LastName), &quot;Bot Only&quot;, DriftData__Teammate__r.FirstName + &quot; &quot; +  DriftData__Teammate__r.LastName)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>A lookup of the Drift Conversation_Teammate field which replaces the null (-) value with “Bot Only” to add more context to reports and dashboards.</inlineHelpText>
+    <label>Teammate (First) (Reports Only)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

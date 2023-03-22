@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Date &amp; time that the DE assignment of this opportunity was last rejected --></help>
+        <label><!-- Last rejected --></label>
+        <name>n2de__Last_rejected__c</name>
+    </CustomFieldTranslation>

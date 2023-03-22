@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Objective --></label>
+        <name>JBCXM__Objective__c</name>
+        <relationshipLabel><!-- SPSharingAssociations --></relationshipLabel>
+    </CustomFieldTranslation>

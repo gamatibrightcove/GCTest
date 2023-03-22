@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paperwork_Product_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Product_Type__c == &quot;Overage Rate&quot; || (SBQQ__ProductFamily__c == &quot;Rate Cards&quot; &amp;&amp; NOT(SBQQ__Bundle__c)), &quot;Overage Rate&quot;, IF(TEXT(SBQQ__SubscriptionType__c) == &quot;Renewable&quot;, &quot;Renewable&quot;, &quot;One-Time&quot; ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Paperwork Product Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Meeting_Booked__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>True if a meeting was booked during the Drift conversation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>True if a meeting was booked during the Drift conversation.</inlineHelpText>
+    <label>Meeting Booked</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

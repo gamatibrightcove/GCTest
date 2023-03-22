@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The formula field containing owner Id that will be used for dynamic distribution of this object --></help>
+        <label><!-- Dynamic owner formula --></label>
+        <name>n2de__Dynamic_owner_field_name__c</name>
+    </CustomFieldTranslation>

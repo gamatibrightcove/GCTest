@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Is a forced reset of the load balanced values of all team members required? This will usually happen when switching between load balancing by count and record value --></help>
+        <label><!-- Is load balanced reset required --></label>
+        <name>n2de__Is_forced_load_balance_reset__c</name>
+    </CustomFieldTranslation>

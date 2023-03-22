@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Upon a successful match, D&amp;B Connect populates this field that links the Account record to a specific D-U-N-S Number for display of a custom object with D&amp;B data. --></help>
+        <label><!-- D&amp;B Connect Company Profile --></label>
+        <name>DNBConnect__D_B_Connect_Company_Profile__c</name>
+        <relationshipLabel><!-- DBConnectAccountCompanyProfile --></relationshipLabel>
+    </CustomFieldTranslation>

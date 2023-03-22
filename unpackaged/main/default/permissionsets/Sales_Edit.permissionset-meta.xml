@@ -78,6 +78,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.SBQQ__DefaultOpportunity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SBQQ__IgnoreParentContractedPrices__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SBQQ__PriceHoldEnd__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.Sales_Division_2__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -233,6 +248,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.et4ae5__Mobile_Country_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -374,6 +394,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Proposal_Document__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.SBQQ__PrimaryQuote__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

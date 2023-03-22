@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Is_stick_on_OOO__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked, sticky assignment rules will be retained when a team member is out of office. If unchecked and a team member is out of office, an active sticky assignment rule will be cancelled and the object distributed to the next available member.</inlineHelpText>
+    <label>Retain sticky on OoO</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

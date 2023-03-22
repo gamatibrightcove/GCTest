@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- NPS Score entered by the user. --></help>
+        <label><!-- NPS Score --></label>
+        <name>JBCXM__NPSScore__c</name>
+    </CustomFieldTranslation>

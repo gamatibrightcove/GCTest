@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, trigger distributors will respect distribution hours and assign to the default owner when no team members are available. --></help>
+        <label><!-- Triggers respect distribution hours --></label>
+        <name>n2de__Is_triggers_respect_distribution_hours__c</name>
+    </CustomFieldTranslation>

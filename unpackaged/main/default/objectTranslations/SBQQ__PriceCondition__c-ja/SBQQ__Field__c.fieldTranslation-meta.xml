@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>対象オブジェクトで項目を選択します。</help>
+        <label><!-- Field --></label>
+        <name>SBQQ__Field__c</name>
+        <picklistValues>
+            <masterLabel>Initial_Term_Length__c</masterLabel>
+            <translation><!-- Initial_Term_Length__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is_Legacy_Product__c</masterLabel>
+            <translation><!-- Is_Legacy_Product__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal_Notes__c</masterLabel>
+            <translation><!-- Legal_Notes__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>商品コード</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Type__c</masterLabel>
+            <translation><!-- Product_Type__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Bundle__c</masterLabel>
+            <translation><!-- SBQQ__Bundle__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__EffectiveQuantity__c</masterLabel>
+            <translation><!-- SBQQ__EffectiveQuantity__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Status__c</masterLabel>
+            <translation><!-- SBQQ__Status__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__SubscriptionType__c</masterLabel>
+            <translation><!-- SBQQ__SubscriptionType__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Type__c</masterLabel>
+            <translation><!-- SBQQ__Type__c --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

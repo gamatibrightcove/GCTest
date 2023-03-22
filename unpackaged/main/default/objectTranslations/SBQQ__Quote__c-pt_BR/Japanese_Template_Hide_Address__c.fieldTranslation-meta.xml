@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Hide the address from the Japanese template header. --></help>
+        <label><!-- Japanese Template - Hide Address --></label>
+        <name>Japanese_Template_Hide_Address__c</name>
+    </CustomFieldTranslation>

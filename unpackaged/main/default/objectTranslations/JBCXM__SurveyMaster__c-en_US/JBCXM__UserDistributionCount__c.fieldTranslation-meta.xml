@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This represents number of Users to sent the Survey. --></help>
+        <label><!-- User Distribution Count --></label>
+        <name>JBCXM__UserDistributionCount__c</name>
+    </CustomFieldTranslation>

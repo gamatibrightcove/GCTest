@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The method used to control the maximum number of objects that are distributed to members of the team. --></help>
+        <label><!-- Cap type --></label>
+        <name>n2de__Type__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half hourly</masterLabel>
+            <translation><!-- Half hourly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation><!-- Hourly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Load balanced</masterLabel>
+            <translation><!-- Load balanced --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

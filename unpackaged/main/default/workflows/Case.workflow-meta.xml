@@ -248,6 +248,26 @@
         <template>Technical_Support/Notice_Test_Email_alert</template>
     </alerts>
     <fieldUpdates>
+        <fullName>Case_Missed_SLA</fullName>
+        <field>Missed_SLA__c</field>
+        <literalValue>1</literalValue>
+        <name>Case - Missed SLA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Missed_SLA_date_time</fullName>
+        <field>Missed_SLA_date_time__c</field>
+        <formula>NOW()</formula>
+        <name>Case - Missed SLA date time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>ChangePriorityToHigh</fullName>
         <field>Priority</field>
         <literalValue>High</literalValue>
@@ -257,6 +277,102 @@
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WorkIt2__WorkIt_Case_Overtime_Level_Green</fullName>
+        <field>WorkIt2__Color__c</field>
+        <literalValue>Green</literalValue>
+        <name>WorkIt! Case Overtime Level: Green</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WorkIt2__WorkIt_Case_Overtime_Level_Red</fullName>
+        <field>WorkIt2__Color__c</field>
+        <literalValue>Red</literalValue>
+        <name>WorkIt! Case Overtime Level: Red</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WorkIt2__WorkIt_Case_Overtime_Level_Yellow</fullName>
+        <field>WorkIt2__Color__c</field>
+        <literalValue>Yellow</literalValue>
+        <name>WorkIt! Case Overtime Level: Yellow</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WorkIt2__WorkIt_Set_Case_Allow_Update_to_On</fullName>
+        <field>WorkIt2__Allow_Update__c</field>
+        <literalValue>1</literalValue>
+        <name>WorkIt! Set Case &quot;Allow Update&quot; to On</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WorkIt2__WorkIt_Set_Closed_with_Package_to_On</fullName>
+        <field>WorkIt2__Closed_with_Package__c</field>
+        <literalValue>1</literalValue>
+        <name>WorkIt! Set &quot;Closed with Package&quot; to On</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WorkIt2__WorkIt_Set_Don_t_Time_to_Off</fullName>
+        <field>WorkIt2__Dont_Time__c</field>
+        <literalValue>0</literalValue>
+        <name>WorkIt! Set &quot;Don&#39;t Time&quot; to Off</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WorkIt2__WorkIt_Set_Don_t_Time_to_On</fullName>
+        <field>WorkIt2__Dont_Time__c</field>
+        <literalValue>1</literalValue>
+        <name>WorkIt! Set &quot;Don&#39;t Time&quot; to On</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>CaseEscalation_New_Comment</fullName>
+        <apiVersion>57.0</apiVersion>
+        <description>A &#39;Case Escalation&#39; has a new comment</description>
+        <endpointUrl>https://hooks.zapier.com/hooks/catch/466295/o93a0mr/</endpointUrl>
+        <fields>AccountId</fields>
+        <fields>CaseNumber</fields>
+        <fields>Comments</fields>
+        <fields>ContactId</fields>
+        <fields>Id</fields>
+        <fields>Latest_Comment__c</fields>
+        <fields>New_Comment__c</fields>
+        <fields>Owned_New_Comment__c</fields>
+        <fields>OwnerId</fields>
+        <fields>ParentId</fields>
+        <fields>Status</fields>
+        <fields>Subject</fields>
+        <fields>Zapier_Account_Name__c</fields>
+        <fields>Zapier_Case_Owner__c</fields>
+        <fields>Zapier_Owner_Email__c</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>api@brightcove.com</integrationUser>
+        <name>CaseEscalation - New Comment</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
     <outboundMessages>
         <fullName>Case_Add_CS_Leadership_to_Escalation</fullName>
         <apiVersion>56.0</apiVersion>
@@ -290,6 +406,27 @@
         <includeSessionId>false</includeSessionId>
         <integrationUser>api@brightcove.com</integrationUser>
         <name>Case Escalation - Multiple Escalations</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>Case_Missed_SLA_Follow_up_needed</fullName>
+        <apiVersion>57.0</apiVersion>
+        <description>Fired when the SLA is missed</description>
+        <endpointUrl>https://hooks.zapier.com/hooks/catch/466295/e0od4n/</endpointUrl>
+        <fields>Account_Account_ID__c</fields>
+        <fields>CaseNumber</fields>
+        <fields>Case_Owner_Manager__c</fields>
+        <fields>Id</fields>
+        <fields>Priority</fields>
+        <fields>Status</fields>
+        <fields>Subject</fields>
+        <fields>Thread_ID__c</fields>
+        <fields>Zapier_Account_Name__c</fields>
+        <fields>Zapier_Case_Owner__c</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>api@brightcove.com</integrationUser>
+        <name>Case - Missed SLA Follow up needed</name>
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
@@ -430,4 +567,38 @@ https://hooks.zapier.com/hooks/catch/466295/obr4v78/</description>
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
+    <rules>
+        <fullName>WorkIt2__WorkIt%21 Case Close</fullName>
+        <actions>
+            <name>WorkIt2__WorkIt_Set_Closed_with_Package_to_On</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>WorkIt2__WorkIt_Set_Don_t_Time_to_On</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Makes WorkIt! stop timing a case when it&#39;s closed.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WorkIt2__WorkIt%21 Case Open</fullName>
+        <actions>
+            <name>WorkIt2__WorkIt_Set_Don_t_Time_to_Off</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Makes WorkIt! start timing a case when it&#39;s opened.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
 </Workflow>

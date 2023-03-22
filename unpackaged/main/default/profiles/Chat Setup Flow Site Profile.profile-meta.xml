@@ -6,6 +6,81 @@
         <enabled>true</enabled>
     </pageAccesses>
     <applicationVisibilities>
+        <application>DNBConnect__DB_Connect</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>DNBConnect__DNB_Connect_Classics</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>DNBConnect__DNB_Connect_LTNG</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>DOZISF__ZoomInfo</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>E2CP__Email_to_Case_Premium</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>E2CP__Email_to_Case_Premium_LEX</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Gong__Gong_Interaction</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Gong__Gong_Interaction_Classic</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>JBCXM__JBara</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Loopio__Loopio</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>SBQQ__QuoteQuickly</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>WorkIt2__WorkIt</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>dfsle__DocuSignForSalesforceCore</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>n2de__Distribution_Engine</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>sbaa__AdvancedApprovals</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>standard__Community</application>
         <default>false</default>
         <visible>false</visible>
@@ -923,6 +998,206 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Product2.StockKeepingUnit</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__AttributeSet__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__BlockPrice__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__ConfigurationAttribute__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__ConfigurationRule__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__Cost__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__CustomActionCondition__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__CustomAction__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__CustomScript__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__Dimension__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__DiscountCategory__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__DiscountSchedule__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__DiscountTier__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__ErrorCondition__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__LineColumn__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__Localization__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__LookupData__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__LookupQuery__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__OptionConstraint__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__PriceAction__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__PriceCondition__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__PriceRule__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__PricingGuidanceTier__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__PricingGuidance__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__ProcessInputCondition__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__ProcessInput__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__ProductAction__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__ProductAttributeSet__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__ProductAttribute__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__ProductFeature__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__ProductOption__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__ProductRule__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__QuoteProcess__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__QuoteTemplate__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__QuoteTerm__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__SearchFilter__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__SummaryVariable__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__TemplateContent__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__TemplateSection__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__TermCondition__c.GearsetExternalId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__Theme__c.GearsetExternalId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2551,6 +2826,432 @@
         <layout>CaseClose-Close Case Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>DNBConnect__DNB_Connect_Setting__mdt-DNBConnect__DNB Connect Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DNBConnect__D_B_Connect_Company_Profile__c-DNBConnect__D%26B Connect Company Profile Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DNBConnect__D_B_Connect_Contact_Profile__c-DNBConnect__D%26B Connect Contact Profile Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DNBConnect__D_B_Connect_Setting__c-DNBConnect__D%26B Connect Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DNBConnect__DnBAccountMetadata__c-DNBConnect__D%26B Account Metadata Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DNBConnect__Language__mdt-DNBConnect__Language Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DNBConnect__SBC_Setting__mdt-DNBConnect__SBC Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DOZISF__JWT_Setting__mdt-DOZISF__JWT Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DOZISF__ZoomInfo_Intent__c-DOZISF__ZoomInfo Intent Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DOZISF__ZoomInfo_Scoop__c-DOZISF__ZoomInfo Scoop Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DOZISF__ZoomInfo__c-DOZISF__ZoomInfo Contact</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DOZISF__ZoomInfo__c-DOZISF__ZoomInfo Company</layout>
+        <recordType>DOZISF__ZoomInfo__c.DOZISF__Company</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DOZISF__ZoomInfo__c-DOZISF__ZoomInfo Contact</layout>
+        <recordType>DOZISF__ZoomInfo__c.DOZISF__Contact</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DOZISF__ZoomInfo__c-DOZISF__ZoomInfo Contact</layout>
+        <recordType>DOZISF__ZoomInfo__c.DOZISF__ZoomInfo</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DriftData__Drift_API_Setting__mdt-DriftData__Drift API Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DriftData__Drift_Conversation__c-DriftData__Drift Conversation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DriftData__Drift_Opportunity_Conversation__c-DriftData__Drift Opportunity Conversation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Canned_Comment_Filter__c-E2CP__Canned Comment Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Canned_Comment__c-E2CP__Canned Comment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Case_Comment_Draft__c-E2CP__Case Comment Draft Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Configuration_Item__mdt-E2CP__Configuration Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Configuration_Section__mdt-E2CP__Configuration Section Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__New_Comment_Action__c-E2CP__New Comment Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Widespread_Issue_Communication__c-E2CP__Widespread Issue Communication Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Widespread_Issue_Report__c-E2CP__Widespread Issue Report Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Widespread_Issue_Solution_Vote__c-E2CP__Widespread Issue Solution Vote Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Widespread_Issue_Solution__c-E2CP__Widespread Issue Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>E2CP__Widespread_Issue__c-E2CP__Widespread Issue Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Field_Trip__Field_Analysis__c-Field_Trip__Field Analysis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Field_Trip__Field_Analytic_Config__c-Field_Trip__Field Analytic Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Field_Trip__Object_Analysis__c-Field_Trip__Object Analysis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GetFeedback_Aut__Answer__c-GetFeedback_Aut__Answer Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GetFeedback_Aut__Response__c-GetFeedback_Aut__Response Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GetFeedback_Aut__Survey__c-GetFeedback_Aut__Survey Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Agenda__c-Gong__Agenda Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Call_Invitee__c-Gong__Invitee Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Call_Participant__c-Gong__Call Participant Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Call_Stat__c-Gong__Call Stat Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Gong_Call__c-Gong__Gong Call Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Gong_Scorecard__c-Gong__Gong Scorecard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Note__c-Gong__Note Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Related_Account__c-Gong__Related Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Related_Contact__c-Gong__Related Contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Related_Lead__c-Gong__Related Lead Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Related_Opportunity__c-Gong__Related Opportunity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Topic__c-Gong__Topic Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Gong__Tracker__c-Gong__Tracker Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__ActionTemplates__c-JBCXM__Action Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Alert__c-JBCXM__Alert Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__AppEvents__c-JBCXM__App Events Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__ApplicationSettings__c-JBCXM__Application Settings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__AssociatedRecord__c-JBCXM__AssociatedRecord Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__AutomatedAlertRules__c-JBCXM__Automated Alert Rules Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__C360Sections__c-JBCXM__C360 Sections Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__CSEvent__c-JBCXM__CSEvent Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__CSTask__c-JBCXM__CSTask Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__CTAGroup__c-JBCXM__CTA Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__CTATypes__c-JBCXM__CTA Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__CTA__c-JBCXM__Call To Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__CustomerFeatures__c-JBCXM__Customer Features Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__CustomerInfo__c-JBCXM__Customer Info Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__CustomerInstances__c-JBCXM__CustomerInstances Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__DashboardComponent__c-JBCXM__DashboardComponent Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__DashboardContainer__c-JBCXM__DashboardContainer Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Dashboard__c-JBCXM__Dashboard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Features__c-JBCXM__Features Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSCockpitConfig__c-JBCXM__Cockpit Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSCockpitView__c-JBCXM__GSCockpitView Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSColorConfig__c-JBCXM__GS Color Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSCustomerProducts__c-JBCXM__GS Customer Products Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSEntityConfigMapping__c-JBCXM__Entity Config Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSFeatureSettings__c-JBCXM__Feature Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSFileLink__c-JBCXM__GSFileLink Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSJobData__c-JBCXM__GS Job Data Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSLRMConfig__c-JBCXM__GSLRMConfig Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSLRMHeader__c-JBCXM__GSLRMHeader Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSLRMLines__c-JBCXM__GSLRMLines Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSLRMMapping__c-JBCXM__GSLRMMapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSLanguage__c-JBCXM__GSLanguage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSLayout__c-JBCXM__GS Layout Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSMetaInfo__c-JBCXM__GS Meta Info Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSNPSTextAnalytics__c-JBCXM__NPS Text Analytics Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSProduct__c-JBCXM__GSProduct Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSRelationshipAssociation__c-JBCXM__Relationship Association Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSRelationshipContacts__c-JBCXM__Relationship Contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSRelationshipSection__c-JBCXM__Relationship Section Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSRelationshipType__c-JBCXM__Relationship Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSRelationship__c-JBCXM__Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSReportCategory__c-JBCXM__Report Category Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSSurveyTextAnalytics__c-JBCXM__Survey Text Analytics Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__GSTranslation__c-JBCXM__Translation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__JobTracker__c-JBCXM__JobTracker Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Log__c-JBCXM__Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Milestone__c-JBCXM__Milestone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Notification_Subscription__c-JBCXM__Notification Subscription Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__OpportunityFieldMap__c-JBCXM__Opportunity Field Map Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__OrderTransactionMap__c-JBCXM__PickList Map Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__PageInfo__c-JBCXM__PageInfo Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Permission__c-JBCXM__Permission Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__PickList__c-JBCXM__PickList Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__PlaybookInfo__c-JBCXM__Playbook Info Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__PlaybookTasks__c-JBCXM__Playbook Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Playbook__c-JBCXM__Playbook Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Publish_Content__c-JBCXM__Publish Content Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__RelationshipSponsorTrackingHistory__c-JBCXM__RelationshipSponsorTrackingHistory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__ReportSection__c-JBCXM__ReportSection Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Report__c-JBCXM__Report Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SPSharingAssociation__c-JBCXM__SPSharingAssociation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__ScorecardFact__c-JBCXM__Scorecard Fact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__ScorecardHistory__c-JBCXM__Scorecard History Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__ScorecardMetric__c-JBCXM__Scorecard Metric Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__ScoringSchemeDefinition__c-JBCXM__Scorecard Scoring Scheme Definition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__ScoringScheme__c-JBCXM__Scorecard Scoring Scheme Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SponsorTrackingHistory__c-JBCXM__SponsorTrackingHistory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SponsorTracking__c-JBCXM__SponsorTracking Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__StatePreservation__c-JBCXM__User state preservation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Subscription_Frequency__c-JBCXM__Subscription Frequency Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Subscription_Preferences__c-JBCXM__Subscription Preferences Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SuccessPlanTemplate__c-JBCXM__Success Plan Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SurveyAllowedAnswers__c-JBCXM__Survey Allowed Answers Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SurveyDistributionSchedule__c-JBCXM__Survey Distribution Schedule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SurveyLogicRules__c-JBCXM__SurveyLogicRules Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SurveyMaster__c-JBCXM__Survey Master Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SurveyParticipant__c-JBCXM__Survey Participant Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SurveyQuestion__c-JBCXM__Survey Question Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SurveyResponseTask__c-JBCXM__Survey Response Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SurveyResponse__c-JBCXM__Survey Response Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__SurveyUserAnswer__c-JBCXM__Survey User Answer Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Survey__c-JBCXM__Survey Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__TransHeader__c-JBCXM__Transactions Header Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__TransLines__c-JBCXM__Transaction Lines Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__TransactionHeader__c-JBCXM__Transaction Header Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__TransactionLines__c-JBCXM__Transaction Lines Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__TransactionType__c-JBCXM__Transaction Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__UIViews__c-JBCXM__UI Views Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__UsageData__c-JBCXM__Usage Data Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__UsageTracker__c-JBCXM__Usage Tracker Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__UserAdoption__c-JBCXM__User Adoption Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__User_Subscription__c-JBCXM__User Subscription Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JBCXM__Widgets__c-JBCXM__Widgets Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>JCFS__AutoSyncJob__c-JCFS__AutoSyncJob Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Live_Event_Coverage_Timing__c-Live Event Coverage Timing Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2635,6 +3336,18 @@
         <recordType>Live_Event_Coverage__c.X24_7_Channel_Monitoring</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Loopio__Account_Mapping__mdt-Loopio__Account Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Loopio__Loopio_Account_Project__c-Loopio__Loopio Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Loopio__Loopio_Project__c-Loopio__Loopio Project Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Loopio__Opportunity_Mapping__mdt-Loopio__Opportunity Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2659,6 +3372,242 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>OpportunitySplit-Opportunity Split Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__AttributeSet__c-SBQQ__Attribute Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__AttributeValue__c-SBQQ__Attribute Value Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__BlockPrice__c-SBQQ__Block Price Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ColumnMetadata__c-SBQQ__Column Metadata Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ConfigurationAttribute__c-SBQQ__Configuration Attribute Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ConfigurationAttribute__c-SBQQ__Configuration Attribute Layout</layout>
+        <recordType>SBQQ__ConfigurationAttribute__c.SBQQ__Configuration_Attribute</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ConfigurationAttribute__c-SBQQ__Global Attribute Layout</layout>
+        <recordType>SBQQ__ConfigurationAttribute__c.SBQQ__Global_Attribute</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ConfigurationRule__c-SBQQ__Configuration Rule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ContractedPrice__c-SBQQ__Contracted Price Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__Cost__c-SBQQ__Cost Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__CustomActionCondition__c-SBQQ__Custom Action Condition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__CustomAction__c-SBQQ__Custom Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__CustomScript__c-SBQQ__Custom Script Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__Dimension__c-SBQQ__Price Dimension Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__DiscountCategory__c-SBQQ__Discount Category Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__DiscountSchedule__c-SBQQ__Discount Schedule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__DiscountTier__c-SBQQ__Discount Schedule Tier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ErrorCondition__c-SBQQ__Error Condition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__FavoriteProduct__c-SBQQ__Favorite Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__FavoriteShare__c-SBQQ__Favorite Share Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__Favorite__c-SBQQ__Favorite Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__FieldSetMetadata__c-SBQQ__FieldSet Metadata Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ImportColumn__c-SBQQ__Import Column Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ImportFormat__c-SBQQ__Import Format Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__InstallProcessorLog__c-SBQQ__Install Processor Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__LineColumn__c-SBQQ__Line Column Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__Localization__c-SBQQ__Localization Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__LookupData__c-SBQQ__Lookup Data Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__LookupQuery__c-SBQQ__Lookup Query Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__OptionConstraint__c-SBQQ__Option Constraint Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__OrderItemConsumptionRate__c-SBQQ__Order Item Consumption Rate Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__OrderItemConsumptionSchedule__c-SBQQ__Order Product Consumption Schedule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__PriceAction__c-SBQQ__Price Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__PriceCondition__c-SBQQ__Price Condition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__PriceRule__c-SBQQ__Price Rule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__PriceSchedule__c-SBQQ__Price Schedule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__PriceTier__c-SBQQ__Price Tier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__PricingGuidanceTier__c-SBQQ__Pricing Guidance Tier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__PricingGuidance__c-SBQQ__Pricing Guidance Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ProcessInputCondition__c-SBQQ__Process Input Condition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ProcessInputValue__c-SBQQ__Process Input Values Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ProcessInput__c-SBQQ__Process Input Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ProductAction__c-SBQQ__Product Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ProductAttributeSet__c-SBQQ__Product Attribute Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ProductAttribute__c-SBQQ__Product Attribute Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ProductFeature__c-SBQQ__Product Feature Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ProductOption__c-SBQQ__Product Option Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__ProductRule__c-SBQQ__Product Rule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__QuoteDocument__c-SBQQ__Quote Document Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__QuoteLineConsumptionRate__c-SBQQ__Quote Line Consumption Rate Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__QuoteLineConsumptionSchedule__c-SBQQ__Quote Line Consumption Schedule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__QuoteLineGroup__c-SBQQ__Quote Line Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__QuoteLinePricingGuidance__c-SBQQ__Quote Line Pricing Guidance Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__QuoteLine__c-SBQQ__Quote Line Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__QuoteProcess__c-SBQQ__Quote Process Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__QuoteTemplate__c-SBQQ__Quote Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__QuoteTerm__c-SBQQ__Quote Term Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__Quote__c-SBQQ__Quote Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__RecordJob__c-SBQQ__Record Job Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__RelatedContent__c-SBQQ__Related Content Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__SearchFilter__c-SBQQ__Search Filter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__SearchIndex__c-SBQQ__Search Index Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__SolutionGroup__c-SBQQ__SolutionGroup Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__SubscribedAsset__c-SBQQ__Subscribed Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__SubscribedQuoteLine__c-SBQQ__Subscribed Quote Line Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__SubscriptionConsumptionRate__c-SBQQ__Subscription Consumption Rate Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__SubscriptionConsumptionSchedule__c-SBQQ__Subscription Consumption Schedule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__Subscription__c-SBQQ__Subscription Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__SummaryVariable__c-SBQQ__Summary Variable Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__TaxExemptionCertificate__c-SBQQ__Tax Exemption Certificate Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__TemplateContent__c-SBQQ__Template Content Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__TemplateSection__c-SBQQ__Template Section Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__TermCondition__c-SBQQ__Term Condition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__Theme__c-SBQQ__Theme Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__TimingLog__c-SBQQ__Timing Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__UpgradeSource__c-SBQQ__Upgrade Source Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__WebQuoteLine__c-SBQQ__Web Quote Line Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SBQQ__WebQuote__c-SBQQ__Web Quote Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Sales_Division__mdt-Sales Division Layout</layout>
@@ -2939,6 +3888,18 @@
         <layout>WorkBadgeDefinition-Badge Layout 192</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>WorkIt2__Case_Time_Total__c-WorkIt2__Case Time Total Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkIt2__Session_Type__c-WorkIt2__Session Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkIt2__Time_Entry__c-WorkIt2__Time Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkIt2__Timing__c-WorkIt2__Timing Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>WorkOrder-Work Order Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2994,6 +3955,361 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>WorkAccess-Access Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__AgreementConfiguration__c-dfsle__Agreement Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__AuthProvider__mdt-dfsle__DocuSign Auth Provider Metadata Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__BulkList__c-dfsle__DocuSign Bulk Send List Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__BulkStatus__c-dfsle__DocuSign Bulk Send Status Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__CustomParameterMap__c-dfsle__DocuSign Custom Parameter Map Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__CustomRecipient__c-dfsle__DocuSign Custom Recipient Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__Document__c-dfsle__DocuSign Envelope Document Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__EnvelopeConfigurationDocument__c-dfsle__DocuSign Envelope Configuration Document Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__EnvelopeConfigurationRecipient__c-dfsle__DocuSign Envelope Configuration Recipient Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__EnvelopeConfiguration__c-dfsle__DocuSign Envelope Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__EnvelopeLocalization__c-dfsle__DocuSign Localization Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__EnvelopeStatus__c-dfsle__DocuSign Envelope Status Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__Envelope__c-dfsle__DocuSign Envelope Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__Environment__mdt-dfsle__DocuSign Environment Metadata Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__GenTemplate__c-dfsle__DocuSign Gen Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__Localization__mdt-dfsle__DocuSign Localization Metadata Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__Log__c-dfsle__DocuSign Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__Organization__mdt-dfsle__DocuSign Organization Metadata Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__RecipientStatus__c-dfsle__DocuSign Recipient Status Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dfsle__Recipient__c-dfsle__DocuSign Envelope Recipient Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__AggregateLink__c-et4ae5__Aggregate Link Level Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Automated_Send__c-et4ae5__Inactive Send Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Automated_Send__c-et4ae5__Active Send Layout</layout>
+        <recordType>et4ae5__Automated_Send__c.et4ae5__Active</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Automated_Send__c-et4ae5__Inactive Send Layout</layout>
+        <recordType>et4ae5__Automated_Send__c.et4ae5__Inactive</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Business_Unit__c-et4ae5__Business Unit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Campaign_Member_Configuration__c-et4ae5__Campaign Member Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Configuration__c-et4ae5__Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Email_Linkage__c-et4ae5__Email Linkage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__IndividualEmailResult__c-et4ae5__Individual Email Result Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__IndividualLink__c-et4ae5__Individual Link Level Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__MCOAuthClientDetail__mdt-et4ae5__MC OAuth Client Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__MC_CDC_Journey__c-et4ae5__MC CDC Journey Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SMSDefinition__c-et4ae5__Mobile Send Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SMSDefinition__c-et4ae5__Queued Mobile Send Layout</layout>
+        <recordType>et4ae5__SMSDefinition__c.et4ae5__Queued_SMS_Definition</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SMSDefinition__c-et4ae5__Mobile Send Layout</layout>
+        <recordType>et4ae5__SMSDefinition__c.et4ae5__SMS_Definition</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SMSJunction__c-et4ae5__SMS Junction Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SendDefinition__c-et4ae5__Trackable Send Definition Layout 2015-02</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SendDefinition__c-et4ae5__Trackable Send Definition Layout 2015-02</layout>
+        <recordType>et4ae5__SendDefinition__c.et4ae5__Queued_Send_Definition</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SendDefinition__c-et4ae5__Trackable Send Definition Layout 2015-02</layout>
+        <recordType>et4ae5__SendDefinition__c.et4ae5__Send_Definition</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SendDefinition__c-et4ae5__Trackable Send Definition Layout 2015-02</layout>
+        <recordType>et4ae5__SendDefinition__c.et4ae5__Trackable_Send_Definition</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SendJunction__c-et4ae5__Send Junction Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__SupportRequest__c-et4ae5__Support Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__Triggered_Send_Execution__c-et4ae5__Triggered Send Execution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__UEBU__c-et4ae5__User Enabled Business Unit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>et4ae5__abTest__c-et4ae5__AB Test Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Async_assigner_job__c-n2de__Async assigner job Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Capping_Pattern__c-n2de__Capping Pattern Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__DE_Configuration__mdt-n2de__DE Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distribution_engine_details__c-n2de__Distribution Engine details Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distribution_hours__c-n2de__Hours of Distribution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distribution_last_assignee__c-n2de__Distribution last assignee Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distribution_log__c-n2de__Distribution log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distribution_log_action__c-n2de__Distribution log action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distribution_reject_log__c-n2de__Distribution reject log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distribution_team_alert__c-n2de__Distribution team alert Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distributor_Tag__c-n2de__Distributor Tag Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distributor__c-n2de__Distributor Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distributor_category__c-n2de__Distributor category Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distributor_category_team_member__c-n2de__Distributor category team member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distributor_rr_sa__c-n2de__Distributor rr-sa Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distributor_runtime__c-n2de__Distributor runtime Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Distributor_schedule_log__c-n2de__Distributor schedule log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__History__c-n2de__History Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Holiday__c-n2de__Holiday Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Holiday_group__c-n2de__Holiday Region Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Job_setting__c-n2de__Job setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Member_distributor_detail__c-n2de__Member distributor detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Migration__c-n2de__Migration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Object_sync_action__c-n2de__Object sync action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Object_sync_log__c-n2de__Object sync log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Out_of_office__c-n2de__Out of office Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Shift_planner_block__c-n2de__Shift planner block Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Simulated_distribution__c-n2de__Simulated distribution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Simulated_distribution_result__c-n2de__Simulated distribution result Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Tag_Cap__c-n2de__Tag Cap Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Tag_Category__c-n2de__Distributor Tag Category Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Tag_User__c-n2de__Distributor Tag User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Tag_Value__c-n2de__Distributor Tag Value Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Tag_weighting__c-n2de__Distribution tag weighting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Tag_weighting_pattern__c-n2de__Distribution tag weighting pattern Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Team__c-n2de__Distribution team Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Team_member__c-n2de__Distribution team member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Team_member_runtime__c-n2de__Team member runtime Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Team_runtime__c-n2de__Team runtime Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__Team_shift_planner__c-n2de__Team shift planner Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__User_activity_log__c-n2de__User activity log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__cls_Account_domains__c-n2de__Classifier Account Domains Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__cls_Auto_conversion_log__c-n2de__Classifier Auto conversion log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__cls_Auto_conversion_rule__c-n2de__Classifier Auto conversion rule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__cls_Field__c-n2de__Classifier field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__cls_Match_log__c-n2de__Classifier matching log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__cls_Match_object__c-n2de__Classifier matching object Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__cls_Object__c-n2de__Classifier object Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__cls_Territory__c-n2de__Classifier territory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__cls_Territory_log__c-n2de__Classifier territory log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>n2de__cls_Territory_map__c-n2de__Classifier territory map Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sbaa__ApprovalChain__c-sbaa__Approval Chain Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sbaa__ApprovalCondition__c-sbaa__Approval Condition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sbaa__ApprovalRule__c-sbaa__Approval Rule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sbaa__ApprovalSnapshot__c-sbaa__Approval Snapshot Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sbaa__ApprovalVariable__c-sbaa__Summary Variable Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sbaa__Approval__c-sbaa__Approval Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sbaa__Approver__c-sbaa__Approver Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sbaa__EmailTemplate__c-sbaa__Email Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sbaa__TrackedField__c-sbaa__Tracked Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sbaa__TrackedValue__c-sbaa__Tracked Value Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sixsense__Batch_Log_Chunk__c-sixsense__Batch Log Chunk Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sixsense__Batch_Log_Error__c-sixsense__Batch Log Error Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sixsense__Batch_Log__c-sixsense__Batch Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sixsense__X6sense_Account_Score_Chatter__c-sixsense__6sense Account Score Chatter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sixsense__X6sense_Account_Score__c-sixsense__6sense Account Score Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sixsense__X6sense_Company_Score__c-sixsense__6sense Company Scores Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sixsense__X6sense_Contact_Score__c-sixsense__6sense Contact Score Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sixsense__X6sense_Lead_Scores__c-sixsense__6sense Lead Scores Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sixsense__X6sense_New_Company__c-sixsense__6sense New Company Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sixsense__X6sense_Product__c-sixsense__6sense Products Layout</layout>
     </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
@@ -3067,6 +4383,21 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>DOZISF__ZoomInfo__c.DOZISF__Company</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>DOZISF__ZoomInfo__c.DOZISF__Contact</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>DOZISF__ZoomInfo__c.DOZISF__ZoomInfo</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Live_Event_Checklist__c.Live_Event_Check</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -3108,6 +4439,16 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.Services_Record_Type</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>SBQQ__ConfigurationAttribute__c.SBQQ__Configuration_Attribute</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>SBQQ__ConfigurationAttribute__c.SBQQ__Global_Attribute</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -3195,6 +4536,457 @@
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>et4ae5__Automated_Send__c.et4ae5__Active</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>et4ae5__Automated_Send__c.et4ae5__Inactive</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>et4ae5__SMSDefinition__c.et4ae5__Queued_SMS_Definition</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>et4ae5__SMSDefinition__c.et4ae5__SMS_Definition</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>et4ae5__SendDefinition__c.et4ae5__Queued_Send_Definition</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>et4ae5__SendDefinition__c.et4ae5__Send_Definition</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>et4ae5__SendDefinition__c.et4ae5__Trackable_Send_Definition</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>DNBConnect__Connect_Admin_Classic</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DNBConnect__Connect_Admin_LTNG</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DNBConnect__DNB_Project_Setup</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DNBConnect__D_B_Connect_Setup</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DNBConnect__Duplicates_Classic</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DNBConnect__Duplicates_LTNG</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DNBConnect__Family_Tree_Classic</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DNBConnect__Family_Tree_LTNG</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DOZISF__ZoomInfo</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DOZISF__ZoomInfo_Intent__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DOZISF__ZoomInfo_LWC</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DOZISF__ZoomInfo_Scoop__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DriftData__Drift_Conversation__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>DriftData__Drift_Opportunity_Conversation__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>E2CP__Canned_Comment_Filter__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>E2CP__Canned_Comment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>E2CP__Comment_List</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>E2CP__Email_to_Case_Premium_Setup</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>E2CP__New_Comment_Action__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>E2CP__Settings</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>E2CP__Setup_Wizard</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>E2CP__Widespread_Issue__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Field_Trip__Object_Analysis__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>GetFeedback_Aut__Survey__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Gong__Gong_Call__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__AE</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__Administration</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__Alerts</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__AllAdoption</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__All_Transactions</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__Churn</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__Cockpit</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__CustomerSuccess360</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__Customers</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__ExperienceCenter</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__Gainsight</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__GainsightMobile</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__GainsightNXT</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__Insights</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__NPS</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__NPSV2</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__Renewal_Center</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__Survey</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__SurveyV2</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__Timeline</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JBCXM__UsageTracking</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>JCFS__AutoSyncJob__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Loopio__Loopio_Project__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__AttributeSet__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__ColumnMetadata__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__ConfigurationAttribute__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__CustomAction__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__CustomScript__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__DiscountCategory__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__DiscountSchedule__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__Favorite__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__FieldSetMetadata__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__ImportFormat__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__InstallProcessorLog__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__Localization__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__PriceRule__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__PricingGuidance__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__ProductRule__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__QuoteProcess__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__QuoteTemplate__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__QuoteTerm__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__Quote__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__SearchFilter__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__SolutionGroup__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__SummaryVariable__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__TemplateContent__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__Theme__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SBQQ__WebQuote__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>WorkIt2__Session_Type__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>WorkIt2__Time_Entry__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>WorkIt2__Timing__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>dfsle__EnvelopeConfiguration__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>dfsle__EnvelopeStatus__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>dfsle__Envelope__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>dfsle__GenTemplate__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>dfsle__Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>dfsle__Setup</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>et4ae5__ExactTargetPhoenix</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>et4ae5__SMSDefinition__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>et4ae5__SendDefinition__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>et4ae5__Send_Analytics</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>n2de__Console</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>n2de__Distribution_Analytics</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>n2de__Distribution_Classifier</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>n2de__Distribution_Tags</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>n2de__Logs</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>n2de__Manage_Holidays</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>n2de__Out_of_office</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>n2de__Settings</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>n2de__Team__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sbaa__ApprovalChain__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sbaa__ApprovalRule__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sbaa__ApprovalVariable__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sbaa__Approver__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sbaa__EmailTemplate__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sixsense__Admin</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sixsense__Batch_Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sixsense__X6sense_New_Company__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sixsense__X6sense_Sales_Dashboards</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Case</tab>
         <visibility>Hidden</visibility>

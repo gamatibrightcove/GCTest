@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Team__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The team that the team shift planner is related to</description>
+    <externalId>false</externalId>
+    <label>Team</label>
+    <referenceTo>n2de__Team__c</referenceTo>
+    <relationshipLabel>Team shift planners</relationshipLabel>
+    <relationshipName>Team_shift_planners</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

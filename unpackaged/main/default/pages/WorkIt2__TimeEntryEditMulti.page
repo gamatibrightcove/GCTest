@@ -1,0 +1,88 @@
+<apex:page standardController="WorkIt2__Timing__c" extensions="WorkIt2.TimingTimesheetExtension" tabStyle="WorkIt2__Timing__c" title="Timesheet Edit: {!WorkIt2__Timing__c.name}" docType="html-5.0" id="thePage">
+    <script type="text/javascript">
+        function updateStart(index,item) {
+            console.log('updateStart index',index);
+            console.log('updateStart value',item);
+            console.log('updateStart id',item.id);
+            console.log(item.id,document.getElementById(item.id).value);
+            console.log(document.getElementById('thePage:theForm:theBlock:entriesTable:'+index+':teStart'));
+            console.log('date-0',document.getElementById('thePage:theForm:theBlock:entriesTable:'+index+':sdate-0'));
+            var date = document.getElementById('sdate-'+index).value;
+            var time = document.getElementById('stime-'+index).value;
+            document.getElementById('thePage:theForm:theBlock:entriesTable:'+index+':teStart').value = date+' '+time;
+        }
+        function updateEnd(index,item) {
+            console.log('updateEnd index',index);
+            console.log('updateEnd value',item);
+            console.log('updateEnd id',item.id);
+            console.log(item.id,document.getElementById(item.id).value);
+            console.log(document.getElementById('thePage:theForm:theBlock:entriesTable:'+index+':endDate'));
+            console.log('edate-0',document.getElementById('thePage:theForm:theBlock:entriesTable:'+index+':edate-0'));
+            var date = document.getElementById('edate-'+index).value;
+            var time = document.getElementById('etime-'+index).value;
+            console.log('edate',date);
+            console.log('etime',time);
+            if (time == '') {
+                document.getElementById('etime-'+index).value = time = '00:00';
+            }
+            document.getElementById('thePage:theForm:theBlock:entriesTable:'+index+':teEnd').value = date+' '+time;
+        }
+    </script>
+    <apex:form id="theForm">
+        <apex:sectionHeader title="Timing" subtitle="{!WorkIt2__Timing__c.name}"/>
+        Use this page to submit the time spent while working offline on the related record for this Timing. Enter each session's details on its own line, time entries without a value for the Type column are ignored.
+        <br/><br/>
+        <apex:pageBlock title="New Time Entries" id="theBlock">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!SaveNewEntries}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageMessages rendered="{!ShowErrors}"/>
+
+            <apex:variable var="index" value="{!0}" />
+
+            <apex:pageBlockTable value="{!NewEntries}" var="e" id="entriesTable">
+
+                <apex:column headerValue="Session Type" style="width:210px; vertical-align:top">
+                    <!-- new method - select list -->
+                    <!-- <apex:selectList value="{!e.WorkIt2__Session_Type__c}" multiselect="false" size="1" required="false">
+                        <apex:selectOptions value="{!sessionTypes}"/>
+                    </apex:selectList> -->
+                    <!-- old method - text field with lookup -->
+                    <apex:inputField required="false" value="{!e.WorkIt2__Session_Type__c}"/>
+                </apex:column>
+
+                <apex:column headerValue="Start Time" style="width:200px; vertical-align:top;" id="startDateCol">
+                    <!-- <input type="date" id="sdate-{!index}"
+                        value="{! TEXT(YEAR(TODAY()))+'-'+TEXT(MONTH(TODAY()))+'-'+TEXT(DAY(TODAY())) }"
+                        onchange="updateStart('{!index}',this);"/>
+                    <input type="time" id="stime-{!index}"
+                        value="{! IF( HOUR(TIMENOW())<10, '0'+TEXT(HOUR(TIMENOW())), TEXT(HOUR(TIMENOW())) )+':'+TEXT(MINUTE(TIMENOW())) }"
+                        step="300"
+                        onchange="updateStart('{!index}',this);"/> -->
+                    <apex:inputField required="false" value="{!e.WorkIt2__Start__c}" id="teStart"/>
+                    <!-- <apex:inputField required="false" value="{!e.WorkIt2__Start__c}"/> -->
+                </apex:column>
+                <apex:column headerValue="End Time" style="width:200px; vertical-align:top" id="endDateCol">
+                    <!-- <input type="date" id="edate-{!index}"
+                        value=""
+                        onchange="updateEnd('{!index}',this);"/>
+                    <input type="time" id="etime-{!index}"
+                        value=""
+                        step="300"
+                        onchange="updateEnd('{!index}',this);"/> -->
+                    <apex:inputField id="teEnd" required="false" value="{!e.WorkIt2__Force_End__c}">
+                        <!-- apex:actionSupport event="onchange" action="{!UpdateHours}" rerender="teHours"/-->
+                    </apex:inputField>
+                    <apex:variable var="index" value="{!index + 1}" />
+                </apex:column>
+
+                <apex:column headerValue="Comment" style="vertical-align:top"><apex:inputField required="false" value="{!e.WorkIt2__Comment__c}" style="width:250px; height:50px"/></apex:column>
+            </apex:pageBlockTable>
+
+            <br/>
+            &nbsp;<apex:commandLink value="Show more Time Entries" action="{!AddMoreEntries}"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

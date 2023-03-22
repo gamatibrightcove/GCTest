@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The type of distribution tag - either a static value or dynamic retrieving tag value from a field --></help>
+        <label><!-- Type --></label>
+        <name>n2de__Type__c</name>
+    </CustomFieldTranslation>

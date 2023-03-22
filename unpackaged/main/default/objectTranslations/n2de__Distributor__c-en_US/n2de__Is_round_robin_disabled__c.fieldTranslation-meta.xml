@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, round robin will not be performed when a lookup owner match or sticky assignment is not found. --></help>
+        <label><!-- Round robin disabled --></label>
+        <name>n2de__Is_round_robin_disabled__c</name>
+    </CustomFieldTranslation>

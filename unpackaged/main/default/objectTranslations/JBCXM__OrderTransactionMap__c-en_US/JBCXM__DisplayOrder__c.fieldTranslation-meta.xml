@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Display order to be used when displaying the Transactions based on the Booking type. --></help>
+        <label><!-- Display Order --></label>
+        <name>JBCXM__DisplayOrder__c</name>
+    </CustomFieldTranslation>

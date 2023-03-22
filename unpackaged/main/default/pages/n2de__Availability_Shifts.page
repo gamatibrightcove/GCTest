@@ -1,0 +1,93 @@
+<apex:page controller="n2de.Availability_Shifts_Controller" tabStyle="Out_of_office__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Shifts" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+                window.addEventListener('load', function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:PageContext />
+
+                    const getPageUrlParams = new n2.dataProvider.Static({
+                        id: 'get-page-url-params',
+                        data: {
+                            shiftHoursId: '{!JSENCODE(ShiftHoursId)}'
+                        }
+                    });
+
+                    const shiftsHistory = new n2.dataProvider.VisualForce({
+                        id: 'get-shifts-history',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_Shifts_Controller.getShiftChangeHistory}'
+                            }
+                        }
+                    });
+
+                    const shiftUsage = new n2.dataProvider.VisualForce({
+                        id: 'get-shift-usage',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_Shifts_Controller.getShiftHoursUsage}'
+                            }
+                        }
+                    });
+
+                    const shiftHours = new n2.dataProvider.VisualForce({
+                        id: 'get-shift-hours',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_Shifts_Controller.getShiftHours}'
+                            }
+                        }
+                    });
+
+                    const shiftsData = new n2.dataProvider.VisualForce({
+                        id: 'get-shifts-data',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_Shifts_Controller.getShifts}'
+                            }
+                        }
+                    });
+
+                    const saveShift = new n2.dataProvider.VisualForce({
+                        id: 'save-shift',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Availability_Shifts_Controller.saveShift}'
+                            }
+                        }
+                    });
+
+                    const deleteShifts = new n2.dataProvider.VisualForce({
+                        id: 'delete-shifts',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Availability_Shifts_Controller.deleteShifts}'
+                            }
+                        }
+                    });
+
+                    const getTimeZoneOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-timezone-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_Shifts_Controller.getTimezones}'
+                            }
+                        }
+                    });
+
+                    const availabilityShiftsPage = new n2.de.page.availability.Shifts({
+                        id: 'availability-shifts-page'
+                    });
+                    availabilityShiftsPage.render();
+                });
+            </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

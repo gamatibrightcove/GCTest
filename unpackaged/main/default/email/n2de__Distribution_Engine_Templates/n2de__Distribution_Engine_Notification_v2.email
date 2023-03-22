@@ -1,0 +1,139 @@
+<messaging:emailTemplate subject="Distribution Engine Notification" recipientType="User" relatedToType="n2de__Distribution_log__c">
+    <messaging:htmlEmailBody >
+        <html>
+        <body>
+
+        <table>
+            <tr style="background:#1C1660;background-color: #1C1660;">
+                <td>
+                    <table width="600px" align="center">
+                        <h1 align="center" style="font-size:18px;font-weight:700;color:white;line-height:32px;font-family:Open Sans, Helvetica, sans-serif;text-align:center;padding:10px 25px;">
+                            {!if(relatedTo.In_alert__c != true && relatedTo.In_error__c != true && relatedTo.Is_reassigned_to_queue__c != true,"Assignment notification", "")}
+                            {!if(relatedTo.In_alert__c == true && relatedTo.Is_reassigned_to_queue__c != true,"SLA notification", "")}
+                            {!if(relatedTo.Is_reassigned_to_queue__c == true,"Reassignment notification", "")}
+                        </h1>
+                        <p  align="center" style="font-size:16px;color:white;line-height:1.5;font-family:Open Sans, Helvetica, sans-serif;text-align:center;padding:10px 25px;">
+                            <apex:outputText value="The following {0} has been assigned to you." rendered="{!relatedTo.n2de__In_alert__c != true && relatedTo.n2de__In_error__c != true && relatedTo.n2de__Is_reassigned_to_queue__c != true}">
+                                <apex:param value="{! relatedTo.Distributor__r.Team__r.Object_name__c }" />
+                            </apex:outputText>
+                            <apex:outputText value="The following {0} has missed an SLA because it has not been actioned quickly enough." rendered="{!relatedTo.n2de__In_alert__c == true && relatedTo.n2de__Is_reassigned_to_queue__c != true}">
+                                <apex:param value="{! relatedTo.Distributor__r.Team__r.Object_name__c }" />
+                            </apex:outputText>
+                            <apex:outputText value="The following {0} has been reassigned because it was not actioned quickly enough." rendered="{!relatedTo.n2de__Is_reassigned_to_queue__c == true}">
+                                <apex:param value="{! relatedTo.Distributor__r.Team__r.Object_name__c }" />
+                            </apex:outputText>
+                        </p>
+                        <apex:outputPanel rendered="{!(relatedTo.n2de__In_alert__c == true && relatedTo.n2de__Is_reassigned_to_queue__c != true) || relatedTo.n2de__Is_reassigned_to_queue__c == true}">
+                            <p  align="center" style="font-size:16px;color:white;line-height:1.5;font-family:Open Sans, Helvetica, sans-serif;text-align:center;padding:10px 25px;">
+                                {!relatedTo.Alert_tip__c}
+                            </p>
+                        </apex:outputPanel>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table align="center" style="padding: 20px 10px 20px">
+                        <tr>
+                            <td>
+                                <table id="detail_table" align="center" width="100%" style="color:#1C1660; font-family:Ubuntu, Helvetica, Arial, sans-serif; font-size:13px;line-height:22px; table-layout:fixed;width:600px; border:none;text-align:left;color:#1c1660;">
+                                    <colgroup>
+                                        <col style="width: 50%;"/>
+                                        <col style="width: 50%;"/>
+                                    </colgroup>
+                                    <tbody>
+                                    <!-- Object and record name -->
+                                    <tr style="background:#F4F7FA;background-color: #F4F7FA;">
+                                        <th>{!relatedTo.Distributor__r.Team__r.n2de__Object_name__c} Name</th>
+                                        <td>{!relatedTo.Assigned_object_record_name__c}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>{!relatedTo.Distributor__r.Team__r.n2de__Object_name__c} Link</th>
+                                        <td>
+                                            <c:EmailNotificationLink recordId="{!relatedTo.n2de__Assigned_object_id_index__c}" objectName="{!relatedTo.Distributor__r.Team__r.n2de__Object_name__c}"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="background:#F4F7FA;background-color: #F4F7FA;">
+                                        <th>Status</th>
+                                        <td>{!relatedTo.n2de__Status_on_assignment__c}</td>
+                                    </tr>
+                                
+                                    <!-- Case details -->
+                                    <apex:outputPanel rendered="{!relatedTo.Distributor__r.Team__r.n2de__Object_name__c == 'Case'}">
+                                        <tr>
+                                            <th>{!$ObjectType.Case.fields.Subject.Label}</th>
+                                            <td>{!relatedTo.Case__r.Subject}</td>
+                                        </tr>
+                                        <tr style="background:#F4F7FA;background-color: #F4F7FA;">
+                                            <th>{!$ObjectType.Case.fields.Priority.Label}</th>
+                                            <td>{!relatedTo.Case__r.Priority}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Account</th>
+                                            <td>{!relatedTo.Case__r.Account.Name}</td>
+                                        </tr>
+                                        <tr style="background:#F4F7FA;background-color: #F4F7FA;">
+                                            <th>Contact</th>
+                                            <td>{!relatedTo.Case__r.Contact.Name}</td>
+                                        </tr>
+                                    </apex:outputPanel>
+                                
+                                    <!-- Lead details -->
+                                    <apex:outputPanel rendered="{!relatedTo.Distributor__r.Team__r.n2de__Object_name__c == 'Lead'}">
+                                        <tr>
+                                            <th>{!$ObjectType.Lead.fields.LeadSource.Label}</th>
+                                            <td>{!relatedTo.Lead__r.LeadSource}</td>
+                                        </tr>
+                                        <tr style="background:#F4F7FA;background-color: #F4F7FA;">
+                                            <th>{!$ObjectType.Lead.fields.Company.Label}</th>
+                                            <td>{!relatedTo.Lead__r.Company}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>{!$ObjectType.Lead.fields.Rating.Label}</th>
+                                            <td>{!relatedTo.Lead__r.Rating}</td>
+                                        </tr>
+                                    </apex:outputPanel>
+                                
+                                    <!-- Opportunity details -->
+                                    <apex:outputPanel rendered="{!relatedTo.Distributor__r.Team__r.n2de__Object_name__c == 'Opportunity'}">
+                                        <tr>
+                                            <th>{!$ObjectType.Opportunity.fields.LeadSource.Label}</th>
+                                            <td>{!relatedTo.Opportunity__r.LeadSource}</td>
+                                        </tr>
+                                        <tr style="background:#F4F7FA;background-color: #F4F7FA;">
+                                            <th>{!$ObjectType.Lead.fields.Company.Label}</th>
+                                            <td>{!relatedTo.Opportunity__r.Type}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>{!$ObjectType.Lead.fields.Rating.Label}</th>
+                                            <td>{!relatedTo.Opportunity__r.StageName}</td>
+                                        </tr>
+                                    </apex:outputPanel>
+                                
+                                    <!-- Distributor details -->
+                                    <apex:outputPanel rendered="{!relatedTo.n2de__In_alert__c != true && relatedTo.n2de__In_error__c != true && relatedTo.n2de__Is_reassigned_to_queue__c != true && relatedTo.Distributor__r.Team__r.n2de__Object_name__c != 'Case'}">
+                                        <tr style="background:#F4F7FA;background-color: #F4F7FA;">
+                                            <th>Assigned by</th>
+                                            <td>{!relatedTo.Distributor__r.Name} ({!relatedTo.n2de__Distribution_Team__c})</td>
+                                        </tr>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!relatedTo.n2de__In_alert__c != true && relatedTo.n2de__In_error__c != true && relatedTo.n2de__Is_reassigned_to_queue__c != true && relatedTo.Distributor__r.Team__r.n2de__Object_name__c == 'Case'}">
+                                        <tr>
+                                            <th>Assigned by</th>
+                                            <td>{!relatedTo.Distributor__r.Name} ({!relatedTo.n2de__Distribution_Team__c})</td>
+                                        </tr>
+                                    </apex:outputPanel>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <c:EmailNotificationLogo />
+        </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

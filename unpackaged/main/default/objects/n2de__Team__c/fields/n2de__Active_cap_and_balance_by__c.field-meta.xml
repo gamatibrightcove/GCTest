@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Active_cap_and_balance_by__c</fullName>
+    <defaultValue>&#39;Record Count&#39;</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>For load balancing or active caps, use the count of records assigned, or the total value of those records</inlineHelpText>
+    <label>Active cap and balance by</label>
+    <length>20</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

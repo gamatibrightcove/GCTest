@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Select the Customer Status, which is defaulted to Active. When the customer churns, the status is set to Churn. Select the status as inactive when the customer is not using the product, but has not officially churned. --></help>
+        <label><!-- Status --></label>
+        <name>JBCXM__Status__c</name>
+        <relationshipLabel><!-- Customer Status --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The information that the matching process used to arrive at a match in addition to the application&apos;s business rules and parameters specified by the requestor. This is a 28-byte string consisting of 14 components of 2 bytes each. The 14 components are, in order, Name, Street Number, Street Name, Town Name, Territory Name, P.O. Box, Telephone, Post Code, D-U-N-S Number, Industry Code, Geographical Density, Location Uniqueness, Registration Number and URL. --></help>
+        <label><!-- D&amp;B Match Data Profile --></label>
+        <name>DNBConnect__D_B_Match_Data_Profile__c</name>
+    </CustomFieldTranslation>

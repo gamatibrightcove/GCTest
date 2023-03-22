@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The field the unique identifier must match when performing the lookup --></help>
+        <label><!-- Lookup match field --></label>
+        <name>n2de__Lookup_match_field_name__c</name>
+    </CustomFieldTranslation>

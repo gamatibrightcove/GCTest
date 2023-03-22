@@ -1,0 +1,104 @@
+<apex:page controller="n2de.Availability_Holidays_Controller" tabStyle="Out_of_office__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Holidays" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+                window.addEventListener('load', function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:PageContext />
+
+                    const getHolidayRegions = new n2.dataProvider.VisualForce({
+                        id: 'get-holiday-regions',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_Holidays_Controller.getHolidayRegions}'
+                            }
+                        }
+                    });
+
+                    const saveHolidayRegion = new n2.dataProvider.VisualForce({
+                        id: 'save-holiday-region',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Availability_Holidays_Controller.saveHolidayRegion}'
+                            }
+                        }
+                    });
+
+                    const deleteHolidayRegions = new n2.dataProvider.VisualForce({
+                        id: 'delete-holiday-region',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Availability_Holidays_Controller.deleteHolidayRegions}'
+                            }
+                        }
+                    });
+
+                    const getHolidayRegionChangeHistory = new n2.dataProvider.VisualForce({
+                        id: 'get-holiday-region-change-history',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_Holidays_Controller.getHolidayRegionChangeHistory}'
+                            }
+                        }
+                    });
+
+                    const getHolidays = new n2.dataProvider.VisualForce({
+                        id: 'get-holidays',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_Holidays_Controller.getHolidays}'
+                            }
+                        }
+                    });
+
+                    const saveHoliday = new n2.dataProvider.VisualForce({
+                        id: 'save-holiday',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Availability_Holidays_Controller.saveHoliday}'
+                            }
+                        }
+                    });
+
+                    const deleteHolidays = new n2.dataProvider.VisualForce({
+                        id: 'delete-holidays',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Availability_Holidays_Controller.deleteHolidays}'
+                            }
+                        }
+                    });
+
+                    const getHolidayChangeHistory = new n2.dataProvider.VisualForce({
+                        id: 'get-holiday-change-history',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_Holidays_Controller.getHolidayChangeHistory}'
+                            }
+                        }
+                    });
+
+                    const getTimeZoneOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-timezone-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Availability_Holidays_Controller.getTimezones}'
+                            }
+                        }
+                    });
+
+                    const availabilityHolidaysPage = new n2.de.page.availability.RegionalHolidays({
+                        id: 'availability-regional-holidays-page'
+                    });
+                    availabilityHolidaysPage.render();
+                });
+            </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

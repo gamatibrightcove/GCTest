@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Field_updates__c</fullName>
+    <deprecated>false</deprecated>
+    <description>JSON object describing the field updates to make on new Account, Contact and Opportunity objects post
+        auto-conversion</description>
+    <externalId>false</externalId>
+    <label>Field updates</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

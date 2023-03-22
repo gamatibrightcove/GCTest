@@ -8,6 +8,9 @@
         <locationY>335</locationY>
         <actionName>Survey__c.When_the_CSAT_survey_has_a_perfect_score_of_10_an_email_alert_will_go_to_the_man</actionName>
         <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>TSSurvey_Perfect_5</targetReference>
+        </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>SObjectRowId</name>
@@ -16,11 +19,21 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <actionCalls>
+        <description>TSSurvey - Perfect 5</description>
+        <name>TSSurvey_Perfect_5</name>
+        <label>TSSurvey - Perfect 5</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <actionName>Survey__c.TSSurvey_Perfect_5</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+    </actionCalls>
     <apiVersion>57.0</apiVersion>
-    <description>TSSurvey - Perfect 10 score email alert</description>
+    <description>TSSurvey - Perfect 5 score email alert</description>
     <environments>Default</environments>
     <interviewLabel>TSSurvey - Perfect 10 score email alert {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>TSSurvey - Perfect 10 score email alert</label>
+    <label>TSSurvey - Perfect 5 score email alert</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>

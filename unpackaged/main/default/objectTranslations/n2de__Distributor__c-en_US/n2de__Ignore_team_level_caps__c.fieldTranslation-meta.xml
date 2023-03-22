@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Allow number of assignments from this distributor to exceed the team-level caps --></help>
+        <label><!-- Ignore team-level caps --></label>
+        <name>n2de__Ignore_team_level_caps__c</name>
+    </CustomFieldTranslation>

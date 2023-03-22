@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Maximum number of days between first Drift conversation and Opportunity creation date to consider an opportunity influenced by Drift. Field is used in Drift revenue reports. The default period can be changed in Setup &gt; Custom Settings &gt; Drift Settings. --></help>
+        <label><!-- Influenced Look-Back Period --></label>
+        <name>DriftData__Influenced_Look_Back_Period_fx__c</name>
+    </CustomFieldTranslation>

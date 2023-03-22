@@ -1,0 +1,90 @@
+<apex:page controller="n2de.Team_PostAssignment_Controller" tabStyle="n2de__Team__c" sidebar="false" standardStylesheets="false"
+    docType="html-5.0" title="Distribution Engine: Post Assignment" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+            window.addEventListener("load", function () {
+                <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                <c:Team_TeamBase attrTeamId="{!JSENCODE(TeamId)}"/>
+                <c:PageContext />
+
+                const getIsQ2QTeam = new n2.dataProvider.VisualForce({
+                    id: 'get-is-q2q-team',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_PostAssignment_Controller.isQ2QTeam}'
+                        }
+                    }
+                });
+
+                const getDistributors = new n2.dataProvider.VisualForce({
+                    id: 'get-distributors',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_PostAssignment_Controller.getDistributors}'
+                        }
+                    },
+                    modeled: true
+                });
+
+                const getFields = new n2.dataProvider.VisualForce({
+                    id: 'get-fields',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_PostAssignment_Controller.getFields}'
+                        }
+                    }
+                });
+
+                const getPicklistFieldSelectOptions = new n2.dataProvider.VisualForce({
+                    id: 'get-picklist-field-select-options',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_PostAssignment_Controller.getPicklistFieldSelectOptions}'
+                        }
+                    }
+                });
+
+                const saveDistributorPostAssignmentSettings = new n2.dataProvider.VisualForce({
+                    id: 'save-distributor-post-assignment-settings',
+                    methods: {
+                        post: {
+                            method: '{!$RemoteAction.Team_PostAssignment_Controller.saveDistributorPostAssignmentSettings}'
+                        }
+                    }
+                });
+
+                const getTeamObjectSyncSettings = new n2.dataProvider.VisualForce({
+                    id: 'get-team-object-sync-settings',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Team_PostAssignment_Controller.getTeamObjectSyncSettings}'
+                        }
+                    }
+                });
+
+                const saveTeamObjectSyncSettings = new n2.dataProvider.VisualForce({
+                    id: 'save-team-object-sync-settings',
+                    methods: {
+                        post: {
+                            method: '{!$RemoteAction.Team_PostAssignment_Controller.saveTeamObjectSyncSettings}'
+                        }
+                    }
+                });
+
+                const postAssignmentPage = new n2.de.page.team.PostAssignment({
+                    id: 'post-assignment-page'
+                });
+
+                postAssignmentPage.render();
+            });
+        </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

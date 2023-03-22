@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>Automated lead and case assignment tool for teams of reps / agents.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Distribution Engine</label>
+    <logo>n2de__Distribution_engine/n2de__Logo_Cog.png</logo>
+    <tabs>n2de__Console</tabs>
+    <tabs>n2de__Distribution_Classifier</tabs>
+    <tabs>n2de__Team__c</tabs>
+    <tabs>n2de__Distribution_Tags</tabs>
+    <tabs>n2de__Manage_Holidays</tabs>
+    <tabs>n2de__Out_of_office</tabs>
+    <tabs>n2de__Logs</tabs>
+    <tabs>n2de__Distribution_Analytics</tabs>
+    <tabs>n2de__Settings</tabs>
+    <tabs>Video_View__c</tabs>
+    <tabs>Live_Event_Coverage__c</tabs>
+    <tabs>Live_Event_Coverage_Timing__c</tabs>
+    <tabs>Live_Event_Checklist__c</tabs>
+</CustomApplication>

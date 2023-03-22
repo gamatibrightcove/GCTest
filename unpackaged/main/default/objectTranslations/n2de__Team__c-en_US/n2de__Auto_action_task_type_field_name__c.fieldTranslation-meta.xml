@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A field on the Task object that contains a task type --></help>
+        <label><!-- Task type field --></label>
+        <name>n2de__Auto_action_task_type_field_name__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The value the field to update should be changed to when an object is distributed. --></help>
+        <label><!-- Field to update value (Deprecated) --></label>
+        <name>n2de__Field_to_update_value__c</name>
+    </CustomFieldTranslation>

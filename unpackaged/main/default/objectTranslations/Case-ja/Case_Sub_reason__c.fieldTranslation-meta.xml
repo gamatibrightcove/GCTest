@@ -131,6 +131,10 @@
             <translation><!-- Adobe Magento Commerce Integration --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Ads Analytics/Insights Enablement</masterLabel>
+            <translation><!-- Ads Analytics/Insights Enablement --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Advertising</masterLabel>
             <translation><!-- Advertising --></translation>
         </picklistValues>
@@ -1173,6 +1177,10 @@
         <picklistValues>
             <masterLabel>Purge Deleted Videos</masterLabel>
             <translation><!-- Purge Deleted Videos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QoE Analytics/Insights Enablement</masterLabel>
+            <translation><!-- QoE Analytics/Insights Enablement --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Quiz/Survey</masterLabel>

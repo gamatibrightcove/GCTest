@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When a record is assigned via manual distribution, reject the previous DE assignment of the record --></help>
+        <label><!-- Treat manual assignment as rejection --></label>
+        <name>n2de__Is_treat_manual_as_rejection__c</name>
+    </CustomFieldTranslation>

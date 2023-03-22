@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The method of distribution this distributor or trigger will use to distribute objects to team members. --></help>
+        <label><!-- Algorithm --></label>
+        <name>n2de__Algorithm__c</name>
+        <picklistValues>
+            <masterLabel>Round robin</masterLabel>
+            <translation><!-- Round robin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Round robin lookup owner</masterLabel>
+            <translation><!-- Round robin lookup owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Round robin sticky assignment</masterLabel>
+            <translation><!-- Round robin sticky assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Round robin weighted</masterLabel>
+            <translation><!-- Round robin weighted --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

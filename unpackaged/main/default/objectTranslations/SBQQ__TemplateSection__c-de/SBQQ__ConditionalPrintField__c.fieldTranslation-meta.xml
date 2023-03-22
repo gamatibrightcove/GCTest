@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>Feld im Angebotsobjekt, das steuert, ob dieser Abschnitt in generierten PDF-Dokumenten gedruckt wird.</help>
+        <label><!-- Conditional Print Field --></label>
+        <name>SBQQ__ConditionalPrintField__c</name>
+        <picklistValues>
+            <masterLabel>Auto_Renew__c</masterLabel>
+            <translation><!-- Auto_Renew__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Line Items</masterLabel>
+            <translation>Belegposten gruppieren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Has_Legal_Notes__c</masterLabel>
+            <translation><!-- Has_Legal_Notes__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Has_One_Time_Revenue__c</masterLabel>
+            <translation><!-- Has_One_Time_Revenue__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is_Legacy_Quote__c</masterLabel>
+            <translation><!-- Is_Legacy_Quote__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JPN_Hide_Address_No_Add_on__c</masterLabel>
+            <translation><!-- JPN_Hide_Address_No_Add_on__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JPN_Show_Address_NO_ADD_ON__c</masterLabel>
+            <translation><!-- JPN_Show_Address_NO_ADD_ON__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NB_MY_HA__c</masterLabel>
+            <translation><!-- NB_MY_HA__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NB_MY_SA__c</masterLabel>
+            <translation><!-- NB_MY_SA__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not_Amendment__c</masterLabel>
+            <translation><!-- Not_Amendment__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not_Legacy_Quote__c</masterLabel>
+            <translation><!-- Not_Legacy_Quote__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outgoing_Document_Show_Renewal_Term__c</masterLabel>
+            <translation><!-- Outgoing_Document_Show_Renewal_Term__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation>Primär</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_HA__c</masterLabel>
+            <translation><!-- Renewal_HA__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_MY_SA__c</masterLabel>
+            <translation><!-- Renewal_MY_SA__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_SA__c</masterLabel>
+            <translation><!-- Renewal_SA__c --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

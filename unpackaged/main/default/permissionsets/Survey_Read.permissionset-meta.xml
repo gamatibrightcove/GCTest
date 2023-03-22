@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldPermissions>
+        <editable>true</editable>
+        <field>GetFeedback_Aut__Survey__c.Language__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Survey__c.AHC_Ad_Tech_Manager_Communication__c</field>
         <readable>true</readable>
@@ -718,6 +723,15 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Survey - Read</label>
     <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>GetFeedback_Aut__Survey__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>false</allowEdit>
@@ -738,4 +752,8 @@
         <recordType>Survey__c.Surveys_All</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+    <tabSettings>
+        <tab>GetFeedback_Aut__Survey__c</tab>
+        <visibility>Available</visibility>
+    </tabSettings>
 </PermissionSet>

@@ -1,0 +1,460 @@
+<apex:page controller="n2de.WidgetController" showHeader="false" sidebar="false" action="{!init}">
+
+    <c:CommonHeader />
+    <c:CommonMask />
+    <c:WidgetMask />
+    <c:CommonHelp help_page="widget"/>
+    <style>
+.de_help_icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.de_help_icon img{
+   width: 18px;
+}
+
+    </style>
+    <apex:includeScript value="/support/console/54.0/integration.js"/>
+    <style>
+    .de-button{ 
+        width: 50px;
+    }
+    img{
+        margin: 5px;
+    }
+    .img-label{
+        position: relative;
+        top: -10px;
+        margin: 5px;
+    }
+    img.status{
+        width: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .status-bar{
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin: 5px;
+        position: absolute;
+        bottom: 0px;
+        left: 5px;
+        right: 5px;
+    }
+    select{
+        margin:5px;
+        margin-top: 0;
+    }
+    #action_content table{
+        width: 90%;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 0;
+        //margin-top: 10px;
+    }
+    #action_content td{
+        padding: 0;
+        margin: 0;
+    }
+    div.status_panel{
+        margin-top: 0;
+        margin-bottom: 5px;
+        overflow: auto;
+        height: 80px;
+    }
+    .pull_button{
+        width: 50px;
+    }
+    #no_pull{
+        width: 90%;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 0;
+        text-align: center;
+        background-color: lightgray;
+    }
+    div.status_panel center{
+        padding: 2px;
+    }
+    #widget_logo{
+        width: 120px;
+        position: relative;
+        left: -5px;   
+    }
+    #action_content{
+        height: 290px;
+        overflow-y: auto;
+    }
+    .pip_container {
+        display: inline-block;
+        position: relative;
+    }
+    .pip {
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        left: 0.25rem;
+        top: 0.25rem;
+        display: none;
+        border-radius: 50%;
+        background: #D4504C;
+    }
+    .pip_container.assignment .pip {
+        display: block;
+    }
+    .pip_container.assignment span {
+        font-weight: 600;
+    }
+    .notification_error {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 12px;
+    }
+    .notification_error.notification_error_hidden {
+        display: none;
+    }
+
+    </style>
+    <script type="text/javascript" src="{!URLFOR($Resource.DEResources, 'scripts/jquery-3.5.1.min.js')}"></script>
+    <script type="text/javascript" src="{!URLFOR($Resource.DEResources, 'scripts/jquery-migrate-3.3.0.min.js')}"></script>
+    <script type="text/javascript" src="{!URLFOR($Resource.DEResources, 'scripts/cometd.min.js')}"></script>
+    <script type="text/javascript" src="{!URLFOR($Resource.DEResources, 'scripts/n2.cometd.js')}"></script>
+    <script type="text/javascript" src="{!URLFOR($Resource.DEResources, 'iphone-style-checkboxes/scripts/iphone-style-checkboxes.js')}"></script>
+    <link type="text/css" rel="stylesheet" href="{!URLFOR($Resource.DEResources, 'iphone-style-checkboxes/style.css')}"/>
+    <apex:outputPanel id="script_panel">
+        <script type="text/javascript">
+            var isUsingLoginMode = {!isLoginMode};
+            var isLoggedIn = {!isLoggedIn};
+            var logoutReasonRequired = {!logOutReasonRequired};
+            var latestNewCount = Number({!newCount});
+
+            $(document).ready(function() {
+                initComponents();
+
+                if ({!SubscribeToEvents} && !n2.cometd.isConnected()) {
+                    n2.cometd.connect('/cometd/54.0/', '{!$Api.Session_ID}', '/event/{!JSENCODE(NameSpacePrefix)}Distribution_event__e', messageHandler);
+                }
+            });
+        </script>
+    </apex:outputPanel>
+    <script type="text/javascript">
+        var consoleButtonUrl = '{!URLFOR($Resource.n2de__DEResources, "images/logo-white-128x32.png")}';
+        var consoleButtonUrlAssignment = '{!URLFOR($Resource.n2de__DEResources, "images/logo-white-pip-128x32.png")}';
+        var consoleButtonStyle = 'width: 100%; height: 45px; background:none; background-repeat-y: no-repeat; background-repeat-x: no-repeat; background-position-y: 2px;';
+        var consoleButtonStyleLoggedIn = consoleButtonStyle + ' opacity: 1;';
+        var consoleButtonStyleLoggedOut = consoleButtonStyle + ' opacity: 0.4;';
+
+        var pullAttempt = 1;
+        var MAX_PULL_RETRIES = 5;
+        var justPulled = false;
+        var isInConsole = sforce.console.isInConsole();
+        var isInLightning = typeof sforce !== 'undefined' && typeof sforce.one !== 'undefined';
+        var newCount = Number({!newCount});
+        var hasAssignment = false;
+        var ignoreToggleChange = false;
+
+        function initComponents() {
+            setConsoleWidgetColor(isLoggedIn);
+            if (isUsingLoginMode == true){
+                setBackground(isLoggedIn);
+            }
+
+            //Initialise the slider
+            initSlider();
+            if(isUsingLoginMode && logoutReasonRequired == true){
+                setAlertOnClick();
+                setSliderDisabledIfNoReason(isLoggedIn);
+            }
+
+            $(".log_out_list").change(function(){
+                setSliderDisabledIfNoReason(isLoggedIn);
+            });
+
+            $(".view_my_new").click(function(){
+                hideAssignment();
+                openUrl('/apex/{!JSENCODE(NamespacePrefix)}Logs_DistributionLogList?view=mylogs&status=new', 'New');
+            });
+
+            $(".view_my_alerts").click(function(){
+                openUrl('/apex/{!JSENCODE(NamespacePrefix)}Logs_DistributionLogList?view=mylogs&status=inalert', 'SLA Alerts');
+            });
+
+            if (latestNewCount >= newCount && hasAssignment) {
+                showAssignment();
+            } else {
+                hasAssignment = false;
+            }
+            newCount = latestNewCount;
+        }
+        function setBackground(isLoggedInParam){
+            if(isLoggedInParam){
+                $('.log_out_list').show();
+                $("body").css("background-color","white");
+                $("div.status_panel").show();
+                $("div.pull_panel").show();
+            }else{
+                $('.log_out_list').hide();
+                $("body").css("background-color","#c0c0c0");
+                $("div.status_panel").hide();
+                $("div.pull_panel").hide();
+            }
+        }
+        function pullRecord(){
+
+            var distributorId = $(".pullPicklist").val();
+
+            if(distributorId == ''){
+                showFailedMask('Please select a distributor');
+                return;
+            }
+
+            showMask();
+            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.WidgetController.pullRecordNew}',distributorId, pullAttempt,
+                function(result, event){
+                    if (event.status) {
+                        var pulledRecord = result;
+                        if(pulledRecord == undefined){
+                            hideMask();
+                            showFailedMask('Sorry, nothing currently available. <br/><br/>Please try later or contact your administrator.');
+                        } else {
+                            var recordId = result.recordId;
+                            var recordName = result.recordName;
+                            var objectName = result.objectName;
+                            justPulled = true;
+                            hideMask();
+                            showSuccessMask(objectName, recordName);
+                            var redirectUrl = '/' + recordId;
+                            //Redirect to pulled record. Special javascript library for SF1
+                            if (isInLightning) {
+                                hideSuccessMask();
+                                sforce.one.navigateToSObject(recordId);
+                            } else if (isInConsole) {
+                                hideSuccessMask();
+                                sforce.console.generateConsoleUrl([redirectUrl], function(urlresult) {
+                                    sforce.console.openConsoleUrl(null, urlresult.consoleUrl, true);
+                                });
+                            } else {
+                                window.top.location = redirectUrl;
+                            }
+                        }
+                    } else{
+                        if (event.message.indexOf('Logged in?') >= 0) {
+                            hideMask();
+                            showFailedMask('Your Salesforce session has timed out. Please try again.');
+                            location.reload();
+                        } else if (event.message.indexOf('Distribution is not currently available') >= 0){
+                            hideMask();
+                            showFailedMaskReload(event.message);
+                        } else {
+                            pullAttempt++;
+                            if(pullAttempt <= MAX_PULL_RETRIES){
+                                pullRecord();
+                            } else {
+                                showFailedMask('Sorry, an error has occurred:<br/><br/>' + event.message + '<br/><br/>Please contact your administrator.');
+                                hideMask();
+                            }
+                        }
+                    }
+                },
+            {escape:true});
+        }
+
+        function toggleLogin(isLoggedInParam, reason){
+            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.WidgetController.toggleLoginWithReason}', isLoggedInParam, reason,
+                function(result, event){
+                    hideMask();
+                    if (event.status) {
+                        //reset the reason
+                        if(logoutReasonRequired == true){
+                            $('.log_out_list').val('');
+                        }
+                        isLoggedIn = result;
+                        setConsoleWidgetColor(isLoggedIn);
+                        setBackground(isLoggedIn);
+                        setSliderDisabledIfNoReason();
+                    } else {
+                        if (event.message.indexOf('Logged in?')) {
+                            showFailedMask('Your Salesforce session has timed out. Please try again.');
+                            location.reload();
+                        } else{
+                            showFailedMask('Sorry, an error has occurred:<br/><br/>' + event.message + '<br/><br/>Please contact your administrator.');
+                            ignoreToggleChange = true;
+                            $('.de_agent_logged_in').prop('checked', !isLoggedInParam).iphoneStyle("refresh");
+                            ignoreToggleChange = false;
+                        }
+                    }
+                },
+            {escape:true});
+        }
+        
+        function setConsoleWidgetColor(isLoggedIn){
+            if (isInConsole && !isInLightning) {
+                sforce.console.setCustomConsoleComponentButtonText('');
+                sforce.console.setCustomConsoleComponentButtonStyle(isLoggedIn ? consoleButtonStyleLoggedIn : consoleButtonStyleLoggedOut);
+                sforce.console.setCustomConsoleComponentButtonIconUrl(consoleButtonUrl);
+            }
+        }
+        function initSlider(){
+            ($('.de_agent_logged_in:checkbox')).iphoneStyle({
+                onChange: function(elem, value) {
+                    if (ignoreToggleChange) {
+                        return;
+                    }
+                    showMask();
+                    var reason = $('.log_out_list').val() ? $('.log_out_list').val() : '';
+                    toggleLogin(value, reason);
+                }
+            });
+        }
+        
+        function setAlertOnClick(){
+            $(".iPhoneCheckContainer").click(function(){
+                var reason = $('.log_out_list').val();
+                if(isLoggedIn == true && reason != undefined && reason.length == 0) {
+                    alert('You must provide a reason for logging out.');
+                    return;
+                }
+            });
+        }
+        
+        function setSliderDisabledIfNoReason(){
+            var reason = $('.log_out_list').val();
+            if (!isLoggedIn || reason != '') {
+                $('.de_agent_logged_in:checkbox').prop("disabled", false);
+                initSlider();
+                $('.iPhoneCheckContainer').removeClass('iPhoneCheckDisabled');
+            }else{
+                $('.de_agent_logged_in:checkbox').attr("disabled", "true");
+                initSlider();
+                $('.iPhoneCheckContainer').addClass('iPhoneCheckDisabled');
+            }
+        }
+        
+        function openUrl(redirectUrl, tabLabel) {
+            if (isInLightning) {
+                sforce.one.navigateToURL(redirectUrl);
+            } else if (isInConsole) {
+                sforce.console.openPrimaryTab(null, redirectUrl, true, tabLabel, function() {}, tabLabel);
+            } else {
+                window.top.location = redirectUrl;
+            }
+        }
+
+        function hideSuccessMask() {
+            setTimeout(function() { $("#success_mask").hide(); }, 2000);
+            updateNewCount();
+        }
+
+        function messageHandler(type, message) {
+            if (type === 'MESSAGE') {
+                if (message.data && message.data.payload) {
+                    var payload = message.data.payload;
+                    if ('{!JSENCODE($User.Id)}' === payload['{!JSENCODE(NameSpacePrefix)}Assigned_owner__c'] && 'Assigned' === payload['{!JSENCODE(NameSpacePrefix)}Event_type__c']) {
+                        if (justPulled) {
+                            justPulled = false;
+                        } else {
+                            updateNewCount();
+                            showAssignment();
+                        }
+                    }
+                }
+            } else if (type === 'CONNECTED') {
+                $('#notification_error').addClass('notification_error_hidden');
+            } else if (type === 'DISCONNECTED') {
+                connectionError('Disconnected from notifications server')
+            } else if (type === 'ERROR') {
+                connectionError('Error getting notifications: ' + message);
+            }
+        }
+
+        function showAssignment() {
+            $('.pip_container').addClass('assignment');
+            if (isInConsole && !isInLightning) {
+                sforce.console.setCustomConsoleComponentButtonIconUrl(consoleButtonUrlAssignment);
+            }
+            hasAssignment = true;
+        }
+
+        function hideAssignment() {
+            $('.pip_container').removeClass('assignment');
+            if (isInConsole && !isInLightning) {
+                sforce.console.setCustomConsoleComponentButtonIconUrl(consoleButtonUrl);
+            }
+            hasAssignment = false;
+        }
+
+        function connectionError(error) {
+            $('#notification_error').attr('title', error).removeClass('notification_error_hidden');
+        }
+
+    </script>
+    <apex:form >
+        <apex:pageMessages />
+        <apex:actionPoller action="{!init}" reRender="login_panel,status_panel,pull_panel,status_bar,script_panel" interval="600"/>
+        <apex:actionFunction name="updateNewCount" action="{!updateNewCount}" reRender="new_count_label"/>
+        <div id="action_content">
+            <center>
+
+                <a href="https://nc-squared.com" target="new"><img src="{!URLFOR($Resource.DEResources, 'images/logo-blue-140x35.png')}" id="widget_logo"/></a>
+
+                <br/>
+                <apex:outputPanel id="login_panel" rendered="{!isLoginMode}" styleClass="toggleWrapper">
+                    <apex:actionFunction name="doUpdate" action="{!doUpdate}"/>
+                    <apex:inputCheckbox value="{!isLoggedIn}" onchange="doUpdate()" styleClass="de_agent_logged_in"/>
+                    <apex:selectList id="log_out_reason" value="{!logOutReason}" size="1" style="width:150px;margin-top:5px;margin-bottom:10px;" styleClass="log_out_list" rendered="{!logOutReasonRequired}">
+                        <apex:selectOptions value="{!logOutReasonList}"/>
+                    </apex:selectList>
+                </apex:outputPanel>
+                <br/>
+                <apex:outputPanel id="status_panel" styleClass="status_panel" layout="block">
+                    <apex:outputPanel id="team_list" rendered="{!teams.size > 0}">
+                        <table>
+                            <apex:repeat value="{!teams}" var="t">
+                                <tr>
+                                    <td>{!t.name}</td>
+                                    <td align="right">
+                                        <apex:image value="{!URLFOR($Resource.n2de__DEResources, 'images/tick32.png')}" styleClass="status" rendered="{!t.isMemberActive}"/>
+                                        <apex:image value="{!URLFOR($Resource.n2de__DEResources, 'images/cross32.png')}" styleClass="status" rendered="{!NOT(t.isMemberActive)}"/>
+                                    </td>
+                                </tr>
+                            </apex:repeat>
+                        </table>
+                    </apex:outputPanel>
+                    <apex:outputPanel id="no_teams" rendered="{!teams.size == 0}">
+                        <table>
+                            <tr>
+                                <td>
+                                    <center>You are not a member of any distribution teams</center>
+                                </td>
+                            </tr>
+                        </table>
+                    </apex:outputPanel>
+
+                </apex:outputPanel>
+                <apex:outputPanel id="pull_panel" styleClass="pull_panel" layout="block">
+                    <apex:outputPanel rendered="{!NOT(isUnderMaintenance) && anyPullDistributorsActive}">
+                        <apex:selectList id="pull_distributor_list" value="{!DefaultDistributorId}" size="1" style="width:150px;" styleClass="pullPicklist">
+                            <apex:selectOptions value="{!PullDistributorsAvailable}"/>
+                        </apex:selectList>
+                        <input type="button" value="Pull" onclick="pullRecord()" class="btn pull_button"/>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!NOT(isUnderMaintenance) && teams.size > 0 && NOT(anyPullDistributorsActive)}">
+                        <p id="no_pull">No pull distributors are currently active</p>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!isUnderMaintenance}">
+                        <p id="no_pull">Distribution Engine is in maintenance mode. Distribution is not available at this time.</p>
+                    </apex:outputPanel>
+                </apex:outputPanel>
+
+                <apex:outputPanel id="status_bar" styleClass="status-bar" layout="block">
+                    <apex:outputLink value="#" styleClass="view_my_alerts"><img src="{!URLFOR($Resource.DEResources, 'images/alert32_3.png')}" width="25" title="SLA Alerts - items that have not been actioned on time"/><span class="img-label">{!alertCount}</span></apex:outputLink>
+                    <div class="pip_container"><apex:outputLink value="#" styleClass="view_my_new"><abbr class="pip"></abbr><img src="{!URLFOR($Resource.DEResources, 'images/new32_2.png')}" width="25" title="New - items assigned to you that have not been actioned"/><apex:outputText id="new_count_label" styleClass="img-label" value="{!newCount}"/></apex:outputLink></div>
+                    <img id="notification_error" src="{!URLFOR($Resource.DEResources, 'images/redwarning32.png')}" class="notification_error notification_error_hidden"/>
+                </apex:outputPanel>
+            </center>
+        </div>
+    </apex:form>
+</apex:page>

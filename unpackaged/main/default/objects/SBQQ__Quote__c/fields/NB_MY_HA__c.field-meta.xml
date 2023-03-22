@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NB_MY_HA__c</fullName>
+    <externalId>false</externalId>
+    <formula>Japanese_Template_Show_Address__c = False &amp;&amp; isNotAddOn__c = True &amp;&amp; Deal_Type__c &lt;&gt; &quot;Renewal&quot; &amp;&amp; SBQQ__SubscriptionTerm__c &gt; 12</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NB-MY-HA</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

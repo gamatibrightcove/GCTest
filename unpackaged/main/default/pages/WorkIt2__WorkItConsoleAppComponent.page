@@ -1,0 +1,11 @@
+<apex:page showHeader="false">
+    <apex:includeScript value="/support/console/26.0/integration.js"/>
+    <apex:includeScript value="{!URLFOR($Resource.WorkIt2__WorkIt2Resources, '/lib/jquery-1.7.1.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.WorkIt2__WorkIt2Resources, '/js/console.js')}"/>
+
+    <div class="timerFrames" style="text-align:center"></div>
+
+    <script>
+        timerPage = 'workit2__workitConsole';
+    </script>
+</apex:page>

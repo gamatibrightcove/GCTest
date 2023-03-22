@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This is usually not entered from the UI. This is the Record ID of the object that is associated to this NPS Response. --></help>
+        <label><!-- NPS Associated Object Key --></label>
+        <name>JBCXM__NPSAssociatedObjectKey__c</name>
+    </CustomFieldTranslation>

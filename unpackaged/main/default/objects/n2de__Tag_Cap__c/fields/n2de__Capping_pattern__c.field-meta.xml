@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Capping_pattern__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Capping Pattern</label>
+    <referenceTo>n2de__Capping_Pattern__c</referenceTo>
+    <relationshipLabel>Tag Caps</relationshipLabel>
+    <relationshipName>Tag_Caps</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

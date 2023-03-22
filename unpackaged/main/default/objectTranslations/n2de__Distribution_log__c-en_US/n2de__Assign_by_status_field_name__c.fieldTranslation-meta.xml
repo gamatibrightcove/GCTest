@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Status Field for Assign by Status --></label>
+        <name>n2de__Assign_by_status_field_name__c</name>
+    </CustomFieldTranslation>

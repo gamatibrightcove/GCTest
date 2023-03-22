@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- 1st field to determine the sequence that objects are processed in the queue. --></help>
+        <label><!-- Order field 1 --></label>
+        <name>n2de__Order_1_field_name__c</name>
+    </CustomFieldTranslation>

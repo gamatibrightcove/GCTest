@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Lookback_Days__c</fullName>
+    <defaultValue>180</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Maximum number of days between a Drift Conversation occurring and an Opportunity being created in order for that Opportunity to appear on the Drift Influenced pre-created Revenue Reports in the &quot;Drift&quot; folder.</description>
+    <externalId>false</externalId>
+    <label>Influenced Look-Back Period</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

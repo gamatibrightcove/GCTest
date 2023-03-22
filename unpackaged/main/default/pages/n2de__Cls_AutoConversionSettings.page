@@ -1,0 +1,215 @@
+<apex:page controller="n2de.Cls_AutoConversionSettings_Controller" tabStyle="Distribution_Classifier__tab" sidebar="false"
+           standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Auto Conversion Settings"
+           action="{!init}">
+    <html>
+
+        <head>
+            <c:PageHead />
+
+            <script defer="defer">
+                window.addEventListener("load", function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:PageContext />
+
+                    const getAutoConversionSettings = new n2.dataProvider.VisualForce({
+                        id: 'get-auto-conversion-settings',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.getAutoConversionSettings}'
+                            }
+                        }
+                    });
+
+                    const toggleAutoConversionEnabled = new n2.dataProvider.VisualForce({
+                        id: 'toggle-auto-conversion-enabled',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.toggleAutoConversionEnabled}'
+                            }
+                        }
+                    });
+
+                    const toggleAutoConversionRuleActiveState = new n2.dataProvider.VisualForce({
+                        id: 'toggle-auto-conversion-rule-active-state',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.toggleAutoConversionRuleActiveState}'
+                            }
+                        }
+                    });
+
+                    const deleteAutoConversionRule = new n2.dataProvider.VisualForce({
+                        id: 'delete-auto-conversion-rule',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.deleteAutoConversionRule}'
+                            }
+                        }
+                    });
+
+                    const reorderRules = new n2.dataProvider.VisualForce({
+                        id: 'reorder-rules',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.reorderRules}'
+                            }
+                        }
+                    });
+
+                    const getAllFieldOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-all-field-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.getAllFieldOptions}'
+                            }
+                        }
+                    });
+
+                    const getObjectFieldsForUpdate = new n2.dataProvider.VisualForce({
+                        id: 'get-update-field-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.getObjectFieldsForUpdate}'
+                            }
+                        }
+                    });
+
+                    const getLeadObjectFieldOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-lead-object-field-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.getLeadObjectFieldsForFilter}'
+                            }
+                        }
+                    });
+
+                    const getPicklistFieldSelectOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-picklist-field-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.getPicklistFieldSelectOptions}'
+                            }
+                        }
+                    });
+
+                    const saveAutoConversionSettings = new n2.dataProvider.VisualForce({
+                        id: 'save-auto-conversion-settings',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.saveAutoConversionSettings}'
+                            }
+                        }
+                    });
+
+                    const getAutoConversionRuleSettings = new n2.dataProvider.VisualForce({
+                        id: 'get-auto-conversion-rule-settings',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.getAutoConversionRuleSettings}'
+                            }
+                        }
+                    });
+
+                    const saveAutoConversionRuleSettings = new n2.dataProvider.VisualForce({
+                        id: 'save-auto-conversion-rule-settings',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.saveAutoConversionRuleSettings}'
+                            }
+                        }
+                    });
+
+                    const getMatchFilterOptions = new n2.dataProvider.Static({
+                        id: 'get-match-filter-options',
+                        data: [{
+                            value: 'Any',
+                            label: 'Any'
+                        }, {
+                            value: 'No Match',
+                            label: 'No Match'
+                        }, {
+                            value: 'Account & Contact Match',
+                            label: 'Account & Contact Match'
+                        }, {
+                            value: 'Account Only Match',
+                            label: 'Account Only Match'
+                        }, {
+                            value: 'Lead Match',
+                            label: 'Lead Match'
+                        }]
+                    });
+
+                    const getAutoConversionActionOptions = new n2.dataProvider.Static({
+                        id: 'get-auto-conversion-action-options',
+                        data: [{
+                            value: 'NoAction',
+                            label: 'Do not convert'
+                        }, {
+                            value: 'DeDuplicate',
+                            label: 'De-duplicate'
+                        }, {
+                            value: 'Convert',
+                            label: 'Auto-convert'
+                        }]
+                    });
+
+                    const getCreateOpportunityOptions = new n2.dataProvider.Static({
+                        id: 'get-create-opportunity-options',
+                        data: [{
+                            value: 'Always',
+                            label: 'Always'
+                        }, {
+                            value: 'IfNoOpenOpportunity',
+                            label: 'Where open Opportunity doesn\'t exist'
+                        }]
+                    });
+
+                    const getLeadConvertStatuses = new n2.dataProvider.VisualForce({
+                        id: 'get-lead-convert-status-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.getLeadConvertStatuses}'
+                            }
+                        }
+                    });
+
+                    const getDefaultOwnerUsers = new n2.dataProvider.VisualForce({
+                        id: 'get-available-users',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.getDefaultOwnerUsers}'
+                            }
+                        }
+                    });
+
+                    const getAutoConversionRuleChangeHistory = new n2.dataProvider.VisualForce({
+                        id: 'get-auto-conversion-rule-change-history',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Cls_AutoConversionSettings_Controller.getAutoConversionRuleChangeHistory}'
+                            }
+                        }
+                    });
+
+                    const autoConversionSettingsPage = new n2.de.page.classifier.AutoConversionSettings({
+                        id: 'auto-conversion-settings-page',
+                        // getNavigationGroups is available from ClsNavigation, which is only included on V2 pages to allow us access to a centralised source for
+                        // the navigation config, giving us the ability to support both V1 and V2 pages.
+                        navigationGroups: getNavigationGroups('auto-conversion-settings')
+                    });
+
+                    autoConversionSettingsPage.render();
+                });
+            </script>
+        </head>
+
+        <body>
+            <!--
+                NOTE: This page exists here to group the classifier pages together.  Unlike the other classifier pages however we need this to be built in V2 of
+                N2JS rather than V1.  As we encounter more changes in the V1 pages we should look to convert them to V2.
+            -->
+            <c:ClsNavigation pkgNamespace="{!OrgNamespace}" useN2JSV1="false"/>
+        </body>
+
+    </html>
+</apex:page>

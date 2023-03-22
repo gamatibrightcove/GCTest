@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Impact on Annual Subscription Value (ASV), if applicable, at stake with this alert. Example: for a &quot;Downsell alert&quot;, enter potential reduction in ASV if the alert is not proactively addressed. --></help>
+        <label><!-- Alert ASV --></label>
+        <name>JBCXM__ASV__c</name>
+    </CustomFieldTranslation>

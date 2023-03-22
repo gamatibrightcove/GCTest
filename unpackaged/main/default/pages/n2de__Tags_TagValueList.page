@@ -1,0 +1,102 @@
+<apex:page controller="n2de.Tags_TagValueList_Controller" tabStyle="Distribution_Tags__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Tag Value List" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+                window.addEventListener('load', function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}" attrCurrentUserId="{!$User.Id}"/>
+                    <c:PageContext />
+
+                    const getTagCollectionData = new n2.dataProvider.Static({
+                        id: 'get-tag-collection-data',
+                        data: {
+                            tagCollectionId: '{!JSENCODE(TagCollectionId)}'
+                        }
+                    });
+
+                    const getTagValues = new n2.dataProvider.VisualForce({
+                        id: 'get-tag-values',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagValueList_Controller.getTagValues}'
+                            }
+                        }
+                    });
+
+                    const getTeamObjects = new n2.dataProvider.VisualForce({
+                        id: 'get-team-objects',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagValueList_Controller.getTeamObjects}'
+                            }
+                        }
+                    });
+
+                    const getAllFieldOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-all-field-objects',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagValueList_Controller.getAllFieldOptions}'
+                            }
+                        }
+                    });
+
+                    const getPicklistFieldSelectOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-picklist-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagValueList_Controller.getPicklistFieldSelectOptions}'
+                            }
+                        }
+                    });
+
+                    const addTags = new n2.dataProvider.VisualForce({
+                        id: 'add-tags',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Tags_TagValueList_Controller.createTags}'
+                            }
+                        }
+                    });
+
+                    const editTag = new n2.dataProvider.VisualForce({
+                        id: 'edit-tag',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Tags_TagValueList_Controller.editTag}'
+                            }
+                        }
+                    });
+
+                    const deleteTags = new n2.dataProvider.VisualForce({
+                        id: 'delete-tags',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Tags_TagValueList_Controller.deleteTags}'
+                            }
+                        }
+                    });
+
+                    const getTagValueUsage = new n2.dataProvider.VisualForce({
+                        id: 'get-tag-value-usage',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Tags_TagValueList_Controller.getTagValueUsage}'
+                            }
+                        }
+                    });
+
+                    const tagValueListPage = new n2.de.page.tags.TagValueList({
+                        id: 'tags-tag-value-list'
+                    });
+                    tagValueListPage.render();
+                });
+            </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

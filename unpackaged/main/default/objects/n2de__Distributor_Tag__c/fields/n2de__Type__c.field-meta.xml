@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The type of distribution tag - either a static value or dynamic retrieving tag value from a field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The type of distribution tag - either a static value or dynamic retrieving tag value from a field</inlineHelpText>
+    <label>Type</label>
+    <length>80</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

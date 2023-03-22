@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A unique key for the &quot;Drift Related Opportunity&quot; junction object created by joining the &quot;Drift Conversation&quot; object Salesforce ID to the &quot;Opportunity&quot; object Salesforce ID. --></help>
+        <label><!-- ConversationOppKey --></label>
+        <name>DriftData__ConversationOppKey__c</name>
+    </CustomFieldTranslation>

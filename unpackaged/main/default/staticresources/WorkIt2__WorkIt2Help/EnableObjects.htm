@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<style type="text/css">
+			body {font-family:arial; font-size:12px; margin:10px}
+		</style>
+	</head>
+	<body>
+		<div style="background-color: #737e96; color: #ffffff; padding:10px; font-size:120%; font-weight:bold; ">How to enable Time Tracking for additional objects?</div>
+		<div style="padding:10px;">
+			To enable an object with WorkIt! follow the steps below:
+			<br/></br>
+			<b>Step 1:</b> Go to Setup | Create | Objects and click on the Timing object
+			<br/></br></br>
+			<b>Step 2:</b> In the Custom Fields &amp; Relationships section click the New button
+			<br/></br></br>
+			<b>Step 3:</b> Create a Lookup Relationship field and relate it to the Object that you want to enable with WorkIt! (you can add a description and customize visibility options if desired)
+			<br/></br>
+			<b>Step 4:</b> If the object that you are enabling Time Tracking for is a standard Salesforce object, go to the object's fields page (for example Setup | Customize | Accounts | Fields), for a custom object go to Setup | Create | Objects | OBJECTNAME
+			<br/></br></br>
+			<b>Step 5:</b> In the Custom Fields &amp; Relationships section, click the New button and create a Checkbox field named 'Dont_Time' (the name must match exactly), it is not necessary to add this field to any page layouts
+			<br/></br></br>
+			<b>Step 6:</b> Go to the WorkIt! App Setup page (Setup | View Installed Packages | WorkIt! | Configure) and verify that the object appears in the Enabled Objects list
+		</div>
+	</body>
+</html>

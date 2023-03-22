@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- SLAs on distribution: If the period of time from distribution has passed and the condition is found to be true an alert will be raised. SLAs must be entered in the sequence they will occur. --></help>
+        <label><!-- Alert sequence --></label>
+        <name>n2de__Alert_sequence__c</name>
+    </CustomFieldTranslation>

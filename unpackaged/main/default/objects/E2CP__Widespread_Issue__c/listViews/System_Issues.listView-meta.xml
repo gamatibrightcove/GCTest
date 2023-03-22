@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System_Issues</fullName>
+    <columns>NAME</columns>
+    <columns>E2CP__Title__c</columns>
+    <columns>E2CP__Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>E2CP__Closed_Date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Open System Issues</label>
+    <sharedTo>
+        <role>Technical_Support_Manager</role>
+        <role>Technical_Support_Rep</role>
+    </sharedTo>
+</ListView>

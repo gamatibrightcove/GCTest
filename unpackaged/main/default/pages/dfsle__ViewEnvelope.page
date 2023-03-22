@@ -1,0 +1,16 @@
+<apex:page sidebar="false" showHeader="true" controller="dfsle.StatusController">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <apex:includeLightning />
+    <div id="viewEnvelopeContent"></div>
+    <script type="text/javascript">
+      var returnUrl = '{!JSENCODE($CurrentPage.parameters.returnUrl)}';
+      var sourceId = '{!JSENCODE($CurrentPage.parameters.sourceId)}';
+      $Lightning.use('{!JSENCODE(namespace)}:ViewEnvelopeApp', function () {
+        $Lightning.createComponent('{!JSENCODE(namespace)}:statusEnvelopeActionsView', {
+          returnUrl: returnUrl,
+          sourceId: sourceId
+        }, 'viewEnvelopeContent');
+      });
+    </script>
+    </html>
+</apex:page>

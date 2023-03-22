@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- DisplayPreference --></label>
+        <name>JBCXM__DisplayPreference__c</name>
+        <picklistValues>
+            <masterLabel>In line</masterLabel>
+            <translation><!-- In line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next question</masterLabel>
+            <translation><!-- Next question --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Action tracking is not restricted to the assigned user and will be tracked when any user performs the action. --></help>
+        <label><!-- Track actions from any user --></label>
+        <name>n2de__Track_actions_any_user__c</name>
+    </CustomFieldTranslation>

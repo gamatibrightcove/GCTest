@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The capping method used to limit the number or total value of records distributed to team members. --></help>
+        <label><!-- Distribution control cap --></label>
+        <name>n2de__Distribution_control__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half hourly</masterLabel>
+            <translation><!-- Half hourly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation><!-- Hourly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Load balanced</masterLabel>
+            <translation><!-- Load balanced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

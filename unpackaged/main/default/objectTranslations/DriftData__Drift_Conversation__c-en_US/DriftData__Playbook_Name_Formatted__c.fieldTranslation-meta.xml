@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A lookup of the Drift Conversation_Playbook Name field which replaces the null (-) value with “[No Playbook Associated]” to add more context to reports and dashboards. --></help>
+        <label><!-- Playbook Name (Reports Only) --></label>
+        <name>DriftData__Playbook_Name_Formatted__c</name>
+    </CustomFieldTranslation>

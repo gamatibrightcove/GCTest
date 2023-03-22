@@ -1,0 +1,90 @@
+<apex:page controller="n2de.Analytics_Charts_Controller" tabStyle="Distribution_Analytics__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Analytics" action="{!init}">
+
+    <html>
+
+        <head>
+            <c:PageHead />
+            <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, 'css/c3.css')}"/>
+            <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, 'css/visavail.css')}"/>
+            <script defer="defer" src="{!URLFOR($Resource.dejs, 'js/c3.js')}"></script>
+            <script defer="defer" src="{!URLFOR($Resource.dejs, 'js/visavail.js')}"></script>
+
+            <script defer="defer">
+                    window.addEventListener('load', function() {
+                        <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                        <c:PageContext />
+
+                        const getFilterOptions = new n2.dataProvider.VisualForce({
+                            id: 'get-filter-options',
+                            methods: {
+                                get: {
+                                    method: '{!$RemoteAction.Analytics_Charts_Controller.getFilterOptions}'
+                                }
+                            }
+                        });
+
+                        const getDistributionsOverTime = new n2.dataProvider.VisualForce({
+                            id: 'get-distributions-over-time',
+                            methods: {
+                                get: {
+                                    method: '{!$RemoteAction.Analytics_Charts_Controller.getDistributionsOverTime}',
+                                    config: {
+                                        buffer: false,
+                                        timeout: 120000
+                                    }
+                                }
+                            }
+                        });
+
+                        const getDistributionHourlyTrend = new n2.dataProvider.VisualForce({
+                            id: 'get-distributions-hourly-trend',
+                            methods: {
+                                get: {
+                                    method: '{!$RemoteAction.Analytics_Charts_Controller.getDistributionHourlyTrend}',
+                                    config: {
+                                        buffer: false,
+                                        timeout: 120000
+                                    }
+                                }
+                            }
+                        });
+
+                        const getTimeToActionAnalytics = new n2.dataProvider.VisualForce({
+                            id: 'get-time-to-action',
+                            methods: {
+                                get: {
+                                    method: '{!$RemoteAction.Analytics_Charts_Controller.getTimeToActionAnalytics}',
+                                    config: {
+                                        buffer: false,
+                                        timeout: 120000
+                                    }
+                                }
+                            }
+                        });
+
+                        const getUserActivityAnalytics = new n2.dataProvider.VisualForce({
+                          id: 'get-user-activity',
+                          methods: {
+                              get: {
+                                  method: '{!$RemoteAction.Analytics_Charts_Controller.getUserActivityAnalytics}',
+                                  config: {
+                                      buffer: false,
+                                      timeout: 120000
+                                  }
+                              }
+                          }
+                        });
+
+                        const distributionPage = new n2.de.page.analytics.Distribution({
+                            id: 'analytics-distribution'
+                        });
+                        distributionPage.render();
+                    });
+                </script>
+        </head>
+
+        <body></body>
+
+    </html>
+
+</apex:page>

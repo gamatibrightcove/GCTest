@@ -1,0 +1,9 @@
+<apex:page showHeader="false" standardStylesheets="true">
+    <c:Timer quickProps="true">
+        <c:SessionTime />
+        <c:Selector />
+        <c:Comment />
+        <c:Buttons />
+        <c:TotalTime />
+    </c:Timer>
+</apex:page>

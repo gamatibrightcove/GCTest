@@ -1,0 +1,46 @@
+<apex:page controller="n2de.Logs_AutoConversionLogList_Controller" tabStyle="Logs__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Auto-Conversion Log List" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+            window.addEventListener('load', function() {
+                <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                <c:LogsContext attrHasArchivingBeenEnabled="{!HasArchivingBeenEnabled}" attrIsClassifierLoggingEnabled="{!IsClassifierLoggingEnabled}"/>
+                <c:PageContext />
+
+                const getAutoConversionLogs = new n2.dataProvider.VisualForce({
+                    id: 'get-auto-conversion-logs',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Logs_AutoConversionLogList_Controller.getAutoConversionLogsResponse}',
+                            config: {
+                                buffer: false,
+                                timeout: 120000
+                            }
+                        }
+                    }
+                });
+
+                const getFilterOptionData = new n2.dataProvider.VisualForce({
+                    id: 'get-filter-option-data',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Logs_AutoConversionLogList_Controller.getFilterOptionData}'
+                        }
+                    }
+                });
+
+                const autoConversionLogListPage = new n2.de.page.logs.AutoConversionLogList({
+                    id: 'auto-conversion-log-list-page'
+                });
+                autoConversionLogListPage.render();
+            });
+        </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

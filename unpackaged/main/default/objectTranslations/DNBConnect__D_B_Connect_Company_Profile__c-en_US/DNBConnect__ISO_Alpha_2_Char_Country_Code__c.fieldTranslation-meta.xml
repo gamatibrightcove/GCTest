@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The two-letter country code, defined by the International Organization for Standardization (ISO) ISO 3166-1 scheme, identifying the country in which the entity is located. --></help>
+        <label><!-- ISO Alpha 2 Char Country Code --></label>
+        <name>DNBConnect__ISO_Alpha_2_Char_Country_Code__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The cap, in number of objects, that is applied to members of the team based upon the selected distribution control. --></help>
+        <label><!-- Member cap --></label>
+        <name>n2de__Distribution_control_member_cap__c</name>
+    </CustomFieldTranslation>

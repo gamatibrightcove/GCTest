@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Adoption Measure against which the data is loaded. --></help>
+        <label><!-- Measure Id --></label>
+        <name>JBCXM__MeasureID__c</name>
+        <relationshipLabel><!-- User Adoption --></relationshipLabel>
+    </CustomFieldTranslation>

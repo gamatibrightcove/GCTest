@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Distributor runtime --></label>
+        <name>n2de__Distributor_runtime__c</name>
+        <relationshipLabel><!-- Distributors --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case.WorkIt2__Timings__r$Owner</field>
+    </columns>
+    <columns>
+        <field>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$Name</field>
+    </columns>
+    <columns>
+        <field>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$WorkIt2__Start__c</field>
+    </columns>
+    <columns>
+        <field>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$WorkIt2__End__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$WorkIt2__Time_In_Hours__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$WorkIt2__Business_Time_In_Hours__c</field>
+    </columns>
+    <columns>
+        <field>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$WorkIt2__Time__c</field>
+    </columns>
+    <columns>
+        <field>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$WorkIt2__Business_Time__c</field>
+    </columns>
+    <columns>
+        <field>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$WorkIt2__Overtime_Status__c</field>
+    </columns>
+    <description>Which session types consume most time?</description>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$WorkIt2__Session_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Session Types</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>WorkIt2__Cases_with_Time__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$WorkIt2__End__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

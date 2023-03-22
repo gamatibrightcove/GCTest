@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Conversation_Source_URL_Path__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The URL Path for the page where the Drift conversation was initiated.</description>
+    <externalId>false</externalId>
+    <formula>DriftData__Drift_Conversation__r.DriftData__Conversation_Source_URL_Path__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The URL Path for the page where the Drift conversation was initiated.</inlineHelpText>
+    <label>Conversation Source URL Path</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

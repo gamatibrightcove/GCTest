@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Account Mapping Field is used to map to the account record that is being referred to in JBara API calls. --></help>
+        <label><!-- AccountMapField --></label>
+        <name>JBCXM__AccountMapField__c</name>
+    </CustomFieldTranslation>

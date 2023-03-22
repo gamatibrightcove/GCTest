@@ -1,0 +1,111 @@
+<messaging:emailTemplate subject="Distribution Engine Notification" recipientType="User" relatedToType="n2de__Distribution_log__c">
+    <messaging:htmlEmailBody >
+        <!--  Assignment notification -->
+        <apex:outputPanel rendered="{!relatedTo.n2de__In_alert__c != true && relatedTo.n2de__In_error__c != true && relatedTo.n2de__Is_reassigned_to_queue__c != true}">
+            <h1>Assignment notification</h1>
+            <p>The following {!relatedTo.n2de__Distributor__r.Team__r.n2de__Object_name__c} has been assigned to you.</p>
+        </apex:outputPanel>
+
+        <!--  Alert notification -->
+        <apex:outputPanel rendered="{!relatedTo.n2de__In_alert__c == true && relatedTo.n2de__Is_reassigned_to_queue__c != true}">
+            <h1>SLA notification</h1>
+            <p>The following {!relatedTo.n2de__Distributor__r.Team__r.n2de__Object_name__c} has missed an SLA because it has not been actioned quickly enough.</p>
+            <p>{!relatedTo.n2de__Alert_tip__c}</p>
+        </apex:outputPanel>
+
+        <!-- Reassign notification -->
+        <apex:outputPanel rendered="{!relatedTo.n2de__Is_reassigned_to_queue__c == true}">
+            <h1>Reassignment notification</h1>
+            The following {!relatedTo.n2de__Distributor__r.Team__r.n2de__Object_name__c} has been reassigned because it was not actioned quickly enough.
+            <p>{!relatedTo.n2de__Alert_tip__c}</p>
+        </apex:outputPanel>
+
+        <hr/>
+
+        <table>
+
+            <!-- Object and record name -->
+            <tr>
+                <td>{!relatedTo.n2de__Distributor__r.Team__r.n2de__Object_name__c} Name:</td>
+                <td>{!relatedTo.Assigned_object_record_name__c}</td>
+            </tr>
+            <tr>
+                <td>{!relatedTo.n2de__Distributor__r.Team__r.n2de__Object_name__c} Link:</td>
+                <td>
+                    <c:EmailNotificationLink recordId="{!relatedTo.n2de__Assigned_object_id_index__c}" objectName="{!relatedTo.n2de__Distributor__r.Team__r.n2de__Object_name__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>{!relatedTo.n2de__Status_on_assignment__c}</td>
+            </tr>
+
+            <!-- Case details -->
+            <apex:outputPanel rendered="{!relatedTo.n2de__Distributor__r.Team__r.n2de__Object_name__c == 'Case'}">
+                <tr>
+                    <td>{!$ObjectType.Case.fields.Subject.Label}:</td>
+                    <td>{!relatedTo.n2de__Case__r.Subject}</td>
+                </tr>
+                <tr>
+                    <td>{!$ObjectType.Case.fields.Priority.Label}:</td>
+                    <td>{!relatedTo.n2de__Case__r.Priority}</td>
+                </tr>
+                <tr>
+                    <td>Account:</td>
+                    <td>{!relatedTo.n2de__Case__r.Account.Name}</td>
+                </tr>
+                <tr>
+                    <td>Contact:</td>
+                    <td>{!relatedTo.n2de__Case__r.Contact.Name}</td>
+                </tr>
+            </apex:outputPanel>
+
+            <!-- Lead details -->
+            <apex:outputPanel rendered="{!relatedTo.n2de__Distributor__r.Team__r.n2de__Object_name__c == 'Lead'}">
+                <tr>
+                    <td>{!$ObjectType.Lead.fields.LeadSource.Label}:</td>
+                    <td>{!relatedTo.n2de__Lead__r.LeadSource}</td>
+                </tr>
+                <tr>
+                    <td>{!$ObjectType.Lead.fields.Company.Label}:</td>
+                    <td>{!relatedTo.n2de__Lead__r.Company}</td>
+                </tr>
+                <tr>
+                    <td>{!$ObjectType.Lead.fields.Rating.Label}:</td>
+                    <td>{!relatedTo.n2de__Lead__r.Rating}</td>
+                </tr>
+            </apex:outputPanel>
+
+            <!-- Opportunity details -->
+            <apex:outputPanel rendered="{!relatedTo.n2de__Distributor__r.Team__r.n2de__Object_name__c == 'Opportunity'}">
+                <tr>
+                    <td>{!$ObjectType.Opportunity.fields.LeadSource.Label}:</td>
+                    <td>{!relatedTo.n2de__Opportunity__r.LeadSource}</td>
+                </tr>
+                <tr>
+                    <td>{!$ObjectType.Lead.fields.Company.Label}:</td>
+                    <td>{!relatedTo.n2de__Opportunity__r.Type}</td>
+                </tr>
+                <tr>
+                    <td>{!$ObjectType.Lead.fields.Rating.Label}:</td>
+                    <td>{!relatedTo.n2de__Opportunity__r.StageName}</td>
+                </tr>
+            </apex:outputPanel>
+
+            <!-- Distributor details -->
+            <apex:outputPanel rendered="{!relatedTo.n2de__In_alert__c != true && relatedTo.n2de__In_error__c != true && relatedTo.n2de__Is_reassigned_to_queue__c != true}">
+                <tr>
+                    <td>Assigned by</td>
+                    <td>{!relatedTo.n2de__Distributor__r.Name} ({!relatedTo.n2de__Distribution_Team__c})</td>
+                </tr>
+            </apex:outputPanel>
+
+        </table>
+
+        <hr/>
+
+        <!-- Footer / DE logo -->
+        <c:EmailNotificationFooter />
+
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The distributed object unique identifier field used to find a match on lookup --></help>
+        <label><!-- Lookup unique id --></label>
+        <name>n2de__Lookup_unique_id_field_name__c</name>
+    </CustomFieldTranslation>

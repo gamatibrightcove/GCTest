@@ -179,6 +179,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Ads Analytics%2FInsights Enablement</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Advertising</fullName>
             <default>false</default>
         </values>
@@ -1220,6 +1224,10 @@
         </values>
         <values>
             <fullName>Purge Deleted Videos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QoE Analytics%2FInsights Enablement</fullName>
             <default>false</default>
         </values>
         <values>

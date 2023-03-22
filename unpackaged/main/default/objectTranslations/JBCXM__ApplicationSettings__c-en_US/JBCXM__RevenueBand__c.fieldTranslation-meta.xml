@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Revenue Band Config --></label>
+        <name>JBCXM__RevenueBand__c</name>
+    </CustomFieldTranslation>

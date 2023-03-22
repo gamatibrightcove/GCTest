@@ -1,0 +1,150 @@
+<apex:page controller="WorkIt2.SessionTypeListController" extensions="WorkIt2.SessionTypeExtension" title="Session Types: Home" tabStyle="WorkIt2__Session_Type__c">
+    <style type="text/css">
+        .dataCell {
+            padding-top:6px !important;
+            vertical-align:top !important;
+        }
+        .select {
+            padding-top:4px !important;
+            width:2em;
+        }
+        
+        .action {
+            width:5em;
+            color: black;
+        }
+        .action A {
+            color: #015BA7;
+            text-decoration: none;
+        }
+        .action A:hover{
+            text-decoration: underline;
+        }
+        
+        .dataRow.selected {background: #b0e1fa;}
+        .dataRow.selected.highlight {background: #b0e1fa;}
+        
+    </style>
+    
+    <apex:includeScript value="{!URLFOR($Resource.WorkIt2__WorkIt2Resources, '/lib/jquery-1.7.1.min.js')}"/>
+    <script>
+        $j = jQuery.noConflict();
+        
+        $j(document).ready(function() {
+            bindSelect();
+        });
+        
+        function selectAll() {
+            $j('.select input').attr('checked', true);
+            highlightSelected();
+        }
+
+        function unSelectAll() {
+            $j('.select input').attr('checked', false);
+            highlightSelected();
+        }
+
+        function confirmSelect() {
+            b = $j('.select input').is(':checked');
+            if (!(b)) {
+                alert('Please select at least one session type');
+                return false;
+            }
+            return true;
+        }
+        
+        function highlightSelected() {
+            $j('.select input').each(function() {
+                if ($j(this).is(':checked'))
+                    $j(this).parent().parent().addClass('selected');
+                else
+                    $j(this).parent().parent().removeClass('selected');         
+            });
+        }
+        
+        function bindSelect() {
+            $j('.select input').click(function() {
+                highlightSelected();
+            });
+        }               
+    </script>
+    
+    <apex:sectionHeader subtitle="Home" title="Session Types"/>
+    Each WorkIt! session is associated with a Session Type that describes the user’s activity. Use this tab to customize your company’s Session Types. Session Types can be global, or object, record type, and context specific.
+    <br/><br/>
+    <apex:form >
+    <apex:pageBlock mode="detail">
+        
+        <apex:pageBlockButtons location="top">
+            <apex:commandButton value="New Session Type" action="{!newType}"/>
+            <apex:commandButton value="Edit Selected" action="{!editMulti}" onclick="return confirmSelect();"/>
+            
+            <apex:outputPanel style="border:0px solid #ccc; padding-right:0px; padding-top:3px; float:right; text-align:right" layout="block">
+                <apex:actionRegion >
+                <apex:selectList value="{!filterActive}" size="1" >
+                    <apex:actionSupport event="onchange" action="{!applyFilter}" oncomplete="bindSelect();" rerender="tbl"/>
+                    <apex:selectOption itemValue="" itemLabel="Active and Inactive"/>
+                    <apex:selectOption itemValue="1" itemLabel="Active Only"/>
+                    <apex:selectOption itemValue="0" itemLabel="Inactive Only"/>
+                </apex:selectList>
+                <apex:selectList value="{!filterGroup}" size="1" >
+                    <apex:actionSupport event="onchange" action="{!applyFilter}" oncomplete="bindSelect();" rerender="tbl"/>
+                    <apex:selectOption itemValue="" itemLabel="All Groups"/>
+                    <apex:selectOption itemValue="*" itemLabel="Ungrouped"/>
+                    <apex:selectOption itemDisabled="true" itemValue="" itemLabel="-----"/>
+                    <apex:selectOptions value="{!filterGroupOptions}"/>
+                </apex:selectList>
+                <apex:selectList value="{!filterObject}" size="1" >
+                    <apex:actionSupport event="onchange" action="{!applyFilter}" oncomplete="bindSelect();" rerender="tbl"/>
+                    <apex:selectOption itemValue="" itemLabel="All Objects"/>
+                    <apex:selectOption itemValue="*" itemLabel="Object Global"/>
+                    <apex:selectOption itemDisabled="true" itemValue="" itemLabel="-----"/>
+                    <apex:selectOptions value="{!filterObjectOptions}"/>
+                </apex:selectList>
+                <apex:selectList value="{!filterContext}" size="1" >
+                    <apex:actionSupport event="onchange" action="{!applyFilter}" oncomplete="bindSelect();" rerender="tbl"/>
+                    <apex:selectOption itemValue="" itemLabel="All Contexts"/>
+                    <apex:selectOption itemValue="*" itemLabel="Context Global"/>
+                    <apex:selectOption itemDisabled="true" itemValue="" itemLabel="-----"/>
+                    <apex:selectOptions value="{!filterContextOptions}"/>
+                </apex:selectList>
+                </apex:actionRegion>
+            </apex:outputPanel>
+        
+        </apex:pageBlockButtons>
+        <apex:pageMessages />
+        <apex:pageBlockTable value="{!shownItems}" var="i" id="tbl">
+            <apex:column headerValue="" styleClass="select" width="3em">
+                <apex:inputCheckbox value="{!i.selected}"/>
+            </apex:column>
+
+            <apex:column headerValue="Action" styleClass="action" width="5em">
+                <a href="/{!i.sessionType.id}/e?retURL={!URLENCODE(retUrl)}">Edit</a>&nbsp;|
+                <apex:commandLink action="{!deleteItem}" onclick="return confirmDelete();">
+                    Del
+                    <apex:param name="delId" value="{!i.sessionType.id}"/>  
+                </apex:commandLink>
+            </apex:column>
+            
+            <apex:column headerValue="Session Type Name">
+                <a href="/{!i.sessionType.id}">{!i.sessionType.name}</a>
+            </apex:column>
+            <apex:column headerValue="Active" value="{!i.sessionType.WorkIt2__Active__c}" style="text-align:center; width:5em"/>
+            <apex:column headerValue="Group" value="{!i.sessionType.WorkIt2__Group__c}" width="17%"/>
+            <apex:column headerValue="Enabled Objects" width="15%">
+                <apex:repeat value="{!i.objects}" var="o">
+                    {!o}<br/>
+                </apex:repeat>
+            </apex:column>
+            <apex:column headerValue="Enabled Contexts" width="15%">
+                <apex:repeat value="{!i.contexts}" var="c">
+                    {!c}<br/> 
+                </apex:repeat>
+            </apex:column>
+            <apex:column headerValue="Priority" value="{!i.sessionType.WorkIt2__Priority__c}" width="7%" style="text-align:right; padding-right:10px"/>
+        </apex:pageBlockTable>
+        <div class="action" style="width:100%; padding-top:5px"><a href="#" onclick="selectAll();">Select All</a> | <a href="#" onclick="unSelectAll();">Select None</a></div>
+    </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

@@ -1,0 +1,219 @@
+<apex:page standardController="n2de__Team__c" recordSetVar="Team__c" extensions="n2de.Team_TeamList_Controller" tabStyle="n2de__Team__c" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Team List" action="{!init}">
+    <apex:includeLightning />
+    <html>
+
+        <head>
+            <c:PageHead />
+            <c:APVHead />
+
+            <script defer="defer" src="{!URLFOR($Resource.dejs, 'js/luxon.js')}"></script>
+
+            <script defer="defer">
+                window.addEventListener("load", function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:PageContext />
+
+                    const teams = new n2.dataProvider.VisualForce({
+                        id: 'teams',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getTeams}'
+                            }
+                        }
+                    });
+
+                    const teamsAPV = new n2.dataProvider.VisualForce({
+                        id: 'teams-apv',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getTeamsAPV}'
+                            }
+                        }
+                    });
+
+                    const teamSummaryAPV = new n2.dataProvider.VisualForce({
+                        id: 'team-summary-apv',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getTeamSummaryAPV}'
+                            }
+                        }
+                    });
+
+                    const distributorSummaryAPV = new n2.dataProvider.VisualForce({
+                        id: 'distributor-summary-apv',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getDistributorSummaryAPV}'
+                            }
+                        }
+                    });
+
+                    const reorderTeams = new n2.dataProvider.VisualForce({
+                        id: 'reorder-teams',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.reorderTeams}'
+                            }
+                        }
+                    });
+
+                    const deleteTeams = new n2.dataProvider.VisualForce({
+                        id: 'delete-teams',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.deleteTeams}'
+                            }
+                        }
+                    });
+
+                    const activateTeams = new n2.dataProvider.VisualForce({
+                        id: 'activate-teams',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.activateTeams}'
+                            }
+                        }
+                    });
+
+                    const deactivateTeams = new n2.dataProvider.VisualForce({
+                        id: 'deactivate-teams',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.deactivateTeams}'
+                            }
+                        }
+                    });
+
+                    const cloneTeam = new n2.dataProvider.VisualForce({
+                        id: 'clone-team',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.cloneTeam}'
+                            }
+                        }
+                    });
+
+                    const createTeam = new n2.dataProvider.VisualForce({
+                        id: 'create-team',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.createTeam}'
+                            }
+                        }
+                    });
+
+                    const getDistributionObjects = new n2.dataProvider.VisualForce({
+                        id: 'get-distribution-object-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getDistributionObjectOptions}'
+                            }
+                        }
+                    });
+
+                    const getAssignmentFields = new n2.dataProvider.VisualForce({
+                        id: 'get-assignment-field-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getAssignmentFieldOptions}'
+                            }
+                        }
+                    });
+
+                    const runAssignmentSimulation = new n2.dataProvider.VisualForce({
+                        id: 'run-assignment-simulation',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.runAssignmentSimulation}'
+                            }
+                        }
+                    });
+
+                    const getAssignmentSimulationConfig = new n2.dataProvider.VisualForce({
+                        id: 'get-assignment-simulation',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getAssignmentSimulationConfig}'
+                            }
+                        }
+                    });
+
+                    const getAssignmentSimulationQuickResult = new n2.dataProvider.VisualForce({
+                        id: 'get-assignment-simulation-quick-result',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getQuickAssignmentSimulationResult}'
+                            }
+                        }
+                    });
+
+                    const getBasicSObjectUIVOByRecordId = new n2.dataProvider.VisualForce({
+                        id: 'get-basic-sobject-ui-vo-by-record-id',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getBasicSObjectUIVOByRecordId}'
+                            }
+                        }
+                    });
+
+                    const getQueuesForSObjectType = new n2.dataProvider.VisualForce({
+                        id: 'get-queues-for-sobject-type',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getQueuesForSObjectType}'
+                            }
+                        }
+                    });
+
+                    const getAvailableUsers = new n2.dataProvider.VisualForce({
+                        id: 'get-available-users',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getAvailableUsers}'
+                            }
+                        }
+                    });
+
+                    const getExistingStatusFields = new n2.dataProvider.VisualForce({
+                        id: 'get-existing-status-fields',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getExistingStatusFields}'
+                            }
+                        }
+
+                    });
+
+                    const isClassifierEnabled = new n2.dataProvider.VisualForce({
+                        id: 'is-classifier-enabled',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.isClassifierEnabled}'
+                            }
+                        }
+                    });
+
+                    const getStatusFieldValues = new n2.dataProvider.VisualForce({
+                        id: 'get-status-field-values',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_TeamList_Controller.getPicklistFieldSelectOptions}'
+                            }
+                        }
+                    });
+
+                    const teamListPage = new n2.de.page.team.TeamList({
+                        id: 'team-list-page',
+                        apvStaticBaseResourceUrl: '{!URLFOR($Resource.apv, '')}'
+                    });
+
+                    teamListPage.render();
+                });
+            </script>
+        </head>
+
+        <body></body>
+
+    </html>
+</apex:page>

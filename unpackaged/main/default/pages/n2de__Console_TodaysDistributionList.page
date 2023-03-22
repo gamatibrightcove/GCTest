@@ -1,0 +1,32 @@
+<apex:page controller="n2de.Console_TodaysDistributions_Controller" tabStyle="Console__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Distributions for today" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+            window.addEventListener('load', function() {
+                <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                <c:PageContext />
+
+                const getTodaysDistributionCountsByTeam = new n2.dataProvider.VisualForce({
+                    id: 'get-todays-distribution-counts-by-team',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_TodaysDistributions_Controller.getTodaysDistributionCountsByTeam}'
+                        }
+                    }
+                });
+
+                const todaysDistributionsPage = new n2.de.page.console.TodaysDistributionList({
+                    id: 'todays-distributions-page'
+                });
+                todaysDistributionsPage.render();
+            });
+        </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

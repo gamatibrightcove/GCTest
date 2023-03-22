@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, sticky assignment rules will be retained when a team member is out of office. If unchecked and a team member is out of office, an active sticky assignment rule will be cancelled and the object distributed to the next available member. --></help>
+        <label><!-- Retain sticky on OoO --></label>
+        <name>n2de__Is_stick_on_OOO__c</name>
+    </CustomFieldTranslation>

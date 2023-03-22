@@ -1,0 +1,46 @@
+<apex:page controller="n2de.Logs_ObjectSyncLogList_Controller" tabStyle="Logs__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Object Sync Log List" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+                window.addEventListener('load', function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:LogsContext attrHasArchivingBeenEnabled="{!HasArchivingBeenEnabled}"/>
+                    <c:PageContext />
+
+                    const getObjectSyncLogs = new n2.dataProvider.VisualForce({
+                        id: 'get-object-sync-logs',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Logs_ObjectSyncLogList_Controller.getObjectSyncLogResponse}',
+                                config: {
+                                    buffer: false,
+                                    timeout: 120000
+                                }
+                            }
+                        }
+                    });
+
+                    const getFilterOptionData = new n2.dataProvider.VisualForce({
+                        id: 'get-filter-option-data',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Logs_ObjectSyncLogList_Controller.getFilterOptionData}'
+                            }
+                        }
+                    });
+
+                    const objectSyncLogListPage = new n2.de.page.logs.ObjectSyncLogList({
+                        id: 'object-sync-log-list-page'
+                    });
+                    objectSyncLogListPage.render();
+                });
+            </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

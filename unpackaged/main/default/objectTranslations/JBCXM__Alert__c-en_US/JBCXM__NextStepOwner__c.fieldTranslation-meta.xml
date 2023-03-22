@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Enter the name of the person responsible for the remedial actions. --></help>
+        <label><!-- Next Step Owner --></label>
+        <name>JBCXM__NextStepOwner__c</name>
+    </CustomFieldTranslation>

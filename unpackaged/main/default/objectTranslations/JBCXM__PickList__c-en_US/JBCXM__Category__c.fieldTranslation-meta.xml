@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Pre-defined list of categories in the PickLists. --></help>
+        <label><!-- Category --></label>
+        <name>JBCXM__Category__c</name>
+        <picklistValues>
+            <masterLabel>Adoption Measure Types</masterLabel>
+            <translation><!-- Adoption Measure Types --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alert Reason</masterLabel>
+            <translation><!-- Alert Reason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alert Severity</masterLabel>
+            <translation><!-- Alert Severity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alert Status</masterLabel>
+            <translation><!-- Alert Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alert Type</masterLabel>
+            <translation><!-- Alert Type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Churn Reason</masterLabel>
+            <translation><!-- Churn Reason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Stage</masterLabel>
+            <translation><!-- Customer Stage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Status</masterLabel>
+            <translation><!-- Customer Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milestones</masterLabel>
+            <translation><!-- Milestones --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Type</masterLabel>
+            <translation><!-- Order Type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship Activity</masterLabel>
+            <translation><!-- Relationship Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SalesRep Name</masterLabel>
+            <translation><!-- SalesRep Name --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

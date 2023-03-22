@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Meeting_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Teammate whom the meeting was booked with.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Teammate whom the meeting was booked with.</inlineHelpText>
+    <label>Meeting Owner</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Drift_Conversations1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Checking this box will hide the start date from the paperwork --></help>
+        <label><!-- Outgoing Document - Hide Start Date --></label>
+        <name>Outgoing_Document_Hide_Start_Date__c</name>
+    </CustomFieldTranslation>

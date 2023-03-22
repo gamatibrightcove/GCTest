@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Teammate_Response_Time__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Time between first site visitor message and first Drift teammate’s response.</description>
+    <externalId>false</externalId>
+    <formula>DriftData__Drift_Conversation__r.DriftData__Teammate_Response_Time__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Time between first site visitor message and first Drift teammate’s response.</inlineHelpText>
+    <label>Teammate Response Time (sec)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

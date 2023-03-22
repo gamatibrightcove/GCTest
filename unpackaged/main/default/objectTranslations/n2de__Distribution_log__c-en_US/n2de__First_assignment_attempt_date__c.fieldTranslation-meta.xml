@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- First assignment attempt date --></label>
+        <name>n2de__First_assignment_attempt_date__c</name>
+    </CustomFieldTranslation>

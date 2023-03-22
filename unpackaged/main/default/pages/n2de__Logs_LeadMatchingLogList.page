@@ -1,0 +1,46 @@
+<apex:page controller="n2de.Logs_LeadMatchingLogList_Controller" tabStyle="Logs__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Lead Matching Log List" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+                window.addEventListener('load', function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:LogsContext attrHasArchivingBeenEnabled="{!HasArchivingBeenEnabled}" attrIsClassifierLoggingEnabled="{!IsClassifierLoggingEnabled}"/>
+                    <c:PageContext />
+
+                    const getFilterOptionData = new n2.dataProvider.VisualForce({
+                        id: 'get-filter-option-data',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Logs_LeadMatchingLogList_Controller.getFilterOptionData}'
+                            }
+                        }
+                    });
+
+                    const getMatchLogs = new n2.dataProvider.VisualForce({
+                        id: 'get-match-logs',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Logs_LeadMatchingLogList_Controller.getLeadMatchingLogResponse}',
+                                config: {
+                                    buffer: false,
+                                    timeout: 120000
+                                }
+                            }
+                        }
+                    });
+
+                    const leadMatchingLogListPage = new n2.de.page.logs.LeadMatchingLogList({
+                        id: 'lead-matching-log-list-page'
+                    });
+                    leadMatchingLogListPage.render();
+                });
+            </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

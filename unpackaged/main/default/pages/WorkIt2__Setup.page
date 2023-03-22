@@ -1,0 +1,114 @@
+<apex:page controller="WorkIt2.Setup" setup="true" title="App Settings - WorkIt! Setup">
+    <script>
+        function editDelay(name) {
+            console.log('name',name);
+            if (name == 'Auto Start Delay')
+            {
+                document.getElementById('delayDiv').style.display = 'block';
+                document.getElementById('delayDiv2').style.display = 'none';
+            }
+            else if (name == 'Browser Focus Loss Timeout')
+            {
+                document.getElementById('timeoutDiv').style.display = 'block';
+                document.getElementById('timeoutDiv2').style.display = 'none';
+            }
+        }
+    </script>
+
+
+    <apex:form >
+        <apex:actionRegion >
+
+        </apex:actionRegion>
+
+        <apex:sectionHeader title="WorkIt! Setup" subtitle="App Settings"/>
+        Use this page to enable time tracking for your organization’s standard or custom objects, and to modify WorkIt’s Features.
+        <br/><br/>
+
+        <apex:pageBlock title="Enabled Objects" helpTitle="How to enable time tracking for additional objects" helpUrl="{!URLFOR($Resource.WorkIt2__WorkIt2Help, 'EnableObjects.htm')}">
+            WorkIt! is set up to track time for the objects below.&nbsp;<apex:outputLink rendered="false" target="_blank" value="{!URLFOR($Resource.WorkIt2__WorkIt2Help, 'EnableObjects.htm')}">How to enable time tracking for additional objects?</apex:outputLink>
+            <br/><br/>
+            <apex:pageBlockTable value="{!TrackedObjects}" var="obj">
+                <apex:column headerValue="Object Name" value="{!obj}"/>
+            </apex:pageBlockTable>
+            <br/>
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Features (Organization Level)" >
+            Enable or disable the Features below to make WorkIt! behave as desired by your organization. Features can be also be enabled or disabled for individual profiles and users.
+            <br/><br/>
+            <apex:pageBlockTable value="{!features}" var="f">
+
+                <apex:column styleClass="actionColumn" headerValue="Action" style="width:90px; vertical-align:top">
+
+                    <apex:commandLink styleClass="actionLink" action="{!disableFeature}" value="Disable" rendered="{!f.isEnabled}">
+                        <apex:param name="disName" value="{!f.name}"/>
+                    </apex:commandLink>
+
+                    <apex:commandLink styleClass="actionLink" action="{!enableFeature}" value="Enable" rendered="{!NOT(f.isEnabled)}">
+                        <apex:param name="enName" value="{!f.name}"/>
+                    </apex:commandLink>
+
+                    <apex:outputText rendered="{!AND(NOT(f.manageURL=NULL),f.isEnabled)}">&nbsp;|&nbsp;</apex:outputText>
+                    <apex:outputLink styleClass="actionLink" value="{!f.manageURL}"
+                        rendered="{!AND(NOT(f.manageURL=NULL),f.isEnabled)}"
+                        onclick="editDelay('{!f.name}');">Edit</apex:outputLink>
+                </apex:column>
+
+                <apex:column headerValue="Enabled" style="width:60px;text-align:center; vertical-align:top">
+                    <apex:image url="/img/checkbox_checked.gif" rendered="{!f.isEnabled}"/>
+                    <apex:image url="/img/checkbox_unchecked.gif" rendered="{!NOT(f.isEnabled)}"/>
+                </apex:column>
+
+
+                <apex:column headerValue="Feature" style="width:200px; vertical-align:top">
+                    {!f.name}
+                    <apex:outputPanel rendered="{!f.intValue<>NULL}">
+                        <apex:outputPanel rendered="{!f.name == 'Auto Start Delay'}">
+                            <span id="delayDiv" style="display:none;">
+                                <apex:inputField value="{!s.WorkIt2__AutoStartDelay__c}" rendered="{!f.intValue<>NULL}" style="width:30px; text-align:right"/>
+                                seconds<br/><apex:commandButton value="Save" action="{!setDelay}"/>
+                            </span>
+                            <span id="delayDiv2">
+                                (<apex:outputField value="{!s.WorkIt2__AutoStartDelay__c}" rendered="{!f.intValue<>NULL}" style="width:30px"/> seconds)
+                            </span>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!f.name == 'Focus Loss Timeout'}">
+                            <span id="timeoutDiv" style="display:none;">
+                                <apex:inputField value="{!s.WorkIt2__BrowserFocusTimeout__c}" rendered="{!f.intValue<>NULL}" style="width: 30px;text-align:right"/>
+                                    seconds<br/><apex:commandButton value="Save" action="{!setDelay}"/>
+                            </span>
+                            <span id="timeoutDiv2">
+                                (<apex:outputField value="{!s.WorkIt2__BrowserFocusTimeout__c}" rendered="{!f.intValue<>NULL}" style="width:30px"/> seconds)
+                            </span>
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+                </apex:column>
+                <apex:column headerValue="Description" value="{!f.description}" style="vertical-align:top"/>
+
+
+            </apex:pageBlockTable>
+
+
+
+            <br/>
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Session Types" >
+            Each WorkIt! session is associated with a Session Type that describes the user’s activity. You can manage your company’s Session Types from the <a href="/apex/SessionTypeListView">Session Types tab</a>.
+            <br/><br/>
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Override Validations (Use With Caution)" >
+            <apex:outputPanel rendered="{!not(overrideEnabled)}">
+                <p>Timings and Time Entries validations are active. Click to temporarily enable override validations. The override will reset in 24 hours automatically.</p><br/>
+                <apex:commandButton action="{!enableOverride}" value="Override Timings Validations"/>
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!overrideEnabled}">
+                <p>Timings and Time Entries validations are overriden. Click to disable the override.</p><br/>
+                <apex:commandButton action="{!disableOverride}" value="Disable Timings Validations Override" />
+            </apex:outputPanel>
+            <br/><br/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

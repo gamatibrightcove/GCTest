@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Associated Object Display Value --></help>
+        <label><!-- Associated Object Display Value --></label>
+        <name>JBCXM__AssociatedObjectDisplayValue__c</name>
+    </CustomFieldTranslation>

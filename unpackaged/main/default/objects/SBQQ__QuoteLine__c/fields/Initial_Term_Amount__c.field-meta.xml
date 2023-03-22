@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Initial_Term_Amount__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(Paperwork_Product_Type__c &lt;&gt; &#39;One-Time&#39;, 
+    IF(
+        SBQQ__Product__r.No_Proration__c, 
+        ROUND(SBQQ__NetTotal__c, 2) / FLOOR(SBQQ__Quote__r.SBQQ__SubscriptionTerm__c / SBQQ__Quote__r.Initial_Term_Length__c), 
+        IF(
+            SBQQ__Quote__r.SBQQ__SubscriptionTerm__c &lt; 12,
+            ROUND((SBQQ__NetTotal__c / SBQQ__Quote__r.SBQQ__SubscriptionTerm__c) * (SBQQ__Quote__r.Initial_Term_Length__c), 2),
+            ROUND((SBQQ__NetTotal__c / SBQQ__Quote__r.SBQQ__SubscriptionTerm__c) * (SBQQ__Quote__r.Initial_Term_Length__c - MOD(SBQQ__Quote__r.Initial_Term_Length__c, 12)), 2)
+        )
+    ), 
+    0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Initial Term Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

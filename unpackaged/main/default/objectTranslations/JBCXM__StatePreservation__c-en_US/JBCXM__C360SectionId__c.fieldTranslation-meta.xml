@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- C360 Sections --></label>
+        <name>JBCXM__C360SectionId__c</name>
+        <relationshipLabel><!-- User state preservation --></relationshipLabel>
+    </CustomFieldTranslation>

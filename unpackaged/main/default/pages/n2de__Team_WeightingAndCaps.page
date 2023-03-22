@@ -1,0 +1,136 @@
+<apex:page controller="n2de.Team_WeightingCapsSettings_Controller" tabStyle="n2de__Team__c" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Weighting and Caps" action="{!init}">
+    <html>
+
+        <head>
+            <c:PageHead />
+
+            <script defer="defer">
+                window.addEventListener("load", function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:Team_TeamBase attrTeamId="{!JSENCODE(TeamId)}"/>
+                    <c:PageContext />
+
+                    const getIsQ2QTeam = new n2.dataProvider.VisualForce({
+                        id: 'get-is-q2q-team',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_WeightingCapsSettings_Controller.isQ2QTeam}'
+                            }
+                        }
+                    });
+
+                    const getTeamWeighting = new n2.dataProvider.VisualForce({
+                        id: 'get-team-weighting',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_WeightingCapsSettings_Controller.getTeamWeighting}'
+                            }
+                        },
+                        modeled: true
+                    });
+
+                    const saveTeamWeighting = new n2.dataProvider.VisualForce({
+                        id: 'save-team-weighting',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_WeightingCapsSettings_Controller.saveTeamWeighting}'
+                            }
+                        }
+                    });
+
+                    const getDistributorSettings = new n2.dataProvider.VisualForce({
+                        id: 'get-distributor-settings',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_WeightingCapsSettings_Controller.getDistributorsWeightingAndCapSettings}'
+                            }
+                        },
+                        modeled: true
+                    });
+
+                    const saveDistributorSettings = new n2.dataProvider.VisualForce({
+                        id: 'save-distributor-settings',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_WeightingCapsSettings_Controller.saveDistributorWeightingAndCapSettings}'
+                            }
+                        }
+                    });
+
+                    const getTeamCaps = new n2.dataProvider.VisualForce({
+                        id: 'get-team-caps',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_WeightingCapsSettings_Controller.getTeamCaps}'
+                            }
+                        },
+                        modeled: true
+                    });
+
+                    const saveTeamCaps = new n2.dataProvider.VisualForce({
+                        id: 'save-team-caps',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_WeightingCapsSettings_Controller.saveTeamCaps}'
+                            }
+                        }
+                    });
+
+                    const getTagCollectionOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-tag-collection-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_WeightingCapsSettings_Controller.getTagCollections}'
+                            }
+                        }
+                    });
+
+                    const getTagCollectionValueOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-tag-collection-value-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_WeightingCapsSettings_Controller.getTagValues}'
+                            }
+                        }
+                    });
+
+                    const getCapsTagCollectionValueOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-caps-tag-collection-value-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_WeightingCapsSettings_Controller.getTagValues}'
+                            }
+                        }
+                    });
+
+                    const getTeamObjectFieldOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-team-object-field-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_WeightingCapsSettings_Controller.getAllFieldOptions}'
+                            }
+                        }
+                    });
+
+                    const getPicklistFieldSelectOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-pick-list-field-select-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_WeightingCapsSettings_Controller.getPicklistFieldSelectOptions}'
+                            }
+                        }
+                    });
+
+                    const weightingAndCapsPage = new n2.de.page.team.WeightingAndCaps({
+                        id: 'weighting-and-caps-page'
+                    });
+
+                    weightingAndCapsPage.render();
+                });
+            </script>
+        </head>
+
+        <body></body>
+
+    </html>
+</apex:page>

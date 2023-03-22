@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If selected paperwork will use the Start Date of the quote. Otherwise it will be listed as &quot;Date of Last Signature&quot; --></help>
+        <label><!-- Use Start Date as Effective Date --></label>
+        <name>Use_Start_Date_as_Effective_Date__c</name>
+    </CustomFieldTranslation>

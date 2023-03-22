@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Match_filters__c</fullName>
+    <deprecated>false</deprecated>
+    <description>JSON object representing Logic and Filters to be applied to the incoming Distribution_engine_details__c</description>
+    <externalId>false</externalId>
+    <label>Match filters</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

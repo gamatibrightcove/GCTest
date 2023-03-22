@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Internally submitted by --></label>
+        <name>JBCXM__InternalSubmissionBy__c</name>
+        <relationshipLabel><!-- Survey internal submission user --></relationshipLabel>
+    </CustomFieldTranslation>

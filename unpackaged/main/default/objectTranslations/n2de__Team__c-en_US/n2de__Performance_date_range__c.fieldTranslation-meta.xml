@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Date literal --></help>
+        <label><!-- Performance date range --></label>
+        <name>n2de__Performance_date_range__c</name>
+    </CustomFieldTranslation>

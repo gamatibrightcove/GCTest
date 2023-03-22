@@ -1,0 +1,94 @@
+<apex:page controller="n2de.Team_AssignmentRejection_Controller" tabStyle="n2de__Team__c" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Assignment Rejection" action="{!init}">
+    <html>
+
+        <head>
+            <c:PageHead />
+
+            <script defer="defer">
+                window.addEventListener("load", function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:Team_TeamBase attrTeamId="{!JSENCODE(TeamId)}"/>
+                    <c:PageContext />
+
+                    const getAssignmentRejectionDetails = new n2.dataProvider.VisualForce({
+                        id: 'get-assignment-rejection-details',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_AssignmentRejection_Controller.getAssignmentRejectionDetails}'
+                            }
+                        },
+                        modeled: true
+                    });
+
+                    const getFields = new n2.dataProvider.VisualForce({
+                        id: 'get-fields',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_AssignmentRejection_Controller.getFields}'
+                            }
+                        }
+                    });
+
+                    const getPicklistFieldSelectOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-picklist-field-select-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_AssignmentRejection_Controller.getPicklistFieldSelectOptions}'
+                            }
+                        }
+                    });
+
+                    const getAvailableQueues = new n2.dataProvider.VisualForce({
+                        id: 'get-available-source-queues',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_AssignmentRejection_Controller.getQueuesAvailableToBeSource}'
+                            }
+                        }
+                    });
+
+                    const getAvailableUsers = new n2.dataProvider.VisualForce({
+                        id: 'get-available-users',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_AssignmentRejection_Controller.getAvailableUsers}'
+                            }
+                        }
+                    });
+
+                    const getRejectRecordReplacementOptions = new n2.dataProvider.Static({
+                        id: 'get-replace-rejected-records-options',
+                        data: ['Replace on usual assignment', 'Replace as next assignment', 'Do not replace']
+                    });
+
+                    const saveTeamAssignmentRejectionSettings = new n2.dataProvider.VisualForce({
+                        id: 'save-team-assignment-rejection-settings',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_AssignmentRejection_Controller.saveTeamAssignmentRejectionSettings}'
+                            }
+                        }
+                    });
+
+                    const saveDistributorAssignmentRejectionSettings = new n2.dataProvider.VisualForce({
+                        id: 'save-distributor-assignment-rejection-settings',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_AssignmentRejection_Controller.saveDistributorAssignmentRejectionSettings}'
+                            }
+                        }
+                    });
+
+                    const assignmentRejectionPage = new n2.de.page.team.AssignmentRejection({
+                        id: 'assignment-rejection-page'
+                    });
+
+                    assignmentRejectionPage.render();
+                });
+            </script>
+        </head>
+
+        <body></body>
+
+    </html>
+</apex:page>

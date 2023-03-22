@@ -1,0 +1,55 @@
+<apex:page controller="n2de.Team_Availability_Controller" tabStyle="n2de__Team__c" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Team Availability" action="{!init}">
+    <html>
+
+    <head>
+        <c:PageHead />
+
+        <script defer="defer">
+                window.addEventListener('load', function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:Team_TeamBase attrTeamId="{!JSENCODE(TeamId)}"/>
+                    <c:PageContext />
+
+                    const getFilterOptionsData = new n2.dataProvider.VisualForce({
+                        id: 'get-filter-options-data',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_Availability_Controller.getFilterOptionData}'
+                            }
+                        }
+                    });
+
+                    const getCalendarData = new n2.dataProvider.VisualForce({
+                        id: 'get-calendar-data',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_Availability_Controller.getCalendarData}',
+                                config: {
+                                    buffer: false,
+                                    timeout: 120000
+                                }
+                            }
+                        }
+                    });
+
+                    const getCalendarDayData = new n2.dataProvider.VisualForce({
+                        id: 'get-calendar-day-data',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_Availability_Controller.getCalendarDayData}'
+                            }
+                        }
+                    });
+
+                    const teamAvailabilityPage = new n2.de.page.team.Availability({
+                        id: 'team-availability-page'
+                    });
+                    teamAvailabilityPage.render();
+                });
+            </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

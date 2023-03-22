@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Distributor__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Distributor</label>
+    <referenceTo>n2de__Distributor__c</referenceTo>
+    <relationshipLabel>Member distributor details</relationshipLabel>
+    <relationshipName>Member_distributor_details</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

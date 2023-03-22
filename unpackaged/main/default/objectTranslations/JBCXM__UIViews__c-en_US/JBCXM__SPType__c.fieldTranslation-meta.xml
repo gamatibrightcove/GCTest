@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Success plan type --></label>
+        <name>JBCXM__SPType__c</name>
+        <relationshipLabel><!-- SPAttributesView --></relationshipLabel>
+    </CustomFieldTranslation>

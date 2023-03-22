@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Queue used for default owner assignment. --></help>
+        <label><!-- Default owner queue --></label>
+        <name>n2de__Default_owner_queue_id__c</name>
+    </CustomFieldTranslation>

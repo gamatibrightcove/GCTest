@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Has_Teammate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>True if a Drift teammate sent a message during the Drift conversation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>True if a Drift teammate sent a message during the Drift conversation.</inlineHelpText>
+    <label>Has Teammate</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

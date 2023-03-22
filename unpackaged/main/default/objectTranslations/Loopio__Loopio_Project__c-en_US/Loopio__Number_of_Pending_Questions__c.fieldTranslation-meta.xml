@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Number of questions pending action and that have not been assigned, submitted for review, or marked as complete --></help>
+        <label><!-- Pending Questions --></label>
+        <name>Loopio__Number_of_Pending_Questions__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Billing Frequency (Japan) --></label>
+        <name>Billing_Frequency_Japan__c</name>
+        <picklistValues>
+            <masterLabel>一括 （年毎）</masterLabel>
+            <translation><!-- 一括 （年毎） --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>別途備考欄をご参照ください。</masterLabel>
+            <translation><!-- 別途備考欄をご参照ください。 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>半年毎</masterLabel>
+            <translation><!-- 半年毎 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>四半期毎</masterLabel>
+            <translation><!-- 四半期毎 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>毎月</masterLabel>
+            <translation><!-- 毎月 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

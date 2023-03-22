@@ -1,0 +1,247 @@
+<apex:page controller="n2de.Team_DistributorList_Controller" tabStyle="n2de__Team__c" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Distributor List" action="{!init}">
+    <apex:includeLightning />
+    <html>
+
+        <head>
+            <c:PageHead />
+            <script defer="defer" src="{!URLFOR($Resource.dejs, 'js/luxon.js')}"></script>
+
+            <script defer="defer">
+                window.addEventListener("load", function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:Team_TeamBase attrTeamId="{!JSENCODE(TeamId)}"/>
+                    <c:PageContext />
+
+                    const getDistributors = new n2.dataProvider.VisualForce({
+                        id: 'get-distributors',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getDistributorListByType}'
+                            }
+                        }
+                    });
+
+                    const getIsQ2QTeam = new n2.dataProvider.VisualForce({
+                        id: 'get-is-q2q-team',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.isQ2QTeam}'
+                            }
+                        }
+                    });
+
+                    const getIsTriggersEnabled = new n2.dataProvider.VisualForce({
+                        id: 'get-is-triggers-enabled',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.triggersAvailableForTeam}'
+                            }
+                        }
+                    });
+
+                    const getNewDistributorSettings = new n2.dataProvider.VisualForce({
+                        id: 'get-new-distributor-settings',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getSettingsForNewDistributor}'
+                            }
+                        },
+                        modeled: true
+                    });
+
+                    const createDistributor = new n2.dataProvider.VisualForce({
+                        id: 'create-distributor',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.createDistributor}'
+                            }
+                        }
+                    });
+
+                    const getAvailableQueues = new n2.dataProvider.VisualForce({
+                        id: 'get-available-source-queues',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getQueuesAvailableToBeSource}'
+                            }
+                        }
+                    });
+
+                    const getAvailableUsers = new n2.dataProvider.VisualForce({
+                        id: 'get-available-users',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getAvailableUsers}'
+                            }
+                        }
+                    });
+
+                    const getAvailableStatusFields = new n2.dataProvider.VisualForce({
+                        id: 'get-available-status-fields',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getFieldsAvailableToBeStatusFields}'
+                            }
+                        }
+                    });
+
+                    const getStatusFieldValues = new n2.dataProvider.VisualForce({
+                        id: 'get-status-field-values',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getPicklistFieldSelectOptions}'
+                            }
+                        }
+                    });
+
+                    const activateDistributors = new n2.dataProvider.VisualForce({
+                        id: 'activate-distributors',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.activateDistributors}'
+                            }
+                        }
+                    });
+
+                    const deactivateDistributors = new n2.dataProvider.VisualForce({
+                        id: 'deactivate-distributors',
+                        methods: {
+                            post: {
+                                    method: '{!$RemoteAction.Team_DistributorList_Controller.deactivateDistributors}'
+                            }
+                        }
+                    });
+
+                    const deleteDistributors = new n2.dataProvider.VisualForce({
+                        id: 'delete-distributors',
+                        methods: {
+                            post: {
+                                    method: '{!$RemoteAction.Team_DistributorList_Controller.deleteDistributors}'
+                            }
+                        }
+                    });
+
+                    const reorderDistributors = new n2.dataProvider.VisualForce({
+                        id: 'reorder-distributors',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.reorderDistributors}'
+                            }
+                        }
+                    });
+
+                    const cloneDistributor = new n2.dataProvider.VisualForce({
+                        id: 'clone-distributor',
+                        methods: {
+                            post: {
+                                    method: '{!$RemoteAction.Team_DistributorList_Controller.cloneDistributor}'
+                            }
+                        }
+                    });
+
+                    const getRecentDistributionLogs = new n2.dataProvider.VisualForce({
+                        id: 'get-recent-distribution-logs',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getRecentDistributionLogs}'
+                            }
+                        },
+                        modeled: true
+                    });
+
+                    const previewAvailableObjectsForDistributor = new n2.dataProvider.VisualForce({
+                        id: 'preview-available-objects-for-distributor',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.previewAvailableObjectsForDistributor}'
+                            }
+                        },
+                        modeled: true
+                    });
+
+                    const getDistributorSummary = new n2.dataProvider.VisualForce({
+                        id: 'get-distributor-summary',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getDistributorSummary}'
+                            }
+                        }
+                    });
+
+                    const runAssignmentSimulation = new n2.dataProvider.VisualForce({
+                        id: 'run-assignment-simulation',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.runAssignmentSimulation}'
+                            }
+                        }
+                    });
+
+                    const getAssignmentSimulationConfig = new n2.dataProvider.VisualForce({
+                        id: 'get-assignment-simulation',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getAssignmentSimulationConfig}'
+                            }
+                        }
+                    });
+
+                    const getAssignmentSimulationQuickResult = new n2.dataProvider.VisualForce({
+                        id: 'get-assignment-simulation-quick-result',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getQuickAssignmentSimulationResult}'
+                            }
+                        }
+                    });
+
+                    const getBasicSObjectUIVOByRecordId = new n2.dataProvider.VisualForce({
+                        id: 'get-basic-sobject-ui-vo-by-record-id',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getBasicSObjectUIVOByRecordId}'
+                            }
+                        }
+                    });
+
+                    const getQueuesForSObjectType = new n2.dataProvider.VisualForce({
+                        id: 'get-queues-for-sobject-type',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getQueuesForSObjectType}'
+                            }
+                        }
+                    });
+
+                    const getExistingStatusFields = new n2.dataProvider.VisualForce({
+                        id: 'get-existing-status-fields',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.getExistingStatusFields}'
+                            }
+                        }
+                    });
+
+                    const isClassifierEnabled = new n2.dataProvider.VisualForce({
+                        id: 'is-classifier-enabled',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Team_DistributorList_Controller.isClassifierEnabled}'
+                            }
+                        }
+                    });
+
+
+                    const distributorListPage = new n2.de.page.team.DistributorList({
+                        id: 'distributor-list-page'
+                    });
+
+                    distributorListPage.render();
+                });
+            </script>
+        </head>
+
+        <body></body>
+
+    </html>
+</apex:page>

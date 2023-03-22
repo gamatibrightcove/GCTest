@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WorkIt2__All</fullName>
+    <columns>NAME</columns>
+    <columns>WorkIt2__Timing__c</columns>
+    <columns>WorkIt2__Session_Type__c</columns>
+    <columns>WorkIt2__Start__c</columns>
+    <columns>WorkIt2__End__c</columns>
+    <columns>WorkIt2__Time__c</columns>
+    <columns>WorkIt2__Business_Time__c</columns>
+    <columns>WorkIt2__Overtime_Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Time Entries</label>
+</ListView>

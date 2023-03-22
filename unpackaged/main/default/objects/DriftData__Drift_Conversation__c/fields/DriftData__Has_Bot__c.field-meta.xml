@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Has_Bot__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>True if a Drift Bot sent a message during the Drift conversation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>True if a Drift Bot sent a message during the Drift conversation.</inlineHelpText>
+    <label>Has Bot</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

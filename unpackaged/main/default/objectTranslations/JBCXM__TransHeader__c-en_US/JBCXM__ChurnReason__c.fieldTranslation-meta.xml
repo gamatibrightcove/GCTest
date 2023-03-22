@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Select Churn Reason (applicable for Churn Transactions only). --></help>
+        <label><!-- Churn Reason --></label>
+        <name>JBCXM__ChurnReason__c</name>
+        <relationshipLabel><!-- Transaction Header (Churn Reason) --></relationshipLabel>
+    </CustomFieldTranslation>

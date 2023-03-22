@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DriftData__Teammate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Drift Teammate who first responded to the Drift conversation.</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&#39;/&#39; + DriftData__Drift_Conversation__r.DriftData__Teammate__c ,  DriftData__Drift_Conversation__r.DriftData__Teammate__r.FirstName + &#39; &#39; + DriftData__Drift_Conversation__r.DriftData__Teammate__r.LastName,&#39;_self&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Drift Teammate who first responded to the Drift conversation.</inlineHelpText>
+    <label>Teammate (First)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

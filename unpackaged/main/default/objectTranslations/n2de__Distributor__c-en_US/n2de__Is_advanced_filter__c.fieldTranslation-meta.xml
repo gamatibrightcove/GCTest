@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, enables advanced SOQL filter mode. Note: for advanced users, requires familiarity with SOQL language syntax --></help>
+        <label><!-- Advanced filter mode --></label>
+        <name>n2de__Is_advanced_filter__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The timezone associated with the working hours for this team. --></help>
+        <label><!-- Timezone --></label>
+        <name>n2de__Timezone__c</name>
+    </CustomFieldTranslation>

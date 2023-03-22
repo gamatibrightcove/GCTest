@@ -1,0 +1,179 @@
+<apex:page id="ClsTerritorySettings" tabStyle="Distribution_Classifier__tab" sideBar="false" standardStylesheets="false" docType="html-5.0" controller="n2de.ClsTerritorySettingsController" action="{!init}">
+    <html lang="en" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/deps/n2-design-system/styles/salesforce-lightning-design-system-legacy.min.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/css/n2.de.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.n2Components, '/css/n2.min.css')}"/>
+        <style>
+            .n2__settings-fields span.slds-form-element__label {
+                width: 200px;
+            }
+        </style>
+        <script>
+            window.n2__sldsIconsPrefix = '{!JSENCODE(URLFOR($Asset.SLDS, 'assets/icons'))}';
+            window.n2__locale = '{!JSENCODE(Locale)}';
+            window.n2__timeZone = '{!JSENCODE(TimeZone)}';
+        </script>
+        <script defer="defer" src="{!URLFOR($Resource.n2Components, 'js/thirdParty.min.js')}"></script>
+        <script onload="initComponents();" defer="defer" src="{!URLFOR($Resource.n2Components, 'js/n2.min.js')}"></script>
+        <script>
+                showHideClassifierFailedMessage = function(hasClassifierFailed) {
+                    if (hasClassifierFailed) {
+                        n2j$('div#n2__classifier-failed-needs-restart').removeClass('slds-hide');
+                    } else {
+                        n2j$('div#n2__classifier-failed-needs-restart').addClass('slds-hide');
+                    }
+                };
+                showHideMaintenanceModeMessage = function(isUnderMaintenance) {
+                    if (isUnderMaintenance) {
+                        n2j$('div#n2__enable-maintenance-mode-warn').removeClass('slds-hide');
+                    } else {
+                        n2j$('div#n2__enable-maintenance-mode-warn').addClass('slds-hide');
+                    }
+                };
+                showHideEnableClassifierMessage = function(classifierEnabled) {
+                    if (!classifierEnabled) {
+                        n2j$('div#n2__classifier-on-info').removeClass('slds-hide');
+                    } else {
+                        n2j$('div#n2__classifier-on-info').addClass('slds-hide');
+                    }
+                };
+                initComponents = function() {
+                    initNav('Territory Settings');
+
+                    showHideClassifierFailedMessage({!ClassifierFailed});
+                    showHideMaintenanceModeMessage({!IsUnderMaintenance});
+                    showHideEnableClassifierMessage({!TerritoriesEnabled});
+
+                    n2.cm.addComponent('checkbox-toggle', {
+                        id: 'checkbox-territory-enabled',
+                        selector: '#checkbox-territory-enabled',
+                        label: 'Territory processing',
+                        onLabel: 'Enabled',
+                        offLabel: 'Disabled',
+                        defaultValue: {!TerritoriesEnabled},
+                        cls: 'slds-m-bottom_medium n2__settings-fields',
+                        handlers: {
+                            'change': function(value) {
+                                n2.spinner.show();
+                                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsTerritorySettingsController.toggleTerritoriesEnabled}', value, function(response, event) {
+                                    n2.spinner.hide();
+                                    if (event.statusCode === 200) {
+                                        n2.toast.show({
+                                            text: 'Your changes have been saved'
+                                        });
+                                        showHideClassifierFailedMessage(response.hasClassifierFailed);
+                                        showHideEnableClassifierMessage(value);
+                                    } else {
+                                        //Reset value if an exception occurs
+                                        n2.cm.setValue('checkbox-territory-enabled', !value);
+                                        n2.message.error('Error: ' + event.message);
+                                    }
+                                });
+                            }
+                        }
+                    });
+                };
+
+            </script>
+        <script defer="defer" src="{!URLFOR($Resource.DEResources, 'scripts/ga.js')}"></script>
+    </head>
+
+    <div class="slds-scope n2__full-height">
+        <div class="n2__full-height">
+            <div class="n2-de-page n2-de-classifier-v1 n2_full-width">
+                <div class="n2-vertical-navigation n2-de-vertical-navigation n2_navigation slds-m-top_xx-large">
+                    <c:ClsNavigation pkgNamespace="{!Namespace}"/>
+                </div>
+                <div class="n2_main">
+                    <div class="n2-de-header slds-page-header slds-no-flex">
+                        <div class="slds-page-header__row">
+                            <div class="slds-page-header__col-title">
+                                <div class="slds-media slds-media_center">
+                                    <div class="slds-media__figure">
+                        <span class="slds-icon_container">
+                            <svg class="slds-icon n2_icon slds-icon_small" aria-hidden="true">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#location')}"/>
+                            </svg>
+                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <h1 title="Territories > Settings" class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate">Territories > Settings</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-page-header__col-actions">
+                                <div class="slds-page-header__controls">
+                                    <div class="slds-page-header__control">
+                                        <div class="n2_actions">
+                                            <a href="https://help.nc-squared.com/settings-and-backfill-wizard" target="_blank" class="n2_help-link slds-grid slds-grid_vertical-align-center">
+                                                <svg class="slds-icon slds-icon_x-small slds-m-right_xx-small slds-col slds-no-flex slds-icon-text-default" aria-hidden="true">
+                                                    <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#question')}"></use>
+                                                </svg>
+                                                <span class="slds-col">Help</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <article class="n2_content">
+                        <div class="slds-card__body slds-card__body_inner slds-p-top_small">
+                            <div class="slds-form">
+                                <div id="n2__classifier-failed-needs-restart" class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light slds-m-bottom_medium slds-hide" role="status">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container slds-icon-utility-warning" title="Warning">
+                                            <svg class="slds-icon slds-icon_small slds-icon-text-warning" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}"/>
+                                            </svg>
+                                            <span class="slds-assistive-text">Warning</span>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <p>The classifier has aborted. Please restart.</p>
+                                    </div>
+                                </div>
+                                <div id="n2__enable-maintenance-mode-warn" class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light slds-m-bottom_medium slds-is-relative slds-hide" role="status">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container slds-icon-utility-info" title="Warning">
+                                            <svg class="slds-icon slds-icon_small slds-icon-text-default" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}"/>
+                                            </svg>
+                                            <span class="slds-assistive-text">Warning</span>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <span id="n2__enable-maintenance-mode-warning-message">
+                                            <p>{!MaintenanceModeMessage}</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div id="n2__classifier-on-info" class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light slds-m-bottom_medium slds-hide" role="status">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container slds-icon-utility-info" title="Information">
+                                            <svg class="slds-icon slds-icon_small slds-icon-text-default" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}"/>
+                                            </svg>
+                                            <span class="slds-assistive-text">Information</span>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <p>{!EnableClassifierMsg}</p>
+                                    </div>
+                                </div>
+                                <span id="checkbox-territory-enabled"></span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </html>
+
+</apex:page>

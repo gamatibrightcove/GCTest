@@ -1,0 +1,4 @@
+jQuery - 3.3.1
+mustache - 3.0.0
+svg4everybody - 2.1.9
+github/fetch - 3.0.0

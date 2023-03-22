@@ -1,0 +1,124 @@
+<apex:page controller="n2de.Settings_AppSettings_Controller" tabStyle="Settings__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Settings" action="{!init}">
+    <html>
+
+        <head>
+            <c:PageHead />
+
+            <script defer="defer">
+                window.addEventListener('load', function() {
+                    <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                    <c:PageContext />
+
+                    const getAppSettings = new n2.dataProvider.VisualForce({
+                        id: 'get-app-settings',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Settings_AppSettings_Controller.getAppSettings}'
+                            }
+                        },
+                        modeled: true
+                    });
+
+                    const getNotifiableUsers = new n2.dataProvider.VisualForce({
+                        id: 'get-notifiable-users',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Settings_AppSettings_Controller.getNotifiableUsers}'
+                            }
+                        }
+                    });
+
+                    const getLongestSlaDeadlineDays = new n2.dataProvider.VisualForce({
+                        id: 'get-longest-sla-deadline-days',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Settings_AppSettings_Controller.getLongestSlaDeadlineDays}'
+                            }
+                        }
+                    });
+
+                    const getEventShowAsOptions = new n2.dataProvider.VisualForce({
+                        id: 'get-event-show-as-options',
+                        methods: {
+                            get: {
+                                method: '{!$RemoteAction.Settings_AppSettings_Controller.getEventShowAsOptions}'
+                            }
+                        }
+                    });
+
+                    const saveAppSettings = new n2.dataProvider.VisualForce({
+                        id: 'save-app-settings',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Settings_AppSettings_Controller.saveAppSettings}'
+                            }
+                        }
+                    });
+
+                    const startScheduler = new n2.dataProvider.VisualForce({
+                        id: 'start-scheduler',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Settings_AppSettings_Controller.startScheduler}'
+                            }
+                        }
+                    });
+
+                    const stopScheduler = new n2.dataProvider.VisualForce({
+                        id: 'stop-scheduler',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Settings_AppSettings_Controller.stopScheduler}'
+                            }
+                        }
+                    });
+
+                    const activateArchiving = new n2.dataProvider.VisualForce({
+                        id: 'activate-archiving',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Settings_AppSettings_Controller.activateArchiving}'
+                            }
+                        }
+                    });
+
+                    const createArchiveQueue = new n2.dataProvider.VisualForce({
+                        id: 'create-archive-queue',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Settings_AppSettings_Controller.createArchiveQueue}'
+                            }
+                        }
+                    });
+
+                    const createArchiveQueueSObjects = new n2.dataProvider.VisualForce({
+                        id: 'create-archive-queue-sobjects',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Settings_AppSettings_Controller.createArchiveQueueSObjects}'
+                            }
+                        }
+                    });
+
+                    const deactivateArchiving = new n2.dataProvider.VisualForce({
+                        id: 'deactivate-archiving',
+                        methods: {
+                            post: {
+                                method: '{!$RemoteAction.Settings_AppSettings_Controller.deactivateArchiving}'
+                            }
+                        }
+                    });
+
+
+                    const appSettingsPage = new n2.de.page.settings.AppSettings({
+                        id: 'app-settings-page'
+                    });
+                    appSettingsPage.render();
+                });
+            </script>
+        </head>
+
+        <body></body>
+
+    </html>
+</apex:page>

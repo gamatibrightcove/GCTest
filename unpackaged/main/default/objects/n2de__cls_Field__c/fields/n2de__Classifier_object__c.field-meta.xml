@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Classifier_object__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Classifier object</label>
+    <referenceTo>n2de__cls_Object__c</referenceTo>
+    <relationshipLabel>Classifier fields</relationshipLabel>
+    <relationshipName>Classifier_fields</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

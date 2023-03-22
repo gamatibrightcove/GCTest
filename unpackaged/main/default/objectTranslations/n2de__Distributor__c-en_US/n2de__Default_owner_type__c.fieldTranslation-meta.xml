@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The queue or user to which leads or cases will be assigned if the trigger cannot distribute because the assigned owner cannot be found as an available team member. Note: in this event no distribution logging will occur. --></help>
+        <label><!-- Default owner --></label>
+        <name>n2de__Default_owner_type__c</name>
+    </CustomFieldTranslation>

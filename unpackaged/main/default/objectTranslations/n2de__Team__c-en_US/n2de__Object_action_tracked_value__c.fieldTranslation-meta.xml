@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Actions that will be tracked, from the time of distribution to the time the action status was updated on the case or lead. --></help>
+        <label><!-- Action to track --></label>
+        <name>n2de__Object_action_tracked_value__c</name>
+    </CustomFieldTranslation>

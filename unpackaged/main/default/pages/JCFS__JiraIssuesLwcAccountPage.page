@@ -1,0 +1,21 @@
+<apex:page standardController="Account" extensions="JCFS.GenericObjectController">
+    <apex:includeLightning />
+    <apex:includeScript value="{!$Resource.JCFS__ExternalDependencies}"/>
+    <div id="jiraIssuesLwcVfContainer" />
+    <script>
+        const { NAMESPACE_PREFIX } = ExternalDependencies;
+
+        $Lightning.use(`${NAMESPACE_PREFIX}:LightningOutDependencies`, () =>
+            $Lightning.createComponent(
+                `${NAMESPACE_PREFIX}:jiraIssuesLwc`,
+                {
+                    objectApiName: "{!JSINHTMLENCODE(son)}",
+                    recordId: "{!JSINHTMLENCODE(soid)}",
+                    isVisualforce: true,
+                },
+                "jiraIssuesLwcVfContainer",
+                cmp => {}
+            )
+        );
+    </script>
+</apex:page>

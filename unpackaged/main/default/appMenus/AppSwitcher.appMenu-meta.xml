@@ -248,4 +248,8 @@
         <name>Gong_Interaction</name>
         <type>ConnectedApp</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>Brightcove_Data_Service</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
 </AppMenu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- GS Layout --></label>
+        <name>JBCXM__GSLayout__c</name>
+        <relationshipLabel><!-- Relationship Sections --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>Feld, das beim Auswerten der Bedingung getestet wird</help>
+        <label><!-- Tested Field --></label>
+        <name>sbaa__TestedField__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation>Betrag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Has_Legal_Notes__c</masterLabel>
+            <translation><!-- Has_Legal_Notes__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Name</masterLabel>
+            <translation>Name</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment_Terms_in_Days__c</masterLabel>
+            <translation><!-- Payment_Terms_in_Days__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Probability</masterLabel>
+            <translation>Wahrscheinlichkeit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__BillingFrequency__c</masterLabel>
+            <translation><!-- SBQQ__BillingFrequency__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__ListAmount__c</masterLabel>
+            <translation><!-- SBQQ__ListAmount__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Status__c</masterLabel>
+            <translation><!-- SBQQ__Status__c --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

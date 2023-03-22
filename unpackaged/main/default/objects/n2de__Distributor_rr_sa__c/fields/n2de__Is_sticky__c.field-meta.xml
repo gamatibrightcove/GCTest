@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n2de__Is_sticky__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(AND(CONTAINS(TEXT(n2de__Distributor__r.n2de__Algorithm__c), &#39; sticky &#39;), NOT(n2de__Is_ooo__c)), ((NOW()-CreatedDate)*1440) &lt; n2de__Distributor__r.n2de__Sticky_period_minutes__c, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is sticky</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

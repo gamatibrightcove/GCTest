@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- MRR Value is auto calculated based on the Alert value entered in the ASV field. --></help>
+        <label><!-- Alert MRR --></label>
+        <name>JBCXM__MRR__c</name>
+    </CustomFieldTranslation>

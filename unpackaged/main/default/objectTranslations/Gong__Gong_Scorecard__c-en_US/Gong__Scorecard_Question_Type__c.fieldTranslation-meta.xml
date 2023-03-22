@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Question type --></label>
+        <name>Gong__Scorecard_Question_Type__c</name>
+        <picklistValues>
+            <masterLabel>BOOLEAN</masterLabel>
+            <translation><!-- BOOLEAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MULTI_SELECT</masterLabel>
+            <translation><!-- MULTI_SELECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN</masterLabel>
+            <translation><!-- OPEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RANGE</masterLabel>
+            <translation><!-- RANGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SINGLE_SELECT</masterLabel>
+            <translation><!-- SINGLE_SELECT --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

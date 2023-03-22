@@ -1,0 +1,456 @@
+<apex:page id="ClsMatchObject" tabStyle="Distribution_Classifier__tab" sideBar="false" standardStylesheets="false" docType="html-5.0" controller="n2de.ClsMatchObjectController" action="{!init}">
+    <html lang="en" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/deps/n2-design-system/styles/salesforce-lightning-design-system-legacy.min.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.dejs, '/css/n2.de.css')}"/>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.n2Components, '/css/n2.min.css')}"/>
+        <style>
+            .n2__settings-fields span.slds-form-element__label,
+            .n2__settings-fields div.slds-select_container {
+                width: 230px;
+            }
+        </style>
+        <script>
+            window.n2__sldsIconsPrefix = '{!JSENCODE(URLFOR($Asset.SLDS, 'assets/icons'))}';
+            window.n2__locale = '{!JSENCODE(Locale)}';
+            window.n2__timeZone = '{!JSENCODE(TimeZone)}';
+        </script>
+        <script defer="defer" src="{!URLFOR($Resource.n2Components, 'js/thirdParty.min.js')}"></script>
+        <script onload="initComponents();" defer="defer" src="{!URLFOR($Resource.n2Components, 'js/n2.min.js')}"></script>
+        <script>
+            var matchingCanBeEnabled = false;
+            getDuplicateRules = function(callback) {
+                var wrappedCallback = function(response, error) {
+                    var length = response.length;
+                    var enabled = n2.cm.getValue('checkbox-enable-matching');
+                    if (length === 0) {
+                        n2j$('#n2__no-duplicate-rules').removeClass('slds-hide');
+                        if (error) {
+                            n2j$('#n2__no-duplicate-rules-text').text('We could not retrieve the active Lead-to-{!JSENCODE(ObjectType)} duplicate rules due to the below error.' + (enabled ? '' : ' Please resolve this before enabling Lead-to-{!JSENCODE(ObjectType)} matching.') + '\n\n' + error);
+                        } else {
+                            n2j$('#n2__no-duplicate-rules-text').text('There are no active Lead-to-{!JSENCODE(ObjectType)} duplicate rules defined.' + (enabled ? ' As Lead-to-{!JSENCODE(ObjectType)} matching is already enabled this will mean that nothing will be matched.' : ' Please create one or more before enabling Lead-to-{!JSENCODE(ObjectType)} matching.'));
+                        }
+                    }
+                    if (enabled || length > 0) {
+                        matchingCanBeEnabled = true;
+                        n2.cm.enable('checkbox-enable-matching');
+                    }
+                    if (!error) {
+                        n2j$('span#n2__duplicate-rules-title').text('Duplicate rules (' + length + ' active)');
+                    }
+                    callback(response, length);
+                };
+
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchObjectController.getDuplicateRules}', function(response, event) {
+                    if (event.statusCode === 200 && response) {
+                        n2.sf.LeadMatchingUtil.getDuplicateRulesMetadata(response, '{!JSENCODE(ObjectType)}')
+                            .done(function(duplicateRules) {
+                                duplicateRules.sort(function(a, b) {
+                                    var sort = n2.util.compareObjectValues(a, b, 'sortOrder', true);
+                                    if (sort === 0) {
+                                        sort = n2.util.compareObjectValues(a, b, 'matchRuleLabel', true);
+                                    }
+                                    return sort;
+                                });
+                                wrappedCallback(duplicateRules);
+                            })
+                            .fail(function(error) {
+                                wrappedCallback([], error);
+                            });
+                    } else {
+                        wrappedCallback([], n2.sf.util.getMessageFromEvent('Error getting duplicate rules', event));
+                    }
+                }, {
+                    escape: false
+                });
+            };
+
+            var filtersData = {filters: []};
+            getMatchSettings = function() {
+                n2.spinner.show();
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchObjectController.getMatchSettings}', '{!JSENCODE(ObjectType)}', function(response, event) {
+                    if (event.statusCode === 200 && response) {
+                        filtersData = response.filters;
+                        n2.cm.refresh('logic-filters-multiple');
+                        n2.cm.setValue('select-multiple', response.multipleOrder);
+                        if ({!ShowAccountDomains}) {
+                            n2.cm.setValue('checkbox-enable-domains', response.accountDomainsEnabled);
+                        }
+                    } else {
+                        n2.message.error('Error getting match settings: ' + event.message);
+                    }
+                    n2.spinner.hide();
+                }, {
+                    escape: false
+                });
+            };
+
+            showCancelSave = function() {
+                n2j$('#n2__save-footer').removeClass('slds-hide');
+                n2.cm.disable('checkbox-enable-matching');
+            };
+
+            hideCancelSave = function() {
+                n2j$('#n2__save-footer').addClass('slds-hide');
+                if (matchingCanBeEnabled) {
+                    n2.cm.enable('checkbox-enable-matching');
+                }
+            };
+
+            initComponents = function() {
+                initNav('Lead {!JSENCODE(ObjectType)}');
+
+                // If we have no type then error and return to the settings page
+                if (!'{!JSENCODE(ObjectType)}') {
+                    n2.message.show({
+                        text: 'No object type provided, please navigate to the page from the side menu.',
+                        heading: 'Error',
+                        handlers: {
+                            'ok': function() {
+                                n2.sf.util.navigate('{!Namespace}ClsMatchSettings');
+                            }
+                        }
+                    });
+                    return;
+                }
+
+                // Initialise the Metadata util
+                n2.sf.MetadataUtil.init('{!Host}', '{!$Api.Session_ID}');
+
+                // Update SF link if in classic
+                if (n2.sf.util.isInClassic()) {
+                    n2j$('#n2__duplicateRulesLink').attr('href', '/0Bm?setupid=DuplicateRules');
+                }
+
+                n2.cm.addComponent('checkbox-toggle', {
+                    id: 'checkbox-enable-matching',
+                    selector: '#checkbox-enable-matching',
+                    label: 'Lead-to-{!JSENCODE(ObjectType)} matching',
+                    onLabel: 'Enabled',
+                    offLabel: 'Disabled',
+                    defaultValue: {!ObjectTypeEnabled},
+                    disabled: true,
+                    cls: 'slds-m-bottom_medium n2__settings-fields',
+                    handlers: {
+                        'change': function(value) {
+                            n2.spinner.show();
+                            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchObjectController.toggleMatchingEnabled}', '{!JSENCODE(ObjectTypeLower)}', value, function(response, event) {
+                                n2.spinner.hide();
+                                if (event.statusCode === 200) {
+                                    n2.toast.show({
+                                        text: 'Your changes have been saved'
+                                    });
+                                } else {
+                                    //Reset value if an exception occurs
+                                    n2.cm.setValue('checkbox-enable-matching', !value);
+                                    n2.message.error('Error: ' + event.message);
+                                }
+                            });
+                        }
+                    }
+                });
+
+                if ({!ShowAccountDomains}) {
+                    n2.cm.addComponent('checkbox', {
+                        id: 'checkbox-enable-domains',
+                        selector: '#checkbox-enable-domains',
+                        label: 'Enable matching to account by domain',
+                        disabled: {!AccountDomainsCannotBeChanged},
+                        help: {!AccountDomainsCannotBeChanged} ? 'Lead matching needs to be disabled before this setting can be changed' : '',
+                        cls: 'slds-m-bottom_medium n2__settings-fields',
+                        handlers: {
+                            'change': function(value) {
+                                showCancelSave();
+                            }
+                        }
+                    });
+                }
+
+                var matchingRuleNewLineRegex = /<(\/li|br)>/g;
+                var matchingRuleRemoveRegex = /<[^>]*>/g;
+                n2.cm.addComponent('data-table', {
+                    id: 'data-table-duplicate-rules',
+                    selector: '#data-table-duplicate-rules',
+                    paging: false,
+                    columns: [{
+                        name: 'MasterLabel',
+                        title: 'Name',
+                        sortable: false
+                    }, {
+                        name: 'description',
+                        title: 'Description',
+                        sortable: false,
+                        wrap: true
+                    }, {
+                        name: 'matchRuleLabel',
+                        title: 'Matching Rule',
+                        sortable: false
+                    }, {
+                        name: 'matchRuleDescription',
+                        title: 'Rule Description',
+                        sortable: false,
+                        wrap: true
+                    }, {
+                        name: 'matchRuleItems',
+                        title: 'Matching Rule Items',
+                        sortable: false,
+                        html: true,
+                        wrap: true,
+                        formatTooltip: function(value) {
+                            return value ? value.replace(matchingRuleNewLineRegex, '\n').replace(matchingRuleRemoveRegex, '') : '';
+                        }
+                    }, {
+                        name: 'sortOrder',
+                        title: 'Sort Order',
+                        sortable: false,
+                        alignRight: true,
+                        width: '7rem'
+                    }],
+                    data: function(page, rowsPerPage, sortColumn, sortAscending, callback) {
+                        getDuplicateRules(callback);
+                    }
+                });
+
+                var objectFieldsDeferred = n2.util.promise();
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchObjectController.getObjectFields}', '{!JSENCODE(ObjectType)}', function(response, event) {
+                    if (event.statusCode === 200 && response) {
+                        objectFieldsDeferred.resolve(response);
+                    } else {
+                        n2.message.error('Error getting object fields: ' + event.message);
+                        objectFieldsDeferred.resolve([]);
+                    }
+                }, {
+                    escape: false
+                });
+                n2.cm.addComponent('logic-filters', {
+                    id: 'logic-filters-multiple',
+                    selector: '#logic-filters-multiple',
+                    label: 'Filter for matched {!JSENCODE(ObjectTypeLower)}s',
+                    excludedOperators: '{!NotOperatorsDisabled}' === 'true' ? n2.const.SF.NOT_OPERATORS : [],
+                    includeFiscalPeriods: false,
+                    maxRows: 3,
+                    data: function(callback) {
+                        callback(filtersData);
+                    },
+                    dataFieldsList: function() {
+                        // Return a promise to get the fields
+                        return objectFieldsDeferred;
+                    },
+                    dataValuesList: function(fieldName, fieldType, operator) {
+                        // Return a promise to get the field values for the selected field, if there is no field name just return null
+                        if (!fieldName) {
+                            return null;
+                        }
+                        var deferred = n2.util.promise();
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchObjectController.getFieldValues}', '{!JSENCODE(ObjectType)}', fieldName, function(response, event) {
+                            if (event.statusCode === 200 && response) {
+                                deferred.resolve(response);
+                            } else {
+                                n2.message.error('Error getting object fields: ' + event.message);
+                                deferred.resolve([]);
+                            }
+                        }, {
+                            escape: false
+                        });
+                        return deferred;
+                    },
+                    handlers: {
+                        'change': function() {
+                            showCancelSave();
+                        }
+                    },
+                    cls: 'slds-m-bottom_large'
+                });
+
+                n2.cm.addComponent('select', {
+                    id: 'select-multiple',
+                    selector: '#select-multiple',
+                    label: 'The tie-breaker for {!JSENCODE(ObjectTypeLower)} selection when multiple matches are found with the same match confidence',
+                    required: true,
+                    data: function() {
+                        var deferred = n2.util.promise();
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchObjectController.getFieldMultipleOptions}', function(response, event) {
+                            if (event.statusCode === 200 && response) {
+                                deferred.resolve(response);
+                            } else {
+                                n2.message.error('Error getting multiple options: ' + event.message);
+                                deferred.resolve([]);
+                            }
+                        }, {
+                            escape: false
+                        });
+                        return deferred;
+                    },
+                    handlers: {
+                        'change': function() {
+                            showCancelSave();
+                        }
+                    },
+                    cls: 'n2__settings-fields'
+                });
+
+                n2j$('button.slds-section__title-action').on('click', function() {
+                    var btn = n2j$(this);
+                    var section = btn.closest('div.slds-section');
+                    var sectionContent = section.find('div.slds-section__content');
+                    if (section.hasClass('slds-is-open')) {
+                        btn.attr('aria-expanded', 'false');
+                        section.removeClass('slds-is-open');
+                        sectionContent.attr('aria-hidden', 'true');
+                    } else {
+                        btn.attr('aria-expanded', 'true');
+                        section.addClass('slds-is-open');
+                        sectionContent.attr('aria-hidden', 'false');
+                    }
+                });
+
+                n2.cm.addComponent('button', {
+                    id: 'btn-cancel',
+                    selector: '#btn-cancel',
+                    text: 'Cancel',
+                    handlers: {
+                        'click': function() {
+                            hideCancelSave();
+                            getMatchSettings();
+                        }
+                    }
+                });
+                n2.cm.addComponent('button', {
+                    id: 'btn-save',
+                    selector: '#btn-save',
+                    text: 'Save',
+                    style: 'brand',
+                    handlers: {
+                        'click': function() {
+                            var filters = n2.cm.getValue('logic-filters-multiple');
+                            var multipleOrder = n2.cm.getValue('select-multiple');
+
+                            if (!n2.util.isNullOrUndefined(filters) && !n2.util.isNullOrUndefined(multipleOrder)) {
+                                n2.spinner.show();
+                                var matchSettings = {
+                                    filters: filters,
+                                    multipleOrder: multipleOrder
+                                };
+                                if ({!ShowAccountDomains}) {
+                                    matchSettings.accountDomainsEnabled = n2.cm.getValue('checkbox-enable-domains');
+                                }
+
+                                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ClsMatchObjectController.saveMatchSettings}', '{!JSENCODE(ObjectType)}', matchSettings, function(response, event) {
+                                    n2.spinner.hide();
+                                    if (event.statusCode === 200) {
+                                        hideCancelSave();
+                                        n2.toast.show({
+                                            text: 'Your changes have been saved'
+                                        });
+                                    } else {
+                                        n2.message.error('Error saving match settings: ' + event.message);
+                                    }
+                                });
+                            }
+                        }
+                    }
+                });
+
+                // Get the initial match settings
+                getMatchSettings();
+            };
+        </script>
+        <script defer="defer" src="{!URLFOR($Resource.DEResources, 'scripts/ga.js')}"></script>
+    </head>
+
+    <div class="slds-scope n2__full-height">
+        <div class="n2__full-height">
+            <div class="n2-de-page n2-de-classifier-v1 n2_full-width">
+                <div class="n2-vertical-navigation n2-de-vertical-navigation n2_navigation slds-m-top_xx-large">
+                    <c:ClsNavigation pkgNamespace="{!Namespace}"/>
+                </div>
+                <div class="n2_main">
+                    <div class="n2-de-header slds-page-header slds-no-flex">
+                        <div class="slds-page-header__row">
+                            <div class="slds-page-header__col-title">
+                                <div class="slds-media slds-media_center">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container">
+                                            <svg class="slds-icon n2_icon slds-icon_small" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#merge')}"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <h1 title="Lead Matching > Lead-to-{!JSENCODE(ObjectType)}" class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate">Lead Matching > Lead-to-{!JSENCODE(ObjectType)}</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-page-header__col-actions">
+                                <div class="slds-page-header__controls">
+                                    <div class="slds-page-header__control">
+                                        <div class="n2_actions">
+                                            <a id="n2__duplicateRulesLink" href="/lightning/setup/DuplicateRules/home" target="_blank" title="Open Salesforce Duplicate Rules in settings">Salesforce Duplicate Rules</a>
+                                            <span class="slds-icon_container slds-icon-utility-new_window slds-m-left_xx-small">
+                                                <svg class="slds-icon slds-icon-text-default slds-icon_x-small" aria-hidden="true">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#new_window')}"/>
+                                                </svg>
+                                            </span>
+                                            <a href="https://help.nc-squared.com/leadtosettings" target="_blank" class="n2_help-link slds-grid slds-grid_vertical-align-center">
+                                                <svg class="slds-icon slds-icon_x-small slds-m-right_xx-small slds-col slds-no-flex slds-icon-text-default" aria-hidden="true">
+                                                    <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#question')}"></use>
+                                                </svg>
+                                                <span class="slds-col">Help</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <article class="n2_content">
+                        <div class="slds-card__body slds-card__body_inner slds-p-top_small">
+                            <div class="slds-form">
+                                <div id="n2__no-duplicate-rules" class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light slds-m-bottom_medium slds-hide" role="status">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container slds-icon-utility-warning" title="Warning">
+                                            <svg class="slds-icon slds-icon_small slds-icon-text-warning" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}"/>
+                                            </svg>
+                                            <span class="slds-assistive-text">Warning</span>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <span id="n2__no-duplicate-rules-text" style="white-space: pre-wrap;"></span>
+                                    </div>
+                                </div>
+                                <span id="checkbox-enable-matching"></span>
+                                <span id="checkbox-enable-domains"></span>
+                                <span id="logic-filters-multiple"></span>
+                                <span id="select-multiple"></span>
+                                <div class="slds-section">
+                                    <h3 class="slds-section__title slds-theme_shade">
+                                        <button class="slds-button slds-section__title-action" aria-expanded="false" aria-controls="n2__section-duplicate-rules">
+                                            <svg class="slds-section__title-action-icon slds-button__icon slds-button__icon_left" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#switch')}"/>
+                                            </svg>
+                                            <span id="n2__duplicate-rules-title" title="Section Title" class="slds-truncate">Duplicate rules</span>
+                                        </button>
+                                    </h3>
+                                    <div class="slds-section__content" id="n2__section-duplicate-rules" aria-hidden="true">
+                                        <span id="data-table-duplicate-rules"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="n2__save-footer" class="slds-docked-form-footer slds-hide">
+                                <span class="slds-m-right_small slds-align-middle"><b>You have unsaved changes</b></span>
+                                <span id="btn-cancel"></span>
+                                <span id="btn-save"></span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </html>
+</apex:page>

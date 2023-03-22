@@ -1,0 +1,79 @@
+body {font-size:100%}
+
+.workitTimer {padding-top:0.8em; height:100%; border-bottom:0px black solid;}
+
+.wComponent {border:0px solid black;}
+.wComponent {width:10em; margin: auto}
+
+.wComponent .btn {font-size:0.7em}
+
+.sessionTimer .colorBar {height:0.5em; background:#e8eaea; border-bottom:0.1em #eee solid;}
+.sessionTimer .caption {display:block; font-size:0.7em; font-weight:bold; color: #5a5b5c}
+.sessionTimer .value {text-align:center; letter-spacing:0.1em; font-size:1em; font-weight:normal; margin-top:0.5em; margin-bottom:0.5em}
+
+.totalTimer .colorBar {height:0.5em; background:#e8eaea; border-bottom:0.1em #eee solid;}
+.totalTimer .caption {display:block; font-size:0.7em; font-weight:bold; color: #5a5b5c}
+.totalTimer .value {text-align:center; letter-spacing:0.1em; font-size:1em; font-weight:normal; margin-top:0.5em; margin-bottom:0.5em}
+
+
+.typeSelector {overflow:hidden; text-align:center; padding-top:0.4em; padding-bottom:0.5em; border-bottom:1px #eee solid;}
+.typeSelector table {width:100%}
+.typeSelector td {height:3em; text-align:center; vertical-align:middle; width:100%}
+.typeSelector .value {max-height:3em; line-height:1.5em; font-size:0.75em; overflow:hidden; border:0px soliTimerd black; margin:auto}        
+.typeSelector.en {cursor:pointer;}
+.typeSelector.en:hover {background-color:#eee;}
+
+.typeSelectorMenu {width:100%; display:none; position:absolute; background: white;
+                border:0px #cccccc solid; font-size:1em; padding-top:0em;}
+
+.typeSelectorMenu .options {border:0px solid black; overflow-y: hidden; overflow-x: hidden; height:100%; width:100%; margin:auto}
+
+.typeSelectorMenu ul {list-style:none; padding: 0em; margin:0em;}
+.typeSelectorMenu li.group {padding: 0em; margin:0em; font-size:1em; border-bottom:1px solid #eee;cursor:pointer;}
+.typeSelectorMenu li.group > .caption {padding:0.4em; background-color:#fff; margin:0em; font-weight: bold; 
+                    line-height:1.5em; max-height:3em; min-height:3em; font-size:0.69em;}
+
+.typeSelectorMenu li.group.collapsed > ul {display: none;}
+
+.typeSelectorMenu li.item {padding: 0em; margin:0em; font-size:0.75em;}
+.typeSelectorMenu li.item.selected {background-color:#eee;}
+
+
+.typeSelectorMenu li.item:hover {background-color:#e3f3ff;}
+.typeSelectorMenu li.item.newSession:hover {background-color:#bee0be;}
+
+.typeSelectorMenu li.item > .caption {padding:0.4em; line-height:1.5em; max-height:4.5em; min-height:1.5em; 
+                                        overflow:hidden;  margin-bottom:0px; font-weight: normal;}
+.typeSelectorMenu li.item > .controls {text-align:right; height: 2.3em; padding:0.4em;}
+.typeSelectorMenu li.item > .controls .btn {display:none;}
+
+.typeSelectorMenu li.item:hover > .controls .btn {display:inline;}
+
+.typeSelectorMenu li.group li.item {padding-left:1em;} 
+
+.comments {border-top:0px solid #ccc; text-align:center; padding-top:0.4em; padding-bottom:0.5em;}
+
+.comments table {width:100%}
+.comments td {height:3em; text-align:center; vertical-align:middle; width:100%;}
+.comments .value {max-height:4.2em; line-height:1.4em; font-size:0.72em; overflow:hidden; color:#aaa; text-align:center}
+.comments.en:hover {background-color:#eee;}
+
+.commentsEditor {width:100%; display:none; position:absolute; background: white;
+                border:0px #cccccc solid; font-size:1em; padding-top:0em;}
+
+.commentsEditor .editor {border:0px solid black; overflow-y: hidden; overflow-x: hidden; width:10em; height:100%; margin:0.8em auto}
+.commentsEditor .editor .caption {font-size:0.7em; font-weight:bold; color: #5a5b5c}
+.commentsEditor .editor textarea {width:96%; height:75%; border:1px #ccc solid; margin-top:0.2em; font-size:0.8em}
+.commentsEditor .editor .controls {margin-top:0.5em;}
+.commentsEditor .editor .controls .btn {width:75px;font-size:0.7em}
+
+
+.expirationDialog {width:100%; height:100%; display:none; position:absolute; background: white; opacity: 0.90;
+                border:0px #cccccc solid; font-size:1em; padding-top:0em;}
+.expirationDialog .value {color:#000000; font-weight:bold; margin:35% 10%; border:0px #cccccc solid; text-align:center;}        
+.expirationDialog .controls {text-align:center; border:0px #cccccc solid; width:10em; margin: auto}
+.expirationDialog .controls .btn {font-size:0.7em;width:100%;}
+
+.sessionButtons {height:2em; border:0px solid black}
+.sessionButtons .delayButtons .btn {width:75px}
+.sessionButtons .stopStartButtons .btn {width:100%;display:none}

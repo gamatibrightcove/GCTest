@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- ChangedAttribute --></label>
+        <name>JBCXM__ChangedAttribute__c</name>
+        <picklistValues>
+            <masterLabel>company</masterLabel>
+            <translation><!-- company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>location</masterLabel>
+            <translation><!-- location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>title</masterLabel>
+            <translation><!-- title --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

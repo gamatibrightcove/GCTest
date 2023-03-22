@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- IP address from where the usage action occurred. --></help>
+        <label><!-- IP Address --></label>
+        <name>JBCXM__IPAddress__c</name>
+    </CustomFieldTranslation>

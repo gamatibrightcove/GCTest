@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Name of the object to be distributed to members of this team. --></help>
+        <label><!-- Object --></label>
+        <name>n2de__Object_name__c</name>
+    </CustomFieldTranslation>

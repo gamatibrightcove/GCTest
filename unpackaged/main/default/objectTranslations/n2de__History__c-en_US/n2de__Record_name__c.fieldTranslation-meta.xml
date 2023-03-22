@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Name of the record the change was made to. --></help>
+        <label><!-- Record name --></label>
+        <name>n2de__Record_name__c</name>
+    </CustomFieldTranslation>

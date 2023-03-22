@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A numeric value from 1 (low) up to 10 (high) indicating the level of certainty at which this possible candidate was included in this result set. --></help>
+        <label><!-- D&amp;B Match Confidence Code --></label>
+        <name>DNBConnect__D_B_Match_Confidence_Code__c</name>
+    </CustomFieldTranslation>

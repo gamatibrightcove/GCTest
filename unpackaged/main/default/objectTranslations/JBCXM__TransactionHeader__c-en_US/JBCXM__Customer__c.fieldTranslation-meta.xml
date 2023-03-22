@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Reference to CustomerInfo Record --></help>
+        <label><!-- Customer --></label>
+        <name>JBCXM__Customer__c</name>
+        <relationshipLabel><!-- Transaction Header --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>Wählen Sie das Feld aus, das aktualisiert werden soll, wenn die Bedingungen erfüllt sind.</help>
+        <label><!-- Target Field --></label>
+        <name>SBQQ__Field__c</name>
+        <picklistValues>
+            <masterLabel>ARR__c</masterLabel>
+            <translation><!-- ARR__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (%)</masterLabel>
+            <translation>Rabatt (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (Amt)</masterLabel>
+            <translation>Rabatt (Betrag)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMRR__c</masterLabel>
+            <translation><!-- EMRR__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Explanation</masterLabel>
+            <translation>Erläuterung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Floor (%)</masterLabel>
+            <translation>Untergrenze (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Has_Legal_Notes__c</masterLabel>
+            <translation><!-- Has_Legal_Notes__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial_Term_Amount__c</masterLabel>
+            <translation><!-- Initial_Term_Amount__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial_Term_Quantity__c</masterLabel>
+            <translation><!-- Initial_Term_Quantity__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRR__c</masterLabel>
+            <translation><!-- MRR__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markup (%)</masterLabel>
+            <translation>Aufschlag (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markup (Amt)</masterLabel>
+            <translation>Aufschlag (Betrag)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norm (%)</masterLabel>
+            <translation>Norm (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One_Time__c</masterLabel>
+            <translation><!-- One_Time__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overage_Rate__c</masterLabel>
+            <translation><!-- Overage_Rate__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_Term_Quantity__c</masterLabel>
+            <translation><!-- Renewal_Term_Quantity__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewed_Contract__c</masterLabel>
+            <translation><!-- Renewed_Contract__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__BillingFrequency__c</masterLabel>
+            <translation><!-- SBQQ__BillingFrequency__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__DefaultSubscriptionTerm__c</masterLabel>
+            <translation><!-- SBQQ__DefaultSubscriptionTerm__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__EndDate__c</masterLabel>
+            <translation><!-- SBQQ__EndDate__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Hidden__c</masterLabel>
+            <translation><!-- SBQQ__Hidden__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__ListPrice__c</masterLabel>
+            <translation><!-- SBQQ__ListPrice__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__PaymentTerms__c</masterLabel>
+            <translation><!-- SBQQ__PaymentTerms__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__RenewalTerm__c</masterLabel>
+            <translation><!-- SBQQ__RenewalTerm__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__SpecialPriceDescription__c</masterLabel>
+            <translation><!-- SBQQ__SpecialPriceDescription__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__SpecialPriceType__c</masterLabel>
+            <translation><!-- SBQQ__SpecialPriceType__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__SpecialPrice__c</masterLabel>
+            <translation><!-- SBQQ__SpecialPrice__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__SubscriptionTerm__c</masterLabel>
+            <translation><!-- SBQQ__SubscriptionTerm__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__WatermarkShown__c</masterLabel>
+            <translation><!-- SBQQ__WatermarkShown__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target (%)</masterLabel>
+            <translation>Ziel (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Price</masterLabel>
+            <translation>Stückpreis</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

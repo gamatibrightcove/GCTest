@@ -1,0 +1,147 @@
+<apex:page controller="n2de.Console_SourcesList_Controller" tabStyle="Console__tab" sidebar="false" standardStylesheets="false" docType="html-5.0" title="Distribution Engine: Sources" action="{!init}">
+    <apex:includeLightning />
+    <html>
+
+    <head>
+        <c:PageHead />
+        <script defer="defer" src="{!URLFOR($Resource.dejs, 'js/luxon.js')}"></script>
+        <script defer="defer">
+            window.addEventListener('load', function() {
+                <c:ApplicationContext attrOrgNamespace="{!JSENCODE(OrgNamespace)}" attrIsSandbox="{!IsSandbox}" attrIsDeveloperOrg="{!IsDeveloperOrg}" attrIsTrialOrg="{!IsTrialOrg}"/>
+                <c:PageContext />
+
+                const getDistributors = new n2.dataProvider.VisualForce({
+                    id: 'get-distributors',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.getDistributors}'
+                        }
+                    }
+                });
+
+                const getDistributorCountsForTeam = new n2.dataProvider.VisualForce({
+                    id: 'get-distributor-counts-for-team',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.getDistributorCountsForTeam}',
+                            config: {
+                                buffer: false,
+                                timeout: 120000
+                            }
+                        }
+                    }
+                });
+
+                const previewAvailableObjectsForDistributor = new n2.dataProvider.VisualForce({
+                    id: 'preview-available-objects-for-distributor',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.previewAvailableObjectsForDistributor}'
+                        }
+                    },
+                    modeled: true
+                });
+
+                const getRecentDistributionLogs = new n2.dataProvider.VisualForce({
+                    id: 'get-recent-distribution-logs',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.getRecentDistributionLogs}'
+                        }
+                    },
+                    modeled: true
+                });
+
+                const runAssignmentSimulation = new n2.dataProvider.VisualForce({
+                    id: 'run-assignment-simulation',
+                    methods: {
+                        post: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.runAssignmentSimulation}'
+                        }
+                    }
+                });
+
+                const getAssignmentSimulationConfig = new n2.dataProvider.VisualForce({
+                    id: 'get-assignment-simulation',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.getAssignmentSimulationConfig}'
+                        }
+                    }
+                });
+
+                const getAssignmentSimulationQuickResult = new n2.dataProvider.VisualForce({
+                    id: 'get-assignment-simulation-quick-result',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.getQuickAssignmentSimulationResult}'
+                        }
+                    }
+                });
+
+                const getBasicSObjectUIVOByRecordId = new n2.dataProvider.VisualForce({
+                    id: 'get-basic-sobject-ui-vo-by-record-id',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.getBasicSObjectUIVOByRecordId}'
+                        }
+                    }
+                });
+
+                const getQueuesForSObjectType = new n2.dataProvider.VisualForce({
+                    id: 'get-queues-for-sobject-type',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.getQueuesForSObjectType}'
+                        }
+                    }
+                });
+
+                const getAvailableUsers = new n2.dataProvider.VisualForce({
+                    id: 'get-available-users',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.getAvailableUsers}'
+                        }
+                    }
+                });
+
+                const getExistingStatusFields = new n2.dataProvider.VisualForce({
+                    id: 'get-existing-status-fields',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.getExistingStatusFields}'
+                        }
+                    }
+                });
+
+                const isClassifierEnabled = new n2.dataProvider.VisualForce({
+                    id: 'is-classifier-enabled',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.isClassifierEnabled}'
+                        }
+                    }
+                });
+
+                const getStatusFieldValues = new n2.dataProvider.VisualForce({
+                    id: 'get-status-field-values',
+                    methods: {
+                        get: {
+                            method: '{!$RemoteAction.Console_SourcesList_Controller.getPicklistFieldSelectOptions}'
+                        }
+                    }
+                });
+
+                const sourcesPage = new n2.de.page.console.SourceList({
+                    id: 'sources-page'
+                });
+                sourcesPage.render();
+            });
+        </script>
+    </head>
+
+    <body></body>
+
+    </html>
+</apex:page>

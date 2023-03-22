@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Number of the first SLA on which to re-assign the record. Reassignment will occur on this or the first subsequent SLA to be hit. --></help>
+        <label><!-- Re-assign from SLA --></label>
+        <name>n2de__Reassign_on_alert_sequence__c</name>
+    </CustomFieldTranslation>

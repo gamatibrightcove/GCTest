@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, records will still be assigned when a team member is out of office. --></help>
+        <label><!-- Assign on OoO --></label>
+        <name>n2de__Assign_on_OOO__c</name>
+    </CustomFieldTranslation>
